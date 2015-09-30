@@ -1,0 +1,60 @@
+# -----------------------------------------------------------------
+# Based on Bare Minimum Git https://gist.github.com/salcode/9940509
+# -----------------------------------------------------------------
+
+# ignore everything in root except for wp-content
+/*
+!wp-content/
+
+# ignore hidden files
+.*
+!.gitignore
+!.editorconfig
+
+# ignore all files that start with ~
+~*
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore everything in wp-content except plugins and themes
+wp-content/*
+!wp-content/mu-plugins
+!wp-content/plugins
+!wp-content/themes
+
+# ignore specific plugins and themes
+wp-content/plugins/hello.php
+wp-content/themes/twenty*
+
+# ignore node/grunt stuff
+node_modules/

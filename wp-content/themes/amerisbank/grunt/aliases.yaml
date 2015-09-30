@@ -1,0 +1,30 @@
+default:
+  - 'uglify:build'
+  - 'compass:build'
+  - 'imagemin:build'
+  - 'autoprefixer:build'
+
+build:
+  - 'uglify:build'
+  - 'compass:build'
+  - 'imagemin:build'
+  - 'autoprefixer:build'
+
+prod:
+  - 'uglify:prod'
+  - 'compass:prod'
+  - 'imagemin:build'
+  - 'autoprefixer:prod'
+
+performance:
+  - 'devperf'
+
+testjs:
+  - 'jshint'
+
+testsass:
+  - 'scsslint'
+
+testspeed:
+  - 'pagespeed:desktop'
+  - 'pagespeed:mobile'
