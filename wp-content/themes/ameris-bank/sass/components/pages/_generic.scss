@@ -1,0 +1,28 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	@include rem-fallback(margin, 0, 0, 2);
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	@include rem-fallback(margin, 2, 0, 0);
+}
+
+.page-links {
+	clear: both;
+	@include rem-fallback(margin, 0, 0, 2);
+}

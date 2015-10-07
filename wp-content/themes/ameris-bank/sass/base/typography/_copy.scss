@@ -1,0 +1,42 @@
+p {
+	@include rem-fallback(margin-bottom, 1.5);
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	@include rem-fallback(margin, 0, 1.5);
+}
+
+address {
+	@include rem-fallback(margin, 0, 0, 1.5);
+}
+
+pre {
+	background: $bg-pre;
+	font-family: $font-monospace;
+	@include rem-fallback(margin-bottom, 1.5);
+	max-width: 100%;
+	overflow: auto;
+	@include rem-fallback(padding, 1.5);
+}
+
+code, kbd, tt, var {
+	font-family: $font-monospace;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $border-abbr;
+	cursor: help;
+}
+
+mark, ins {
+	background: $bg-ins;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}

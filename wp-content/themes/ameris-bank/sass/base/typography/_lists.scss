@@ -1,0 +1,25 @@
+ul, ol {
+	@include rem-fallback(margin, 0, 2, 4);
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	@include rem-fallback(margin-left, 2);
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	@include rem-fallback(margin, 0, 2, 2);
+}

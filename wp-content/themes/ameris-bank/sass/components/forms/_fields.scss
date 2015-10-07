@@ -1,0 +1,28 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: $link-color;
+	border: 1px solid $border-input;
+	@include rem-fallback(border-radius, 0.3);
+
+	&:focus {
+		color: $link-hover;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	@include rem-fallback(padding-left, 0.3);
+}
+
+textarea {
+	padding-left: 3px;
+	@include rem-fallback(padding-left, 0.3);
+	width: 100%;
+}

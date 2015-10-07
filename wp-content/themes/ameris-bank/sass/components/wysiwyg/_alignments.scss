@@ -1,0 +1,15 @@
+.alignleft {
+	display: inline;
+	float: left;
+	@include rem-fallback(margin-right, 2);
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	@include rem-fallback(margin-left, 2);
+}
+
+.aligncenter {
+	@include center-block;
+}

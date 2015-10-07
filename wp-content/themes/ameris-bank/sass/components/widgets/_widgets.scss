@@ -1,0 +1,13 @@
+.widget {
+	@include rem-fallback(margin, 0, 0, 2);
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}

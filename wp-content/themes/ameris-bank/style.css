@@ -1,0 +1,1049 @@
+/*!
+Theme Name: bravery
+Theme URI: http://underscores.me/
+Author: Chief
+Author URI: http://agencychief.com/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bravery
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+bravery is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+/* Import Sass mixins, variables, Compass modules, etc. */
+/*
+ * Retina Sprites for Compass
+ * by:              Andreas Sahle
+ * forked from:     Retina-Sprites-for-Compass by Gaya Kessler
+ * @see: https://github.com/Gaya/Retina-Sprites-for-Compass
+ * last update:     04/13/14
+ *
+ * NOTE: This is a fork of the fork.
+ *
+ * Usage:
+ * 1. create a folder in your image directory (in this case 'sprite-images').
+ * 2. create sprite images for pixel ratio 1 screens and put them in the folder.
+ * 4. create sprite images for pixel ratio 2 screens and put them in the folder,
+ *    use the same filenames with a '-2x' suffix.
+ * 5. use the sprite-image in your Sass/Scss using: '@include use-sprite(<sprite-name>)'
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 10, sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 31, sass/base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 35, sass/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 38, sass/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 41, sass/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 44, sass/base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 49, sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, sass/base/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, sass/base/_base.scss */
+html {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-size: 10px;
+  height: 100%;
+}
+
+/* line 11, sass/base/_base.scss */
+body {
+  font-size: 16px;
+  /* Set to 16 as default font because 10 just ain't right. */
+  line-height: 24px;
+}
+
+/* line 6, sass/base/_accessibility.scss */
+.element-invisible,
+.element-focusable {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 12, sass/base/_accessibility.scss */
+.element-focusable:active, .element-focusable:focus {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+/* line 27, sass/base/_accessibility.scss */
+#skip-link {
+  margin: 0;
+}
+/* line 30, sass/base/_accessibility.scss */
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/* line 43, sass/base/_accessibility.scss */
+#content {
+  outline: none;
+}
+
+/* line 10, sass/base/_formalize.scss */
+.input_tiny {
+  width: 50px;
+}
+
+/* line 14, sass/base/_formalize.scss */
+.input_small {
+  width: 100px;
+}
+
+/* line 18, sass/base/_formalize.scss */
+.input_medium {
+  width: 150px;
+}
+
+/* line 22, sass/base/_formalize.scss */
+.input_large {
+  width: 200px;
+}
+
+/* line 26, sass/base/_formalize.scss */
+.input_xlarge {
+  width: 250px;
+}
+
+/* line 30, sass/base/_formalize.scss */
+.input_xxlarge {
+  width: 300px;
+}
+
+/* line 37, sass/base/_formalize.scss */
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+
+/* line 48, sass/base/_formalize.scss */
+input:invalid,
+button:invalid,
+a.button:invalid,
+select:invalid,
+textarea:invalid {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 53, sass/base/_formalize.scss */
+input:focus,
+button:focus,
+a.button:focus,
+select:focus,
+textarea:focus {
+  -moz-box-shadow: #06f 0 0 5px 0;
+  -webkit-box-shadow: #06f 0 0 5px 0;
+  box-shadow: #06f 0 0 5px 0;
+  z-index: 1;
+}
+
+/* line 63, sass/base/_formalize.scss */
+input[type="file"]:focus, input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 69, sass/base/_formalize.scss */
+button,
+a.button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -moz-linear-gradient(#ffffff, #dddddd);
+  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+  background-image: linear-gradient(#ffffff, #dddddd);
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  display: inline-block;
+  outline: 0;
+  overflow: visible;
+  margin: 0;
+  padding: 3px 10px;
+  text-shadow: white 0 1px 1px;
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+  font: bold 12px/1.3 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+  background: #ddd url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAAAAADhgtq/AAAAHElEQVQoz2P8z4ADsOCW+UeGnsFs2nDzz5AMHQA+JRlAyyOraAAAAABJRU5ErkJggg==) repeat-x;
+}
+/* line 100, sass/base/_formalize.scss */
+button:hover,
+a.button:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMXB4IiBzdG9wLWNvbG9yPSIjZWVlZWVlIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjY2NjY2NjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(1px, #eeeeee), color-stop(100%, #cccccc));
+  background-image: -moz-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+  background-image: -webkit-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+  background-image: linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
+  text-decoration: none;
+}
+/* line 105, sass/base/_formalize.scss */
+button:active,
+a.button:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+input[type="button"]:active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #eeeeee));
+  background-image: -moz-linear-gradient(#dddddd, #eeeeee);
+  background-image: -webkit-linear-gradient(#dddddd, #eeeeee);
+  background-image: linear-gradient(#dddddd, #eeeeee);
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+  border-color: #999 #bbb #ddd;
+}
+/* line 113, sass/base/_formalize.scss */
+button::-moz-focus-inner,
+a.button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 120, sass/base/_formalize.scss */
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid;
+  border-color: #848484 #c1c1c1 #e1e1e1;
+  color: black;
+  outline: 0;
+  margin: 0;
+  padding: 2px 3px;
+  text-align: left;
+  font-size: 13px;
+  height: 1.8em;
+  vertical-align: top;
+  font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+/* line 156, sass/base/_formalize.scss */
+textarea[disabled],
+select[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled] {
+  background-color: #eee;
+}
+
+/* line 161, sass/base/_formalize.scss */
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled],
+a.button_disabled {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  color: #888;
+  cursor: default;
+}
+
+/* line 180, sass/base/_formalize.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #888;
+}
+
+/* line 185, sass/base/_formalize.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #888;
+}
+
+/* line 190, sass/base/_formalize.scss */
+input.placeholder_text,
+textarea.placeholder_text {
+  color: #888;
+}
+
+/* line 195, sass/base/_formalize.scss */
+textarea,
+select[size],
+select[multiple] {
+  height: auto;
+}
+
+/* line 203, sass/base/_formalize.scss */
+select[size="0"],
+select[size="1"] {
+  height: 1.8em;
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+  /* line 210, sass/base/_formalize.scss */
+  select[size],
+  select[multiple],
+  select[multiple][size] {
+    background-image: none;
+    padding-right: 3px;
+  }
+
+  /* line 217, sass/base/_formalize.scss */
+  select,
+  select[size="0"],
+  select[size="1"] {
+    background-image: url(data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+  }
+
+  /* line 227, sass/base/_formalize.scss */
+  ::-webkit-validation-bubble-message {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #666), color-stop(1, black));
+    border: 0;
+    color: white;
+    font: 13px/17px "Lucida Grande", Arial, "Liberation Sans", FreeSans, sans-serif;
+    overflow: hidden;
+    padding: 15px 15px 17px;
+    text-shadow: black 0 0 1px;
+    min-height: 16px;
+  }
+
+  /* line 240, sass/base/_formalize.scss */
+  ::-webkit-validation-bubble-arrow,
+  ::-webkit-validation-bubble-top-outer-arrow,
+  ::-webkit-validation-bubble-top-inner-arrow {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #666;
+    border-color: #666;
+  }
+}
+/* line 250, sass/base/_formalize.scss */
+textarea {
+  min-height: 40px;
+  overflow: auto;
+  resize: vertical;
+  width: 100%;
+}
+
+/* line 257, sass/base/_formalize.scss */
+optgroup {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+/* line 267, sass/base/_formalize.scss */
+optgroup::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, sass/base/typography/_copy.scss */
+p {
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 5, sass/base/typography/_copy.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 9, sass/base/typography/_copy.scss */
+blockquote {
+  margin: 0px 15px;
+  margin: 0rem 1.5rem;
+}
+
+/* line 13, sass/base/typography/_copy.scss */
+address {
+  margin: 0px 0px 15px;
+  margin: 0rem 0rem 1.5rem;
+}
+
+/* line 17, sass/base/typography/_copy.scss */
+pre {
+  background: #eee;
+  font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  overflow: auto;
+  padding: 15px;
+  padding: 1.5rem;
+}
+
+/* line 26, sass/base/typography/_copy.scss */
+code, kbd, tt, var {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+}
+
+/* line 30, sass/base/typography/_copy.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 35, sass/base/typography/_copy.scss */
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+/* line 40, sass/base/typography/_copy.scss */
+big {
+  font-size: 125%;
+}
+
+/* line 1, sass/base/typography/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+/* line 1, sass/base/typography/_lists.scss */
+ul, ol {
+  margin: 0px 20px 40px;
+  margin: 0rem 2rem 4rem;
+}
+
+/* line 5, sass/base/typography/_lists.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 9, sass/base/typography/_lists.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 13, sass/base/typography/_lists.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-left: 2rem;
+}
+
+/* line 19, sass/base/typography/_lists.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 23, sass/base/typography/_lists.scss */
+dd {
+  margin: 0px 20px 20px;
+  margin: 0rem 2rem 2rem;
+}
+
+/* Layout rules */
+/* Component (SMACSS module) rules */
+/* line 1, sass/components/navigation/_links.scss */
+a {
+  color: royalblue;
+}
+/* line 4, sass/components/navigation/_links.scss */
+a:visited {
+  color: midnightblue;
+}
+/* line 7, sass/components/navigation/_links.scss */
+a:hover, a:focus, a:active {
+  color: purple;
+}
+/* line 12, sass/components/navigation/_links.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 15, sass/components/navigation/_links.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* // Basic dropdown styles...
+
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			@include rem-fallback(top, 2);
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				@include rem-fallback(width, 20);
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+	}
+} */
+/* Small menu. */
+/* line 74, sass/components/navigation/_menu-main.scss */
+.main-navigation ul {
+  display: none;
+}
+
+/* line 78, sass/components/navigation/_menu-main.scss */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+/* line 83, sass/components/navigation/_menu-main.scss */
+.main-navigation ul ul {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  /* line 88, sass/components/navigation/_menu-main.scss */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* line 91, sass/components/navigation/_menu-main.scss */
+  .main-navigation ul {
+    display: block;
+  }
+}
+/* line 100, sass/components/navigation/_menu-main.scss */
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0px 0px 20px;
+  margin: 0rem 0rem 2rem;
+  overflow: hidden;
+}
+/* line 105, sass/components/navigation/_menu-main.scss */
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+/* line 110, sass/components/navigation/_menu-main.scss */
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/* line 1, sass/components/widgets/_widgets.scss */
+.widget {
+  margin: 0px 0px 20px;
+  margin: 0rem 0rem 2rem;
+  /* Make sure select elements fit in widgets. */
+}
+/* line 5, sass/components/widgets/_widgets.scss */
+.widget select {
+  max-width: 100%;
+}
+
+/* Search widget. */
+/* line 11, sass/components/widgets/_widgets.scss */
+.widget_search .search-submit {
+  display: none;
+}
+
+/* line 1, sass/components/media/_captions.scss */
+.wp-caption {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+/* line 5, sass/components/media/_captions.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, sass/components/media/_captions.scss */
+.wp-caption .wp-caption-text {
+  margin: 10px;
+  margin: 1rem;
+}
+
+/* line 14, sass/components/media/_captions.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 2, sass/components/media/_embeds.scss */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* line 1, sass/components/media/_galleries.scss */
+.gallery {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+/* line 5, sass/components/media/_galleries.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+/* line 11, sass/components/media/_galleries.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+/* line 15, sass/components/media/_galleries.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+/* line 19, sass/components/media/_galleries.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+/* line 23, sass/components/media/_galleries.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+/* line 27, sass/components/media/_galleries.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+/* line 31, sass/components/media/_galleries.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+/* line 35, sass/components/media/_galleries.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+/* line 39, sass/components/media/_galleries.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+/* line 44, sass/components/media/_galleries.scss */
+.gallery-caption {
+  display: block;
+}
+
+/* Make sure emoji fit in context */
+/* line 2, sass/components/media/_icons.scss */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 1, sass/components/media/_images.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/* line 1, sass/components/wysiwyg/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  margin-right: 2rem;
+}
+
+/* line 7, sass/components/wysiwyg/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 20px;
+  margin-left: 2rem;
+}
+
+/* line 13, sass/components/wysiwyg/_alignments.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1, sass/components/_comments.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 4, sass/components/_comments.scss */
+.bypostauthor {
+  display: block;
+}
+
+/* line 1, sass/components/_tables.scss */
+table {
+  margin: 0px 0px 20px;
+  margin: 0rem 0rem 2rem;
+  width: 100%;
+}
+
+/* line 1, sass/components/forms/_buttons.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  border-radius: 0.3rem;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 6px 10px 4px;
+  padding: 0.6rem 1rem 0.4rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+/* line 14, sass/components/forms/_buttons.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+/* line 19, sass/components/forms/_buttons.scss */
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 1, sass/components/pages/_generic.scss */
+.sticky {
+  display: block;
+}
+
+/* line 5, sass/components/pages/_generic.scss */
+.hentry {
+  margin: 0px 0px 20px;
+  margin: 0rem 0rem 2rem;
+}
+
+/* line 9, sass/components/pages/_generic.scss */
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 14, sass/components/pages/_generic.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 19, sass/components/pages/_generic.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 20px 0px 0px;
+  margin: 2rem 0rem 0rem;
+}
+
+/* line 25, sass/components/pages/_generic.scss */
+.page-links {
+  clear: both;
+  margin: 0px 0px 20px;
+  margin: 0rem 0rem 2rem;
+}
+
+/**
+ * @file
+ * Print styling
+ *
+ * We provide some sane print styling for Drupal using Bravery's layout method.
+ */
+/**
+ * By importing this CSS file as media "all", we allow this print file to be
+ * aggregated with other stylesheets, for improved front-end performance.
+ */
+@media print {
+  /* Underline all links. */
+  /* line 15, sass/_print.scss */
+  a:link,
+  a:visited {
+    text-decoration: underline !important;
+    /* Don't underline header. */
+  }
+  /* line 20, sass/_print.scss */
+  a:link.header__site-link,
+  a:visited.header__site-link {
+    text-decoration: none !important;
+  }
+
+  /* line 25, sass/_print.scss */
+  #content {
+    /* Add visible URL after links. */
+    /* Only display useful links. */
+    /* Add visible title after abbreviations. */
+  }
+  /* line 27, sass/_print.scss */
+  #content a[href]:after {
+    content: " (" attr(href) ")";
+    font-weight: normal;
+    font-size: 10px;
+  }
+  /* line 34, sass/_print.scss */
+  #content a[href^="javascript:"]:after,
+  #content a[href^="#"]:after {
+    content: "";
+  }
+  /* line 40, sass/_print.scss */
+  #content abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Un-float the content. */
+  /* line 46, sass/_print.scss */
+  #content {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Turn off any background colors or images. */
+  /* line 54, sass/_print.scss */
+  body,
+  #page,
+  #main,
+  #content {
+    color: #000;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  /* Hide sidebars and nav elements. */
+  /* line 64, sass/_print.scss */
+  #skip-link,
+  #toolbar,
+  #navigation,
+  .region-sidebar-first,
+  .region-sidebar-second,
+  #footer,
+  .breadcrumb,
+  .tabs,
+  .action-links,
+  .links,
+  .book-navigation,
+  .forum-topic-navigation,
+  .pager,
+  .feed-icons {
+    visibility: hidden;
+    display: none;
+  }
+}
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
+
+/*# sourceMappingURL=style.css.map */
