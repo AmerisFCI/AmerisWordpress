@@ -22,16 +22,18 @@ get_sidebar( 'left' ); ?>
 			<?php endwhile; // End of the loop. ?>
 
 			<h3>Resources &amp; Guides</h3>
-			<div class="resources-rotator">
-				<?php foreach( get_field( 'resources_guides' ) as $post ) {
-					setup_postdata( $post ); ?>
-					<a href="<?php the_permalink(); ?>">
-						<?php the_post_thumbnail( 'circle-icon' ); ?>
-						<?php the_title(); ?>
-					</a>
-				<?php }
-				wp_reset_postdata(); ?>
-			</div>
+			<?php if ( get_field( 'resources_guides' ) ) { ?>
+				<div class="resources-rotator">
+					<?php foreach( get_field( 'resources_guides' ) as $post ) {
+						setup_postdata( $post ); ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail( 'circle-icon' ); ?>
+							<?php the_title(); ?>
+						</a>
+					<?php }
+					wp_reset_postdata(); ?>
+				</div>
+			<?php } ?>
 
 		</main><!-- #main -->
 
