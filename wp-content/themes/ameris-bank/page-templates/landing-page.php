@@ -16,10 +16,6 @@ get_sidebar( 'left' ); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="image-banner">
-					<?php the_post_thumbnail( 'full' ); ?>
-				</div>
-
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 					
 				<div class="select-container">
