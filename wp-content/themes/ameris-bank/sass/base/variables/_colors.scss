@@ -6,12 +6,18 @@
 $white: #ffffff;
 $black: #000000;
 
+//Ameris Bank Colors
+$lightblue: #15397f;
+$darkblue: #092764;
+$gray: #3d3d3d;
+$red: #d31145;
+
 // Text
-$text-color: $black;
-$heading-color: $black;
-$link-color: royalblue;
-$link-hover: purple;
-$link-visited: midnightblue;
+$text-color: $gray;
+$heading-color: $darkblue;
+$link-color: $lightblue;
+$link-hover: $darkblue;
+$link-visited: $darkblue;
 
 // Backgrounds
 $bg-body: #fff;

@@ -583,15 +583,15 @@ dd {
 /* Component (SMACSS module) rules */
 /* line 1, sass/components/navigation/_links.scss */
 a {
-  color: royalblue;
+  color: #15397f;
 }
 /* line 4, sass/components/navigation/_links.scss */
 a:visited {
-  color: midnightblue;
+  color: #092764;
 }
 /* line 7, sass/components/navigation/_links.scss */
 a:hover, a:focus, a:active {
-  color: purple;
+  color: #092764;
 }
 /* line 12, sass/components/navigation/_links.scss */
 a:focus {
