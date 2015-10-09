@@ -1,0 +1,12 @@
+.news-meta {
+	font-family: $font-sansserif;
+	text-transform: uppercase;
+	font-weight: 600;
+	@include rem-fallback(font-size, 1.4);
+
+	a {
+		color: $text-color;
+		text-decoration: none;
+	}
+
+}

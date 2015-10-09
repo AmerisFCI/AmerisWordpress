@@ -1,0 +1,12 @@
+.skip-link {
+	width: 100%;
+	@include element-invisible;
+	 &:focus {
+	@include element-invisible-off;
+		 display: block;
+		 @include rem-fallback(padding, 1);
+		 text-align: center;
+		 background: $red;
+		 color: $white;
+	 }
+}

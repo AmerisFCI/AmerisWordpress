@@ -7,8 +7,8 @@
 ?>
 
 <div class="account-access">
-	<h3>Account Access</h3>
-	<form>
+	<h2>Account Access</h2>
+	<form class="account-access__form">
 		<select>
 			<option>Select an account type...</option>
 		</select>

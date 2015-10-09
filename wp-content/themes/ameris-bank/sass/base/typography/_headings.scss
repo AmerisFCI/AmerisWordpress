@@ -1,3 +1,42 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font-heading;
+	//@include rem-fallback(letter-spacing, -.02);
+
+	a {
+		text-decoration: none;
+	}
+
+}
+
+h1 {
+	@include rem-fallback(font-size, 3.6);
+}
+
+h2 {
+	@include rem-fallback(font-size, 3.2);
+	@include rem-fallback(margin-bottom, 2);
+	font-weight: 300;
+}
+
+h3 {
+	@include rem-fallback(font-size, 2.3);
+}
+
+h4 {
+	@include rem-fallback(font-size, 1.8);
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $darkblue;
+	@include rem-fallback(margin-bottom, 1.5);
+}
+
+.kicker {
+	@include rem-fallback(font-size, 1.8);
+	@include rem-fallback(padding, 1, 0);
+	@include rem-fallback(margin, 2, 0);
+	color: $darkblue;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-bottom: 2px solid $red;
 }

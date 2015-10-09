@@ -4,7 +4,7 @@
 
 // Setting base font size as 10 for easy maths
 $base-font-size:   10px; // The font size set on the root html element
-$base-line-height: 24px; // The base line height
+$base-line-height: 1.2; // The base line height
 
 $h1-font-size: 3.2 * $base-font-size;
 $h2-font-size: 2.4 * $base-font-size;
@@ -28,8 +28,14 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Font stack variables
-$base-font-family: $verdana; // The font family set on the html element.
-$font-body:        $verdana;
+$base-font-family:'Chaparral Pro', $georgia; // The font family set on the html element.
+$font-body:       'Chaparral Pro', $georgia;
+$Chaparral-Pro: 	'Chaparral Pro', $georgia;
+
+$font-heading:		'canada-type-gibson', $helvetica;
+$font-sansserif:	'canada-type-gibson', $helvetica;
+$Gibson: 					'canada-type-gibson', $helvetica;
+
 $font-monospace:   $courier;
 
 // Font weights /* this will need to be changed depending on the actual font you are using */

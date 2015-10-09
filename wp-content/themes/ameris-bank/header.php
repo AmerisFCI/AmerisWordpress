@@ -27,35 +27,39 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		
-		<div class="site-branding">
-			<div class="site-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/build/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
-				</a>
-			</div>
-		</div><!-- .site-branding -->
+		<div class="site-header__inner-wrap inner-wrap">
 
-		<?php wp_nav_menu( array(
-			'theme_location'  => 'header-utility',
-			'container'       => 'nav',
-			'container_class' => 'utility-navigation',
-			'fallback_cb'     => false
-		) ); ?>
+			<div class="site-branding">
+				<div class="site-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
+						<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/build/logo.png" alt="<?php bloginfo( 'name' ); ?>" /> -->
+					</a>
+				</div>
+			</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'ameris-bank' ); ?></button>
 			<?php wp_nav_menu( array(
-				'theme_location' => 'header-main',
-				'menu_id'        => 'primary-menu',
-				'fallback_cb'    => false,
-				'walker'         => new Ameris_Description_Walker // enable item descriptions
+				'theme_location'  => 'header-utility',
+				'container'       => 'nav',
+				'container_class' => 'utility-navigation',
+				'fallback_cb'     => false
 			) ); ?>
-		</nav><!-- #site-navigation -->
 
-		<form class="search-form">
-			<input type="text" name="s" placeholder="What are you looking for?" value="<?php the_search_query(); ?>" />
-			<input type="submit" value="Search" />
-		</form>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'ameris-bank' ); ?></button>
+				<?php wp_nav_menu( array(
+					'theme_location' => 'header-main',
+					'menu_id'        => 'primary-menu',
+					'fallback_cb'    => false,
+					'walker'         => new Ameris_Description_Walker // enable item descriptions
+				) ); ?>
+			</nav><!-- #site-navigation -->
+
+			<form class="search-form">
+				<input type="text" name="s" placeholder="What are you looking for?" value="<?php the_search_query(); ?>" />
+				<input type="submit" value="Search" />
+			</form>
+
+		</div>
 
 	</header><!-- #masthead -->
 

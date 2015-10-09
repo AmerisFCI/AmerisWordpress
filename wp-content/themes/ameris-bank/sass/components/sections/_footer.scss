@@ -1,0 +1,4 @@
+.site-footer {
+	@include background-image(linear-gradient(to top right, $darkblue, $lightblue));
+	@include rem-fallback(padding, 3, 2, 5);
+}

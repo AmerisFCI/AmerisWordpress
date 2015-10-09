@@ -1,0 +1,32 @@
+.utility-navigation {
+	font-family: $font-sansserif;
+	font-weight: 300;
+
+	a {
+		color: $white;
+		display: inline-block;
+		@include rem-fallback(padding, 2, 1.25);
+	}
+
+}
+
+@include breakpoint($mobile) {
+	.utility-navigation {
+		display: none;
+	}
+}
+
+@include breakpoint($tablet) {
+	.utility-navigation {
+		display: none;
+	}
+}
+
+@include breakpoint($desktop) {
+
+	.utility-navigation {
+		text-align: right;
+
+	}
+
+}

@@ -23,13 +23,13 @@ $link-visited: $darkblue;
 $bg-body: #fff;
 $bg-screen: #f1f1f1;
 $bg-hr: #ccc;
-$bg-button: #e6e6e6;
+$bg-button: $darkblue;
 $bg-pre: #eee;
 $bg-ins: #fff9c0;
 
 // Borders
-$border-button: #ccc #ccc #bbb;
-$border-button-hover: #ccc #bbb #aaa;
-$border-button-focus: #aaa #bbb #bbb;
-$border-input: #ccc;
-$border-abbr: #666;
+$border-button: transparent;
+$border-button-hover: transparent;
+$border-button-focus: transparent;
+$border-input: transparent;
+$border-abbr: transparent;

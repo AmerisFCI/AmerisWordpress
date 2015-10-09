@@ -1,0 +1,16 @@
+.slides {
+	height: 100vh;
+	background-color: $darkblue;
+	color: $white;
+}
+
+.slide__title.kicker {
+	color: $white;
+}
+
+.slide__blurb {
+}
+
+.button.slide__cta {
+	@include red-button-cta;
+}

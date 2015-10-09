@@ -1,28 +1,38 @@
+input {
+	width: 100%;
+}
+
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
-textarea {
-	color: $link-color;
+textarea,
+.sod_select {
 	border: 1px solid $border-input;
-	@include rem-fallback(border-radius, 0.3);
+	height: auto;
+	@include border-radius(5px);
+	width: 300px;
+	max-width: 100%;
+	line-height: 1;
+	background: $white;
+	color: $link-color;
+	@include rem-fallback(padding, 1.5, 1);
+	@include rem-fallback(font-size, 1.8);
+	@include rem-fallback(margin-bottom, 1.25);
 
 	&:focus {
 		color: $link-hover;
+		border-color: $link-color;
 	}
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	@include rem-fallback(padding-left, 0.3);
+textarea {
+	width: 100%;
 }
 
-textarea {
-	padding-left: 3px;
-	@include rem-fallback(padding-left, 0.3);
-	width: 100%;
+
+@include breakpoint($desktop) {
+	input {width: auto;}
 }

@@ -23,9 +23,11 @@ get_header(); ?>
 						
 						<div class="slide">
 							<?php the_post_thumbnail( 'full' ); ?>
-							<h2 class="slide-title"><?php the_title(); ?></h2>
-							<h3 class="slide-blurb"><?php the_field( 'blurb' ); ?></h2>
-							<a class="button" href="<?php the_field( 'link' ); ?>"><?php the_field( 'link_text' ); ?></a>
+							<div class="slide__text-wrap">
+								<h2 class="slide__title kicker"><?php the_title(); ?></h2>
+								<h3 class="slide__blurb"><?php the_field( 'blurb' ); ?></h2>
+									<a class="button slide__cta" href="<?php the_field( 'link' ); ?>"><?php the_field( 'link_text' ); ?></a>
+							</div>
 						</div>
 
 					<?php }
@@ -52,6 +54,9 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 			<div class="latest-news">
+
+				<h2 class="kicker">Latest News</h2>
+
 				<?php $news_query = new WP_Query( array(
 					'post_type'              => 'post',
 					'posts_per_page'         => 3,
@@ -63,15 +68,15 @@ get_header(); ?>
 						$news_query->the_post(); ?>
 						
 						<div class="news-item">
-							<a href="<?php the_permalink(); ?>">
+							<a class="news-item__link" href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail( 'news-home' ); ?>
-								<h2 class="news-title"><?php the_title(); ?></h2>
+								<h3 class="news-item__title"><?php the_title(); ?></h3>
 							</a>
 							<div class="news-meta">
-								<span class="news-date"><?php the_time( 'm.d.Y' ); ?></span>
-								<span class="news-topic"><?php the_category( ', ' ); ?></span>
+								<span class="news-meta__date"><?php the_time( 'm.d.Y' ); ?></span>
+								<span class="news-meta__topic"><?php the_category( ', ' ); ?></span>
 							</div>
-							<div class="news-excerpt"><?php the_excerpt(); ?></div>
+							<div class="news-item__excerpt"><?php the_excerpt(); ?></div>
 							
 						</div>
 

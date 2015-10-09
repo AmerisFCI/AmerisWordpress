@@ -1,0 +1,32 @@
+.account-access {
+	background: $red;
+	@include rem-fallback(padding, 2, 2, 1.5, 2);
+	color: $white;
+
+	input {
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		@include blue-button-cta;
+		width: auto;
+		@include rem-fallback(margin, 1, 0, 1.5);
+	}
+
+	a {
+		color: $white;
+	}
+
+	p {
+		font-style: italic;
+		margin-bottom: 0;
+		font-weight: 300;
+	}
+
+}
+
+@include breakpoint($desktop) {
+	.account-access {
+		@include grid-span(3, 1);
+	}
+}

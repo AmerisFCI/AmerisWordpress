@@ -8,6 +8,7 @@
 	} );
 
 
+	$("select").selectOrDie();
 	// Put code here
 
 
