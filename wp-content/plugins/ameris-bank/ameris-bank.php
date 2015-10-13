@@ -12,4 +12,5 @@ require_once( $includes . 'post-types.php' );
 require_once( $includes . 'sidebars.php' );
 require_once( $includes . 'taxonomies.php' );
 
-require_once( $includes . 'widget-tweets.php' );
+require_once( $includes . 'widget-account.php' );
+require_once( $includes . 'widget-callout.php' );
