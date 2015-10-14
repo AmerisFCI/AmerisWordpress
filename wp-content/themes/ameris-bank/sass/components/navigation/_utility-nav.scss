@@ -5,7 +5,13 @@
 	a {
 		color: $white;
 		display: inline-block;
-		@include rem-fallback(padding, 2, 1.25);
+		border-bottom: 1px solid transparent;
+		transition: border .5s;
+		@include rem-fallback(padding, 2, .5, .5);
+		@include rem-fallback(margin-left, 1.5);
+		&:hover, &:focus {
+			border-bottom-color: $white;
+		}
 	}
 
 }

@@ -1,0 +1,20 @@
+.search-form {
+
+	input {
+		@include rem-fallback(font-size, 1.8);
+
+		&[type="text"] {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			margin-bottom: 0;
+		}
+
+		&[type="submit"] {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			text-indent: -9999px;
+		}
+
+	}
+
+}
