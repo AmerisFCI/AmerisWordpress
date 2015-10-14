@@ -1,9 +1,8 @@
 <?php
-
 /**
- * Widget to display the latest tweets, minimal markup.
+ * Widget to display a callout to a specific page.
  */
-class Ameris_Widget extends WP_Widget {
+class Ameris_Page_Callout_Widget extends WP_Widget {
 
 	/**
 	 * Default field values.
@@ -15,18 +14,21 @@ class Ameris_Widget extends WP_Widget {
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
+
 		$this->defaults = array(
-			'subhead'   => '',
-			'headline'  => '',
-			'blurb'     => '',
 			'page'      => 0,
+			'image'     => '',
+			'label'     => '',
+			'headline'  => '',
 			'link_text' => ''
 		);
+
 		parent::__construct(
-			'fred_history_widget',
-			'Our First 75 Years',
-			array( 'description' => 'The "First 75 Years" widget designed to display above the footer of most pages.' )
+			'ameris_page_callout_widget',
+			'Ameris Page Callout',
+			array( 'description' => 'Callout box for a specific page.' )
 		);
+
 	}
 
 	/**
@@ -39,19 +41,32 @@ class Ameris_Widget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		$instance = wp_parse_args( $instance, $this->defaults );
+		$instance = array_intersect_key( $instance, $this->defaults );
 
-		echo $args['before_widget'];
-		?>
-		<div class="diamond history-diamond">
-			<h4><?php echo esc_html( $instance['subhead'] ); ?></h4>
-			<h2><?php echo esc_html( $instance['headline'] ); ?></h2>
-			<p><?php echo esc_html( $instance['blurb'] ); ?></p>
-			<a class="button" href="<?php echo get_permalink( (int) $instance['page'] ); ?>">
-				<?php echo esc_html( $instance['link_text'] ); ?>
-			</a>
+		if ( $instance['page'] ) {
+
+			// get page title if there's no label
+			if ( !$instance['label'] )
+				$instance['label'] = get_the_title( (int) $instance['page'] );
+
+			// get featured image if there's no image
+			if ( !$instance['image'] ) {
+				$image_array = wp_get_attachment_image_src( get_post_thumbnail_id( $instance['page'] ), 'callout-box' );
+				$instance['image'] = $image_array[0];
+			}
+
+		}
+
+		echo $args['before_widget']; ?>
+
+		<div class="callout-box widget" style="background-image:url( '<?php echo $instance['image']; ?>' );">
+			<h5><?php echo $instance['label']; ?></h5>
+			<h4><?php echo $instance['headline']; ?></h4>
+			<a href="<?php echo get_permalink( $instance['page'] ); ?>"><?php echo $instance['link_text']; ?></a>
 		</div>
-		<?php
-		echo $args['after_widget'];
+
+		<?php echo $args['after_widget'];
+
 	}
 
 	/**
@@ -63,18 +78,15 @@ class Ameris_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		$instance = wp_parse_args( $instance, $this->defaults );
+		$instance = array_intersect_key( $instance, $this->defaults );
 
 		foreach( $instance as $key => $value ) {
 			$label = ucwords( str_replace( '_', ' ', $key ) );
+			if ( $label === 'Image' ) $label = 'Image URL';
+
 			?><p>
-				<label for="<?php echo $this->get_field_id( $key ); ?>"><?php echo $label; ?>:</label>
+				<label for="<?php echo $this->get_field_id( $key ); ?>"><?php echo $label; ?></label>
 				<?php switch( $key ) {
-					// textarea field
-					case 'blurb' :
-						?>
-						<textarea class="widefat" id="<?php echo $this->get_field_id( $key ); ?>" name="<?php echo $this->get_field_name( $key ); ?>" rows="6"><?php echo esc_attr( $value ); ?></textarea>
-						<?php
-						break;
 					// page dropdown field
 					case 'page' :
 						wp_dropdown_pages( array(
@@ -91,6 +103,12 @@ class Ameris_Widget extends WP_Widget {
 						<?php
 						break;
 				} ?>
+				<?php if ( $key === 'label' ) { ?>
+					<span class="howto">If left blank, the page title will be used.</span>
+				<?php } ?>
+				<?php if ( $key === 'image' ) { ?>
+					<span class="howto">If left blank, the page's featured image will be used.</span>
+				<?php } ?>
 			</p><?php
 		}
 	}
@@ -107,11 +125,15 @@ class Ameris_Widget extends WP_Widget {
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance = wp_parse_args( $new_instance, $this->defaults );
+		$instance = array_intersect_key( $instance, $this->defaults );
 
 		foreach( $instance as $key => $value ) {
 			switch( $key ) {
 				case 'page' :
 					$instance[$key] = (int) $value;
+					break;
+				case 'image' :
+					$instance[$key] = esc_url_raw( $value );
 					break;
 				default:
 					$instance[$key] = sanitize_text_field( $value );

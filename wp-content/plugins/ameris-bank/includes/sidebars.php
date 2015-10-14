@@ -5,7 +5,8 @@
  */
 function ameris_widgets_init() {
 
-	// register_widget( 'fred_history_widget' );
+	register_widget( 'ameris_account_widget' );
+	register_widget( 'ameris_page_callout_widget' );
 	
 	register_sidebar( array(
 		'name'          => 'Left Sidebar',
