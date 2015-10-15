@@ -1,20 +1,41 @@
 .search-form {
 
+	position: relative;
+
 	input {
 		@include rem-fallback(font-size, 1.8);
 
 		&[type="text"] {
-			border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
 			margin-bottom: 0;
+			@include rem-fallback(padding, .8, 4.8, .3, 1);
+			&:focus {
+				border-color: $white;
+			}
 		}
 
 		&[type="submit"] {
+			text-indent: -9999px;
+			@include red-button;
 			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
-			text-indent: -9999px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+
+
 		}
 
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		@include rem-fallback(top, .3);
+		@include rem-fallback(right, .7);
+		@include use-sprite(icon-search-magnify);
+		pointer-events: none;
 	}
 
 }

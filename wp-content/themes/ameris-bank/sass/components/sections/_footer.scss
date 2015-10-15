@@ -1,4 +1,29 @@
 .site-footer {
 	@include background-image(linear-gradient(to top right, $darkblue, $lightblue));
 	@include rem-fallback(padding, 3, 2, 5);
+
+	font-family: $font-sansserif;
+	color: $white;
+	@include rem-fallback(font-size, 1.6);
+	font-weight: 300;
+
+	a {
+		color: $white;
+		text-decoration: underline;
+		@include rem-fallback(padding, 1, 0, 0, 1);
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+		&:visited {
+			color: shade($white, 5%);
+		}
+	}
+}
+
+.copyright, .footer-copyright-links {
+	float: left;
+}
+
+.footer-utility {
+	float: right;
 }

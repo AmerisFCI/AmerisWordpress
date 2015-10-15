@@ -32,7 +32,11 @@
 			<div class="site-branding">
 				<div class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
-						<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/build/logo.png" alt="<?php bloginfo( 'name' ); ?>" /> -->
+						<span class="element-invisible">
+							<?php if ( is_front_page()) : ?><h1><?php endif; ?>
+								AmerisBank
+							<?php if ( is_front_page()) : ?></h1><?php endif; ?>
+						</span>
 					</a>
 				</div>
 			</div><!-- .site-branding -->

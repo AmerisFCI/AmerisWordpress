@@ -971,9 +971,11 @@ a:hover, a:active {
   /* line 116, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     text-align: right;
+    margin-right: 30px;
+    margin-right: 3rem;
   }
 }
-/* line 125, sass/components/navigation/_menu-main.scss */
+/* line 127, sass/components/navigation/_menu-main.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -981,14 +983,14 @@ a:hover, a:active {
   margin: 0rem 0rem 2rem;
   overflow: hidden;
 }
-/* line 130, sass/components/navigation/_menu-main.scss */
+/* line 132, sass/components/navigation/_menu-main.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 135, sass/components/navigation/_menu-main.scss */
+/* line 137, sass/components/navigation/_menu-main.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1038,22 +1040,83 @@ a:hover, a:active {
     text-align: right;
   }
 }
-/* line 3, sass/components/navigation/_search-box.scss */
+/* line 1, sass/components/navigation/_search-box.scss */
+.search-form {
+  position: relative;
+}
+/* line 5, sass/components/navigation/_search-box.scss */
 .search-form input {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 6, sass/components/navigation/_search-box.scss */
+/* line 8, sass/components/navigation/_search-box.scss */
 .search-form input[type="text"] {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
   margin-bottom: 0;
+  padding: 8px 48px 3px 10px;
+  padding: 0.8rem 4.8rem 0.3rem 1rem;
 }
-/* line 12, sass/components/navigation/_search-box.scss */
+/* line 11, sass/components/navigation/_search-box.scss */
+.search-form input[type="text"]:focus {
+  border-color: #ffffff;
+}
+/* line 16, sass/components/navigation/_search-box.scss */
 .search-form input[type="submit"] {
+  text-indent: -9999px;
+  background-color: #d31145;
+  color: #ffffff;
+  padding: 10px 20px;
+  padding: 1rem 2rem;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
+  transition: background-color .2s, box-shadow .2s;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+/* line 149, sass/base/_mixins.scss */
+.search-form input[type="submit"]:hover, .search-form input[type="submit"]:active, .search-form input[type="submit"]:focus {
+  background-color: #b30e3a;
+  box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
+}
+/* line 154, sass/base/_mixins.scss */
+.search-form input[type="submit"]:focus {
+  text-decoration: underline;
+}
+/* line 158, sass/base/_mixins.scss */
+.search-form input[type="submit"]:hover, .search-form input[type="submit"]:visited, .search-form input[type="submit"]:focus {
+  color: #ffffff;
+}
+/* line 31, sass/components/navigation/_search-box.scss */
+.search-form:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  top: 0.3rem;
+  right: 7px;
+  right: 0.7rem;
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -563px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 26px;
+  pointer-events: none;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 31, sass/components/navigation/_search-box.scss */
+  .search-form:after {
+    background-size: 215px 2153.5px;
+    background-position: 0 -250.5px;
+    height: 26px;
+    width: 26px;
+  }
 }
 
 /* line 1, sass/components/sections/_header.scss */
@@ -1091,8 +1154,8 @@ a:hover, a:active {
 
 /* line 25, sass/components/sections/_header.scss */
 .logo {
-  background-image: url('images/sprite-images-s78ac3df107.png');
-  background-position: 0 -190px;
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -3254px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 90px;
@@ -1102,8 +1165,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 25, sass/components/sections/_header.scss */
   .logo {
-    background-size: 215px 174px;
-    background-position: 0 0;
+    background-size: 215px 2153.5px;
+    background-position: 0 -1364px;
     height: 90px;
     width: 215px;
   }
@@ -1141,6 +1204,36 @@ a:hover, a:active {
   background-image: linear-gradient(to top right, #092764, #15397f);
   padding: 30px 20px 50px;
   padding: 3rem 2rem 5rem;
+  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+/* line 10, sass/components/sections/_footer.scss */
+.site-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  padding: 10px 0px 0px 10px;
+  padding: 1rem 0rem 0rem 1rem;
+}
+/* line 14, sass/components/sections/_footer.scss */
+.site-footer a:hover, .site-footer a:focus {
+  text-decoration: none;
+}
+/* line 17, sass/components/sections/_footer.scss */
+.site-footer a:visited {
+  color: #f2f2f2;
+}
+
+/* line 23, sass/components/sections/_footer.scss */
+.copyright, .footer-copyright-links {
+  float: left;
+}
+
+/* line 27, sass/components/sections/_footer.scss */
+.footer-utility {
+  float: right;
 }
 
 /* line 1, sass/components/widgets/_widgets.scss */
@@ -1290,7 +1383,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: #092764;
+  background-color: #092764;
   color: #ffffff;
   padding: 10px 20px;
   padding: 1rem 2rem;
@@ -1299,7 +1392,7 @@ input[type="submit"] {
   border-radius: 5px;
   font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
-  transition: background .2s, box-shadow .2s;
+  transition: background-color .2s, box-shadow .2s;
 }
 /* line 172, sass/base/_mixins.scss */
 a.button:hover, a.button:active, a.button:focus,
@@ -1315,7 +1408,7 @@ input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  background: #15397f;
+  background-color: #15397f;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 177, sass/base/_mixins.scss */
@@ -1449,7 +1542,7 @@ textarea {
 
 /* line 15, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
-  background: #d31145;
+  background-color: #d31145;
   color: #ffffff;
   padding: 10px 20px;
   padding: 1rem 2rem;
@@ -1458,7 +1551,7 @@ textarea {
   border-radius: 5px;
   font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
-  transition: background .2s, box-shadow .2s;
+  transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px;
   padding: 1.7rem 3rem;
   font-size: 21px;
@@ -1468,7 +1561,7 @@ textarea {
 }
 /* line 149, sass/base/_mixins.scss */
 .button.slide__cta:hover, .button.slide__cta:active, .button.slide__cta:focus {
-  background: #d51c4e;
+  background-color: #b30e3a;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 154, sass/base/_mixins.scss */
@@ -1493,7 +1586,7 @@ textarea {
 }
 /* line 10, sass/components/pages/home/_accountaccess.scss */
 .account-access input[type="submit"] {
-  background: #092764;
+  background-color: #092764;
   color: #ffffff;
   padding: 10px 20px;
   padding: 1rem 2rem;
@@ -1502,7 +1595,7 @@ textarea {
   border-radius: 5px;
   font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
-  transition: background .2s, box-shadow .2s;
+  transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px;
   padding: 1.7rem 3rem;
   font-size: 21px;
@@ -1515,7 +1608,7 @@ textarea {
 }
 /* line 172, sass/base/_mixins.scss */
 .account-access input[type="submit"]:hover, .account-access input[type="submit"]:active, .account-access input[type="submit"]:focus {
-  background: #15397f;
+  background-color: #15397f;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 177, sass/base/_mixins.scss */
