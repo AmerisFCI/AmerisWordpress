@@ -18,7 +18,9 @@
 	}
 }
 
-
+.site-branding {
+	@include rem-fallback(margin, 1, 0);
+}
 
 .logo {
 	@include use-sprite("logo");
@@ -34,14 +36,15 @@
 
 	}
 	.nav-wrapper {
-		@include grid-span(9,4);
+		//@include grid-span(9,4);
+		float: right;
 	}
 	.main-navigation {
-		//@include float-span(6);
-		float: left;
-		clear: both;
+		float: right;
 	}
+
 	.search-form {
 		float: right;
+		clear: both;
 	}
 }

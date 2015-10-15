@@ -860,8 +860,8 @@ a:hover, a:active {
   text-transform: uppercase;
   font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   display: block;
-  padding: 10px 15px;
-  padding: 1rem 1.5rem;
+  padding: 15px 15px 20px;
+  padding: 1.5rem 1.5rem 2rem;
   transition: background .5s, color .5s;
 }
 /* line 15, sass/components/navigation/_menu-main.scss */
@@ -1001,8 +1001,10 @@ a:hover, a:active {
 .utility-navigation {
   font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 300;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
-/* line 5, sass/components/navigation/_utility-nav.scss */
+/* line 6, sass/components/navigation/_utility-nav.scss */
 .utility-navigation a {
   color: #ffffff;
   display: inline-block;
@@ -1013,25 +1015,25 @@ a:hover, a:active {
   margin-left: 15px;
   margin-left: 1.5rem;
 }
-/* line 12, sass/components/navigation/_utility-nav.scss */
+/* line 13, sass/components/navigation/_utility-nav.scss */
 .utility-navigation a:hover, .utility-navigation a:focus {
   border-bottom-color: #ffffff;
 }
 
 @media (max-width: 479px) {
-  /* line 20, sass/components/navigation/_utility-nav.scss */
+  /* line 21, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     display: none;
   }
 }
 @media (min-width: 480px) and (max-width: 959px) {
-  /* line 26, sass/components/navigation/_utility-nav.scss */
+  /* line 27, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     display: none;
   }
 }
 @media (min-width: 960px) {
-  /* line 33, sass/components/navigation/_utility-nav.scss */
+  /* line 34, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     text-align: right;
   }
@@ -1081,7 +1083,13 @@ a:hover, a:active {
   z-index: 1;
 }
 
-/* line 23, sass/components/sections/_header.scss */
+/* line 21, sass/components/sections/_header.scss */
+.site-branding {
+  margin: 10px 0px;
+  margin: 1rem 0rem;
+}
+
+/* line 25, sass/components/sections/_header.scss */
 .logo {
   background-image: url('images/sprite-images-s78ac3df107.png');
   background-position: 0 -190px;
@@ -1092,7 +1100,7 @@ a:hover, a:active {
   display: block;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 23, sass/components/sections/_header.scss */
+  /* line 25, sass/components/sections/_header.scss */
   .logo {
     background-size: 215px 174px;
     background-position: 0 0;
@@ -1102,29 +1110,25 @@ a:hover, a:active {
 }
 
 @media (min-width: 960px) {
-  /* line 29, sass/components/sections/_header.scss */
+  /* line 31, sass/components/sections/_header.scss */
   .site-branding {
     float: left;
   }
 
-  /* line 36, sass/components/sections/_header.scss */
+  /* line 38, sass/components/sections/_header.scss */
   .nav-wrapper {
-    width: 74.57627%;
     float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
   }
 
-  /* line 39, sass/components/sections/_header.scss */
+  /* line 42, sass/components/sections/_header.scss */
   .main-navigation {
-    float: left;
-    clear: both;
+    float: right;
   }
 
-  /* line 44, sass/components/sections/_header.scss */
+  /* line 46, sass/components/sections/_header.scss */
   .search-form {
     float: right;
+    clear: both;
   }
 }
 /* line 1, sass/components/sections/_footer.scss */

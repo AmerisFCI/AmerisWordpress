@@ -46,6 +46,11 @@
 					'fallback_cb'     => false
 				) ); ?>
 
+				<form class="search-form">
+					<input type="text" name="s" placeholder="What are you looking for?" value="<?php the_search_query(); ?>" />
+					<input type="submit" value="Search" />
+				</form>
+
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'ameris-bank' ); ?></button>
 					<?php wp_nav_menu( array(
@@ -56,10 +61,7 @@
 					) ); ?>
 				</nav><!-- #site-navigation -->
 
-				<form class="search-form">
-					<input type="text" name="s" placeholder="What are you looking for?" value="<?php the_search_query(); ?>" />
-					<input type="submit" value="Search" />
-				</form>
+
 
 			</div>
 

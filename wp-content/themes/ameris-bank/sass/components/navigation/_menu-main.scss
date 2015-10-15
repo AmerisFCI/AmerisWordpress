@@ -10,7 +10,7 @@
 		text-transform: uppercase;
 		font-family: $font-heading;
 		display: block;
-		@include rem-fallback(padding, 1, 1.5);
+		@include rem-fallback(padding, 1.5, 1.5, 2);
 		transition: background .5s, color .5s;
 		&:hover, &:focus {
 			background-color: $white;
