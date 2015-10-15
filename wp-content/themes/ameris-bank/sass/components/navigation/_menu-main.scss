@@ -1,6 +1,22 @@
 .main-navigation {
 
-	a {color: $white}
+	@include rem-fallback(font-size, 1.8);
+	a {
+		color: $white;
+
+	}
+
+	.menu-item a {
+		text-transform: uppercase;
+		font-family: $font-heading;
+		display: block;
+		@include rem-fallback(padding, 1.5, 1.5, 2);
+		transition: background .5s, color .5s;
+		&:hover, &:focus {
+			background-color: $white;
+			color: $link-color;
+		}
+	}
 }
 
 
@@ -99,6 +115,8 @@
 	}
 	.main-navigation {
 		text-align: right;
+		@include rem-fallback(margin-right, 3);
+
 	}
 }
 

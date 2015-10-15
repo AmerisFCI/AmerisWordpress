@@ -138,16 +138,16 @@ $sprite-high-res-suffix: '-2x' !default;
 }
 
 @mixin red-button {
-  background: $red;
+  background-color: $red;
   color: $white;
   @include rem-fallback(padding, 1, 2);
   @include border-radius(5px);
   font-family: $font-sansserif;
   box-shadow: 0 .5rem rgba(21,57,127,.2);
-  transition: background .2s, box-shadow .2s;
+  transition: background-color .2s, box-shadow .2s;
 
   &:hover, &:active, &:focus {
-    background: tint($red, 5%);
+    background-color: shade($red, 15%);
     box-shadow: 0 .7rem rgba(21,57,127,.2);
   }
 
@@ -161,16 +161,16 @@ $sprite-high-res-suffix: '-2x' !default;
 }
 
 @mixin blue-button {
-  background: $darkblue;
+  background-color: $darkblue;
   color: $white;
   @include rem-fallback(padding, 1, 2);
   @include border-radius(5px);
   font-family: $font-sansserif;
   box-shadow: 0 .5rem rgba(21,57,127,.2);
-  transition: background .2s, box-shadow .2s;
+  transition: background-color .2s, box-shadow .2s;
   
   &:hover, &:active, &:focus {
-    background: $lightblue;
+    background-color: $lightblue;
     box-shadow: 0 .7rem rgba(21,57,127,.2);
   }
 
