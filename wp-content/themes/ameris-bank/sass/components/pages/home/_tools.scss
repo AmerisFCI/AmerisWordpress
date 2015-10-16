@@ -10,7 +10,7 @@
 	.home-tools {
 		@include add-grid(12);
 		@include add-gutter(1/3);
-		@include rem-fallback(margin-top, 2);
+		@include rem-fallback(margin-top, 3);
 
 	}
 	.tool {

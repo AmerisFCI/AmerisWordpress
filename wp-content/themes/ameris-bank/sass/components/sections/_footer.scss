@@ -1,7 +1,7 @@
 .site-footer {
-	@include background-image(linear-gradient(to top right, $darkblue, $lightblue));
-	@include rem-fallback(padding, 3, 2, 5);
 
+	@include background-image(linear-gradient(to top right, shade($darkblue, 25%), tint($lightblue, 5%)));
+	@include rem-fallback(padding, 3, 0, 25);
 	font-family: $font-sansserif;
 	color: $white;
 	@include rem-fallback(font-size, 1.6);
@@ -11,19 +11,117 @@
 		color: $white;
 		text-decoration: underline;
 		@include rem-fallback(padding, 1, 0, 0, 1);
+
 		&:hover, &:focus {
 			text-decoration: none;
 		}
+
 		&:visited {
 			color: shade($white, 5%);
+		}
+
+	}
+
+}
+
+@include breakpoint($narrow-to-desktop) {
+
+	.site-footer {
+		@include rem-fallback(padding, 3.5, 0, 45);
+	}
+
+}
+
+
+.footer__logo {
+	display: inline-block;
+	@include rem-fallback(margin-right, 1);
+}
+
+#Member_FDIC {
+	@include use-sprite(logo-Member_FDIC);
+}
+
+#Equal_Housing_Lender {
+	@include use-sprite(logo-Equal_Housing_Lender);
+}
+
+.footer-top {
+	@include rem-fallback(margin-bottom, 2);
+	@include rem-fallback(padding-bottom, 2);
+	border-bottom: 2px solid tint($lightblue, 10%);
+	@include clearfix();
+}
+
+.copyright, .footer-copyright-links, .site-info {
+	float: left;
+}
+
+.footer-utility, .newsletter-signup {
+	float: right;
+}
+
+.newsletter-signup {
+	position: relative;
+
+	input {
+		@include rem-fallback(font-size, 1.8);
+
+		&[type="text"] {
+			margin-bottom: 0;
+			@include rem-fallback(padding, .8, 2, .3, 1);
+			height: 100%;
+			&:focus {
+				border-color: $white;
+			}
+		}
+
+		&[type="submit"] {
+			//text-indent: -9999px;
+			@include red-button;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			@include rem-fallback(padding, .8, 2, .9, 1);
+			//position: absolute;
+			//top: 0;
+			//right: 0;
+			//height: 100%;
+			@include rem-fallback(margin-left, -1);
+
+			@include rem-fallback(padding-left, 4.2);
+
+
+
+		}
+
+	}
+	.newsletter-signup__submit__icon {
+		position: relative;
+		@include rem-fallback(margin-left, -1);
+
+		&:before {
+			content: "";
+			display: inline-block;
+			pointer-events: none;
+			position: absolute;
+			@include rem-fallback(left, 0);
+			@include rem-fallback(top, .4);
+			@include use-sprite(icon-newsletter);
+			//transition: left .2s;
+		}
+
+		&:hover:after, &:focus:after {
+			//@include rem-fallback(left, 1.9);
 		}
 	}
 }
 
-.copyright, .footer-copyright-links {
-	float: left;
+.newsletter-signup__email {
+
 }
 
-.footer-utility {
-	float: right;
+.newsletter-signup__submit {
+
 }
+
+
