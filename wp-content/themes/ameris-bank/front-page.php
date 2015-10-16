@@ -23,10 +23,12 @@ get_header(); ?>
 						
 						<div class="slide">
 							<?php the_post_thumbnail( 'full' ); ?>
-							<div class="slide__text-wrap">
-								<h2 class="slide__title kicker"><?php the_title(); ?></h2>
-								<h3 class="slide__blurb"><?php the_field( 'blurb' ); ?></h3>
+							<div class="inner-wrap slide__inner-wrap">
+								<div class="slide__text-wrap">
+									<h2 class="slide__title kicker"><?php the_title(); ?></h2>
+									<h3 class="slide__blurb"><?php the_field( 'blurb' ); ?></h3>
 									<a class="button slide__cta" href="<?php the_field( 'link' ); ?>"><?php the_field( 'link_text' ); ?></a>
+								</div>
 							</div>
 						</div>
 

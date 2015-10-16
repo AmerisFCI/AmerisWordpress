@@ -11,3 +11,16 @@
 	}
 
 }
+
+li.menu-item-has-children ul.sub-menu {
+	position: absolute;
+	text-align: left;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(255,255,255,.5);
+}
+
+li.menu-item-has-children:hover ul {
+	display: block;
+}

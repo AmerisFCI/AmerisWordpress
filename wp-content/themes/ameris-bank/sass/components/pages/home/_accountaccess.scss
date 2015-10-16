@@ -2,6 +2,7 @@
 	background: $red;
 	@include rem-fallback(padding, 2, 2, 1.5, 2);
 	color: $white;
+	@include rem-fallback(margin-bottom, 2);
 
 	input, .sod_select, .sod_select .sod_list_wrapper {
 		width: 100%;
@@ -25,9 +26,11 @@
 
 }
 
-@include breakpoint($desktop) {
+@include breakpoint($narrow-to-desktop) {
 	.account-access {
 		@include rem-fallback(padding, 2.6, 2.6, 2);
+		@include rem-fallback(margin-top, -6);
+		@include rem-fallback(margin-bottom, 6);
 
 		p {
 			@include rem-fallback(font-size, 2);
