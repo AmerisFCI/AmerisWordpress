@@ -20,6 +20,7 @@
 
 .site-branding {
 	@include rem-fallback(margin, 1, 0);
+	float: left;
 }
 
 .logo {
@@ -27,24 +28,33 @@
 	display: block;
 }
 
+.nav-wrapper {
+	//@include grid-span(9,4);
+	float: right;
+}
+
+.menu-toggle {
+	float: right;
+	clear: right;
+}
+
+
+.search-form {
+	float: right;
+}
+
+
 @include breakpoint($desktop) {
-	.site-branding {
-		//@include grid-span(3,1);
-		float: left;
-	}
+	
 	.utility-navigation {
 
 	}
-	.nav-wrapper {
-		//@include grid-span(9,4);
-		float: right;
-	}
+
 	.main-navigation {
 		float: right;
 	}
 
 	.search-form {
-		float: right;
 		clear: both;
 	}
 }

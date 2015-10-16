@@ -16,12 +16,12 @@
 		<div class="inner-wrap footer_inner-wrap">
 			<div class="footer-top">
 				<div class="site-info">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/build/fdic.png" alt="Member FDIC" />
-					<img src="<?php echo get_template_directory_uri(); ?>/images/build/ehl.png" alt="Equal Housing Lender" />
+					<a href="#" id="Member_FDIC" class="footer__logo"><span class="element-invisible">Member FDIC</span></a>
+					<a href="#" id="Equal_Housing_Lender" class="footer__logo"><span class="element-invisible">Equal Housing Lender</span></a>
 				</div>
-				<form class="email-newsletter">
-					<input type="text" name="s" placeholder="Enter your email address&hellip;" value="" />
-					<input type="submit" value="Newsletter Signup" />
+				<form class="newsletter-signup">
+					<input class="newsletter-signup__email" type="text" name="s" placeholder="Enter your email address&hellip;" value="" />
+					<span class="newsletter-signup__submit__icon"><input class="newsletter-signup__submit" type="submit" value="Newsletter Signup" /></span>
 				</form>
 				<div class="social-links">
 				</div>

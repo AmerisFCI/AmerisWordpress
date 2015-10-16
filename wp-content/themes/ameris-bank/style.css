@@ -1222,9 +1222,10 @@ a:hover, a:active {
 .site-branding {
   margin: 10px 0px;
   margin: 1rem 0rem;
+  float: left;
 }
 
-/* line 25, sass/components/sections/_header.scss */
+/* line 26, sass/components/sections/_header.scss */
 .logo {
   background-image: url('images/sprite-images-sd41b174300.png');
   background-position: 0 -3254px;
@@ -1235,7 +1236,7 @@ a:hover, a:active {
   display: block;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 25, sass/components/sections/_header.scss */
+  /* line 26, sass/components/sections/_header.scss */
   .logo {
     background-size: 215px 2153.5px;
     background-position: 0 -1364px;
@@ -1244,38 +1245,43 @@ a:hover, a:active {
   }
 }
 
+/* line 31, sass/components/sections/_header.scss */
+.nav-wrapper {
+  float: right;
+}
+
+/* line 36, sass/components/sections/_header.scss */
+.menu-toggle {
+  float: right;
+  clear: right;
+}
+
+/* line 42, sass/components/sections/_header.scss */
+.search-form {
+  float: right;
+}
+
 @media (min-width: 1350px) {
-  /* line 31, sass/components/sections/_header.scss */
-  .site-branding {
-    float: left;
-  }
-
-  /* line 38, sass/components/sections/_header.scss */
-  .nav-wrapper {
-    float: right;
-  }
-
-  /* line 42, sass/components/sections/_header.scss */
+  /* line 53, sass/components/sections/_header.scss */
   .main-navigation {
     float: right;
   }
 
-  /* line 46, sass/components/sections/_header.scss */
+  /* line 57, sass/components/sections/_header.scss */
   .search-form {
-    float: right;
     clear: both;
   }
 }
 /* line 1, sass/components/sections/_footer.scss */
 .site-footer {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA5Mjc2NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzE1Mzk3ZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjEuMCIgeDI9IjEuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA2MWQ0YiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIwNDI4NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, #092764), color-stop(100%, #15397f));
-  background-image: -moz-linear-gradient(bottom, #092764, #15397f);
-  background-image: -webkit-linear-gradient(bottom, #092764, #15397f);
-  background-image: linear-gradient(to top right, #092764, #15397f);
-  padding: 30px 20px 50px;
-  padding: 3rem 2rem 5rem;
+  background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, #061d4b), color-stop(100%, #204285));
+  background-image: -moz-linear-gradient(bottom, #061d4b, #204285);
+  background-image: -webkit-linear-gradient(bottom, #061d4b, #204285);
+  background-image: linear-gradient(to top right, #061d4b, #204285);
+  padding: 30px 0px 250px;
+  padding: 3rem 0rem 25rem;
   font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #ffffff;
   font-size: 16px;
@@ -1289,23 +1295,177 @@ a:hover, a:active {
   padding: 10px 0px 0px 10px;
   padding: 1rem 0rem 0rem 1rem;
 }
-/* line 14, sass/components/sections/_footer.scss */
+/* line 15, sass/components/sections/_footer.scss */
 .site-footer a:hover, .site-footer a:focus {
   text-decoration: none;
 }
-/* line 17, sass/components/sections/_footer.scss */
+/* line 19, sass/components/sections/_footer.scss */
 .site-footer a:visited {
   color: #f2f2f2;
 }
 
-/* line 23, sass/components/sections/_footer.scss */
-.copyright, .footer-copyright-links {
+@media (min-width: 1024px) {
+  /* line 29, sass/components/sections/_footer.scss */
+  .site-footer {
+    padding: 35px 0px 450px;
+    padding: 3.5rem 0rem 45rem;
+  }
+}
+/* line 36, sass/components/sections/_footer.scss */
+.footer__logo {
+  display: inline-block;
+  margin-right: 10px;
+  margin-right: 1rem;
+}
+
+/* line 41, sass/components/sections/_footer.scss */
+#Member_FDIC {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -3201px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 43px;
+  width: 68px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 41, sass/components/sections/_footer.scss */
+  #Member_FDIC {
+    background-size: 215px 2153.5px;
+    background-position: 0 -1553px;
+    height: 43px;
+    width: 68px;
+  }
+}
+
+/* line 45, sass/components/sections/_footer.scss */
+#Equal_Housing_Lender {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -3040px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 56px;
+  width: 55px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 45, sass/components/sections/_footer.scss */
+  #Equal_Housing_Lender {
+    background-size: 215px 2153.5px;
+    background-position: 0 -1459px;
+    height: 56px;
+    width: 55px;
+  }
+}
+
+/* line 49, sass/components/sections/_footer.scss */
+.footer-top {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 20px;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #2c4c8b;
+}
+/* line 126, sass/base/_mixins.scss */
+.footer-top:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 56, sass/components/sections/_footer.scss */
+.copyright, .footer-copyright-links, .site-info {
   float: left;
 }
 
-/* line 27, sass/components/sections/_footer.scss */
-.footer-utility {
+/* line 60, sass/components/sections/_footer.scss */
+.footer-utility, .newsletter-signup {
   float: right;
+}
+
+/* line 64, sass/components/sections/_footer.scss */
+.newsletter-signup {
+  position: relative;
+}
+/* line 67, sass/components/sections/_footer.scss */
+.newsletter-signup input {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+/* line 70, sass/components/sections/_footer.scss */
+.newsletter-signup input[type="text"] {
+  margin-bottom: 0;
+  padding: 8px 20px 3px 10px;
+  padding: 0.8rem 2rem 0.3rem 1rem;
+  height: 100%;
+}
+/* line 74, sass/components/sections/_footer.scss */
+.newsletter-signup input[type="text"]:focus {
+  border-color: #ffffff;
+}
+/* line 79, sass/components/sections/_footer.scss */
+.newsletter-signup input[type="submit"] {
+  background-color: #d31145;
+  color: #ffffff;
+  padding: 10px 20px;
+  padding: 1rem 2rem;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
+  transition: background-color .2s, box-shadow .2s;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 8px 20px 9px 10px;
+  padding: 0.8rem 2rem 0.9rem 1rem;
+  margin-left: -10px;
+  margin-left: -1rem;
+  padding-left: 42px;
+  padding-left: 4.2rem;
+}
+/* line 149, sass/base/_mixins.scss */
+.newsletter-signup input[type="submit"]:hover, .newsletter-signup input[type="submit"]:active, .newsletter-signup input[type="submit"]:focus {
+  background-color: #b30e3a;
+  box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
+}
+/* line 154, sass/base/_mixins.scss */
+.newsletter-signup input[type="submit"]:focus {
+  text-decoration: underline;
+}
+/* line 158, sass/base/_mixins.scss */
+.newsletter-signup input[type="submit"]:hover, .newsletter-signup input[type="submit"]:visited, .newsletter-signup input[type="submit"]:focus {
+  color: #ffffff;
+}
+/* line 98, sass/components/sections/_footer.scss */
+.newsletter-signup .newsletter-signup__submit__icon {
+  position: relative;
+  margin-left: -10px;
+  margin-left: -1rem;
+}
+/* line 102, sass/components/sections/_footer.scss */
+.newsletter-signup .newsletter-signup__submit__icon:before {
+  content: "";
+  display: inline-block;
+  pointer-events: none;
+  position: absolute;
+  left: 0px;
+  left: 0rem;
+  top: 4px;
+  top: 0.4rem;
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -467px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 24px;
+  width: 23px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 102, sass/components/sections/_footer.scss */
+  .newsletter-signup .newsletter-signup__submit__icon:before {
+    background-size: 215px 2153.5px;
+    background-position: 0 -204.5px;
+    height: 24px;
+    width: 23px;
+  }
 }
 
 /* line 1, sass/components/widgets/_widgets.scss */
@@ -1619,14 +1779,21 @@ textarea {
   background-color: #092764;
   color: #ffffff;
   position: relative;
+  z-index: 0;
 }
 
-/* line 8, sass/components/pages/home/_slides.scss */
+/* line 9, sass/components/pages/home/_slides.scss */
 .slide__inner-wrap {
   position: relative;
 }
 
-/* line 12, sass/components/pages/home/_slides.scss */
+/* line 13, sass/components/pages/home/_slides.scss */
+.slide__text-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 18, sass/components/pages/home/_slides.scss */
 .slide {
   overflow: hidden;
   background-color: #092764;
@@ -1635,8 +1802,9 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
-/* line 21, sass/components/pages/home/_slides.scss */
+/* line 28, sass/components/pages/home/_slides.scss */
 .slide:before {
   content: "";
   display: block;
@@ -1653,7 +1821,7 @@ textarea {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
-/* line 32, sass/components/pages/home/_slides.scss */
+/* line 39, sass/components/pages/home/_slides.scss */
 .slide img {
   position: absolute;
   width: 100%;
@@ -1661,13 +1829,13 @@ textarea {
   top: 0;
 }
 
-/* line 40, sass/components/pages/home/_slides.scss */
+/* line 47, sass/components/pages/home/_slides.scss */
 .slide__title.kicker {
   color: #ffffff;
   margin-top: 0;
 }
 
-/* line 45, sass/components/pages/home/_slides.scss */
+/* line 52, sass/components/pages/home/_slides.scss */
 .slide__blurb {
   position: relative;
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
@@ -1679,14 +1847,21 @@ textarea {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 1024px) {
+  /* line 62, sass/components/pages/home/_slides.scss */
+  .slide__blurb {
+    font-size: 65px;
+    font-size: 6.5rem;
+  }
+}
 @media (min-width: 480px) {
-  /* line 55, sass/components/pages/home/_slides.scss */
+  /* line 69, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 58, sass/components/pages/home/_slides.scss */
+  /* line 73, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 35%;
     padding-top: 8rem;
@@ -1695,7 +1870,7 @@ textarea {
     right: 0;
   }
 }
-/* line 68, sass/components/pages/home/_slides.scss */
+/* line 83, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
   background-color: #d31145;
   color: #ffffff;
@@ -1895,8 +2070,8 @@ textarea {
 @media (min-width: 480px) {
   /* line 10, sass/components/pages/home/_tools.scss */
   .home-tools {
-    margin-top: 20px;
-    margin-top: 2rem;
+    margin-top: 30px;
+    margin-top: 3rem;
   }
 
   /* line 16, sass/components/pages/home/_tools.scss */

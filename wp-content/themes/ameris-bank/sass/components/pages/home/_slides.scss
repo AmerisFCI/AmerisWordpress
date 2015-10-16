@@ -3,10 +3,16 @@
 	background-color: $darkblue;
 	color: $white;
 	position: relative;
+	z-index: 0;
 }
 
 .slide__inner-wrap {
 	position: relative;
+}
+
+.slide__text-wrap {
+	position: relative;
+	z-index: 1;
 }
 
 .slide {
@@ -17,6 +23,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 1;
 
 	&:before {
 		content: "";
@@ -51,10 +58,18 @@
 	@include rem-fallback(margin-bottom, 2);
 }
 
+@include breakpoint($narrow-to-desktop) {
+	.slide__blurb {
+		@include rem-fallback(font-size, 6.5);
+	}
+}
+
 @include breakpoint($tablet-to-desktop) {
+
 	.slide__blurb {
 		@include rem-fallback(font-size, 8);
 	}
+
 	.slide__text-wrap {
 		//float: right;
 		width: 35%;
