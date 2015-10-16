@@ -2,6 +2,7 @@
 	@include rem-fallback(max-width, 140);
 	@include rem-fallback(padding, 0, 1);
 	margin: 0 auto;
+	position: relative;
 }
 
 .site-content {

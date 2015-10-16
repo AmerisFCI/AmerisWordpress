@@ -186,7 +186,7 @@ $sprite-high-res-suffix: '-2x' !default;
 
 @mixin red-button-cta {
   @include red-button;
-  @include rem-fallback(padding, 1.7, 3);
+  @include rem-fallback(padding, 1.7, 3, 2);
   @include rem-fallback(font-size, 2.1);
   font-weight: 300;
   clear: both;
@@ -194,8 +194,28 @@ $sprite-high-res-suffix: '-2x' !default;
 
 @mixin blue-button-cta {
   @include blue-button;
-  @include rem-fallback(padding, 1.7, 3);
+  @include rem-fallback(padding, 1.7, 3, 2);
   @include rem-fallback(font-size, 2.1);
   font-weight: 300;
   clear: both;
+}
+
+@mixin cta-arrow-right {
+
+  @include rem-fallback(padding-right, 4.2);
+
+  &:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    @include rem-fallback(left, 1.5);
+    @include rem-fallback(top, .4);
+    @include use-sprite(arrow-white-right);
+    transition: left .2s;
+  }
+
+  &:hover:after, &:focus:after {
+    @include rem-fallback(left, 1.9);
+  }
+
 }

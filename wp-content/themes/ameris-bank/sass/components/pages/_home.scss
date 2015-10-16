@@ -7,7 +7,7 @@
 	@include add-grid(7);
 }
 
-@include breakpoint($desktop) {
+@include breakpoint($narrow-to-desktop) {
 	.account-access {
 		@include grid-span(2, 1);
 	}
