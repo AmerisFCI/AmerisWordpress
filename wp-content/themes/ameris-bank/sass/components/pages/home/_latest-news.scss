@@ -1,0 +1,42 @@
+.latest-news{
+
+	@include add-grid(8);
+	@include add-gutter(1/6);
+
+	.news-item__link {
+		text-decoration: none;
+	}
+	.news-item__title {
+		font-family: $font-branding;
+		font-style: italic;
+		@include rem-fallback(font-size, 2.4);
+		@include rem-fallback(margin-bottom, 2);
+	}
+	.news-meta {
+		@include rem-fallback(margin-bottom, 1);
+	}
+	.news-item__excerpt {
+		font-weight: 300;
+	}
+
+
+	.news-item {
+		@include float-span(2);
+		background: $white;
+		@include rem-fallback(padding, 2);
+		@include rem-fallback(margin-bottom, 2);
+	}
+
+	.news-item:nth-child(4) {
+		@include float-span(4, 'last')
+	}
+
+
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}

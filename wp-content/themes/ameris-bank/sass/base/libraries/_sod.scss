@@ -51,22 +51,58 @@
 }
 
 //* Up/Down arrows */
-.sod_select:before,
-.sod_select:after
-{
-	content: "\25B2";
-	position: absolute;
-	right: 10px;
-	top: 12px;
-	font-size: 7px;
-}
+//.sod_select:before,
+//.sod_select:after
+//{
+//	content: "\25B2";
+//	position: absolute;
+//	right: 10px;
+//	top: 12px;
+//	font-size: 7px;
+//}
 
 //* Down arrow */
-.sod_select:after
-{
-	content: "\25BC";
-	top: auto;
-	bottom: 12px;
+//.sod_select:after
+//{
+//	content: "\25BC";
+//	top: auto;
+//	bottom: 12px;
+//}
+
+.sod_select:before {
+	content: "";
+	@include use-sprite(icon-form-selectarrows);
+	position: absolute;
+	@include rem-fallback(right, .8);
+	@include rem-fallback(top, 1);
+}
+
+.sod_select:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	@include rem-fallback(border-bottom-right-radius, .4);
+	@include rem-fallback(border-top-right-radius, .4);
+	border: 1px solid $lightblue;
+	@include rem-fallback(width, 3.4);
+	height: 100%;
+	background-color: $lightblue;
+	opacity: .1;
+}
+
+@include breakpoint($desktop) {
+	.sod_select:before {
+		@include rem-fallback(top, 1.8);
+		@include rem-fallback(right, 1.4);
+	}
+	.sod_select:after {
+		@include rem-fallback(width, 4.8);
+	}
+}
+
+.sod_select:focus:after {
+	opacity: .2;
 }
 
 //* Change the border color on hover, focus and when open
@@ -93,7 +129,7 @@
 	white-space: nowrap;
 	text-overflow: ellipsis;
 
-	padding-right: 15px;
+	padding-right: 35px;
 }
 
 //.sod_select .sod_prefix { /* Use this if you're using a prefix and want to style it */ }

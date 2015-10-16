@@ -1,2 +1,17 @@
 @import "home/slides";
 @import "home/accountaccess";
+@import "home/latest-news";
+@import "home/tools";
+
+.homepage_inner-wrap {
+	@include add-grid(7);
+}
+
+@include breakpoint($desktop) {
+	.account-access {
+		@include grid-span(2, 1);
+	}
+	.home-tools {
+		@include grid-span(5, 3);
+	}
+}

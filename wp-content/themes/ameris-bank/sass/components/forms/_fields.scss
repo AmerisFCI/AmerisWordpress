@@ -35,4 +35,14 @@ textarea {
 
 @include breakpoint($desktop) {
 	input {width: auto;}
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	textarea,
+	.sod_select {
+		@include rem-fallback(padding, 2.2);
+		@include rem-fallback(font-size, 2);
+	}
 }

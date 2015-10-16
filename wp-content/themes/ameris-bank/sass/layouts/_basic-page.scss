@@ -3,3 +3,8 @@
 	@include rem-fallback(padding, 0, 1);
 	margin: 0 auto;
 }
+
+.site-content {
+	@include background-image(linear-gradient(to top center, $lightgray, $white));
+}
+
