@@ -1622,7 +1622,13 @@ textarea {
 }
 
 /* line 8, sass/components/pages/home/_slides.scss */
+.slide__inner-wrap {
+  position: relative;
+}
+
+/* line 12, sass/components/pages/home/_slides.scss */
 .slide {
+  overflow: hidden;
   background-color: #092764;
   position: absolute;
   top: 0;
@@ -1630,13 +1636,14 @@ textarea {
   width: 100%;
   height: 100%;
 }
-/* line 17, sass/components/pages/home/_slides.scss */
+/* line 21, sass/components/pages/home/_slides.scss */
 .slide:before {
   content: "";
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: 1;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF000000', endColorstr='#FF000000');
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
@@ -1646,15 +1653,23 @@ textarea {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
+/* line 32, sass/components/pages/home/_slides.scss */
+.slide img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
 
-/* line 28, sass/components/pages/home/_slides.scss */
+/* line 40, sass/components/pages/home/_slides.scss */
 .slide__title.kicker {
   color: #ffffff;
   margin-top: 0;
 }
 
-/* line 33, sass/components/pages/home/_slides.scss */
+/* line 45, sass/components/pages/home/_slides.scss */
 .slide__blurb {
+  position: relative;
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
   font-size: 50px;
@@ -1665,13 +1680,13 @@ textarea {
 }
 
 @media (min-width: 480px) {
-  /* line 42, sass/components/pages/home/_slides.scss */
+  /* line 55, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 45, sass/components/pages/home/_slides.scss */
+  /* line 58, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 35%;
     padding-top: 8rem;
@@ -1680,7 +1695,7 @@ textarea {
     right: 0;
   }
 }
-/* line 55, sass/components/pages/home/_slides.scss */
+/* line 68, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
   background-color: #d31145;
   color: #ffffff;
