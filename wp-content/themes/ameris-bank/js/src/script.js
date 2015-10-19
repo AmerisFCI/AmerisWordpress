@@ -9,6 +9,19 @@
 
 
 	$("select").selectOrDie();
+
+
+	$('.slides').slick({
+		//setting-name: setting-value
+		autoplay: true,
+		autoplaySpeed: 5000,
+		arrows: false,
+		dots: true,
+		fade: true,
+		mobileFirst: true,
+		pauseOnDotsHover: true,
+		swipeToSlide: true
+	});
 	// Put code here
 
 
