@@ -28,7 +28,6 @@
 					'fallback_cb'     => '',
 					'container_class' => 'social-links'
 				) ); ?>
-				</div>
 			</div>
 
 			<div class="footer-bottom">
