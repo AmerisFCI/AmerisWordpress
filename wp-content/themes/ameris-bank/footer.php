@@ -23,8 +23,11 @@
 					<input class="newsletter-signup__email" type="text" name="s" placeholder="Enter your email address&hellip;" value="" />
 					<span class="newsletter-signup__submit__icon"><input class="newsletter-signup__submit" type="submit" value="Newsletter Signup" /></span>
 				</form>
-				<div class="social-links">
-				</div>
+				<?php wp_nav_menu( array(
+					'theme_location'  => 'footer-social-links',
+					'fallback_cb'     => '',
+					'container_class' => 'social-links'
+				) ); ?>
 			</div>
 
 			<div class="footer-bottom">
