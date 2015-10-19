@@ -1306,12 +1306,17 @@ a:hover, a:active {
   float: right;
 }
 /* line 4, sass/components/navigation/_social-links.scss */
+.social-links li {
+  margin-left: 10px;
+  margin-left: 1rem;
+}
+/* line 8, sass/components/navigation/_social-links.scss */
 .social-links a {
   display: block;
   text-indent: -9999px;
 }
-/* line 9, sass/components/navigation/_social-links.scss */
-.social-links .linkedin {
+/* line 13, sass/components/navigation/_social-links.scss */
+.social-links .linkedin a {
   background-image: url('images/sprite-images-sd41b174300.png');
   background-position: 0 -1000px;
   background-repeat: no-repeat;
@@ -1320,16 +1325,16 @@ a:hover, a:active {
   width: 22px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 9, sass/components/navigation/_social-links.scss */
-  .social-links .linkedin {
+  /* line 13, sass/components/navigation/_social-links.scss */
+  .social-links .linkedin a {
     background-size: 215px 2153.5px;
     background-position: 0 -469px;
     height: 26px;
     width: 22px;
   }
 }
-/* line 13, sass/components/navigation/_social-links.scss */
-.social-links .facebook {
+/* line 17, sass/components/navigation/_social-links.scss */
+.social-links .facebook a {
   background-image: url('images/sprite-images-sd41b174300.png');
   background-position: 0 -804px;
   background-repeat: no-repeat;
@@ -1338,16 +1343,16 @@ a:hover, a:active {
   width: 22px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 13, sass/components/navigation/_social-links.scss */
-  .social-links .facebook {
+  /* line 17, sass/components/navigation/_social-links.scss */
+  .social-links .facebook a {
     background-size: 215px 2153.5px;
     background-position: 0 -371px;
     height: 26px;
     width: 22px;
   }
 }
-/* line 17, sass/components/navigation/_social-links.scss */
-.social-links .twitter {
+/* line 21, sass/components/navigation/_social-links.scss */
+.social-links .twitter a {
   background-image: url('images/sprite-images-sd41b174300.png');
   background-position: 0 -1098px;
   background-repeat: no-repeat;
@@ -1356,16 +1361,16 @@ a:hover, a:active {
   width: 22px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 17, sass/components/navigation/_social-links.scss */
-  .social-links .twitter {
+  /* line 21, sass/components/navigation/_social-links.scss */
+  .social-links .twitter a {
     background-size: 215px 2153.5px;
     background-position: 0 -518px;
     height: 26px;
     width: 22px;
   }
 }
-/* line 21, sass/components/navigation/_social-links.scss */
-.social-links .youtube {
+/* line 25, sass/components/navigation/_social-links.scss */
+.social-links .youtube a {
   background-image: url('images/sprite-images-sd41b174300.png');
   background-position: 0 -1196px;
   background-repeat: no-repeat;
@@ -1374,16 +1379,16 @@ a:hover, a:active {
   width: 22px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 21, sass/components/navigation/_social-links.scss */
-  .social-links .youtube {
+  /* line 25, sass/components/navigation/_social-links.scss */
+  .social-links .youtube a {
     background-size: 215px 2153.5px;
     background-position: 0 -567px;
     height: 26px;
     width: 22px;
   }
 }
-/* line 25, sass/components/navigation/_social-links.scss */
-.social-links .instagram {
+/* line 29, sass/components/navigation/_social-links.scss */
+.social-links .instagram a {
   background-image: url('images/sprite-images-sd41b174300.png');
   background-position: 0 -902px;
   background-repeat: no-repeat;
@@ -1392,8 +1397,8 @@ a:hover, a:active {
   width: 22px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 25, sass/components/navigation/_social-links.scss */
-  .social-links .instagram {
+  /* line 29, sass/components/navigation/_social-links.scss */
+  .social-links .instagram a {
     background-size: 215px 2153.5px;
     background-position: 0 -420px;
     height: 26px;
