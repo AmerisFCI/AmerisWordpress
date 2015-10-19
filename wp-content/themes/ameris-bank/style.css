@@ -1301,6 +1301,106 @@ a:hover, a:active {
   }
 }
 
+/* line 1, sass/components/navigation/_social-links.scss */
+.social-links {
+  float: right;
+}
+/* line 4, sass/components/navigation/_social-links.scss */
+.social-links a {
+  display: block;
+  text-indent: -9999px;
+}
+/* line 9, sass/components/navigation/_social-links.scss */
+.social-links .linkedin {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -1000px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 9, sass/components/navigation/_social-links.scss */
+  .social-links .linkedin {
+    background-size: 215px 2153.5px;
+    background-position: 0 -469px;
+    height: 26px;
+    width: 22px;
+  }
+}
+/* line 13, sass/components/navigation/_social-links.scss */
+.social-links .facebook {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -804px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 13, sass/components/navigation/_social-links.scss */
+  .social-links .facebook {
+    background-size: 215px 2153.5px;
+    background-position: 0 -371px;
+    height: 26px;
+    width: 22px;
+  }
+}
+/* line 17, sass/components/navigation/_social-links.scss */
+.social-links .twitter {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -1098px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 17, sass/components/navigation/_social-links.scss */
+  .social-links .twitter {
+    background-size: 215px 2153.5px;
+    background-position: 0 -518px;
+    height: 26px;
+    width: 22px;
+  }
+}
+/* line 21, sass/components/navigation/_social-links.scss */
+.social-links .youtube {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -1196px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 21, sass/components/navigation/_social-links.scss */
+  .social-links .youtube {
+    background-size: 215px 2153.5px;
+    background-position: 0 -567px;
+    height: 26px;
+    width: 22px;
+  }
+}
+/* line 25, sass/components/navigation/_social-links.scss */
+.social-links .instagram {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -902px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 25, sass/components/navigation/_social-links.scss */
+  .social-links .instagram {
+    background-size: 215px 2153.5px;
+    background-position: 0 -420px;
+    height: 26px;
+    width: 22px;
+  }
+}
+
 /* line 1, sass/components/sections/_header.scss */
 .site-header {
   position: absolute;
@@ -1902,7 +2002,7 @@ textarea {
 .slide__text-wrap {
   position: relative;
   z-index: 1;
-  text-shadow: 0 0 90px 900;
+  text-shadow: 0 0 90px #000;
 }
 
 /* line 20, sass/components/pages/home/_slides.scss */
@@ -2079,7 +2179,7 @@ textarea {
   margin: 0rem 0rem 0rem 1.6rem;
   padding: 0;
   float: left;
-  box-shadow: 0 0 120px 900;
+  box-shadow: 0 0 120px #000;
 }
 /* line 125, sass/components/pages/home/_slides.scss */
 .slick-dots li button {
