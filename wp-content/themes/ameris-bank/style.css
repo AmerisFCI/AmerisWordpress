@@ -1895,15 +1895,17 @@ textarea {
 /* line 9, sass/components/pages/home/_slides.scss */
 .slide__inner-wrap {
   position: relative;
+  z-index: 4;
 }
 
-/* line 13, sass/components/pages/home/_slides.scss */
+/* line 14, sass/components/pages/home/_slides.scss */
 .slide__text-wrap {
   position: relative;
   z-index: 1;
+  text-shadow: 0 0 90px 900;
 }
 
-/* line 18, sass/components/pages/home/_slides.scss */
+/* line 20, sass/components/pages/home/_slides.scss */
 .slide {
   overflow: hidden;
   background-color: #092764;
@@ -1914,14 +1916,14 @@ textarea {
   height: 100%;
   z-index: 1;
 }
-/* line 28, sass/components/pages/home/_slides.scss */
+/* line 30, sass/components/pages/home/_slides.scss */
 .slide:before {
   content: "";
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF000000', endColorstr='#FF000000');
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
@@ -1931,7 +1933,7 @@ textarea {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
-/* line 39, sass/components/pages/home/_slides.scss */
+/* line 41, sass/components/pages/home/_slides.scss */
 .slide img {
   position: absolute;
   width: 100%;
@@ -1939,13 +1941,13 @@ textarea {
   top: 0;
 }
 
-/* line 47, sass/components/pages/home/_slides.scss */
+/* line 50, sass/components/pages/home/_slides.scss */
 .slide__title.kicker {
   color: #ffffff;
   margin-top: 0;
 }
 
-/* line 52, sass/components/pages/home/_slides.scss */
+/* line 55, sass/components/pages/home/_slides.scss */
 .slide__blurb {
   position: relative;
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
@@ -1958,20 +1960,20 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  /* line 62, sass/components/pages/home/_slides.scss */
+  /* line 66, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 65px;
     font-size: 6.5rem;
   }
 }
 @media (min-width: 480px) {
-  /* line 69, sass/components/pages/home/_slides.scss */
+  /* line 74, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 73, sass/components/pages/home/_slides.scss */
+  /* line 78, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 35%;
     padding-top: 8rem;
@@ -1980,7 +1982,7 @@ textarea {
     right: 0;
   }
 }
-/* line 83, sass/components/pages/home/_slides.scss */
+/* line 89, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
   background-color: #d31145;
   color: #ffffff;
@@ -2000,6 +2002,7 @@ textarea {
   clear: both;
   padding-right: 42px;
   padding-right: 4.2rem;
+  box-shadow: none;
 }
 /* line 149, sass/base/_mixins.scss */
 .button.slide__cta:hover, .button.slide__cta:active, .button.slide__cta:focus {
@@ -2045,14 +2048,18 @@ textarea {
   left: 19px;
   left: 1.9rem;
 }
+/* line 94, sass/components/pages/home/_slides.scss */
+.button.slide__cta:hover, .button.slide__cta:focus {
+  box-shadow: none;
+}
 
-/* line 88, sass/components/pages/home/_slides.scss */
+/* line 100, sass/components/pages/home/_slides.scss */
 .slick-list, .slick-track {
   height: 100%;
   width: 100%;
 }
 
-/* line 93, sass/components/pages/home/_slides.scss */
+/* line 105, sass/components/pages/home/_slides.scss */
 .slick-dots {
   list-style: none;
   margin: 0;
@@ -2064,7 +2071,7 @@ textarea {
   right: 2rem;
   z-index: 2;
 }
-/* line 102, sass/components/pages/home/_slides.scss */
+/* line 114, sass/components/pages/home/_slides.scss */
 .slick-dots li {
   list-style: none;
   margin: 0;
@@ -2072,8 +2079,9 @@ textarea {
   margin: 0rem 0rem 0rem 1.6rem;
   padding: 0;
   float: left;
+  box-shadow: 0 0 120px 900;
 }
-/* line 112, sass/components/pages/home/_slides.scss */
+/* line 125, sass/components/pages/home/_slides.scss */
 .slick-dots li button {
   text-indent: -9999px;
   width: 16px;
@@ -2086,11 +2094,10 @@ textarea {
   border-width: 2px;
   border-width: 0.2rem;
   border-style: solid;
-  box-shadow: none;
   transition: all .2s;
   padding: 0;
 }
-/* line 127, sass/components/pages/home/_slides.scss */
+/* line 138, sass/components/pages/home/_slides.scss */
 .slick-dots li.slick-active button {
   background-color: #ffffff;
 }
