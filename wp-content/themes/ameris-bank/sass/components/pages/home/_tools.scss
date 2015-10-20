@@ -1,23 +1,50 @@
 .tool {
 	text-align: center;
-	@include rem-fallback(margin-bottom, 2);
+	margin: 0 auto;
+	@include rem-fallback(margin-bottom, 4);
+	@include rem-fallback(max-width, 30);
 }
 
-
+.home-tools {
+	@include rem-fallback(margin-top, 3);
+}
 
 @include breakpoint($tablet-to-desktop) {
 
 	.home-tools {
 		@include add-grid(12);
 		@include add-gutter(1/3);
-		@include rem-fallback(margin-top, 3);
+	}
+
+}
+
+@media screen and (min-width: 530px) and (max-width: 739px) {
+
+	.tool {
+		@include float-span(6);
+		max-width: none;
+
+		&:nth-child(2n) {
+			@include float-span(6, 'last');
+		}
 
 	}
+
+}
+
+@media screen and (min-width: 740px) {
 	.tool {
 		@include float-span(3);
+		@include rem-fallback(margin-bottom, 2);
 
-		&:last-child {
+		&:nth-child(4n){
 			@include float-span(3, 'last');
 		}
 	}
+}
+
+@include breakpoint($narrow-to-desktop) {
+
+
+
 }

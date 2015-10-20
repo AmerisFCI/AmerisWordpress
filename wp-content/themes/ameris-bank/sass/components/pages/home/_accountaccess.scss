@@ -26,11 +26,22 @@
 
 }
 
+@include breakpoint($tablet) {
+	.account-access {
+		max-width: 400px;
+	}
+}
+
+@include breakpoint($tablet-to-desktop) {
+	.account-access {
+		@include rem-fallback(margin-top, -6);
+		@include rem-fallback(margin-bottom, 6);
+	}
+}
+
 @include breakpoint($narrow-to-desktop) {
 	.account-access {
 		@include rem-fallback(padding, 2.6, 2.6, 2);
-		@include rem-fallback(margin-top, -6);
-		@include rem-fallback(margin-bottom, 6);
 
 		p {
 			@include rem-fallback(font-size, 2);

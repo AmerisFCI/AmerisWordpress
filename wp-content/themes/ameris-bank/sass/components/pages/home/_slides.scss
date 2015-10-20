@@ -9,6 +9,7 @@
 .slide__inner-wrap {
 	position: relative;
 	z-index: 4;
+	height: 100%;
 }
 
 .slide__text-wrap {
@@ -71,27 +72,35 @@
 	@include rem-fallback(margin-bottom, 2);
 }
 
-@include breakpoint($narrow-to-desktop) {
+
+
+@include breakpoint($tablet-to-desktop) {
 
 	.slide__blurb {
 		@include rem-fallback(font-size, 6.5);
 	}
 
+	.slide__text-wrap {
+		//float: right;
+		@include rem-fallback(width, 40);
+		padding-top: 8rem;
+		margin-top: 20vh;
+		position: absolute;
+		@include rem-fallback(right, 1);
+
+	}
+
 }
 
-@include breakpoint($tablet-to-desktop) {
+@include breakpoint($narrow-to-desktop) {
 
 	.slide__blurb {
 		@include rem-fallback(font-size, 8);
 	}
 
 	.slide__text-wrap {
-		//float: right;
-		width: 35%;
-		padding-top: 8rem;
-		margin-top: 25vh;
-		position: absolute;
-		right: 0;
+		@include rem-fallback(width, 49);
+		bottom: auto;
 	}
 
 }
