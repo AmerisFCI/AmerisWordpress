@@ -11,6 +11,7 @@ function ameris_image_sizes() {
 	add_image_size( 'leader',           332, 285, true );
 	add_image_size( 'landing-solution', 327, 197, true );
 	add_image_size( 'callout-box',      302, 430, true );
+	add_image_size( 'home-callout',     531, 313, true );
 	
 }
 add_action( 'after_setup_theme', 'ameris_image_sizes' );
