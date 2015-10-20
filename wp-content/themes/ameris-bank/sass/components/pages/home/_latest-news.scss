@@ -1,42 +1,111 @@
 .latest-news{
 
-	@include add-grid(8);
-	@include add-gutter(1/6);
+	@include add-grid(6);
+	@include add-gutter(1/5);
 
-	.news-item__link {
-		text-decoration: none;
-	}
-	.news-item__title {
-		font-family: $font-branding;
-		font-style: italic;
-		@include rem-fallback(font-size, 2.4);
-		@include rem-fallback(margin-bottom, 2);
-	}
-	.news-meta {
-		@include rem-fallback(margin-bottom, 1);
-	}
-	.news-item__excerpt {
-		font-weight: 300;
-	}
+}
+
+.latest-news__kicker {
+	@include float-span(2);
+}
+
+.news-item__link {
+	text-decoration: none;
+}
+.news-item__title {
+
+}
+.news-meta {
+	@include rem-fallback(margin-bottom, 1);
+}
+.news-item__excerpt {
+	font-weight: 300;
+}
+
+.news-item__body {
+	background: $white;
+	@include rem-fallback(padding, 2);
+}
 
 
+.news-item {
+	@include rem-fallback(margin-bottom, 2);
+	&:first-of-type {
+		clear: both;
+	}
+	@include clearfix();
+}
+
+.attachment-news-home {
+	height: auto;
+	display: block;
+	max-width: none;
+	width: 100%;
+}
+
+@include breakpoint($tablet-wide) {
 	.news-item {
 		@include float-span(2);
-		background: $white;
-		@include rem-fallback(padding, 2);
-		@include rem-fallback(margin-bottom, 2);
 	}
 
-	.news-item:nth-child(4) {
-		@include float-span(4, 'last')
+	.news-item:nth-of-type(3) {
+		@include float-span(2, 'last')
+	}
+}
+
+@mixin horizontal-news {
+	.news-item__header, .news-item__body {
+		float: left;
+	}
+	.news-item {
+		width: 100%;
+		position: relative;
+	}
+	.news-item__body {
+		width: 60%;
+		float: right;
+	}
+	.news-item__header {
+		width: 40%;
+		position: absolute;
+		height: 100%;
+		overflow: hidden;
+	}
+	.attachment-news-home {
+		height: 100%;
+		display: block;
+		max-width: none;
+		width: auto;
+	}
+}
+
+@include breakpoint($narrow-to-desktop) {
+	@include horizontal-news;
+}
+
+@include breakpoint($tablet-skinny) {
+	@include horizontal-news;
+}
+
+@include breakpoint($wide) {
+
+	.news-item__header, .news-item__body {
+		position: static;
+		width: auto;
+	}
+	.news-item {
+		@include float-span(2);
 	}
 
+	.news-item:nth-of-type(3) {
+		@include float-span(2, 'last')
+	}
 
-
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
+	.attachment-news-home {
+		height: auto;
+		display: block;
+		max-width: none;
+		width: 100%;
 	}
 
 }

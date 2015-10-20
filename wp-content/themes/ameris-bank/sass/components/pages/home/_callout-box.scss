@@ -1,0 +1,38 @@
+.callout-box {
+
+}
+
+.callout-box__header {
+	@include rem-fallback(min-height, 30);
+	background-size: cover;
+	@include rem-fallback(padding, 2);
+	position: relative;
+}
+
+.callout-box__headline {
+	@include rem-fallback(font-size, 3.2);
+	color: $link-color;
+	position: absolute;
+	@include rem-fallback(bottom, 2);
+}
+
+.callout-box__body {
+	background: $white;
+	@include rem-fallback(padding, 2);
+}
+
+.callout-box__description {
+
+}
+
+.callout-box__button {
+
+}
+
+@include breakpoint($narrow-to-desktop) {
+
+	.callout-box__headline{
+		@include rem-fallback(font-size, 4.3);
+	}
+
+}

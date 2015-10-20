@@ -2,9 +2,19 @@
 @import "home/accountaccess";
 @import "home/latest-news";
 @import "home/tools";
+@import "home/callout-box";
 
 .homepage_inner-wrap {
 	@include add-grid(7);
+}
+
+.callout-box {
+	clear: both;
+	@include rem-fallback(margin-top, 5);
+}
+
+@include breakpoint($tablet-to-desktop) {
+
 }
 
 @include breakpoint($narrow-to-desktop) {
@@ -13,5 +23,28 @@
 	}
 	.home-tools {
 		@include grid-span(5, 3);
+	}
+
+	.latest-news {
+		@include grid-span(4, 1);
+		@include rem-fallback(margin-top, 3);
+		@include rem-fallback(margin-bottom, 5);
+	}
+	.callout-box {
+		@include grid-span(3, 5);
+		clear: both;
+		@include rem-fallback(margin-top, 1);
+		@include rem-fallback(margin-bottom, 5);
+	}
+
+}
+
+@include breakpoint($wide) {
+	.latest-news {
+		@include grid-span(4, 1);
+	}
+	.callout-box {
+		@include grid-span(3, 5);
+		clear: both;
 	}
 }
