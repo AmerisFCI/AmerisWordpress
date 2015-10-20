@@ -8,6 +8,8 @@
 
 .home-tools {
 	@include rem-fallback(margin-top, 3);
+	@include clearfix();
+	position: relative;
 }
 
 @include breakpoint($tablet-to-desktop) {
@@ -34,18 +36,42 @@
 }
 
 @media screen and (min-width: 740px) {
+
+	.home-tools {
+		@include rem-fallback(margin-bottom, 2);
+	}
+
 	.tool {
 		@include float-span(3);
-		@include rem-fallback(margin-bottom, 2);
+		@include rem-fallback(margin-bottom, 4);
 
 		&:nth-child(4n){
 			@include float-span(3, 'last');
 		}
 	}
+
+	.button.tool__link {
+		position: absolute;
+		bottom: 0;
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: inherit;
+	}
+
 }
 
 @include breakpoint($narrow-to-desktop) {
 
 
 
+}
+
+@include breakpoint($wide) {
+	.button.tool__link {
+		position: static;
+		display: inline-block;
+		margin: 0 auto;
+		width: auto;
+	}
 }

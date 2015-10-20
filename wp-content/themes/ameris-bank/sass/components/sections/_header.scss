@@ -30,7 +30,7 @@
 
 .nav-wrapper {
 	//@include grid-span(9,4);
-	float: right;
+	//float: right;
 }
 
 .menu-toggle {
@@ -41,20 +41,27 @@
 
 .search-form {
 	float: right;
+	clear: both;
 }
 
 
-@include breakpoint($desktop) {
+@include breakpoint($tablet-to-desktop) {
+
 	
 	.utility-navigation {
-
+		float: right;
 	}
 
 	.main-navigation {
 		float: right;
+		clear: none;
 	}
 
+
+}
+
+@include breakpoint($desktop) {
 	.search-form {
-		clear: both;
+		clear: right;
 	}
 }

@@ -7,13 +7,25 @@
 	background-size: cover;
 	@include rem-fallback(padding, 2);
 	position: relative;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		@include rem-fallback(left, 6);
+		border: solid 30px transparent;
+		border-bottom-color: white;
+	}
+
 }
 
 .callout-box__headline {
 	@include rem-fallback(font-size, 3.2);
 	color: $link-color;
 	position: absolute;
-	@include rem-fallback(bottom, 2);
+	@include rem-fallback(bottom, 3.6);
+	margin-bottom: 0;
 }
 
 .callout-box__body {
@@ -22,11 +34,14 @@
 }
 
 .callout-box__description {
-
+	@include rem-fallback(font-size, 1.9);
+	@include rem-fallback(margin, 1.6, 0);
 }
 
-.callout-box__button {
-
+.button.callout-box__button {
+	@include red-button-cta;
+	@include cta-arrow-right;
+	@include rem-fallback(margin, 2, 0);
 }
 
 @include breakpoint($narrow-to-desktop) {
@@ -35,4 +50,11 @@
 		@include rem-fallback(font-size, 4.3);
 	}
 
+	.callout-box__header {
+		@include rem-fallback(min-height, 40);
+	}
+
+	.callout-box__body, .callout-box__header {
+		@include rem-fallback(padding, 2, 4);
+	}
 }
