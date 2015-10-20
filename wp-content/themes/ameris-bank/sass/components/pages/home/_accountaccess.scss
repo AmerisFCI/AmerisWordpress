@@ -28,14 +28,14 @@
 
 @include breakpoint($tablet) {
 	.account-access {
-		max-width: 400px;
+		@include rem-fallback(max-width, 40);
 	}
 }
 
 @include breakpoint($tablet-to-desktop) {
 	.account-access {
 		@include rem-fallback(margin-top, -6);
-		@include rem-fallback(margin-bottom, 6);
+		@include rem-fallback(margin-bottom, 3);
 	}
 }
 

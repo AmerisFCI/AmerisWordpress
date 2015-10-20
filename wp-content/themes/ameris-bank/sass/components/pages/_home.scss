@@ -5,7 +5,8 @@
 @import "home/callout-box";
 
 .homepage_inner-wrap {
-	@include add-grid(7);
+	@include add-grid(14);
+	@include add-gutter(1/3);
 }
 
 .callout-box {
@@ -19,19 +20,19 @@
 
 @include breakpoint($narrow-to-desktop) {
 	.account-access {
-		@include grid-span(2, 1);
+		@include grid-span(4, 1);
 	}
 	.home-tools {
-		@include grid-span(5, 3);
+		@include grid-span(10, 5);
 	}
 
 	.latest-news {
-		@include grid-span(4, 1);
+		@include grid-span(7, 1);
 		@include rem-fallback(margin-top, 3);
 		@include rem-fallback(margin-bottom, 5);
 	}
 	.callout-box {
-		@include grid-span(3, 5);
+		@include grid-span(7, 8);
 		clear: both;
 		@include rem-fallback(margin-top, 1);
 		@include rem-fallback(margin-bottom, 5);
@@ -39,12 +40,22 @@
 
 }
 
-@include breakpoint($wide) {
+@include breakpoint($desktop) {
 	.latest-news {
-		@include grid-span(4, 1);
+		@include grid-span(7, 1);
 	}
 	.callout-box {
-		@include grid-span(3, 5);
+		@include grid-span(7, 8);
+		clear: both;
+	}
+}
+
+@include breakpoint($wide) {
+	.latest-news {
+		@include grid-span(8, 1);
+	}
+	.callout-box {
+		@include grid-span(6, 9);
 		clear: both;
 	}
 }
