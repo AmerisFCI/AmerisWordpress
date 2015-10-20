@@ -1301,6 +1301,111 @@ a:hover, a:active {
   }
 }
 
+/* line 1, sass/components/navigation/_social-links.scss */
+.social-links {
+  float: right;
+}
+/* line 4, sass/components/navigation/_social-links.scss */
+.social-links li {
+  margin-left: 10px;
+  margin-left: 1rem;
+}
+/* line 8, sass/components/navigation/_social-links.scss */
+.social-links a {
+  display: block;
+  text-indent: -9999px;
+}
+/* line 13, sass/components/navigation/_social-links.scss */
+.social-links .linkedin a {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -1000px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 13, sass/components/navigation/_social-links.scss */
+  .social-links .linkedin a {
+    background-size: 215px 2153.5px;
+    background-position: 0 -469px;
+    height: 26px;
+    width: 22px;
+  }
+}
+/* line 17, sass/components/navigation/_social-links.scss */
+.social-links .facebook a {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -804px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 17, sass/components/navigation/_social-links.scss */
+  .social-links .facebook a {
+    background-size: 215px 2153.5px;
+    background-position: 0 -371px;
+    height: 26px;
+    width: 22px;
+  }
+}
+/* line 21, sass/components/navigation/_social-links.scss */
+.social-links .twitter a {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -1098px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 21, sass/components/navigation/_social-links.scss */
+  .social-links .twitter a {
+    background-size: 215px 2153.5px;
+    background-position: 0 -518px;
+    height: 26px;
+    width: 22px;
+  }
+}
+/* line 25, sass/components/navigation/_social-links.scss */
+.social-links .youtube a {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -1196px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 25, sass/components/navigation/_social-links.scss */
+  .social-links .youtube a {
+    background-size: 215px 2153.5px;
+    background-position: 0 -567px;
+    height: 26px;
+    width: 22px;
+  }
+}
+/* line 29, sass/components/navigation/_social-links.scss */
+.social-links .instagram a {
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -902px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 26px;
+  width: 22px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 29, sass/components/navigation/_social-links.scss */
+  .social-links .instagram a {
+    background-size: 215px 2153.5px;
+    background-position: 0 -420px;
+    height: 26px;
+    width: 22px;
+  }
+}
+
 /* line 1, sass/components/sections/_header.scss */
 .site-header {
   position: absolute;
@@ -1902,7 +2007,7 @@ textarea {
 .slide__text-wrap {
   position: relative;
   z-index: 1;
-  text-shadow: 0 0 90px 900;
+  text-shadow: 0 0 90px #000;
 }
 
 /* line 20, sass/components/pages/home/_slides.scss */
@@ -1936,18 +2041,27 @@ textarea {
 /* line 41, sass/components/pages/home/_slides.scss */
 .slide img {
   position: absolute;
-  width: 100%;
-  height: auto;
+  max-width: none;
   top: 0;
 }
+/* line 46, sass/components/pages/home/_slides.scss */
+.slide img.slidewidth {
+  width: 100%;
+  height: auto;
+}
+/* line 51, sass/components/pages/home/_slides.scss */
+.slide img.slideheight {
+  width: auto;
+  height: 100%;
+}
 
-/* line 50, sass/components/pages/home/_slides.scss */
+/* line 60, sass/components/pages/home/_slides.scss */
 .slide__title.kicker {
   color: #ffffff;
   margin-top: 0;
 }
 
-/* line 55, sass/components/pages/home/_slides.scss */
+/* line 65, sass/components/pages/home/_slides.scss */
 .slide__blurb {
   position: relative;
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
@@ -1960,20 +2074,20 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  /* line 66, sass/components/pages/home/_slides.scss */
+  /* line 76, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 65px;
     font-size: 6.5rem;
   }
 }
 @media (min-width: 480px) {
-  /* line 74, sass/components/pages/home/_slides.scss */
+  /* line 84, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 78, sass/components/pages/home/_slides.scss */
+  /* line 88, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 35%;
     padding-top: 8rem;
@@ -1982,7 +2096,7 @@ textarea {
     right: 0;
   }
 }
-/* line 89, sass/components/pages/home/_slides.scss */
+/* line 99, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
   background-color: #d31145;
   color: #ffffff;
@@ -2048,18 +2162,18 @@ textarea {
   left: 19px;
   left: 1.9rem;
 }
-/* line 94, sass/components/pages/home/_slides.scss */
+/* line 104, sass/components/pages/home/_slides.scss */
 .button.slide__cta:hover, .button.slide__cta:focus {
   box-shadow: none;
 }
 
-/* line 100, sass/components/pages/home/_slides.scss */
+/* line 110, sass/components/pages/home/_slides.scss */
 .slick-list, .slick-track {
   height: 100%;
   width: 100%;
 }
 
-/* line 105, sass/components/pages/home/_slides.scss */
+/* line 115, sass/components/pages/home/_slides.scss */
 .slick-dots {
   list-style: none;
   margin: 0;
@@ -2071,7 +2185,7 @@ textarea {
   right: 2rem;
   z-index: 2;
 }
-/* line 114, sass/components/pages/home/_slides.scss */
+/* line 124, sass/components/pages/home/_slides.scss */
 .slick-dots li {
   list-style: none;
   margin: 0;
@@ -2079,9 +2193,9 @@ textarea {
   margin: 0rem 0rem 0rem 1.6rem;
   padding: 0;
   float: left;
-  box-shadow: 0 0 120px 900;
+  box-shadow: 0 0 120px #000;
 }
-/* line 125, sass/components/pages/home/_slides.scss */
+/* line 135, sass/components/pages/home/_slides.scss */
 .slick-dots li button {
   text-indent: -9999px;
   width: 16px;
@@ -2096,8 +2210,9 @@ textarea {
   border-style: solid;
   transition: all .2s;
   padding: 0;
+  box-shadow: none;
 }
-/* line 138, sass/components/pages/home/_slides.scss */
+/* line 149, sass/components/pages/home/_slides.scss */
 .slick-dots li.slick-active button {
   background-color: #ffffff;
 }

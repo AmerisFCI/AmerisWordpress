@@ -1,0 +1,33 @@
+.social-links {
+	float: right;
+
+	li {
+		@include rem-fallback(margin-left, 1);
+	}
+
+	a {
+		display: block;
+		text-indent: -9999px;
+	}
+
+	.linkedin a {
+		@include use-sprite(icon-social-linkedin);
+	}
+
+	.facebook a {
+		@include use-sprite(icon-social-facebook);
+	}
+
+	.twitter a {
+		@include use-sprite(icon-social-twitter);
+	}
+
+	.youtube a {
+		@include use-sprite(icon-social-youtube);
+	}
+
+	.instagram a {
+		@include use-sprite(icon-social-instagram);
+	}
+
+}

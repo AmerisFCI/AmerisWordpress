@@ -19,15 +19,18 @@
 					<a href="#" id="Member_FDIC" class="footer__logo"><span class="element-invisible">Member FDIC</span></a>
 					<a href="#" id="Equal_Housing_Lender" class="footer__logo"><span class="element-invisible">Equal Housing Lender</span></a>
 				</div>
-				<form class="newsletter-signup">
-					<input class="newsletter-signup__email" type="text" name="s" placeholder="Enter your email address&hellip;" value="" />
-					<span class="newsletter-signup__submit__icon"><input class="newsletter-signup__submit" type="submit" value="Newsletter Signup" /></span>
-				</form>
+
 				<?php wp_nav_menu( array(
 					'theme_location'  => 'footer-social-links',
 					'fallback_cb'     => '',
 					'container_class' => 'social-links'
 				) ); ?>
+
+				<form class="newsletter-signup">
+					<input class="newsletter-signup__email" type="text" name="s" placeholder="Enter your email address&hellip;" value="" />
+					<span class="newsletter-signup__submit__icon"><input class="newsletter-signup__submit" type="submit" value="Newsletter Signup" /></span>
+				</form>
+
 			</div>
 
 			<div class="footer-bottom">
