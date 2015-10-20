@@ -25,7 +25,7 @@
 					'fallback_cb'     => '',
 					'container_class' => 'social-links'
 				) ); ?>
-				
+
 				<form class="newsletter-signup">
 					<input class="newsletter-signup__email" type="text" name="s" placeholder="Enter your email address&hellip;" value="" />
 					<span class="newsletter-signup__submit__icon"><input class="newsletter-signup__submit" type="submit" value="Newsletter Signup" /></span>
