@@ -40,9 +40,19 @@
 	
 	img {
 		position: absolute;
-		width: 100%;
-		height: auto;
+		max-width: none;
 		top: 0;
+
+		&.slidewidth {
+			width: 100%;
+			height: auto;
+		}
+
+		&.slideheight {
+			width: auto;
+			height: 100%;
+		}
+
 	}
 
 }
@@ -133,6 +143,7 @@
 			border-style: solid;
 			transition: all .2s;
 			padding: 0;
+			box-shadow: none;
 		}
 
 		&.slick-active button {
