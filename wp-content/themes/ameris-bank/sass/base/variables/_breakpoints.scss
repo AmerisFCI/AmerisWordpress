@@ -2,10 +2,11 @@
 // Breakpoints 
 //
 
-$mobile: max-width 479px;
-$tablet: 480px 1023px;
-$tablet-to-desktop: min-width 480px;
+$mobile: max-width 529px;
+$tablet: 530px 1023px;
+$tablet-to-desktop: min-width 530px;
+$tablet-to-narrow: 530px 1199px;
 //$desktop: min-width 960px;
 $narrow-to-desktop: min-width 1024px;
-$narrow: 1024px 1349px;
-$desktop: min-width 1350px;
+$narrow: 1024px 1199px;
+$desktop: min-width 1200px;

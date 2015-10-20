@@ -52,7 +52,7 @@
 		}
 		theWindow.resize(resizeBg).trigger("resize");
 	});
-	
+
 
 	// Put code here
 
