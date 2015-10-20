@@ -83,8 +83,25 @@ get_header(); ?>
 							</div>
 
 						<?php }
-					} ?>
+					}
+					wp_reset_postdata(); // get global post back ?>
 				</div>
+
+				<div class="callout-box callout-box--large">
+					<div class="callout-box__header" style="background-image:url( '<?php $image = wp_get_attachment_image_src( get_field( 'callout_image' ), 'home-callout' ); echo $image[0]; ?>' );">
+						<h5 class="callout-box__title"><?php the_field( 'callout_title' ); ?></h4>
+						<h4 class="callout-box__headline"><?php the_field( 'callout_headline' ); ?></h3>
+					</div>
+					<div class="callout-box__body">
+						<div class="callout-box__description">
+							<?php the_field( 'callout_description' ); ?>
+						</div>
+						<a class="button callout-box__button" href="<?php echo get_permalink( get_field( 'callout_link' ) ); ?>">
+							<?php the_field( 'callout_button' ); ?>
+						</a>
+					</div>
+				</div>
+
 			</div>
 
 		</main><!-- #main -->
