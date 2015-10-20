@@ -74,7 +74,7 @@ get_header(); ?>
 
 				<div class="latest-news">
 
-					<h2 class="kicker">Latest News</h2>
+					<h2 class="kicker latest-news__kicker">Latest News</h2>
 
 					<?php $news_query = new WP_Query( array(
 						'post_type'              => 'post',
@@ -87,14 +87,18 @@ get_header(); ?>
 							$news_query->the_post(); ?>
 
 							<div class="news-item">
-								<a class="news-item__link" href="<?php the_permalink(); ?>">
+								<div class="news-item__header">
 									<?php the_post_thumbnail( 'news-home' ); ?>
-									<h3 class="news-item__title"><?php the_title(); ?></h3>
-								</a>
-								<div class="news-meta">
-									<span class="news-meta__date"><?php the_time( 'm.d.Y' ); ?></span> | <span class="news-meta__topic"><?php the_category( ', ' ); ?></span>
 								</div>
-								<div class="news-item__excerpt"><?php the_excerpt(); ?></div>
+								<div class="news-item__body">
+									<a class="news-item__link" href="<?php the_permalink(); ?>">
+										<h3 class="news-item__title"><?php the_title(); ?></h3>
+									</a>
+									<div class="news-meta">
+										<span class="news-meta__date"><?php the_time( 'm.d.Y' ); ?></span> | <span class="news-meta__topic"><?php the_category( ', ' ); ?></span>
+									</div>
+									<div class="news-item__excerpt"><?php the_excerpt(); ?></div>
+								</div>
 
 							</div>
 

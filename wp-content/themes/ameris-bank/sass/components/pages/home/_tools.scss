@@ -3,6 +3,7 @@
 	margin: 0 auto;
 	@include rem-fallback(margin-bottom, 4);
 	@include rem-fallback(max-width, 30);
+	@include clearfix();
 }
 
 .home-tools {
