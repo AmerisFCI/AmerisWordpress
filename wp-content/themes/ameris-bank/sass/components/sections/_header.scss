@@ -38,16 +38,23 @@
 	clear: right;
 }
 
-
 .search-form {
-	float: right;
 	clear: both;
+	float: right;
 }
 
 
-@include breakpoint($tablet-to-desktop) {
 
-	
+@media screen and (min-width: 580px) and (max-width: 1023px) {
+	.search-form {
+		clear: none;
+		@include rem-fallback(margin-top, 6);
+	}
+}
+
+
+@include breakpoint($narrow-to-desktop) {
+
 	.utility-navigation {
 		float: right;
 	}
@@ -57,10 +64,13 @@
 		clear: none;
 	}
 
+	.search-form {
+		clear: both;
+	}
 
 }
 
-@include breakpoint($desktop) {
+@media screen and (min-width: 1280px) {
 	.search-form {
 		clear: right;
 	}

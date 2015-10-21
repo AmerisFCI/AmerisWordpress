@@ -56,7 +56,7 @@
 				</form>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'ameris-bank' ); ?></button>
+					<button class="menu-toggle lines-button" aria-controls="primary-menu" aria-expanded="false"><span class="element-invisible"><?php esc_html_e( 'Menu', 'ameris-bank' ); ?></span><span class="lines"></span></button>
 					<?php wp_nav_menu( array(
 						'theme_location' => 'header-main',
 						'menu_id'        => 'primary-menu',

@@ -116,6 +116,10 @@
 	clear: both;
 }
 
+footer .menu-item {
+	display: inline-block;
+}
+
 
 @include breakpoint($tablet-to-desktop) {
 	.newsletter-signup {
@@ -132,6 +136,13 @@
 			}
 		}
 	}
+
+	.footer-utility {
+		float: left;
+		clear: both;
+		@include rem-fallback(margin-top, 1);
+	}
+
 }
 
 
@@ -157,12 +168,16 @@
 
 
 
+
+
 }
 
 @include breakpoint($desktop) {
 
 	.footer-utility {
 		float: right;
+		clear: none;
+		margin: 0;
 	}
 
 }
