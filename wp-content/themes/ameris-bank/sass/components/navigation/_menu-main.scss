@@ -1,12 +1,98 @@
+//
+//
+// -------------------- Open and Close toggle
+//
+//
+
+$button-size : 3.5rem;
+$transition: .3s; // increase this to see the transformations in slow-motion
+
+@mixin line {
+	display: inline-block;
+	width: $button-size;
+	height: $button-size/7;
+	background: $white;
+	border-radius: $button-size/14;
+	transition: $transition;
+}
+ 
+.lines-button {
+	display: inline-block;
+	padding: $button-size/2 $button-size/4;
+	transition: .3s;
+	cursor: pointer;
+	user-select: none;
+	border-radius: $button-size/7;
+
+	&:hover, &:focus {
+		opacity: 1;
+	}
+
+	&:active {
+		transition: 0;
+		background: rgba(0,0,0,.1);
+	}
+}
+
+.lines {
+	//create middle line
+	@include line;
+	position: relative;
+
+	//create the upper and lower lines as pseudo-elements of the middle line
+	&:before, &:after {
+
+		@include line;
+		position: absolute;
+		left:0;
+		content: '';
+		transform-origin: $button-size/14 center;
+	}
+
+	&:before { top: $button-size/4; }
+	&:after { top: -$button-size/4; }
+}
+
+
+.toggled .lines-button .lines{
+
+	//hide the middle line
+	background: transparent;
+
+	//overlay the lines by setting both their top values to 0
+	&:before, &:after{
+		transform-origin: 50% 50%;
+		top:0;
+		width: $button-size;
+	}
+
+	// rotate the lines to form the x shape
+	&:before{
+		transform: rotate3d(0,0,1,45deg);
+	}
+	&:after{
+		transform: rotate3d(0,0,1,-45deg);
+	}
+}
+
+//
+//
+// -------------------- END TOGGLE
+//
+//
+
+//
+//
+// -------------------- MOBILE MENU & DEFAULTS
+//
+//
+
 .main-navigation {
 
 	@include rem-fallback(font-size, 1.8);
+
 	a {
 		color: $white;
-
-	}
-
-	.menu-item a {
 		text-transform: uppercase;
 		font-family: $font-heading;
 		display: block;
@@ -17,56 +103,53 @@
 			color: $link-color;
 		}
 	}
+
+	ul {
+		display: none;
+	}
+
+	li.active > ul, li:hover > ul {
+		display: block;
+	}
+
 }
 
-
-/* Small menu. */
-
-.main-navigation ul {
-	display: none;
+.menu-toggle {
+	padding: 0;
+	position: absolute;
+	@include rem-fallback(top, 2);
+	@include rem-fallback(right, 3);
+	background: transparent;
+	&:hover, &:active {
+		background: transparent;
+	}
 }
 
 .menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation.toggled ul.menu {
 	display: block;
 }
 
-.main-navigation ul ul { // hiding sublevels for now
-	display:none;
-}
+//
+//
+// -------------------- END MOBILE MENU
+//
+//
 
-@include breakpoint( $tablet-to-desktop ) {
+@include breakpoint( $narrow-to-desktop ) {
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
 		display: block;
 	}
+	.main-navigation ul ul { // hiding sublevels for now
+		display:none;
+	}
 	.main-navigation {
 		text-align: right;
 		@include rem-fallback(margin-right, 3);
 
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		@include rem-fallback(margin, 0, 0, 2);
-		overflow: hidden;
-	}
-
-	& .nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	& .nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
 	}
 }
 
@@ -79,4 +162,25 @@
 	&.toggled {
 		
 	}
+}
+
+
+//Personal Sub Nav
+.personal-nav {
+
+}
+
+//Business Sub Nav
+.business-nav {
+
+}
+
+//SBA Financing Sub Nav
+.sba-nav {
+
+}
+
+//Residential Financing Sub Nav
+.residential-nav {
+
 }
