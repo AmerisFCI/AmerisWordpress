@@ -16,6 +16,8 @@
 	position: relative;
 	z-index: 1;
 	text-shadow: 0 0 90px #000;
+	padding-top: 8rem;
+	margin-top: 20vh;
 }
 
 .slide {
@@ -76,19 +78,19 @@
 
 
 
-@include breakpoint($tablet-to-desktop) {
+@include breakpoint($tablet-wide-up) {
 
 	.slide__blurb {
 		@include rem-fallback(font-size, 6.5);
 	}
 
 	.slide__text-wrap {
-		//float: right;
 		@include rem-fallback(width, 40);
 		padding-top: 8rem;
 		margin-top: 20vh;
 		position: absolute;
-		@include rem-fallback(right, 1);
+		right: 5%;
+		bottom: inherit;
 
 	}
 
@@ -125,21 +127,22 @@
 
 .slick-dots {
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	position: absolute;
-	@include rem-fallback(bottom, 2);
-	@include rem-fallback(right, 2);
+	width: 100%;
+	@include rem-fallback(bottom, 7);
 	z-index: 2;
+	text-align: center;
 
 	li {
-		//display: block;
+		display: inline-block;
 		//line-height: 0;
 		list-style: none;
 		margin: 0;
-		@include rem-fallback(margin, 0, 0, 0, 1.6);
+		@include rem-fallback(margin, 0, .8, 0, .8);
 		padding: 0;
-		float: left;
+		//float: left;
 		box-shadow: 0 0 120px #000;
 
 
@@ -160,6 +163,23 @@
 		&.slick-active button {
 			background-color: $white;
 
+		}
+	}
+}
+
+@include breakpoint($mobile) {
+	.slick-dots {
+		@include rem-fallback(bottom, 1.5);
+	}
+}
+
+@include breakpoint($tablet-wide-up) {
+	.slick-dots {
+		@include rem-fallback(bottom, 2);
+		@include rem-fallback(right, 2);
+		width: auto;
+		li {
+			@include rem-fallback(margin, 0, 0, 0, 1.6);
 		}
 	}
 }
