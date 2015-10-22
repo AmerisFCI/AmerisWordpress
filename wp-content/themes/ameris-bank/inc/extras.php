@@ -132,6 +132,7 @@ add_filter( 'wp_setup_nav_menu_item', 'ameris_wp_setup_nav_menu_item' );
 class Ameris_Description_Walker extends Walker_Nav_Menu {
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 		parent::start_el( $output, $item, $depth, $args );
-		$output .= sprintf( '<div class="item-description">%s</div>', $item->description );
+		if ( $item->description )
+			$output .= sprintf( '<div class="item-description">%s</div>', $item->description );
 	}
 }
