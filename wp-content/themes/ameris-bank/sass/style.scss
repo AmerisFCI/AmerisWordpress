@@ -56,8 +56,20 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import "components/accessibility/skip-link";
 
+@import "components/forms/buttons";
+@import "components/forms/fields";
+
+@import "components/media/captions";
+@import "components/media/embeds";
+@import "components/media/galleries";
+@import "components/media/icons";
+@import "components/media/images";
+
+@import "components/wysiwyg/alignments";
+
 @import "components/navigation/menus";
 @import "components/navigation/links";
+@import "components/navigation/menu-toggle";
 @import "components/navigation/menu-main";
 @import "components/navigation/utility-nav";
 @import "components/navigation/search-box";
@@ -68,17 +80,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "components/sections/footer";
 
 @import "components/widgets/widgets";
-
-@import "components/media/captions";
-@import "components/media/embeds";
-@import "components/media/galleries";
-@import "components/media/icons";
-@import "components/media/images";
-
-@import "components/wysiwyg/alignments";
-
-@import "components/forms/buttons";
-@import "components/forms/fields";
 
 @import "components/pages/generic";
 @import "components/pages/error404";

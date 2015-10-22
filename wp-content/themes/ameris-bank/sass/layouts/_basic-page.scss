@@ -1,6 +1,6 @@
 .inner-wrap {
 	@include rem-fallback(max-width, 140);
-	@include rem-fallback(padding, 0, 3);
+	@include rem-fallback(padding, 0, 5);
 	margin: 0 auto;
 	position: relative;
 
@@ -11,3 +11,16 @@
 	@include background-image(linear-gradient(to top center, $lightgray, $white));
 }
 
+
+@include breakpoint($tablet-to-desktop) {
+	.inner-wrap {
+		@include rem-fallback(padding, 0, 2);
+	}
+}
+
+
+@include breakpoint($wide) {
+	.inner-wrap {
+		padding: 0;
+	}
+}
