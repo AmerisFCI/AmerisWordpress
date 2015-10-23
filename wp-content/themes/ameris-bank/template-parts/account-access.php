@@ -13,7 +13,9 @@
 			<option>Select an account type...</option>
 		</select>
 		<input type="text" placeholder="User ID" />
-		<input type="submit" value="Sign In" />
+		<span class="account-access__submit-wrapper">
+			<input class="account-access__submit" type="submit" value="Sign In" />
+		</span>
 	</form>
 	<p>Interested in having Online Banking? <a href="#">Register now</a>.</p>
 </div>

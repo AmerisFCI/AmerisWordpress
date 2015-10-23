@@ -5,8 +5,10 @@
 
 }
 
+
+
 .latest-news__kicker {
-	@include float-span(2);
+	@include rem-fallback(margin, 2);
 }
 
 .news-item__link {
@@ -30,10 +32,13 @@
 
 .news-item {
 	@include rem-fallback(margin-bottom, 2);
+
 	&:first-of-type {
 		clear: both;
 	}
+
 	@include clearfix();
+
 }
 
 .attachment-news-home {
@@ -43,6 +48,14 @@
 	width: 100%;
 }
 
+@include breakpoint($tablet-to-desktop) {
+	.latest-news__kicker-wrap {
+		@include grid-span(2, 1);
+		margin-right: 0;
+	}
+}
+
+
 @include breakpoint($tablet-wide) {
 	.news-item {
 		@include float-span(2);
@@ -51,6 +64,11 @@
 	.news-item:nth-of-type(3) {
 		@include float-span(2, 'last')
 	}
+
+	.news-item:first-of-type {
+		clear: both;
+	}
+
 }
 
 @mixin horizontal-news {
@@ -77,7 +95,15 @@
 		max-width: none;
 		width: auto;
 	}
+	.latest-news__kicker-wrap {
+		float: none;
+		width: auto;
+	}
+
+
 }
+
+
 
 @include breakpoint($narrow-to-desktop) {
 	@include horizontal-news;
@@ -85,6 +111,12 @@
 
 @include breakpoint($tablet-skinny) {
 	@include horizontal-news;
+}
+
+@include breakpoint($desktop) {
+	.latest-news__kicker-wrap {
+		@include grid-span(2,1);
+	}
 }
 
 @include breakpoint($wide) {
