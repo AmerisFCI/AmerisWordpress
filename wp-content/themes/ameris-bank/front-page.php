@@ -74,7 +74,9 @@ get_header(); ?>
 
 				<div class="latest-news">
 
-					<h2 class="kicker latest-news__kicker">Latest News</h2>
+					<div class="latest-news__kicker-wrap">
+						<h2 class="kicker latest-news__kicker">Latest News</h2>
+					</div>
 
 					<?php $news_query = new WP_Query( array(
 						'post_type'              => 'post',

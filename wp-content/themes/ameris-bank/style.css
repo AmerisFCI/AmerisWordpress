@@ -961,17 +961,24 @@ dd {
   background-image: -moz-linear-gradient(bottom, #ebedef, #ffffff);
   background-image: -webkit-linear-gradient(bottom, #ebedef, #ffffff);
   background-image: linear-gradient(to top center, #ebedef, #ffffff);
+  padding-top: 200px;
+  padding-top: 20rem;
+}
+
+/* line 15, sass/layouts/_basic-page.scss */
+.home .site-content {
+  padding-top: 0;
 }
 
 @media (min-width: 530px) {
-  /* line 16, sass/layouts/_basic-page.scss */
+  /* line 21, sass/layouts/_basic-page.scss */
   .inner-wrap {
     padding: 0px 20px;
     padding: 0rem 2rem;
   }
 }
 @media (min-width: 1400px) {
-  /* line 23, sass/layouts/_basic-page.scss */
+  /* line 28, sass/layouts/_basic-page.scss */
   .inner-wrap {
     padding: 0;
   }
@@ -2404,7 +2411,23 @@ footer .menu-item {
   width: 100%;
 }
 /* line 12, sass/components/pages/home/_accountaccess.scss */
-.account-access input[type="submit"] {
+.account-access input[type="text"], .account-access .sod_select {
+  height: 48px;
+  height: 4.8rem;
+}
+/* line 16, sass/components/pages/home/_accountaccess.scss */
+.account-access a {
+  color: #ffffff;
+}
+/* line 20, sass/components/pages/home/_accountaccess.scss */
+.account-access p {
+  font-style: italic;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+/* line 28, sass/components/pages/home/_accountaccess.scss */
+input.account-access__submit {
   background-color: #092764;
   color: #ffffff;
   padding: 10px 20px;
@@ -2422,101 +2445,152 @@ footer .menu-item {
   font-weight: 300;
   clear: both;
   width: auto;
-  margin: 10px 0px 15px;
-  margin: 1rem 0rem 1.5rem;
+  padding-left: 65px;
+  padding-left: 6.5rem;
 }
 /* line 172, sass/base/_mixins.scss */
-.account-access input[type="submit"]:hover, .account-access input[type="submit"]:active, .account-access input[type="submit"]:focus {
+input.account-access__submit:hover, input.account-access__submit:active, input.account-access__submit:focus {
   background-color: #15397f;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 177, sass/base/_mixins.scss */
-.account-access input[type="submit"]:focus {
+input.account-access__submit:focus {
   text-decoration: underline;
 }
 /* line 181, sass/base/_mixins.scss */
-.account-access input[type="submit"]:hover, .account-access input[type="submit"]:visited, .account-access input[type="submit"]:focus {
+input.account-access__submit:hover, input.account-access__submit:visited, input.account-access__submit:focus {
   color: #ffffff;
-}
-/* line 18, sass/components/pages/home/_accountaccess.scss */
-.account-access a {
-  color: #ffffff;
-}
-/* line 22, sass/components/pages/home/_accountaccess.scss */
-.account-access p {
-  font-style: italic;
-  margin-bottom: 0;
-  font-weight: 300;
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
-  /* line 31, sass/components/pages/home/_accountaccess.scss */
+/* line 34, sass/components/pages/home/_accountaccess.scss */
+.account-access__submit-wrapper {
+  display: block;
+  position: relative;
+  margin: 10px 0px 15px;
+  margin: 1rem 0rem 1.5rem;
+}
+/* line 38, sass/components/pages/home/_accountaccess.scss */
+.account-access__submit-wrapper:before {
+  content: '';
+  display: inline-block;
+  background-image: url('images/sprite-images-sd41b174300.png');
+  background-position: 0 -691px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 41px;
+  width: 41px;
+  position: absolute;
+  top: 8px;
+  top: 0.8rem;
+  left: 10px;
+  left: 1rem;
+  pointer-events: none;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 38, sass/components/pages/home/_accountaccess.scss */
+  .account-access__submit-wrapper:before {
+    background-size: 215px 2153.5px;
+    background-position: 0 -299.5px;
+    height: 41px;
+    width: 41px;
+  }
+}
+
+/* line 126, sass/base/_mixins.scss */
+.account-access__form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 530px) and (max-width: 739px) {
+  /* line 54, sass/components/pages/home/_accountaccess.scss */
   .account-access {
     max-width: 400px;
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -60px;
+    margin-top: -6rem;
   }
 }
-@media (min-width: 530px) {
-  /* line 39, sass/components/pages/home/_accountaccess.scss */
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* line 64, sass/components/pages/home/_accountaccess.scss */
+  .account-access input[type="text"], .account-access .sod_select {
+    width: 38%;
+    margin-right: 2%;
+    display: block;
+    float: left;
+    padding-top: 20px;
+    padding-top: 2rem;
+    height: 58px;
+    height: 5.8rem;
+  }
+  /* line 72, sass/components/pages/home/_accountaccess.scss */
+  .account-access .account-access__submit-wrapper {
+    width: 20%;
+    float: left;
+    margin: 0;
+  }
+  /* line 77, sass/components/pages/home/_accountaccess.scss */
+  .account-access input.account-access__submit {
+    width: 100%;
+    clear: none;
+    height: 58px;
+    height: 5.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 86, sass/components/pages/home/_accountaccess.scss */
   .account-access {
     margin-top: -60px;
     margin-top: -6rem;
     margin-bottom: 30px;
     margin-bottom: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 46, sass/components/pages/home/_accountaccess.scss */
-  .account-access {
     padding: 26px 26px 20px;
     padding: 2.6rem 2.6rem 2rem;
   }
-  /* line 49, sass/components/pages/home/_accountaccess.scss */
+  /* line 91, sass/components/pages/home/_accountaccess.scss */
   .account-access p {
     font-size: 20px;
     font-size: 2rem;
   }
 }
-/* line 8, sass/components/pages/home/_latest-news.scss */
+/* line 10, sass/components/pages/home/_latest-news.scss */
 .latest-news__kicker {
-  width: 31.42857%;
-  clear: right;
-  float: left;
-  margin-left: 0;
-  margin-right: 2.85714%;
+  margin: 20px;
+  margin: 2rem;
 }
 
-/* line 12, sass/components/pages/home/_latest-news.scss */
+/* line 14, sass/components/pages/home/_latest-news.scss */
 .news-item__link {
   text-decoration: none;
 }
 
-/* line 18, sass/components/pages/home/_latest-news.scss */
+/* line 20, sass/components/pages/home/_latest-news.scss */
 .news-meta {
   margin-bottom: 10px;
   margin-bottom: 1rem;
 }
 
-/* line 21, sass/components/pages/home/_latest-news.scss */
+/* line 23, sass/components/pages/home/_latest-news.scss */
 .news-item__excerpt {
   font-weight: 300;
 }
 
-/* line 25, sass/components/pages/home/_latest-news.scss */
+/* line 27, sass/components/pages/home/_latest-news.scss */
 .news-item__body {
   background: #ffffff;
   padding: 20px;
   padding: 2rem;
 }
 
-/* line 31, sass/components/pages/home/_latest-news.scss */
+/* line 33, sass/components/pages/home/_latest-news.scss */
 .news-item {
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
-/* line 33, sass/components/pages/home/_latest-news.scss */
+/* line 36, sass/components/pages/home/_latest-news.scss */
 .news-item:first-of-type {
   clear: both;
 }
@@ -2527,7 +2601,7 @@ footer .menu-item {
   clear: both;
 }
 
-/* line 39, sass/components/pages/home/_latest-news.scss */
+/* line 44, sass/components/pages/home/_latest-news.scss */
 .attachment-news-home {
   height: auto;
   display: block;
@@ -2535,8 +2609,19 @@ footer .menu-item {
   width: 100%;
 }
 
+@media (min-width: 530px) {
+  /* line 52, sass/components/pages/home/_latest-news.scss */
+  .latest-news__kicker-wrap {
+    width: 31.42857%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    margin-right: 0;
+  }
+}
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 47, sass/components/pages/home/_latest-news.scss */
+  /* line 60, sass/components/pages/home/_latest-news.scss */
   .news-item {
     width: 31.42857%;
     clear: right;
@@ -2545,33 +2630,38 @@ footer .menu-item {
     margin-right: 2.85714%;
   }
 
-  /* line 51, sass/components/pages/home/_latest-news.scss */
+  /* line 64, sass/components/pages/home/_latest-news.scss */
   .news-item:nth-of-type(3) {
     width: 31.42857%;
     clear: right;
     float: right;
     margin-right: 0;
   }
+
+  /* line 68, sass/components/pages/home/_latest-news.scss */
+  .news-item:first-of-type {
+    clear: both;
+  }
 }
 @media (min-width: 1024px) {
-  /* line 57, sass/components/pages/home/_latest-news.scss */
+  /* line 75, sass/components/pages/home/_latest-news.scss */
   .news-item__header, .news-item__body {
     float: left;
   }
 
-  /* line 60, sass/components/pages/home/_latest-news.scss */
+  /* line 78, sass/components/pages/home/_latest-news.scss */
   .news-item {
     width: 100%;
     position: relative;
   }
 
-  /* line 64, sass/components/pages/home/_latest-news.scss */
+  /* line 82, sass/components/pages/home/_latest-news.scss */
   .news-item__body {
     width: 60%;
     float: right;
   }
 
-  /* line 68, sass/components/pages/home/_latest-news.scss */
+  /* line 86, sass/components/pages/home/_latest-news.scss */
   .news-item__header {
     width: 40%;
     position: absolute;
@@ -2579,33 +2669,39 @@ footer .menu-item {
     overflow: hidden;
   }
 
-  /* line 74, sass/components/pages/home/_latest-news.scss */
+  /* line 92, sass/components/pages/home/_latest-news.scss */
   .attachment-news-home {
     height: 100%;
     display: block;
     max-width: none;
+    width: auto;
+  }
+
+  /* line 98, sass/components/pages/home/_latest-news.scss */
+  .latest-news__kicker-wrap {
+    float: none;
     width: auto;
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 57, sass/components/pages/home/_latest-news.scss */
+  /* line 75, sass/components/pages/home/_latest-news.scss */
   .news-item__header, .news-item__body {
     float: left;
   }
 
-  /* line 60, sass/components/pages/home/_latest-news.scss */
+  /* line 78, sass/components/pages/home/_latest-news.scss */
   .news-item {
     width: 100%;
     position: relative;
   }
 
-  /* line 64, sass/components/pages/home/_latest-news.scss */
+  /* line 82, sass/components/pages/home/_latest-news.scss */
   .news-item__body {
     width: 60%;
     float: right;
   }
 
-  /* line 68, sass/components/pages/home/_latest-news.scss */
+  /* line 86, sass/components/pages/home/_latest-news.scss */
   .news-item__header {
     width: 40%;
     position: absolute;
@@ -2613,22 +2709,38 @@ footer .menu-item {
     overflow: hidden;
   }
 
-  /* line 74, sass/components/pages/home/_latest-news.scss */
+  /* line 92, sass/components/pages/home/_latest-news.scss */
   .attachment-news-home {
     height: 100%;
     display: block;
     max-width: none;
     width: auto;
   }
+
+  /* line 98, sass/components/pages/home/_latest-news.scss */
+  .latest-news__kicker-wrap {
+    float: none;
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 117, sass/components/pages/home/_latest-news.scss */
+  .latest-news__kicker-wrap {
+    width: 31.42857%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
 }
 @media (min-width: 1400px) {
-  /* line 92, sass/components/pages/home/_latest-news.scss */
+  /* line 124, sass/components/pages/home/_latest-news.scss */
   .news-item__header, .news-item__body {
     position: static;
     width: auto;
   }
 
-  /* line 96, sass/components/pages/home/_latest-news.scss */
+  /* line 128, sass/components/pages/home/_latest-news.scss */
   .news-item {
     width: 31.42857%;
     clear: right;
@@ -2637,7 +2749,7 @@ footer .menu-item {
     margin-right: 2.85714%;
   }
 
-  /* line 100, sass/components/pages/home/_latest-news.scss */
+  /* line 132, sass/components/pages/home/_latest-news.scss */
   .news-item:nth-of-type(3) {
     width: 31.42857%;
     clear: right;
@@ -2645,7 +2757,7 @@ footer .menu-item {
     margin-right: 0;
   }
 
-  /* line 104, sass/components/pages/home/_latest-news.scss */
+  /* line 136, sass/components/pages/home/_latest-news.scss */
   .attachment-news-home {
     height: auto;
     display: block;
