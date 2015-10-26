@@ -51,6 +51,7 @@
 @include breakpoint($tablet-to-desktop) {
 	.latest-news__kicker-wrap {
 		@include grid-span(2, 1);
+		float: none;
 		margin-right: 0;
 	}
 }
@@ -95,6 +96,7 @@
 		max-width: none;
 		width: auto;
 	}
+
 	.latest-news__kicker-wrap {
 		float: none;
 		width: auto;
@@ -104,11 +106,9 @@
 }
 
 
-
 @include breakpoint($narrow-to-desktop) {
 	@include horizontal-news;
 }
-
 @include breakpoint($tablet-skinny) {
 	@include horizontal-news;
 }
@@ -116,6 +116,7 @@
 @include breakpoint($desktop) {
 	.latest-news__kicker-wrap {
 		@include grid-span(2,1);
+		float: none;
 	}
 }
 
@@ -129,7 +130,7 @@
 		@include float-span(2);
 	}
 
-	.news-item:nth-of-type(3) {
+	.news-item:last-of-type {
 		@include float-span(2, 'last')
 	}
 

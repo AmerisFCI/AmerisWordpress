@@ -15,7 +15,12 @@
 		}
 	}
 
+	.menu-item {
+		display: inline-block;
+	}
+
 }
+
 
 @include breakpoint($mobile) {
 	.utility-navigation {

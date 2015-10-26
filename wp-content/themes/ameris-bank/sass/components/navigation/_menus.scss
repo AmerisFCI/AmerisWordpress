@@ -10,23 +10,7 @@
 
 
 
-@include breakpoint($narrow-to-desktop) {
 
-	.menu-item {
-		display: inline-block;
-	}
-
-	li.menu-item-has-children ul.sub-menu {
-		position: absolute;
-		text-align: left;
-		color: $link-color;
-		left: 0;
-		width: 100%;
-		margin: 0 auto;
-		background: rgba(255,255,255,.5);
-	}
-
-}
 
 
 .comment-navigation,
