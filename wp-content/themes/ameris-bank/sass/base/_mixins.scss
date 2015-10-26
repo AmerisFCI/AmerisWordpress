@@ -219,3 +219,62 @@ $sprite-high-res-suffix: '-2x' !default;
   }
 
 }
+
+@mixin red-arrow-right {
+
+  @include rem-fallback(padding-right, 4.2);
+  position: relative;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    @include rem-fallback(right, 1.9);
+    @include rem-fallback(top, 3.2);
+    @include use-sprite(arrow-red-right);
+    transition: right .2s;
+  }
+
+  &:hover:after, &:focus:after {
+    @include rem-fallback(right, 1.5);
+  }
+
+}
+
+@mixin red-arrow-right-small {
+
+  @include rem-fallback(padding-right, 3.2);
+  position: relative;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    @include rem-fallback(left, 1.5);
+    @include rem-fallback(top, .4);
+    @include use-sprite(arrow-red-right-small);
+    transition: left .2s;
+  }
+
+  &:hover:after, &:focus:after {
+    @include rem-fallback(left, 1.9);
+  }
+
+}
+
+
+@mixin red-link {
+  @include rem-fallback(padding, .5, 0);
+  @include rem-fallback(font-size, 1.2);
+  text-transform: uppercase;
+  color: $red;
+  transition: all .2s;
+  display: inline-block;
+  clear: both;
+  font-weight: 700;
+  border-bottom: 1px solid transparent;
+
+  &:hover, &:focus {
+    border-color: $red;
+  }
+}
