@@ -19,8 +19,8 @@
 	<header class="page-title">
 		<?php global $post;
 	
-		// if a blog post - get the title for the blog home (newsroom)
-		if ( is_singular( 'post ') ) {
+		// if a blog post or blog home - get the title for the blog home (newsroom)
+		if ( is_singular( 'post' ) || is_home() ) {
 			$blog_home = get_option( 'page_for_posts', 0 ); ?>
 			<h2><a href="<?php echo get_permalink( $blog_home ); ?>">
 				<?php echo get_the_title( get_option( 'page_for_posts', 0 ) ); ?>

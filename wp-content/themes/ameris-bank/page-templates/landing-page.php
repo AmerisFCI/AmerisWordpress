@@ -18,6 +18,8 @@ get_sidebar( 'left' ); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 					
+				<h3 class="heading"><?php the_field( 'heading' ); ?></h3>
+
 				<div class="select-container">
 					<?php wp_dropdown_pages( array(
 						'child_of'         => get_the_ID(),
@@ -41,6 +43,8 @@ get_sidebar( 'left' ); ?>
 						wp_reset_postdata(); ?>
 					</div>
 				<?php } ?>
+
+				<?php get_template_part( 'template-parts/resources-guides' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
