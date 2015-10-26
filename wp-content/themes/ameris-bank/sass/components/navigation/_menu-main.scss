@@ -63,25 +63,6 @@
 //
 
 
-
-@include breakpoint( $narrow-to-desktop ) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-	.main-navigation ul ul { // hiding sublevels for now
-		display:none;
-	}
-	.main-navigation {
-		text-align: right;
-		@include rem-fallback(margin-right, 3);
-
-	}
-}
-
-
 .main-navigation {
 	clear: both;
 	&.toggled {
@@ -89,23 +70,118 @@
 	}
 }
 
+@include breakpoint( $narrow-to-desktop ) {
+	.menu-toggle {
+		display: none;
+	}
 
-//Personal Sub Nav
-.personal-nav {
+	.main-navigation {
+		text-align: right;
+		@include rem-fallback(margin-right, 3);
+
+		ul {
+			display: block;
+			ul { // hiding sublevels for now
+				display:none;
+				a {
+					color: $link-color;
+				}
+			}
+		}
+
+		.menu-item {
+			display: inline-block;
+			transition: all .2s;
+			&:hover, &:focus {
+				background-color: $white;
+				color: $link-color;
+				a {
+					color: $link-color;
+				}
+			}
+		}
+
+		.menu-item-has-children ul.sub-menu {
+			position: absolute;
+			text-align: left;
+			color: $link-color;
+			left: 0;
+			width: 100%;
+			margin: 0 auto;
+			background: rgba(255,255,255,.5);
+		}
+
+
+		//Sub Menu with toggles
+		.toggle-sub__parent {
+			> a {
+				@include float-span(3);
+				clear: left;
+			}
+			> .item-description {
+				@include grid-span(9, 4);
+				opacity: 0;
+				transition: all .2s;
+			}
+			&:hover {
+				background: transparent;
+				> a {
+					background: $white;
+				}
+			}
+			&:hover > .item-description {
+				opacity: 1;
+				background-color: $white;
+			}
+			> ul.sub-menu {
+				position: static;
+				opacity: 0;
+				transition: opacity .2s;
+				@include grid-span(9, 4);
+				clear: both;
+			}
+			&:hover > ul.sub-menu {
+				opacity: 1;
+			}
+		}
+
+	}
+
+	//Open Sub Navs
+	.open-sub:hover {
+		> .sub-menu {
+			display: table;
+			> li {
+				display: table-cell;
+				> .sub-menu {
+					display: block;
+				}
+			}
+		}
+	}
+
+
+	//Personal Sub Nav
+	.personal-nav {
+
+	}
+
+	//Business Sub Nav
+	.business-nav {
+//testing
+		ul.sub-menu {display: block;}
+	}
+
+	//SBA Financing Sub Nav
+	.sba-nav {
+
+	}
+
+	//Residential Financing Sub Nav
+	.residential-nav {
+
+	}
 
 }
 
-//Business Sub Nav
-.business-nav {
 
-}
-
-//SBA Financing Sub Nav
-.sba-nav {
-
-}
-
-//Residential Financing Sub Nav
-.residential-nav {
-
-}

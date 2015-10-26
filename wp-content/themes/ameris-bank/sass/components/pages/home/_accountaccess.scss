@@ -23,6 +23,10 @@
 		font-weight: 300;
 	}
 
+	.sod_select:before {
+		@include rem-fallback(top, 1);
+	}
+
 }
 
 input.account-access__submit {
@@ -40,8 +44,8 @@ input.account-access__submit {
 		display: inline-block;
 		@include use-sprite(icon-signin-person);
 		position: absolute;
-		@include rem-fallback(top, .8);
-		@include rem-fallback(left, 1);
+		@include rem-fallback(top, .9);
+		@include rem-fallback(left, 1.1);
 		pointer-events: none;
 	}
 }
@@ -80,6 +84,13 @@ input.account-access__submit {
 			@include rem-fallback(height, 5.8);
 		}
 	}
+
+}
+
+@include breakpoint($tablet-wide-up) {
+	.account-access .sod_select:before {
+		@include rem-fallback(top, 1.4);
+	}
 }
 
 @include breakpoint($narrow-to-desktop) {
@@ -90,6 +101,12 @@ input.account-access__submit {
 
 		p {
 			@include rem-fallback(font-size, 2);
+		}
+
+		input[type="text"], .sod_select {
+			@include rem-fallback(padding-top, 2);
+			@include rem-fallback(padding-bottom, 1.5);
+			@include rem-fallback(height, 5.8);
 		}
 	}
 }
