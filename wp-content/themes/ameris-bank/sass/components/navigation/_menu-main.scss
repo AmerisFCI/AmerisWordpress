@@ -70,118 +70,156 @@
 	}
 }
 
-@include breakpoint( $narrow-to-desktop ) {
-	.menu-toggle {
-		display: none;
-	}
+@include breakpoint( $narrow-to-desktop ) { //START DESKTOP SIZES
 
-	.main-navigation {
-		text-align: right;
-		@include rem-fallback(margin-right, 3);
 
-		ul {
-			display: block;
-			ul { // hiding sublevels for now
-				display:none;
-				a {
-					color: $link-color;
-				}
-			}
-		}
+.menu-toggle {
+	display: none;
+}
 
-		.menu-item {
-			display: inline-block;
-			transition: all .2s;
-			&:hover, &:focus {
-				background-color: $white;
+.main-navigation {
+	text-align: right;
+	@include rem-fallback(margin-right, 3);
+
+	ul {
+		display: block;
+		ul { // hiding sublevels for now
+			display:none;
+			a {
 				color: $link-color;
-				a {
-					color: $link-color;
-				}
 			}
 		}
-
-		.menu-item-has-children ul.sub-menu {
-			position: absolute;
-			text-align: left;
-			color: $link-color;
-			left: 0;
-			width: 100%;
-			margin: 0 auto;
-			background: rgba(255,255,255,.5);
-		}
-
-
-		//Sub Menu with toggles
-		.toggle-sub__parent {
-			> a {
-				@include float-span(3);
-				clear: left;
-			}
-			> .item-description {
-				@include grid-span(9, 4);
-				opacity: 0;
-				transition: all .2s;
-			}
-			&:hover {
-				background: transparent;
-				> a {
-					background: $white;
-				}
-			}
-			&:hover > .item-description {
-				opacity: 1;
-				background-color: $white;
-			}
-			> ul.sub-menu {
-				position: static;
-				opacity: 0;
-				transition: opacity .2s;
-				@include grid-span(9, 4);
-				clear: both;
-			}
-			&:hover > ul.sub-menu {
-				opacity: 1;
-			}
-		}
-
-	}
-
-	//Open Sub Navs
-	.open-sub:hover {
-		> .sub-menu {
-			display: table;
-			> li {
-				display: table-cell;
-				> .sub-menu {
-					display: block;
-				}
-			}
-		}
-	}
-
-
-	//Personal Sub Nav
-	.personal-nav {
-
-	}
-
-	//Business Sub Nav
-	.business-nav {
-//testing
-		ul.sub-menu {display: block;}
-	}
-
-	//SBA Financing Sub Nav
-	.sba-nav {
-
-	}
-
-	//Residential Financing Sub Nav
-	.residential-nav {
-
 	}
 
 }
+
+.nav-menu {
+	> li {
+		display: inline-block;
+		transition: all .2s;
+		&:hover, &:focus {
+			background-color: $white;
+			color: $link-color;
+			> a {
+				color: $link-color;
+			}
+		}
+	}
+	> li > ul {
+		position: absolute;
+		text-align: left;
+		color: $link-color;
+		left: 0;
+		width: 100%;
+		margin: 0 auto;
+		background: rgba(255,255,255,.5);
+	}
+}
+
+//Sub Menu with toggles
+.toggle-sub__parent {
+
+	width: 100%;
+
+	> a {
+		@include rem-fallback(padding, 3);
+		@include red-arrow-right;
+		@include rem-fallback(line-height, 3.2);
+		float: left;
+		clear: left;
+		width: 30%;
+		border-bottom: 2px solid transparent;
+		text-transform: none;
+		transition: all .2s;
+	}
+
+	> .item-description {
+		@include rem-fallback(padding, 3);
+		float: right;
+		clear: none;
+		width: 70%;
+		opacity: 0;
+		pointer-events: none;
+		transition: all .2s;
+		a {
+			@include red-link();
+		}
+		h3 {
+			@include rem-fallback(font-size, 3.2);
+			@include rem-fallback(line-height, 3.2);
+		}
+		p {
+			color: $text-color;
+			@include rem-fallback(font-size, 2);
+		}
+	}
+
+	> .sub-menu {
+		position: static;
+		opacity: 0;
+		transition: opacity .2s;
+		float: right;
+		clear: right;
+		width: 70%;
+		pointer-events: none;
+	}
+
+	&:hover {
+		background: transparent;
+		> a {
+			background: $white;
+			border-color: $red;
+		}
+		> .item-description {
+			opacity: 1;
+			background-color: $white;
+			pointer-events: all;
+		}
+		> .sub-menu {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+
+}
+
+//Open Sub Navs
+.open-sub:hover {
+	> .sub-menu {
+		display: table;
+		> li {
+			display: table-cell;
+			> .sub-menu {
+				display: block;
+			}
+		}
+	}
+}
+
+//Personal Sub Nav
+.personal-nav {
+
+}
+
+//Business Sub Nav
+.business-nav {
+//testing
+//ul.sub-menu {display: block;}
+}
+
+//SBA Financing Sub Nav
+.sba-nav {
+
+}
+
+//Residential Financing Sub Nav
+.residential-nav {
+
+}
+
+
+
+
+}  //END DESKTOP SIZES
 
 
