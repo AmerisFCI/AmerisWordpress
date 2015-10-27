@@ -10,6 +10,8 @@
 .site-content {
 	@include background-image(linear-gradient(to top center, $lightgray, $white));
 	@include rem-fallback(padding-top, 20);
+	@include rem-fallback(padding-bottom, 5);
+	@include clearfix();
 }
 
 .home .site-content {
