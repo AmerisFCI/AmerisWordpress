@@ -24,8 +24,9 @@
 }
 
 @include breakpoint($narrow-to-desktop) {
-	.account-access {
+	.home .account-access {
 		@include grid-span(4, 1);
+		@include rem-fallback(margin-top, -6);
 	}
 	.home-tools {
 		@include grid-span(10, 5);

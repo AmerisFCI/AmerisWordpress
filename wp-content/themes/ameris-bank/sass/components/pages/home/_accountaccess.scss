@@ -55,7 +55,7 @@ input.account-access__submit {
 }
 
 @include breakpoint($tablet-skinny) {
-	.account-access {
+	.home .account-access {
 		@include rem-fallback(max-width, 40);
 		margin-left: auto;
 		margin-right: auto;
@@ -66,22 +66,26 @@ input.account-access__submit {
 @include breakpoint($tablet-wide) {
 	.account-access {
 		input[type="text"], .sod_select {
-			width: 38%;
-			margin-right: 2%;
-			display: block;
-			float: left;
 			@include rem-fallback(padding-top, 2);
 			@include rem-fallback(height, 5.8);
-		}
-		.account-access__submit-wrapper {
-			width: 20%;
-			float: left;
-			margin: 0;
 		}
 		input.account-access__submit {
 			width: 100%;
 			clear: none;
 			@include rem-fallback(height, 5.8);
+		}
+	}
+	.home .account-access {
+		input[type="text"], .sod_select {
+			width: 38%;
+			margin-right: 2%;
+			display: block;
+			float: left;
+		}
+		.account-access__submit-wrapper {
+			width: 20%;
+			float: left;
+			margin: 0;
 		}
 	}
 
@@ -95,7 +99,6 @@ input.account-access__submit {
 
 @include breakpoint($narrow-to-desktop) {
 	.account-access {
-		@include rem-fallback(margin-top, -6);
 		@include rem-fallback(margin-bottom, 3);
 		@include rem-fallback(padding, 2.6, 2.6, 2);
 

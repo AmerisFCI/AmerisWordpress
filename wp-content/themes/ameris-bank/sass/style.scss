@@ -48,8 +48,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 //@import "base/libraries/slick-theme";
 
 /* Layout rules */
-// @import "layouts/content-sidebar";
-// @import "layouts/sidebar-content";
+@import "layouts/content-sidebar";
+@import "layouts/sidebar-content";
+@import "layouts/sidebar-content-sidebar";
 @import "layouts/basic-page";
 
 /* Component (SMACSS module) rules */

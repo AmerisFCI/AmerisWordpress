@@ -7,8 +7,10 @@
 
 get_header();
 
-get_sidebar( 'left' ); ?>
+get_template_part( 'template-parts/page', 'banner' ); ?>
 
+
+<div class="inner-wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -19,7 +21,12 @@ get_sidebar( 'left' ); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-		
+
 	</div><!-- #primary -->
+
+<?php get_sidebar( 'left' ); ?>
+
+</div>
+
 
 <?php get_footer(); ?>

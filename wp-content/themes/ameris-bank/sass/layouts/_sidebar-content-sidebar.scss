@@ -1,9 +1,7 @@
 //
-// The layout when there is only one sidebar on the right
+// The layout when there are two sidebars - one the left and one on the right
 //
 
-
-// Use 3 grid columns for smaller screens.
 
 @include breakpoint($tablet) {
 
@@ -11,16 +9,16 @@
 	@include add-gutter(1/5);
 
 	body:not(.home) .site-content {
-  		.content-area {
-			@include grid-span(2, 1);
+		.content-area {
+			@include grid-span(2, 2);
 		}
 	}
-	#sidebar-right {
-		@include grid-span(1, 3);
+	#sidebar-left {
+		@include grid-span(1, 1);
 	}
+	//right sidebar drops to the bottom on tablet
 }
 
-// Use 5 grid columns for larger screens.
 
 @include breakpoint($narrow-to-desktop) {
 
@@ -28,9 +26,12 @@
 	@include add-gutter(1/6);
 
 	body:not(.home) .site-content {
-  		.content-area {
-			@include grid-span(4, 1);
+		.content-area {
+			@include grid-span(3, 2);
 		}
+	}
+	#sidebar-left {
+		@include grid-span(1, 1);
 	}
 	#sidebar-right {
 		@include grid-span(1, 5);
