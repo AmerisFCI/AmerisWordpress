@@ -4,47 +4,59 @@
  */
 ?>
 
-<div class="image-banner">
-	<?php the_post_thumbnail( 'full' ); ?>
-<?php if ( get_field( 'banner_blurb' ) ) { ?>
-    <div class="blurb"><?php the_field( 'banner_blurb' ); ?></div>
-<?php } ?>
-</div>
+<div class="banner">
 
-<header class="page-title">
-
-    <?php if ( function_exists( 'breadcrumb_trail' ) ) { ?>
-        <div class="breadcrumbs">
-            <?php breadcrumb_trail( array(
-                'show_browse' => false
-            ) ); ?>
+    <div class="banner-image">
+        <?php the_post_thumbnail( 'full' ); ?>
+        <div class="banner-image__inner-wrap inner-wrap">
+            <?php if ( get_field( 'banner_blurb' ) ) { ?>
+                <div class="banner__blurb"><?php the_field( 'banner_blurb' ); ?></div>
+            <?php } ?>
         </div>
-    <?php } ?>
+    </div>
 
-    <?php global $post;
+    <header class="banner-text__inner-wrap inner-wrap">
 
-    // if a blog post or blog home - get the title for the blog home (newsroom)
-    if ( is_singular( 'post' ) || is_home() ) {
-        $blog_home = get_option( 'page_for_posts', 0 ); ?>
-        <h2><a href="<?php echo get_permalink( $blog_home ); ?>">
-                <?php echo get_the_title( get_option( 'page_for_posts', 0 ) ); ?>
-            </a></h2>
+        <div class="page-title">
 
-        <?php // if a leader - get the title for the leadership main page
-    } elseif( is_singular( 'leadership' ) ) { ?>
-        <h2>Leadership</h2>
+            <?php if ( function_exists( 'breadcrumb_trail' ) ) { ?>
+                <div class="breadcrumbs">
+                    <?php breadcrumb_trail( array(
+                        'show_browse' => false
+                    ) ); ?>
+                </div>
+            <?php } ?>
 
-    <?php } elseif ( is_archive() ) { ?>
-        <h1><?php the_archive_title(); ?></h1>
+            <?php global $post;
 
-    <?php } elseif ( is_search() ) { ?>
-        <h1>Search Results</h1>
+            // if a blog post or blog home - get the title for the blog home (newsroom)
+            if ( is_singular( 'post' ) || is_home() ) {
+                $blog_home = get_option( 'page_for_posts', 0 ); ?>
+                <h2><a href="<?php echo get_permalink( $blog_home ); ?>">
+                        <?php echo get_the_title( get_option( 'page_for_posts', 0 ) ); ?>
+                    </a></h2>
 
-    <?php } elseif ( is_404() ) { ?>
-        <h1>Page Not Found</h1>
+                <?php // if a leader - get the title for the leadership main page
+            } elseif( is_singular( 'leadership' ) ) { ?>
+                <h2>Leadership</h2>
 
-    <?php } else { ?>
-        <h1><?php the_title(); ?></h1>
-    <?php } ?>
+            <?php } elseif ( is_archive() ) { ?>
+                <h1><?php the_archive_title(); ?></h1>
 
-</header>
+            <?php } elseif ( is_search() ) { ?>
+                <h1>Search Results</h1>
+
+            <?php } elseif ( is_404() ) { ?>
+                <h1>Page Not Found</h1>
+
+            <?php } else { ?>
+                <h1><?php the_title(); ?></h1>
+            <?php } ?>
+
+        </div>
+
+
+
+    </header>
+
+</div>
