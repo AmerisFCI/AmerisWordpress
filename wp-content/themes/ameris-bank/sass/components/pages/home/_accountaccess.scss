@@ -64,7 +64,7 @@ input.account-access__submit {
 }
 
 @include breakpoint($tablet-wide) {
-	.account-access {
+	.home .account-access {
 		input[type="text"], .sod_select {
 			@include rem-fallback(padding-top, 2);
 			@include rem-fallback(height, 5.8);
@@ -92,13 +92,13 @@ input.account-access__submit {
 }
 
 @include breakpoint($tablet-wide-up) {
-	.account-access .sod_select:before {
+	.home .account-access .sod_select:before {
 		@include rem-fallback(top, 1.4);
 	}
 }
 
 @include breakpoint($narrow-to-desktop) {
-	.account-access {
+	.home .account-access {
 		@include rem-fallback(margin-bottom, 3);
 		@include rem-fallback(padding, 2.6, 2.6, 2);
 

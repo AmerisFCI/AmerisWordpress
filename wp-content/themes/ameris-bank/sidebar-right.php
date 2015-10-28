@@ -10,6 +10,6 @@ if ( ! is_active_sidebar( 'sidebar-right' ) ) {
 }
 ?>
 
-<div id="sidebar-right" class="widget-area" role="complementary">
+<div id="sidebar-right" class="widget-area sidebar sidebar-right" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-right' ); ?>
 </div><!-- #secondary -->

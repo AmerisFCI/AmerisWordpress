@@ -5,18 +5,18 @@
 
 // Use 3 grid columns for smaller screens.
 
-@include breakpoint($tablet) {
+@include breakpoint($tablet-wide) {
 
-	@include add-grid(3);
-	@include add-gutter(1/5);
+	@include add-grid(5);
+	@include add-gutter(1/6);
 
 	body:not(.home) .site-content {
   		.content-area {
-			@include grid-span(2, 2);
+			@include grid-span(3, 3);
 		}
 	}
 	#sidebar-left {
-		@include grid-span(1, 1);
+		@include grid-span(2, 1);
 	}
 }
 

@@ -6,7 +6,7 @@
  */
 ?>
 
-<div id="sidebar-left" role="complementary">
+<div id="sidebar-left" class="sidebar sidebar-left" role="complementary">
 
 	<nav class="sidebar-menu">
 		<?php ameris_sidebar_menu(); ?>

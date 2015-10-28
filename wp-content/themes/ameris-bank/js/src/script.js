@@ -83,6 +83,57 @@
 	});
 
 
+	// Get the banner image at the top of landing and product pages
+	// to have the margin + content width, and resize properly
+	$(window).load(function() {
+
+		var Window        = $(window),
+			contentWidth	= $('.content-area').width(),
+			bannerimg       = $('.banner-image img'),
+			bannerblurbwrap		= $('.banner-blurb__wrap'),
+			bannerParent		 = $('.banner-image'),
+			bannerAspectRatio      = bannerimg.width() / bannerimg.height();
+
+		function resizeBanner() {
+
+			// set the banner div height to be
+			// the image height (and not cut off
+			// the bottom of the image)
+			bannerParent.height(bannerimg.height());
+
+			// set "n" to be:
+			// window width - the grid width = both margins
+			// both margins / 2 = one margin outside the grid
+			// then add the content area width
+			var n = ((Window.width() - $('.inner-wrap').width()) / 2) + contentWidth;
+
+			// set the banner div width to be the
+			// content width plus the margin width
+			bannerParent.width(n);
+
+			// set the blurb wrapper to be the same width as the content
+			bannerblurbwrap.width(contentWidth);
+
+
+
+			// set the aspect ratio of the image
+			// to be correct all the time
+			if ( (bannerParent.width() / bannerParent.height()) < bannerAspectRatio ) {
+				bannerimg
+					.removeClass()
+					.addClass('slideheight');
+			} else {
+				bannerimg
+					.removeClass()
+					.addClass('slidewidth');
+			}
+
+		}
+		// trigger the above calculations on window resize
+		Window.resize(resizeBanner).trigger("resize");
+	});
+
+
 	// Put code here
 
 
