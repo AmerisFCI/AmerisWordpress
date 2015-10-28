@@ -8,9 +8,9 @@
 
     <div class="banner-image">
         <?php the_post_thumbnail( 'full' ); ?>
-        <div class="banner-image__inner-wrap inner-wrap">
+        <div class="banner-blurb__wrap">
             <?php if ( get_field( 'banner_blurb' ) ) { ?>
-                <div class="banner__blurb"><?php the_field( 'banner_blurb' ); ?></div>
+                <div class="banner-blurb"><?php the_field( 'banner_blurb' ); ?></div>
             <?php } ?>
         </div>
     </div>

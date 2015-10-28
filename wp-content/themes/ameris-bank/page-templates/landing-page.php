@@ -36,12 +36,14 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 					<div class="featured-solutions">
 						<?php foreach( get_field( 'featured_solutions' ) as $post ) {
 							setup_postdata( $post ); ?>
-							<?php the_post_thumbnail( 'landing-solution' ); ?>
-							<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-							<p>
-								<?php the_field( 'short_description' ); ?>
-								<a href="<?php the_permalink(); ?>">Learn More</a>
-							</p>
+							<div class="solution">
+								<?php the_post_thumbnail( 'landing-solution' ); ?>
+								<h4 class="solution__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+								<p class="solution__description">
+									<?php the_field( 'short_description' ); ?>
+									<a class="solution__link" href="<?php the_permalink(); ?>">Learn More</a>
+								</p>
+							</div>
 						<?php }
 						wp_reset_postdata(); ?>
 					</div>
