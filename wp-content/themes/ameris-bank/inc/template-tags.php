@@ -252,13 +252,14 @@ function ameris_sidebar_menu() {
 	$top_level = get_post( $top_level );
 	
 	// for business pages, get menu based on one level down
-	if ( $top_level->post_name === 'business-banking' ) { // fix
+	if ( $top_level->ID === 20 && $ancestors ) {
+
 		$second_level = array_pop( $ancestors );
 		$second_level = get_post( $second_level );
 
 		// display a custom menu for this location, or alternately, display all sub-pages
 		wp_nav_menu( array(
-			'theme_location'     => 'sidebar-business-' . $second_level->post_name,
+			'theme_location'     => 'sidebar-business-' . $second_level->ID,
 			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
 			'ameris_menu_parent' => $second_level // gets passed to fallback function
 		) );
@@ -267,7 +268,7 @@ function ameris_sidebar_menu() {
 	} else {
 
 		wp_nav_menu( array(
-			'theme_location'     => 'sidebar-' . $top_level->post_name,
+			'theme_location'     => 'sidebar-' . $top_level->ID,
 			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
 			'ameris_menu_parent' => $top_level // gets passed to fallback function
 		) );
