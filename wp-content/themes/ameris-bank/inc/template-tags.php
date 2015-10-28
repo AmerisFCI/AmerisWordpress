@@ -241,7 +241,7 @@ function ameris_sidebar_menu() {
 	global $post;
 
 	// get top-level parent
-	$ancestors = get_post_ancestors( $post );
+	$ancestors = $all_ancestors = get_post_ancestors( $post );
 	if ( $ancestors ) {
 		$top_level = array_pop( $ancestors );
 	} else {
@@ -252,7 +252,7 @@ function ameris_sidebar_menu() {
 	$top_level = get_post( $top_level );
 	
 	// for business pages, get menu based on one level down
-	if ( $top_level->ID === 20 && $ancestors ) {
+	if ( $top_level->ID === 20 && $all_ancestors ) {
 
 		$second_level = array_pop( $ancestors );
 		$second_level = get_post( $second_level );
