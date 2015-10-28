@@ -288,10 +288,16 @@ function ameris_sidebar_menu_fallback( $args ) {
 	) );
 	$parent = $args['ameris_menu_parent'];
 
-	wp_list_pages( array(
-		'title_li' => '',
-		'child_of' => $parent->ID,
-		'depth'    => 2
-	) );
+	?>
+	<div class="menu-container default-menu-container menu-<?php echo $parent->ID; ?>-container">
+		<ul class="menu">
+			<?php wp_list_pages( array(
+				'title_li' => '',
+				'child_of' => $parent->ID,
+				'depth'    => 2
+			) ); ?>
+		</ul>
+	</div>
+	<?php
 
 }
