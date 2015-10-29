@@ -1,6 +1,6 @@
 
 .banner-image {
-	@include rem-fallback(min-height, 40);
+
 	float: right;
 
 	overflow: hidden;
@@ -17,10 +17,12 @@
 		@include background-image(linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,.2) 100%));
 	}*/
 
+
 	img {
 		position: absolute;
 		max-width: none;
 		top: 0;
+		left: 0;
 		width: 100%;
 		height: auto;
 
@@ -43,6 +45,7 @@
 	position: absolute;
 	left: 0;
 	@include rem-fallback(bottom, 3);
+	max-width: 100%;
 }
 
 .banner-blurb {
@@ -72,17 +75,79 @@
 
 }
 
-//.banner .page-title {
-//	@include grid-span(2, 1);
-//	@include rem-fallback(padding, 20, 0);
-//}
+.banner .page-title {
+	@include rem-fallback(padding, 5, 0, 3);
+	clear: both;
+}
 
 
-@include breakpoint($tablet-wide-up) {
+
+@include breakpoint($mobile) {
 	.banner-image {
-		width: 70%;
+		@include rem-fallback(min-height, 56);
+		width: 100% !important;
+		img {
+			height: 100% !important;
+			width: auto !important;
+		}
 	}
+}
+@include breakpoint($tablet) {
+	.banner-image {
+		width: 100% !important;
+		@include rem-fallback(min-height, 56);
+
+	}
+}
+
+@include breakpoint($narrow-to-desktop) {
+	.banner .page-title {
+		@include rem-fallback(padding, 25, 0, 8);
+		clear: none;
+	}
+	.banner ~ .inner-wrap .sidebar-left {
+		@include rem-fallback(margin-top, -5);
+	}
+}
+
+
+@include breakpoint($desktop) {
 	.banner-blurb {
 		@include rem-fallback(font-size, 8.6);
 	}
+	.banner .page-title {
+		@include rem-fallback(padding, 25, 0, 15);
+	}
+	.banner ~ .inner-wrap .sidebar-left {
+		@include rem-fallback(margin-top, -10);
+	}
+}
+
+@include breakpoint($wide) {
+	.banner-image {
+		width: 70%;
+		float: right;
+		img {
+			position: static;
+			max-width: none;
+			width: 100%;
+			height: auto;
+			&.slidewidth {
+				width: 100%;
+				height: auto;
+			}
+
+			&.slideheight {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.banner .page-title {
+		@include rem-fallback(padding, 25, 0, 25);
+	}
+	.banner ~ .inner-wrap .sidebar-left {
+		@include rem-fallback(margin-top, -20);
+	}
+
 }

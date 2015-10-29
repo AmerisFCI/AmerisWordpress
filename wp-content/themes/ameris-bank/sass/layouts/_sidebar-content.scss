@@ -15,7 +15,7 @@
 			@include grid-span(3, 3);
 		}
 	}
-	#sidebar-left {
+	.sidebar-left {
 		@include grid-span(2, 1);
 	}
 }
@@ -32,7 +32,7 @@
 			@include grid-span(4, 2);
 		}
 	}
-	#sidebar-left {
+	.sidebar-left, .banner .page-title {
 		@include grid-span(1, 1);
 	}
 	

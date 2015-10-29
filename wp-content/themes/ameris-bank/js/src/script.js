@@ -2,8 +2,7 @@
 
 
 	// Handle `active` class behavior and when to follow links
-	$( '#primary-menu > li > a,
-		#primary-menu li.has-tabbed-sub > .sub-menu > li > a' ).click( function( event ) {
+	$( '#primary-menu > li > a,	#primary-menu li.has-tabbed-sub > .sub-menu > li > a' ).click( function( event ) {
 
 		// if already `active`, follow link
 		if ( $( this ).parent().hasClass( 'active' ) ) {
@@ -25,7 +24,7 @@
 		// add `active` class
 		$( this ).parent( 'li' ).addClass( 'active' );
 
-	} );
+	});
 		
 
 
@@ -34,7 +33,7 @@
 		if ( $( this ).val() ) {
 			window.location.href = '/?p=' + $( this ).val();
 		}
-	} );
+	});
 
 
 
@@ -87,34 +86,32 @@
 	// to have the margin + content width, and resize properly
 	$(window).load(function() {
 
-		var Window        = $(window),
-			contentWidth	= $('.content-area').width(),
-			bannerimg       = $('.banner-image img'),
+		var Window        		= $(window),
+			content				= $('.content-area'),
+			bannerimg       	= $('.banner-image img'),
 			bannerblurbwrap		= $('.banner-blurb__wrap'),
-			bannerParent		 = $('.banner-image'),
-			bannerAspectRatio      = bannerimg.width() / bannerimg.height();
+			bannerParent		= $('.banner-image'),
+			bannerAspectRatio   = bannerimg.width() / bannerimg.height();
 
 		function resizeBanner() {
 
-			// set the banner div height to be
-			// the image height (and not cut off
-			// the bottom of the image)
-			bannerParent.height(bannerimg.height());
+			// set the blurb wrapper to be the same width as the content
+			bannerblurbwrap.width(content.width());
 
 			// set "n" to be:
 			// window width - the grid width = both margins
 			// both margins / 2 = one margin outside the grid
 			// then add the content area width
-			var n = ((Window.width() - $('.inner-wrap').width()) / 2) + contentWidth;
+			var n = ((Window.width() - $('.content-inner-wrap').width()) / 2) + content.width();
 
 			// set the banner div width to be the
 			// content width plus the margin width
 			bannerParent.width(n);
 
-			// set the blurb wrapper to be the same width as the content
-			bannerblurbwrap.width(contentWidth);
-
-
+			// set the banner div height to be
+			// the image height (and not cut off
+			// the bottom of the image)
+			bannerParent.height(bannerimg.height());
 
 			// set the aspect ratio of the image
 			// to be correct all the time
@@ -128,9 +125,12 @@
 					.addClass('slidewidth');
 			}
 
+
+
 		}
 		// trigger the above calculations on window resize
-		Window.resize(resizeBanner).trigger("resize");
+		$(window).resize(resizeBanner).trigger("resize");
+
 	});
 
 
