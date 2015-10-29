@@ -21,9 +21,9 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 					
-				<h3 class="heading"><?php the_field( 'heading' ); ?></h3>
+				<h2 class="landing-heading"><?php the_field( 'heading' ); ?></h2>
 
-				<div class="select-container">
+				<div class="select-container quick-links">
 					<?php wp_dropdown_pages( array(
 						'child_of'         => get_the_ID(),
 						'name'             => 'select_subpage',
@@ -38,7 +38,7 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 							setup_postdata( $post ); ?>
 							<div class="solution">
 								<?php the_post_thumbnail( 'landing-solution' ); ?>
-								<h4 class="solution__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+								<h3 class="solution__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<p class="solution__description">
 									<?php the_field( 'short_description' ); ?>
 									<a class="solution__link" href="<?php the_permalink(); ?>">Learn More</a>

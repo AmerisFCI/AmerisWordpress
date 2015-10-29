@@ -75,13 +75,7 @@
 
 }
 
-.breadcrumbs {
-	font-family: $font-heading;
-	@include rem-fallback(margin-bottom, 2.4);
-	a {
-		color: $link-color;
-	}
-}
+
 
 .banner .page-title {
 	@include rem-fallback(padding, 4, 2.4, 3);

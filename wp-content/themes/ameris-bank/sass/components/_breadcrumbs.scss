@@ -1,0 +1,7 @@
+.breadcrumbs {
+	font-family: $font-heading;
+	@include rem-fallback(margin-bottom, 2.4);
+	a {
+		color: $link-color;
+	}
+}

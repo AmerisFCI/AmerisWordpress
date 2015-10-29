@@ -73,6 +73,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "components/navigation/menu-toggle";
 @import "components/navigation/menu-main";
 @import "components/navigation/utility-nav";
+@import "components/navigation/sidebar-nav";
 @import "components/navigation/search-box";
 @import "components/navigation/social-links";
 
@@ -87,9 +88,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "components/pages/error404";
 @import "components/pages/home";
 
+@import "components/breadcrumbs";
 @import "components/meta";
 @import "components/comments";
 @import "components/tables";
+@import "components/quick-links";
 
 @import "print";
 @import "quick-fixes";
