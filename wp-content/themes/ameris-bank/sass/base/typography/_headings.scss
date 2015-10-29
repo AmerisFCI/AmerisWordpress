@@ -27,19 +27,12 @@ h3 {
 }
 
 h4 {
-	@include rem-fallback(font-size, 1.8);
-	text-transform: uppercase;
-	font-weight: 600;
-	color: $darkblue;
-	@include rem-fallback(margin-bottom, 1.5);
+
 }
 
 .kicker {
-	@include rem-fallback(font-size, 1.8);
+	@include boldbluetext;
 	@include rem-fallback(padding, 1, 0);
 	@include rem-fallback(margin, 2, 0);
-	color: $darkblue;
-	font-weight: 600;
-	text-transform: uppercase;
 	border-bottom: 4px solid $red;
 }

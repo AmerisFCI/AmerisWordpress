@@ -6,6 +6,10 @@
 	@include clearfix();
 }
 
+.tool__title {
+	@include boldbluetext;
+}
+
 .home-tools {
 	@include rem-fallback(margin-top, 3);
 	@include clearfix();
