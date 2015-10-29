@@ -1,0 +1,21 @@
+.quick-links {
+	float: right;
+	.sod_select {
+		border: 2px solid $paleblue;
+		@include rem-fallback(padding, 2);
+		@include rem-fallback(font-size, 1.9);
+	}
+	.sod_select:before {
+		@include use-sprite(icon-form-selectarrows-white);
+		position: absolute;
+		z-index: 1;
+	}
+	.sod_select:after {
+		border-color: $red;
+		background-color: $red;
+		opacity: 1;
+		@include rem-fallback(border-width, .2);
+		@include rem-fallback(top, -.2);
+		@include rem-fallback(right, -.2);
+	}
+}

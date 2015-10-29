@@ -22,7 +22,9 @@
             <?php if ( function_exists( 'breadcrumb_trail' ) ) { ?>
                 <div class="breadcrumbs">
                     <?php breadcrumb_trail( array(
-                        'show_browse' => false
+                        'show_browse' => false,
+                        'show_title'  => false,
+                        'show_on_front' => false
                     ) ); ?>
                 </div>
             <?php } ?>

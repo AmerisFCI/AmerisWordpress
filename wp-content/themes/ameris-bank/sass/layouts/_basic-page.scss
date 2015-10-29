@@ -14,6 +14,11 @@
 	@include clearfix();
 }
 
+.site-main {
+	box-sizing: border-box;
+	@include rem-fallback(padding, 2.4);
+}
+
 
 @include breakpoint($tablet-to-desktop) {
 	.inner-wrap {

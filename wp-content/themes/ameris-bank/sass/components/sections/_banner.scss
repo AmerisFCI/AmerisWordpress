@@ -75,9 +75,14 @@
 
 }
 
+
+
 .banner .page-title {
-	@include rem-fallback(padding, 5, 0, 3);
+	@include rem-fallback(padding, 4, 2.4, 3);
 	clear: both;
+	font-weight: 300;
+	color: $heading-color;
+
 }
 
 
@@ -102,7 +107,7 @@
 
 @include breakpoint($narrow-to-desktop) {
 	.banner .page-title {
-		@include rem-fallback(padding, 25, 0, 8);
+		@include rem-fallback(padding, 20, 2.4, 8);
 		clear: none;
 	}
 	.banner ~ .inner-wrap .sidebar-left {
@@ -116,7 +121,7 @@
 		@include rem-fallback(font-size, 8.6);
 	}
 	.banner .page-title {
-		@include rem-fallback(padding, 25, 0, 15);
+		@include rem-fallback(padding-bottom, 15);
 	}
 	.banner ~ .inner-wrap .sidebar-left {
 		@include rem-fallback(margin-top, -10);
@@ -144,7 +149,7 @@
 		}
 	}
 	.banner .page-title {
-		@include rem-fallback(padding, 25, 0, 25);
+		@include rem-fallback(padding-bottom, 25);
 	}
 	.banner ~ .inner-wrap .sidebar-left {
 		@include rem-fallback(margin-top, -20);
