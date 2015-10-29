@@ -133,6 +133,27 @@
 
 	});
 
+	// Tiny jQuery Plugin
+	// by Chris Goodchild
+	$.fn.exists = function(callback) {
+		var args = [].slice.call(arguments, 1);
+
+		if (this.length) {
+			callback.call(this, args);
+		}
+
+		return this;
+	};
+
+	// Usage
+	$('.sidebar-left').exists(function() {
+		$('.content-area').addClass('has-sidebar-left');
+	});
+
+	$('.sidebar-right').exists(function() {
+		$('.content-area').addClass('has-sidebar-right');
+	});
+
 
 	// Put code here
 

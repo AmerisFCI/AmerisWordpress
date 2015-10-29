@@ -7,16 +7,16 @@
 
 @include breakpoint($tablet-wide) {
 
-	@include add-grid(5);
+	@include add-grid(12);
 	@include add-gutter(1/6);
 
 	body:not(.home) .site-content {
-  		.content-area {
-			@include grid-span(3, 3);
+  		.content-area.has-sidebar-left {
+			@include grid-span(8, 5);
 		}
 	}
 	.sidebar-left {
-		@include grid-span(2, 1);
+		@include grid-span(4, 1);
 	}
 }
 
@@ -24,16 +24,16 @@
 
 @include breakpoint($narrow-to-desktop) {
 
-	@include add-grid(5);
+	@include add-grid(12);
 	@include add-gutter(1/6);
 
 	body:not(.home) .site-content {
-  		.content-area {
-			@include grid-span(4, 2);
+  		.content-area.has-sidebar-left {
+			@include grid-span(9, 4);
 		}
 	}
 	.sidebar-left, .banner .page-title {
-		@include grid-span(1, 1);
+		@include grid-span(3, 1);
 	}
 	
 }

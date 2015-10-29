@@ -1,5 +1,10 @@
-.callout-box {
+.sidebar .callout-box {
+	float: none;
+	width: auto;
+}
 
+.callout-box {
+	position: relative;
 }
 
 .callout-box__header {
