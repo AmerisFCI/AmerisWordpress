@@ -45,7 +45,7 @@ get_header(); ?>
 						<?php for ( $i = 1; $i <= 4; $i++ ) { ?>
 							<div class="tool">
 								<?php echo wp_get_attachment_image( get_field( 'icon_' . $i ), 'circle-icon' ); ?>
-								<h4 class="tool__title"><?php the_field( 'heading_' . $i ); ?></h4>
+								<h2 class="tool__title"><?php the_field( 'heading_' . $i ); ?></h2>
 								<p class="tool__description"><?php the_field( 'blurb_' . $i ); ?></p>
 								<a class="button tool__link" href="<?php echo get_permalink( get_field( 'button_link_' . $i ) ); ?>">
 									<?php the_field( 'button_text_' . $i ); ?>

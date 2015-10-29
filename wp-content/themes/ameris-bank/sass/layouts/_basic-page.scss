@@ -14,7 +14,7 @@
 	@include clearfix();
 }
 
-.site-main {
+body:not(.home) .site-main {
 	box-sizing: border-box;
 	@include rem-fallback(padding, 2.4);
 }

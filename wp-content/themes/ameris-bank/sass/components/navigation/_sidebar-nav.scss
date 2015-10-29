@@ -2,9 +2,8 @@
 	background-color: $paleblue;
 	@include rem-fallback(padding, 2.5, 2.4);
 	a {
+		@include boldbluetext;
 		@include rem-fallback(padding-bottom, .5);
-		font-weight: 700;
-		font-family: $font-heading;
 		display: block;
 		@include rem-fallback(margin-bottom, .5);
 		&:hover, &:focus {
@@ -12,17 +11,16 @@
 		}
 	}
 	li {
-		text-transform: uppercase;
 		list-style: none;
 		@include rem-fallback(margin-bottom, 2);
 	}
 	.children {
 		margin: 0;
 		li {
-			text-transform: none;
 			@include rem-fallback(margin-bottom, .5);
 		}
 		a {
+			text-transform: none;
 			font-weight: 300;
 			margin: 0;
 		}

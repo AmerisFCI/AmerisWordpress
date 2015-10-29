@@ -278,3 +278,12 @@ $sprite-high-res-suffix: '-2x' !default;
     border-color: $red;
   }
 }
+
+@mixin boldbluetext {
+  font-family: $font-heading;
+  @include rem-fallback(font-size, 1.8);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $darkblue;
+  @include rem-fallback(margin-bottom, 1.5);
+}

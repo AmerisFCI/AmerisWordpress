@@ -4,8 +4,9 @@
  */
 ?>
 
-<div class="banner">
+<div class="banner <?php if ( has_post_thumbnail() ) { ?>has-banner-image<?php } ?>">
 
+    <?php if ( has_post_thumbnail() ) { ?>
     <div class="banner-image">
         <?php the_post_thumbnail( 'full' ); ?>
         <div class="banner-blurb__wrap">
@@ -14,6 +15,7 @@
             <?php } ?>
         </div>
     </div>
+    <?php } ?>
 
     <header class="banner-text__inner-wrap inner-wrap">
 
