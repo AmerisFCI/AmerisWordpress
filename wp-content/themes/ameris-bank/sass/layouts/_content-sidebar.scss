@@ -7,7 +7,7 @@
 
 @include breakpoint($tablet-wide) {
 
-	#sidebar-right {
+	.sidebar-right {
 		@include grid-span(1, 3);
 	}
 }
@@ -16,7 +16,7 @@
 
 @include breakpoint($narrow-to-desktop) {
 
-	#sidebar-right {
+	.sidebar-right {
 		@include grid-span(1, 5);
 	}
 }

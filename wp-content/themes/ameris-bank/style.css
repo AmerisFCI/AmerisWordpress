@@ -939,7 +939,7 @@ dd {
 /* Layout rules */
 @media (min-width: 740px) and (max-width: 1023px) {
   /* line 10, sass/layouts/_content-sidebar.scss */
-  #sidebar-right {
+  .sidebar-right {
     width: 6.77966%;
     float: left;
     margin-right: -100%;
@@ -949,7 +949,7 @@ dd {
 }
 @media (min-width: 1024px) {
   /* line 19, sass/layouts/_content-sidebar.scss */
-  #sidebar-right {
+  .sidebar-right {
     width: 6.77966%;
     float: left;
     margin-right: -100%;
@@ -968,7 +968,7 @@ dd {
   }
 
   /* line 18, sass/layouts/_sidebar-content.scss */
-  #sidebar-left {
+  .sidebar-left {
     width: 38.23529%;
     float: left;
     margin-right: -100%;
@@ -987,7 +987,7 @@ dd {
   }
 
   /* line 35, sass/layouts/_sidebar-content.scss */
-  #sidebar-left {
+  .sidebar-left, .banner .page-title {
     width: 17.64706%;
     float: left;
     margin-right: -100%;
@@ -2376,8 +2376,6 @@ footer .menu-item {
 }
 /* line 2, sass/components/sections/_banner.scss */
 .banner-image {
-  min-height: 400px;
-  min-height: 40rem;
   float: right;
   overflow: hidden;
   position: relative;
@@ -2392,26 +2390,27 @@ footer .menu-item {
   	@include background-image(linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,.2) 100%));
   }*/
 }
-/* line 20, sass/components/sections/_banner.scss */
+/* line 21, sass/components/sections/_banner.scss */
 .banner-image img {
   position: absolute;
   max-width: none;
   top: 0;
+  left: 0;
   width: 100%;
   height: auto;
 }
-/* line 27, sass/components/sections/_banner.scss */
+/* line 29, sass/components/sections/_banner.scss */
 .banner-image img.slidewidth {
   width: 100%;
   height: auto;
 }
-/* line 32, sass/components/sections/_banner.scss */
+/* line 34, sass/components/sections/_banner.scss */
 .banner-image img.slideheight {
   width: auto;
   height: 100%;
 }
 
-/* line 41, sass/components/sections/_banner.scss */
+/* line 43, sass/components/sections/_banner.scss */
 .banner-blurb__wrap {
   padding: 20px;
   padding: 2rem;
@@ -2419,9 +2418,10 @@ footer .menu-item {
   left: 0;
   bottom: 30px;
   bottom: 3rem;
+  max-width: 100%;
 }
 
-/* line 48, sass/components/sections/_banner.scss */
+/* line 51, sass/components/sections/_banner.scss */
 .banner-blurb {
   float: right;
   max-width: 850px;
@@ -2435,12 +2435,12 @@ footer .menu-item {
   font-style: italic;
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
 }
-/* line 58, sass/components/sections/_banner.scss */
+/* line 61, sass/components/sections/_banner.scss */
 .banner-blurb span, .banner-blurb em {
   display: inline-block;
   position: relative;
 }
-/* line 61, sass/components/sections/_banner.scss */
+/* line 64, sass/components/sections/_banner.scss */
 .banner-blurb span:after, .banner-blurb em:after {
   content: "";
   display: block;
@@ -2452,16 +2452,101 @@ footer .menu-item {
   background-color: #d31145;
 }
 
-@media (min-width: 740px) {
-  /* line 82, sass/components/sections/_banner.scss */
+/* line 78, sass/components/sections/_banner.scss */
+.banner .page-title {
+  padding: 50px 0px 30px;
+  padding: 5rem 0rem 3rem;
+  clear: both;
+}
+
+@media (max-width: 529px) {
+  /* line 86, sass/components/sections/_banner.scss */
   .banner-image {
-    width: 70%;
+    min-height: 560px;
+    min-height: 56rem;
+    width: 100% !important;
+  }
+  /* line 89, sass/components/sections/_banner.scss */
+  .banner-image img {
+    height: 100% !important;
+    width: auto !important;
+  }
+}
+@media (min-width: 530px) and (max-width: 1023px) {
+  /* line 96, sass/components/sections/_banner.scss */
+  .banner-image {
+    width: 100% !important;
+    min-height: 560px;
+    min-height: 56rem;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 104, sass/components/sections/_banner.scss */
+  .banner .page-title {
+    padding: 250px 0px 80px;
+    padding: 25rem 0rem 8rem;
+    clear: none;
   }
 
-  /* line 85, sass/components/sections/_banner.scss */
+  /* line 108, sass/components/sections/_banner.scss */
+  .banner ~ .inner-wrap .sidebar-left {
+    margin-top: -50px;
+    margin-top: -5rem;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 115, sass/components/sections/_banner.scss */
   .banner-blurb {
     font-size: 86px;
     font-size: 8.6rem;
+  }
+
+  /* line 118, sass/components/sections/_banner.scss */
+  .banner .page-title {
+    padding: 250px 0px 150px;
+    padding: 25rem 0rem 15rem;
+  }
+
+  /* line 121, sass/components/sections/_banner.scss */
+  .banner ~ .inner-wrap .sidebar-left {
+    margin-top: -100px;
+    margin-top: -10rem;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 127, sass/components/sections/_banner.scss */
+  .banner-image {
+    width: 70%;
+    float: right;
+  }
+  /* line 130, sass/components/sections/_banner.scss */
+  .banner-image img {
+    position: static;
+    max-width: none;
+    width: 100%;
+    height: auto;
+  }
+  /* line 135, sass/components/sections/_banner.scss */
+  .banner-image img.slidewidth {
+    width: 100%;
+    height: auto;
+  }
+  /* line 140, sass/components/sections/_banner.scss */
+  .banner-image img.slideheight {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 146, sass/components/sections/_banner.scss */
+  .banner .page-title {
+    padding: 250px 0px 250px;
+    padding: 25rem 0rem 25rem;
+  }
+
+  /* line 149, sass/components/sections/_banner.scss */
+  .banner ~ .inner-wrap .sidebar-left {
+    margin-top: -200px;
+    margin-top: -20rem;
   }
 }
 /* line 1, sass/components/widgets/_widgets.scss */

@@ -15,7 +15,7 @@ get_header();
 get_template_part( 'template-parts/page', 'banner' ); ?>
 
 
-<div class="inner-wrap">
+<div class="inner-wrap content-inner-wrap">
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
