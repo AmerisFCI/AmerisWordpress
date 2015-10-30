@@ -25,16 +25,5 @@ add_action( 'after_setup_theme', 'ameris_image_sizes' );
  */
 function ameris_prevent_puny_images( $meta_id, $object_id, $meta_key, $meta_value ) {
 
-	if ( $meta_key !== '_thumbnail_id' )
-		return;
-
-	echo '<pre>';
-	var_dump( $meta_id );
-	var_dump( $object_id );
-	var_dump( $meta_key );
-	var_dump( $meta_value );
-	echo '</pre>';
-	exit;
-
 }
-add_action( 'update_postmeta', 'ameris_prevent_puny_images', 10, 4 );
+// add_action( 'update_postmeta', 'ameris_prevent_puny_images', 10, 4 );
