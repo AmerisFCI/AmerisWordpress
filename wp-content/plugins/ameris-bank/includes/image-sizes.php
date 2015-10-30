@@ -19,11 +19,30 @@ function ameris_image_sizes() {
 add_action( 'after_setup_theme', 'ameris_image_sizes' );
 
 /**
- * Prevent users from selecting a featured image that's too small.
- *
- * Applicable to pages, posts, and slides.
+ * Add instructions in Featured Image admin box.
  */
-function ameris_prevent_puny_images( $meta_id, $object_id, $meta_key, $meta_value ) {
+function ameris_featured_image_notes( $content ) {
+	ob_start();
+	global $post;
+	
+	if ( !in_array( $post->post_type, array( 'post', 'page', 'slide' ) ) )
+		return $content;
 
+	switch ( $post->post_type ) {
+		case 'page' :
+		case 'post' :
+			$size = '2400x1300';
+			break;
+		case 'slide' :
+			$size = '3300x1700';
+			break;
+	}
+
+	if ( $size ) { ?>
+
+		<p>Featured images for <?php echo $post->post_type; ?>s should not be smaller than <?php echo $size; ?> pixels.</p>
+
+	<?php }
+	return $content . ob_get_clean();
 }
-// add_action( 'update_postmeta', 'ameris_prevent_puny_images', 10, 4 );
+add_filter( 'admin_post_thumbnail_html', 'ameris_featured_image_notes' );
