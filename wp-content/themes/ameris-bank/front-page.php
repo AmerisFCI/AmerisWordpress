@@ -22,7 +22,7 @@ get_header(); ?>
 						$slide_query->the_post(); ?>
 						
 						<div class="slide">
-							<?php the_post_thumbnail( 'full' ); ?>
+							<?php the_post_thumbnail( 'slide' ); ?>
 							<div class="inner-wrap slide__inner-wrap">
 								<div class="slide__text-wrap">
 									<h2 class="slide__title kicker"><?php the_title(); ?></h2>
