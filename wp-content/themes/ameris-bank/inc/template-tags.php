@@ -262,7 +262,7 @@ function get_ameris_sidebar_menu() {
 			'theme_location'     => 'sidebar-business-' . $second_level->ID,
 			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
 			'ameris_menu_parent' => $second_level, // gets passed to fallback function
-			'echo'               => false
+			'echo'               => 0
 		) );
 
 	// for all other pages, get menu based on top level
@@ -272,7 +272,7 @@ function get_ameris_sidebar_menu() {
 			'theme_location'     => 'sidebar-' . $top_level->ID,
 			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
 			'ameris_menu_parent' => $top_level, // gets passed to fallback function
-			'echo'               => false
+			'echo'               => 0
 		) );
 
 	}
@@ -290,7 +290,8 @@ function ameris_sidebar_menu() {
  * overriding it with a custom nav menu).
  */
 function ameris_sidebar_menu_fallback( $args ) {
-	
+	ob_start();
+
 	$args = wp_parse_args( $args, array(
 		'ameris_menu_parent' => ''
 	) );
@@ -308,4 +309,5 @@ function ameris_sidebar_menu_fallback( $args ) {
 	</div>
 	<?php
 
+	return ob_get_clean();
 }

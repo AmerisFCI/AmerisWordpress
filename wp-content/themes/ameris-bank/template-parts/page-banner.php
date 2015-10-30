@@ -8,7 +8,7 @@
 
     <?php if ( has_post_thumbnail() ) { ?>
     <div class="banner-image">
-        <?php the_post_thumbnail( 'full' ); ?>
+        <?php the_post_thumbnail( 'landing-banner' ); ?>
         <div class="banner-blurb__wrap">
             <?php if ( get_field( 'banner_blurb' ) ) { ?>
                 <div class="banner-blurb"><?php the_field( 'banner_blurb' ); ?></div>
