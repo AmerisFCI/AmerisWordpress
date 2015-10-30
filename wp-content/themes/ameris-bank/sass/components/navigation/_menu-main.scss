@@ -6,6 +6,13 @@
 //
 //
 
+#primary-menu > li {
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	&:last-child {
+		border: none;
+	}
+}
+
 .main-navigation {
 
 	@include rem-fallback(font-size, 1.8);
@@ -28,11 +35,16 @@
 	}
 	li li {
 		a {
+			@include boldbluetext;
+			color: $white;
 			@include rem-fallback(padding, 1, 1.5);
 			text-transform: none;
+			@include rem-fallback(font-size, 1.6);
 		}
 		li {
-			@include rem-fallback(margin-left, .5);
+			a {
+				font-weight: 300;
+			}
 		}
 	}
 
@@ -49,22 +61,32 @@
 				position: absolute;
 				@include rem-fallback(top, 2.2);
 				@include rem-fallback(right, 1.6);
-				border: solid transparent;
-				@include rem-fallback(border-width, 1);
-				@include rem-fallback(border-bottom-width, 1);
-				border-top-color: $red;
-				box-sizing: content-box;
+				@include use-sprite(arrow-red-right-small);
+				transform: rotate(90deg);
 				opacity: 1;
 				transition: all .3s;
 			}
 		}
 		&.active > a:after {
-			//transform: rotate(-180deg);
+			transform: rotate(0deg);
 			//border-top-color: $link-color;
-			opacity: 0;
+			//opacity: 0;
+		}
+	}
+	li .menu-item-has-children {
+		> a:after {
+			position: relative;
+			display: inline-block;
+			@include rem-fallback(top, .2);
+			left: 0;
+			@include rem-fallback(margin-left, 1);
 		}
 	}
 
+}
+
+.item-description {
+	display: none;
 }
 
 .menu-toggle {
@@ -117,6 +139,10 @@
 	display: none;
 }
 
+	#primary-menu > li {
+		border-bottom: none;
+	}
+
 .main-navigation {
 	text-align: right;
 	@include rem-fallback(margin-right, 1);
@@ -134,8 +160,27 @@
 
 	li li {
 		a {
+			border: 0 solid $paleblue;
+			@include rem-fallback(border-bottom-width, .2);
 			color: $link-color;
 			@include rem-fallback(padding, 1);
+			&:after {
+				content: "";
+				display: inline-block;
+				position: relative;
+				@include rem-fallback(top, .2);
+				@include use-sprite(arrow-red-right-small);
+				transform: rotate(0deg);
+				@include rem-fallback(margin-left, 1);
+				transition: all .3s;
+			}
+		}
+	}
+
+	li li li a {
+		border-bottom: none;
+		&:after {
+			content: none;
 		}
 	}
 
@@ -143,8 +188,12 @@
 		display: block;
 	}
 
-	.menu-item-has-children a:after {
+	.menu-item-has-children > a:after {
 		content: none;
+	}
+
+	li .menu-item-has-children > a:after {
+		content: "";
 	}
 	ul ul ul {
 		display: block;
@@ -194,6 +243,7 @@
 	}
 
 	> .item-description {
+		display: block;
 		@include rem-fallback(padding, 3);
 		float: right;
 		clear: none;
@@ -288,6 +338,11 @@
 		a {
 			@include rem-fallback(padding, 1.5, 1.5, 2);
 			@include rem-fallback(font-size, 1.8);
+		}
+		li li {
+			a {
+				@include rem-fallback(font-size, 1.8);
+			}
 		}
 	}
 }
