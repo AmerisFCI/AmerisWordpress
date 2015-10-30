@@ -79,7 +79,11 @@
 
 .main-navigation {
 	text-align: right;
-	@include rem-fallback(margin-right, 3);
+	@include rem-fallback(margin-right, 1);
+	a {
+		@include rem-fallback(padding, 1.5, 1, 2);
+		@include rem-fallback(font-size, 1.6);
+	}
 
 	ul {
 		display: block;
@@ -112,7 +116,8 @@
 		left: 0;
 		width: 100%;
 		margin: 0 auto;
-		background: rgba(255,255,255,.5);
+		background: rgba(255,255,255,.9);
+		box-shadow: 0 3px 6px rgba(0,0,0,.1);
 	}
 }
 
@@ -220,6 +225,15 @@
 
 
 
-}  //END DESKTOP SIZES
+}  //END NARROW SIZES
 
+@include breakpoint($desktop) {
+	.main-navigation {
+		@include rem-fallback(margin-right, 3);
+		a {
+			@include rem-fallback(padding, 1.5, 1.5, 2);
+			@include rem-fallback(font-size, 1.8);
+		}
+	}
+}
 

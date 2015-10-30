@@ -24,8 +24,12 @@
 }
 
 .logo {
-	@include use-sprite("logo");
+	//@include use-sprite("logo");
 	display: block;
+	@include rem-fallback(max-width, 23.4);
+	img {
+		@include rem-fallback(width, 20);
+	}
 }
 
 .nav-wrapper {
@@ -41,6 +45,7 @@
 .search-form {
 	clear: both;
 	float: right;
+	width: 100%;
 }
 
 
@@ -49,11 +54,18 @@
 	.search-form {
 		clear: none;
 		@include rem-fallback(margin-top, 6);
+		width: auto;
 	}
 }
 
 
 @include breakpoint($narrow-to-desktop) {
+	.site-branding {
+		width: 20%;
+	}
+	.logo img {
+		width: 95%;
+	}
 
 	.utility-navigation {
 		float: right;
@@ -65,13 +77,14 @@
 	}
 
 	.search-form {
-		clear: both;
+		clear: right;
+		width: auto;
 	}
 
 }
 
 @media screen and (min-width: 1280px) {
 	.search-form {
-		clear: right;
+		//clear: right;
 	}
 }

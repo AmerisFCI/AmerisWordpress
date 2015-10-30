@@ -32,6 +32,7 @@
 			<div class="site-branding">
 				<div class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
+						<img src="/wp-content/themes/ameris-bank/images/build/ameris-logo.svg" alt="AmerisBank Logo"/>
 						<span class="element-invisible">
 							<?php if ( is_front_page()) : ?><h1><?php endif; ?>
 								AmerisBank

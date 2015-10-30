@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	@include rem-fallback(font-size, 3.6);
+	color: $heading-color;
+	font-weight: 300;
 }
 
 h2 {
@@ -35,4 +37,9 @@ h4 {
 	@include rem-fallback(padding, 1, 0);
 	@include rem-fallback(margin, 2, 0);
 	border-bottom: 4px solid $red;
+}
+
+.landing-heading {
+	@extend h1;
+	@include rem-fallback(margin-bottom, 4);
 }

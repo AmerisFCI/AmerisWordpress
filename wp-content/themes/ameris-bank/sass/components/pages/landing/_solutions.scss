@@ -1,9 +1,15 @@
 .featured-solutions {
 	@include add-grid(12);
+	clear: both;
+	@include clearfix();
 }
 
 .solution {
 
+}
+
+.solution__title {
+	@include boldbluetext;
 }
 
 @include breakpoint($tablet-wide) {
