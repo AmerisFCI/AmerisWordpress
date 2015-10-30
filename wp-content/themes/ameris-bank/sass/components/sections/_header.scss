@@ -63,6 +63,9 @@
 	.site-branding {
 		width: 20%;
 	}
+	.logo {
+		@include rem-fallback(padding, 1, 0, 0, 2);
+	}
 	.logo img {
 		width: 95%;
 	}
@@ -78,7 +81,8 @@
 
 	.search-form {
 		clear: right;
-		width: auto;
+		@include rem-fallback(width, 23);
+		@include rem-fallback(top, .7);
 	}
 
 }

@@ -4,6 +4,11 @@
 //
 //
 
+.menu-toggle {
+	@include rem-fallback(width, 3);
+	@include rem-fallback(height, 3);
+}
+
 $button-size : 3.5rem;
 $transition: .3s; // increase this to see the transformations in slow-motion
 
@@ -17,6 +22,7 @@ $transition: .3s; // increase this to see the transformations in slow-motion
 }
  
 .lines-button {
+	background: transparent;
 	display: inline-block;
 	padding: $button-size/2 $button-size/4;
 	transition: .3s;
@@ -24,13 +30,17 @@ $transition: .3s; // increase this to see the transformations in slow-motion
 	user-select: none;
 	border-radius: $button-size/7;
 
+
+
 	&:hover, &:focus {
 		opacity: 1;
+		background: transparent;
 	}
 
 	&:active {
 		transition: 0;
 		background: rgba(0,0,0,.1);
+		background: transparent;
 	}
 }
 
