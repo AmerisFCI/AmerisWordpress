@@ -1,2 +1,32 @@
 @import "landing/solutions";
 @import "landing/tools";
+
+
+@include breakpoint($narrow-to-desktop) {
+	.quick-links {
+		float: right;
+		width: 42%;
+	}
+	.landing-heading {
+		float: left;
+		width: 56%;
+	}
+}
+
+@include breakpoint($desktop) {
+	.quick-links {
+		width: 38%;
+	}
+	.landing-heading {
+		width: 60%;
+	}
+}
+
+@include breakpoint($wide) {
+	.quick-links {
+		width: 30%;
+	}
+	.landing-heading {
+		width: 68%;
+	}
+}

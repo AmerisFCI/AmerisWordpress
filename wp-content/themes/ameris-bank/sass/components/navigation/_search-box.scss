@@ -1,11 +1,12 @@
 .search-form {
-
+	@include rem-fallback(margin-bottom, 1.6);
 	position: relative;
 
 	input {
-		@include rem-fallback(font-size, 1.8);
+		@include rem-fallback(font-size, 1.6);
 
 		&[type="text"] {
+			width: 100%;
 			margin-bottom: 0;
 			@include rem-fallback(padding, .8, 4.8, .3, 1);
 			&:focus {

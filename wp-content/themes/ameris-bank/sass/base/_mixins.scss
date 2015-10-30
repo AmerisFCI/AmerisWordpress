@@ -281,6 +281,7 @@ $sprite-high-res-suffix: '-2x' !default;
 
 @mixin boldbluetext {
   font-family: $font-heading;
+  font-style: normal;
   @include rem-fallback(font-size, 1.8);
   text-transform: uppercase;
   font-weight: 600;

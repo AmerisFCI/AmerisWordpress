@@ -1,14 +1,29 @@
 .related-resources {
 	@include add-grid(12);
+	@include clearfix();
+	border-top: solid $paleblue;
+	@include rem-fallback(border-width, .3);
+	@include rem-fallback(margin, 3.6, 0);
+	@include rem-fallback(padding-top, 3.6);
 }
 
 .resources-rotator {
 	list-style: none;
 	margin: 0;
+	clear: both;
 }
 
 .related-resource {
 	text-align: center;
+}
+
+.related-resource__link {
+	text-decoration: none;
+}
+
+.related-resource__title {
+	@include boldbluetext;
+	//text-decoration: none;
 }
 
 @include breakpoint($tablet-wide) {

@@ -26,9 +26,43 @@
 	ul {
 		display: none;
 	}
+	li li {
+		a {
+			@include rem-fallback(padding, 1, 1.5);
+			text-transform: none;
+		}
+		li {
+			@include rem-fallback(margin-left, .5);
+		}
+	}
 
-	li.active > ul, li:hover > ul {
+	li.active > ul {
 		display: block;
+	}
+
+	.menu-item-has-children {
+		> a {
+			position: relative;
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				@include rem-fallback(top, 2.2);
+				@include rem-fallback(right, 1.6);
+				border: solid transparent;
+				@include rem-fallback(border-width, 1);
+				@include rem-fallback(border-bottom-width, 1);
+				border-top-color: $red;
+				box-sizing: content-box;
+				opacity: 1;
+				transition: all .3s;
+			}
+		}
+		&.active > a:after {
+			//transform: rotate(-180deg);
+			//border-top-color: $link-color;
+			opacity: 0;
+		}
 	}
 
 }
@@ -37,10 +71,16 @@
 	padding: 0;
 	position: absolute;
 	@include rem-fallback(top, 2);
-	@include rem-fallback(right, 3);
+	@include rem-fallback(right, 5);
 	background: transparent;
 	&:hover, &:active {
 		background: transparent;
+	}
+}
+
+@include breakpoint($tablet-to-desktop) {
+	.menu-toggle {
+		@include rem-fallback(right, 3);
 	}
 }
 
@@ -79,16 +119,35 @@
 
 .main-navigation {
 	text-align: right;
-	@include rem-fallback(margin-right, 3);
+	@include rem-fallback(margin-right, 1);
+	a {
+		@include rem-fallback(padding, 1.5, 1, 2);
+		@include rem-fallback(font-size, 1.6);
+	}
 
 	ul {
 		display: block;
 		ul { // hiding sublevels for now
 			display:none;
-			a {
-				color: $link-color;
-			}
 		}
+	}
+
+	li li {
+		a {
+			color: $link-color;
+			@include rem-fallback(padding, 1);
+		}
+	}
+
+	li.active > ul, li:hover > ul {
+		display: block;
+	}
+
+	.menu-item-has-children a:after {
+		content: none;
+	}
+	ul ul ul {
+		display: block;
 	}
 
 }
@@ -112,7 +171,8 @@
 		left: 0;
 		width: 100%;
 		margin: 0 auto;
-		background: rgba(255,255,255,.5);
+		background: rgba(255,255,255,.9);
+		box-shadow: 0 3px 6px rgba(0,0,0,.1);
 	}
 }
 
@@ -220,6 +280,15 @@
 
 
 
-}  //END DESKTOP SIZES
+}  //END NARROW SIZES
 
+@include breakpoint($desktop) {
+	.main-navigation {
+		@include rem-fallback(margin-right, 3);
+		a {
+			@include rem-fallback(padding, 1.5, 1.5, 2);
+			@include rem-fallback(font-size, 1.8);
+		}
+	}
+}
 
