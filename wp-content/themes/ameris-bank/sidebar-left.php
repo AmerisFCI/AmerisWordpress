@@ -6,12 +6,19 @@
  */
 ?>
 
-<div id="sidebar-left" class="sidebar sidebar-left" role="complementary">
+<?php $menu = get_ameris_sidebar_menu();
+if ( $menu || is_active_sidebar( 'sidebar-left' ) ) { ?>
 
-	<nav class="sidebar-menu">
-		<?php ameris_sidebar_menu(); ?>
-	</nav>
+	<div id="sidebar-left" class="sidebar sidebar-left" role="complementary">
 
-	<?php dynamic_sidebar( 'sidebar-left' ); ?>
+		<?php if ( $menu ) { ?>
+			<nav class="sidebar-menu">
+				<?php echo $menu; ?>
+			</nav>
+		<?php } ?>
 
-</div><!-- #secondary -->
+		<?php dynamic_sidebar( 'sidebar-left' ); ?>
+
+	</div><!-- #secondary -->
+
+<?php } ?>

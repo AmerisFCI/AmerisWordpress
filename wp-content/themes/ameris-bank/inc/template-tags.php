@@ -236,7 +236,7 @@ function ameris_list_pages() {
  *
  * Each possible menu can also be overridden with a custom nav menu.
  */
-function ameris_sidebar_menu() {
+function get_ameris_sidebar_menu() {
 
 	global $post;
 
@@ -258,23 +258,31 @@ function ameris_sidebar_menu() {
 		$second_level = get_post( $second_level );
 
 		// display a custom menu for this location, or alternately, display all sub-pages
-		wp_nav_menu( array(
+		$output = wp_nav_menu( array(
 			'theme_location'     => 'sidebar-business-' . $second_level->ID,
 			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
-			'ameris_menu_parent' => $second_level // gets passed to fallback function
+			'ameris_menu_parent' => $second_level, // gets passed to fallback function
+			'echo'               => false
 		) );
 
 	// for all other pages, get menu based on top level
 	} else {
 
-		wp_nav_menu( array(
+		$output = wp_nav_menu( array(
 			'theme_location'     => 'sidebar-' . $top_level->ID,
 			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
-			'ameris_menu_parent' => $top_level // gets passed to fallback function
+			'ameris_menu_parent' => $top_level, // gets passed to fallback function
+			'echo'               => false
 		) );
 
 	}
 
+	return $output;
+
+}
+
+function ameris_sidebar_menu() {
+	echo get_ameris_sidebar_menu();
 }
 
 /**
