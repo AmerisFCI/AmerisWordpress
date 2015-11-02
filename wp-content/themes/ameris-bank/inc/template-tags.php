@@ -248,7 +248,8 @@ function get_ameris_sidebar_menu() {
 			'theme_location'     => 'sidebar-' . $top_level_id,
 			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
 			'ameris_menu_parent' => $top_level, // gets passed to fallback function
-			'echo'               => 0
+			'echo'               => 0,
+			'walker'             => new Ameris_Walker_Nav_Menu
 		) );
 	} else {
 
@@ -274,7 +275,8 @@ function get_ameris_sidebar_menu() {
 				'theme_location'     => 'sidebar-business-' . $second_level->ID,
 				'fallback_cb'        => 'ameris_sidebar_menu_fallback',
 				'ameris_menu_parent' => $second_level, // gets passed to fallback function
-				'echo'               => 0
+				'echo'               => 0,
+				'walker'             => new Ameris_Walker_Nav_Menu
 			) );
 
 		// for all other pages, get menu based on top level
@@ -284,7 +286,8 @@ function get_ameris_sidebar_menu() {
 				'theme_location'     => 'sidebar-' . $top_level->ID,
 				'fallback_cb'        => 'ameris_sidebar_menu_fallback',
 				'ameris_menu_parent' => $top_level, // gets passed to fallback function
-				'echo'               => 0
+				'echo'               => 0,
+				'walker'             => new Ameris_Walker_Nav_Menu
 			) );
 
 		}
@@ -328,4 +331,15 @@ function ameris_sidebar_menu_fallback( $args ) {
 	</div><?php
 	return ob_get_clean();
 
+}
+
+/**
+ * Add the "children" class to sidebar sub-menus. Custom menus don't get this
+ * class automatically while menus generated via wp_list_pages do.
+ */
+class Ameris_Walker_Nav_Menu extends Walker_Nav_Menu {
+	public function start_lvl( &$output, $depth = 0, $args = array() ) {
+		$indent = str_repeat("\t", $depth);
+		$output .= "\n$indent<ul class=\"sub-menu children\">\n";
+	}
 }
