@@ -1,30 +1,37 @@
 (function ($) {
 
+	/**
+	 * Handle main menu links.
+	 */
+	$( '#primary-menu a' ).click( function( event ) {
 
-	// Handle `active` class behavior and when to follow links
-	$( '#primary-menu > li > a,	#primary-menu li.has-tabbed-sub > .sub-menu > li > a' ).click( function( event ) {
-
-		// if already `active`, follow link
-		if ( $( this ).parent().hasClass( 'active' ) ) {
+		// if already `active` class, follow link
+		if ( $( this ).parent( 'li' ).hasClass( 'active' ) )
 			return true;
-		}
 
-		// if top-level item and we're seeing the full-width menu, follow link
-		if ( $( this ).closest( 'ul' ).is( '#primary-menu' ) &&
-		    !$( '#site-navigation .menu-toggle' ).is( ':visible' ) ) {
+		var isMobile    = $( '#site-navigation .menu-toggle' ).is( ':visible' );
+		var topLevel    = $( this ).closest( 'ul' ).is( '#primary-menu' );
+		var tab         = $( this ).closest( '.sub-menu' ).closest( 'li' ).hasClass( 'has-tabbed-sub' );
+		var hasChildren = $( this ).parent( 'li' ).hasClass( 'menu-item-has-children' );
+
+		// on full-width: as long as you're not a tab under Business, always follow link
+		if ( !isMobile && !tab )
 			return true;
-		}
 
-		// normally: don't follow link
+		// on mobile: if you don't have any children, always follow link
+		if ( isMobile && !hasChildren )
+			return true;
+
+		// don't follow the link
 		event.preventDefault();
 
-		// remove `active` class from all other links
-		$( '#primary-menu li' ).removeClass( 'active' );
-		
-		// add `active` class
+		// remove `active` class from all other items unless they're ancestors
+		$( '#primary-menu li' ).not( $( this ).parents( 'li' ) ).removeClass( 'active' );
+
+		// add `active` class to this item
 		$( this ).parent( 'li' ).addClass( 'active' );
 
-	});
+	} );
 		
 
 
