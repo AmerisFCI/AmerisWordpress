@@ -240,40 +240,54 @@ function get_ameris_sidebar_menu() {
 
 	global $post;
 
-	// get top-level parent
-	$ancestors = $all_ancestors = get_post_ancestors( $post );
-	if ( $ancestors ) {
-		$top_level = array_pop( $ancestors );
-	} else {
-		$top_level = $post;
-	}
-
-	// grab object if you don't already have it
-	$top_level = get_post( $top_level );
-	
-	// for business pages, get menu based on one level down
-	if ( $top_level->ID === 20 && $all_ancestors ) {
-
-		$second_level = array_pop( $ancestors );
-		$second_level = get_post( $second_level );
-
-		// display a custom menu for this location, or alternately, display all sub-pages
+	// blog/single pages: About Us menu
+	if ( is_home() || is_single() ) {
+		$top_level_id = 61;
+		$top_level = get_post( $top_level_id );
 		$output = wp_nav_menu( array(
-			'theme_location'     => 'sidebar-business-' . $second_level->ID,
-			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
-			'ameris_menu_parent' => $second_level, // gets passed to fallback function
-			'echo'               => 0
-		) );
-
-	// for all other pages, get menu based on top level
-	} else {
-
-		$output = wp_nav_menu( array(
-			'theme_location'     => 'sidebar-' . $top_level->ID,
+			'theme_location'     => 'sidebar-' . $top_level_id,
 			'fallback_cb'        => 'ameris_sidebar_menu_fallback',
 			'ameris_menu_parent' => $top_level, // gets passed to fallback function
 			'echo'               => 0
 		) );
+	} else {
+
+		// get top-level parent
+		$ancestors = $all_ancestors = get_post_ancestors( $post );
+		if ( $ancestors ) {
+			$top_level = array_pop( $ancestors );
+		} else {
+			$top_level = $post;
+		}
+
+		// grab object if you don't already have it
+		$top_level = get_post( $top_level );
+		
+		// for business pages, get menu based on one level down
+		if ( $top_level->ID === 20 && $all_ancestors ) {
+
+			$second_level = array_pop( $ancestors );
+			$second_level = get_post( $second_level );
+
+			// display a custom menu for this location, or alternately, display all sub-pages
+			$output = wp_nav_menu( array(
+				'theme_location'     => 'sidebar-business-' . $second_level->ID,
+				'fallback_cb'        => 'ameris_sidebar_menu_fallback',
+				'ameris_menu_parent' => $second_level, // gets passed to fallback function
+				'echo'               => 0
+			) );
+
+		// for all other pages, get menu based on top level
+		} else {
+
+			$output = wp_nav_menu( array(
+				'theme_location'     => 'sidebar-' . $top_level->ID,
+				'fallback_cb'        => 'ameris_sidebar_menu_fallback',
+				'ameris_menu_parent' => $top_level, // gets passed to fallback function
+				'echo'               => 0
+			) );
+
+		}
 
 	}
 
@@ -290,24 +304,28 @@ function ameris_sidebar_menu() {
  * overriding it with a custom nav menu).
  */
 function ameris_sidebar_menu_fallback( $args ) {
-	ob_start();
 
 	$args = wp_parse_args( $args, array(
 		'ameris_menu_parent' => ''
 	) );
 	$parent = $args['ameris_menu_parent'];
 
-	?>
+	$menu = wp_list_pages( array(
+		'title_li' => '',
+		'child_of' => $parent->ID,
+		'depth'    => 2,
+		'echo'     => 0
+	) );
+
+	if ( !$menu )
+		return;
+
+	ob_start(); ?>
 	<div class="menu-container default-menu-container menu-<?php echo $parent->ID; ?>-container">
 		<ul class="menu">
-			<?php wp_list_pages( array(
-				'title_li' => '',
-				'child_of' => $parent->ID,
-				'depth'    => 2
-			) ); ?>
+			<?php echo $menu; ?>
 		</ul>
-	</div>
-	<?php
-
+	</div><?php
 	return ob_get_clean();
+
 }
