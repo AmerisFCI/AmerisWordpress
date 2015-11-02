@@ -269,12 +269,22 @@ function get_ameris_sidebar_menu() {
 
 			$second_level = array_pop( $ancestors );
 			$second_level = get_post( $second_level );
+			
+			$theme_location = 'sidebar-business-' . $second_level->ID;
+			$menu_parent = $second_level;
+
+			// for pages outside the normal hierarchy, just give them the top-level Business menu
+			$locations = get_registered_nav_menus();
+			if ( !array_key_exists( $theme_location, $locations ) ) {
+				$theme_location = 'sidebar-' . $top_level->ID;
+				$menu_parent = $top_level;
+			}
 
 			// display a custom menu for this location, or alternately, display all sub-pages
 			$output = wp_nav_menu( array(
-				'theme_location'     => 'sidebar-business-' . $second_level->ID,
+				'theme_location'     => $theme_location,
 				'fallback_cb'        => 'ameris_sidebar_menu_fallback',
-				'ameris_menu_parent' => $second_level, // gets passed to fallback function
+				'ameris_menu_parent' => $menu_parent, // gets passed to fallback function
 				'echo'               => 0,
 				'walker'             => new Ameris_Walker_Nav_Menu
 			) );
