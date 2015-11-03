@@ -288,3 +288,20 @@ $sprite-high-res-suffix: '-2x' !default;
   color: $darkblue;
   @include rem-fallback(margin-bottom, 1.5);
 }
+
+@mixin subnav-parent {
+  border: 0 solid $paleblue;
+  @include rem-fallback(border-bottom-width, .2);
+  color: $link-color;
+  @include rem-fallback(padding, 1);
+  &:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    @include rem-fallback(top, .2);
+    @include use-sprite(arrow-red-right-small);
+    transform: rotate(0deg);
+    @include rem-fallback(margin-left, 1);
+    transition: all .3s;
+  }
+}

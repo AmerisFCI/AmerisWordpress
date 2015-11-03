@@ -10,7 +10,7 @@
 	position: static;
 }
 
-.callout-box {
+.home-callout-box {
 	clear: both;
 	@include rem-fallback(margin-top, 5);
 }
@@ -37,7 +37,7 @@
 		@include rem-fallback(margin-top, 3);
 		@include rem-fallback(margin-bottom, 5);
 	}
-	.callout-box {
+	.home-callout-box {
 		@include grid-span(7, 8);
 		clear: both;
 		@include rem-fallback(margin-top, 1);
@@ -50,7 +50,7 @@
 	.latest-news {
 		@include grid-span(7, 1);
 	}
-	.callout-box {
+	.home-callout-box {
 		@include grid-span(7, 8);
 		clear: both;
 	}
@@ -60,7 +60,7 @@
 	.latest-news {
 		@include grid-span(8, 1);
 	}
-	.callout-box {
+	.home-callout-box {
 		@include grid-span(6, 9);
 		clear: both;
 	}

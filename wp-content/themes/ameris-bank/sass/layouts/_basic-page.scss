@@ -7,6 +7,10 @@
 	@include clearfix;
 }
 
+.sidebar-left {
+	clear: left;
+}
+
 .site-content {
 	@include background-image(linear-gradient(to top center, $lightgray, $white));
 	//@include rem-fallback(padding-top, 20);

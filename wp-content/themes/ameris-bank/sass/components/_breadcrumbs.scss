@@ -1,7 +1,16 @@
 .breadcrumbs {
 	font-family: $font-heading;
+	@include rem-fallback(font-size, 1.6);
 	@include rem-fallback(margin-bottom, 2.4);
+
 	a {
 		color: $link-color;
+	}
+	.trail-items li:after {
+		content: "";
+		@include use-sprite(arrow-red-right-tiny);
+		display: inline-block;
+		padding: 0;
+		@include rem-fallback(margin, 0, .8);
 	}
 }
