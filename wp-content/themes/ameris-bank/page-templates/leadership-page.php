@@ -20,21 +20,47 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<div class="leadership-grid">
-					<h3>Executive Management</h3>
-					<?php $management = get_field( 'executive_management' );
-					foreach( $management as $post ) {
-						setup_postdata( $post );
-						get_template_part( 'template-parts/leadership', 'panel' );
-					}
-					wp_reset_postdata(); ?>
+					<h3 class="leadership-grid__heading">Executive Management</h3>
+					<div class="leadership-grid__management">
+						<?php $management = get_field( 'executive_management' );
+						foreach( $management as $post ) {
+							setup_postdata( $post );
+							?>
+							<div id="post-<?php the_ID(); ?>-panel" class="leadership-grid__panel panel" <?php post_class(); ?>>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail( 'leader' ); ?>
+									<div>
+										<h4 class="leadership-grid__name"><?php the_title(); ?></h4>
+										<div class="leadership-grid__position"><?php the_field( 'position' ); ?></div>
+									</div>
+								</a>
+							</div><!-- #post-## -->
+							<?php
+						}
+						wp_reset_postdata(); ?>
+					</div>
 
-					<h3>Board of Directors</h3>
-					<?php $directors = get_field( 'board_of_directors' );
-					foreach( $directors as $post ) {
-						setup_postdata( $post );
-						get_template_part( 'template-parts/leadership', 'panel' );
-					}
-					wp_reset_postdata(); ?>
+					<h3 class="leadership-grid__heading">Board of Directors</h3>
+
+					<div class="leadership-grid__board">
+						<?php $directors = get_field( 'board_of_directors' );
+						foreach( $directors as $post ) {
+							setup_postdata( $post );
+							?>
+							<div id="post-<?php the_ID(); ?>-panel" class="leadership-grid__panel panel" <?php post_class(); ?>>
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail( 'leader' ); ?>
+									<div>
+										<h4 class="leadership-grid__name"><?php the_title(); ?></h4>
+										<div class="leadership-grid__position"><?php the_field( 'position' ); ?></div>
+										<div class="leadership-grid__company"><?php the_field( 'company' ); ?></div>
+									</div>
+								</a>
+							</div><!-- #post-## -->
+							<?php
+						}
+						wp_reset_postdata(); ?>
+					</div>
 				</div>
 
 			<?php endwhile; // End of the loop. ?>
