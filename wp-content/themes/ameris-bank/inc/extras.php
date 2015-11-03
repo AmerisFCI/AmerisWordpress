@@ -121,7 +121,8 @@ remove_filter( 'nav_menu_description', 'strip_tags' );
  * Don't strip HTML from nav menu descriptions, part 2.
  */
 function ameris_wp_setup_nav_menu_item( $menu_item ) {
-	$menu_item->description = apply_filters( 'nav_menu_description', $menu_item->post_content );
+	if ( $menu_item->description )
+		$menu_item->description = apply_filters( 'nav_menu_description', $menu_item->post_content );
 	return $menu_item;
 }
 add_filter( 'wp_setup_nav_menu_item', 'ameris_wp_setup_nav_menu_item' );
