@@ -1,3 +1,5 @@
+@import "sidebar/callout-box";
+
 .sidebar {
 	input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea, .sod_select {
 		@include rem-fallback(font-size, 1.8);
@@ -6,6 +8,11 @@
 	h2 {
 		@include rem-fallback(font-size, 3);
 	}
-
+	.kicker {
+		@include rem-fallback(font-size, 1.8);
+	}
+	.widget {
+		@include rem-fallback(margin-top, 2.4);
+	}
 }
 

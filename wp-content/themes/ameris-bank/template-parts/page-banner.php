@@ -4,16 +4,16 @@
  */
 ?>
 
-<div class="banner <?php if ( has_post_thumbnail() ) { ?>has-banner-image<?php } ?>">
+<div class="banner <?php if ( has_post_thumbnail() ) { ?>has-banner-image<?php } ?><?php if ( get_field( 'banner_blurb' ) ) { ?>has-blurb<?php } ?>">
 
     <?php if ( has_post_thumbnail() ) { ?>
     <div class="banner-image">
         <?php the_post_thumbnail( 'landing-banner' ); ?>
-        <div class="banner-blurb__wrap">
-            <?php if ( get_field( 'banner_blurb' ) ) { ?>
+        <?php if ( get_field( 'banner_blurb' ) ) { ?>
+            <div class="banner-blurb__wrap">
                 <div class="banner-blurb"><?php the_field( 'banner_blurb' ); ?></div>
-            <?php } ?>
-        </div>
+            </div>
+        <?php } ?>
     </div>
     <?php } ?>
 

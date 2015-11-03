@@ -1,13 +1,20 @@
-.sidebar .callout-box {
-	float: none;
-	width: auto;
-}
 
 .callout-box {
 	position: relative;
 }
+.callout-box__headline {
+	@include rem-fallback(font-size, 3.2);
+	color: $white;
+	margin-bottom: 0;
+}
 
-.callout-box__header {
+.button.home-callout-box__button {
+	@include red-button-cta;
+	@include cta-arrow-right;
+	@include rem-fallback(margin, 2, 0);
+}
+
+.home-callout-box__header {
 	@include rem-fallback(min-height, 30);
 	background-size: cover;
 	@include rem-fallback(padding, 2);
@@ -22,44 +29,36 @@
 		border: solid 30px transparent;
 		border-bottom-color: white;
 	}
-
 }
 
-.callout-box__headline {
-	@include rem-fallback(font-size, 3.2);
+.home-callout-box__headline {
 	color: $link-color;
 	position: absolute;
 	@include rem-fallback(bottom, 3.6);
 	margin-bottom: 0;
 }
 
-.callout-box__body {
+.home-callout-box__body {
 	background: $white;
 	@include rem-fallback(padding, 2);
 }
 
-.callout-box__description {
+.home-callout-box__description {
 	@include rem-fallback(font-size, 1.9);
 	@include rem-fallback(margin, 1.6, 0);
 }
 
-.button.callout-box__button {
-	@include red-button-cta;
-	@include cta-arrow-right;
-	@include rem-fallback(margin, 2, 0);
-}
-
 @include breakpoint($narrow-to-desktop) {
 
-	.callout-box__headline{
+	.home-callout-box__headline{
 		@include rem-fallback(font-size, 4.3);
 	}
 
-	.callout-box__header {
+	.home-callout-box__header {
 		@include rem-fallback(min-height, 40);
 	}
 
-	.callout-box__body, .callout-box__header {
+	.home-callout-box__body, .home-callout-box__header {
 		@include rem-fallback(padding, 2, 4);
 	}
 }

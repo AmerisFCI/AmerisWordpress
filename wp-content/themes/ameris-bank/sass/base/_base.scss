@@ -9,6 +9,7 @@ html{
 }
 
 body{
-  font-size: $base-font-size+6; /* Set to 16 as default font because 10 just ain't right. */ //Fix for the chrome rem bug http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
+  font-size: $base-font-size+9; /* Set to 19 as default font because 10 just ain't right. */ //Fix for the chrome rem bug http://stackoverflow.com/questions/20099844/chrome-not-respecting-rem-font-size-on-body-tag
   line-height: $base-line-height;
+	color: $text-color;
 }

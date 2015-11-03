@@ -21,6 +21,7 @@
 		color: $white;
 		text-transform: uppercase;
 		font-family: $font-heading;
+		font-weight: 700;
 		display: block;
 		@include rem-fallback(padding, 1.5, 1.5, 2);
 		transition: background .5s, color .5s;
@@ -139,24 +140,30 @@
 	display: none;
 }
 
-	#primary-menu > li {
-		border-bottom: none;
-	}
+#primary-menu > li {
+	border-bottom: none;
+}
 
 .main-navigation {
 	text-align: right;
 	@include rem-fallback(margin-right, 1);
+	ul {
+		display: block;
+	}
+}
+
+.nav-menu {
+
 	a {
 		@include rem-fallback(padding, 1.5, 1, 2);
 		@include rem-fallback(font-size, 1.6);
+		position: relative;
 	}
 
-	ul {
-		display: block;
-		ul { // hiding sublevels for now
-			display:none;
-		}
+	ul { // hiding sublevels for now
+		display:none;
 	}
+
 
 	li li {
 		a {
@@ -178,7 +185,7 @@
 	}
 
 	li li li a {
-		border-bottom: none;
+		border-bottom-width: 0;
 		&:after {
 			content: none;
 		}
@@ -188,20 +195,19 @@
 		display: block;
 	}
 
-	.menu-item-has-children > a:after {
+	.menu-item-has-children > a:after { //remove arrows from top nav
 		content: none;
 	}
 
 	li .menu-item-has-children > a:after {
-		content: "";
+		content: ""; // add arrows back to children with children
+		transform: rotate(0); //remove the rotate from mobile for the right arrows
 	}
-	ul ul ul {
-		display: block;
+	ul ul {
+		display: block; // show the nested lists by default, even though the dropdowns are hidden til hover
 	}
 
-}
-
-.nav-menu {
+	// set up top nav item styles
 	> li {
 		display: inline-block;
 		transition: all .2s;
@@ -213,6 +219,8 @@
 			}
 		}
 	}
+
+	// position dropdowns
 	> li > ul {
 		position: absolute;
 		text-align: left;
@@ -223,10 +231,48 @@
 		background: rgba(255,255,255,.9);
 		box-shadow: 0 3px 6px rgba(0,0,0,.1);
 	}
+
+	// parent item border bottoms
+	> .current-page-ancestor > a:after, > .current_page_item > a:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: auto; //reset the before positioning from the mobile arrows
+		right: 0; //reset the before positioning from the mobile arrows
+		@include rem-fallback(bottom, -.5); //set the position to just below the blue bar (same as height)
+		@include rem-fallback(height, .5);
+		background: $red;
+		transform: none;
+	}
+	
+	.toggle-sub {
+		li li {
+			display: table-cell;
+			@include rem-fallback(padding, 0, 1);
+		}
+		li li li {
+			padding: 0;
+			display: block;
+		}
+		li li a {
+			//@include rem-fallback(border-bottom-width, .2);
+			padding: 0;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		li li li a {
+			//border-bottom-width: 0;
+			margin-bottom: 0;
+			font-weight: 500;
+			text-transform: none;
+		}
+	}
+
 }
 
-//Sub Menu with toggles
-.toggle-sub__parent {
+//Sub Menu with additional menu toggles (business subs)
+.toggle-sub__parent { // class placed inside of the dropdown
 
 	width: 100%;
 
@@ -236,7 +282,7 @@
 		@include rem-fallback(line-height, 3.2);
 		float: left;
 		clear: left;
-		width: 30%;
+		width: 25%;
 		border-bottom: 2px solid transparent;
 		text-transform: none;
 		transition: all .2s;
@@ -245,12 +291,14 @@
 	> .item-description {
 		display: block;
 		@include rem-fallback(padding, 3);
-		float: right;
-		clear: none;
-		width: 70%;
+		float: left;
+		//clear: left;
+		width: 50%;
+		//margin-left: 25%; //ADDED to account for the absolutely positioned parent
 		opacity: 0;
 		pointer-events: none;
 		transition: all .2s;
+		background: $white;
 		a {
 			@include red-link();
 		}
@@ -265,16 +313,27 @@
 	}
 
 	> .sub-menu {
+		@include rem-fallback(padding, 3);
+		background: $white;
 		position: static;
 		opacity: 0;
 		transition: opacity .2s;
-		float: right;
-		clear: right;
-		width: 70%;
+		float: left;
+		clear: left;
+		width: 50%;
+		margin-left: 25%;
 		pointer-events: none;
 	}
+	.sub-topic-resource {
+		//position: absolute;
+		right: 0;
+		top: 0;
+		float: right;
+		clear: right;
+		width: 25%;
+	}
 
-	&:hover {
+	&:hover, &:first-child {
 		background: transparent;
 		> a {
 			background: $white;
@@ -282,7 +341,6 @@
 		}
 		> .item-description {
 			opacity: 1;
-			background-color: $white;
 			pointer-events: all;
 		}
 		> .sub-menu {
@@ -293,12 +351,13 @@
 
 }
 
-//Open Sub Navs
+//Open Sub Navs (any subs that have all the children exposed)
 .open-sub:hover {
 	> .sub-menu {
 		display: table;
 		> li {
 			display: table-cell;
+			@include rem-fallback(padding, 0, 1); //add space between menu lists
 			> .sub-menu {
 				display: block;
 			}
@@ -328,21 +387,35 @@
 }
 
 
+} //END NARROW SIZES
 
 
-}  //END NARROW SIZES
 
+
+// START  DESKTOP ONLY SIZES
 @include breakpoint($desktop) {
 	.main-navigation {
 		@include rem-fallback(margin-right, 3);
+	}
+	.nav-menu {
 		a {
 			@include rem-fallback(padding, 1.5, 1.5, 2);
 			@include rem-fallback(font-size, 1.8);
 		}
-		li li {
-			a {
-				@include rem-fallback(font-size, 1.8);
-			}
+		li a {
+			@include rem-fallback(font-size, 1.8);
+		}
+	}
+	.toggle-sub__parent {
+		> a {
+			width: 30%;
+		}
+		> .item-description, > .sub-menu {
+			width: 50%;
+			margin-left: 30%;
+		}
+		.sub-topic-resource {
+			width: 20%;
 		}
 	}
 }

@@ -1,0 +1,46 @@
+.sidebar-callout-box {
+	@include rem-fallback(padding, 2.4);
+	float: none;
+	width: auto;
+	@include rem-fallback(min-height, 43);
+	background: $paleblue;
+	position: relative;
+	@include rem-fallback(max-width, 31.5);
+	//float: right;
+	background-size: cover;
+}
+
+.sidebar-callout-box__kicker {
+	margin: 0;
+}
+
+.button.sidebar-callout-box__button {
+	@include red-button-cta;
+	@include cta-arrow-right;
+	@include rem-fallback(margin, 2, 0);
+	width: 100%;
+	position: relative;
+	&:after {
+		position: absolute;
+		top: 50%;
+		//right wasn't working, so used left with negative margin instead (hacky)
+		left: 100%;
+		@include rem-fallback(margin-left, -3);
+		@include rem-fallback(margin-top, -1.3);
+	}
+	&:hover:after {
+		left: 101%;
+	}
+}
+
+.sidebar-callout-box__header {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	@include rem-fallback(padding, 0, 2.4, 3);
+}
+
+.sidebar-callout-box__headline {
+	@include rem-fallback(font-size, 3.2);
+}
