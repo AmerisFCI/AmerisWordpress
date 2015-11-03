@@ -18,6 +18,7 @@ function ameris_nav_menus() {
 	register_nav_menu( 'sidebar-27',          'Sidebar - SBA Financing' );
 	register_nav_menu( 'sidebar-33',          'Sidebar - Residential Financing' );
 	register_nav_menu( 'sidebar-61',          'Sidebar - About Us' );
+	register_nav_menu( 'sidebar-1464',        'Sidebar - Tools & Resources' );
 	
 	register_nav_menu( 'footer-social-links', 'Footer - Social Links' );
 	register_nav_menu( 'footer-copyright',    'Footer - Left Menu' );

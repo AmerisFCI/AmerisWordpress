@@ -22,6 +22,9 @@
 	<header class="entry-title">
 		<h1><?php the_title(); ?></h1>
 		<div class="position"><?php the_field( 'position' ); ?></div>
+		<?php if ( get_field( 'company' ) ) { ?>
+			<div class="company"><?php the_field( 'company' ); ?></div>
+		<?php } ?>
 	</header>
 	<div class="entry-content">
 		<?php the_field( 'bio' ); ?>

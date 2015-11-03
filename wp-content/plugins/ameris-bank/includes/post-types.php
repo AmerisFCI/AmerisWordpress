@@ -6,7 +6,7 @@
 function ameris_custom_post_types() {
 
 	// Tools & Resources
-	register_post_type( 'tool_resource', array(
+	/* register_post_type( 'tool_resource', array(
 		'labels' => array(
 			'name'               => 'Tools & Resources',
 			'singular_name'      => 'Tool/Resource',
@@ -24,7 +24,7 @@ function ameris_custom_post_types() {
 		'rewrite'      => array( 'slug' => 'tools-resources', 'with_front' => false ),
 		'supports'     => array( 'title', 'editor', 'page-attributes', 'revisions', 'thumbnail' ),
 		'menu_icon'    => 'dashicons-hammer'
-	) );
+	) ); */
 
 	// Slides - for homepage slider
 	register_post_type( 'slide', array(
