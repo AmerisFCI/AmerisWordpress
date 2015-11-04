@@ -208,6 +208,7 @@
 	li .menu-item-has-children > a:after {
 		content: ""; // add arrows back to children with children
 		transform: rotate(0); //remove the rotate from mobile for the right arrows
+		@include use-sprite(arrow-red-right-small);
 	}
 	ul ul {
 		display: block; // show the nested lists by default, even though the dropdowns are hidden til hover
@@ -252,27 +253,31 @@
 		background: $red;
 		transform: none;
 	}
-	
+
 	.toggle-sub {
+
 		li li {
 			display: table-cell;
 			@include rem-fallback(padding, 0, 1);
+
+			a {
+				//@include rem-fallback(border-bottom-width, .2);
+				padding: 0;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
 		}
+
 		li li li {
 			padding: 0;
 			display: block;
-		}
-		li li a {
-			//@include rem-fallback(border-bottom-width, .2);
-			padding: 0;
-			font-weight: 700;
-			text-transform: uppercase;
-		}
-		li li li a {
-			//border-bottom-width: 0;
-			margin-bottom: 0;
-			font-weight: 500;
-			text-transform: none;
+
+			a {
+				//border-bottom-width: 0;
+				margin-bottom: 0;
+				font-weight: 500;
+				text-transform: none;
+			}
 		}
 	}
 
@@ -295,12 +300,39 @@
 		transition: all .2s;
 	}
 
+	&:hover, &:first-child {
+		background: transparent;
+		> a {
+			background: $white;
+			border-color: $red;
+		}
+		.tab-container {
+			height: auto;
+		}
+		.tab-container > .item-description {
+			opacity: 1;
+			pointer-events: all;
+		}
+		.tab-container > .sub-menu {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+}
+
+.tab-container { //the right-hand side of the business navigation subnavs
+	width: 75%;
+	float: right;
+	position: relative;
+	height: 0;
+	@include clearfix();
+
 	> .item-description {
 		display: block;
 		@include rem-fallback(padding, 3);
 		float: left;
 		//clear: left;
-		width: 50%;
+		width: 70%;
 		//margin-left: 25%; //ADDED to account for the absolutely positioned parent
 		opacity: 0;
 		pointer-events: none;
@@ -318,7 +350,6 @@
 			@include rem-fallback(font-size, 2);
 		}
 	}
-
 	> .sub-menu {
 		@include rem-fallback(padding, 3);
 		background: $white;
@@ -327,35 +358,21 @@
 		transition: opacity .2s;
 		float: left;
 		clear: left;
-		width: 50%;
-		margin-left: 25%;
+		width: 70%;
 		pointer-events: none;
 	}
-	.sub-topic-resource {
-		//position: absolute;
+	.right-container {
+		position: absolute;
 		right: 0;
 		top: 0;
 		float: right;
-		clear: right;
-		width: 25%;
-	}
-
-	&:hover, &:first-child {
-		background: transparent;
-		> a {
-			background: $white;
-			border-color: $red;
-		}
-		> .item-description {
-			opacity: 1;
-			pointer-events: all;
-		}
-		> .sub-menu {
-			opacity: 1;
-			pointer-events: all;
+		clear: none;
+		width: 30%;
+		@include rem-fallback(padding, 3, 1);
+		.right-side {
+			display: block;
 		}
 	}
-
 }
 
 //Open Sub Navs (any subs that have all the children exposed)
@@ -417,12 +434,8 @@
 		> a {
 			width: 30%;
 		}
-		> .item-description, > .sub-menu {
-			width: 50%;
-			margin-left: 30%;
-		}
-		.sub-topic-resource {
-			width: 20%;
+		.tab-container {
+			width: 70%;
 		}
 	}
 }
