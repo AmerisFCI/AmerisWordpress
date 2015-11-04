@@ -12,6 +12,8 @@
 
 .sidebar-callout-box__kicker {
 	margin: 0;
+	color: $white;
+	text-shadow: 1px 1px 30px rgba(0,0,0,.9);
 }
 
 .button.sidebar-callout-box__button {
@@ -38,9 +40,17 @@
 	width: 100%;
 	bottom: 0;
 	left: 0;
-	@include rem-fallback(padding, 0, 2.4, 3);
+	@include rem-fallback(padding, 0, 2.4, 1.6);
 }
 
 .sidebar-callout-box__headline {
+	@include voice;
 	@include rem-fallback(font-size, 3.2);
+	text-shadow: 1px 1px 30px rgba(0, 0, 0, .9);
+}
+
+@include breakpoint($desktop) {
+	.sidebar-callout-box__headline {
+		@include rem-fallback(font-size, 4);
+	}
 }

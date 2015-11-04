@@ -15,7 +15,8 @@
 	text-decoration: none;
 }
 .news-item__title {
-
+	@include voice;
+	color: $link-color;
 }
 .news-meta {
 	@include rem-fallback(margin-bottom, 1);

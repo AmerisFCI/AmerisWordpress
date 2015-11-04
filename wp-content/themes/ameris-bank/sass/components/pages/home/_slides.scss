@@ -69,11 +69,10 @@
 
 .slide__blurb {
 	position: relative;
-	font-family: $font-branding;
-	font-style: italic;
 	@include rem-fallback(font-size, 5);
-	line-height: 1;
-	@include rem-fallback(margin-bottom, 2);
+	@include voice;
+	color: $white;
+	@include rem-fallback(letter-spacing, -.5);
 }
 
 

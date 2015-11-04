@@ -3,6 +3,7 @@
 	position: relative;
 }
 .callout-box__headline {
+	@include voice;
 	@include rem-fallback(font-size, 3.2);
 	color: $white;
 	margin-bottom: 0;
