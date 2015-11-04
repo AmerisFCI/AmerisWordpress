@@ -4,9 +4,9 @@
 }
 .callout-box__headline {
 	@include voice;
-	@include rem-fallback(font-size, 3.2);
 	color: $white;
 	margin-bottom: 0;
+	letter-spacing: normal;
 }
 
 .button.home-callout-box__button {
@@ -35,6 +35,7 @@
 .home-callout-box__headline {
 	color: $link-color;
 	position: absolute;
+	@include rem-fallback(font-size, 3.2);
 	@include rem-fallback(bottom, 3.6);
 	margin-bottom: 0;
 }
