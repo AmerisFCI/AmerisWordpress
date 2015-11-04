@@ -201,7 +201,7 @@
 		}
 	}
 
-	li.active > ul, li:hover > ul {
+	li.active > ul, li:hover > ul, li.focus > ul {
 		display: block;
 	}
 
