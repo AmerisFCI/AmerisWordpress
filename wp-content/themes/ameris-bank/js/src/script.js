@@ -38,7 +38,9 @@
 	/**
 	 * Create containers for tabbed submenus.
 	 */
-	$( '.has-tabbed-sub > ul > li' ).children().not( 'a' ).wrapAll( '<div class="tab-container" />' );
+	$( '.has-tabbed-sub > ul > li' ).each( function() {
+		$( this ).children().not( 'a' ).wrapAll( '<div class="tab-container" />' );
+	} );
 	
 
 
@@ -46,18 +48,28 @@
 	 * Create containers for right-hand menu sections.
 	 */
 	$( '#primary-menu > li > .sub-menu' ).each( function() {
+
+		var isTabbed = $( this ).parent( 'li' ).hasClass( 'has-tabbed-sub' );
 		
 		// get all right-side items
 		var rightItems = $( this ).find( '.right-side' ); 
-		
-		// get their parent menu
-		var origParent = rightItems.parent( '.sub-menu' ); 
-		
-		// remove from their parent menu
-		rightItems.detach();
 
-		// add after the parent menu, inside a new container
-		rightItems.insertAfter( origParent ).wrapAll( '<div class="right-container"><ul class="sub-menu"></ul></div>' ); // add them after the original menu with a new wrapper
+		if ( isTabbed ) {
+
+			// get their parent menu
+			var origParent = rightItems.parent( '.sub-menu' );
+		
+			// remove from their parent menu
+			rightItems.detach();
+
+			// add after the parent menu, inside a new container
+			rightItems.insertAfter( origParent ).wrapAll( '<div class="right-container"><ul class="sub-menu"></ul></div>' );
+
+		} else {
+
+			rightItems.wrapAll( '<li class="right-container"><ul class="sub-menu"></ul></li>' );
+
+		}
 	
 	} );
 		
