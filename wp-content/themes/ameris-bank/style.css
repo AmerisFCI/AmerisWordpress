@@ -628,8 +628,8 @@ dd {
 /* line 72, sass/base/libraries/_sod.scss */
 .sod_select:before {
   content: "";
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -520px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -582px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 27px;
@@ -643,8 +643,8 @@ dd {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 72, sass/base/libraries/_sod.scss */
   .sod_select:before {
-    background-size: 215px 2227.5px;
-    background-position: 0 -182px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -213px;
     height: 27px;
     width: 19px;
   }
@@ -1436,10 +1436,10 @@ a:hover, a:active {
 
 /* line 7, sass/components/navigation/_menu-toggle.scss */
 .menu-toggle {
-  width: 30px;
-  width: 3rem;
-  height: 30px;
-  height: 3rem;
+  width: 35px;
+  width: 3.5rem;
+  height: 35px;
+  height: 3.5rem;
 }
 
 /* line 23, sass/components/navigation/_menu-toggle.scss */
@@ -1472,7 +1472,7 @@ a:hover, a:active {
 .lines {
   display: inline-block;
   width: 3.5rem;
-  height: 0.5rem;
+  height: 0.31818rem;
   background: #ffffff;
   border-radius: 0.25rem;
   transition: 0.3s;
@@ -1482,7 +1482,7 @@ a:hover, a:active {
 .lines:before, .lines:after {
   display: inline-block;
   width: 3.5rem;
-  height: 0.5rem;
+  height: 0.31818rem;
   background: #ffffff;
   border-radius: 0.25rem;
   transition: 0.3s;
@@ -1533,8 +1533,13 @@ a:hover, a:active {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 20, sass/components/navigation/_menu-main.scss */
-.main-navigation a {
+/* line 18, sass/components/navigation/_menu-main.scss */
+.main-navigation ul {
+  display: none;
+}
+
+/* line 24, sass/components/navigation/_menu-main.scss */
+.nav-menu a {
   color: #ffffff;
   text-transform: uppercase;
   font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -1544,17 +1549,8 @@ a:hover, a:active {
   padding: 1.5rem 1.5rem 2rem;
   transition: background .5s, color .5s;
 }
-/* line 28, sass/components/navigation/_menu-main.scss */
-.main-navigation a:hover, .main-navigation a:focus {
-  background-color: #ffffff;
-  color: #15397f;
-}
-/* line 34, sass/components/navigation/_menu-main.scss */
-.main-navigation ul {
-  display: none;
-}
-/* line 38, sass/components/navigation/_menu-main.scss */
-.main-navigation li li a {
+/* line 35, sass/components/navigation/_menu-main.scss */
+.nav-menu li li a {
   font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -1564,27 +1560,28 @@ a:hover, a:active {
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
+  margin-bottom: 0;
   color: #ffffff;
   padding: 10px 15px;
   padding: 1rem 1.5rem;
-  text-transform: none;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 46, sass/components/navigation/_menu-main.scss */
-.main-navigation li li li a {
+/* line 43, sass/components/navigation/_menu-main.scss */
+.nav-menu li li li a {
   font-weight: 300;
+  text-transform: none;
 }
-/* line 52, sass/components/navigation/_menu-main.scss */
-.main-navigation li.active > ul {
+/* line 50, sass/components/navigation/_menu-main.scss */
+.nav-menu li.active > ul {
   display: block;
 }
-/* line 57, sass/components/navigation/_menu-main.scss */
-.main-navigation .menu-item-has-children > a {
+/* line 55, sass/components/navigation/_menu-main.scss */
+.nav-menu .menu-item-has-children > a {
   position: relative;
 }
-/* line 59, sass/components/navigation/_menu-main.scss */
-.main-navigation .menu-item-has-children > a:after {
+/* line 57, sass/components/navigation/_menu-main.scss */
+.nav-menu .menu-item-has-children > a:after {
   content: "";
   display: block;
   position: absolute;
@@ -1592,8 +1589,8 @@ a:hover, a:active {
   top: 2.2rem;
   right: 16px;
   right: 1.6rem;
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -168px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -370px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 14px;
@@ -1603,20 +1600,20 @@ a:hover, a:active {
   transition: all .3s;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 59, sass/components/navigation/_menu-main.scss */
-  .main-navigation .menu-item-has-children > a:after {
-    background-size: 215px 2227.5px;
-    background-position: 0 -65px;
+  /* line 57, sass/components/navigation/_menu-main.scss */
+  .nav-menu .menu-item-has-children > a:after {
+    background-size: 215px 2258.5px;
+    background-position: 0 -166px;
     height: 14px;
     width: 8px;
   }
 }
-/* line 71, sass/components/navigation/_menu-main.scss */
-.main-navigation .menu-item-has-children.active > a:after {
+/* line 69, sass/components/navigation/_menu-main.scss */
+.nav-menu .menu-item-has-children.active > a:after {
   transform: rotate(0deg);
 }
-/* line 78, sass/components/navigation/_menu-main.scss */
-.main-navigation li .menu-item-has-children > a:after {
+/* line 76, sass/components/navigation/_menu-main.scss */
+.nav-menu li .menu-item-has-children > a:after {
   position: relative;
   display: inline-block;
   top: 2px;
@@ -1626,12 +1623,12 @@ a:hover, a:active {
   margin-left: 1rem;
 }
 
-/* line 89, sass/components/navigation/_menu-main.scss */
+/* line 87, sass/components/navigation/_menu-main.scss */
 .item-description {
   display: none;
 }
 
-/* line 93, sass/components/navigation/_menu-main.scss */
+/* line 91, sass/components/navigation/_menu-main.scss */
 .menu-toggle {
   padding: 0;
   position: absolute;
@@ -1641,52 +1638,52 @@ a:hover, a:active {
   right: 5rem;
   background: transparent;
 }
-/* line 99, sass/components/navigation/_menu-main.scss */
+/* line 97, sass/components/navigation/_menu-main.scss */
 .menu-toggle:hover, .menu-toggle:active {
   background: transparent;
 }
 
 @media (min-width: 530px) {
-  /* line 105, sass/components/navigation/_menu-main.scss */
+  /* line 103, sass/components/navigation/_menu-main.scss */
   .menu-toggle {
     right: 30px;
     right: 3rem;
   }
 }
-/* line 110, sass/components/navigation/_menu-main.scss */
+/* line 108, sass/components/navigation/_menu-main.scss */
 .menu-toggle,
 .main-navigation.toggled ul.menu {
   display: block;
 }
 
-/* line 129, sass/components/navigation/_menu-main.scss */
+/* line 127, sass/components/navigation/_menu-main.scss */
 .main-navigation {
   clear: both;
 }
 
 @media (min-width: 1024px) {
-  /* line 139, sass/components/navigation/_menu-main.scss */
+  /* line 137, sass/components/navigation/_menu-main.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 143, sass/components/navigation/_menu-main.scss */
+  /* line 141, sass/components/navigation/_menu-main.scss */
   #primary-menu > li {
     border-bottom: none;
   }
 
-  /* line 147, sass/components/navigation/_menu-main.scss */
+  /* line 145, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     text-align: right;
     margin-right: 10px;
     margin-right: 1rem;
   }
-  /* line 150, sass/components/navigation/_menu-main.scss */
+  /* line 148, sass/components/navigation/_menu-main.scss */
   .main-navigation ul {
     display: block;
   }
 
-  /* line 157, sass/components/navigation/_menu-main.scss */
+  /* line 155, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 10px 20px;
     padding: 1.5rem 1rem 2rem;
@@ -1694,11 +1691,16 @@ a:hover, a:active {
     font-size: 1.6rem;
     position: relative;
   }
-  /* line 163, sass/components/navigation/_menu-main.scss */
+  /* line 159, sass/components/navigation/_menu-main.scss */
+  .nav-menu a:hover, .nav-menu a:focus {
+    background-color: #ffffff;
+    color: #15397f;
+  }
+  /* line 165, sass/components/navigation/_menu-main.scss */
   .nav-menu ul {
     display: none;
   }
-  /* line 169, sass/components/navigation/_menu-main.scss */
+  /* line 171, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a {
     border: 0 solid #d7e7f2;
     border-bottom-width: 2px;
@@ -1707,14 +1709,15 @@ a:hover, a:active {
     padding: 10px;
     padding: 1rem;
   }
-  /* line 174, sass/components/navigation/_menu-main.scss */
+  /* line 176, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a:after {
     content: "";
     display: inline-block;
     position: relative;
     top: 2px;
     top: 0.2rem;
-    background-image: url('images/sprite-images-s5f26f93ed0.png');
+    left: 0;
+    background-image: url('images/sprite-images-s5908aa9ee5.png');
     background-position: 0 -168px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1727,9 +1730,9 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
-  /* line 174, sass/components/navigation/_menu-main.scss */
+  /* line 176, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a:after {
-    background-size: 215px 2227.5px;
+    background-size: 215px 2258.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -1737,45 +1740,50 @@ a:hover, a:active {
 }
 @media (min-width: 1024px) {
   /* line 187, sass/components/navigation/_menu-main.scss */
+  .nav-menu li li a:hover:after {
+    left: 5px;
+    left: 0.5rem;
+  }
+  /* line 193, sass/components/navigation/_menu-main.scss */
   .nav-menu li li li a {
     border-bottom-width: 0;
   }
-  /* line 189, sass/components/navigation/_menu-main.scss */
+  /* line 195, sass/components/navigation/_menu-main.scss */
   .nav-menu li li li a:after {
     content: none;
   }
-  /* line 194, sass/components/navigation/_menu-main.scss */
+  /* line 200, sass/components/navigation/_menu-main.scss */
   .nav-menu li.active > ul, .nav-menu li:hover > ul {
     display: block;
   }
-  /* line 198, sass/components/navigation/_menu-main.scss */
+  /* line 204, sass/components/navigation/_menu-main.scss */
   .nav-menu .menu-item-has-children > a:after {
     content: none;
   }
-  /* line 202, sass/components/navigation/_menu-main.scss */
+  /* line 208, sass/components/navigation/_menu-main.scss */
   .nav-menu li .menu-item-has-children > a:after {
     content: "";
     transform: rotate(0);
   }
-  /* line 206, sass/components/navigation/_menu-main.scss */
+  /* line 212, sass/components/navigation/_menu-main.scss */
   .nav-menu ul ul {
     display: block;
   }
-  /* line 211, sass/components/navigation/_menu-main.scss */
+  /* line 217, sass/components/navigation/_menu-main.scss */
   .nav-menu > li {
     display: inline-block;
     transition: all .2s;
   }
-  /* line 214, sass/components/navigation/_menu-main.scss */
+  /* line 220, sass/components/navigation/_menu-main.scss */
   .nav-menu > li:hover, .nav-menu > li:focus {
     background-color: #ffffff;
     color: #15397f;
   }
-  /* line 217, sass/components/navigation/_menu-main.scss */
+  /* line 223, sass/components/navigation/_menu-main.scss */
   .nav-menu > li:hover > a, .nav-menu > li:focus > a {
     color: #15397f;
   }
-  /* line 224, sass/components/navigation/_menu-main.scss */
+  /* line 230, sass/components/navigation/_menu-main.scss */
   .nav-menu > li > ul {
     position: absolute;
     text-align: left;
@@ -1785,8 +1793,9 @@ a:hover, a:active {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
   }
-  /* line 236, sass/components/navigation/_menu-main.scss */
+  /* line 243, sass/components/navigation/_menu-main.scss */
   .nav-menu > .current-page-ancestor > a:after, .nav-menu > .current_page_item > a:after {
     content: "";
     display: block;
@@ -1801,35 +1810,35 @@ a:hover, a:active {
     background: #d31145;
     transform: none;
   }
-  /* line 250, sass/components/navigation/_menu-main.scss */
+  /* line 257, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li {
     display: table-cell;
     padding: 0px 10px;
     padding: 0rem 1rem;
   }
-  /* line 254, sass/components/navigation/_menu-main.scss */
+  /* line 261, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li li {
     padding: 0;
     display: block;
   }
-  /* line 258, sass/components/navigation/_menu-main.scss */
+  /* line 265, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li a {
     padding: 0;
     font-weight: 700;
     text-transform: uppercase;
   }
-  /* line 264, sass/components/navigation/_menu-main.scss */
+  /* line 271, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li li a {
     margin-bottom: 0;
     font-weight: 500;
     text-transform: none;
   }
 
-  /* line 275, sass/components/navigation/_menu-main.scss */
+  /* line 282, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent {
     width: 100%;
   }
-  /* line 279, sass/components/navigation/_menu-main.scss */
+  /* line 286, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     padding: 30px;
     padding: 3rem;
@@ -1854,7 +1863,7 @@ a:hover, a:active {
     right: 1.9rem;
     top: 32px;
     top: 3.2rem;
-    background-image: url('images/sprite-images-s5f26f93ed0.png');
+    background-image: url('images/sprite-images-s5908aa9ee5.png');
     background-position: 0 -248px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1866,7 +1875,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 228, sass/base/_mixins.scss */
   .toggle-sub__parent > a:after {
-    background-size: 215px 2227.5px;
+    background-size: 215px 2258.5px;
     background-position: 0 -40px;
     height: 20px;
     width: 11px;
@@ -1878,7 +1887,7 @@ a:hover, a:active {
     right: 15px;
     right: 1.5rem;
   }
-  /* line 291, sass/components/navigation/_menu-main.scss */
+  /* line 298, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > .item-description {
     display: block;
     padding: 30px;
@@ -1890,7 +1899,7 @@ a:hover, a:active {
     transition: all .2s;
     background: #ffffff;
   }
-  /* line 302, sass/components/navigation/_menu-main.scss */
+  /* line 309, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > .item-description a {
     padding: 5px 0px;
     padding: 0.5rem 0rem;
@@ -1908,20 +1917,20 @@ a:hover, a:active {
   .toggle-sub__parent > .item-description a:hover, .toggle-sub__parent > .item-description a:focus {
     border-color: #d31145;
   }
-  /* line 305, sass/components/navigation/_menu-main.scss */
+  /* line 312, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > .item-description h3 {
     font-size: 32px;
     font-size: 3.2rem;
     line-height: 32px;
     line-height: 3.2rem;
   }
-  /* line 309, sass/components/navigation/_menu-main.scss */
+  /* line 316, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > .item-description p {
     color: #3d3d3d;
     font-size: 20px;
     font-size: 2rem;
   }
-  /* line 315, sass/components/navigation/_menu-main.scss */
+  /* line 322, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > .sub-menu {
     padding: 30px;
     padding: 3rem;
@@ -1935,7 +1944,7 @@ a:hover, a:active {
     margin-left: 25%;
     pointer-events: none;
   }
-  /* line 327, sass/components/navigation/_menu-main.scss */
+  /* line 334, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent .sub-topic-resource {
     right: 0;
     top: 0;
@@ -1943,71 +1952,71 @@ a:hover, a:active {
     clear: right;
     width: 25%;
   }
-  /* line 336, sass/components/navigation/_menu-main.scss */
+  /* line 343, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover, .toggle-sub__parent:first-child {
     background: transparent;
   }
-  /* line 338, sass/components/navigation/_menu-main.scss */
+  /* line 345, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover > a, .toggle-sub__parent:first-child > a {
     background: #ffffff;
     border-color: #d31145;
   }
-  /* line 342, sass/components/navigation/_menu-main.scss */
+  /* line 349, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover > .item-description, .toggle-sub__parent:first-child > .item-description {
     opacity: 1;
     pointer-events: all;
   }
-  /* line 346, sass/components/navigation/_menu-main.scss */
+  /* line 353, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover > .sub-menu, .toggle-sub__parent:first-child > .sub-menu {
     opacity: 1;
     pointer-events: all;
   }
 
-  /* line 356, sass/components/navigation/_menu-main.scss */
+  /* line 363, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu {
     display: table;
   }
-  /* line 358, sass/components/navigation/_menu-main.scss */
+  /* line 365, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu > li {
     display: table-cell;
     padding: 0px 10px;
     padding: 0rem 1rem;
   }
-  /* line 361, sass/components/navigation/_menu-main.scss */
+  /* line 368, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu > li > .sub-menu {
     display: block;
   }
 }
 @media (min-width: 1200px) {
-  /* line 397, sass/components/navigation/_menu-main.scss */
+  /* line 404, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     margin-right: 30px;
     margin-right: 3rem;
   }
 
-  /* line 401, sass/components/navigation/_menu-main.scss */
+  /* line 408, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 15px 20px;
     padding: 1.5rem 1.5rem 2rem;
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 405, sass/components/navigation/_menu-main.scss */
+  /* line 412, sass/components/navigation/_menu-main.scss */
   .nav-menu li a {
     font-size: 18px;
     font-size: 1.8rem;
   }
 
-  /* line 410, sass/components/navigation/_menu-main.scss */
+  /* line 417, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     width: 30%;
   }
-  /* line 413, sass/components/navigation/_menu-main.scss */
+  /* line 420, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > .item-description, .toggle-sub__parent > .sub-menu {
     width: 50%;
     margin-left: 30%;
   }
-  /* line 417, sass/components/navigation/_menu-main.scss */
+  /* line 424, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent .sub-topic-resource {
     width: 20%;
   }
@@ -2205,8 +2214,8 @@ a:hover, a:active {
   top: 0.3rem;
   right: 7px;
   right: 0.7rem;
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -711px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -773px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -2216,8 +2225,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 32, sass/components/navigation/_search-box.scss */
   .search-form:after {
-    background-size: 215px 2227.5px;
-    background-position: 0 -324.5px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -355.5px;
     height: 26px;
     width: 26px;
   }
@@ -2240,8 +2249,8 @@ a:hover, a:active {
 }
 /* line 17, sass/components/navigation/_social-links.scss */
 .social-links .linkedin a {
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -1148px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -1210px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -2250,16 +2259,16 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 17, sass/components/navigation/_social-links.scss */
   .social-links .linkedin a {
-    background-size: 215px 2227.5px;
-    background-position: 0 -543px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -574px;
     height: 26px;
     width: 22px;
   }
 }
 /* line 21, sass/components/navigation/_social-links.scss */
 .social-links .facebook a {
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -952px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -1014px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -2268,16 +2277,16 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 21, sass/components/navigation/_social-links.scss */
   .social-links .facebook a {
-    background-size: 215px 2227.5px;
-    background-position: 0 -445px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -476px;
     height: 26px;
     width: 22px;
   }
 }
 /* line 25, sass/components/navigation/_social-links.scss */
 .social-links .twitter a {
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -1246px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -1308px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -2286,16 +2295,16 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 25, sass/components/navigation/_social-links.scss */
   .social-links .twitter a {
-    background-size: 215px 2227.5px;
-    background-position: 0 -592px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -623px;
     height: 26px;
     width: 22px;
   }
 }
 /* line 29, sass/components/navigation/_social-links.scss */
 .social-links .youtube a {
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -1344px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -1406px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -2304,16 +2313,16 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 29, sass/components/navigation/_social-links.scss */
   .social-links .youtube a {
-    background-size: 215px 2227.5px;
-    background-position: 0 -641px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -672px;
     height: 26px;
     width: 22px;
   }
 }
 /* line 33, sass/components/navigation/_social-links.scss */
 .social-links .instagram a {
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -1050px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -1112px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -2322,8 +2331,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 33, sass/components/navigation/_social-links.scss */
   .social-links .instagram a {
-    background-size: 215px 2227.5px;
-    background-position: 0 -494px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -525px;
     height: 26px;
     width: 22px;
   }
@@ -2501,8 +2510,8 @@ a:hover, a:active {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -332px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -394px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 22px;
@@ -2512,7 +2521,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
   .button.sidebar-callout-box__button:after {
-    background-size: 215px 2227.5px;
+    background-size: 215px 2258.5px;
     background-position: 0 -139px;
     height: 22px;
     width: 13px;
@@ -2633,8 +2642,8 @@ a:hover, a:active {
 
 /* line 41, sass/components/sections/_footer.scss */
 #Member_FDIC {
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -3349px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -3411px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 43px;
@@ -2643,8 +2652,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 41, sass/components/sections/_footer.scss */
   #Member_FDIC {
-    background-size: 215px 2227.5px;
-    background-position: 0 -1627px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -1658px;
     height: 43px;
     width: 68px;
   }
@@ -2652,8 +2661,8 @@ a:hover, a:active {
 
 /* line 45, sass/components/sections/_footer.scss */
 #Equal_Housing_Lender {
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -3188px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -3250px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 56px;
@@ -2662,8 +2671,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 45, sass/components/sections/_footer.scss */
   #Equal_Housing_Lender {
-    background-size: 215px 2227.5px;
-    background-position: 0 -1533px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -1564px;
     height: 56px;
     width: 55px;
   }
@@ -2744,8 +2753,8 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   left: 0.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -615px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -677px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 24px;
@@ -2754,8 +2763,8 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 85, sass/components/sections/_footer.scss */
   .newsletter-signup__submit__icon:before {
-    background-size: 215px 2227.5px;
-    background-position: 0 -278.5px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -309.5px;
     height: 24px;
     width: 23px;
   }
@@ -3293,8 +3302,8 @@ footer .menu-item {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -332px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -394px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 22px;
@@ -3304,7 +3313,7 @@ footer .menu-item {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
   .button.slide__cta:after {
-    background-size: 215px 2227.5px;
+    background-size: 215px 2258.5px;
     background-position: 0 -139px;
     height: 22px;
     width: 13px;
@@ -3475,8 +3484,8 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 .account-access__submit-wrapper:before {
   content: '';
   display: inline-block;
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -839px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -901px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 41px;
@@ -3491,8 +3500,8 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 42, sass/components/pages/home/_accountaccess.scss */
   .account-access__submit-wrapper:before {
-    background-size: 215px 2227.5px;
-    background-position: 0 -373.5px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -404.5px;
     height: 41px;
     width: 41px;
   }
@@ -3953,8 +3962,8 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -332px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -394px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 22px;
@@ -3964,7 +3973,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
   .button.home-callout-box__button:after {
-    background-size: 215px 2227.5px;
+    background-size: 215px 2258.5px;
     background-position: 0 -139px;
     height: 22px;
     width: 13px;
@@ -4334,7 +4343,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 /* line 9, sass/components/_breadcrumbs.scss */
 .breadcrumbs .trail-items li:after {
   content: "";
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
   background-position: 0 -226px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -4348,7 +4357,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 9, sass/components/_breadcrumbs.scss */
   .breadcrumbs .trail-items li:after {
-    background-size: 215px 2227.5px;
+    background-size: 215px 2258.5px;
     background-position: 0 -96px;
     height: 12px;
     width: 6px;
@@ -4421,8 +4430,8 @@ table {
 }
 /* line 16, sass/components/_quick-links.scss */
 .quick-links .sod_select:before {
-  background-image: url('images/sprite-images-s5f26f93ed0.png');
-  background-position: 0 -486px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -548px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 24px;
@@ -4437,8 +4446,8 @@ table {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 16, sass/components/_quick-links.scss */
   .quick-links .sod_select:before {
-    background-size: 215px 2227.5px;
-    background-position: 0 -214px;
+    background-size: 215px 2258.5px;
+    background-position: 0 -245px;
     height: 24px;
     width: 17px;
   }
