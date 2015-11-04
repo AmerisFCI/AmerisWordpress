@@ -1796,7 +1796,7 @@ a:hover, a:active {
     content: none;
   }
   /* line 204, sass/components/navigation/_menu-main.scss */
-  .nav-menu li.active > ul, .nav-menu li:hover > ul {
+  .nav-menu li.active > ul, .nav-menu li:hover > ul, .nav-menu li.focus > ul {
     display: block;
   }
   /* line 208, sass/components/navigation/_menu-main.scss */
