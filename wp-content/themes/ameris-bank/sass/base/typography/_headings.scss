@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: $font-heading;
+	line-height: 1;
 	//@include rem-fallback(letter-spacing, -.02);
 
 	a {
@@ -16,27 +17,35 @@ h1 {
 }
 
 h2 {
-	@include rem-fallback(font-size, 3.2);
+	@include rem-fallback(font-size, 3.6);
 	@include rem-fallback(margin-bottom, 2);
 	font-weight: 300;
+	color: $darkblue;
 }
 
 h3 {
-	font-family: $font-branding;
-	font-style: italic;
-	@include rem-fallback(font-size, 2.4);
+	//font-family: $font-branding;
+	//font-style: italic;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $red;
+	@include rem-fallback(font-size, 2.2);
 	@include rem-fallback(margin-bottom, 2);
 }
 
 h4 {
-
+	color: $darkblue;
+	font-weight: 400;
+	@include rem-fallback(font-size, 2.4);
+	@include rem-fallback(margin-bottom, 2);
 }
 
 .kicker {
 	@include boldbluetext;
 	@include rem-fallback(padding, 1, 0);
 	@include rem-fallback(margin, 2, 0);
-	border-bottom: 4px solid $red;
+	border-bottom: solid $red;
+	@include rem-fallback(border-bottom-width, .3);
 }
 
 .landing-heading {

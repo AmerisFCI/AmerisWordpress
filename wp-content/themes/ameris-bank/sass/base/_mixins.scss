@@ -305,3 +305,10 @@ $sprite-high-res-suffix: '-2x' !default;
     transition: all .3s;
   }
 }
+
+@mixin voice {
+  font-family: $font-branding;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: none;
+}

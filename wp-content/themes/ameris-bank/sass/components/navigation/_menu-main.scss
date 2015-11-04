@@ -86,6 +86,10 @@
 
 .item-description {
 	display: none;
+	h3 {
+		@include voice;
+		color: $darkblue;
+	}
 }
 
 .menu-toggle {
@@ -391,7 +395,14 @@
 
 //Personal Sub Nav
 .personal-nav {
-
+	> .sub-menu {
+		width: 70%;
+		float: left;
+	}
+	.right-container {
+		width: 30%;
+		float: right;
+	}
 }
 
 //Business Sub Nav
