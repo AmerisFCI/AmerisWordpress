@@ -2,22 +2,3 @@ a {
 
 }
 
-.view-more {
-	@include red-link;
-}
-
-.button, .red-button {
-	@include red-button;
-}
-
-.button.cta, .red-button.cta {
-	@include cta-arrow-right;
-}
-
-.blue-button {
-	@include blue-button;
-}
-
-.blue-button.cta {
-	@include cta-arrow-right;
-}

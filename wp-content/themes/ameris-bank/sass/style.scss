@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "base/typography/lists";
 @import "base/typography/links";
 
+
 /* Import Library Sass Files */
 @import "base/libraries/sod";
 @import "base/libraries/slick";
@@ -94,6 +95,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "components/comments";
 @import "components/tables";
 @import "components/quick-links";
+
+@import "components/wysiwyg";
 
 @import "print";
 @import "quick-fixes";
