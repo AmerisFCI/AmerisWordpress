@@ -8,12 +8,14 @@
 
     <?php if ( has_post_thumbnail() ) { ?>
     <div class="banner-image">
-        <?php the_post_thumbnail( 'landing-banner' ); ?>
-        <?php if ( get_field( 'banner_blurb' ) ) { ?>
+        <?php if ( get_field( 'banner_blurb' ) ) {
+            the_post_thumbnail( 'landing-banner' ); ?>
             <div class="banner-blurb__wrap">
                 <div class="banner-blurb"><?php the_field( 'banner_blurb' ); ?></div>
             </div>
-        <?php } ?>
+        <?php } else {
+            the_post_thumbnail( 'product-banner' );
+        } ?>
     </div>
     <?php } ?>
 
