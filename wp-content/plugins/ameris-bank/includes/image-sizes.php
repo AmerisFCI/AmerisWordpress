@@ -22,9 +22,15 @@ add_action( 'after_setup_theme', 'ameris_image_sizes' );
  * Add instructions in Featured Image admin box.
  */
 function ameris_featured_image_notes( $content ) {
-	ob_start();
 	global $post;
 	
+	if ( !$post ) {
+		$post_id = isset( $_REQUEST['post_id'] ) ? (int) $_REQUEST['post_id'] : '';
+		if ( !$post_id )
+			return $content;
+		$post = get_post( $post_id );
+	}
+
 	if ( !in_array( $post->post_type, array( 'post', 'page', 'slide' ) ) )
 		return $content;
 
@@ -38,11 +44,9 @@ function ameris_featured_image_notes( $content ) {
 			break;
 	}
 
-	if ( $size ) { ?>
+	ob_start(); ?>
+	<p>Featured images for <?php echo $post->post_type; ?>s should not be smaller than <?php echo $size; ?> pixels.</p>
+	<?php return $content . ob_get_clean();
 
-		<p>Featured images for <?php echo $post->post_type; ?>s should not be smaller than <?php echo $size; ?> pixels.</p>
-
-	<?php }
-	return $content . ob_get_clean();
 }
 add_filter( 'admin_post_thumbnail_html', 'ameris_featured_image_notes' );
