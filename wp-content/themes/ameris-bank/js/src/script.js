@@ -10,12 +10,10 @@
 			return true;
 
 		var isMobile    = $( '#site-navigation .menu-toggle' ).is( ':visible' );
-		var topLevel    = $( this ).closest( 'ul' ).is( '#primary-menu' );
-		var tab         = $( this ).closest( '.sub-menu' ).closest( 'li' ).hasClass( 'has-tabbed-sub' );
 		var hasChildren = $( this ).parent( 'li' ).hasClass( 'menu-item-has-children' );
 
-		// on full-width: as long as you're not a tab under Business, always follow link
-		if ( !isMobile && !tab )
+		// on full-width: always follow link
+		if ( !isMobile )
 			return true;
 
 		// on mobile: if you don't have any children, always follow link
