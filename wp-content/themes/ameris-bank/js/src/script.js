@@ -1,7 +1,7 @@
 (function ($) {
 
 	/**
-	 * Handle main menu links.
+	 * Handle main menu links' click behavior.
 	 */
 	$( '#primary-menu a' ).click( function( event ) {
 
@@ -31,6 +31,34 @@
 		// add `active` class to this item
 		$( this ).parent( 'li' ).addClass( 'active' );
 
+	} );
+
+
+
+	/**
+	 * Create containers for tabbed submenus.
+	 */
+	$( '.has-tabbed-sub > ul > li' ).children().not( 'a' ).wrapAll( '<div class="tab-container" />' );
+	
+
+
+	/**
+	 * Create containers for right-hand menu sections.
+	 */
+	$( '#primary-menu > li > .sub-menu' ).each( function() {
+		
+		// get all right-side items
+		var rightItems = $( this ).find( '.right-side' ); 
+		
+		// get their parent menu
+		var origParent = rightItems.parent( '.sub-menu' ); 
+		
+		// remove from their parent menu
+		rightItems.detach();
+
+		// add after the parent menu, inside a new container
+		rightItems.insertAfter( origParent ).wrapAll( '<div class="right-container"><ul class="sub-menu"></ul></div>' ); // add them after the original menu with a new wrapper
+	
 	} );
 		
 
