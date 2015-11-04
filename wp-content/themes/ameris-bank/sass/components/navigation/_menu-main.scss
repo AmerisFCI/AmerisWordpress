@@ -14,9 +14,13 @@
 }
 
 .main-navigation {
-
 	@include rem-fallback(font-size, 1.8);
+	ul {
+		display: none;
+	}
+}
 
+.nav-menu {
 	a {
 		color: $white;
 		text-transform: uppercase;
@@ -25,26 +29,20 @@
 		display: block;
 		@include rem-fallback(padding, 1.5, 1.5, 2);
 		transition: background .5s, color .5s;
-		&:hover, &:focus {
-			background-color: $white;
-			color: $link-color;
-		}
 	}
 
-	ul {
-		display: none;
-	}
 	li li {
 		a {
 			@include boldbluetext;
+			margin-bottom: 0;
 			color: $white;
 			@include rem-fallback(padding, 1, 1.5);
-			text-transform: none;
 			@include rem-fallback(font-size, 1.6);
 		}
 		li {
 			a {
 				font-weight: 300;
+				text-transform: none;
 			}
 		}
 	}
@@ -62,7 +60,7 @@
 				position: absolute;
 				@include rem-fallback(top, 2.2);
 				@include rem-fallback(right, 1.6);
-				@include use-sprite(arrow-red-right-small);
+				@include use-sprite(arrow-white-right-small);
 				transform: rotate(90deg);
 				opacity: 1;
 				transition: all .3s;
@@ -158,6 +156,10 @@
 		@include rem-fallback(padding, 1.5, 1, 2);
 		@include rem-fallback(font-size, 1.6);
 		position: relative;
+		&:hover, &:focus {
+			background-color: $white;
+			color: $link-color;
+		}
 	}
 
 	ul { // hiding sublevels for now
@@ -176,10 +178,14 @@
 				display: inline-block;
 				position: relative;
 				@include rem-fallback(top, .2);
+				left: 0;
 				@include use-sprite(arrow-red-right-small);
 				transform: rotate(0deg);
 				@include rem-fallback(margin-left, 1);
 				transition: all .3s;
+			}
+			&:hover:after {
+				@include rem-fallback(left, .5);
 			}
 		}
 	}
@@ -230,6 +236,7 @@
 		margin: 0 auto;
 		background: rgba(255,255,255,.9);
 		box-shadow: 0 3px 6px rgba(0,0,0,.1);
+		z-index: 10;
 	}
 
 	// parent item border bottoms

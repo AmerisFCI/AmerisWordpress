@@ -16,8 +16,8 @@
 		<div class="inner-wrap footer_inner-wrap">
 			<div class="footer-top">
 				<div class="site-info">
-					<a href="#" id="Member_FDIC" class="footer__logo"><span class="element-invisible">Member FDIC</span></a>
-					<a href="#" id="Equal_Housing_Lender" class="footer__logo"><span class="element-invisible">Equal Housing Lender</span></a>
+					<span id="Member_FDIC" class="footer__logo"><span class="element-invisible">Member FDIC</span></span>
+					<span id="Equal_Housing_Lender" class="footer__logo"><span class="element-invisible">Equal Housing Lender</span></span>
 				</div>
 
 				<?php wp_nav_menu( array(
