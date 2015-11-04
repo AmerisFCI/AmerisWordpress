@@ -1764,26 +1764,43 @@ a:hover, a:active {
   .nav-menu li .menu-item-has-children > a:after {
     content: "";
     transform: rotate(0);
+    background-image: url('images/sprite-images-s5908aa9ee5.png');
+    background-position: 0 -168px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 14px;
+    width: 8px;
   }
-  /* line 212, sass/components/navigation/_menu-main.scss */
+}
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
+  /* line 208, sass/components/navigation/_menu-main.scss */
+  .nav-menu li .menu-item-has-children > a:after {
+    background-size: 215px 2258.5px;
+    background-position: 0 -65px;
+    height: 14px;
+    width: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 213, sass/components/navigation/_menu-main.scss */
   .nav-menu ul ul {
     display: block;
   }
-  /* line 217, sass/components/navigation/_menu-main.scss */
+  /* line 218, sass/components/navigation/_menu-main.scss */
   .nav-menu > li {
     display: inline-block;
     transition: all .2s;
   }
-  /* line 220, sass/components/navigation/_menu-main.scss */
+  /* line 221, sass/components/navigation/_menu-main.scss */
   .nav-menu > li:hover, .nav-menu > li:focus {
     background-color: #ffffff;
     color: #15397f;
   }
-  /* line 223, sass/components/navigation/_menu-main.scss */
+  /* line 224, sass/components/navigation/_menu-main.scss */
   .nav-menu > li:hover > a, .nav-menu > li:focus > a {
     color: #15397f;
   }
-  /* line 230, sass/components/navigation/_menu-main.scss */
+  /* line 231, sass/components/navigation/_menu-main.scss */
   .nav-menu > li > ul {
     position: absolute;
     text-align: left;
@@ -1795,7 +1812,7 @@ a:hover, a:active {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
   }
-  /* line 243, sass/components/navigation/_menu-main.scss */
+  /* line 244, sass/components/navigation/_menu-main.scss */
   .nav-menu > .current-page-ancestor > a:after, .nav-menu > .current_page_item > a:after {
     content: "";
     display: block;
@@ -1810,35 +1827,35 @@ a:hover, a:active {
     background: #d31145;
     transform: none;
   }
-  /* line 257, sass/components/navigation/_menu-main.scss */
+  /* line 259, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li {
     display: table-cell;
     padding: 0px 10px;
     padding: 0rem 1rem;
   }
-  /* line 261, sass/components/navigation/_menu-main.scss */
-  .nav-menu .toggle-sub li li li {
-    padding: 0;
-    display: block;
-  }
-  /* line 265, sass/components/navigation/_menu-main.scss */
+  /* line 263, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li a {
     padding: 0;
     font-weight: 700;
     text-transform: uppercase;
   }
   /* line 271, sass/components/navigation/_menu-main.scss */
+  .nav-menu .toggle-sub li li li {
+    padding: 0;
+    display: block;
+  }
+  /* line 275, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li li a {
     margin-bottom: 0;
     font-weight: 500;
     text-transform: none;
   }
 
-  /* line 282, sass/components/navigation/_menu-main.scss */
+  /* line 287, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent {
     width: 100%;
   }
-  /* line 286, sass/components/navigation/_menu-main.scss */
+  /* line 291, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     padding: 30px;
     padding: 3rem;
@@ -1887,20 +1904,57 @@ a:hover, a:active {
     right: 15px;
     right: 1.5rem;
   }
-  /* line 298, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent > .item-description {
+  /* line 303, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover, .toggle-sub__parent:first-child {
+    background: transparent;
+  }
+  /* line 305, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover > a, .toggle-sub__parent:first-child > a {
+    background: #ffffff;
+    border-color: #d31145;
+  }
+  /* line 309, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover .tab-container, .toggle-sub__parent:first-child .tab-container {
+    height: auto;
+  }
+  /* line 312, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover .tab-container > .item-description, .toggle-sub__parent:first-child .tab-container > .item-description {
+    opacity: 1;
+    pointer-events: all;
+  }
+  /* line 316, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover .tab-container > .sub-menu, .toggle-sub__parent:first-child .tab-container > .sub-menu {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* line 323, sass/components/navigation/_menu-main.scss */
+  .tab-container {
+    width: 75%;
+    float: right;
+    position: relative;
+    height: 0;
+  }
+  /* line 126, sass/base/_mixins.scss */
+  .tab-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 330, sass/components/navigation/_menu-main.scss */
+  .tab-container > .item-description {
     display: block;
     padding: 30px;
     padding: 3rem;
     float: left;
-    width: 50%;
+    width: 70%;
     opacity: 0;
     pointer-events: none;
     transition: all .2s;
     background: #ffffff;
   }
-  /* line 309, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent > .item-description a {
+  /* line 341, sass/components/navigation/_menu-main.scss */
+  .tab-container > .item-description a {
     padding: 5px 0px;
     padding: 0.5rem 0rem;
     font-size: 12px;
@@ -1914,24 +1968,24 @@ a:hover, a:active {
     border-bottom: 1px solid transparent;
   }
   /* line 277, sass/base/_mixins.scss */
-  .toggle-sub__parent > .item-description a:hover, .toggle-sub__parent > .item-description a:focus {
+  .tab-container > .item-description a:hover, .tab-container > .item-description a:focus {
     border-color: #d31145;
   }
-  /* line 312, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent > .item-description h3 {
+  /* line 344, sass/components/navigation/_menu-main.scss */
+  .tab-container > .item-description h3 {
     font-size: 32px;
     font-size: 3.2rem;
     line-height: 32px;
     line-height: 3.2rem;
   }
-  /* line 316, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent > .item-description p {
+  /* line 348, sass/components/navigation/_menu-main.scss */
+  .tab-container > .item-description p {
     color: #3d3d3d;
     font-size: 20px;
     font-size: 2rem;
   }
-  /* line 322, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent > .sub-menu {
+  /* line 353, sass/components/navigation/_menu-main.scss */
+  .tab-container > .sub-menu {
     padding: 30px;
     padding: 3rem;
     background: #ffffff;
@@ -1940,85 +1994,67 @@ a:hover, a:active {
     transition: opacity .2s;
     float: left;
     clear: left;
-    width: 50%;
-    margin-left: 25%;
+    width: 70%;
     pointer-events: none;
   }
-  /* line 334, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent .sub-topic-resource {
+  /* line 364, sass/components/navigation/_menu-main.scss */
+  .tab-container .right-container {
+    position: absolute;
     right: 0;
     top: 0;
     float: right;
-    clear: right;
-    width: 25%;
+    clear: none;
+    width: 30%;
+    padding: 30px 10px;
+    padding: 3rem 1rem;
   }
-  /* line 343, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover, .toggle-sub__parent:first-child {
-    background: transparent;
-  }
-  /* line 345, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover > a, .toggle-sub__parent:first-child > a {
-    background: #ffffff;
-    border-color: #d31145;
-  }
-  /* line 349, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover > .item-description, .toggle-sub__parent:first-child > .item-description {
-    opacity: 1;
-    pointer-events: all;
-  }
-  /* line 353, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover > .sub-menu, .toggle-sub__parent:first-child > .sub-menu {
-    opacity: 1;
-    pointer-events: all;
+  /* line 372, sass/components/navigation/_menu-main.scss */
+  .tab-container .right-container .right-side {
+    display: block;
   }
 
-  /* line 363, sass/components/navigation/_menu-main.scss */
+  /* line 380, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu {
     display: table;
   }
-  /* line 365, sass/components/navigation/_menu-main.scss */
+  /* line 382, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu > li {
     display: table-cell;
     padding: 0px 10px;
     padding: 0rem 1rem;
   }
-  /* line 368, sass/components/navigation/_menu-main.scss */
+  /* line 385, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu > li > .sub-menu {
     display: block;
   }
 }
 @media (min-width: 1200px) {
-  /* line 404, sass/components/navigation/_menu-main.scss */
+  /* line 421, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     margin-right: 30px;
     margin-right: 3rem;
   }
 
-  /* line 408, sass/components/navigation/_menu-main.scss */
+  /* line 425, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 15px 20px;
     padding: 1.5rem 1.5rem 2rem;
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 412, sass/components/navigation/_menu-main.scss */
+  /* line 429, sass/components/navigation/_menu-main.scss */
   .nav-menu li a {
     font-size: 18px;
     font-size: 1.8rem;
   }
 
-  /* line 417, sass/components/navigation/_menu-main.scss */
+  /* line 434, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     width: 30%;
   }
-  /* line 420, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent > .item-description, .toggle-sub__parent > .sub-menu {
-    width: 50%;
-    margin-left: 30%;
-  }
-  /* line 424, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent .sub-topic-resource {
-    width: 20%;
+  /* line 437, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent .tab-container {
+    width: 70%;
   }
 }
 /* line 1, sass/components/navigation/_utility-nav.scss */
@@ -2543,7 +2579,7 @@ a:hover, a:active {
   margin-top: -1.3rem;
 }
 /* line 31, sass/components/sections/sidebar/_callout-box.scss */
-.button.sidebar-callout-box__button:hover:after {
+.button.sidebar-callout-box__button:hover:after, .button.sidebar-callout-box__button:focus:after {
   left: 101%;
 }
 

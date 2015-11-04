@@ -28,7 +28,7 @@
 		@include rem-fallback(margin-left, -3);
 		@include rem-fallback(margin-top, -1.3);
 	}
-	&:hover:after {
+	&:hover:after, &:focus:after {
 		left: 101%;
 	}
 }
