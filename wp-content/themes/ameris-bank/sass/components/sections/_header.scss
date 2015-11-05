@@ -64,13 +64,22 @@
 
 @include breakpoint($narrow-to-desktop) {
 	.site-branding {
-		width: 20%;
+		width: 17%;
+		position: relative;
+		@include rem-fallback(height, 9.3);
 	}
 	.logo {
 		@include rem-fallback(padding, 1, 0, 0, 2);
+		position: absolute;
+		height: 100%;
+		width: 100%;
 	}
 	.logo img {
 		width: 95%;
+		position: absolute;
+		bottom: 0;
+		@include rem-fallback(left, 2.4);
+		@include rem-fallback(max-width, 22);
 	}
 
 	.utility-navigation {
@@ -90,8 +99,8 @@
 
 }
 
-@media screen and (min-width: 1280px) {
-	.search-form {
-		//clear: right;
+@include breakpoint($desktop) {
+	.site-branding {
+		width: 20%;
 	}
 }
