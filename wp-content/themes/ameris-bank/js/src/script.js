@@ -204,3 +204,32 @@
 
 
 })(jQuery);
+
+
+
+/**
+ * Move the search bar to the mobile menu at mobile sizes. (Function below.)
+ */
+function amerisPositionSearchBar() {
+
+	var isMobile = jQuery( '#site-navigation .menu-toggle' ).is( ':visible' );
+
+	if ( isMobile ) {
+		jQuery( '.nav-wrapper > .search-form' )
+			.detach()
+			.appendTo( '#primary-menu' )
+			.wrap( '<li class="menu-item search-in-primary-menu"></li>' );
+
+	} else {
+		jQuery( '#primary-menu .search-form' )
+			.unwrap()
+			.detach()
+			.insertAfter( '#masthead .utility-navigation' );
+
+	}
+
+}
+jQuery( document ).ready( amerisPositionSearchBar );
+jQuery( window ).resize( amerisPositionSearchBar );
+
+
