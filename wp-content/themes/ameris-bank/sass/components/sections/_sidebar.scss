@@ -1,6 +1,12 @@
 @import "sidebar/callout-box";
 
 .sidebar {
+	@include rem-fallback(max-width, 45);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sidebar {
 	input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea, .sod_select {
 		@include rem-fallback(font-size, 1.8);
 		@include rem-fallback(padding, 1.5, 1);

@@ -94,13 +94,9 @@
 }
 
 
-
-
-
-
 .has-banner-image {
 	.page-title {
-		@include rem-fallback(padding, 4, 2.4, 3);
+		@include rem-fallback(padding, 4, 5, 3);
 	}
 }
 
@@ -119,6 +115,12 @@
 @media screen and (min-width: 580px) {
 	.page-title {
 		@include rem-fallback(padding, 15, 2.4, 3);
+	}
+	.has-banner-image {
+		.page-title {
+			@include rem-fallback(padding-left, 5);
+			@include rem-fallback(padding-right, 5);
+		}
 	}
 }
 

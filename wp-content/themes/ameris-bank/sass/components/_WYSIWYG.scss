@@ -2,18 +2,16 @@ a.view-all, .view-all a {
 	@include red-link;
 }
 
-.button, .red-button {
-	@include red-button;
-}
-
-.button.cta, .red-button.cta {
-	@include cta-arrow-right;
-}
-
-.blue-button {
+.button {
 	@include blue-button;
 }
 
-.blue-button.cta {
+.button-cta {
+	@include red-button;
 	@include cta-arrow-right;
+}
+
+.intro {
+	font-weight: 300;
+	@include rem-fallback(font-size, 2.4);
 }

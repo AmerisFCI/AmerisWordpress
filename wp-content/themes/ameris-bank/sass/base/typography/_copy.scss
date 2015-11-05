@@ -51,7 +51,14 @@ hr {
 	@include rem-fallback(margin, 2, 0);
 }
 
-.intro {
-	font-weight: 300;
-	@include rem-fallback(font-size, 2.4);
+sub, sup {
+	@include rem-fallback(font-size, 1);
+}
+
+sub {
+	vertical-align: sub;
+}
+
+sup {
+	vertical-align: super;
 }

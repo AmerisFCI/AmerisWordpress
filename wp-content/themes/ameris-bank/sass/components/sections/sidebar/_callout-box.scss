@@ -8,6 +8,8 @@
 	@include rem-fallback(max-width, 31.5);
 	//float: right;
 	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sidebar-callout-box__kicker {
