@@ -533,13 +533,14 @@ h1, .landing-heading, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   line-height: 1;
+  text-align: center;
 }
-/* line 7, sass/base/typography/_headings.scss */
+/* line 8, sass/base/typography/_headings.scss */
 h1 a, .landing-heading a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 
-/* line 13, sass/base/typography/_headings.scss */
+/* line 14, sass/base/typography/_headings.scss */
 h1, .landing-heading {
   font-size: 36px;
   font-size: 3.6rem;
@@ -547,7 +548,7 @@ h1, .landing-heading {
   font-weight: 300;
 }
 
-/* line 19, sass/base/typography/_headings.scss */
+/* line 20, sass/base/typography/_headings.scss */
 h2 {
   font-size: 36px;
   font-size: 3.6rem;
@@ -557,7 +558,7 @@ h2 {
   color: #092764;
 }
 
-/* line 26, sass/base/typography/_headings.scss */
+/* line 27, sass/base/typography/_headings.scss */
 h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -570,7 +571,7 @@ h3 {
   margin-bottom: 2rem;
 }
 
-/* line 37, sass/base/typography/_headings.scss */
+/* line 38, sass/base/typography/_headings.scss */
 h4 {
   color: #092764;
   font-weight: 400;
@@ -580,7 +581,7 @@ h4 {
   margin: 2rem 0rem;
 }
 
-/* line 44, sass/base/typography/_headings.scss */
+/* line 45, sass/base/typography/_headings.scss */
 .kicker {
   font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
@@ -600,12 +601,18 @@ h4 {
   border-bottom-width: 0.3rem;
 }
 
-/* line 52, sass/base/typography/_headings.scss */
+/* line 53, sass/base/typography/_headings.scss */
 .landing-heading {
   margin-bottom: 40px;
   margin-bottom: 4rem;
 }
 
+@media (min-width: 1024px) {
+  /* line 59, sass/base/typography/_headings.scss */
+  h1, .landing-heading, h2, h3, h4, h5, h6 {
+    text-align: inherit;
+  }
+}
 /* line 1, sass/base/typography/_lists.scss */
 ul, ol {
   margin: 0px 20px 40px;
@@ -668,7 +675,7 @@ dd {
   margin: 0rem 2rem 2rem;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1420px) {
   /* line 47, sass/base/typography/_lists.scss */
   .entry-content li {
     width: 43%;
@@ -1022,20 +1029,25 @@ dd {
 }
 
 /* Layout rules */
-/*@include breakpoint($tablet-wide) {
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* line 15, sass/layouts/_content-sidebar.scss */
+  .has-sidebar-right .site-main {
+    width: 65.95745%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
 
-	.has-sidebar-right {
-		@include add-grid(12);
-		@include add-gutter(1/3);
-	}
-
-	.has-sidebar-right .site-main {
-		@include grid-span(8, 1);
-	}
-	.sidebar-right {
-		@include grid-span(4, 9);
-	}
-}*/
+  /* line 18, sass/layouts/_content-sidebar.scss */
+  .sidebar-right {
+    width: 31.91489%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
 @media (min-width: 1024px) {
   /* line 31, sass/layouts/_content-sidebar.scss */
   .has-sidebar-right .site-main {
@@ -1055,29 +1067,49 @@ dd {
     clear: none;
   }
 }
-@media (min-width: 740px) and (max-width: 1023px) {
-  /* line 14, sass/layouts/_sidebar-content.scss */
-  body:not(.home) .site-content .content-area.has-sidebar-left {
-    width: 66.26506%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-  }
-
-  /* line 18, sass/layouts/_sidebar-content.scss */
-  .sidebar-left {
-    width: 32.53012%;
+@media (min-width: 1420px) {
+  /* line 46, sass/layouts/_content-sidebar.scss */
+  .has-sidebar-right .site-main {
+    width: 72.22222%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
   }
+
+  /* line 49, sass/layouts/_content-sidebar.scss */
+  .has-sidebar-right #main {
+    padding-right: 48px;
+    padding-right: 4.8rem;
+  }
+
+  /* line 52, sass/layouts/_content-sidebar.scss */
+  .sidebar-right {
+    width: 27.77778%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
 }
+/*@include breakpoint($tablet-wide) {
+
+	@include add-grid(12);
+	@include add-gutter(1/4);
+
+	body:not(.home) .site-content {
+  		.content-area.has-sidebar-left {
+			@include grid-span(8, 5);
+		}
+	}
+	.sidebar-left {
+		@include grid-span(4, 1);
+	}
+}*/
 @media (min-width: 1024px) {
   /* line 31, sass/layouts/_sidebar-content.scss */
   body:not(.home) .site-content .content-area.has-sidebar-left {
-    width: 74.6988%;
+    width: 74.57627%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -1086,11 +1118,41 @@ dd {
 
   /* line 35, sass/layouts/_sidebar-content.scss */
   .sidebar-left, .banner .page-title {
-    width: 24.09639%;
+    width: 23.72881%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
+  }
+}
+@media (min-width: 1420px) {
+  /* line 47, sass/layouts/_sidebar-content.scss */
+  body:not(.home) .site-content .content-area.has-sidebar-left {
+    width: 77.08333%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  /* line 50, sass/layouts/_sidebar-content.scss */
+  body:not(.home) .site-content .has-sidebar-left #main {
+    padding-left: 48px;
+    padding-left: 4.8rem;
+  }
+
+  /* line 54, sass/layouts/_sidebar-content.scss */
+  .sidebar-left, .banner .page-title {
+    width: 22.91667%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+
+  /* line 58, sass/layouts/_sidebar-content.scss */
+  .sidebar-left {
+    padding-right: 24px;
+    padding-right: 2.4rem;
   }
 }
 /*@include breakpoint($tablet) {
@@ -1129,8 +1191,8 @@ dd {
 }*/
 /* line 1, sass/layouts/_basic-page.scss */
 .inner-wrap {
-  max-width: 1400px;
-  max-width: 140rem;
+  max-width: 1420px;
+  max-width: 142rem;
   padding: 0px 50px;
   padding: 0rem 5rem;
   margin: 0 auto;
@@ -1182,7 +1244,7 @@ body:not(.home) .site-main {
     padding: 0rem 2rem;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1420px) {
   /* line 36, sass/layouts/_basic-page.scss */
   .inner-wrap {
     padding: 0;
@@ -1662,7 +1724,7 @@ a:hover, a:active {
   text-transform: none;
 }
 /* line 51, sass/components/navigation/_menu-main.scss */
-.nav-menu li.active > ul {
+.nav-menu li.active > ul, .nav-menu li.active > .tab-container > ul {
   display: block;
 }
 /* line 56, sass/components/navigation/_menu-main.scss */
@@ -3098,16 +3160,7 @@ footer .menu-item {
   height: 100%;
 }
 
-/* line 30, sass/components/sections/_banner.scss */
-.banner-blurb__wrap {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  bottom: 3rem;
-  max-width: 100%;
-}
-
-/* line 37, sass/components/sections/_banner.scss */
+/* line 32, sass/components/sections/_banner.scss */
 .banner-blurb {
   float: right;
   padding: 20px;
@@ -3123,12 +3176,12 @@ footer .menu-item {
   font-style: italic;
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
 }
-/* line 48, sass/components/sections/_banner.scss */
+/* line 43, sass/components/sections/_banner.scss */
 .banner-blurb span, .banner-blurb em {
   display: inline-block;
   position: relative;
 }
-/* line 51, sass/components/sections/_banner.scss */
+/* line 46, sass/components/sections/_banner.scss */
 .banner-blurb span:after, .banner-blurb em:after {
   content: "";
   display: block;
@@ -3140,43 +3193,79 @@ footer .menu-item {
   background-color: #d31145;
 }
 
-/* line 71, sass/components/sections/_banner.scss */
+/* line 59, sass/components/sections/_banner.scss */
 .page-title {
   padding: 180px 24px 30px;
   padding: 18rem 2.4rem 3rem;
   clear: both;
   font-weight: 300;
-  color: #092764;
+  width: 100%;
 }
 
-/* line 82, sass/components/sections/_banner.scss */
+/* line 66, sass/components/sections/_banner.scss */
+.banner-blurb__wrap, .has-banner-image .page-title {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  bottom: 3rem;
+  max-width: 100%;
+  display: none;
+}
+
+/* line 75, sass/components/sections/_banner.scss */
+.has-banner-image .page-title {
+  display: block;
+  text-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+/* line 78, sass/components/sections/_banner.scss */
+.has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  /* line 84, sass/components/sections/_banner.scss */
+  .banner-blurb__wrap {
+    display: block;
+  }
+
+  /* line 87, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title {
+    position: static;
+    text-shadow: none;
+  }
+  /* line 90, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
+    color: #092764;
+  }
+}
+/* line 102, sass/components/sections/_banner.scss */
 .has-banner-image .page-title {
   padding: 40px 24px 30px;
   padding: 4rem 2.4rem 3rem;
 }
 
 @media (max-width: 529px) {
-  /* line 94, sass/components/sections/_banner.scss */
+  /* line 109, sass/components/sections/_banner.scss */
   .banner-image {
     min-height: 560px;
     min-height: 56rem;
     width: 100% !important;
   }
-  /* line 97, sass/components/sections/_banner.scss */
+  /* line 112, sass/components/sections/_banner.scss */
   .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 }
 @media screen and (min-width: 580px) {
-  /* line 105, sass/components/sections/_banner.scss */
+  /* line 120, sass/components/sections/_banner.scss */
   .page-title {
     padding: 150px 24px 30px;
     padding: 15rem 2.4rem 3rem;
   }
 }
 @media (min-width: 530px) and (max-width: 1023px) {
-  /* line 111, sass/components/sections/_banner.scss */
+  /* line 126, sass/components/sections/_banner.scss */
   .banner-image {
     width: 100% !important;
     min-height: 560px;
@@ -3184,20 +3273,20 @@ footer .menu-item {
   }
 }
 @media (min-width: 1024px) {
-  /* line 119, sass/components/sections/_banner.scss */
+  /* line 134, sass/components/sections/_banner.scss */
   .page-title {
     padding: 200px 24px 20px;
     padding: 20rem 2.4rem 2rem;
     clear: none;
   }
 
-  /* line 130, sass/components/sections/_banner.scss */
+  /* line 145, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding: 200px 24px 80px;
     padding: 20rem 2.4rem 8rem;
     clear: none;
   }
-  /* line 134, sass/components/sections/_banner.scss */
+  /* line 149, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -50px;
     margin-top: -5rem;
@@ -3205,53 +3294,53 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 143, sass/components/sections/_banner.scss */
+  /* line 158, sass/components/sections/_banner.scss */
   .banner-blurb {
     font-size: 86px;
     font-size: 8.6rem;
   }
 
-  /* line 147, sass/components/sections/_banner.scss */
+  /* line 162, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 150px;
     padding-bottom: 15rem;
   }
-  /* line 150, sass/components/sections/_banner.scss */
+  /* line 165, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -100px;
     margin-top: -10rem;
   }
 }
-@media (min-width: 1400px) {
-  /* line 157, sass/components/sections/_banner.scss */
+@media (min-width: 1420px) {
+  /* line 172, sass/components/sections/_banner.scss */
   .banner-image {
     width: 70%;
     float: right;
   }
-  /* line 160, sass/components/sections/_banner.scss */
+  /* line 175, sass/components/sections/_banner.scss */
   .banner-image img {
     position: static;
     max-width: none;
     width: 100%;
     height: auto;
   }
-  /* line 165, sass/components/sections/_banner.scss */
+  /* line 180, sass/components/sections/_banner.scss */
   .banner-image img.slidewidth {
     width: 100%;
     height: auto;
   }
-  /* line 170, sass/components/sections/_banner.scss */
+  /* line 185, sass/components/sections/_banner.scss */
   .banner-image img.slideheight {
     width: 100%;
     height: auto;
   }
 
-  /* line 177, sass/components/sections/_banner.scss */
+  /* line 192, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 250px;
     padding-bottom: 25rem;
   }
-  /* line 180, sass/components/sections/_banner.scss */
+  /* line 195, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -200px;
     margin-top: -20rem;
@@ -3955,7 +4044,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     float: none;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1420px) {
   /* line 126, sass/components/pages/home/_latest-news.scss */
   .news-item__header, .news-item__body {
     position: static;
@@ -4082,7 +4171,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     width: inherit;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1420px) {
   /* line 75, sass/components/pages/home/_tools.scss */
   .button.tool__link {
     position: static;
@@ -4326,7 +4415,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     clear: both;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1420px) {
   /* line 60, sass/components/pages/_home.scss */
   .latest-news {
     width: 56.36364%;
@@ -4513,7 +4602,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     width: 60%;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1420px) {
   /* line 26, sass/components/pages/_landing.scss */
   .quick-links {
     width: 30%;
@@ -4526,18 +4615,19 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
+  display: none;
   font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
-/* line 6, sass/components/_breadcrumbs.scss */
+/* line 7, sass/components/_breadcrumbs.scss */
 .breadcrumbs a {
   color: #15397f;
   text-decoration: underline;
 }
-/* line 10, sass/components/_breadcrumbs.scss */
+/* line 11, sass/components/_breadcrumbs.scss */
 .breadcrumbs .trail-items li:after {
   content: "";
   background-image: url('images/sprite-images-s5908aa9ee5.png');
@@ -4552,7 +4642,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   margin: 0rem 0.8rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 10, sass/components/_breadcrumbs.scss */
+  /* line 11, sass/components/_breadcrumbs.scss */
   .breadcrumbs .trail-items li:after {
     background-size: 215px 2258.5px;
     background-position: 0 -96px;
@@ -4561,6 +4651,12 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 
+@media (min-width: 1024px) {
+  /* line 21, sass/components/_breadcrumbs.scss */
+  .breadcrumbs {
+    display: block;
+  }
+}
 /* line 1, sass/components/_meta.scss */
 .news-meta {
   font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;

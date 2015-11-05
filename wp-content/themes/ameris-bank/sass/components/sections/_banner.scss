@@ -27,12 +27,7 @@
 
 }
 
-.banner-blurb__wrap {
-	position: absolute;
-	left: 0;
-	@include rem-fallback(bottom, 3);
-	max-width: 100%;
-}
+
 
 .banner-blurb {
 	float: right;
@@ -59,22 +54,47 @@
 			background-color: $red;
 		}
 	}
-
 }
-
-//.banner-text__inner-wrap {
-//	&:after {
-//		content: none;
-//	}
-//}
 
 .page-title {
 	@include rem-fallback(padding, 18, 2.4, 3);
 	clear: both;
 	font-weight: 300;
-	color: $heading-color;
-
+	width: 100%;
 }
+
+.banner-blurb__wrap, .has-banner-image .page-title {
+	position: absolute;
+	//width: 100%;
+	left: 0;
+	@include rem-fallback(bottom, 3);
+	max-width: 100%;
+	display: none; //hide the blurb so the page title can go on top of the image instead
+}
+
+.has-banner-image .page-title {
+	display: block;
+	text-shadow: 0 0 40px rgba(0,0,0,.8);
+	h1 {
+		color: $white;
+	}
+}
+
+@include breakpoint($narrow-to-desktop) {
+	.banner-blurb__wrap {
+		display: block; //show the blurb when the title moves to the left
+	}
+	.has-banner-image .page-title {
+		position: static;
+		text-shadow: none;
+		h1 {
+			color: $heading-color;
+		}
+	}
+}
+
+
+
 
 
 
@@ -82,11 +102,6 @@
 	.page-title {
 		@include rem-fallback(padding, 4, 2.4, 3);
 	}
-	//.banner-text__inner-wrap {
-	//	&:after {
-	//		content: "";
-	//	}
-	//}
 }
 
 
