@@ -27,6 +27,9 @@
 	//@include use-sprite("logo");
 	display: block;
 	@include rem-fallback(max-width, 23.4);
+	&:focus {
+		outline-color: $white;
+	}
 	img {
 		@include rem-fallback(width, 20);
 	}

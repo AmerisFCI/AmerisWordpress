@@ -1,9 +1,13 @@
-.menu, .sub-menu {
+.menu, .sub-menu, [role="navigation"] {
 	list-style: none;
 	margin: 0;
 
 	a {
 		text-decoration: none;
+	}
+
+	li:before {
+		content: none;
 	}
 
 }

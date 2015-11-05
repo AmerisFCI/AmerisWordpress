@@ -15,6 +15,9 @@
 
 .related-resource {
 	text-align: center;
+	&:before {
+		content: none;
+	}
 }
 
 .related-resource__link {

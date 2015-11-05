@@ -457,23 +457,28 @@ p {
 }
 
 /* line 5, sass/base/typography/_copy.scss */
+strong, b {
+  font-weight: 700;
+}
+
+/* line 9, sass/base/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 9, sass/base/typography/_copy.scss */
+/* line 13, sass/base/typography/_copy.scss */
 blockquote {
   margin: 0px 15px;
   margin: 0rem 1.5rem;
 }
 
-/* line 13, sass/base/typography/_copy.scss */
+/* line 17, sass/base/typography/_copy.scss */
 address {
   margin: 0px 0px 15px;
   margin: 0rem 0rem 1.5rem;
 }
 
-/* line 17, sass/base/typography/_copy.scss */
+/* line 21, sass/base/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
@@ -485,29 +490,29 @@ pre {
   padding: 1.5rem;
 }
 
-/* line 26, sass/base/typography/_copy.scss */
+/* line 30, sass/base/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 }
 
-/* line 30, sass/base/typography/_copy.scss */
+/* line 34, sass/base/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted transparent;
   cursor: help;
 }
 
-/* line 35, sass/base/typography/_copy.scss */
+/* line 39, sass/base/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 40, sass/base/typography/_copy.scss */
+/* line 44, sass/base/typography/_copy.scss */
 big {
   font-size: 125%;
 }
 
-/* line 44, sass/base/typography/_copy.scss */
+/* line 48, sass/base/typography/_copy.scss */
 hr {
   border: 0 solid #d7e7f2;
   border-top-width: 3px;
@@ -516,7 +521,7 @@ hr {
   margin: 2rem 0rem;
 }
 
-/* line 50, sass/base/typography/_copy.scss */
+/* line 54, sass/base/typography/_copy.scss */
 .intro {
   font-weight: 300;
   font-size: 24px;
@@ -526,7 +531,7 @@ hr {
 /* line 1, sass/base/typography/_headings.scss */
 h1, .landing-heading, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   line-height: 1;
 }
 /* line 7, sass/base/typography/_headings.scss */
@@ -577,7 +582,7 @@ h4 {
 
 /* line 44, sass/base/typography/_headings.scss */
 .kicker {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -609,15 +614,42 @@ ul, ol {
 
 /* line 5, sass/base/typography/_lists.scss */
 ul {
-  list-style: square;
+  list-style: none;
 }
 
 /* line 9, sass/base/typography/_lists.scss */
+li {
+  position: relative;
+}
+/* line 11, sass/base/typography/_lists.scss */
+li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  width: 0.7rem;
+  height: 7px;
+  height: 0.7rem;
+  background: #092764;
+  left: -20px;
+  left: -2rem;
+  top: 6px;
+  top: 0.6rem;
+}
+
+/* line 23, sass/base/typography/_lists.scss */
+.entry-content li {
+  margin-bottom: 13px;
+  margin-bottom: 1.3rem;
+  line-height: 1;
+}
+
+/* line 28, sass/base/typography/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 13, sass/base/typography/_lists.scss */
+/* line 32, sass/base/typography/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -625,17 +657,34 @@ li > ol {
   margin-left: 2rem;
 }
 
-/* line 19, sass/base/typography/_lists.scss */
+/* line 38, sass/base/typography/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 23, sass/base/typography/_lists.scss */
+/* line 42, sass/base/typography/_lists.scss */
 dd {
   margin: 0px 20px 20px;
   margin: 0rem 2rem 2rem;
 }
 
+@media (min-width: 1400px) {
+  /* line 47, sass/base/typography/_lists.scss */
+  .entry-content li {
+    width: 43%;
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 7%;
+  }
+
+  /* line 126, sass/base/_mixins.scss */
+  .entry-content ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 /* Import Library Sass Files */
 /* line 18, sass/base/libraries/_sod.scss */
 .sod_select,
@@ -1177,7 +1226,7 @@ input[type="submit"] {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
 }
@@ -1415,16 +1464,20 @@ img {
 }
 
 /* line 1, sass/components/navigation/_menus.scss */
-.menu, .sub-menu {
+.menu, .sub-menu, [role="navigation"] {
   list-style: none;
   margin: 0;
 }
 /* line 5, sass/components/navigation/_menus.scss */
-.menu a, .sub-menu a {
+.menu a, .sub-menu a, [role="navigation"] a {
   text-decoration: none;
 }
+/* line 9, sass/components/navigation/_menus.scss */
+.menu li:before, .sub-menu li:before, [role="navigation"] li:before {
+  content: none;
+}
 
-/* line 20, sass/components/navigation/_menus.scss */
+/* line 24, sass/components/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -1432,14 +1485,14 @@ img {
   margin: 0rem 0rem 2rem;
   overflow: hidden;
 }
-/* line 25, sass/components/navigation/_menus.scss */
+/* line 29, sass/components/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 30, sass/components/navigation/_menus.scss */
+/* line 34, sass/components/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1557,36 +1610,37 @@ a:hover, a:active {
 /* line 9, sass/components/navigation/_menu-main.scss */
 #primary-menu > li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: static;
 }
-/* line 11, sass/components/navigation/_menu-main.scss */
+/* line 12, sass/components/navigation/_menu-main.scss */
 #primary-menu > li:last-child {
   border: none;
 }
 
-/* line 16, sass/components/navigation/_menu-main.scss */
+/* line 17, sass/components/navigation/_menu-main.scss */
 .main-navigation {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 18, sass/components/navigation/_menu-main.scss */
+/* line 19, sass/components/navigation/_menu-main.scss */
 .main-navigation ul {
   display: none;
 }
 
-/* line 24, sass/components/navigation/_menu-main.scss */
+/* line 25, sass/components/navigation/_menu-main.scss */
 .nav-menu a {
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 700;
   display: block;
   padding: 15px 15px 20px;
   padding: 1.5rem 1.5rem 2rem;
   transition: background .5s, color .5s;
 }
-/* line 35, sass/components/navigation/_menu-main.scss */
+/* line 36, sass/components/navigation/_menu-main.scss */
 .nav-menu li li a {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -1602,20 +1656,20 @@ a:hover, a:active {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 43, sass/components/navigation/_menu-main.scss */
+/* line 44, sass/components/navigation/_menu-main.scss */
 .nav-menu li li li a {
   font-weight: 300;
   text-transform: none;
 }
-/* line 50, sass/components/navigation/_menu-main.scss */
+/* line 51, sass/components/navigation/_menu-main.scss */
 .nav-menu li.active > ul {
   display: block;
 }
-/* line 55, sass/components/navigation/_menu-main.scss */
+/* line 56, sass/components/navigation/_menu-main.scss */
 .nav-menu .menu-item-has-children > a {
   position: relative;
 }
-/* line 57, sass/components/navigation/_menu-main.scss */
+/* line 58, sass/components/navigation/_menu-main.scss */
 .nav-menu .menu-item-has-children > a:after {
   content: "";
   display: block;
@@ -1635,7 +1689,7 @@ a:hover, a:active {
   transition: all .3s;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 57, sass/components/navigation/_menu-main.scss */
+  /* line 58, sass/components/navigation/_menu-main.scss */
   .nav-menu .menu-item-has-children > a:after {
     background-size: 215px 2258.5px;
     background-position: 0 -166px;
@@ -1643,11 +1697,11 @@ a:hover, a:active {
     width: 8px;
   }
 }
-/* line 69, sass/components/navigation/_menu-main.scss */
+/* line 70, sass/components/navigation/_menu-main.scss */
 .nav-menu .menu-item-has-children.active > a:after {
   transform: rotate(0deg);
 }
-/* line 76, sass/components/navigation/_menu-main.scss */
+/* line 77, sass/components/navigation/_menu-main.scss */
 .nav-menu li .menu-item-has-children > a:after {
   position: relative;
   display: inline-block;
@@ -1658,11 +1712,11 @@ a:hover, a:active {
   margin-left: 1rem;
 }
 
-/* line 87, sass/components/navigation/_menu-main.scss */
+/* line 88, sass/components/navigation/_menu-main.scss */
 .item-description {
   display: none;
 }
-/* line 89, sass/components/navigation/_menu-main.scss */
+/* line 90, sass/components/navigation/_menu-main.scss */
 .item-description h3 {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -1671,7 +1725,7 @@ a:hover, a:active {
   color: #092764;
 }
 
-/* line 95, sass/components/navigation/_menu-main.scss */
+/* line 96, sass/components/navigation/_menu-main.scss */
 .menu-toggle {
   padding: 0;
   position: absolute;
@@ -1681,52 +1735,52 @@ a:hover, a:active {
   right: 5rem;
   background: transparent;
 }
-/* line 101, sass/components/navigation/_menu-main.scss */
+/* line 102, sass/components/navigation/_menu-main.scss */
 .menu-toggle:hover, .menu-toggle:active {
   background: transparent;
 }
 
 @media (min-width: 530px) {
-  /* line 107, sass/components/navigation/_menu-main.scss */
+  /* line 108, sass/components/navigation/_menu-main.scss */
   .menu-toggle {
     right: 30px;
     right: 3rem;
   }
 }
-/* line 112, sass/components/navigation/_menu-main.scss */
+/* line 113, sass/components/navigation/_menu-main.scss */
 .menu-toggle,
 .main-navigation.toggled ul.menu {
   display: block;
 }
 
-/* line 131, sass/components/navigation/_menu-main.scss */
+/* line 132, sass/components/navigation/_menu-main.scss */
 .main-navigation {
   clear: both;
 }
 
 @media (min-width: 1024px) {
-  /* line 141, sass/components/navigation/_menu-main.scss */
+  /* line 142, sass/components/navigation/_menu-main.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 145, sass/components/navigation/_menu-main.scss */
+  /* line 146, sass/components/navigation/_menu-main.scss */
   #primary-menu > li {
     border-bottom: none;
   }
 
-  /* line 149, sass/components/navigation/_menu-main.scss */
+  /* line 150, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     text-align: right;
     margin-right: 10px;
     margin-right: 1rem;
   }
-  /* line 152, sass/components/navigation/_menu-main.scss */
+  /* line 153, sass/components/navigation/_menu-main.scss */
   .main-navigation ul {
     display: block;
   }
 
-  /* line 159, sass/components/navigation/_menu-main.scss */
+  /* line 160, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 10px 20px;
     padding: 1.5rem 1rem 2rem;
@@ -1734,16 +1788,16 @@ a:hover, a:active {
     font-size: 1.6rem;
     position: relative;
   }
-  /* line 163, sass/components/navigation/_menu-main.scss */
+  /* line 164, sass/components/navigation/_menu-main.scss */
   .nav-menu a:hover, .nav-menu a:focus {
     background-color: #ffffff;
     color: #15397f;
   }
-  /* line 169, sass/components/navigation/_menu-main.scss */
+  /* line 170, sass/components/navigation/_menu-main.scss */
   .nav-menu ul {
     display: none;
   }
-  /* line 175, sass/components/navigation/_menu-main.scss */
+  /* line 176, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a {
     border: 0 solid #d7e7f2;
     border-bottom-width: 2px;
@@ -1752,7 +1806,7 @@ a:hover, a:active {
     padding: 10px;
     padding: 1rem;
   }
-  /* line 180, sass/components/navigation/_menu-main.scss */
+  /* line 181, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a:after {
     content: "";
     display: inline-block;
@@ -1773,7 +1827,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
-  /* line 180, sass/components/navigation/_menu-main.scss */
+  /* line 181, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a:after {
     background-size: 215px 2258.5px;
     background-position: 0 -65px;
@@ -1782,28 +1836,28 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1024px) {
-  /* line 191, sass/components/navigation/_menu-main.scss */
+  /* line 192, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a:hover:after {
     left: 5px;
     left: 0.5rem;
   }
-  /* line 197, sass/components/navigation/_menu-main.scss */
+  /* line 198, sass/components/navigation/_menu-main.scss */
   .nav-menu li li li a {
     border-bottom-width: 0;
   }
-  /* line 199, sass/components/navigation/_menu-main.scss */
+  /* line 200, sass/components/navigation/_menu-main.scss */
   .nav-menu li li li a:after {
     content: none;
   }
-  /* line 204, sass/components/navigation/_menu-main.scss */
+  /* line 205, sass/components/navigation/_menu-main.scss */
   .nav-menu li.active > ul, .nav-menu li:hover > ul, .nav-menu li.focus > ul {
     display: block;
   }
-  /* line 208, sass/components/navigation/_menu-main.scss */
+  /* line 209, sass/components/navigation/_menu-main.scss */
   .nav-menu .menu-item-has-children > a:after {
     content: none;
   }
-  /* line 212, sass/components/navigation/_menu-main.scss */
+  /* line 213, sass/components/navigation/_menu-main.scss */
   .nav-menu li .menu-item-has-children > a:after {
     content: "";
     transform: rotate(0);
@@ -1816,7 +1870,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
-  /* line 212, sass/components/navigation/_menu-main.scss */
+  /* line 213, sass/components/navigation/_menu-main.scss */
   .nav-menu li .menu-item-has-children > a:after {
     background-size: 215px 2258.5px;
     background-position: 0 -65px;
@@ -1825,25 +1879,25 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1024px) {
-  /* line 217, sass/components/navigation/_menu-main.scss */
+  /* line 218, sass/components/navigation/_menu-main.scss */
   .nav-menu ul ul {
     display: block;
   }
-  /* line 222, sass/components/navigation/_menu-main.scss */
+  /* line 223, sass/components/navigation/_menu-main.scss */
   .nav-menu > li {
     display: inline-block;
     transition: all .2s;
   }
-  /* line 225, sass/components/navigation/_menu-main.scss */
+  /* line 226, sass/components/navigation/_menu-main.scss */
   .nav-menu > li:hover, .nav-menu > li:focus {
     background-color: #ffffff;
     color: #15397f;
   }
-  /* line 228, sass/components/navigation/_menu-main.scss */
+  /* line 229, sass/components/navigation/_menu-main.scss */
   .nav-menu > li:hover > a, .nav-menu > li:focus > a {
     color: #15397f;
   }
-  /* line 235, sass/components/navigation/_menu-main.scss */
+  /* line 236, sass/components/navigation/_menu-main.scss */
   .nav-menu > li > ul {
     position: absolute;
     text-align: left;
@@ -1855,7 +1909,7 @@ a:hover, a:active {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
   }
-  /* line 248, sass/components/navigation/_menu-main.scss */
+  /* line 249, sass/components/navigation/_menu-main.scss */
   .nav-menu > .current-page-ancestor > a:after, .nav-menu > .current_page_item > a:after {
     content: "";
     display: block;
@@ -1870,35 +1924,35 @@ a:hover, a:active {
     background: #d31145;
     transform: none;
   }
-  /* line 263, sass/components/navigation/_menu-main.scss */
+  /* line 264, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li {
     display: table-cell;
     padding: 0px 10px;
     padding: 0rem 1rem;
   }
-  /* line 267, sass/components/navigation/_menu-main.scss */
+  /* line 268, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li a {
     padding: 0;
     font-weight: 700;
     text-transform: uppercase;
   }
-  /* line 275, sass/components/navigation/_menu-main.scss */
+  /* line 276, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li li {
     padding: 0;
     display: block;
   }
-  /* line 279, sass/components/navigation/_menu-main.scss */
+  /* line 280, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li li a {
     margin-bottom: 0;
     font-weight: 500;
     text-transform: none;
   }
 
-  /* line 291, sass/components/navigation/_menu-main.scss */
+  /* line 292, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent {
     width: 100%;
   }
-  /* line 295, sass/components/navigation/_menu-main.scss */
+  /* line 296, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     padding: 30px;
     padding: 3rem;
@@ -1947,31 +2001,31 @@ a:hover, a:active {
     right: 15px;
     right: 1.5rem;
   }
-  /* line 307, sass/components/navigation/_menu-main.scss */
+  /* line 308, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover, .toggle-sub__parent:first-child {
     background: transparent;
   }
-  /* line 309, sass/components/navigation/_menu-main.scss */
+  /* line 310, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover > a, .toggle-sub__parent:first-child > a {
     background: #ffffff;
     border-color: #d31145;
   }
-  /* line 313, sass/components/navigation/_menu-main.scss */
+  /* line 314, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover .tab-container, .toggle-sub__parent:first-child .tab-container {
     height: auto;
   }
-  /* line 316, sass/components/navigation/_menu-main.scss */
+  /* line 317, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover .tab-container > .item-description, .toggle-sub__parent:first-child .tab-container > .item-description {
     opacity: 1;
     pointer-events: all;
   }
-  /* line 320, sass/components/navigation/_menu-main.scss */
+  /* line 321, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover .tab-container > .sub-menu, .toggle-sub__parent:first-child .tab-container > .sub-menu {
     opacity: 1;
     pointer-events: all;
   }
 
-  /* line 327, sass/components/navigation/_menu-main.scss */
+  /* line 328, sass/components/navigation/_menu-main.scss */
   .tab-container {
     width: 75%;
     float: right;
@@ -1984,7 +2038,7 @@ a:hover, a:active {
     display: table;
     clear: both;
   }
-  /* line 334, sass/components/navigation/_menu-main.scss */
+  /* line 335, sass/components/navigation/_menu-main.scss */
   .tab-container > .item-description {
     display: block;
     padding: 30px;
@@ -1996,7 +2050,7 @@ a:hover, a:active {
     transition: all .2s;
     background: #ffffff;
   }
-  /* line 345, sass/components/navigation/_menu-main.scss */
+  /* line 346, sass/components/navigation/_menu-main.scss */
   .tab-container > .item-description a {
     padding: 5px 0px;
     padding: 0.5rem 0rem;
@@ -2014,20 +2068,20 @@ a:hover, a:active {
   .tab-container > .item-description a:hover, .tab-container > .item-description a:focus {
     border-color: #d31145;
   }
-  /* line 348, sass/components/navigation/_menu-main.scss */
+  /* line 349, sass/components/navigation/_menu-main.scss */
   .tab-container > .item-description h3 {
     font-size: 32px;
     font-size: 3.2rem;
     line-height: 32px;
     line-height: 3.2rem;
   }
-  /* line 352, sass/components/navigation/_menu-main.scss */
+  /* line 353, sass/components/navigation/_menu-main.scss */
   .tab-container > .item-description p {
     color: #3d3d3d;
     font-size: 20px;
     font-size: 2rem;
   }
-  /* line 357, sass/components/navigation/_menu-main.scss */
+  /* line 358, sass/components/navigation/_menu-main.scss */
   .tab-container > .sub-menu {
     padding: 30px;
     padding: 3rem;
@@ -2040,7 +2094,7 @@ a:hover, a:active {
     width: 70%;
     pointer-events: none;
   }
-  /* line 368, sass/components/navigation/_menu-main.scss */
+  /* line 369, sass/components/navigation/_menu-main.scss */
   .tab-container .right-container {
     position: absolute;
     right: 0;
@@ -2051,69 +2105,69 @@ a:hover, a:active {
     padding: 30px 10px;
     padding: 3rem 1rem;
   }
-  /* line 376, sass/components/navigation/_menu-main.scss */
+  /* line 377, sass/components/navigation/_menu-main.scss */
   .tab-container .right-container .right-side {
     display: block;
   }
 
-  /* line 384, sass/components/navigation/_menu-main.scss */
+  /* line 385, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu {
     display: table;
   }
-  /* line 386, sass/components/navigation/_menu-main.scss */
+  /* line 387, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu > li {
     display: table-cell;
     padding: 0px 10px;
     padding: 0rem 1rem;
   }
-  /* line 389, sass/components/navigation/_menu-main.scss */
+  /* line 390, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu > li > .sub-menu {
     display: block;
   }
 
-  /* line 398, sass/components/navigation/_menu-main.scss */
+  /* line 399, sass/components/navigation/_menu-main.scss */
   .personal-nav > .sub-menu {
     width: 70%;
     float: left;
   }
-  /* line 402, sass/components/navigation/_menu-main.scss */
+  /* line 403, sass/components/navigation/_menu-main.scss */
   .personal-nav .right-container {
     width: 30%;
     float: right;
   }
 }
 @media (min-width: 1200px) {
-  /* line 432, sass/components/navigation/_menu-main.scss */
+  /* line 433, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     margin-right: 30px;
     margin-right: 3rem;
   }
 
-  /* line 436, sass/components/navigation/_menu-main.scss */
+  /* line 437, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 15px 20px;
     padding: 1.5rem 1.5rem 2rem;
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 440, sass/components/navigation/_menu-main.scss */
+  /* line 441, sass/components/navigation/_menu-main.scss */
   .nav-menu li a {
     font-size: 18px;
     font-size: 1.8rem;
   }
 
-  /* line 445, sass/components/navigation/_menu-main.scss */
+  /* line 446, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     width: 30%;
   }
-  /* line 448, sass/components/navigation/_menu-main.scss */
+  /* line 449, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent .tab-container {
     width: 70%;
   }
 }
 /* line 1, sass/components/navigation/_utility-nav.scss */
 .utility-navigation {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 300;
@@ -2166,7 +2220,7 @@ a:hover, a:active {
 }
 /* line 4, sass/components/navigation/_sidebar-nav.scss */
 .sidebar-menu a {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -2244,6 +2298,10 @@ a:hover, a:active {
   font-weight: 700;
   text-transform: uppercase;
 }
+/* line 56, sass/components/navigation/_sidebar-nav.scss */
+.sidebar-menu .view-all a:hover {
+  text-decoration: none;
+}
 
 /* line 1, sass/components/navigation/_search-box.scss */
 .search-form {
@@ -2265,7 +2323,7 @@ a:hover, a:active {
 }
 /* line 12, sass/components/navigation/_search-box.scss */
 .search-form input[type="text"]:focus {
-  border-color: #ffffff;
+  border-color: #3d3d3d;
 }
 /* line 17, sass/components/navigation/_search-box.scss */
 .search-form input[type="submit"] {
@@ -2277,7 +2335,7 @@ a:hover, a:active {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   border-top-left-radius: 0;
@@ -2300,7 +2358,11 @@ a:hover, a:active {
 .search-form input[type="submit"]:hover, .search-form input[type="submit"]:visited, .search-form input[type="submit"]:focus {
   color: #ffffff;
 }
-/* line 32, sass/components/navigation/_search-box.scss */
+/* line 26, sass/components/navigation/_search-box.scss */
+.search-form input[type="submit"]:focus {
+  outline: 1px dotted #ffffff;
+}
+/* line 33, sass/components/navigation/_search-box.scss */
 .search-form:after {
   content: "";
   display: block;
@@ -2316,9 +2378,10 @@ a:hover, a:active {
   height: 26px;
   width: 26px;
   pointer-events: none;
+  z-index: 2;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 32, sass/components/navigation/_search-box.scss */
+  /* line 33, sass/components/navigation/_search-box.scss */
   .search-form:after {
     background-size: 215px 2258.5px;
     background-position: 0 -355.5px;
@@ -2474,18 +2537,22 @@ a:hover, a:active {
   max-width: 23.4rem;
 }
 /* line 30, sass/components/sections/_header.scss */
+.logo:focus {
+  outline-color: #ffffff;
+}
+/* line 33, sass/components/sections/_header.scss */
 .logo img {
   width: 200px;
   width: 20rem;
 }
 
-/* line 40, sass/components/sections/_header.scss */
+/* line 43, sass/components/sections/_header.scss */
 .menu-toggle {
   float: right;
   clear: right;
 }
 
-/* line 45, sass/components/sections/_header.scss */
+/* line 48, sass/components/sections/_header.scss */
 .search-form {
   clear: both;
   float: right;
@@ -2493,7 +2560,7 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 580px) and (max-width: 1023px) {
-  /* line 54, sass/components/sections/_header.scss */
+  /* line 57, sass/components/sections/_header.scss */
   .search-form {
     clear: none;
     margin-top: 60px;
@@ -2502,34 +2569,34 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1024px) {
-  /* line 63, sass/components/sections/_header.scss */
+  /* line 66, sass/components/sections/_header.scss */
   .site-branding {
     width: 20%;
   }
 
-  /* line 66, sass/components/sections/_header.scss */
+  /* line 69, sass/components/sections/_header.scss */
   .logo {
     padding: 10px 0px 0px 20px;
     padding: 1rem 0rem 0rem 2rem;
   }
 
-  /* line 69, sass/components/sections/_header.scss */
+  /* line 72, sass/components/sections/_header.scss */
   .logo img {
     width: 95%;
   }
 
-  /* line 73, sass/components/sections/_header.scss */
+  /* line 76, sass/components/sections/_header.scss */
   .utility-navigation {
     float: right;
   }
 
-  /* line 77, sass/components/sections/_header.scss */
+  /* line 80, sass/components/sections/_header.scss */
   .main-navigation {
     float: right;
     clear: none;
   }
 
-  /* line 82, sass/components/sections/_header.scss */
+  /* line 85, sass/components/sections/_header.scss */
   .search-form {
     clear: right;
     width: 230px;
@@ -2569,7 +2636,7 @@ a:hover, a:active {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;
@@ -2705,7 +2772,7 @@ a:hover, a:active {
   background-image: linear-gradient(to top right, #061d4b, #204285);
   padding: 30px 0px 250px;
   padding: 3rem 0rem 25rem;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #ffffff;
   font-size: 16px;
   font-size: 1.6rem;
@@ -2807,7 +2874,7 @@ input.newsletter-signup__submit {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   border: 1px solid #d31145;
@@ -3378,7 +3445,7 @@ footer .menu-item {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;
@@ -3557,7 +3624,7 @@ input.account-access__submit {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;
@@ -3938,7 +4005,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 9, sass/components/pages/home/_tools.scss */
 .tool__title {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -4049,7 +4116,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;
@@ -4292,7 +4359,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 11, sass/components/pages/landing/_solutions.scss */
 .solution__title {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -4365,15 +4432,19 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 .related-resource {
   text-align: center;
 }
+/* line 18, sass/components/pages/landing/_tools.scss */
+.related-resource:before {
+  content: none;
+}
 
-/* line 20, sass/components/pages/landing/_tools.scss */
+/* line 23, sass/components/pages/landing/_tools.scss */
 .related-resource__link {
   text-decoration: none;
 }
 
-/* line 24, sass/components/pages/landing/_tools.scss */
+/* line 27, sass/components/pages/landing/_tools.scss */
 .related-resource__title {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -4385,7 +4456,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 30, sass/components/pages/landing/_tools.scss */
+  /* line 33, sass/components/pages/landing/_tools.scss */
   .related-resource {
     width: 48.93617%;
     clear: right;
@@ -4393,7 +4464,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 32, sass/components/pages/landing/_tools.scss */
+  /* line 35, sass/components/pages/landing/_tools.scss */
   .related-resource:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -4402,7 +4473,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 @media (min-width: 1024px) {
-  /* line 39, sass/components/pages/landing/_tools.scss */
+  /* line 42, sass/components/pages/landing/_tools.scss */
   .related-resource {
     width: 23.40426%;
     clear: right;
@@ -4410,7 +4481,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 41, sass/components/pages/landing/_tools.scss */
+  /* line 44, sass/components/pages/landing/_tools.scss */
   .related-resource:nth-child(4n) {
     width: 23.40426%;
     clear: right;
@@ -4455,7 +4526,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   margin-bottom: 24px;
@@ -4464,8 +4535,9 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 /* line 6, sass/components/_breadcrumbs.scss */
 .breadcrumbs a {
   color: #15397f;
+  text-decoration: underline;
 }
-/* line 9, sass/components/_breadcrumbs.scss */
+/* line 10, sass/components/_breadcrumbs.scss */
 .breadcrumbs .trail-items li:after {
   content: "";
   background-image: url('images/sprite-images-s5908aa9ee5.png');
@@ -4480,7 +4552,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   margin: 0rem 0.8rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 9, sass/components/_breadcrumbs.scss */
+  /* line 10, sass/components/_breadcrumbs.scss */
   .breadcrumbs .trail-items li:after {
     background-size: 215px 2258.5px;
     background-position: 0 -96px;
@@ -4491,7 +4563,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 1, sass/components/_meta.scss */
 .news-meta {
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 14px;
@@ -4620,7 +4692,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
 }
@@ -4684,7 +4756,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "canada-type-gibson", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
 }
