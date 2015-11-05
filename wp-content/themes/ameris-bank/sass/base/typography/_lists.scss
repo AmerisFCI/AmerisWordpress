@@ -27,6 +27,9 @@ li {
 
 ol {
 	list-style: decimal;
+	 li:before {
+		 content: none;
+	 }
 }
 
 li > ul,
@@ -46,10 +49,12 @@ dd {
 @include breakpoint($wide) {
 	.entry-content li {
 		width: 43%;
-		display: block;
 		float: left;
 		position: relative;
 		margin-right: 7%;
+		&:nth-child(2n+1) {
+			clear: left;
+		}
 	}
 	.entry-content ul {
 		@include clearfix();

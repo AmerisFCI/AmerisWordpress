@@ -32,7 +32,7 @@
 		transition: background .5s, color .5s;
 	}
 
-	li li {
+	li li, .right-side {
 		a {
 			@include boldbluetext;
 			margin-bottom: 0;
@@ -44,6 +44,7 @@
 			a {
 				font-weight: 300;
 				text-transform: none;
+
 			}
 		}
 	}
@@ -158,7 +159,7 @@
 .nav-menu {
 
 	a {
-		@include rem-fallback(padding, 1.5, .7, 2);
+		@include rem-fallback(padding, 1.5, 1, 2);
 		@include rem-fallback(font-size, 1.6);
 		position: relative;
 		&:hover, &:focus {
@@ -172,12 +173,14 @@
 	}
 
 
-	li li {
+	li li , .right-side {
 		a {
+			@include rem-fallback(font-size, 1.2);
 			border: 0 solid $paleblue;
 			@include rem-fallback(border-bottom-width, .2);
 			color: $link-color;
-			@include rem-fallback(padding, 1);
+			@include rem-fallback(padding, 1, 0);
+			@include rem-fallback(margin-bottom, 1);
 			&:after {
 				content: "";
 				display: inline-block;
@@ -193,14 +196,18 @@
 				@include rem-fallback(left, .5);
 			}
 		}
-	}
-
-	li li li a {
-		border-bottom-width: 0;
-		&:after {
-			content: none;
+		li a {
+			line-height: 1;
+			@include rem-fallback(padding, .4, 0);
+			@include rem-fallback(font-size, 1.4);
+			border-bottom-width: 0;
+			margin-bottom: 0;
+			&:after {
+				content: none;
+			}
 		}
 	}
+
 
 	li.active > ul, li:hover > ul, li.focus > ul {
 		display: block;
@@ -337,7 +344,7 @@
 		@include rem-fallback(padding, 3);
 		float: left;
 		//clear: left;
-		width: 70%;
+		width: 76%;
 		//margin-left: 25%; //ADDED to account for the absolutely positioned parent
 		opacity: 0;
 		pointer-events: none;
@@ -363,7 +370,7 @@
 		transition: opacity .2s;
 		float: left;
 		clear: left;
-		width: 70%;
+		width: 76%;
 		pointer-events: none;
 	}
 	.right-container {
@@ -372,7 +379,7 @@
 		top: 0;
 		float: right;
 		clear: none;
-		width: 30%;
+		width: 24%;
 		@include rem-fallback(padding, 3, 1);
 		.right-side {
 			display: block;
@@ -388,7 +395,7 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 80%;
+		width: 76%;
 		height: 100%;
 		background: rgba(255, 255, 255, .8);
 	}
@@ -412,15 +419,17 @@
 	> .sub-menu {
 		@include clearfix();
 	}
+	> .sub-menu {
+		@include rem-fallback(padding, 2.4, 0, 3.6);
+	}
 	> .sub-menu > li {
 		display: block;
-		width: 20%;
+		width: 19%;
 		float: left;
-		@include rem-fallback(padding, 2.4);
-		background: rgba(255,255,255,.1);
+		@include rem-fallback(padding, 0, 2.4);
 	}
 	> .sub-menu .right-container {
-		background: transparent;
+		width: 24%;
 	}
 }
 
@@ -432,8 +441,32 @@
 
 //SBA Financing Sub Nav
 .sba-nav {
-
+	> .sub-menu {
+		@include rem-fallback(padding, 2.4, 0, 3.6);
+	}
+	> .sub-menu > li {
+		@include rem-fallback(padding, 0, 2.4);
+	}
+	.right-container, > .sub-menu > li {
+		width: 24%;
+		float: right;
+	}
+	> .sub-menu > li:first-child {
+		float: left;
+		width: 76%;
+	}
+	.button, .button:hover, .button:focus {
+		background: none transparent;
+		box-shadow: none;
+	}
+	.button:after {}
+	.button a {
+		@include red-button-cta;
+		border-bottom: none;
+		text-transform: none;
+	}
 }
+
 
 //Residential Financing Sub Nav
 .residential-nav {
@@ -457,7 +490,15 @@
 			@include rem-fallback(font-size, 1.8);
 		}
 		li a {
-			@include rem-fallback(font-size, 1.8);
+			@include rem-fallback(font-size, 1.6);
+		}
+		li li , .right-side {
+			a {
+				@include rem-fallback(font-size, 1.6);
+			}
+			li a {
+				@include rem-fallback(font-size, 1.6);
+			}
 		}
 	}
 	.toggle-sub__parent {

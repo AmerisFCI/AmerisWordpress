@@ -144,6 +144,9 @@
 		//float: left;
 		box-shadow: 0 0 120px #000;
 
+		&:before {
+			content: none;
+		}
 
 		button {
 			text-indent: -9999px;
