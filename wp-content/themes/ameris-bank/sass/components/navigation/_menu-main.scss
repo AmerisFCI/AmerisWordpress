@@ -158,7 +158,7 @@
 .nav-menu {
 
 	a {
-		@include rem-fallback(padding, 1.5, 1, 2);
+		@include rem-fallback(padding, 1.5, .7, 2);
 		@include rem-fallback(font-size, 1.6);
 		position: relative;
 		&:hover, &:focus {
@@ -381,14 +381,27 @@
 }
 
 //Open Sub Navs (any subs that have all the children exposed)
-.open-sub:hover {
-	> .sub-menu {
-		display: table;
-		> li {
-			display: table-cell;
-			@include rem-fallback(padding, 0, 1); //add space between menu lists
-			> .sub-menu {
-				display: block;
+.open-sub {
+
+	> .sub-menu:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 80%;
+		height: 100%;
+		background: rgba(255, 255, 255, .8);
+	}
+
+	&:hover {
+		> .sub-menu {
+			display: table;
+			> li {
+				//display: table-cell;
+				//@include rem-fallback(padding, 0, 1); //add space between menu lists
+				> .sub-menu {
+					display: block;
+				}
 			}
 		}
 	}
@@ -397,12 +410,17 @@
 //Personal Sub Nav
 .personal-nav {
 	> .sub-menu {
-		width: 70%;
-		float: left;
+		@include clearfix();
 	}
-	.right-container {
-		width: 30%;
-		float: right;
+	> .sub-menu > li {
+		display: block;
+		width: 20%;
+		float: left;
+		@include rem-fallback(padding, 2.4);
+		background: rgba(255,255,255,.1);
+	}
+	> .sub-menu .right-container {
+		background: transparent;
 	}
 }
 
@@ -449,6 +467,26 @@
 		.tab-container {
 			width: 70%;
 		}
+	}
+}
+
+
+// START  WIDE ONLY SIZES
+@include breakpoint($wide) {
+	.nav-menu {
+		a {
+			@include rem-fallback(padding, 1.5, 2, 2);
+			@include rem-fallback(font-size, 1.8);
+		}
+		li a {
+			@include rem-fallback(font-size, 1.8);
+		}
+		> li {
+			@include rem-fallback(margin-right, 1);
+		}
+	}
+	.main-navigation {
+		@include rem-fallback(margin-right, 1);
 	}
 }
 
