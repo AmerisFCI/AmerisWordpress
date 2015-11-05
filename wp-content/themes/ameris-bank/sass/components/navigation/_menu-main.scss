@@ -48,7 +48,7 @@
 		}
 	}
 
-	li.active > ul {
+	li.active > ul, li.active > .tab-container > ul {
 		display: block;
 	}
 

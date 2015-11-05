@@ -5,7 +5,7 @@
 
 // Use 3 grid columns for smaller screens.
 
-/*@include breakpoint($tablet-wide) {
+@include breakpoint($tablet-wide) {
 
 	.has-sidebar-right {
 		@include add-grid(12);
@@ -18,7 +18,7 @@
 	.sidebar-right {
 		@include grid-span(4, 9);
 	}
-}*/
+}
 
 // Use 5 grid columns for larger screens.
 
@@ -34,4 +34,24 @@
 	.sidebar-right {
 		@include grid-span(7, 14);
 	}
+}
+
+@include breakpoint($wide) {
+
+	.has-sidebar-right {
+		@include add-grid(18);
+		@include add-gutter(0);
+	}
+
+	.has-sidebar-right .site-main {
+		@include grid-span(13, 1);
+	}
+	.has-sidebar-right #main {
+		@include rem-fallback(padding-right, 4.8);
+	}
+	.sidebar-right {
+		@include grid-span(5, 14);
+		//@include rem-fallback(padding-left, 3.6);
+	}
+
 }
