@@ -3148,8 +3148,8 @@ a:hover, a:active {
   }
   /* line 57, sass/components/sections/_header.scss */
   .logo img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     margin-top: 20px;
     margin-top: 2rem;
   }
