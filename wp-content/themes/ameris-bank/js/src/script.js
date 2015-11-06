@@ -105,6 +105,7 @@
 		if ( containerHeight > overallHeight )
 			biggestHeight = containerHeight;
 
+		tabContainer.height( biggestHeight );
 		$( this ).closest( '.sub-menu' ).animate( { height: biggestHeight+'px' }, 600 );
 
 	} );
