@@ -2119,34 +2119,120 @@ a:hover, a:active {
   }
   /* line 319, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li a {
-    padding: 0;
     font-weight: 700;
     text-transform: uppercase;
   }
-  /* line 327, sass/components/navigation/_menu-main.scss */
+  /* line 326, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li li {
     padding: 0;
     display: block;
   }
-  /* line 331, sass/components/navigation/_menu-main.scss */
+  /* line 330, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li li a {
     margin-bottom: 0;
     font-weight: 500;
     text-transform: none;
   }
 
-  /* line 342, sass/components/navigation/_menu-main.scss */
+  /* line 343, sass/components/navigation/_menu-main.scss */
   .business-nav.toggle-sub .toggle-sub__parent > a {
     padding: 20px;
     padding: 2rem;
     margin-bottom: 0;
   }
 
-  /* line 348, sass/components/navigation/_menu-main.scss */
+  /* line 351, sass/components/navigation/_menu-main.scss */
+  .tab-container {
+    float: right;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  /* line 126, sass/base/_mixins.scss */
+  .tab-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 356, sass/components/navigation/_menu-main.scss */
+  .tab-container > .item-description {
+    position: static !important;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+    padding: 30px;
+    padding: 3rem;
+    float: left;
+    clear: left;
+    width: 76%;
+    background: #ffffff;
+  }
+  /* line 363, sass/components/navigation/_menu-main.scss */
+  .tab-container > .item-description a {
+    padding: 5px 0px;
+    padding: 0.5rem 0rem;
+    font-size: 12px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #d31145;
+    transition: all .2s;
+    display: inline-block;
+    clear: both;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+  }
+  /* line 277, sass/base/_mixins.scss */
+  .tab-container > .item-description a:hover, .tab-container > .item-description a:focus {
+    border-color: #d31145;
+  }
+  /* line 366, sass/components/navigation/_menu-main.scss */
+  .tab-container > .item-description h3 {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 32px;
+    line-height: 3.2rem;
+  }
+  /* line 370, sass/components/navigation/_menu-main.scss */
+  .tab-container > .item-description p {
+    color: #3d3d3d;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  /* line 375, sass/components/navigation/_menu-main.scss */
+  .tab-container > .sub-menu {
+    padding: 30px;
+    padding: 3rem;
+    background: #ffffff;
+    position: static;
+    transition: opacity .2s;
+    float: left;
+    clear: left;
+    width: 76%;
+  }
+  /* line 384, sass/components/navigation/_menu-main.scss */
+  .tab-container .right-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+    clear: none;
+    width: 24%;
+    padding: 30px 10px;
+    padding: 3rem 1rem;
+  }
+  /* line 392, sass/components/navigation/_menu-main.scss */
+  .tab-container .right-container .right-side {
+    display: block;
+  }
+
+  /* line 399, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent {
     width: 100%;
   }
-  /* line 352, sass/components/navigation/_menu-main.scss */
+  /* line 403, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     padding: 30px;
     padding: 3rem;
@@ -2161,6 +2247,7 @@ a:hover, a:active {
     border-bottom: 2px solid transparent;
     text-transform: none;
     transition: all .2s;
+    opacity: .7;
   }
   /* line 228, sass/base/_mixins.scss */
   .toggle-sub__parent > a:after {
@@ -2195,121 +2282,33 @@ a:hover, a:active {
     right: 15px;
     right: 1.5rem;
   }
-  /* line 364, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover, .toggle-sub__parent:first-child {
+  /* line 415, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent > a:hover {
+    background: #ffffff;
+  }
+  /* line 420, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover {
     background: transparent;
   }
-  /* line 366, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover > a, .toggle-sub__parent:first-child > a {
-    background: #ffffff;
+  /* line 423, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover > a {
     border-color: #d31145;
-  }
-  /* line 370, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover .tab-container, .toggle-sub__parent:first-child .tab-container {
-    height: auto;
-  }
-  /* line 373, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover .tab-container > .item-description, .toggle-sub__parent:first-child .tab-container > .item-description {
     opacity: 1;
-    pointer-events: all;
   }
-  /* line 377, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover .tab-container > .sub-menu, .toggle-sub__parent:first-child .tab-container > .sub-menu {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  /* line 384, sass/components/navigation/_menu-main.scss */
-  .tab-container {
-    width: 75%;
-    float: right;
-    position: relative;
-    height: 0;
-  }
-  /* line 126, sass/base/_mixins.scss */
-  .tab-container:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  /* line 391, sass/components/navigation/_menu-main.scss */
-  .tab-container > .item-description {
+  /* line 427, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover .tab-container {
     position: static !important;
     clip: auto;
     height: auto;
     width: auto;
     overflow: auto;
-    display: block;
-    padding: 30px;
-    padding: 3rem;
-    float: left;
-    width: 76%;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .2s;
-    background: #ffffff;
-  }
-  /* line 403, sass/components/navigation/_menu-main.scss */
-  .tab-container > .item-description a {
-    padding: 5px 0px;
-    padding: 0.5rem 0rem;
-    font-size: 12px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #d31145;
-    transition: all .2s;
-    display: inline-block;
-    clear: both;
-    font-weight: 700;
-    border-bottom: 1px solid transparent;
-  }
-  /* line 277, sass/base/_mixins.scss */
-  .tab-container > .item-description a:hover, .tab-container > .item-description a:focus {
-    border-color: #d31145;
-  }
-  /* line 406, sass/components/navigation/_menu-main.scss */
-  .tab-container > .item-description h3 {
-    font-size: 32px;
-    font-size: 3.2rem;
-    line-height: 32px;
-    line-height: 3.2rem;
-  }
-  /* line 410, sass/components/navigation/_menu-main.scss */
-  .tab-container > .item-description p {
-    color: #3d3d3d;
-    font-size: 20px;
-    font-size: 2rem;
-  }
-  /* line 415, sass/components/navigation/_menu-main.scss */
-  .tab-container > .sub-menu {
-    padding: 30px;
-    padding: 3rem;
-    background: #ffffff;
-    position: static;
-    opacity: 0;
-    transition: opacity .2s;
-    float: left;
-    clear: left;
-    width: 76%;
-    pointer-events: none;
-  }
-  /* line 426, sass/components/navigation/_menu-main.scss */
-  .tab-container .right-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    float: right;
-    clear: none;
-    width: 24%;
-    padding: 30px 10px;
-    padding: 3rem 1rem;
-  }
-  /* line 434, sass/components/navigation/_menu-main.scss */
-  .tab-container .right-container .right-side {
-    display: block;
+    width: 75% !important;
+    position: relative !important;
+    opacity: 1;
+    pointer-events: all;
   }
 
-  /* line 443, sass/components/navigation/_menu-main.scss */
+  /* line 440, sass/components/navigation/_menu-main.scss */
   .open-sub > .sub-menu {
     padding: 14px 0px 36px;
     padding: 1.4rem 0rem 3.6rem;
@@ -2320,17 +2319,17 @@ a:hover, a:active {
     display: table;
     clear: both;
   }
-  /* line 447, sass/components/navigation/_menu-main.scss */
+  /* line 444, sass/components/navigation/_menu-main.scss */
   .open-sub > .sub-menu > li {
     padding: 0px 24px;
     padding: 0rem 2.4rem;
   }
-  /* line 450, sass/components/navigation/_menu-main.scss */
+  /* line 447, sass/components/navigation/_menu-main.scss */
   .open-sub > .sub-menu .right-container {
     width: 24%;
     float: right;
   }
-  /* line 455, sass/components/navigation/_menu-main.scss */
+  /* line 452, sass/components/navigation/_menu-main.scss */
   .open-sub > .sub-menu:before {
     content: "";
     position: absolute;
@@ -2340,33 +2339,33 @@ a:hover, a:active {
     height: 100%;
     background: rgba(255, 255, 255, 0.8);
   }
-  /* line 466, sass/components/navigation/_menu-main.scss */
+  /* line 463, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu {
     display: table;
   }
-  /* line 472, sass/components/navigation/_menu-main.scss */
+  /* line 469, sass/components/navigation/_menu-main.scss */
   .open-sub:hover > .sub-menu > li > .sub-menu {
     display: block;
   }
 
-  /* line 483, sass/components/navigation/_menu-main.scss */
+  /* line 480, sass/components/navigation/_menu-main.scss */
   .personal-nav > .sub-menu > li {
     display: block;
     width: 19%;
     float: left;
   }
 
-  /* line 499, sass/components/navigation/_menu-main.scss */
+  /* line 496, sass/components/navigation/_menu-main.scss */
   .sba-nav > .sub-menu .stacked-container {
     width: 24%;
     float: left;
   }
-  /* line 503, sass/components/navigation/_menu-main.scss */
+  /* line 500, sass/components/navigation/_menu-main.scss */
   .sba-nav .left-52 {
     float: left;
     width: 52%;
   }
-  /* line 508, sass/components/navigation/_menu-main.scss */
+  /* line 505, sass/components/navigation/_menu-main.scss */
   .sba-nav .nav-cta a {
     background-color: #d31145;
     color: #ffffff;
@@ -2442,48 +2441,48 @@ a:hover, a:active {
     left: 1.9rem;
   }
 
-  /* line 522, sass/components/navigation/_menu-main.scss */
+  /* line 519, sass/components/navigation/_menu-main.scss */
   .residential-nav > .sub-menu > li {
     display: block;
     width: 38%;
     float: left;
   }
-  /* line 527, sass/components/navigation/_menu-main.scss */
+  /* line 524, sass/components/navigation/_menu-main.scss */
   .residential-nav > .sub-menu .stacked-container {
     width: 38%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 540, sass/components/navigation/_menu-main.scss */
+  /* line 537, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     margin-right: 30px;
     margin-right: 3rem;
   }
 
-  /* line 544, sass/components/navigation/_menu-main.scss */
+  /* line 541, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 15px 20px;
     padding: 1.5rem 1.5rem 2rem;
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 548, sass/components/navigation/_menu-main.scss */
+  /* line 545, sass/components/navigation/_menu-main.scss */
   .nav-menu li a {
     font-size: 16px;
     font-size: 1.6rem;
   }
-  /* line 552, sass/components/navigation/_menu-main.scss */
+  /* line 549, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a, .nav-menu .right-side a, .nav-menu .stacked-sub a {
     font-size: 16px;
     font-size: 1.6rem;
   }
-  /* line 555, sass/components/navigation/_menu-main.scss */
+  /* line 552, sass/components/navigation/_menu-main.scss */
   .nav-menu li li li a, .nav-menu .right-side li a, .nav-menu .stacked-sub li a {
     font-size: 16px;
     font-size: 1.6rem;
   }
 
-  /* line 560, sass/components/navigation/_menu-main.scss */
+  /* line 557, sass/components/navigation/_menu-main.scss */
   .sba-nav .nav-cta a {
     padding: 17px 30px 20px;
     padding: 1.7rem 3rem 2rem;
@@ -2491,41 +2490,41 @@ a:hover, a:active {
     font-size: 1.8rem;
   }
 
-  /* line 565, sass/components/navigation/_menu-main.scss */
+  /* line 562, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     width: 30%;
   }
-  /* line 568, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent .tab-container {
-    width: 70%;
+  /* line 565, sass/components/navigation/_menu-main.scss */
+  .toggle-sub__parent:hover .tab-container {
+    width: 70% !important;
   }
 
-  /* line 572, sass/components/navigation/_menu-main.scss */
+  /* line 569, sass/components/navigation/_menu-main.scss */
   .business-nav.toggle-sub .toggle-sub__parent > a {
     padding: 30px;
     padding: 3rem;
   }
 }
 @media (min-width: 1420px) {
-  /* line 581, sass/components/navigation/_menu-main.scss */
+  /* line 578, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 20px 20px;
     padding: 1.5rem 2rem 2rem;
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 585, sass/components/navigation/_menu-main.scss */
+  /* line 582, sass/components/navigation/_menu-main.scss */
   .nav-menu li a {
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 588, sass/components/navigation/_menu-main.scss */
+  /* line 585, sass/components/navigation/_menu-main.scss */
   .nav-menu > li {
     margin-right: 10px;
     margin-right: 1rem;
   }
 
-  /* line 592, sass/components/navigation/_menu-main.scss */
+  /* line 589, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     margin-right: 10px;
     margin-right: 1rem;

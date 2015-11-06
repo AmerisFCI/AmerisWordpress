@@ -318,7 +318,6 @@
 
 			a {
 				//@include rem-fallback(border-bottom-width, .2);
-				padding: 0;
 				font-weight: 700;
 				text-transform: uppercase;
 			}
@@ -339,66 +338,27 @@
 
 }
 
-	.business-nav.toggle-sub .toggle-sub__parent > a {
-		@include rem-fallback(padding, 2);
-		margin-bottom: 0;
-	}
-
-//Sub Menu with additional menu toggles (business subs)
-.toggle-sub__parent { // class placed inside of the dropdown
-
-	width: 100%;
-
-	> a {
-		@include rem-fallback(padding, 3);
-		@include red-arrow-right;
-		@include rem-fallback(line-height, 3.2);
-		float: left;
-		clear: left;
-		width: 25%;
-		border-bottom: 2px solid transparent;
-		text-transform: none;
-		transition: all .2s;
-	}
-
-	&:hover, &:first-child {
-		background: transparent;
+	.business-nav.toggle-sub .toggle-sub__parent {
+		//position: absolute;
 		> a {
-			background: $white;
-			border-color: $red;
-		}
-		.tab-container {
-			height: auto;
-		}
-		.tab-container > .item-description {
-			opacity: 1;
-			pointer-events: all;
-		}
-		.tab-container > .sub-menu {
-			opacity: 1;
-			pointer-events: all;
+			@include rem-fallback(padding, 2);
+			margin-bottom: 0;
 		}
 	}
-}
+
+
 
 .tab-container { //the right-hand side of the business navigation subnavs
-	width: 75%;
 	float: right;
-	position: relative;
-	height: 0;
+	@include element-invisible;
 	@include clearfix();
 
 	> .item-description {
 		@include element-invisible-off;
-		display: block;
 		@include rem-fallback(padding, 3);
 		float: left;
-		//clear: left;
+		clear: left;
 		width: 76%;
-		//margin-left: 25%; //ADDED to account for the absolutely positioned parent
-		opacity: 0;
-		pointer-events: none;
-		transition: all .2s;
 		background: $white;
 		a {
 			@include red-link();
@@ -416,12 +376,10 @@
 		@include rem-fallback(padding, 3);
 		background: $white;
 		position: static;
-		opacity: 0;
 		transition: opacity .2s;
 		float: left;
 		clear: left;
 		width: 76%;
-		pointer-events: none;
 	}
 	.right-container {
 		position: absolute;
@@ -436,6 +394,45 @@
 		}
 	}
 }
+	
+	//Sub Menu with additional menu toggles (business subs)
+	.toggle-sub__parent { // class placed inside of the dropdown
+		
+		width: 100%;
+		
+		> a {
+			@include rem-fallback(padding, 3);
+			@include red-arrow-right;
+			@include rem-fallback(line-height, 3.2);
+			float: left;
+			clear: left;
+			width: 25%;
+			border-bottom: 2px solid transparent;
+			text-transform: none;
+			transition: all .2s;
+			opacity: .7;
+			
+			&:hover {
+				background: $white;
+			}
+		}
+		
+		&:hover//, &:first-child
+		{
+			background: transparent;
+			> a {
+				border-color: $red;
+				opacity: 1;
+			}
+			.tab-container {
+				@include element-invisible-off;
+				width: 75% !important;
+				position: relative !important;
+				opacity: 1;
+				pointer-events: all;
+			}
+		}
+	}
 
 //Open Sub Navs (any subs that have all the children exposed)
 .open-sub {
@@ -565,8 +562,8 @@
 		> a {
 			width: 30%;
 		}
-		.tab-container {
-			width: 70%;
+		&:hover .tab-container {
+			width: 70% !important;
 		}
 	}
 	.business-nav.toggle-sub .toggle-sub__parent > a {
