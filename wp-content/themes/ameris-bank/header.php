@@ -23,7 +23,7 @@
 			custom: {
 				families: ['AvenirNextLTPro-Regular', 'AvenirNextLTPro-Bold'],
 				urls: ['<?php echo get_template_directory_uri(); ?>/fonts.css']
-			}
+			},
 			typekit: { id: 'bjg1fuq' }
 
 		};
