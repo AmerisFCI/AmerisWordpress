@@ -38,7 +38,7 @@
 	/**
 	 * Enable Columnizer for submenu layout.
 	 */
-	$('.left-52 .sub-menu').columnize( { columns: 3 } );
+	//$('.left-52 .sub-menu').columnize( { columns: 3 } );
 
 
 	/**
@@ -130,7 +130,7 @@
 	});
 
 	$(document).ready(function() {
-		
+
 	});
 
 

@@ -2426,7 +2426,13 @@ a:hover, a:active {
     float: left;
     width: 52%;
   }
-  /* line 536, sass/components/navigation/_menu-main.scss */
+  /* line 534, sass/components/navigation/_menu-main.scss */
+  .sba-nav .left-52 .sub-menu li {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+  /* line 541, sass/components/navigation/_menu-main.scss */
   .sba-nav .nav-cta a {
     background-color: #d31145;
     color: #ffffff;
@@ -2502,53 +2508,53 @@ a:hover, a:active {
     left: 1.9rem;
   }
 
-  /* line 550, sass/components/navigation/_menu-main.scss */
+  /* line 555, sass/components/navigation/_menu-main.scss */
   .residential-nav > .sub-menu > li {
     display: block;
     width: 38%;
     float: left;
   }
-  /* line 555, sass/components/navigation/_menu-main.scss */
+  /* line 560, sass/components/navigation/_menu-main.scss */
   .residential-nav > .sub-menu .stacked-container {
     width: 38%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 568, sass/components/navigation/_menu-main.scss */
+  /* line 573, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     margin-right: 30px;
     margin-right: 3rem;
   }
 
-  /* line 572, sass/components/navigation/_menu-main.scss */
+  /* line 577, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 15px 20px;
     padding: 1.5rem 1.5rem 2rem;
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 576, sass/components/navigation/_menu-main.scss */
+  /* line 581, sass/components/navigation/_menu-main.scss */
   .nav-menu li a {
     font-size: 16px;
     font-size: 1.6rem;
   }
-  /* line 580, sass/components/navigation/_menu-main.scss */
+  /* line 585, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a, .nav-menu .right-side a, .nav-menu .stacked-sub a {
     font-size: 14px;
     font-size: 1.4rem;
   }
-  /* line 583, sass/components/navigation/_menu-main.scss */
+  /* line 588, sass/components/navigation/_menu-main.scss */
   .nav-menu li li li a, .nav-menu .right-side li a, .nav-menu .stacked-sub li a {
     font-size: 14px;
     font-size: 1.4rem;
   }
-  /* line 587, sass/components/navigation/_menu-main.scss */
+  /* line 592, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub > .sub-menu:before {
     width: 53%;
     left: 30%;
   }
 
-  /* line 592, sass/components/navigation/_menu-main.scss */
+  /* line 597, sass/components/navigation/_menu-main.scss */
   .sba-nav .nav-cta a {
     padding: 17px 30px 20px;
     padding: 1.7rem 3rem 2rem;
@@ -2556,30 +2562,30 @@ a:hover, a:active {
     font-size: 1.8rem;
   }
 
-  /* line 597, sass/components/navigation/_menu-main.scss */
+  /* line 602, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a {
     width: 30%;
   }
-  /* line 600, sass/components/navigation/_menu-main.scss */
+  /* line 605, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent:hover .tab-container, .toggle-sub__parent.visible-tab .tab-container, .toggle-sub__parent.focus .tab-container {
     width: 70% !important;
   }
 
-  /* line 609, sass/components/navigation/_menu-main.scss */
+  /* line 614, sass/components/navigation/_menu-main.scss */
   .tab-container > .item-description h3 {
     font-size: 32px;
     font-size: 3.2rem;
     line-height: 32px;
     line-height: 3.2rem;
   }
-  /* line 613, sass/components/navigation/_menu-main.scss */
+  /* line 618, sass/components/navigation/_menu-main.scss */
   .tab-container > .item-description p {
     color: #3d3d3d;
     font-size: 20px;
     font-size: 2rem;
   }
 
-  /* line 620, sass/components/navigation/_menu-main.scss */
+  /* line 625, sass/components/navigation/_menu-main.scss */
   .toggle-sub__parent > a:before {
     content: "";
     display: inline-block;
@@ -2591,7 +2597,7 @@ a:hover, a:active {
     left: -0.5rem;
   }
 
-  /* line 628, sass/components/navigation/_menu-main.scss */
+  /* line 633, sass/components/navigation/_menu-main.scss */
   .business-nav__small-business > a:before {
     background-image: url('images/sprite-images-s5908aa9ee5.png');
     background-position: 0 -4217px;
@@ -2602,7 +2608,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
-  /* line 628, sass/components/navigation/_menu-main.scss */
+  /* line 633, sass/components/navigation/_menu-main.scss */
   .business-nav__small-business > a:before {
     background-size: 215px 2258.5px;
     background-position: 0 -2050.5px;
@@ -2612,7 +2618,7 @@ a:hover, a:active {
 }
 
 @media (min-width: 1200px) {
-  /* line 631, sass/components/navigation/_menu-main.scss */
+  /* line 636, sass/components/navigation/_menu-main.scss */
   .business-nav__corporate > a:before {
     background-image: url('images/sprite-images-s5908aa9ee5.png');
     background-position: 0 -3859px;
@@ -2623,7 +2629,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
-  /* line 631, sass/components/navigation/_menu-main.scss */
+  /* line 636, sass/components/navigation/_menu-main.scss */
   .business-nav__corporate > a:before {
     background-size: 215px 2258.5px;
     background-position: 0 -1871.5px;
@@ -2633,7 +2639,7 @@ a:hover, a:active {
 }
 
 @media (min-width: 1200px) {
-  /* line 634, sass/components/navigation/_menu-main.scss */
+  /* line 639, sass/components/navigation/_menu-main.scss */
   .business-nav__municipalities > a:before {
     background-image: url('images/sprite-images-s5908aa9ee5.png');
     background-position: 0 -3680px;
@@ -2644,7 +2650,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
-  /* line 634, sass/components/navigation/_menu-main.scss */
+  /* line 639, sass/components/navigation/_menu-main.scss */
   .business-nav__municipalities > a:before {
     background-size: 215px 2258.5px;
     background-position: 0 -1782px;
@@ -2654,7 +2660,7 @@ a:hover, a:active {
 }
 
 @media (min-width: 1200px) {
-  /* line 637, sass/components/navigation/_menu-main.scss */
+  /* line 642, sass/components/navigation/_menu-main.scss */
   .business-nav__associations > a:before {
     background-image: url('images/sprite-images-s5908aa9ee5.png');
     background-position: 0 -4396px;
@@ -2665,7 +2671,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
-  /* line 637, sass/components/navigation/_menu-main.scss */
+  /* line 642, sass/components/navigation/_menu-main.scss */
   .business-nav__associations > a:before {
     background-size: 215px 2258.5px;
     background-position: 0 -2140px;
@@ -2675,7 +2681,7 @@ a:hover, a:active {
 }
 
 @media (min-width: 1200px) {
-  /* line 640, sass/components/navigation/_menu-main.scss */
+  /* line 645, sass/components/navigation/_menu-main.scss */
   .business-nav__agricultural > a:before {
     background-image: url('images/sprite-images-s5908aa9ee5.png');
     background-position: 0 -4038px;
@@ -2686,7 +2692,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
-  /* line 640, sass/components/navigation/_menu-main.scss */
+  /* line 645, sass/components/navigation/_menu-main.scss */
   .business-nav__agricultural > a:before {
     background-size: 215px 2258.5px;
     background-position: 0 -1961px;
@@ -2696,41 +2702,41 @@ a:hover, a:active {
 }
 
 @media (min-width: 1420px) {
-  /* line 651, sass/components/navigation/_menu-main.scss */
+  /* line 656, sass/components/navigation/_menu-main.scss */
   .nav-menu a {
     padding: 15px 20px 20px;
     padding: 1.5rem 2rem 2rem;
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 655, sass/components/navigation/_menu-main.scss */
+  /* line 660, sass/components/navigation/_menu-main.scss */
   .nav-menu li a {
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 658, sass/components/navigation/_menu-main.scss */
+  /* line 663, sass/components/navigation/_menu-main.scss */
   .nav-menu > li {
     margin-right: 10px;
     margin-right: 1rem;
   }
-  /* line 662, sass/components/navigation/_menu-main.scss */
+  /* line 667, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a, .nav-menu .right-side a, .nav-menu .stacked-sub a {
     font-size: 16px;
     font-size: 1.6rem;
   }
-  /* line 665, sass/components/navigation/_menu-main.scss */
+  /* line 670, sass/components/navigation/_menu-main.scss */
   .nav-menu li li li a, .nav-menu .right-side li a, .nav-menu .stacked-sub li a {
     font-size: 16px;
     font-size: 1.6rem;
   }
 
-  /* line 670, sass/components/navigation/_menu-main.scss */
+  /* line 675, sass/components/navigation/_menu-main.scss */
   .business-nav.toggle-sub .toggle-sub__parent > a {
     font-size: 18px;
     font-size: 1.8rem;
   }
 
-  /* line 673, sass/components/navigation/_menu-main.scss */
+  /* line 678, sass/components/navigation/_menu-main.scss */
   .main-navigation {
     margin-right: 10px;
     margin-right: 1rem;
@@ -3128,8 +3134,21 @@ a:hover, a:active {
   width: 100%;
 }
 
-@media screen and (min-width: 580px) and (max-width: 1023px) {
+@media (max-width: 529px) {
+  /* line 55, sass/components/sections/_header.scss */
+  .logo {
+    max-width: 50%;
+  }
   /* line 57, sass/components/sections/_header.scss */
+  .logo img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 580px) and (max-width: 1023px) {
+  /* line 67, sass/components/sections/_header.scss */
   .search-form {
     max-width: 500px;
     max-width: 50rem;
@@ -3141,7 +3160,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1024px) {
-  /* line 68, sass/components/sections/_header.scss */
+  /* line 78, sass/components/sections/_header.scss */
   .site-branding {
     width: 17%;
     position: relative;
@@ -3149,7 +3168,7 @@ a:hover, a:active {
     height: 9.3rem;
   }
 
-  /* line 73, sass/components/sections/_header.scss */
+  /* line 83, sass/components/sections/_header.scss */
   .logo {
     padding: 10px 0px 0px 20px;
     padding: 1rem 0rem 0rem 2rem;
@@ -3158,7 +3177,7 @@ a:hover, a:active {
     width: 100%;
   }
 
-  /* line 79, sass/components/sections/_header.scss */
+  /* line 89, sass/components/sections/_header.scss */
   .logo img {
     width: 95%;
     position: absolute;
@@ -3169,18 +3188,18 @@ a:hover, a:active {
     max-width: 22rem;
   }
 
-  /* line 87, sass/components/sections/_header.scss */
+  /* line 97, sass/components/sections/_header.scss */
   .utility-navigation {
     float: right;
   }
 
-  /* line 91, sass/components/sections/_header.scss */
+  /* line 101, sass/components/sections/_header.scss */
   .main-navigation {
     float: right;
     clear: none;
   }
 
-  /* line 96, sass/components/sections/_header.scss */
+  /* line 106, sass/components/sections/_header.scss */
   .search-form {
     clear: right;
     width: 230px;
@@ -3190,9 +3209,10 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1200px) {
-  /* line 105, sass/components/sections/_header.scss */
+  /* line 115, sass/components/sections/_header.scss */
   .site-branding {
-    width: 20%;
+    width: 200px;
+    width: 20rem;
   }
 }
 /* line 1, sass/components/sections/sidebar/_callout-box.scss */

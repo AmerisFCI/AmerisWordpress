@@ -531,6 +531,11 @@
 	.left-52 {
 		float: left;
 		width: 52%;
+		.sub-menu li {
+			float: left;
+			width: 45%;
+			margin-right: 5%;
+		}
 	}
 
 	.nav-cta a {

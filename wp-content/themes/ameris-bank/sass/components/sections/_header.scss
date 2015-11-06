@@ -51,6 +51,16 @@
 	width: 100%;
 }
 
+@include breakpoint($mobile) {
+	.logo {
+		max-width: 50%;
+		img {
+			width: 100%;
+			height: auto;
+			@include rem-fallback(margin-top, 2);
+		}
+	}
+}
 
 
 @media screen and (min-width: 580px) and (max-width: 1023px) {
@@ -103,6 +113,6 @@
 
 @include breakpoint($desktop) {
 	.site-branding {
-		width: 20%;
+		@include rem-fallback(width, 20);
 	}
 }
