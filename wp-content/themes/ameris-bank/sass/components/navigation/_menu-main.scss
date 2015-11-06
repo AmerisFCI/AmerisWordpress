@@ -182,7 +182,7 @@
 
 	a {
 		@include rem-fallback(padding, 1.5, 1, 2);
-		@include rem-fallback(font-size, 1.6);
+		@include rem-fallback(font-size, 1.4);
 		position: relative;
 		&:hover, &:focus {
 			background-color: $white;
@@ -313,6 +313,17 @@
 
 	.toggle-sub {
 
+		> .sub-menu:before {
+			content: "";
+			display: block;
+			width: 56%;
+			height: 100%;
+			position: absolute;
+			left: 25%;
+			top: 0;
+			background: white;
+		}
+
 		li li {
 			display: table-cell;
 			@include rem-fallback(padding, 0, 1);
@@ -335,6 +346,10 @@
 				text-transform: none;
 			}
 		}
+		
+		.view-all a {
+			@include red-link;
+		}
 	}
 
 }
@@ -344,6 +359,13 @@
 		> a {
 			@include rem-fallback(padding, 2);
 			margin-bottom: 0;
+			text-transform: none;
+			font-family: $font-heading;
+			@include rem-fallback(font-size, 1.6);
+			font-weight: bold;
+			&:hover {
+				background: $white;
+			}
 		}
 	}
 
@@ -360,7 +382,6 @@
 		float: left;
 		clear: left;
 		width: 76%;
-		background: $white;
 		a {
 			@include red-link();
 		}
@@ -376,7 +397,7 @@
 	}
 	> .sub-menu {
 		@include rem-fallback(padding, 0, 2, 3); //sides equal 3 to match the item description once the li padding is added in
-		background: $white;
+		//background: $white;
 		position: static;
 		transition: opacity .2s;
 		float: left;
@@ -396,6 +417,7 @@
 		}
 	}
 }
+
 	
 	//Sub Menu with additional menu toggles (business subs)
 	.toggle-sub__parent { // class placed inside of the dropdown
@@ -419,8 +441,7 @@
 			}
 		}
 		
-		&:hover//, &:first-child
-		{
+		&:hover, &:first-child {
 			background: transparent;
 			> a {
 				border-color: $red;
@@ -436,7 +457,14 @@
 				pointer-events: all;
 			}
 		}
+		&.hide-tab-container {
+			.tab-container {
+				@include element-invisible;
+			}
+		}
+
 	}
+
 
 //Open Sub Navs (any subs that have all the children exposed)
 .open-sub {
@@ -486,11 +514,6 @@
 		width: 19%;
 		float: left;
 	}
-
-}
-
-//Business Sub Nav
-.business-nav {
 
 }
 
@@ -551,11 +574,15 @@
 		}
 		li li , .right-side, .stacked-sub {
 			a {
-				@include rem-fallback(font-size, 1.6);
+				@include rem-fallback(font-size, 1.4);
 			}
 			li a {
-				@include rem-fallback(font-size, 1.6);
+				@include rem-fallback(font-size, 1.4);
 			}
+		}
+		.toggle-sub > .sub-menu:before {
+			width: 53%;
+			left: 30%;
 		}
 	}
 	.sba-nav .nav-cta a {
@@ -566,13 +593,14 @@
 		> a {
 			width: 30%;
 		}
-		&:hover .tab-container {
+		&:hover .tab-container, &:first-child .tab-container {
 			width: 70% !important;
 		}
 	}
-	.business-nav.toggle-sub .toggle-sub__parent > a {
-		@include rem-fallback(padding, 3);
-	}
+
+	//.business-nav.toggle-sub .toggle-sub__parent > a {
+		//@include rem-fallback(padding, 2, 3);
+	//}
 	.tab-container > .item-description {
 		h3 {
 			@include rem-fallback(font-size, 3.2);
@@ -583,6 +611,33 @@
 			@include rem-fallback(font-size, 2);
 		}
 	}
+
+	//Business Sub Nav Icons
+	.toggle-sub__parent > a:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		@include rem-fallback(margin-right, 1);
+		position: relative;
+		@include rem-fallback(left, -.5);
+	}
+	.business-nav__small-business > a:before {
+		@include use-sprite(nav-opensign);
+	}
+	.business-nav__corporate > a:before {
+		@include use-sprite(nav-highrise);
+	}
+	.business-nav__municipalities > a:before {
+		@include use-sprite(nav-gov);
+	}
+	.business-nav__associations > a:before {
+		@include use-sprite(nav-people);
+	}
+	.business-nav__agricultural > a:before {
+		@include use-sprite(nav-leaf);
+	}
+
+
 }
 
 
@@ -599,6 +654,17 @@
 		> li {
 			@include rem-fallback(margin-right, 1);
 		}
+		li li , .right-side, .stacked-sub {
+			a {
+				@include rem-fallback(font-size, 1.6);
+			}
+			li a {
+				@include rem-fallback(font-size, 1.6);
+			}
+		}
+	}
+	.business-nav.toggle-sub .toggle-sub__parent > a {
+		@include rem-fallback(font-size, 1.8);
 	}
 	.main-navigation {
 		@include rem-fallback(margin-right, 1);

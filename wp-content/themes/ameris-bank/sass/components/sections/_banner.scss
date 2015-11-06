@@ -77,8 +77,8 @@
 	text-shadow: 0 0 40px rgba(0,0,0,.8);
 	h1 {
 		color: $white;
-		font-family: "blenny";
 	}
+
 }
 
 @include breakpoint($narrow-to-desktop) {
