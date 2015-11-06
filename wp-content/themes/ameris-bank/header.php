@@ -23,7 +23,7 @@
 			custom: {
 				families: ['AvenirNextLTPro-Regular', 'AvenirNextLTPro-Bold']
 			},
-			typekit: { id: 'bjg1fuq' }
+			typekit: { id: 'woc7stt' }
 
 		};
 	</script>
