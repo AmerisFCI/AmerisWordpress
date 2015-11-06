@@ -355,7 +355,7 @@
 
 	> .item-description {
 		@include element-invisible-off;
-		@include rem-fallback(padding, 3);
+		@include rem-fallback(padding, 3, 3, 0);
 		float: left;
 		clear: left;
 		width: 76%;
@@ -364,16 +364,17 @@
 			@include red-link();
 		}
 		h3 {
-			@include rem-fallback(font-size, 3.2);
-			@include rem-fallback(line-height, 3.2);
+			@include rem-fallback(font-size, 2.2);
+			@include rem-fallback(line-height, 2.2);
+			@include rem-fallback(margin-bottom, 1);
 		}
 		p {
 			color: $text-color;
-			@include rem-fallback(font-size, 2);
+			@include rem-fallback(font-size, 1.6);
 		}
 	}
 	> .sub-menu {
-		@include rem-fallback(padding, 3);
+		@include rem-fallback(padding, 0, 2, 3); //sides equal 3 to match the item description once the li padding is added in
 		background: $white;
 		position: static;
 		transition: opacity .2s;
@@ -427,7 +428,9 @@
 			.tab-container {
 				@include element-invisible-off;
 				width: 75% !important;
-				position: relative !important;
+				position: absolute !important;
+				top: 0;
+				right: 0;
 				opacity: 1;
 				pointer-events: all;
 			}
@@ -568,6 +571,16 @@
 	}
 	.business-nav.toggle-sub .toggle-sub__parent > a {
 		@include rem-fallback(padding, 3);
+	}
+	.tab-container > .item-description {
+		h3 {
+			@include rem-fallback(font-size, 3.2);
+			@include rem-fallback(line-height, 3.2);
+		}
+		p {
+			color: $text-color;
+			@include rem-fallback(font-size, 2);
+		}
 	}
 }
 
