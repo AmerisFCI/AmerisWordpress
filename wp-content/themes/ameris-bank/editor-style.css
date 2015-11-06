@@ -1,0 +1,31 @@
+/**
+ * Styles that will appear in the tinymce wysiwyg editor in the admin.
+ *
+ * You can add light styling for custom formats added to the tinymce here - this way
+ * when a user selects one of those formats, it looks like something happens.
+ */
+
+.intro {
+	font-weight:300;
+	font-size:24px;
+}
+
+.view-all {
+	color:#d31145;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.button,
+.button-cta {
+	color:#fff;
+	border-radius:5px;
+}
+
+.button {
+	background-color:#092764;
+}
+
+.button-cta {
+	background-color:#d31145;
+}
