@@ -440,8 +440,17 @@
 				background: $white;
 			}
 		}
+		> a:focus ~ .tab-container {
+			@include element-invisible-off;
+			width: 75% !important;
+			position: absolute !important;
+			top: 0;
+			right: 0;
+			opacity: 1;
+			pointer-events: all;
+		}
 		
-		&:hover, &:first-child {
+		&:hover, &.visible-tab {
 			background: transparent;
 			> a {
 				border-color: $red;
@@ -455,11 +464,6 @@
 				right: 0;
 				opacity: 1;
 				pointer-events: all;
-			}
-		}
-		&.hide-tab-container {
-			.tab-container {
-				@include element-invisible;
 			}
 		}
 
@@ -593,7 +597,7 @@
 		> a {
 			width: 30%;
 		}
-		&:hover .tab-container, &:first-child .tab-container {
+		&:hover .tab-container, &.visible-tab .tab-container, > a:focus ~ .tab-container {
 			width: 70% !important;
 		}
 	}

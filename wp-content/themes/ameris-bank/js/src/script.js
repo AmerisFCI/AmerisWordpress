@@ -107,6 +107,31 @@
 		}
 
 	} );
+
+	//visible tab class by default to the first child of the business nav list
+	$('.toggle-sub__parent:first-child').addClass('visible-tab');
+
+	//Add a class to the first-child of business when a sibling is hovered
+	$('.toggle-sub__parent').on('hover', function(){
+		if( $('.toggle-sub__parent:first-child').hasClass('visible-tab') ) {
+			$('.toggle-sub__parent:first-child').removeClass('visible-tab');
+		}
+		else {
+			$('.toggle-sub__parent:first-child').addClass('visible-tab');
+		}
+
+	});
+
+	//accessible part so that if you tab to the link it does the same thing
+	$('.toggle-sub__parent:not(:first-child) > a').on('focus', function(){
+		if( $('.toggle-sub__parent:first-child').hasClass('visible-tab') ) {
+			$('.toggle-sub__parent:first-child').removeClass('visible-tab');
+		}
+		else {
+			$('.toggle-sub__parent:first-child').addClass('visible-tab');
+		}
+
+	});
 		
 
 
