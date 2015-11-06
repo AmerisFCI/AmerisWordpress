@@ -128,7 +128,10 @@
 	$('.toggle-sub__parent > a').on('focus', function(){
 			$('.toggle-sub__parent:first-child').removeClass('visible-tab');
 	});
+
+	$(document).ready(function() {
 		
+	});
 
 
 	// Enable the "looking for something else?" dropdowns on landing pages

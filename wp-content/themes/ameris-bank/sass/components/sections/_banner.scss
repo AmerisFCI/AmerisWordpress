@@ -77,21 +77,48 @@
 	text-shadow: 0 0 40px rgba(0,0,0,.8);
 	h1 {
 		color: $white;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: 50%;
+			@include rem-fallback(margin-left, -6);
+			border: solid transparent;
+			@include rem-fallback(border-width, 6);
+			border-bottom-color: $white;
+			@include rem-fallback(margin-top, -5);
+		}
 	}
 
+
 }
+
 
 @include breakpoint($narrow-to-desktop) {
 	.banner-blurb__wrap {
 		display: block; //show the blurb when the title moves to the left
 	}
 	.has-banner-image .page-title {
-		position: static;
+		position: relative;
 		text-shadow: none;
 		h1 {
 			color: $heading-color;
+			position: relative;
+			&:after {
+				border-bottom-color: transparent;
+				border-left-color: $white;
+				top: 0;
+				@include rem-fallback(right, -16);
+				@include rem-fallback(margin-top, -3);
+				left: inherit;
+				@include rem-fallback(margin-left, 0);
+			}
 		}
+
 	}
+
 }
 
 
@@ -121,6 +148,8 @@
 		.page-title {
 			@include rem-fallback(padding-left, 5);
 			@include rem-fallback(padding-right, 5);
+			h1 {
+			}
 		}
 	}
 }
@@ -130,6 +159,23 @@
 		width: 100% !important;
 		@include rem-fallback(min-height, 56);
 
+	}
+}
+
+@include breakpoint($tablet-wide) {
+
+	.has-banner-image .page-title h1:after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 0;
+				height: 0;
+				left: inherit;
+				@include rem-fallback(margin-left, 0);
+				border: solid transparent;
+				@include rem-fallback(border-width, 6);
+				border-bottom-color: $white;
+				@include rem-fallback(margin-top, -5);
 	}
 }
 
@@ -164,6 +210,7 @@
 	.has-banner-image {
 		.page-title {
 			@include rem-fallback(padding-bottom, 15);
+
 		}
 		~ .inner-wrap .sidebar-left {
 			@include rem-fallback(margin-top, -10);
@@ -194,6 +241,9 @@
 	.has-banner-image {
 		.page-title {
 			@include rem-fallback(padding-bottom, 25);
+			h1:after {
+				@include rem-fallback(right, -14);
+			}
 		}
 		~ .inner-wrap .sidebar-left {
 			@include rem-fallback(margin-top, -20);

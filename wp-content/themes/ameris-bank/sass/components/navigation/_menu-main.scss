@@ -106,7 +106,7 @@
 	padding: 0;
 	display: block;
 	position: absolute;
-	@include rem-fallback(top, 2);
+	@include rem-fallback(top, 3.6);
 	@include rem-fallback(right, 5);
 	background: transparent;
 	&:hover, &:active {

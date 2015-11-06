@@ -1848,8 +1848,8 @@ a:hover, a:active {
   padding: 0;
   display: block;
   position: absolute;
-  top: 20px;
-  top: 2rem;
+  top: 36px;
+  top: 3.6rem;
   right: 50px;
   right: 5rem;
   background: transparent;
@@ -3131,14 +3131,17 @@ a:hover, a:active {
 @media screen and (min-width: 580px) and (max-width: 1023px) {
   /* line 57, sass/components/sections/_header.scss */
   .search-form {
-    clear: none;
-    margin-top: 60px;
-    margin-top: 6rem;
-    width: auto;
+    max-width: 500px;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-top: 30px;
+    margin-top: 3rem;
   }
 }
 @media (min-width: 1024px) {
-  /* line 66, sass/components/sections/_header.scss */
+  /* line 68, sass/components/sections/_header.scss */
   .site-branding {
     width: 17%;
     position: relative;
@@ -3146,7 +3149,7 @@ a:hover, a:active {
     height: 9.3rem;
   }
 
-  /* line 71, sass/components/sections/_header.scss */
+  /* line 73, sass/components/sections/_header.scss */
   .logo {
     padding: 10px 0px 0px 20px;
     padding: 1rem 0rem 0rem 2rem;
@@ -3155,7 +3158,7 @@ a:hover, a:active {
     width: 100%;
   }
 
-  /* line 77, sass/components/sections/_header.scss */
+  /* line 79, sass/components/sections/_header.scss */
   .logo img {
     width: 95%;
     position: absolute;
@@ -3166,18 +3169,18 @@ a:hover, a:active {
     max-width: 22rem;
   }
 
-  /* line 85, sass/components/sections/_header.scss */
+  /* line 87, sass/components/sections/_header.scss */
   .utility-navigation {
     float: right;
   }
 
-  /* line 89, sass/components/sections/_header.scss */
+  /* line 91, sass/components/sections/_header.scss */
   .main-navigation {
     float: right;
     clear: none;
   }
 
-  /* line 94, sass/components/sections/_header.scss */
+  /* line 96, sass/components/sections/_header.scss */
   .search-form {
     clear: right;
     width: 230px;
@@ -3187,7 +3190,7 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1200px) {
-  /* line 103, sass/components/sections/_header.scss */
+  /* line 105, sass/components/sections/_header.scss */
   .site-branding {
     width: 20%;
   }
@@ -3757,50 +3760,81 @@ footer .menu-item {
 .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
   color: #ffffff;
 }
+/* line 80, sass/components/sections/_banner.scss */
+.has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  margin-left: -60px;
+  margin-left: -6rem;
+  border: solid transparent;
+  border-width: 60px;
+  border-width: 6rem;
+  border-bottom-color: #ffffff;
+  margin-top: -50px;
+  margin-top: -5rem;
+}
 
 @media (min-width: 1024px) {
-  /* line 85, sass/components/sections/_banner.scss */
+  /* line 100, sass/components/sections/_banner.scss */
   .banner-blurb__wrap {
     display: block;
   }
 
-  /* line 88, sass/components/sections/_banner.scss */
+  /* line 103, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
-    position: static;
+    position: relative;
     text-shadow: none;
   }
-  /* line 91, sass/components/sections/_banner.scss */
+  /* line 106, sass/components/sections/_banner.scss */
   .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
     color: #092764;
+    position: relative;
+  }
+  /* line 109, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
+    border-bottom-color: transparent;
+    border-left-color: #ffffff;
+    top: 0;
+    right: -160px;
+    right: -16rem;
+    margin-top: -30px;
+    margin-top: -3rem;
+    left: inherit;
+    margin-left: 0px;
+    margin-left: 0rem;
   }
 }
-/* line 99, sass/components/sections/_banner.scss */
+/* line 126, sass/components/sections/_banner.scss */
 .has-banner-image .page-title {
   padding: 40px 50px 30px;
   padding: 4rem 5rem 3rem;
 }
 
 @media (max-width: 529px) {
-  /* line 106, sass/components/sections/_banner.scss */
+  /* line 133, sass/components/sections/_banner.scss */
   .banner-image {
     min-height: 560px;
     min-height: 56rem;
     width: 100% !important;
   }
-  /* line 109, sass/components/sections/_banner.scss */
+  /* line 136, sass/components/sections/_banner.scss */
   .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 }
 @media screen and (min-width: 580px) {
-  /* line 117, sass/components/sections/_banner.scss */
+  /* line 144, sass/components/sections/_banner.scss */
   .page-title {
     padding: 150px 24px 30px;
     padding: 15rem 2.4rem 3rem;
   }
 
-  /* line 121, sass/components/sections/_banner.scss */
+  /* line 148, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-left: 50px;
     padding-left: 5rem;
@@ -3809,28 +3843,47 @@ footer .menu-item {
   }
 }
 @media (min-width: 530px) and (max-width: 1023px) {
-  /* line 129, sass/components/sections/_banner.scss */
+  /* line 158, sass/components/sections/_banner.scss */
   .banner-image {
     width: 100% !important;
     min-height: 560px;
     min-height: 56rem;
   }
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* line 167, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: inherit;
+    margin-left: 0px;
+    margin-left: 0rem;
+    border: solid transparent;
+    border-width: 60px;
+    border-width: 6rem;
+    border-bottom-color: #ffffff;
+    margin-top: -50px;
+    margin-top: -5rem;
+  }
+}
 @media (min-width: 1024px) {
-  /* line 137, sass/components/sections/_banner.scss */
+  /* line 183, sass/components/sections/_banner.scss */
   .page-title {
     padding: 200px 24px 20px;
     padding: 20rem 2.4rem 2rem;
     clear: none;
   }
 
-  /* line 148, sass/components/sections/_banner.scss */
+  /* line 194, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding: 200px 24px 80px;
     padding: 20rem 2.4rem 8rem;
     clear: none;
   }
-  /* line 152, sass/components/sections/_banner.scss */
+  /* line 198, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -50px;
     margin-top: -5rem;
@@ -3838,53 +3891,58 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 161, sass/components/sections/_banner.scss */
+  /* line 207, sass/components/sections/_banner.scss */
   .banner-blurb {
     font-size: 86px;
     font-size: 8.6rem;
   }
 
-  /* line 165, sass/components/sections/_banner.scss */
+  /* line 211, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 150px;
     padding-bottom: 15rem;
   }
-  /* line 168, sass/components/sections/_banner.scss */
+  /* line 215, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -100px;
     margin-top: -10rem;
   }
 }
 @media (min-width: 1420px) {
-  /* line 175, sass/components/sections/_banner.scss */
+  /* line 222, sass/components/sections/_banner.scss */
   .banner-image {
     width: 70%;
     float: right;
   }
-  /* line 178, sass/components/sections/_banner.scss */
+  /* line 225, sass/components/sections/_banner.scss */
   .banner-image img {
     position: static;
     max-width: none;
     width: 100%;
     height: auto;
   }
-  /* line 183, sass/components/sections/_banner.scss */
+  /* line 230, sass/components/sections/_banner.scss */
   .banner-image img.slidewidth {
     width: 100%;
     height: auto;
   }
-  /* line 188, sass/components/sections/_banner.scss */
+  /* line 235, sass/components/sections/_banner.scss */
   .banner-image img.slideheight {
     width: 100%;
     height: auto;
   }
 
-  /* line 195, sass/components/sections/_banner.scss */
+  /* line 242, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 250px;
     padding-bottom: 25rem;
   }
-  /* line 198, sass/components/sections/_banner.scss */
+  /* line 244, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
+    right: -140px;
+    right: -14rem;
+  }
+  /* line 248, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -200px;
     margin-top: -20rem;
