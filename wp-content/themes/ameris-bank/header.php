@@ -21,8 +21,7 @@
 	<script>
 		WebFontConfig = {
 			custom: {
-				families: ['AvenirNextLTPro-Regular', 'AvenirNextLTPro-Bold'],
-				urls: ['<?php echo get_template_directory_uri(); ?>/fonts.css']
+				families: ['AvenirNextLTPro-Regular', 'AvenirNextLTPro-Bold']
 			},
 			typekit: { id: 'bjg1fuq' }
 

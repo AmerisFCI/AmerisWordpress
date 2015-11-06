@@ -1,3 +1,15 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2f9a33");
+
+
+@font-face {font-family: 'AvenirNextLTPro-Regular';
+	src: url('webfonts/2F9A33_0_0.eot');
+	src: url('webfonts/2F9A33_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F9A33_0_0.woff2') format('woff2'),url('webfonts/2F9A33_0_0.woff') format('woff'),url('webfonts/2F9A33_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'AvenirNextLTPro-Bold';
+	src: url('webfonts/2F9A33_1_0.eot');
+	src: url('webfonts/2F9A33_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F9A33_1_0.woff2') format('woff2'),url('webfonts/2F9A33_1_0.woff') format('woff'),url('webfonts/2F9A33_1_0.ttf') format('truetype');}
 
 // Setting base font size as 10 for easy maths
 $base-font-size:   10px; // The font size set on the root html element
@@ -29,8 +41,8 @@ $base-font-family:'Chaparral Pro', $georgia; // The font family set on the html 
 $font-body:       'Chaparral Pro', $georgia;
 $Chaparral-Pro: 	'Chaparral Pro', $georgia;
 
-$font-branding: 	"adobe-text-pro", $georgia;
-$adobe-text-pro:	"adobe-text-pro", $georgia;
+$font-branding: 	'adobe-text-pro', $georgia;
+$adobe-text-pro:	'adobe-text-pro', $georgia;
 
 //$font-heading:		'canada-type-gibson', $helvetica;
 //$font-sansserif:	'canada-type-gibson', $helvetica;
