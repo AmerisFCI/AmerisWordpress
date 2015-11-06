@@ -125,14 +125,8 @@
 	});
 
 	//accessible part so that if you tab to the link it does the same thing
-	$('.toggle-sub__parent:not(:first-child) > a').on('focus', function(){
-		if( $('.toggle-sub__parent:first-child').hasClass('visible-tab') ) {
+	$('.toggle-sub__parent > a').on('focus', function(){
 			$('.toggle-sub__parent:first-child').removeClass('visible-tab');
-		}
-		else {
-			$('.toggle-sub__parent:first-child').addClass('visible-tab');
-		}
-
 	});
 		
 
