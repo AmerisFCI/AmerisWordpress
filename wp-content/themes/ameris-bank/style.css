@@ -540,7 +540,7 @@ sup {
 /* line 1, sass/base/typography/_headings.scss */
 h1, .landing-heading, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   line-height: 1;
   text-align: center;
 }
@@ -592,7 +592,7 @@ h4 {
 
 /* line 45, sass/base/typography/_headings.scss */
 h5 {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -605,7 +605,7 @@ h5 {
 
 /* line 49, sass/base/typography/_headings.scss */
 .kicker {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -1317,7 +1317,7 @@ input[type="submit"] {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
 }
@@ -1726,7 +1726,7 @@ a:hover, a:active {
 .nav-menu a {
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 700;
   display: block;
   padding: 15px 15px 20px;
@@ -1735,7 +1735,7 @@ a:hover, a:active {
 }
 /* line 37, sass/components/navigation/_menu-main.scss */
 .nav-menu li li a, .nav-menu .right-side a, .nav-menu .stacked-sub a {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -2378,7 +2378,7 @@ a:hover, a:active {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
     box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
     transition: background-color .2s, box-shadow .2s;
     padding: 17px 30px 20px;
@@ -2550,7 +2550,7 @@ a:hover, a:active {
 }
 /* line 1, sass/components/navigation/_utility-nav.scss */
 .utility-navigation {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 300;
@@ -2603,7 +2603,7 @@ a:hover, a:active {
 }
 /* line 4, sass/components/navigation/_sidebar-nav.scss */
 .sidebar-menu a {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -2718,7 +2718,7 @@ a:hover, a:active {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   border-top-left-radius: 0;
@@ -3039,7 +3039,7 @@ a:hover, a:active {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;
@@ -3183,7 +3183,7 @@ a:hover, a:active {
   background-image: linear-gradient(to top right, #061d4b, #204285);
   padding: 30px 0px 250px;
   padding: 3rem 0rem 25rem;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #ffffff;
   font-size: 16px;
   font-size: 1.6rem;
@@ -3285,7 +3285,7 @@ input.newsletter-signup__submit {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   border: 1px solid #d31145;
@@ -3891,7 +3891,7 @@ footer .menu-item {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;
@@ -4074,7 +4074,7 @@ input.account-access__submit {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;
@@ -4455,7 +4455,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 9, sass/components/pages/home/_tools.scss */
 .tool__title {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -4566,7 +4566,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;
@@ -4809,7 +4809,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 11, sass/components/pages/landing/_solutions.scss */
 .solution__title {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -4894,7 +4894,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 27, sass/components/pages/landing/_tools.scss */
 .related-resource__title {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -4977,7 +4977,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
   display: none;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   margin-bottom: 24px;
@@ -5020,7 +5020,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 /* line 1, sass/components/_meta.scss */
 .news-meta {
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 14px;
@@ -5149,7 +5149,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
 }
@@ -5176,7 +5176,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: "sofia-pro", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
   padding: 17px 30px 20px;

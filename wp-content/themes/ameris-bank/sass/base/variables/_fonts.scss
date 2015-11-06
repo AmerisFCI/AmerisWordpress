@@ -1,6 +1,3 @@
-//
-// Font faces, stacks and sizes
-//
 
 // Setting base font size as 10 for easy maths
 $base-font-size:   10px; // The font size set on the root html element
@@ -39,8 +36,12 @@ $adobe-text-pro:	"adobe-text-pro", $georgia;
 //$font-sansserif:	'canada-type-gibson', $helvetica;
 //$Gibson: 					'canada-type-gibson', $helvetica;
 
-$font-heading:		'sofia-pro', $helvetica;
-$font-sansserif:	'sofia-pro', $helvetica;
+//$font-heading:		'sofia-pro', $helvetica;
+//$font-sansserif:	'sofia-pro', $helvetica;
+
+$font-heading:		'AvenirNextLTPro-Regular', $helvetica;
+$font-sansserif:	'AvenirNextLTPro-Regular', $helvetica;
+$font-heading-bold: 'AvenirNextLTPro-Bold', $helvetica;
 
 $font-monospace:   $courier;
 
