@@ -1,6 +1,60 @@
 (function ($) {
 
 	/**
+	 * Create containers for tabbed submenus.
+	 */
+	$( '.has-tabbed-sub > ul > li' ).each( function() {
+		$( this ).children().not( 'a' ).wrapAll( '<div class="tab-container" />' );
+	} );
+
+	/**
+	 * Create containers for right-hand menu sections.
+	 */
+	$( '#primary-menu > li > .sub-menu' ).each( function() {
+
+		var isTabbed = $( this ).parent( 'li' ).hasClass( 'has-tabbed-sub' );
+		
+		// get all right-side items
+		var rightItems = $( this ).find( '.right-side' ); 
+
+		if ( isTabbed ) {
+
+			// get their parent menu
+			var origParent = rightItems.parent( '.sub-menu' );
+		
+			// remove from their parent menu
+			rightItems.detach();
+
+			// add after the parent menu, inside a new container
+			rightItems.insertAfter( origParent ).wrapAll( '<div class="right-container"><ul class="sub-menu"></ul></div>' );
+
+		} else {
+			rightItems.wrapAll( '<li class="right-container"><ul class="sub-menu"></ul></li>' );
+		}
+	
+	} );
+
+
+	/**
+	 * Enable Columnizer for submenu layout.
+	 */
+	$('.left-52 .sub-menu').columnize( { columns: 3 } );
+
+
+	/**
+	 * Create containers for stacked items.
+	 */
+	$( '#primary-menu > li > .sub-menu' ).each( function() {
+
+		// get all right-side items
+		var stackedItems = $( this ).find( '.stacked-sub' );
+
+		stackedItems.wrapAll( '<li class="stacked-container"><ul class="sub-menu"></ul></li>' );
+
+	} );
+
+
+	/**
 	 * Handle main menu links' click behavior.
 	 */
 	$( '#primary-menu a' ).click( function( event ) {
@@ -34,55 +88,23 @@
 
 
 	/**
-	 * Create containers for tabbed submenus.
+	 * Make sure the Business sub-menu is always big enough for the .tab-containers.
 	 */
-	$( '.has-tabbed-sub > ul > li' ).each( function() {
-		$( this ).children().not( 'a' ).wrapAll( '<div class="tab-container" />' );
-	} );
-	
-
-
-	/**
-	 * Create containers for right-hand menu sections.
-	 */
-	$( '#primary-menu > li > .sub-menu' ).each( function() {
-
-		var isTabbed = $( this ).parent( 'li' ).hasClass( 'has-tabbed-sub' );
+	$( '.has-tabbed-sub' ).on( 'hover', '.toggle-sub__parent', function() {
 		
-		// get all right-side items
-		var rightItems = $( this ).find( '.right-side' ); 
+		var isMobile = $( '#site-navigation .menu-toggle' ).is( ':visible' );
+		if ( isMobile )
+			return;
 
-		if ( isTabbed ) {
+		var tabContainer = $( this ).find( '.tab-container' );
 
-			// get their parent menu
-			var origParent = rightItems.parent( '.sub-menu' );
+		var containerHeight = tabContainer.height();
 		
-			// remove from their parent menu
-			rightItems.detach();
+		var overallHeight = $( this ).closest( '.sub-menu' ).height();
 
-			// add after the parent menu, inside a new container
-			rightItems.insertAfter( origParent ).wrapAll( '<div class="right-container"><ul class="sub-menu"></ul></div>' );
-
-		} else {
-
-			rightItems.wrapAll( '<li class="right-container"><ul class="sub-menu"></ul></li>' );
-
+		if ( containerHeight > overallHeight ) {
+			$( this ).closest( '.sub-menu' ).animate( { height: containerHeight+'px' }, 600 );
 		}
-	
-	} );
-
-	$('.left-52 .sub-menu').columnize({ columns: 3 });
-
-	/**
-	 * Create containers for stacked items
-	 */
-	$( '#primary-menu > li > .sub-menu' ).each( function() {
-
-		// get all right-side items
-		var stackedItems = $( this ).find( '.stacked-sub' );
-
-		stackedItems.wrapAll( '<li class="stacked-container"><ul class="sub-menu"></ul></li>' );
-
 
 	} );
 		
