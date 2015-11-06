@@ -170,6 +170,7 @@
 	@include rem-fallback(margin-right, 1);
 	ul {
 		@include element-invisible-off;
+		overflow: visible;
 		display: block;
 	}
 	.view-all a {
