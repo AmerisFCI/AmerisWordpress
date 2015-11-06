@@ -1,11 +1,10 @@
 .news-meta {
 	font-family: $font-sansserif;
 	text-transform: uppercase;
-	font-weight: 300;
 	@include rem-fallback(font-size, 1.4);
 
 	span {
-		font-weight: 600;
+		font-family: $font-heading-bold;
 	}
 	a {
 		color: $text-color;

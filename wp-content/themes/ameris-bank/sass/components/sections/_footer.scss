@@ -5,7 +5,6 @@
 	font-family: $font-sansserif;
 	color: $white;
 	@include rem-fallback(font-size, 1.6);
-	font-weight: 300;
 
 	a {
 		color: $white;

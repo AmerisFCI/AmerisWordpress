@@ -188,7 +188,7 @@ $sprite-high-res-suffix: '-2x' !default;
   @include red-button;
   @include rem-fallback(padding, 1.7, 3, 2);
   @include rem-fallback(font-size, 2.1);
-  font-weight: 300;
+  font-family: $font-heading;
   clear: both;
 }
 
@@ -196,7 +196,7 @@ $sprite-high-res-suffix: '-2x' !default;
   @include blue-button;
   @include rem-fallback(padding, 1.7, 3, 2);
   @include rem-fallback(font-size, 2.1);
-  font-weight: 300;
+  font-family: $font-heading;
   clear: both;
 }
 
@@ -271,7 +271,7 @@ $sprite-high-res-suffix: '-2x' !default;
   transition: all .2s;
   display: inline-block;
   clear: both;
-  font-weight: 700;
+  font-family: $font-heading-bold;
   border-bottom: 1px solid transparent;
 
   &:hover, &:focus {
@@ -280,11 +280,10 @@ $sprite-high-res-suffix: '-2x' !default;
 }
 
 @mixin boldbluetext {
-  font-family: $font-heading;
   font-style: normal;
   @include rem-fallback(font-size, 1.8);
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: $font-heading-bold;
   color: $darkblue;
   @include rem-fallback(margin-bottom, 1.5);
 }

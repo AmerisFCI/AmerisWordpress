@@ -27,7 +27,7 @@
 		color: $white;
 		text-transform: uppercase;
 		font-family: $font-heading;
-		font-weight: 700;
+		font-family: $font-heading-bold;
 		display: block;
 		@include rem-fallback(padding, 1.5, 1.5, 2);
 		transition: background .5s, color .5s;
@@ -43,7 +43,7 @@
 		}
 		li {
 			a {
-				font-weight: 300;
+				font-family: $font-heading;
 				text-transform: none;
 
 			}
@@ -318,7 +318,7 @@
 
 			a {
 				//@include rem-fallback(border-bottom-width, .2);
-				font-weight: 700;
+				font-family: $font-heading-bold;
 				text-transform: uppercase;
 			}
 		}
@@ -330,7 +330,7 @@
 			a {
 				//border-bottom-width: 0;
 				margin-bottom: 0;
-				font-weight: 500;
+				font-family: $font-heading;
 				text-transform: none;
 			}
 		}
