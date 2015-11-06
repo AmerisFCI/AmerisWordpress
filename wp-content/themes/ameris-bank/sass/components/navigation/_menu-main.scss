@@ -339,6 +339,11 @@
 
 }
 
+	.business-nav.toggle-sub .toggle-sub__parent > a {
+		@include rem-fallback(padding, 2);
+		margin-bottom: 0;
+	}
+
 //Sub Menu with additional menu toggles (business subs)
 .toggle-sub__parent { // class placed inside of the dropdown
 
@@ -563,6 +568,9 @@
 		.tab-container {
 			width: 70%;
 		}
+	}
+	.business-nav.toggle-sub .toggle-sub__parent > a {
+		@include rem-fallback(padding, 3);
 	}
 }
 
