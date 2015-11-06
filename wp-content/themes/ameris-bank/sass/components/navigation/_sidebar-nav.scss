@@ -45,13 +45,13 @@
 		}
 		a {
 			text-transform: none;
-			font-weight: 300;
+			font-family: $font-heading;
 
 			margin: 0;
 		}
 	}
 	.view-all a {
-		font-weight: 700;
+		font-family: $font-heading-bold;
 		text-transform: uppercase;
 		&:hover {
 			border-bottom-color: transparent;

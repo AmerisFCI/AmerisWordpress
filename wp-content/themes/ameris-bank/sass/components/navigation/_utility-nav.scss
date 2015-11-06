@@ -1,7 +1,6 @@
 .utility-navigation {
 	font-family: $font-sansserif;
 	@include rem-fallback(font-size, 1.6);
-	font-weight: 300;
 	@include rem-fallback(margin-bottom, 2);
 
 	a {

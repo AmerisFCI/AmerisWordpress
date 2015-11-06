@@ -566,25 +566,23 @@ h1, .landing-heading {
   font-size: 36px;
   font-size: 3.6rem;
   color: #092764;
-  font-weight: 300;
 }
 
-/* line 20, sass/base/typography/_headings.scss */
+/* line 19, sass/base/typography/_headings.scss */
 h2 {
   font-size: 36px;
   font-size: 3.6rem;
   margin-bottom: 20px;
   margin-bottom: 2rem;
-  font-weight: 300;
   color: #092764;
 }
 
-/* line 27, sass/base/typography/_headings.scss */
+/* line 25, sass/base/typography/_headings.scss */
 h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   letter-spacing: 0.05rem;
-  font-weight: 700;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #d31145;
   font-size: 22px;
   font-size: 2.2rem;
@@ -592,37 +590,34 @@ h3 {
   margin-bottom: 2rem;
 }
 
-/* line 38, sass/base/typography/_headings.scss */
+/* line 36, sass/base/typography/_headings.scss */
 h4 {
   color: #092764;
-  font-weight: 400;
   font-size: 24px;
   font-size: 2.4rem;
   margin: 20px 0px;
   margin: 2rem 0rem;
 }
 
-/* line 45, sass/base/typography/_headings.scss */
+/* line 42, sass/base/typography/_headings.scss */
 h5 {
-  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
 }
 
-/* line 49, sass/base/typography/_headings.scss */
+/* line 46, sass/base/typography/_headings.scss */
 .kicker {
-  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
@@ -635,14 +630,14 @@ h5 {
   border-bottom-width: 0.3rem;
 }
 
-/* line 57, sass/base/typography/_headings.scss */
+/* line 54, sass/base/typography/_headings.scss */
 .landing-heading {
   margin-bottom: 40px;
   margin-bottom: 4rem;
 }
 
 @media (min-width: 740px) {
-  /* line 63, sass/base/typography/_headings.scss */
+  /* line 60, sass/base/typography/_headings.scss */
   h1, .landing-heading, h2, h3, h4, h5, h6 {
     text-align: inherit;
   }
@@ -1739,7 +1734,7 @@ a:hover, a:active {
   color: #ffffff;
   text-transform: uppercase;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-  font-weight: 700;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   display: block;
   padding: 15px 15px 20px;
   padding: 1.5rem 1.5rem 2rem;
@@ -1747,12 +1742,11 @@ a:hover, a:active {
 }
 /* line 37, sass/components/navigation/_menu-main.scss */
 .nav-menu li li a, .nav-menu .right-side a, .nav-menu .stacked-sub a {
-  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
@@ -1765,7 +1759,7 @@ a:hover, a:active {
 }
 /* line 45, sass/components/navigation/_menu-main.scss */
 .nav-menu li li li a, .nav-menu .right-side li a, .nav-menu .stacked-sub li a {
-  font-weight: 300;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
 }
 /* line 53, sass/components/navigation/_menu-main.scss */
@@ -1930,7 +1924,7 @@ a:hover, a:active {
     transition: all .2s;
     display: inline-block;
     clear: both;
-    font-weight: 700;
+    font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
     border-bottom: 1px solid transparent;
   }
   /* line 277, sass/base/_mixins.scss */
@@ -2131,7 +2125,7 @@ a:hover, a:active {
   }
   /* line 319, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li a {
-    font-weight: 700;
+    font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
     text-transform: uppercase;
   }
   /* line 326, sass/components/navigation/_menu-main.scss */
@@ -2142,7 +2136,7 @@ a:hover, a:active {
   /* line 330, sass/components/navigation/_menu-main.scss */
   .nav-menu .toggle-sub li li li a {
     margin-bottom: 0;
-    font-weight: 500;
+    font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
     text-transform: none;
   }
 
@@ -2193,7 +2187,7 @@ a:hover, a:active {
     transition: all .2s;
     display: inline-block;
     clear: both;
-    font-weight: 700;
+    font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
     border-bottom: 1px solid transparent;
   }
   /* line 277, sass/base/_mixins.scss */
@@ -2397,7 +2391,7 @@ a:hover, a:active {
     padding: 1.7rem 3rem 2rem;
     font-size: 21px;
     font-size: 2.1rem;
-    font-weight: 300;
+    font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
     clear: both;
     padding-right: 42px;
     padding-right: 4.2rem;
@@ -2565,11 +2559,10 @@ a:hover, a:active {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: 300;
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
-/* line 7, sass/components/navigation/_utility-nav.scss */
+/* line 6, sass/components/navigation/_utility-nav.scss */
 .utility-navigation a {
   color: #ffffff;
   display: inline-block;
@@ -2580,29 +2573,29 @@ a:hover, a:active {
   margin-left: 15px;
   margin-left: 1.5rem;
 }
-/* line 14, sass/components/navigation/_utility-nav.scss */
+/* line 13, sass/components/navigation/_utility-nav.scss */
 .utility-navigation a:hover, .utility-navigation a:focus {
   border-bottom-color: #ffffff;
 }
-/* line 19, sass/components/navigation/_utility-nav.scss */
+/* line 18, sass/components/navigation/_utility-nav.scss */
 .utility-navigation .menu-item {
   display: inline-block;
 }
 
 @media (max-width: 529px) {
-  /* line 27, sass/components/navigation/_utility-nav.scss */
+  /* line 26, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     display: none;
   }
 }
 @media (min-width: 530px) and (max-width: 1023px) {
-  /* line 33, sass/components/navigation/_utility-nav.scss */
+  /* line 32, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  /* line 40, sass/components/navigation/_utility-nav.scss */
+  /* line 39, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     text-align: right;
   }
@@ -2615,12 +2608,11 @@ a:hover, a:active {
 }
 /* line 4, sass/components/navigation/_sidebar-nav.scss */
 .sidebar-menu a {
-  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
@@ -2685,12 +2677,12 @@ a:hover, a:active {
 /* line 46, sass/components/navigation/_sidebar-nav.scss */
 .sidebar-menu .children a {
   text-transform: none;
-  font-weight: 300;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   margin: 0;
 }
 /* line 53, sass/components/navigation/_sidebar-nav.scss */
 .sidebar-menu .view-all a {
-  font-weight: 700;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
 }
 /* line 56, sass/components/navigation/_sidebar-nav.scss */
@@ -3058,7 +3050,7 @@ a:hover, a:active {
   padding: 1.7rem 3rem 2rem;
   font-size: 21px;
   font-size: 2.1rem;
-  font-weight: 300;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   clear: both;
   padding-right: 42px;
   padding-right: 4.2rem;
@@ -3199,25 +3191,24 @@ a:hover, a:active {
   color: #ffffff;
   font-size: 16px;
   font-size: 1.6rem;
-  font-weight: 300;
 }
-/* line 10, sass/components/sections/_footer.scss */
+/* line 9, sass/components/sections/_footer.scss */
 .site-footer a {
   color: #ffffff;
   text-decoration: underline;
   padding: 10px 0px 0px 10px;
   padding: 1rem 0rem 0rem 1rem;
 }
-/* line 15, sass/components/sections/_footer.scss */
+/* line 14, sass/components/sections/_footer.scss */
 .site-footer a:hover, .site-footer a:focus {
   text-decoration: none;
 }
-/* line 19, sass/components/sections/_footer.scss */
+/* line 18, sass/components/sections/_footer.scss */
 .site-footer a:visited {
   color: #f2f2f2;
 }
 
-/* line 27, sass/components/sections/_footer.scss */
+/* line 26, sass/components/sections/_footer.scss */
 .footer-top {
   margin-bottom: 20px;
   margin-bottom: 2rem;
@@ -3232,14 +3223,14 @@ a:hover, a:active {
   clear: both;
 }
 
-/* line 36, sass/components/sections/_footer.scss */
+/* line 35, sass/components/sections/_footer.scss */
 .footer__logo {
   display: inline-block;
   margin-right: 10px;
   margin-right: 1rem;
 }
 
-/* line 41, sass/components/sections/_footer.scss */
+/* line 40, sass/components/sections/_footer.scss */
 #Member_FDIC {
   background-image: url('images/sprite-images-s5908aa9ee5.png');
   background-position: 0 -3411px;
@@ -3249,7 +3240,7 @@ a:hover, a:active {
   width: 68px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 41, sass/components/sections/_footer.scss */
+  /* line 40, sass/components/sections/_footer.scss */
   #Member_FDIC {
     background-size: 215px 2258.5px;
     background-position: 0 -1658px;
@@ -3258,7 +3249,7 @@ a:hover, a:active {
   }
 }
 
-/* line 45, sass/components/sections/_footer.scss */
+/* line 44, sass/components/sections/_footer.scss */
 #Equal_Housing_Lender {
   background-image: url('images/sprite-images-s5908aa9ee5.png');
   background-position: 0 -3250px;
@@ -3268,7 +3259,7 @@ a:hover, a:active {
   width: 55px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 45, sass/components/sections/_footer.scss */
+  /* line 44, sass/components/sections/_footer.scss */
   #Equal_Housing_Lender {
     background-size: 215px 2258.5px;
     background-position: 0 -1564px;
@@ -3277,18 +3268,18 @@ a:hover, a:active {
   }
 }
 
-/* line 51, sass/components/sections/_footer.scss */
+/* line 50, sass/components/sections/_footer.scss */
 input.newsletter-signup__email {
   margin-bottom: 0;
   padding: 8px 10px 5px 10px;
   padding: 0.8rem 1rem 0.5rem 1rem;
 }
-/* line 54, sass/components/sections/_footer.scss */
+/* line 53, sass/components/sections/_footer.scss */
 input.newsletter-signup__email:focus {
   border-color: #ffffff;
 }
 
-/* line 59, sass/components/sections/_footer.scss */
+/* line 58, sass/components/sections/_footer.scss */
 input.newsletter-signup__submit {
   background-color: #d31145;
   color: #ffffff;
@@ -3320,11 +3311,11 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   color: #ffffff;
 }
 
-/* line 66, sass/components/sections/_footer.scss */
+/* line 65, sass/components/sections/_footer.scss */
 .newsletter-signup {
   position: relative;
 }
-/* line 69, sass/components/sections/_footer.scss */
+/* line 68, sass/components/sections/_footer.scss */
 .newsletter-signup input {
   display: block;
   box-sizing: border-box;
@@ -3337,12 +3328,12 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   width: 100%;
 }
 
-/* line 81, sass/components/sections/_footer.scss */
+/* line 80, sass/components/sections/_footer.scss */
 .newsletter-signup__submit__icon {
   position: relative;
   display: inline-block;
 }
-/* line 85, sass/components/sections/_footer.scss */
+/* line 84, sass/components/sections/_footer.scss */
 .newsletter-signup__submit__icon:before {
   content: "";
   display: inline-block;
@@ -3360,7 +3351,7 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   width: 23px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 85, sass/components/sections/_footer.scss */
+  /* line 84, sass/components/sections/_footer.scss */
   .newsletter-signup__submit__icon:before {
     background-size: 215px 2258.5px;
     background-position: 0 -309.5px;
@@ -3369,41 +3360,41 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   }
 }
 
-/* line 101, sass/components/sections/_footer.scss */
+/* line 100, sass/components/sections/_footer.scss */
 .copyright, .site-info {
   float: left;
 }
 
-/* line 105, sass/components/sections/_footer.scss */
+/* line 104, sass/components/sections/_footer.scss */
 .site-info {
   margin-bottom: 10px;
   margin-bottom: 1rem;
 }
 
-/* line 109, sass/components/sections/_footer.scss */
+/* line 108, sass/components/sections/_footer.scss */
 .social-links {
   float: right;
 }
 
-/* line 113, sass/components/sections/_footer.scss */
+/* line 112, sass/components/sections/_footer.scss */
 .newsletter-signup {
   clear: both;
 }
 
-/* line 117, sass/components/sections/_footer.scss */
+/* line 116, sass/components/sections/_footer.scss */
 footer .menu-item {
   display: inline-block;
 }
 
 @media (max-width: 529px) {
-  /* line 122, sass/components/sections/_footer.scss */
+  /* line 121, sass/components/sections/_footer.scss */
   .newsletter-signup__submit__icon, input.newsletter-signup__email {
     width: 100%;
     margin-bottom: 8px;
     margin-bottom: 0.8rem;
   }
 
-  /* line 126, sass/components/sections/_footer.scss */
+  /* line 125, sass/components/sections/_footer.scss */
   .social-links, .site-info {
     float: none;
     margin-top: 12px;
@@ -3414,11 +3405,11 @@ footer .menu-item {
     margin-right: auto;
     text-align: center;
   }
-  /* line 134, sass/components/sections/_footer.scss */
+  /* line 133, sass/components/sections/_footer.scss */
   .social-links li, .site-info li {
     margin: 0;
   }
-  /* line 137, sass/components/sections/_footer.scss */
+  /* line 136, sass/components/sections/_footer.scss */
   .social-links a, .site-info a {
     margin-left: 5px;
     margin-left: 0.5rem;
@@ -3427,18 +3418,18 @@ footer .menu-item {
   }
 }
 @media (min-width: 530px) {
-  /* line 149, sass/components/sections/_footer.scss */
+  /* line 148, sass/components/sections/_footer.scss */
   .newsletter-signup input {
     width: auto;
   }
 
-  /* line 154, sass/components/sections/_footer.scss */
+  /* line 153, sass/components/sections/_footer.scss */
   input.newsletter-signup__email {
     padding-right: 20px;
     padding-right: 2rem;
   }
 
-  /* line 158, sass/components/sections/_footer.scss */
+  /* line 157, sass/components/sections/_footer.scss */
   input.newsletter-signup__submit {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -3446,7 +3437,7 @@ footer .menu-item {
     margin-left: -0.5rem;
   }
 
-  /* line 170, sass/components/sections/_footer.scss */
+  /* line 169, sass/components/sections/_footer.scss */
   .footer-utility {
     float: left;
     clear: both;
@@ -3455,7 +3446,7 @@ footer .menu-item {
   }
 }
 @media (min-width: 740px) {
-  /* line 179, sass/components/sections/_footer.scss */
+  /* line 178, sass/components/sections/_footer.scss */
   .newsletter-signup {
     float: right;
     clear: right;
@@ -3464,23 +3455,23 @@ footer .menu-item {
   }
 }
 @media (min-width: 1024px) {
-  /* line 189, sass/components/sections/_footer.scss */
+  /* line 188, sass/components/sections/_footer.scss */
   .site-info {
     margin: 0;
   }
 
-  /* line 193, sass/components/sections/_footer.scss */
+  /* line 192, sass/components/sections/_footer.scss */
   .site-footer {
     padding: 35px 0px 450px;
     padding: 3.5rem 0rem 45rem;
   }
 
-  /* line 197, sass/components/sections/_footer.scss */
+  /* line 196, sass/components/sections/_footer.scss */
   .footer-copyright-links {
     float: left;
   }
 
-  /* line 201, sass/components/sections/_footer.scss */
+  /* line 200, sass/components/sections/_footer.scss */
   .newsletter-signup, .social-links {
     float: right;
     clear: none;
@@ -3488,7 +3479,7 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 211, sass/components/sections/_footer.scss */
+  /* line 210, sass/components/sections/_footer.scss */
   .footer-utility {
     float: right;
     clear: none;
@@ -3559,11 +3550,10 @@ footer .menu-item {
   padding: 180px 24px 30px;
   padding: 18rem 2.4rem 3rem;
   clear: both;
-  font-weight: 300;
   width: 100%;
 }
 
-/* line 66, sass/components/sections/_banner.scss */
+/* line 65, sass/components/sections/_banner.scss */
 .banner-blurb__wrap, .has-banner-image .page-title {
   position: absolute;
   left: 0;
@@ -3573,59 +3563,59 @@ footer .menu-item {
   display: none;
 }
 
-/* line 75, sass/components/sections/_banner.scss */
+/* line 74, sass/components/sections/_banner.scss */
 .has-banner-image .page-title {
   display: block;
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
 }
-/* line 78, sass/components/sections/_banner.scss */
+/* line 77, sass/components/sections/_banner.scss */
 .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
   color: #ffffff;
 }
 
 @media (min-width: 1024px) {
-  /* line 84, sass/components/sections/_banner.scss */
+  /* line 83, sass/components/sections/_banner.scss */
   .banner-blurb__wrap {
     display: block;
   }
 
-  /* line 87, sass/components/sections/_banner.scss */
+  /* line 86, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     position: static;
     text-shadow: none;
   }
-  /* line 90, sass/components/sections/_banner.scss */
+  /* line 89, sass/components/sections/_banner.scss */
   .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
     color: #092764;
   }
 }
-/* line 98, sass/components/sections/_banner.scss */
+/* line 97, sass/components/sections/_banner.scss */
 .has-banner-image .page-title {
   padding: 40px 50px 30px;
   padding: 4rem 5rem 3rem;
 }
 
 @media (max-width: 529px) {
-  /* line 105, sass/components/sections/_banner.scss */
+  /* line 104, sass/components/sections/_banner.scss */
   .banner-image {
     min-height: 560px;
     min-height: 56rem;
     width: 100% !important;
   }
-  /* line 108, sass/components/sections/_banner.scss */
+  /* line 107, sass/components/sections/_banner.scss */
   .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 }
 @media screen and (min-width: 580px) {
-  /* line 116, sass/components/sections/_banner.scss */
+  /* line 115, sass/components/sections/_banner.scss */
   .page-title {
     padding: 150px 24px 30px;
     padding: 15rem 2.4rem 3rem;
   }
 
-  /* line 120, sass/components/sections/_banner.scss */
+  /* line 119, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-left: 50px;
     padding-left: 5rem;
@@ -3634,7 +3624,7 @@ footer .menu-item {
   }
 }
 @media (min-width: 530px) and (max-width: 1023px) {
-  /* line 128, sass/components/sections/_banner.scss */
+  /* line 127, sass/components/sections/_banner.scss */
   .banner-image {
     width: 100% !important;
     min-height: 560px;
@@ -3642,20 +3632,20 @@ footer .menu-item {
   }
 }
 @media (min-width: 1024px) {
-  /* line 136, sass/components/sections/_banner.scss */
+  /* line 135, sass/components/sections/_banner.scss */
   .page-title {
     padding: 200px 24px 20px;
     padding: 20rem 2.4rem 2rem;
     clear: none;
   }
 
-  /* line 147, sass/components/sections/_banner.scss */
+  /* line 146, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding: 200px 24px 80px;
     padding: 20rem 2.4rem 8rem;
     clear: none;
   }
-  /* line 151, sass/components/sections/_banner.scss */
+  /* line 150, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -50px;
     margin-top: -5rem;
@@ -3663,53 +3653,53 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 160, sass/components/sections/_banner.scss */
+  /* line 159, sass/components/sections/_banner.scss */
   .banner-blurb {
     font-size: 86px;
     font-size: 8.6rem;
   }
 
-  /* line 164, sass/components/sections/_banner.scss */
+  /* line 163, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 150px;
     padding-bottom: 15rem;
   }
-  /* line 167, sass/components/sections/_banner.scss */
+  /* line 166, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -100px;
     margin-top: -10rem;
   }
 }
 @media (min-width: 1420px) {
-  /* line 174, sass/components/sections/_banner.scss */
+  /* line 173, sass/components/sections/_banner.scss */
   .banner-image {
     width: 70%;
     float: right;
   }
-  /* line 177, sass/components/sections/_banner.scss */
+  /* line 176, sass/components/sections/_banner.scss */
   .banner-image img {
     position: static;
     max-width: none;
     width: 100%;
     height: auto;
   }
-  /* line 182, sass/components/sections/_banner.scss */
+  /* line 181, sass/components/sections/_banner.scss */
   .banner-image img.slidewidth {
     width: 100%;
     height: auto;
   }
-  /* line 187, sass/components/sections/_banner.scss */
+  /* line 186, sass/components/sections/_banner.scss */
   .banner-image img.slideheight {
     width: 100%;
     height: auto;
   }
 
-  /* line 194, sass/components/sections/_banner.scss */
+  /* line 193, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 250px;
     padding-bottom: 25rem;
   }
-  /* line 197, sass/components/sections/_banner.scss */
+  /* line 196, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -200px;
     margin-top: -20rem;
@@ -3910,7 +3900,7 @@ footer .menu-item {
   padding: 1.7rem 3rem 2rem;
   font-size: 21px;
   font-size: 2.1rem;
-  font-weight: 300;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   clear: both;
   padding-right: 42px;
   padding-right: 4.2rem;
@@ -4093,7 +4083,7 @@ input.account-access__submit {
   padding: 1.7rem 3rem 2rem;
   font-size: 21px;
   font-size: 2.1rem;
-  font-weight: 300;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   clear: both;
   width: auto;
   padding-left: 65px;
@@ -4467,12 +4457,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 9, sass/components/pages/home/_tools.scss */
 .tool__title {
-  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
@@ -4585,7 +4574,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   padding: 1.7rem 3rem 2rem;
   font-size: 21px;
   font-size: 2.1rem;
-  font-weight: 300;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   clear: both;
   padding-right: 42px;
   padding-right: 4.2rem;
@@ -4821,12 +4810,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 11, sass/components/pages/landing/_solutions.scss */
 .solution__title {
-  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
@@ -4906,12 +4894,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 27, sass/components/pages/landing/_tools.scss */
 .related-resource__title {
-  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
@@ -5034,15 +5021,14 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 .news-meta {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
-  font-weight: 300;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 7, sass/components/_meta.scss */
+/* line 6, sass/components/_meta.scss */
 .news-meta span {
-  font-weight: 600;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
-/* line 10, sass/components/_meta.scss */
+/* line 9, sass/components/_meta.scss */
 .news-meta a {
   color: #3d3d3d;
   text-decoration: none;
@@ -5144,7 +5130,7 @@ a.view-all, .view-all a {
   transition: all .2s;
   display: inline-block;
   clear: both;
-  font-weight: 700;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   border-bottom: 1px solid transparent;
 }
 /* line 277, sass/base/_mixins.scss */
@@ -5195,7 +5181,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   padding: 1.7rem 3rem 2rem;
   font-size: 21px;
   font-size: 2.1rem;
-  font-weight: 300;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   clear: both;
   padding-right: 42px;
   padding-right: 4.2rem;

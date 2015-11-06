@@ -59,7 +59,6 @@
 .page-title {
 	@include rem-fallback(padding, 18, 2.4, 3);
 	clear: both;
-	font-weight: 300;
 	width: 100%;
 }
 
