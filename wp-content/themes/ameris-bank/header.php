@@ -17,7 +17,7 @@
 
 <!--<script src="https://use.typekit.net/bjg1fuq.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 	<script>
 		WebFontConfig = {
 			custom: {
