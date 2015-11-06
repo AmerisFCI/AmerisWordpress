@@ -70,6 +70,21 @@
 		}
 	
 	} );
+
+	$('.left-52 .sub-menu').columnize({ columns: 3 });
+
+	/**
+	 * Create containers for stacked items
+	 */
+	$( '#primary-menu > li > .sub-menu' ).each( function() {
+
+		// get all right-side items
+		var stackedItems = $( this ).find( '.stacked-sub' );
+
+		stackedItems.wrapAll( '<li class="stacked-container"><ul class="sub-menu"></ul></li>' );
+
+
+	} );
 		
 
 
