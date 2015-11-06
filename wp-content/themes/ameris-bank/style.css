@@ -2683,7 +2683,7 @@ a:hover, a:active {
 }
 /* line 56, sass/components/navigation/_sidebar-nav.scss */
 .sidebar-menu .view-all a:hover {
-  text-decoration: none;
+  border-bottom-color: transparent;
 }
 
 /* line 1, sass/components/navigation/_search-box.scss */
