@@ -1236,8 +1236,8 @@ dd {
 .inner-wrap {
   max-width: 1420px;
   max-width: 142rem;
-  padding: 0px 50px;
-  padding: 0rem 5rem;
+  padding: 0px 20px;
+  padding: 0rem 2rem;
   margin: 0 auto;
   position: relative;
 }

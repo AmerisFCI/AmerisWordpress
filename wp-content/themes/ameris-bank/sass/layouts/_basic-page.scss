@@ -1,6 +1,6 @@
 .inner-wrap {
 	@include rem-fallback(max-width, 142);
-	@include rem-fallback(padding, 0, 5);
+	@include rem-fallback(padding, 0, 2);
 	margin: 0 auto;
 	position: relative;
 
