@@ -97,14 +97,15 @@
 			return;
 
 		var tabContainer = $( this ).find( '.tab-container' );
-
 		var containerHeight = tabContainer.height();
 		
 		var overallHeight = $( this ).closest( '.sub-menu' ).height();
 
-		if ( containerHeight > overallHeight ) {
-			$( this ).closest( '.sub-menu' ).animate( { height: containerHeight+'px' }, 600 );
-		}
+		var biggestHeight = overallHeight;
+		if ( containerHeight > overallHeight )
+			biggestHeight = containerHeight;
+
+		$( this ).closest( '.sub-menu' ).animate( { height: biggestHeight+'px' }, 600 );
 
 	} );
 
