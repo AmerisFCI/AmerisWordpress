@@ -55,9 +55,11 @@
 
 @media screen and (min-width: 580px) and (max-width: 1023px) {
 	.search-form {
-		clear: none;
-		@include rem-fallback(margin-top, 6);
-		width: auto;
+		@include rem-fallback(max-width, 50);
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		@include rem-fallback(margin-top, 3);
 	}
 }
 
