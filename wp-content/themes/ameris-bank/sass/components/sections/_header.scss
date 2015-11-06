@@ -53,10 +53,10 @@
 
 @include breakpoint($mobile) {
 	.logo {
-		max-width: 50%;
+		max-width: 60%;
 		img {
-			width: 100%;
-			height: auto;
+			width: auto;
+			height: 100%;
 			@include rem-fallback(margin-top, 2);
 		}
 	}

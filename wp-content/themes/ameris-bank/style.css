@@ -140,6 +140,13 @@ body {
   color: #3d3d3d;
 }
 
+@media (max-width: 529px) {
+  /* line 18, sass/base/_base.scss */
+  * {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
 /* line 6, sass/base/_accessibility.scss */
 .element-invisible,
 .element-focusable {
@@ -3137,12 +3144,12 @@ a:hover, a:active {
 @media (max-width: 529px) {
   /* line 55, sass/components/sections/_header.scss */
   .logo {
-    max-width: 50%;
+    max-width: 60%;
   }
   /* line 57, sass/components/sections/_header.scss */
   .logo img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     margin-top: 20px;
     margin-top: 2rem;
   }
