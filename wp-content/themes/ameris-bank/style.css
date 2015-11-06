@@ -2332,7 +2332,7 @@ a:hover, a:active {
     background: #ffffff;
   }
   /* line 443, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent > a:focus ~ .tab-container {
+  .toggle-sub__parent.focus .tab-container {
     position: static !important;
     clip: auto;
     height: auto;
@@ -2561,7 +2561,7 @@ a:hover, a:active {
     width: 30%;
   }
   /* line 600, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover .tab-container, .toggle-sub__parent.visible-tab .tab-container, .toggle-sub__parent > a:focus ~ .tab-container {
+  .toggle-sub__parent:hover .tab-container, .toggle-sub__parent.visible-tab .tab-container, .toggle-sub__parent.focus .tab-container {
     width: 70% !important;
   }
 

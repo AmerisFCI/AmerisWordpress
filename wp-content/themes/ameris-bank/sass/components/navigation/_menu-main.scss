@@ -440,7 +440,7 @@
 				background: $white;
 			}
 		}
-		> a:focus ~ .tab-container {
+		&.focus .tab-container {
 			@include element-invisible-off;
 			width: 75% !important;
 			position: absolute !important;
@@ -597,7 +597,7 @@
 		> a {
 			width: 30%;
 		}
-		&:hover .tab-container, &.visible-tab .tab-container, > a:focus ~ .tab-container {
+		&:hover .tab-container, &.visible-tab .tab-container, &.focus .tab-container {
 			width: 70% !important;
 		}
 	}
