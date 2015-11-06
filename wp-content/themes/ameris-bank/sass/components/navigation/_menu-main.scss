@@ -17,7 +17,8 @@
 .main-navigation {
 	@include rem-fallback(font-size, 1.8);
 	ul {
-		display: none;
+		//display: none;
+		@include element-invisible;
 	}
 }
 
@@ -32,7 +33,7 @@
 		transition: background .5s, color .5s;
 	}
 
-	li li, .right-side {
+	li li, .right-side, .stacked-sub {
 		a {
 			@include boldbluetext;
 			margin-bottom: 0;
@@ -49,8 +50,14 @@
 		}
 	}
 
-	li.active > ul, li.active > .tab-container > ul {
+	li.active > ul, li.active > .tab-container > ul,  {
 		display: block;
+		@include element-invisible-off;
+	}
+	li.active, li:hover, li.focus {
+		.stacked-container > ul, , .right-container > ul {
+		@include element-invisible-off;
+	}
 	}
 
 	.menu-item-has-children {
@@ -87,7 +94,8 @@
 }
 
 .item-description {
-	display: none;
+	//display: none;
+	@include element-invisible;
 	h3 {
 		@include voice;
 		color: $darkblue;
@@ -96,6 +104,7 @@
 
 .menu-toggle {
 	padding: 0;
+	display: block;
 	position: absolute;
 	@include rem-fallback(top, 2);
 	@include rem-fallback(right, 5);
@@ -105,15 +114,23 @@
 	}
 }
 
+@include breakpoint($mobile) {
+	.sub-menu .column {
+		width: 100% !important;
+	}
+}
+
+
 @include breakpoint($tablet-to-desktop) {
 	.menu-toggle {
 		@include rem-fallback(right, 3);
 	}
 }
 
-.menu-toggle,
+
 .main-navigation.toggled ul.menu {
 	display: block;
+	@include element-invisible-off;
 }
 
 //
@@ -152,7 +169,11 @@
 	text-align: right;
 	@include rem-fallback(margin-right, 1);
 	ul {
+		@include element-invisible-off;
 		display: block;
+	}
+	.view-all a {
+		@include red-link;
 	}
 }
 
@@ -169,11 +190,12 @@
 	}
 
 	ul { // hiding sublevels for now
-		display:none;
+		//display:none;
+		@include element-invisible;
 	}
 
 
-	li li , .right-side {
+	li li , .right-side, .stacked-sub {
 		a {
 			@include rem-fallback(font-size, 1.2);
 			border: 0 solid $paleblue;
@@ -181,6 +203,8 @@
 			color: $link-color;
 			@include rem-fallback(padding, 1, 0);
 			@include rem-fallback(margin-bottom, 1);
+			line-height: 1;
+
 			&:after {
 				content: "";
 				display: inline-block;
@@ -192,12 +216,15 @@
 				@include rem-fallback(margin-left, 1);
 				transition: all .3s;
 			}
+			&:hover {
+				background-color: transparent;
+			}
 			&:hover:after {
 				@include rem-fallback(left, .5);
 			}
 		}
 		li a {
-			line-height: 1;
+
 			@include rem-fallback(padding, .4, 0);
 			@include rem-fallback(font-size, 1.4);
 			border-bottom-width: 0;
@@ -208,9 +235,25 @@
 		}
 	}
 
+	.stacked-sub  {
+		a {
+			margin: 0;
+		}
+		&.menu-item-has-children > a {
+			@include rem-fallback(margin-bottom, 1);
+		}
+	}
 
-	li.active > ul, li:hover > ul, li.focus > ul {
-		display: block;
+
+	li.active, li:hover, li.focus {
+		> ul, .stacked-container > ul, , .right-container > ul {
+			@include element-invisible-off;
+		}
+	}
+
+	> li.active > ul, > li:hover > ul, > li.focus > ul {
+		width: 100%;
+		position: absolute !important;
 	}
 
 	.menu-item-has-children > a:after { //remove arrows from top nav
@@ -223,6 +266,7 @@
 		@include use-sprite(arrow-red-right-small);
 	}
 	ul ul {
+		@include element-invisible-off;
 		display: block; // show the nested lists by default, even though the dropdowns are hidden til hover
 	}
 
@@ -340,6 +384,7 @@
 	@include clearfix();
 
 	> .item-description {
+		@include element-invisible-off;
 		display: block;
 		@include rem-fallback(padding, 3);
 		float: left;
@@ -390,6 +435,18 @@
 //Open Sub Navs (any subs that have all the children exposed)
 .open-sub {
 
+	> .sub-menu {
+		@include clearfix();
+		@include rem-fallback(padding, 1.4, 0, 3.6);
+	}
+	> .sub-menu > li {
+		@include rem-fallback(padding, 0, 2.4);
+	}
+	> .sub-menu .right-container {
+		width: 24%;
+		float: right;
+	}
+
 	> .sub-menu:before {
 		content: "";
 		position: absolute;
@@ -402,6 +459,7 @@
 
 	&:hover {
 		> .sub-menu {
+			//@include element-invisible-off;
 			display: table;
 			> li {
 				//display: table-cell;
@@ -416,52 +474,38 @@
 
 //Personal Sub Nav
 .personal-nav {
-	> .sub-menu {
-		@include clearfix();
-	}
-	> .sub-menu {
-		@include rem-fallback(padding, 2.4, 0, 3.6);
-	}
+
 	> .sub-menu > li {
 		display: block;
 		width: 19%;
 		float: left;
-		@include rem-fallback(padding, 0, 2.4);
 	}
-	> .sub-menu .right-container {
-		width: 24%;
-	}
+
 }
 
 //Business Sub Nav
 .business-nav {
-//testing
-//ul.sub-menu {display: block;}
+
 }
 
 //SBA Financing Sub Nav
 .sba-nav {
-	> .sub-menu {
-		@include rem-fallback(padding, 2.4, 0, 3.6);
-	}
-	> .sub-menu > li {
-		@include rem-fallback(padding, 0, 2.4);
-	}
-	.right-container, > .sub-menu > li {
+
+	> .sub-menu .stacked-container {
 		width: 24%;
-		float: right;
-	}
-	> .sub-menu > li:first-child {
 		float: left;
-		width: 76%;
 	}
-	.button, .button:hover, .button:focus {
-		background: none transparent;
-		box-shadow: none;
+	.left-52 {
+		float: left;
+		width: 52%;
 	}
-	.button:after {}
-	.button a {
+
+	.nav-cta a {
 		@include red-button-cta;
+		@include cta-arrow-right;
+		@include rem-fallback(padding, .8, 2, 1.5, 1.5);
+		@include rem-fallback(font-size, 1.6);
+		@include rem-fallback(margin-top, 1.4);
 		border-bottom: none;
 		text-transform: none;
 	}
@@ -470,7 +514,14 @@
 
 //Residential Financing Sub Nav
 .residential-nav {
-
+	> .sub-menu > li {
+		display: block;
+		width: 38%;
+		float: left;
+	}
+	> .sub-menu .stacked-container {
+		width: 38%;
+	}
 }
 
 
@@ -492,7 +543,7 @@
 		li a {
 			@include rem-fallback(font-size, 1.6);
 		}
-		li li , .right-side {
+		li li , .right-side, .stacked-sub {
 			a {
 				@include rem-fallback(font-size, 1.6);
 			}
@@ -500,6 +551,10 @@
 				@include rem-fallback(font-size, 1.6);
 			}
 		}
+	}
+	.sba-nav .nav-cta a {
+		@include rem-fallback(padding, 1.7, 3, 2);
+		@include rem-fallback(font-size, 1.8);
 	}
 	.toggle-sub__parent {
 		> a {
