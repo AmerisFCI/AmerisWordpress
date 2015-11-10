@@ -242,7 +242,11 @@ function get_ameris_sidebar_menu() {
 
 	// blog/single pages: About Us menu
 	if ( is_home() || is_single() ) {
+
 		$top_level_id = 61;
+		if ( is_singular( 'lending_expert' ) )
+			$top_level_id = 27;
+		
 		$top_level = get_post( $top_level_id );
 		$output = wp_nav_menu( array(
 			'theme_location'     => 'sidebar-' . $top_level_id,
@@ -352,4 +356,29 @@ class Ameris_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$indent = str_repeat("\t", $depth);
 		$output .= "\n$indent<ul class=\"sub-menu children\">\n";
 	}
+}
+
+/**
+ * Check to see if the current page has a banner image.
+ */
+function ameris_has_banner_image() {
+
+	if ( is_singular( 'lending_expert' ) || is_singular( 'leadership' ) ) {
+
+		if ( is_singular( 'leadership' ) )
+			$post_type = get_post_type_object( 'leadership' );
+		elseif ( is_singular( 'lending_expert' ) )
+			$post_type = get_post_type_object( 'lending_expert' );
+
+		$parent = get_page_by_path( $post_type->rewrite['slug'] );
+
+		if ( $parent )
+			return has_post_thumbnail( $parent->ID );
+		else
+			return false;
+
+	} else {
+		return has_post_thumbnail();
+	}
+
 }

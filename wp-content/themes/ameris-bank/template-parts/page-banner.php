@@ -4,20 +4,9 @@
  */
 ?>
 
-<div class="banner <?php if ( has_post_thumbnail() ) { ?>has-banner-image<?php } ?><?php if ( get_field( 'banner_blurb' ) ) { ?>has-blurb<?php } ?>">
+<div class="banner <?php if ( ameris_has_banner_image() ) { ?>has-banner-image<?php } ?><?php if ( get_field( 'banner_blurb' ) ) { ?>has-blurb<?php } ?>">
 
-    <?php if ( has_post_thumbnail() ) { ?>
-    <div class="banner-image">
-        <?php if ( get_field( 'banner_blurb' ) ) {
-            the_post_thumbnail( 'landing-banner' ); ?>
-            <div class="banner-blurb__wrap">
-                <div class="banner-blurb"><?php the_field( 'banner_blurb' ); ?></div>
-            </div>
-        <?php } else {
-            the_post_thumbnail( 'product-banner' );
-        } ?>
-    </div>
-    <?php } ?>
+    <?php get_template_part( 'template-parts/page', 'banner-image' ); ?>
 
     <header class="banner-text__inner-wrap inner-wrap">
 
@@ -42,9 +31,13 @@
                         <?php echo get_the_title( get_option( 'page_for_posts', 0 ) ); ?>
                     </a></h2>
 
-                <?php // if a leader - get the title for the leadership main page
+            <?php // if a leader - get the title for the leadership main page
             } elseif( is_singular( 'leadership' ) ) { ?>
                 <h2>Leadership</h2>
+
+            <?php // if a lending expert - get the title for the lending expert main page
+            } elseif( is_singular( 'lending_expert' ) ) { ?>
+                <h2>Lending Experts</h2>
 
             <?php } elseif ( is_archive() ) { ?>
                 <h1><?php the_archive_title(); ?></h1>
