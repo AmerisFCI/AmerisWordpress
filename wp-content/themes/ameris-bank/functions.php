@@ -74,7 +74,7 @@ add_action( 'after_setup_theme', 'courage_content_width', 0 );
 function courage_scripts() {
 	wp_enqueue_style( 'bravery-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'bravery-scripts', get_template_directory_uri() . '/js/build/scripts.min.js', array( 'jquery' ), '20150923', true );
+	wp_enqueue_script( 'bravery-scripts', get_template_directory_uri() . '/js/build/scripts.min.js', array( 'jquery', 'hoverIntent' ), '20150923', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
