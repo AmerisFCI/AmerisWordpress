@@ -14,22 +14,28 @@
 
 		var isTabbed = $( this ).parent( 'li' ).hasClass( 'has-tabbed-sub' );
 		
-		// get all right-side items
-		var rightItems = $( this ).find( '.right-side' ); 
-
-		if ( isTabbed ) {
-
-			// get their parent menu
-			var origParent = rightItems.parent( '.sub-menu' );
-		
-			// remove from their parent menu
-			rightItems.detach();
-
-			// add after the parent menu, inside a new container
-			rightItems.insertAfter( origParent ).wrapAll( '<div class="right-container"><ul class="sub-menu"></ul></div>' );
-
+		if ( !isTabbed ) {
+			$( this ).find( '.right-side' ).wrapAll( '<li class="right-container"><ul class="sub-menu"></ul></li>' );
 		} else {
-			rightItems.wrapAll( '<li class="right-container"><ul class="sub-menu"></ul></li>' );
+			
+			var rightItems;
+
+			$( this ).find( '.toggle-sub__parent > .tab-container > .sub-menu' ).each( function() {
+				
+				// get right-hand items
+				rightItems = $( this ).find( '.right-side' );
+				
+				// get their parent menu
+				var origParent = rightItems.parent( '.sub-menu' );
+			
+				// remove from their parent menu
+				rightItems.detach();
+
+				// add after the parent menu, inside a new container
+				rightItems.insertAfter( origParent ).wrapAll( '<div class="right-container"><ul class="sub-menu"></ul></div>' );
+
+			} );
+
 		}
 	
 	} );
