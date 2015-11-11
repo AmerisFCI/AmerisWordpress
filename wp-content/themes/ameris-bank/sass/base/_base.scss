@@ -13,10 +13,3 @@ body{
   line-height: $base-line-height;
 	color: $text-color;
 }
-
-@include breakpoint($mobile) {
-	* {
-		overflow-wrap: break-word;
-		word-wrap: break-word;
-	}
-}

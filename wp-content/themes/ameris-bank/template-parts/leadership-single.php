@@ -7,27 +7,20 @@
 
 ?>
 
-<div class="image-banner">
-	<?php
-		// find leadership page
-		$leadership = get_post_type_object( 'leadership' );
-		$parent = get_page_by_path( $leadership->rewrite['slug'] );
-
-		// use featured image from leadership page
-		echo get_the_post_thumbnail( $parent->ID, 'full' );
-	?>
-</div>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'leadership leadership--single' ); ?>>
 	<header class="entry-title">
-		<h1><?php the_title(); ?></h1>
-		<div class="position"><?php the_field( 'position' ); ?></div>
+		<h1 class="leadership__name"><?php the_title(); ?></h1>
+		<?php if ( get_field( 'position' ) ) { ?>
+			<div class="leadership__position"><?php the_field( 'position' ); ?></div>
+		<?php } ?>
 		<?php if ( get_field( 'company' ) ) { ?>
-			<div class="company"><?php the_field( 'company' ); ?></div>
+			<div class="leadership__company"><?php the_field( 'company' ); ?></div>
 		<?php } ?>
 	</header>
-	<div class="entry-content">
-		<?php the_field( 'bio' ); ?>
-	</div><!-- .entry-content -->
+	<?php if ( get_field( 'bio' ) ) { ?>
+		<div class="entry-content">
+			<div class="leadership__bio"><?php the_field( 'bio' ); ?></div>
+		</div><!-- .entry-content -->
+	<?php } ?>
 </article><!-- #post-## -->
 

@@ -140,13 +140,6 @@ body {
   color: #3d3d3d;
 }
 
-@media (max-width: 529px) {
-  /* line 18, sass/base/_base.scss */
-  * {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  }
-}
 /* line 6, sass/base/_accessibility.scss */
 .element-invisible,
 .element-focusable {
