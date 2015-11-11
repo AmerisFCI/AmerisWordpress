@@ -1772,7 +1772,7 @@ a:hover, a:active {
   overflow: auto;
 }
 /* line 58, sass/components/navigation/_menu-main.scss */
-.nav-menu li.active .stacked-container > ul, .nav-menu li.active .right-container > ul, .nav-menu li:hover .stacked-container > ul, .nav-menu li:hover .right-container > ul, .nav-menu li.focus .stacked-container > ul, .nav-menu li.focus .right-container > ul {
+.nav-menu li.active .stacked-container > ul, .nav-menu li.active .right-container > ul, .nav-menu li.hover .stacked-container > ul, .nav-menu li.hover .right-container > ul, .nav-menu li.focus .stacked-container > ul, .nav-menu li.focus .right-container > ul {
   position: static !important;
   clip: auto;
   height: auto;
@@ -1942,7 +1942,7 @@ a:hover, a:active {
     position: relative;
   }
   /* line 187, sass/components/navigation/_menu-main.scss */
-  .nav-menu a:hover, .nav-menu a:focus {
+  .nav-menu a.hover, .nav-menu a:focus {
     background-color: #ffffff;
     color: #15397f;
   }
@@ -2030,7 +2030,7 @@ a:hover, a:active {
     margin-bottom: 1rem;
   }
   /* line 250, sass/components/navigation/_menu-main.scss */
-  .nav-menu li.active > ul, .nav-menu li.active .stacked-container > ul, .nav-menu li.active .right-container > ul, .nav-menu li:hover > ul, .nav-menu li:hover .stacked-container > ul, .nav-menu li:hover .right-container > ul, .nav-menu li.focus > ul, .nav-menu li.focus .stacked-container > ul, .nav-menu li.focus .right-container > ul {
+  .nav-menu li.active > ul, .nav-menu li.active .stacked-container > ul, .nav-menu li.active .right-container > ul, .nav-menu li.hover > ul, .nav-menu li.hover .stacked-container > ul, .nav-menu li.hover .right-container > ul, .nav-menu li.focus > ul, .nav-menu li.focus .stacked-container > ul, .nav-menu li.focus .right-container > ul {
     position: static !important;
     clip: auto;
     height: auto;
@@ -2038,7 +2038,7 @@ a:hover, a:active {
     overflow: auto;
   }
   /* line 255, sass/components/navigation/_menu-main.scss */
-  .nav-menu > li.active > ul, .nav-menu > li:hover > ul, .nav-menu > li.focus > ul {
+  .nav-menu > li.active > ul, .nav-menu > li.hover > ul, .nav-menu > li.focus > ul {
     width: 100%;
     position: absolute !important;
   }
@@ -2083,12 +2083,12 @@ a:hover, a:active {
     transition: all .2s;
   }
   /* line 278, sass/components/navigation/_menu-main.scss */
-  .nav-menu > li:hover, .nav-menu > li:focus {
+  .nav-menu > li.hover, .nav-menu > li.focus {
     background-color: #ffffff;
     color: #15397f;
   }
   /* line 281, sass/components/navigation/_menu-main.scss */
-  .nav-menu > li:hover > a, .nav-menu > li:focus > a {
+  .nav-menu > li.hover > a, .nav-menu > li.focus > a {
     color: #15397f;
   }
   /* line 288, sass/components/navigation/_menu-main.scss */
@@ -2346,16 +2346,16 @@ a:hover, a:active {
     pointer-events: all;
   }
   /* line 453, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover, .toggle-sub__parent.visible-tab {
+  .toggle-sub__parent.hover, .toggle-sub__parent.visible-tab {
     background: transparent;
   }
   /* line 455, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover > a, .toggle-sub__parent.visible-tab > a {
+  .toggle-sub__parent.hover > a, .toggle-sub__parent.visible-tab > a {
     border-color: #d31145;
     opacity: 1;
   }
   /* line 459, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover .tab-container, .toggle-sub__parent.visible-tab .tab-container {
+  .toggle-sub__parent.hover .tab-container, .toggle-sub__parent.visible-tab .tab-container {
     position: static !important;
     clip: auto;
     height: auto;
@@ -2567,7 +2567,7 @@ a:hover, a:active {
     width: 30%;
   }
   /* line 605, sass/components/navigation/_menu-main.scss */
-  .toggle-sub__parent:hover .tab-container, .toggle-sub__parent.visible-tab .tab-container, .toggle-sub__parent.focus .tab-container {
+  .toggle-sub__parent.hover .tab-container, .toggle-sub__parent.visible-tab .tab-container, .toggle-sub__parent.focus .tab-container {
     width: 70% !important;
   }
 

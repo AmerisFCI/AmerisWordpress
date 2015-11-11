@@ -54,10 +54,10 @@
 		display: block;
 		@include element-invisible-off;
 	}
-	li.active, li:hover, li.focus {
+	li.active, li.hover, li.focus {
 		.stacked-container > ul, , .right-container > ul {
-		@include element-invisible-off;
-	}
+			@include element-invisible-off;
+		}
 	}
 
 	.menu-item-has-children {
@@ -184,7 +184,7 @@
 		@include rem-fallback(padding, 1.5, 1, 2);
 		@include rem-fallback(font-size, 1.4);
 		position: relative;
-		&:hover, &:focus {
+		&.hover, &:focus {
 			background-color: $white;
 			color: $link-color;
 		}
@@ -246,13 +246,13 @@
 	}
 
 
-	li.active, li:hover, li.focus {
+	li.active, li.hover, li.focus {
 		> ul, .stacked-container > ul, , .right-container > ul {
 			@include element-invisible-off;
 		}
 	}
 
-	> li.active > ul, > li:hover > ul, > li.focus > ul {
+	> li.active > ul, > li.hover > ul, > li.focus > ul {
 		width: 100%;
 		position: absolute !important;
 	}
@@ -275,7 +275,7 @@
 	> li {
 		display: inline-block;
 		transition: all .2s;
-		&:hover, &:focus {
+		&.hover, &.focus {
 			background-color: $white;
 			color: $link-color;
 			> a {
@@ -450,7 +450,7 @@
 			pointer-events: all;
 		}
 		
-		&:hover, &.visible-tab {
+		&.hover, &.visible-tab {
 			background: transparent;
 			> a {
 				border-color: $red;
@@ -602,7 +602,7 @@
 		> a {
 			width: 30%;
 		}
-		&:hover .tab-container, &.visible-tab .tab-container, &.focus .tab-container {
+		&.hover .tab-container, &.visible-tab .tab-container, &.focus .tab-container {
 			width: 70% !important;
 		}
 	}
