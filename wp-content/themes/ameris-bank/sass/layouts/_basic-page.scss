@@ -21,7 +21,12 @@
 body:not(.home) .site-main {
 	box-sizing: border-box;
 	@include rem-fallback(padding, 2.4);
-	@include rem-fallback(max-width, 85);
+}
+
+.blog, .page-template-product-page {
+	.site-main {
+		@include rem-fallback(max-width, 85);
+	}
 }
 
 
