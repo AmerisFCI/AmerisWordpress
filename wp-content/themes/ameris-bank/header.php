@@ -62,8 +62,10 @@
 				) ); ?>
 
 				<form class="search-form">
-					<input type="text" name="s" placeholder="What are you looking for?" value="<?php the_search_query(); ?>" />
-					<input type="submit" value="Search" />
+					<label class="element-invisible" id="search-terms">Enter Your Search Terms</label>
+					<input type="text" name="s" aria-labelledby="search-terms" placeholder="What are you looking for?" title="Enter Your Search Terms" value="<?php the_search_query(); ?>" />
+					<label class="element-invisible" id="search-submit">Submit Your Search</label>
+					<input type="submit" aria-labelledby="search-submit" value="Search" />
 				</form>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
