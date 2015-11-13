@@ -61,7 +61,7 @@
 					'fallback_cb'     => false
 				) ); ?>
 
-				<form class="search-form">
+				<form class="search-form" action="<?php echo site_url(); ?>">
 					<label class="element-invisible" id="search-terms">Enter Your Search Terms</label>
 					<input type="text" name="s" aria-labelledby="search-terms" placeholder="What are you looking for?" title="Enter Your Search Terms" value="<?php the_search_query(); ?>" />
 					<label class="element-invisible" id="search-submit">Submit Your Search</label>
