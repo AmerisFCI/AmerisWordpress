@@ -27,8 +27,10 @@
 				) ); ?>
 
 				<form class="newsletter-signup">
-					<input class="newsletter-signup__email" type="text" name="s" placeholder="Enter your email address&hellip;" value="" />
-					<span class="newsletter-signup__submit__icon"><input class="newsletter-signup__submit" type="submit" value="Newsletter Signup" /></span>
+					<label class="element-invisible" id="email">Enter Your Email Address to Sign up for the Newsletter</label>
+					<input class="newsletter-signup__email" aria-labelledby="email" type="text" name="s" placeholder="Enter your email address&hellip;" value="" />
+					<label class="element-invisible" id="email-submit">Enter Your Email Address to Sign up for the Newsletter</label>
+					<span class="newsletter-signup__submit__icon"><input class="newsletter-signup__submit" type="submit" aria-labelledby="email-submit" value="Newsletter Signup" /></span>
 				</form>
 
 			</div>
