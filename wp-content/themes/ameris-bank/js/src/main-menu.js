@@ -25,6 +25,10 @@ var mainMenu = {
 
 		// handle focus behavior
 		jQuery( '.toggle-sub__parent > a' ).on( 'focus', mainMenu.removeVisibleClass );
+		jQuery( '.toggle-sub__parent > a' ).on( 'focus', mainMenu.focusTabSize );
+
+		// handle mouseenter
+		jQuery( '.has-tabbed-sub > a' ).on( 'mouseenter', mainMenu.addVisibleClass );
 
 		// handle click behavior
 		jQuery( '#primary-menu a' ).on( 'click', mainMenu.handleClick );
@@ -78,8 +82,33 @@ var mainMenu = {
 		jQuery( '.toggle-sub__parent:first-child' ).removeClass( 'visible-tab' );
 	},
 
+	focusTabSize: function() {
+		var li = jQuery( this ).parent( 'li' );
+		mainMenu.fixTabSize( li );
+	},
+
+	fixTabSize: function( obj ) {
+		var isMobile = jQuery( '#site-navigation .menu-toggle' ).is( ':visible' );
+		if ( isMobile )
+			return;
+
+		// ensure tab is as high as it needs to be
+		var tabContainer = jQuery( obj ).find( '.tab-container' );
+		var containerHeight = tabContainer.height();
+		var overallHeight = jQuery( obj ).closest( '.sub-menu' ).height();
+		var biggestHeight = overallHeight;
+		if ( containerHeight > overallHeight )
+			biggestHeight = containerHeight;
+		tabContainer.height( biggestHeight );
+		jQuery( obj ).closest( '.sub-menu' ).css( 'min-height', biggestHeight+'px' );
+	},
+
 	hoverOver: function() {
 		jQuery( this ).addClass( 'hover' );
+		if ( jQuery( this ).hasClass( 'has-tabbed-sub' ) ) {
+			var firstTab = jQuery( this ).find( '> .sub-menu > li:first-child' );
+			mainMenu.fixTabSize( firstTab );
+		}
 	},
 
 	hoverOut: function() {
@@ -90,20 +119,7 @@ var mainMenu = {
 	tabHoverOver: function() {
 		jQuery( this ).addClass( 'hover' );
 		mainMenu.removeVisibleClass();
-
-		var isMobile = jQuery( '#site-navigation .menu-toggle' ).is( ':visible' );
-		if ( isMobile )
-			return;
-
-		// ensure tab is as high as it needs to be
-		var tabContainer = jQuery( this ).find( '.tab-container' );
-		var containerHeight = tabContainer.height();
-		var overallHeight = jQuery( this ).closest( '.sub-menu' ).height();
-		var biggestHeight = overallHeight;
-		if ( containerHeight > overallHeight )
-			biggestHeight = containerHeight;
-		tabContainer.height( biggestHeight );
-		jQuery( this ).closest( '.sub-menu' ).animate( { height: biggestHeight+'px' }, 600 );
+		mainMenu.fixTabSize( this );
 	},
 
 	tabHoverOut: function() {

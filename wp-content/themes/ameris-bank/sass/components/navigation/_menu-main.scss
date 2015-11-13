@@ -205,6 +205,7 @@
 			@include rem-fallback(padding, 1, 0);
 			@include rem-fallback(margin-bottom, 1);
 			line-height: 1;
+			padding-right:2rem;
 
 			&:after {
 				content: "";
@@ -216,6 +217,7 @@
 				transform: rotate(0deg);
 				@include rem-fallback(margin-left, 1);
 				transition: all .3s;
+				margin-right:-2rem;
 			}
 			&:hover {
 				background-color: transparent;
@@ -261,10 +263,14 @@
 		content: none;
 	}
 
-	li .menu-item-has-children > a:after {
-		content: ""; // add arrows back to children with children
-		transform: rotate(0); //remove the rotate from mobile for the right arrows
-		@include use-sprite(arrow-red-right-small);
+	li .menu-item-has-children > a {
+		padding-right:2rem;
+		&:after {
+			content: ""; // add arrows back to children with children
+			transform: rotate(0); //remove the rotate from mobile for the right arrows
+			@include use-sprite(arrow-red-right-small);
+			margin-right:-2rem;
+		}
 	}
 	ul ul {
 		@include element-invisible-off;
