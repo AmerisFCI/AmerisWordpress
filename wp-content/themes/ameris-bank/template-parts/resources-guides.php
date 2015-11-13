@@ -1,6 +1,6 @@
 <?php if ( get_field( 'resources_guides' ) ) { ?>
 <div class="related-resources">
-	<h2 class="related-resources__heading landing-heading">Resources &amp; Guides</h2>
+	<h2 class="related-resources__heading landing-heading">Tools &amp; Resources</h2>
 	<ul class="related-resources__rotator resources-rotator">
 		<?php foreach( get_field( 'resources_guides' ) as $post ) {
 			setup_postdata( $post ); ?>
