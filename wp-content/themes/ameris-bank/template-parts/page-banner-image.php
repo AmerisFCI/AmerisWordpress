@@ -12,25 +12,43 @@ if ( is_singular( 'lending_expert' ) || is_singular( 'leadership' ) ) {
 
 	// use the parent's thumbnail instead
 	if ( has_post_thumbnail( $parent->ID ) ) {
-		?><div class="banner-image">
-			<?php echo get_the_post_thumbnail( $parent->ID, 'product-banner' ); ?>
+		?><div class="wide-banner-image">
+			<?php echo get_the_post_thumbnail( $parent->ID, 'wide-banner' ); ?>
+			<?php if ( get_field( 'banner_blurb', $parent->ID ) ) { ?>
+				<div class="wide-banner-blurb__wrap">
+					<div class="wide-banner-blurb"><?php echo get_field( 'banner_blurb', $parent->ID ); ?></div>
+				</div>
+			<?php } ?>
 		</div><?php
 	} else {
-		?><div class="banner-image"></div><?php
+		?><div class="wide-banner-image"></div><?php
 	}
 
 // normal circumstances
 } else {
 
+	$wide = is_page_template( 'page-templates/leadership-page.php' ) ||
+		is_page_template( 'page-templates/about-page.php' ) ||
+		is_page_template( 'page-templates/history-page.php' ) ||
+		is_home();
+
+	$prefix = $wide ? 'wide-' : '';
+
 	if ( has_post_thumbnail() ) { ?>
-		<div class="banner-image">
+		<div class="<?php echo $prefix; ?>banner-image">
 			<?php if ( get_field( 'banner_blurb' ) ) {
-				the_post_thumbnail( 'landing-banner' ); ?>
-				<div class="banner-blurb__wrap">
-					<div class="banner-blurb"><?php the_field( 'banner_blurb' ); ?></div>
+				if ( $wide )
+					the_post_thumbnail( 'wide-banner' );
+				else
+					the_post_thumbnail( 'landing-banner' ); ?>
+				<div class="<?php echo $prefix; ?>banner-blurb__wrap">
+					<div class="<?php echo $prefix; ?>banner-blurb"><?php the_field( 'banner_blurb' ); ?></div>
 				</div>
 			<?php } else {
-				the_post_thumbnail( 'product-banner' );
+				if ( $wide )
+					the_post_thumbnail( 'wide-banner' );
+				else
+					the_post_thumbnail( 'product-banner' );
 			} ?>
 		</div>
 	<?php }
