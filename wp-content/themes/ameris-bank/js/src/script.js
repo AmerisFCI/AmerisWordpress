@@ -30,6 +30,19 @@
 	});
 
 
+	// Add slideshow functionality
+	// to the related resources
+	$('.resources-rotator').slick({
+		autoplay: false,
+		arrows: true,
+		dots: false,
+		fade: false,
+		mobileFirst: true,
+		pauseOnDotsHover: true,
+		swipeToSlide: true,
+		slidesToShow: 4,
+	});
+
 
 	// Get the homepage slideshow images to
 	// fill the parent container no matter what!
