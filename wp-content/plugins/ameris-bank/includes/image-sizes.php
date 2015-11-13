@@ -15,6 +15,7 @@ function ameris_image_sizes() {
 	add_image_size( 'slide',            3300, 1700, true );
 	add_image_size( 'landing-banner',   2400, 1300, true );
 	add_image_size( 'product-banner',   2400, 1100, true );
+	add_image_size( 'wide-banner',      1680, 525,  true );
 	
 }
 add_action( 'after_setup_theme', 'ameris_image_sizes' );
