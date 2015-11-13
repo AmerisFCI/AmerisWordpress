@@ -137,3 +137,12 @@ class Ameris_Description_Walker extends Walker_Nav_Menu {
 			$output .= sprintf( '<div class="item-description">%s</div>', $item->description );
 	}
 }
+
+/**
+ * Modify the breadcrumb trail output.
+ */
+function ameris_breadcrumb_trail_mods( $items, $args ) {
+	$home = array_shift( $items ); // bump 'home' out
+	return $items;
+}
+add_filter( 'breadcrumb_trail_items', 'ameris_breadcrumb_trail_mods', 10, 2 );

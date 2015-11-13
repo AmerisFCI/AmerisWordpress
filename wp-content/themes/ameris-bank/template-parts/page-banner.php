@@ -49,7 +49,12 @@
                 <h1>Page Not Found</h1>
 
             <?php } else { ?>
-                <h1><?php the_title(); ?></h1>
+                <h1><?php 
+                if ( get_field( 'descriptive_title' ) )
+                    the_field( 'descriptive_title' );
+                else
+                    the_title();
+                ?></h1>
             <?php } ?>
 
         </div>
