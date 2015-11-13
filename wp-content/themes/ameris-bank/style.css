@@ -1269,19 +1269,23 @@ body:not(.home) .site-main {
   box-sizing: border-box;
   padding: 24px;
   padding: 2.4rem;
+}
+
+/* line 27, sass/layouts/_basic-page.scss */
+.blog .site-main, .page-template-product-page .site-main {
   max-width: 850px;
   max-width: 85rem;
 }
 
 @media (min-width: 530px) {
-  /* line 29, sass/layouts/_basic-page.scss */
+  /* line 34, sass/layouts/_basic-page.scss */
   .inner-wrap {
     padding: 0px 20px;
     padding: 0rem 2rem;
   }
 }
 @media (min-width: 1420px) {
-  /* line 36, sass/layouts/_basic-page.scss */
+  /* line 41, sass/layouts/_basic-page.scss */
   .inner-wrap {
     padding: 0;
   }
@@ -5079,7 +5083,15 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   clear: both;
 }
 
-/* line 11, sass/components/pages/landing/_solutions.scss */
+/* line 9, sass/components/pages/landing/_solutions.scss */
+.solution .attachment-landing-solution {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+/* line 17, sass/components/pages/landing/_solutions.scss */
 .solution__title {
   font-style: normal;
   font-size: 18px;
@@ -5092,34 +5104,34 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 16, sass/components/pages/landing/_solutions.scss */
+  /* line 22, sass/components/pages/landing/_solutions.scss */
   .solution {
-    width: 48.93617%;
+    width: 31.42857%;
     clear: right;
     float: left;
     margin-left: 0;
-    margin-right: 2.12766%;
+    margin-right: 2.85714%;
   }
-  /* line 18, sass/components/pages/landing/_solutions.scss */
-  .solution:nth-child(2n) {
-    width: 48.93617%;
+  /* line 24, sass/components/pages/landing/_solutions.scss */
+  .solution:nth-child(3n) {
+    width: 31.42857%;
     clear: right;
     float: right;
     margin-right: 0;
   }
 }
 @media (min-width: 1024px) {
-  /* line 25, sass/components/pages/landing/_solutions.scss */
+  /* line 31, sass/components/pages/landing/_solutions.scss */
   .solution {
-    width: 23.40426%;
+    width: 31.42857%;
     clear: right;
     float: left;
     margin-left: 0;
-    margin-right: 2.12766%;
+    margin-right: 2.85714%;
   }
-  /* line 27, sass/components/pages/landing/_solutions.scss */
-  .solution:nth-child(4n) {
-    width: 23.40426%;
+  /* line 33, sass/components/pages/landing/_solutions.scss */
+  .solution:nth-child(3n) {
+    width: 31.42857%;
     clear: right;
     float: right;
     margin-right: 0;
@@ -5173,10 +5185,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 33, sass/components/pages/landing/_tools.scss */
+  /* line 34, sass/components/pages/landing/_tools.scss */
   .related-resource {
     width: 48.93617%;
     clear: right;
@@ -5184,7 +5197,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 35, sass/components/pages/landing/_tools.scss */
+  /* line 36, sass/components/pages/landing/_tools.scss */
   .related-resource:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -5193,7 +5206,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 @media (min-width: 1024px) {
-  /* line 42, sass/components/pages/landing/_tools.scss */
+  /* line 43, sass/components/pages/landing/_tools.scss */
   .related-resource {
     width: 23.40426%;
     clear: right;
@@ -5201,7 +5214,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 44, sass/components/pages/landing/_tools.scss */
+  /* line 45, sass/components/pages/landing/_tools.scss */
   .related-resource:nth-child(4n) {
     width: 23.40426%;
     clear: right;
