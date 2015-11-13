@@ -8,7 +8,7 @@
  */
 
 get_header();
-get_template_part( 'template-parts/page', 'banner' ); ?>
+get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 
 <div class="inner-wrap content-inner-wrap ">
 
@@ -72,7 +72,7 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar( 'left' ); ?>
+<?php get_sidebar( 'left-no-widgets' ); ?>
 
 </div>
 
