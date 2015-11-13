@@ -241,7 +241,7 @@ function get_ameris_sidebar_menu() {
 	global $post;
 
 	// blog/single pages: About Us menu
-	if ( is_home() || is_single() ) {
+	if ( is_home() || is_single() || is_search() ) {
 
 		$top_level_id = 61;
 		if ( is_singular( 'lending_expert' ) )
