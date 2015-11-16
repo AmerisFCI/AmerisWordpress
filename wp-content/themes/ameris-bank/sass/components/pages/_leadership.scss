@@ -10,18 +10,25 @@
 
 .page-template-leadership-page {
 	@include wide-banner-page-layout;
+	
+	.page-title {
+		padding: 0;
+		@include rem-fallback(padding-top, 2);
+	}
 }
 
 // Individual leaders on the page
 
 .leadership-grid__panel {
 	position: relative;
+	@include rem-fallback(margin-bottom, 2.4);
 	a {
 		text-decoration: none;
 	}
 	img {
 		width: 100%;
 		height: auto;
+		display: block;
 	}
 }
 
@@ -30,8 +37,8 @@
 	bottom: 0;
 	width: 100%;
 	background: rgba(255, 255, 255, .9);
-	@include rem-fallback(padding, 1.8, 2.4);
-	@include rem-fallback(height, 11);
+	@include rem-fallback(padding, 1.6, 2);
+	@include rem-fallback(min-height, 10);
 }
 
 .leadership-grid__name {
@@ -43,9 +50,16 @@
 	@include rem-fallback(margin-bottom, .5);
 }
 
-.leadership-grid__position {
+.leadership-grid__position, .leadership-grid__company {
 	@include rem-fallback(font-size, 1.6);
+	line-height: 1.2;
 	color: $text-color;
+}
+
+.leadership-grid__management, .leadership-grid__board {
+	&:after {
+		@include clearfix;
+	}
 }
 
 @include breakpoint ($tablet-skinny) {
