@@ -1,7 +1,7 @@
 .wide-banner-blurb {
 	@include banner-blurb;
 	position: absolute;
-	@include rem-fallback(bottom, 2);
+	@include rem-fallback(bottom, 4);
 
 }
 .wide-banner-blurb__wrap {
@@ -10,15 +10,19 @@
 	position: relative;
 	text-shadow: 0 0 14rem rgba(0,0,0,.8);
 	height: 100%;
+	text-align: center;
 	&:after {
 		content: '';
 		display: block;
 		position: absolute;
-		@include rem-fallback(border-width, 3);
+		width: 0;
+		height: 0;
 		border: solid transparent;
+		@include rem-fallback(border-width, 3);
 		border-bottom-color: $white;
-		box-sizing: content-box;
 		bottom: 0;
+		left: 50%;
+		@include rem-fallback(margin-left, -3);
 	}
 }
 
@@ -35,5 +39,22 @@
 .wide-banner {
 	~ .inner-wrap .sidebar-left {
 		margin-left: 0;
+	}
+}
+
+@include breakpoint($tablet-wide-up) {
+	.wide-banner-blurb__wrap {
+		text-align: left;
+		&:after {
+			@include rem-fallback(border-width, 5);
+			@include rem-fallback(left, 3);
+			margin-left: 0;
+		}
+	}
+	.wide-banner-blurb {
+		@include banner-blurb;
+		position: absolute;
+		@include rem-fallback(bottom, 6);
+
 	}
 }
