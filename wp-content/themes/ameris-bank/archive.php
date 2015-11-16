@@ -25,7 +25,7 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php the_posts_pagination(); ?>
 
 		<?php else : ?>
 
