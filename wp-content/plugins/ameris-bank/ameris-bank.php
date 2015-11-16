@@ -15,3 +15,4 @@ require_once( $includes . 'tinymce.php' );
 
 require_once( $includes . 'widget-account.php' );
 require_once( $includes . 'widget-callout.php' );
+require_once( $includes . 'widget-recent-posts.php' );

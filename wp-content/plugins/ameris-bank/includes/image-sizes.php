@@ -8,6 +8,8 @@ function ameris_image_sizes() {
 	
 	add_image_size( 'news-home',        288,  169,  true );
 	add_image_size( 'newsroom-thumb',   250,  171,  true );
+	add_image_size( 'newsroom-single',  1030, 582,  true );
+	add_image_size( 'article-sidebar',  295,  186,  true );
 	add_image_size( 'circle-icon',      119,  119,  true );
 	add_image_size( 'leader',           332,  420,  true );
 	add_image_size( 'landing-solution', 327,  197,  true );
@@ -17,6 +19,7 @@ function ameris_image_sizes() {
 	add_image_size( 'landing-banner',   2400, 1300, true );
 	add_image_size( 'product-banner',   2400, 1100, true );
 	add_image_size( 'wide-banner',      1680, 525,  true );
+
 	
 }
 add_action( 'after_setup_theme', 'ameris_image_sizes' );
