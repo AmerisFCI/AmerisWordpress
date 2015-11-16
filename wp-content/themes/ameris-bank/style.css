@@ -4018,10 +4018,24 @@ footer .menu-item {
   max-width: 1420px;
   max-width: 142rem;
   margin: 0 auto;
+  position: relative;
   text-shadow: 0 0 14rem rgba(0, 0, 0, 0.8);
+  height: 100%;
+}
+/* line 13, sass/components/sections/_wide-banner.scss */
+.wide-banner-blurb__wrap:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-width: 30px;
+  border-width: 3rem;
+  border: solid transparent;
+  border-bottom-color: #ffffff;
+  box-sizing: content-box;
+  bottom: 0;
 }
 
-/* line 13, sass/components/sections/_wide-banner.scss */
+/* line 25, sass/components/sections/_wide-banner.scss */
 .wide-banner-image {
   overflow: hidden;
   position: relative;
@@ -4048,13 +4062,13 @@ footer .menu-item {
   height: 100%;
 }
 
-/* line 18, sass/components/sections/_wide-banner.scss */
+/* line 30, sass/components/sections/_wide-banner.scss */
 .attachment-wide-banner {
   margin: 0 auto;
   display: block;
 }
 
-/* line 24, sass/components/sections/_wide-banner.scss */
+/* line 36, sass/components/sections/_wide-banner.scss */
 .wide-banner ~ .inner-wrap .sidebar-left {
   margin-left: 0;
 }
