@@ -7,23 +7,22 @@
 
 ?>
 
-<div class="image-banner">
-	<?php
-		// find newsroom page
-		$newsroom_id = get_option('page_for_posts', 0 );
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'single-article' ); ?>>
 
-		// use featured image from newsroom page
-		echo get_the_post_thumbnail( $newsroom_id, 'full' );
-	?>
-</div>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<div class="entry-meta">
-			<?php courage_posted_on(); ?>
-		</div><!-- .entry-meta -->
+	<header class="single-article__header entry-header">
+		<h1 class="single-article__title entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
-	<div class="entry-content">
+
+	<div class="single-article__meta entry-meta">
+		<span class="single-article__date news-date"><?php the_time( 'M j, Y' ); ?></span>
+		<span class="single-article__category news-topic"><?php the_category( ', ' ); ?></span>
+	</div><!-- .entry-meta -->
+
+	<div class="single-article__image image-banner">
+		<?php the_post_thumbnail( 'newsroom-single' ); ?>
+	</div>
+	
+	<div class="single-article__content entry-content">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -32,7 +31,5 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<footer class="entry-footer">
-		<?php courage_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	
 </article><!-- #post-## -->
