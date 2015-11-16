@@ -24,7 +24,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 
 	<div class="content-below">
 		<div class="leadership-grid">
-			<h3 class="leadership-grid__heading">Executive Management</h3>
+			<h2 class="leadership-grid__heading">Executive Management</h2>
 			<div class="leadership-grid__management">
 				<?php $management = get_field( 'executive_management' );
 				if ( $management ) {
@@ -35,7 +35,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail( 'leader' ); ?>
 								<div>
-									<h4 class="leadership-grid__name"><?php the_title(); ?></h4>
+									<h3 class="leadership-grid__name"><?php the_title(); ?></h3>
 									<div class="leadership-grid__position"><?php the_field( 'position' ); ?></div>
 								</div>
 							</a>

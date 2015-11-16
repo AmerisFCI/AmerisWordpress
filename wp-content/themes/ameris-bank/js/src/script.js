@@ -67,6 +67,29 @@
 		theWindow.resize(resizeBg).trigger("resize");
 	});
 
+	// Set wide banner images to
+	// fill the parent container no matter what!
+	$(window).load(function() {
+
+		var theWindow        = $(window),
+			$wideimg        = $('.wide-banner-image img'),
+			theParent		 = $wideimg.parent(),
+			aspectRatio      = $wideimg.width() / $wideimg.height();
+
+		function resizeWideBanner() {
+			if ( (theParent.width() / theParent.height()) < aspectRatio ) {
+				$wideimg
+					.removeClass()
+					.addClass('slideheight');
+			} else {
+				$wideimg
+					.removeClass()
+					.addClass('slidewidth');
+			}
+		}
+		theWindow.resize(resizeWideBanner).trigger("resize");
+	});
+
 
 	// Get the banner image at the top of landing and product pages
 	// to have the margin + content width, and resize properly
@@ -172,5 +195,6 @@ function amerisPositionSearchBar() {
 }
 jQuery( document ).ready( amerisPositionSearchBar );
 jQuery( window ).resize( amerisPositionSearchBar );
+
 
 

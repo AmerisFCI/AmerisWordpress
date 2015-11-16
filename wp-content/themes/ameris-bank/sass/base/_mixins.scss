@@ -311,3 +311,87 @@ $sprite-high-res-suffix: '-2x' !default;
   font-weight: 400;
   text-transform: none;
 }
+
+@mixin banner-image {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    position: absolute;
+    max-width: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    &.slidewidth {
+      width: 100%;
+      height: auto;
+    }
+
+    &.slideheight {
+      width: auto;
+      height: 100%;
+    }
+
+  }
+}
+
+@mixin banner-blurb {
+  @include rem-fallback(padding, 2);
+  @include rem-fallback(font-size, 6);
+  @include rem-fallback(letter-spacing, -.1);
+  line-height: 1;
+  color: $white;
+  font-style: italic;
+  font-family: $font-branding;
+  font-weight: 300;
+
+  span, em {
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $red;
+    }
+  }
+}
+
+@mixin wide-banner-page-layout {
+  .sidebar-menu {
+    background: transparent;
+  }
+
+  @include breakpoint($narrow-to-desktop) {
+    .sidebar-menu {
+      @include rem-fallback(padding-top, 4.4);
+    }
+    .sidebar-left {
+      clear: none;
+    }
+    #content .content-area {
+      @include grid-span(6, 4);
+    }
+  }
+}
+
+@mixin content-below {
+  @include rem-fallback(max-width, 110);
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+
+}
+
+@mixin content-below-heading {
+  @include rem-fallback(margin-top, 3);
+  @include rem-fallback(padding-top, 3);
+  @include rem-fallback(border-top-width, .2);
+  border-top: solid $paleblue;
+}
