@@ -390,7 +390,7 @@ $sprite-high-res-suffix: '-2x' !default;
 }
 
 @mixin content-below-heading {
-  @include rem-fallback(margin-top, 3);
+  @include rem-fallback(margin-top, 5);
   @include rem-fallback(padding-top, 3);
   @include rem-fallback(border-top-width, .2);
   border-top: solid $paleblue;
