@@ -2,59 +2,20 @@
 .banner-image {
 
 	float: right;
-	overflow: hidden;
-	position: relative;
 
-	img {
-		position: absolute;
-		max-width: none;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: auto;
 
-		&.slidewidth {
-			width: 100%;
-			height: auto;
-		}
-
-		&.slideheight {
-			width: auto;
-			height: 100%;
-		}
-
-	}
+	@include banner-image;
 
 }
 
 
 
-.banner-blurb {
-	float: right;
-	@include rem-fallback(padding, 2);
-	@include rem-fallback(max-width, 85);
-	@include rem-fallback(font-size, 6);
-	@include rem-fallback(letter-spacing, -.1);
-	line-height: 1;
-	color: $white;
-	font-style: italic;
-	font-family: $font-branding;
-	font-weight: 300;
 
-	span, em {
-		display: inline-block;
-		position: relative;
-		&:after {
-			content: "";
-			display: block;
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			width: 100%;
-			height: 3px;
-			background-color: $red;
-		}
-	}
+
+.banner-blurb {
+	@include banner-blurb;
+	float: right;
+	@include rem-fallback(max-width, 85);
 }
 
 .page-title {

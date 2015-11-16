@@ -1,0 +1,27 @@
+.wide-banner-blurb {
+	@include banner-blurb;
+	position: absolute;
+	@include rem-fallback(bottom, 2);
+
+}
+.wide-banner-blurb__wrap {
+	@include rem-fallback(max-width, 142);
+	margin: 0 auto;
+	text-shadow: 0 0 14rem rgba(0,0,0,.8);
+}
+
+.wide-banner-image {
+	@include banner-image;
+	@include rem-fallback(height, 50);
+}
+
+.attachment-wide-banner {
+	margin: 0 auto;
+	display: block;
+}
+
+.wide-banner {
+	~ .inner-wrap .sidebar-left {
+		margin-left: 0;
+	}
+}

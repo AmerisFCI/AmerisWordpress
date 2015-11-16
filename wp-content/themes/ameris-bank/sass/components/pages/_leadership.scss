@@ -1,9 +1,17 @@
+.content-below {
+	@include content-below;
+}
 
+.page-template-leadership-page {
+	@include wide-banner-page-layout;
+}
 
-.leadership-grid {
-	@include rem-fallback(max-width, 110);
-	margin-left: auto;
-	margin-right: auto;
+.leadership-grid__panel {
+
+}
+
+.leadership-grid__heading {
+	@include content-below-heading;
 }
 
 @include breakpoint ($tablet-skinny) {
