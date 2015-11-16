@@ -7,11 +7,29 @@
 }
 
 .leadership-grid__panel {
+	position: relative;
+	a {
+		text-decoration: none;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
 
+.leadership-grid__name-group {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, .9);
 }
 
 .leadership-grid__heading {
 	@include content-below-heading;
+}
+
+.leadership-grid__name {
+
 }
 
 @include breakpoint ($tablet-skinny) {

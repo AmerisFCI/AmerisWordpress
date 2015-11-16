@@ -5370,7 +5370,28 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 
-/* line 13, sass/components/pages/_leadership.scss */
+/* line 9, sass/components/pages/_leadership.scss */
+.leadership-grid__panel {
+  position: relative;
+}
+/* line 11, sass/components/pages/_leadership.scss */
+.leadership-grid__panel a {
+  text-decoration: none;
+}
+/* line 14, sass/components/pages/_leadership.scss */
+.leadership-grid__panel img {
+  width: 100%;
+  height: auto;
+}
+/* line 18, sass/components/pages/_leadership.scss */
+.leadership-grid__panel .leadership-grid__name-group {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* line 26, sass/components/pages/_leadership.scss */
 .leadership-grid__heading {
   margin-top: 30px;
   margin-top: 3rem;
@@ -5379,10 +5400,12 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   border-top-width: 2px;
   border-top-width: 0.2rem;
   border-top: solid #d7e7f2;
+  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 18, sass/components/pages/_leadership.scss */
+  /* line 35, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     width: 48.93617%;
     clear: right;
@@ -5390,17 +5413,17 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 20, sass/components/pages/_leadership.scss */
+  /* line 37, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 23, sass/components/pages/_leadership.scss */
+  /* line 40, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n+1) {
     clear: both;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 30, sass/components/pages/_leadership.scss */
+  /* line 47, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     width: 31.91489%;
     clear: right;
@@ -5408,17 +5431,17 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 32, sass/components/pages/_leadership.scss */
+  /* line 49, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 35, sass/components/pages/_leadership.scss */
+  /* line 52, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n+1) {
     clear: both;
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
-  /* line 43, sass/components/pages/_leadership.scss */
+  /* line 60, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     width: 48.93617%;
     clear: right;
@@ -5426,17 +5449,17 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 45, sass/components/pages/_leadership.scss */
+  /* line 62, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 48, sass/components/pages/_leadership.scss */
+  /* line 65, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n+1) {
     clear: both;
   }
 }
 @media (min-width: 1200px) {
-  /* line 55, sass/components/pages/_leadership.scss */
+  /* line 72, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     width: 31.91489%;
     clear: right;
@@ -5444,11 +5467,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 57, sass/components/pages/_leadership.scss */
+  /* line 74, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 60, sass/components/pages/_leadership.scss */
+  /* line 77, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n+1) {
     clear: both;
   }
