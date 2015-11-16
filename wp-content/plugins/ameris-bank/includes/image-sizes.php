@@ -7,6 +7,7 @@
 function ameris_image_sizes() {
 	
 	add_image_size( 'news-home',        288,  169,  true );
+	add_image_size( 'newsroom-thumb',   250,  171,  true );
 	add_image_size( 'circle-icon',      119,  119,  true );
 	add_image_size( 'leader',           332,  285,  true );
 	add_image_size( 'landing-solution', 327,  197,  true );
