@@ -32,6 +32,16 @@
 	@include rem-fallback(margin-bottom, 2.4);
 	a {
 		text-decoration: none;
+		display: block;
+		&:hover, &:focus {
+			.leadership-grid__name-group {
+				@include rem-fallback(min-height, 12.4);
+			}
+			.leadership-grid__name:after {
+				opacity: 1;
+				@include rem-fallback(left, 1.9);
+			}
+		}
 	}
 	img {
 		width: 100%;
@@ -47,6 +57,8 @@
 	background: rgba(255, 255, 255, .9);
 	@include rem-fallback(padding, 1.6, 2);
 	@include rem-fallback(min-height, 10);
+	transition: all .3s;
+	transition-timing-function: ease-in-out;
 }
 
 .leadership-grid__name {
@@ -54,8 +66,17 @@
 	font-weight: bold;
 	color: $heading-color;
 	text-transform: none;
+	display: inline-block;
 	@include rem-fallback(font-size, 2);
 	@include rem-fallback(margin-bottom, .5);
+
+	@include red-arrow-right-small;
+	&:after {
+		top: 0;
+		transition: all .3s;
+		opacity: 0;
+	}
+
 }
 
 .leadership-grid__position, .leadership-grid__company {
