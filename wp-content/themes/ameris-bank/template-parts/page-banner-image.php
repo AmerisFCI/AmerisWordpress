@@ -34,21 +34,27 @@ if ( is_singular( 'lending_expert' ) || is_singular( 'leadership' ) ) {
 
 	$prefix = $wide ? 'wide-' : '';
 
-	if ( has_post_thumbnail() ) { ?>
+	if ( is_home() ) {
+		$post_id = get_option( 'page_for_posts' );
+	} else {
+		$post_id = null; // will use global post
+	}
+
+	if ( has_post_thumbnail( $post_id ) ) { ?>
 		<div class="<?php echo $prefix; ?>banner-image">
-			<?php if ( get_field( 'banner_blurb' ) ) {
+			<?php if ( get_field( 'banner_blurb', $post_id ) ) {
 				if ( $wide )
-					the_post_thumbnail( 'wide-banner' );
+					echo get_the_post_thumbnail( $post_id, 'wide-banner' );
 				else
-					the_post_thumbnail( 'landing-banner' ); ?>
+					echo get_the_post_thumbnail( $post_id, 'landing-banner' ); ?>
 				<div class="<?php echo $prefix; ?>banner-blurb__wrap">
-					<div class="<?php echo $prefix; ?>banner-blurb"><?php the_field( 'banner_blurb' ); ?></div>
+					<div class="<?php echo $prefix; ?>banner-blurb"><?php the_field( 'banner_blurb', $post_id ); ?></div>
 				</div>
 			<?php } else {
 				if ( $wide )
-					the_post_thumbnail( 'wide-banner' );
+					echo get_the_post_thumbnail( $post_id, 'wide-banner' );
 				else
-					the_post_thumbnail( 'product-banner' );
+					echo get_the_post_thumbnail( $post_id, 'product-banner' );
 			} ?>
 		</div>
 	<?php }

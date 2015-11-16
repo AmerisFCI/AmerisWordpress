@@ -86,6 +86,14 @@ function ameris_homepage_news_excerpts( $excerpt ) {
 		
 		$excerpt = wp_trim_words( $text, $length, $more );
 	}
+
+	// newsroom page
+	if ( is_home() ) {
+
+		$excerpt .= ' <a class="read-more news-item__more" href="' . get_permalink() . '">Read More</a>';
+
+	}
+
 	return $excerpt;
 
 }

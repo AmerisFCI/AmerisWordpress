@@ -6,8 +6,6 @@
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
  *
- * In this theme's case, it displays the main blog listing page (the newsroom).
- *
  * @package ameris-bank
  */
 
@@ -29,7 +27,7 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php the_posts_pagination(); ?>
 
 		<?php else : ?>
 
