@@ -5348,8 +5348,8 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
 /* line 7, sass/components/pages/_leadership.scss */
 .leadership-grid__heading {
-  margin-top: 30px;
-  margin-top: 3rem;
+  margin-top: 50px;
+  margin-top: 5rem;
   padding-top: 30px;
   padding-top: 3rem;
   border-top-width: 2px;
@@ -5389,24 +5389,33 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   padding-top: 2rem;
 }
 
-/* line 22, sass/components/pages/_leadership.scss */
+/* line 20, sass/components/pages/_leadership.scss */
+.leadership-grid {
+  text-align: center;
+}
+
+/* line 27, sass/components/pages/_leadership.scss */
 .leadership-grid__panel {
+  display: inline-block;
+  width: 330px;
+  width: 33rem;
+  float: none;
   position: relative;
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
-/* line 25, sass/components/pages/_leadership.scss */
+/* line 33, sass/components/pages/_leadership.scss */
 .leadership-grid__panel a {
   text-decoration: none;
 }
-/* line 28, sass/components/pages/_leadership.scss */
+/* line 36, sass/components/pages/_leadership.scss */
 .leadership-grid__panel img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 35, sass/components/pages/_leadership.scss */
+/* line 43, sass/components/pages/_leadership.scss */
 .leadership-grid__name-group {
   position: absolute;
   bottom: 0;
@@ -5418,7 +5427,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   min-height: 10rem;
 }
 
-/* line 44, sass/components/pages/_leadership.scss */
+/* line 52, sass/components/pages/_leadership.scss */
 .leadership-grid__name {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: bold;
@@ -5430,7 +5439,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   margin-bottom: 0.5rem;
 }
 
-/* line 53, sass/components/pages/_leadership.scss */
+/* line 61, sass/components/pages/_leadership.scss */
 .leadership-grid__position, .leadership-grid__company {
   font-size: 16px;
   font-size: 1.6rem;
@@ -5439,56 +5448,42 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 
 /* line 126, sass/base/_mixins.scss */
-.leadership-grid__management:after:after, .leadership-grid__board:after:after {
+.leadership-grid__management:after, .leadership-grid__board:after {
   content: "";
   display: table;
   clear: both;
 }
 
-@media (min-width: 530px) and (max-width: 739px) {
-  /* line 66, sass/components/pages/_leadership.scss */
+@media (min-width: 530px) {
+  /* line 72, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
-    width: 48.93617%;
-    clear: right;
-    float: left;
-    margin-left: 0;
-    margin-right: 2.12766%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  /* line 68, sass/components/pages/_leadership.scss */
-  .leadership-grid__panel:nth-child(2n) {
-    margin-right: 0;
-  }
-  /* line 71, sass/components/pages/_leadership.scss */
-  .leadership-grid__panel:nth-child(2n+1) {
-    clear: both;
+
+  /* line 78, sass/components/pages/_leadership.scss */
+  .leadership-grid__panel {
+    text-align: left;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 78, sass/components/pages/_leadership.scss */
+  /* line 85, sass/components/pages/_leadership.scss */
+  .leadership-grid__heading {
+    text-align: center;
+  }
+
+  /* line 88, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
-    width: 31.91489%;
+    display: inline-block;
+    width: 48.57143%;
     clear: right;
     float: left;
     margin-left: 0;
-    margin-right: 2.12766%;
-  }
-  /* line 80, sass/components/pages/_leadership.scss */
-  .leadership-grid__panel:nth-child(3n) {
-    margin-right: 0;
-  }
-  /* line 83, sass/components/pages/_leadership.scss */
-  .leadership-grid__panel:nth-child(3n+1) {
-    clear: both;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1199px) {
-  /* line 91, sass/components/pages/_leadership.scss */
-  .leadership-grid__panel {
-    width: 48.93617%;
-    clear: right;
-    float: left;
-    margin-left: 0;
-    margin-right: 2.12766%;
+    margin-right: 2.85714%;
+    max-width: 330px;
+    max-width: 33rem;
+    float: none;
   }
   /* line 93, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n) {
@@ -5499,20 +5494,21 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     clear: both;
   }
 }
-@media (min-width: 1200px) {
-  /* line 103, sass/components/pages/_leadership.scss */
+@media (min-width: 1024px) {
+  /* line 104, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
-    width: 31.91489%;
+    display: block;
+    width: 31.42857%;
     clear: right;
     float: left;
     margin-left: 0;
-    margin-right: 2.12766%;
+    margin-right: 2.85714%;
   }
-  /* line 105, sass/components/pages/_leadership.scss */
+  /* line 107, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 108, sass/components/pages/_leadership.scss */
+  /* line 110, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n+1) {
     clear: both;
   }

@@ -17,9 +17,17 @@
 	}
 }
 
+.leadership-grid {
+	text-align: center;
+	@include add-gutter(1/2);
+}
+
 // Individual leaders on the page
 
 .leadership-grid__panel {
+	display: inline-block;
+	@include rem-fallback(width, 33);
+	float: none;
 	position: relative;
 	@include rem-fallback(margin-bottom, 2.4);
 	a {
@@ -57,39 +65,31 @@
 }
 
 .leadership-grid__management, .leadership-grid__board {
-	&:after {
-		@include clearfix;
+	@include clearfix;
+}
+
+@include breakpoint ($tablet-to-desktop) {
+	.leadership-grid__panel {
+
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.leadership-grid__panel {
+		text-align: left;
 	}
 }
 
-@include breakpoint ($tablet-skinny) {
-	.leadership-grid__panel {
-		@include float-span(6);
-		&:nth-child(2n) {
-			margin-right: 0;
-		}
-		&:nth-child(2n+1) {
-			clear: both;
-		}
-	}
-}
 
 @include breakpoint ($tablet-wide) {
-	.leadership-grid__panel {
-		@include float-span(4);
-		&:nth-child(3n) {
-			margin-right: 0;
-		}
-		&:nth-child(3n+1) {
-			clear: both;
-		}
+	.leadership-grid__heading {
+		text-align: center;
 	}
-
-}
-
-@include breakpoint ($narrow) {
 	.leadership-grid__panel {
+		display: inline-block;
 		@include float-span(6);
+		@include rem-fallback(max-width, 33);
+		float: none;
 		&:nth-child(2n) {
 			margin-right: 0;
 		}
@@ -97,10 +97,12 @@
 			clear: both;
 		}
 	}
+
 }
 
-@include breakpoint ($desktop) {
+@include breakpoint ($narrow-to-desktop) {
 	.leadership-grid__panel {
+		display: block;
 		@include float-span(4);
 		&:nth-child(3n) {
 			margin-right: 0;
