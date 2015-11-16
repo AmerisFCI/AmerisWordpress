@@ -1,10 +1,18 @@
+//Major layout elements
+
 .content-below {
 	@include content-below;
+}
+
+.leadership-grid__heading {
+	@include content-below-heading;
 }
 
 .page-template-leadership-page {
 	@include wide-banner-page-layout;
 }
+
+// Individual leaders on the page
 
 .leadership-grid__panel {
 	position: relative;
@@ -22,14 +30,22 @@
 	bottom: 0;
 	width: 100%;
 	background: rgba(255, 255, 255, .9);
-}
-
-.leadership-grid__heading {
-	@include content-below-heading;
+	@include rem-fallback(padding, 1.8, 2.4);
+	@include rem-fallback(height, 11);
 }
 
 .leadership-grid__name {
+	font-family: $font-heading;
+	font-weight: bold;
+	color: $heading-color;
+	text-transform: none;
+	@include rem-fallback(font-size, 2);
+	@include rem-fallback(margin-bottom, .5);
+}
 
+.leadership-grid__position {
+	@include rem-fallback(font-size, 1.6);
+	color: $text-color;
 }
 
 @include breakpoint ($tablet-skinny) {

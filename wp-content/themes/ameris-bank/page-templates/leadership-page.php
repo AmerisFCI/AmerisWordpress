@@ -46,7 +46,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 				} ?>
 			</div>
 
-			<h3 class="leadership-grid__heading">Board of Directors</h3>
+			<h2 class="leadership-grid__heading">Board of Directors</h2>
 
 			<div class="leadership-grid__board">
 				<?php $directors = get_field( 'board_of_directors' );
