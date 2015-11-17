@@ -4,15 +4,19 @@
 			@include boldbluetext;
 			@include rem-fallback(font-size, 1.6);
 			text-decoration: none;
+			@include rem-fallback(padding, 0, .2);
+			@include rem-fallback(margin-right, .2);
 		}
 	}
 	.page-numbers {}
-	.current {}
-	.next, .previous {
+	.current {
+		color: $text-color;
+	}
+	.next, .prev {
 		text-indent: -9999px;
 		display: inline-block;
 	}
-	.previous {
+	.prev {
 		@include use-sprite(arrow-red-right-small);
 		transform: rotate(180deg);
 		@include rem-fallback(margin, 0, 1, 0, 0);

@@ -3113,14 +3113,22 @@ a:hover, a:active {
   font-size: 16px;
   font-size: 1.6rem;
   text-decoration: none;
+  padding: 0px 2px;
+  padding: 0rem 0.2rem;
+  margin-right: 2px;
+  margin-right: 0.2rem;
 }
-/* line 11, sass/components/navigation/_pager.scss */
-.pagination .next, .pagination .previous {
+/* line 12, sass/components/navigation/_pager.scss */
+.pagination .current {
+  color: #3d3d3d;
+}
+/* line 15, sass/components/navigation/_pager.scss */
+.pagination .next, .pagination .prev {
   text-indent: -9999px;
   display: inline-block;
 }
-/* line 15, sass/components/navigation/_pager.scss */
-.pagination .previous {
+/* line 19, sass/components/navigation/_pager.scss */
+.pagination .prev {
   background-image: url('images/sprite-images-s5908aa9ee5.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
@@ -3132,15 +3140,15 @@ a:hover, a:active {
   margin: 0rem 1rem 0rem 0rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 15, sass/components/navigation/_pager.scss */
-  .pagination .previous {
+  /* line 19, sass/components/navigation/_pager.scss */
+  .pagination .prev {
     background-size: 215px 2258.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
   }
 }
-/* line 20, sass/components/navigation/_pager.scss */
+/* line 24, sass/components/navigation/_pager.scss */
 .pagination .next {
   background-image: url('images/sprite-images-s5908aa9ee5.png');
   background-position: 0 -168px;
@@ -3152,7 +3160,7 @@ a:hover, a:active {
   margin: 0rem 0rem 0rem 1rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 20, sass/components/navigation/_pager.scss */
+  /* line 24, sass/components/navigation/_pager.scss */
   .pagination .next {
     background-size: 215px 2258.5px;
     background-position: 0 -65px;
