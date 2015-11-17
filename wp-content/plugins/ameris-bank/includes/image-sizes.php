@@ -19,8 +19,11 @@ function ameris_image_sizes() {
 	add_image_size( 'landing-banner',   2400, 1300, true );
 	add_image_size( 'product-banner',   2400, 1100, true );
 	add_image_size( 'wide-banner',      1680, 525,  true );
+	add_image_size( 'about-news',       735,  482,  true );
+	add_image_size( 'about-video',      713,  519,  true );
+	add_image_size( 'about-callout',    347,  329,  true );
+	add_image_size( 'about-leaders',    347,  308,  true );
 
-	
 }
 add_action( 'after_setup_theme', 'ameris_image_sizes' );
 
