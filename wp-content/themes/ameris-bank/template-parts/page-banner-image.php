@@ -28,7 +28,7 @@ if ( is_singular( 'lending_expert' ) || is_singular( 'leadership' ) ) {
 } else {
 
 	$wide = is_page_template( 'page-templates/leadership-page.php' ) ||
-		is_page_template( 'page-templates/about-page.php' ) ||
+		is_page_template( 'page-templates/about-us-page.php' ) ||
 		is_page_template( 'page-templates/history-page.php' ) ||
 		is_home();
 
