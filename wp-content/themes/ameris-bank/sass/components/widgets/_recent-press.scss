@@ -1,5 +1,8 @@
 .widget_ameris_recent_posts_widget {
 	@include rem-fallback(padding, 2.4);
+	@include rem-fallback(max-width, 31.5);
+	margin-left: auto;
+	margin-right: auto;
 
 	.widget-title {
 		@include boldbluetext;
@@ -23,5 +26,12 @@
 	@include rem-fallback(font-size, 1.6);
 	&:after {
 		top: 0;
+	}
+}
+
+.recent-post__meta {
+	text-align: center;
+	@include breakpoint($tablet-wide-up) {
+		text-align: left;
 	}
 }
