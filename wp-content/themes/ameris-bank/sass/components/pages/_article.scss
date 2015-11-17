@@ -1,0 +1,20 @@
+.single-post {
+	.site-header {
+		position: relative;
+	}
+	.site-content{
+		@include rem-fallback(margin-top, 3);
+	}
+}
+
+.single-article__header {
+	@include rem-fallback(padding, 2.4);
+}
+
+h1.single-article__title {
+	@include voice;
+}
+
+.single-article__meta {
+	@include boldbluetext;
+}

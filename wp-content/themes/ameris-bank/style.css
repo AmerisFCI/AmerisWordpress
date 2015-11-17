@@ -5976,6 +5976,42 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   display: block;
 }
 
+/* line 2, sass/components/pages/_article.scss */
+.single-post .site-header {
+  position: relative;
+}
+/* line 5, sass/components/pages/_article.scss */
+.single-post .site-content {
+  margin-top: 30px;
+  margin-top: 3rem;
+}
+
+/* line 10, sass/components/pages/_article.scss */
+.single-article__header {
+  padding: 24px;
+  padding: 2.4rem;
+}
+
+/* line 14, sass/components/pages/_article.scss */
+h1.single-article__title, .single-article__title.landing-heading {
+  font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* line 18, sass/components/pages/_article.scss */
+.single-article__meta {
+  font-style: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  color: #092764;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+}
+
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
   display: none;
@@ -6014,8 +6050,53 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 
+/* line 20, sass/components/_breadcrumbs.scss */
+.back-to-newsroom {
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+  padding-left: 22px;
+  padding-left: 2.2rem;
+  position: relative;
+}
+/* line 27, sass/components/_breadcrumbs.scss */
+.back-to-newsroom:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -168px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 14px;
+  width: 8px;
+  margin-left: 5px;
+  margin-left: 0.5rem;
+  transform: rotate(180deg);
+  transition: all .2s;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 27, sass/components/_breadcrumbs.scss */
+  .back-to-newsroom:before {
+    background-size: 215px 2258.5px;
+    background-position: 0 -65px;
+    height: 14px;
+    width: 8px;
+  }
+}
+/* line 38, sass/components/_breadcrumbs.scss */
+.back-to-newsroom:hover:before {
+  left: -5px;
+  left: -0.5rem;
+}
+
 @media (min-width: 1024px) {
-  /* line 21, sass/components/_breadcrumbs.scss */
+  /* line 44, sass/components/_breadcrumbs.scss */
   .breadcrumbs {
     display: block;
   }
