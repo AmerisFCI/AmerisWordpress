@@ -5505,12 +5505,22 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   list-style: none;
   margin: 0;
   clear: both;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
-/* line 14, sass/components/pages/landing/_tools.scss */
+/* line 15, sass/components/pages/landing/_tools.scss */
 .resources-rotator .slick-arrow {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  margin-top: -20px;
+  margin-top: -2rem;
   box-shadow: none;
   background: transparent;
   text-indent: -9999px;
+  padding: 0;
   background-image: url('images/sprite-images-s5908aa9ee5.png');
   background-position: 0 -50px;
   background-repeat: no-repeat;
@@ -5519,7 +5529,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   width: 11px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 14, sass/components/pages/landing/_tools.scss */
+  /* line 15, sass/components/pages/landing/_tools.scss */
   .resources-rotator .slick-arrow {
     background-size: 215px 2258.5px;
     background-position: 0 0;
@@ -5527,26 +5537,45 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     width: 11px;
   }
 }
-/* line 20, sass/components/pages/landing/_tools.scss */
+/* line 28, sass/components/pages/landing/_tools.scss */
 .resources-rotator .slick-prev {
   transform: rotate(180deg);
+  left: -11px;
+  left: -1.1rem;
+}
+/* line 32, sass/components/pages/landing/_tools.scss */
+.resources-rotator .slick-next {
+  right: -11px;
+  right: -1.1rem;
+}
+/* line 35, sass/components/pages/landing/_tools.scss */
+.resources-rotator .slick-dots {
+  right: 0;
+  height: 24px;
+  height: 2.4rem;
+  bottom: -54px;
+  bottom: -5.4rem;
+}
+/* line 39, sass/components/pages/landing/_tools.scss */
+.resources-rotator .slick-dots li {
+  box-shadow: none;
 }
 
-/* line 27, sass/components/pages/landing/_tools.scss */
+/* line 43, sass/components/pages/landing/_tools.scss */
 .related-resource {
   text-align: center;
 }
-/* line 29, sass/components/pages/landing/_tools.scss */
+/* line 45, sass/components/pages/landing/_tools.scss */
 .related-resource:before {
   content: none;
 }
 
-/* line 34, sass/components/pages/landing/_tools.scss */
+/* line 50, sass/components/pages/landing/_tools.scss */
 .related-resource__link {
   text-decoration: none;
 }
 
-/* line 38, sass/components/pages/landing/_tools.scss */
+/* line 54, sass/components/pages/landing/_tools.scss */
 .related-resource__title {
   font-style: normal;
   font-size: 18px;
@@ -5557,6 +5586,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
   text-align: center;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1024px) {
