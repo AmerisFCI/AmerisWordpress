@@ -5869,6 +5869,10 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   clear: both;
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: #15397f;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 /* line 278, sass/base/_mixins.scss */
 .news-item__more:hover, .news-item__more:focus {
@@ -5876,14 +5880,18 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   border-color: #d31145;
   color: #d31145;
 }
+/* line 47, sass/components/pages/_newsroom.scss */
+.news-item__more:after {
+  top: 0;
+}
 
-/* line 46, sass/components/pages/_newsroom.scss */
+/* line 52, sass/components/pages/_newsroom.scss */
 .after-blog {
   margin-top: 36px;
   margin-top: 3.6rem;
 }
 
-/* line 50, sass/components/pages/_newsroom.scss */
+/* line 56, sass/components/pages/_newsroom.scss */
 .blog-intro .intro {
   margin-top: 20px;
   margin-top: 2rem;
