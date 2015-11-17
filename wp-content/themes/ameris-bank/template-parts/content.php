@@ -11,7 +11,7 @@
 	
 	<header class="entry-header">
 		<a class="news-item__link" href="<?php the_permalink(); ?>" rel="bookmark">
-			<h2 class="entry-title news-item__title"><?php the_title(); ?></h2>
+			<h3 class="entry-title news-item__title"><?php the_title(); ?></h3>
 		</a>
 	</header><!-- .entry-header -->
 
