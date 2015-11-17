@@ -88,7 +88,7 @@ get_header(); ?>
 						while( $news_query->have_posts() ) {
 							$news_query->the_post(); ?>
 
-							<div class="news-item">
+							<div class="news-item news-item--home">
 								<div class="news-item__header">
 									<?php the_post_thumbnail( 'news-home' ); ?>
 								</div>

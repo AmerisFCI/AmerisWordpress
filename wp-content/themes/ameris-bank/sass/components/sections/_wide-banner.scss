@@ -36,12 +36,6 @@
 	display: block;
 }
 
-.wide-banner {
-	~ .inner-wrap .sidebar-left {
-		margin-left: 0;
-	}
-}
-
 @include breakpoint($tablet-wide-up) {
 	.wide-banner-blurb__wrap {
 		text-align: left;

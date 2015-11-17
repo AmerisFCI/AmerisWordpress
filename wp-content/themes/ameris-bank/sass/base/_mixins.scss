@@ -267,6 +267,7 @@ $sprite-high-res-suffix: '-2x' !default;
   @include rem-fallback(padding, .5, 0);
   @include rem-fallback(font-size, 1.2);
   text-transform: uppercase;
+  text-decoration: none;
   color: $red;
   transition: all .2s;
   display: inline-block;
@@ -275,7 +276,9 @@ $sprite-high-res-suffix: '-2x' !default;
   border-bottom: 1px solid transparent;
 
   &:hover, &:focus {
+    text-decoration: none;
     border-color: $red;
+    color: $red;
   }
 }
 
@@ -364,8 +367,18 @@ $sprite-high-res-suffix: '-2x' !default;
 }
 
 @mixin wide-banner-page-layout {
+  .page-title {
+    padding: 0;
+    @include rem-fallback(padding-top, 2);
+  }
+
   .sidebar-menu {
     background: transparent;
+  }
+
+  .inner-wrap .sidebar-left {
+    margin-left: 0;
+    @include rem-fallback(margin-top, 0);
   }
 
   @include breakpoint($narrow-to-desktop) {
@@ -375,13 +388,35 @@ $sprite-high-res-suffix: '-2x' !default;
     .sidebar-left {
       clear: none;
     }
-    #content .content-area {
-      @include grid-span(6, 4);
+    #primary {
+      @include add-grid(20);
+      @include add-gutter(1);
+    }
+    #main {
+      @include grid-span(13, 1);
+    }
+    #content-below {
+      @include add-grid(12);
+    }
+  }
+
+  @include breakpoint($wide) {
+    #primary {
+      @include add-grid(18);
+      @include add-gutter(0);
+    }
+    #main {
+      @include grid-span(13, 1);
+      @include rem-fallback(padding-right, 4.8);
+    }
+    #content-below {
+      @include add-grid(12);
     }
   }
 }
 
 @mixin content-below {
+
   @include rem-fallback(max-width, 110);
   margin-left: auto;
   margin-right: auto;
@@ -389,10 +424,13 @@ $sprite-high-res-suffix: '-2x' !default;
 
 }
 
-@mixin content-below-heading {
+@mixin content-below-border {
   @include rem-fallback(margin-top, 5);
   @include rem-fallback(padding-top, 3);
   @include rem-fallback(border-top-width, .2);
   border-top: solid $paleblue;
+}
+
+@mixin content-below-heading {
   @include rem-fallback(font-size, 2.4);
 }
