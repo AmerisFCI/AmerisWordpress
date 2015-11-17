@@ -8,5 +8,14 @@
 		text-transform: none;
 		font-family: $font-heading;
 		@include rem-fallback(font-size, 1.9);
+		margin-bottom: 0;
 	}
+	.recent-post {
+		@include rem-fallback(margin-bottom, 2.4);
+	}
+}
+
+.more-recent-posts__link {
+	@include boldbluetext;
+	@include red-arrow-right-small;
 }

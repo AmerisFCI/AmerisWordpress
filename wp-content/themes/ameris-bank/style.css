@@ -4028,7 +4028,7 @@ footer .menu-item {
   max-width: 142rem;
   margin: 0 auto;
   position: relative;
-  text-shadow: 0 0 14rem rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 10rem black;
   height: 100%;
   text-align: center;
 }
@@ -4112,6 +4112,8 @@ footer .menu-item {
     position: absolute;
     bottom: 60px;
     bottom: 6rem;
+    font-size: 72px;
+    font-size: 7.2rem;
   }
   /* line 353, sass/base/_mixins.scss */
   .wide-banner-blurb span, .wide-banner-blurb em {
@@ -4128,6 +4130,13 @@ footer .menu-item {
     width: 100%;
     height: 3px;
     background-color: #d31145;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 57, sass/components/sections/_wide-banner.scss */
+  .wide-banner-blurb {
+    font-size: 92px;
+    font-size: 9.2rem;
   }
 }
 /* line 1, sass/components/widgets/_widgets.scss */
@@ -4169,6 +4178,58 @@ footer .menu-item {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 19px;
   font-size: 1.9rem;
+  margin-bottom: 0;
+}
+/* line 13, sass/components/widgets/_recent-press.scss */
+.widget_ameris_recent_posts_widget .recent-post {
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+}
+
+/* line 18, sass/components/widgets/_recent-press.scss */
+.more-recent-posts__link {
+  font-style: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  color: #092764;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  padding-right: 32px;
+  padding-right: 3.2rem;
+  position: relative;
+}
+/* line 249, sass/base/_mixins.scss */
+.more-recent-posts__link:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: 15px;
+  left: 1.5rem;
+  top: 4px;
+  top: 0.4rem;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -168px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 14px;
+  width: 8px;
+  transition: left .2s;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 249, sass/base/_mixins.scss */
+  .more-recent-posts__link:after {
+    background-size: 215px 2258.5px;
+    background-position: 0 -65px;
+    height: 14px;
+    width: 8px;
+  }
+}
+/* line 259, sass/base/_mixins.scss */
+.more-recent-posts__link:hover:after, .more-recent-posts__link:focus:after {
+  left: 19px;
+  left: 1.9rem;
 }
 
 /* line 1, sass/components/pages/_generic.scss */
@@ -5820,6 +5881,12 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 .after-blog {
   margin-top: 36px;
   margin-top: 3.6rem;
+}
+
+/* line 50, sass/components/pages/_newsroom.scss */
+.blog-intro .intro {
+  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 /* line 1, sass/components/_breadcrumbs.scss */

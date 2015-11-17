@@ -8,7 +8,7 @@
 	@include rem-fallback(max-width, 142);
 	margin: 0 auto;
 	position: relative;
-	text-shadow: 0 0 14rem rgba(0,0,0,.8);
+	text-shadow: 0 0 10rem rgba(0,0,0,1);
 	height: 100%;
 	text-align: center;
 	&:after {
@@ -49,6 +49,12 @@
 		@include banner-blurb;
 		position: absolute;
 		@include rem-fallback(bottom, 6);
+		@include rem-fallback(font-size, 7.2);
+	}
+}
 
+@include breakpoint($desktop) {
+	.wide-banner-blurb {
+		@include rem-fallback(font-size, 9.2);
 	}
 }

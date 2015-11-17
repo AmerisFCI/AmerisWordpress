@@ -46,3 +46,7 @@
 .after-blog {
 	@include rem-fallback(margin-top, 3.6);
 }
+
+.blog-intro .intro {
+	@include rem-fallback(margin-top, 2);
+}
