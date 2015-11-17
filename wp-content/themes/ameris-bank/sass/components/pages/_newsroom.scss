@@ -3,6 +3,7 @@
 }
 
 .latest-posts-heading {
+	@include boldbluetext;
 	@include content-below-border;
 	@include rem-fallback(margin, 2.4, 0, 3.6);
 	@include rem-fallback(padding-top, 1.8);
@@ -13,6 +14,9 @@
 	@include rem-fallback(border-bottom-width, .2);
 	@include rem-fallback(padding-bottom, 1);
 
+	.news-item__title {
+		@include rem-fallback(font-size, 3.6);
+	}
 	.news-meta {text-align: center;}
 	.news-item__thumbnail {
 		img {
@@ -23,6 +27,9 @@
 		}
 	}
 	@include breakpoint($tablet-to-desktop) {
+		.news-item__title {
+			@include rem-fallback(font-size, 4.3);
+		}
 		.news-meta {text-align: left;}
 		.news-item__thumbnail{
 			float: right;
