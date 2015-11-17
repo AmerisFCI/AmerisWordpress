@@ -4241,8 +4241,9 @@ footer .menu-item {
   max-width: 315px;
   max-width: 31.5rem;
   margin-left: auto;
+  margin-right: auto;
 }
-/* line 6, sass/components/widgets/_recent-press.scss */
+/* line 7, sass/components/widgets/_recent-press.scss */
 .widget_ameris_recent_posts_widget .widget-title {
   font-style: normal;
   font-size: 18px;
@@ -4253,7 +4254,7 @@ footer .menu-item {
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
 }
-/* line 9, sass/components/widgets/_recent-press.scss */
+/* line 10, sass/components/widgets/_recent-press.scss */
 .widget_ameris_recent_posts_widget .recent-post__title {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -4261,13 +4262,13 @@ footer .menu-item {
   font-size: 1.9rem;
   margin-bottom: 0;
 }
-/* line 15, sass/components/widgets/_recent-press.scss */
+/* line 16, sass/components/widgets/_recent-press.scss */
 .widget_ameris_recent_posts_widget .recent-post {
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 20, sass/components/widgets/_recent-press.scss */
+/* line 21, sass/components/widgets/_recent-press.scss */
 .more-recent-posts__link {
   font-style: normal;
   font-size: 18px;
@@ -4316,9 +4317,20 @@ footer .menu-item {
   left: 19px;
   left: 1.9rem;
 }
-/* line 26, sass/components/widgets/_recent-press.scss */
+/* line 27, sass/components/widgets/_recent-press.scss */
 .more-recent-posts__link:after {
   top: 0;
+}
+
+/* line 32, sass/components/widgets/_recent-press.scss */
+.recent-post__meta {
+  text-align: center;
+}
+@media (min-width: 740px) {
+  /* line 32, sass/components/widgets/_recent-press.scss */
+  .recent-post__meta {
+    text-align: left;
+  }
 }
 
 /* line 1, sass/components/pages/_generic.scss */
@@ -6015,22 +6027,29 @@ h1.single-article__title, .single-article__title.landing-heading {
   margin-bottom: 1.5rem;
   margin-top: 24px;
   margin-top: 2.4rem;
+  text-align: center;
+}
+@media (min-width: 740px) {
+  /* line 18, sass/components/pages/_article.scss */
+  .single-article__meta {
+    text-align: left;
+  }
 }
 
-/* line 23, sass/components/pages/_article.scss */
+/* line 27, sass/components/pages/_article.scss */
 .single-article__content {
   max-width: 700px;
   max-width: 70rem;
 }
 
 @media (min-width: 740px) {
-  /* line 28, sass/components/pages/_article.scss */
+  /* line 32, sass/components/pages/_article.scss */
   .single-article__title {
     font-size: 68px;
     font-size: 6.8rem;
   }
 
-  /* line 36, sass/components/pages/_article.scss */
+  /* line 40, sass/components/pages/_article.scss */
   .single-post .has-sidebar-right .site-main {
     width: 64.10256%;
     float: left;
@@ -6039,7 +6058,7 @@ h1.single-article__title, .single-article__title.landing-heading {
     clear: none;
   }
 
-  /* line 39, sass/components/pages/_article.scss */
+  /* line 43, sass/components/pages/_article.scss */
   .single-post .sidebar-right {
     width: 33.33333%;
     float: right;
@@ -6049,7 +6068,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   }
 }
 @media (min-width: 1024px) {
-  /* line 52, sass/components/pages/_article.scss */
+  /* line 56, sass/components/pages/_article.scss */
   .single-post .has-sidebar-right .site-main {
     width: 69.23077%;
     float: left;
@@ -6058,7 +6077,7 @@ h1.single-article__title, .single-article__title.landing-heading {
     clear: none;
   }
 
-  /* line 55, sass/components/pages/_article.scss */
+  /* line 59, sass/components/pages/_article.scss */
   .single-post .sidebar-right {
     width: 28.20513%;
     float: right;
@@ -6068,7 +6087,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   }
 }
 @media (min-width: 1200px) {
-  /* line 67, sass/components/pages/_article.scss */
+  /* line 71, sass/components/pages/_article.scss */
   .single-post .has-sidebar-right .site-main {
     width: 74.13793%;
     float: left;
@@ -6077,12 +6096,12 @@ h1.single-article__title, .single-article__title.landing-heading {
     clear: none;
   }
 
-  /* line 70, sass/components/pages/_article.scss */
+  /* line 74, sass/components/pages/_article.scss */
   .single-post .has-sidebar-right #main {
     padding-right: 0;
   }
 
-  /* line 73, sass/components/pages/_article.scss */
+  /* line 77, sass/components/pages/_article.scss */
   .single-post .sidebar-right {
     width: 22.41379%;
     float: right;
