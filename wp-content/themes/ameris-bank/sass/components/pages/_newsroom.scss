@@ -15,7 +15,9 @@
 	@include rem-fallback(padding-bottom, 1);
 
 	.news-item__title {
-		@include rem-fallback(font-size, 3.6);
+		@extend h2;
+		@include voice;
+		@include rem-fallback(letter-spacing, -.02);
 	}
 	.news-meta {text-align: center;}
 	.news-item__thumbnail {
@@ -27,9 +29,6 @@
 		}
 	}
 	@include breakpoint($tablet-to-desktop) {
-		.news-item__title {
-			@include rem-fallback(font-size, 4.3);
-		}
 		.news-meta {text-align: left;}
 		.news-item__thumbnail{
 			float: right;
