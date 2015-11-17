@@ -93,6 +93,18 @@
 		]
 	});
 
+	// Add slideshow functionality
+	// to the About Us newsroom slides
+	$('.about-newsroom').slick({
+		autoplay: false,
+		arrows: true,
+		dots: true,
+		fade: false,
+		mobileFirst: true,
+		pauseOnDotsHover: true,
+		swipeToSlide: true
+	});
+
 
 	// Get the homepage slideshow images to
 	// fill the parent container no matter what!
