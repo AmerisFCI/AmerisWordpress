@@ -71,10 +71,10 @@ class Ameris_Recent_Posts_Widget extends WP_Widget {
 								<?php the_post_thumbnail( 'article-sidebar' ); ?>
 							</a>
 						<?php } ?>
-						<h4 class="recent-post__title">
+						<h3 class="recent-post__title">
 							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-						</h4>
-						<div class="recent-post__meta">
+						</h3>
+						<div class="recent-post__meta meta">
 							<?php the_time( 'n/j/Y' ); ?>
 						</div>
 					</div>

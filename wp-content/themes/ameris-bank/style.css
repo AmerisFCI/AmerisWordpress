@@ -4147,6 +4147,30 @@ footer .menu-item {
   display: none;
 }
 
+/* line 1, sass/components/widgets/_recent-press.scss */
+.widget_ameris_recent_posts_widget {
+  padding: 24px;
+  padding: 2.4rem;
+}
+/* line 4, sass/components/widgets/_recent-press.scss */
+.widget_ameris_recent_posts_widget .widget-title {
+  font-style: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  color: #092764;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+}
+/* line 7, sass/components/widgets/_recent-press.scss */
+.widget_ameris_recent_posts_widget .recent-post__title {
+  text-transform: none;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 19px;
+  font-size: 1.9rem;
+}
+
 /* line 1, sass/components/pages/_generic.scss */
 .sticky {
   display: block;
@@ -5843,20 +5867,25 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 /* line 1, sass/components/_meta.scss */
-.news-meta {
+.news-meta, .meta {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-size: 1.4rem;
 }
 /* line 6, sass/components/_meta.scss */
-.news-meta span {
+.news-meta span, .meta span {
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
 /* line 9, sass/components/_meta.scss */
-.news-meta a {
+.news-meta a, .meta a {
   color: #3d3d3d;
   text-decoration: none;
+}
+
+/* line 16, sass/components/_meta.scss */
+.meta {
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
 
 /* line 1, sass/components/_comments.scss */

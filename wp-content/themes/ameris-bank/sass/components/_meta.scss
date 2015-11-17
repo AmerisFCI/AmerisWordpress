@@ -1,4 +1,4 @@
-.news-meta {
+.news-meta, .meta {
 	font-family: $font-sansserif;
 	text-transform: uppercase;
 	@include rem-fallback(font-size, 1.4);
@@ -11,4 +11,8 @@
 		text-decoration: none;
 	}
 
+}
+
+.meta {
+	font-family: $font-heading-bold;
 }
