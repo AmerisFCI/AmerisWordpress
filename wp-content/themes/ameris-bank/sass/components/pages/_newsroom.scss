@@ -49,4 +49,5 @@
 
 .blog-intro .intro {
 	@include rem-fallback(margin-top, 2);
+	display: block;
 }

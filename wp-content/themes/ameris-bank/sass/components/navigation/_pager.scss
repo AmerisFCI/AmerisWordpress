@@ -1,0 +1,14 @@
+.pagination {
+	.nav-links {
+		* {
+			@include boldbluetext;
+			@include rem-fallback(font-size, 1.6);
+			text-decoration: none;
+		}
+	}
+	.page-numbers {}
+	.current {}
+	.next {
+		@include use-sprite(arrow-red-right);
+	}
+}

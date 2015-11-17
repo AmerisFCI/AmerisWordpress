@@ -56,6 +56,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 /* Component (SMACSS module) rules */
 
+@import "components/accessibility/accessibility";
 @import "components/accessibility/skip-link";
 
 @import "components/forms/buttons";
@@ -77,6 +78,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "components/navigation/sidebar-nav";
 @import "components/navigation/search-box";
 @import "components/navigation/social-links";
+@import "components/navigation/pager";
 
 @import "components/sections/header";
 @import "components/sections/sidebar";
