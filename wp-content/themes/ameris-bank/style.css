@@ -5506,22 +5506,47 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   margin: 0;
   clear: both;
 }
+/* line 14, sass/components/pages/landing/_tools.scss */
+.resources-rotator .slick-arrow {
+  box-shadow: none;
+  background: transparent;
+  text-indent: -9999px;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -50px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 20px;
+  width: 11px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 14, sass/components/pages/landing/_tools.scss */
+  .resources-rotator .slick-arrow {
+    background-size: 215px 2258.5px;
+    background-position: 0 0;
+    height: 20px;
+    width: 11px;
+  }
+}
+/* line 20, sass/components/pages/landing/_tools.scss */
+.resources-rotator .slick-prev {
+  transform: rotate(180deg);
+}
 
-/* line 16, sass/components/pages/landing/_tools.scss */
+/* line 27, sass/components/pages/landing/_tools.scss */
 .related-resource {
   text-align: center;
 }
-/* line 18, sass/components/pages/landing/_tools.scss */
+/* line 29, sass/components/pages/landing/_tools.scss */
 .related-resource:before {
   content: none;
 }
 
-/* line 23, sass/components/pages/landing/_tools.scss */
+/* line 34, sass/components/pages/landing/_tools.scss */
 .related-resource__link {
   text-decoration: none;
 }
 
-/* line 27, sass/components/pages/landing/_tools.scss */
+/* line 38, sass/components/pages/landing/_tools.scss */
 .related-resource__title {
   font-style: normal;
   font-size: 18px;
@@ -5534,40 +5559,6 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   text-align: center;
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
-  /* line 34, sass/components/pages/landing/_tools.scss */
-  .related-resource {
-    width: 48.93617%;
-    clear: right;
-    float: left;
-    margin-left: 0;
-    margin-right: 2.12766%;
-  }
-  /* line 36, sass/components/pages/landing/_tools.scss */
-  .related-resource:nth-child(2n) {
-    width: 48.93617%;
-    clear: right;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 43, sass/components/pages/landing/_tools.scss */
-  .related-resource {
-    width: 23.40426%;
-    clear: right;
-    float: left;
-    margin-left: 0;
-    margin-right: 2.12766%;
-  }
-  /* line 45, sass/components/pages/landing/_tools.scss */
-  .related-resource:nth-child(4n) {
-    width: 23.40426%;
-    clear: right;
-    float: right;
-    margin-right: 0;
-  }
-}
 @media (min-width: 1024px) {
   /* line 6, sass/components/pages/_landing.scss */
   .quick-links {
