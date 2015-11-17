@@ -1,5 +1,7 @@
 .widget_ameris_recent_posts_widget {
 	@include rem-fallback(padding, 2.4);
+	@include rem-fallback(max-width, 31.5);
+	margin-left: auto;
 
 	.widget-title {
 		@include boldbluetext;

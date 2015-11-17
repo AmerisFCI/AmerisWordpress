@@ -17,4 +17,69 @@ h1.single-article__title {
 
 .single-article__meta {
 	@include boldbluetext;
+	@include rem-fallback(margin-top, 2.4);
 }
+
+.single-article__content {
+	@include rem-fallback(max-width, 70);
+}
+
+@include breakpoint($tablet-wide-up) {
+	.single-article__title {
+		@include rem-fallback(font-size, 6.8);
+	}
+	.single-post .has-sidebar-right {
+		@include add-grid(20);
+		@include add-gutter(1);
+	}
+
+	.single-post .has-sidebar-right .site-main {
+		@include grid-span(13, 1);
+	}
+	.single-post .sidebar-right {
+		@include grid-span(7, 14);
+	}
+}
+
+// Use 5 grid columns for larger screens.
+
+@include breakpoint($narrow-to-desktop) {
+	//.single-post .has-sidebar-right {
+		//@include add-grid(20);
+		//@include add-gutter(1);
+	//}
+
+	.single-post .has-sidebar-right .site-main {
+		@include grid-span(14, 1);
+	}
+	.single-post .sidebar-right {
+		@include grid-span(6, 15);
+	}
+}
+
+@include breakpoint($desktop) {
+	//.single-article__title {
+		//@include rem-fallback(font-size, 9.2);
+	//}
+	.single-post .has-sidebar-right {
+		@include add-gutter(2);
+	}
+	.single-post .has-sidebar-right .site-main {
+		@include grid-span(15, 1);
+	}
+	.single-post .has-sidebar-right #main {
+		padding-right: 0;
+	}
+	.single-post .sidebar-right {
+		@include grid-span(5, 16);
+	}
+}
+
+//@include breakpoint($wide) {
+	//.single-post .has-sidebar-right .site-main {
+	//	@include grid-span(16, 1);
+	//}
+	//.single-post .sidebar-right {
+	//	@include grid-span(4, 17);
+	//}
+//}

@@ -4238,8 +4238,11 @@ footer .menu-item {
 .widget_ameris_recent_posts_widget {
   padding: 24px;
   padding: 2.4rem;
+  max-width: 315px;
+  max-width: 31.5rem;
+  margin-left: auto;
 }
-/* line 4, sass/components/widgets/_recent-press.scss */
+/* line 6, sass/components/widgets/_recent-press.scss */
 .widget_ameris_recent_posts_widget .widget-title {
   font-style: normal;
   font-size: 18px;
@@ -4250,7 +4253,7 @@ footer .menu-item {
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
 }
-/* line 7, sass/components/widgets/_recent-press.scss */
+/* line 9, sass/components/widgets/_recent-press.scss */
 .widget_ameris_recent_posts_widget .recent-post__title {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -4258,13 +4261,13 @@ footer .menu-item {
   font-size: 1.9rem;
   margin-bottom: 0;
 }
-/* line 13, sass/components/widgets/_recent-press.scss */
+/* line 15, sass/components/widgets/_recent-press.scss */
 .widget_ameris_recent_posts_widget .recent-post {
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 18, sass/components/widgets/_recent-press.scss */
+/* line 20, sass/components/widgets/_recent-press.scss */
 .more-recent-posts__link {
   font-style: normal;
   font-size: 18px;
@@ -4313,7 +4316,7 @@ footer .menu-item {
   left: 19px;
   left: 1.9rem;
 }
-/* line 24, sass/components/widgets/_recent-press.scss */
+/* line 26, sass/components/widgets/_recent-press.scss */
 .more-recent-posts__link:after {
   top: 0;
 }
@@ -6010,8 +6013,84 @@ h1.single-article__title, .single-article__title.landing-heading {
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
+  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
+/* line 23, sass/components/pages/_article.scss */
+.single-article__content {
+  max-width: 700px;
+  max-width: 70rem;
+}
+
+@media (min-width: 740px) {
+  /* line 28, sass/components/pages/_article.scss */
+  .single-article__title {
+    font-size: 68px;
+    font-size: 6.8rem;
+  }
+
+  /* line 36, sass/components/pages/_article.scss */
+  .single-post .has-sidebar-right .site-main {
+    width: 64.10256%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+
+  /* line 39, sass/components/pages/_article.scss */
+  .single-post .sidebar-right {
+    width: 33.33333%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 52, sass/components/pages/_article.scss */
+  .single-post .has-sidebar-right .site-main {
+    width: 69.23077%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+
+  /* line 55, sass/components/pages/_article.scss */
+  .single-post .sidebar-right {
+    width: 28.20513%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 67, sass/components/pages/_article.scss */
+  .single-post .has-sidebar-right .site-main {
+    width: 74.13793%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+
+  /* line 70, sass/components/pages/_article.scss */
+  .single-post .has-sidebar-right #main {
+    padding-right: 0;
+  }
+
+  /* line 73, sass/components/pages/_article.scss */
+  .single-post .sidebar-right {
+    width: 22.41379%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
   display: none;
