@@ -20,9 +20,9 @@
 	</div>
 
 	<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta news-meta news-item__meta">
-			<?php courage_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<div class="news-meta">
+			<span class="news-meta__date"><?php the_time( 'm.d.Y' ); ?></span> | <span class="news-meta__topic"><?php the_category( ', ' ); ?></span>
+		</div>
 	<?php endif; ?>
 
 	<div class="entry-content news-item__excerpt">

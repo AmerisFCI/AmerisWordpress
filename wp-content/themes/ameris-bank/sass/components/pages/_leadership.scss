@@ -1,20 +1,16 @@
 //Major layout elements
 
+.page-template-leadership-page {
+	@include wide-banner-page-layout;
+}
+
 .content-below {
 	@include content-below;
 }
 
 .leadership-grid__heading {
 	@include content-below-heading;
-}
-
-.page-template-leadership-page {
-	@include wide-banner-page-layout;
-	
-	.page-title {
-		padding: 0;
-		@include rem-fallback(padding-top, 2);
-	}
+	@include content-below-border;
 }
 
 .leadership-grid {

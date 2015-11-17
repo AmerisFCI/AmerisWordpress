@@ -59,15 +59,15 @@
 
 
 @include breakpoint($tablet-wide) {
-	.news-item {
+	.news-item--home {
 		@include float-span(2);
 	}
 
-	.news-item:last-of-type {
+	.news-item--home:last-of-type {
 		@include float-span(2, 'last')
 	}
 
-	.news-item:first-of-type {
+	.news-item--home:first-of-type {
 		clear: both;
 	}
 
@@ -127,11 +127,11 @@
 		position: static;
 		width: auto;
 	}
-	.news-item {
+	.news-item--home {
 		@include float-span(2);
 	}
 
-	.news-item:last-of-type {
+	.news-item--home:last-of-type {
 		@include float-span(2, 'last')
 	}
 
