@@ -19,12 +19,13 @@ h1.single-article__title {
 	@include boldbluetext;
 	@include rem-fallback(margin-top, 2.4);
 	text-align: center;
+	line-height: 1;
 	@include breakpoint($tablet-wide-up) {
 		text-align: left;
 	}
 }
 
-.single-article__content {
+.single-article__content, h1.single-article__title {
 	@include rem-fallback(max-width, 70);
 }
 
