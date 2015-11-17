@@ -11,7 +11,8 @@
 		text-transform: none;
 		font-family: $font-heading;
 		@include rem-fallback(font-size, 1.9);
-		margin-bottom: 0;
+		@include rem-fallback(margin-bottom, .3);
+		font-weight: bold;
 	}
 	.recent-post {
 		@include rem-fallback(margin-bottom, 2.4);
@@ -34,4 +35,9 @@
 	@include breakpoint($tablet-wide-up) {
 		text-align: left;
 	}
+}
+
+.recent-post__image img {
+	display: block;
+	@include rem-fallback(margin-bottom, 1.8);
 }

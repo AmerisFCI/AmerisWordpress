@@ -16,13 +16,32 @@ h1.single-article__title {
 }
 
 .single-article__meta {
-	@include boldbluetext;
 	@include rem-fallback(margin-top, 2.4);
+	@include rem-fallback(margin-bottom, 1.5);
 	text-align: center;
 	line-height: 1;
+	color: $link-color;
+	font-family: $font-sansserif;
+	text-transform: uppercase;
+	@include rem-fallback(font-size, 1.8);
+
+	span {
+		font-family: $font-heading-bold;
+	}
+	a {
+		text-decoration: none;
+	}
 	@include breakpoint($tablet-wide-up) {
 		text-align: left;
 	}
+}
+
+.single-article__date {
+	@include rem-fallback(padding-right, .5);
+}
+
+.single-article__category {
+	@include rem-fallback(padding-left, .5);
 }
 
 .single-article__content, h1.single-article__title {
