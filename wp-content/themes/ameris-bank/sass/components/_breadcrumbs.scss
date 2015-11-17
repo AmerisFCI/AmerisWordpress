@@ -17,6 +17,29 @@
 	}
 }
 
+.back-to-newsroom {
+	font-family: $font-heading;
+	display: inline-block;
+	@include rem-fallback(font-size, 1.6);
+	@include rem-fallback(margin-bottom, 2.4);
+	@include rem-fallback(padding-left, 2.2);
+	position: relative;
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		@include use-sprite(arrow-red-right-small);
+		@include rem-fallback(margin-left, .5);
+		transform: rotate(180deg);
+		transition: all .2s;
+	}
+	&:hover:before {
+		@include rem-fallback(left, -.5);
+	}
+}
+
 @include breakpoint($narrow-to-desktop) {
 	.breadcrumbs {
 		display: block;

@@ -9,13 +9,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'single-article' ); ?>>
 
-	<header class="single-article__header entry-header">
-		<h1 class="single-article__title entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
-
 	<div class="single-article__meta entry-meta">
-		<span class="single-article__date news-date"><?php the_time( 'M j, Y' ); ?></span>
-		<span class="single-article__category news-topic"><?php the_category( ', ' ); ?></span>
+		<span class="single-article__date news-date"><?php the_time( 'M j, Y' ); ?></span> | <span class="single-article__category news-topic"><?php the_category( ', ' ); ?></span>
 	</div><!-- .entry-meta -->
 
 	<div class="single-article__image image-banner">
