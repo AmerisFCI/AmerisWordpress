@@ -18,4 +18,10 @@
 .more-recent-posts__link {
 	@include boldbluetext;
 	@include red-arrow-right-small;
+	text-decoration: none;
+	color: $link-color;
+	@include rem-fallback(font-size, 1.6);
+	&:after {
+		top: 0;
+	}
 }
