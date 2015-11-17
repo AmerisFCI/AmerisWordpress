@@ -82,7 +82,8 @@
 			{
 				breakpoint: 1400,
 				settings: {
-					slidesToShow: 4
+					slidesToShow: 4,
+					//dots: true
 				}
 			}
 
