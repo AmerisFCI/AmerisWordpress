@@ -63,7 +63,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* line 10, sass/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1,
-.landing-heading, h2, h3, h4, h5, h6, p, blockquote, pre,
+.landing-heading, h2, .news-item--newsroom .news-item__title, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -550,14 +550,14 @@ sup {
 }
 
 /* line 1, sass/base/typography/_headings.scss */
-h1, .landing-heading, h2, h3, h4, h5, h6 {
+h1, .landing-heading, h2, .news-item--newsroom .news-item__title, h3, h4, h5, h6 {
   clear: both;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   line-height: 1;
   text-align: center;
 }
 /* line 8, sass/base/typography/_headings.scss */
-h1 a, .landing-heading a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a, .landing-heading a, h2 a, .news-item--newsroom .news-item__title a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 
@@ -569,7 +569,7 @@ h1, .landing-heading {
 }
 
 /* line 19, sass/base/typography/_headings.scss */
-h2 {
+h2, .news-item--newsroom .news-item__title {
   font-size: 36px;
   font-size: 3.6rem;
   margin-bottom: 20px;
@@ -638,7 +638,7 @@ h5 {
 
 @media (min-width: 740px) {
   /* line 60, sass/base/typography/_headings.scss */
-  h1, .landing-heading, h2, h3, h4, h5, h6 {
+  h1, .landing-heading, h2, .news-item--newsroom .news-item__title, h3, h4, h5, h6 {
     text-align: left;
   }
 }
@@ -3389,7 +3389,7 @@ a:hover, a:active {
   padding: 1.5rem 1rem;
 }
 /* line 14, sass/components/sections/_sidebar.scss */
-.sidebar h2 {
+.sidebar h2, .sidebar .news-item--newsroom .news-item__title, .news-item--newsroom .sidebar .news-item__title {
   font-size: 30px;
   font-size: 3rem;
 }
@@ -4477,7 +4477,7 @@ footer .menu-item {
   height: 4.8rem;
 }
 /* line 16, sass/components/pages/home/_accountaccess.scss */
-.account-access a, .account-access h2 {
+.account-access a, .account-access h2, .account-access .news-item--newsroom .news-item__title, .news-item--newsroom .account-access .news-item__title {
   color: #ffffff;
 }
 /* line 20, sass/components/pages/home/_accountaccess.scss */
@@ -5738,14 +5738,18 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 /* line 17, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-item__title {
-  font-size: 36px;
-  font-size: 3.6rem;
+  font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -0.2px;
+  letter-spacing: -0.02rem;
 }
-/* line 20, sass/components/pages/_newsroom.scss */
+/* line 22, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-meta {
   text-align: center;
 }
-/* line 22, sass/components/pages/_newsroom.scss */
+/* line 24, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-item__thumbnail img {
   display: block;
   margin-left: auto;
@@ -5754,16 +5758,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   margin-bottom: 1.6rem;
 }
 @media (min-width: 530px) {
-  /* line 30, sass/components/pages/_newsroom.scss */
-  .news-item--newsroom .news-item__title {
-    font-size: 43px;
-    font-size: 4.3rem;
-  }
-  /* line 33, sass/components/pages/_newsroom.scss */
+  /* line 32, sass/components/pages/_newsroom.scss */
   .news-item--newsroom .news-meta {
     text-align: left;
   }
-  /* line 34, sass/components/pages/_newsroom.scss */
+  /* line 33, sass/components/pages/_newsroom.scss */
   .news-item--newsroom .news-item__thumbnail {
     float: right;
     margin-left: 16px;
@@ -5771,7 +5770,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 
-/* line 43, sass/components/pages/_newsroom.scss */
+/* line 42, sass/components/pages/_newsroom.scss */
 .news-item__more {
   padding: 5px 0px;
   padding: 0.5rem 0rem;
@@ -5793,7 +5792,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   color: #d31145;
 }
 
-/* line 47, sass/components/pages/_newsroom.scss */
+/* line 46, sass/components/pages/_newsroom.scss */
 .after-blog {
   margin-top: 36px;
   margin-top: 3.6rem;
