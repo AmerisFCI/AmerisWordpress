@@ -1,0 +1,27 @@
+//add padding to all of the about us panels
+.about-news-item, .about-video, .about-video-content, .about-history, .about-careers, .about-investor, .about-leadership, .about-recent-press {
+	@include rem-fallback(padding, 2.4);
+}
+
+.latest-updates {
+	color: $white;
+	text-align: center;
+	background: $red;
+	@include rem-fallback(padding, 6, 2.4, 0);
+	@include rem-fallback(min-height, 30);
+	position: relative;
+	h2 {
+		text-align: center;
+		color: $white;
+	}
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 9rem;
+		@include background-image(linear-gradient(to top, rgba(0,0,0,.1), rgba(0,0,0,0)));
+	}
+}

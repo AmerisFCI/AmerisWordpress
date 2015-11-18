@@ -738,14 +738,13 @@ dd {
   color: #092764;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
-  text-decoration: none;
-  font-size: 16px;
-  font-size: 1.6rem;
-  position: relative;
-  display: inline-block;
   padding-right: 32px;
   padding-right: 3.2rem;
   position: relative;
+  text-decoration: none;
+  color: #15397f;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 /* line 249, sass/base/_mixins.scss */
 .more-link:after {
@@ -777,6 +776,10 @@ dd {
 .more-link:hover:after, .more-link:focus:after {
   left: 19px;
   left: 1.9rem;
+}
+/* line 444, sass/base/_mixins.scss */
+.more-link:after {
+  top: 0;
 }
 
 /* Import Library Sass Files */
@@ -3364,32 +3367,47 @@ a:hover, a:active {
     width: 20rem;
   }
 }
-/* line 1, sass/components/sections/sidebar/_callout-box.scss */
+/* line 2, sass/components/sections/sidebar/_callout-box.scss */
+.callout-box {
+  position: relative;
+  min-height: 430px;
+  min-height: 43rem;
+  background-size: cover;
+}
+
+/* line 7, sass/components/sections/sidebar/_callout-box.scss */
+.callout-box__headline {
+  font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  color: #ffffff;
+  margin-bottom: 0;
+  letter-spacing: normal;
+}
+
+/* line 14, sass/components/sections/sidebar/_callout-box.scss */
 .callout-box--small {
   padding: 24px;
   padding: 2.4rem;
   float: none;
   width: auto;
-  min-height: 430px;
-  min-height: 43rem;
   background: #d7e7f2;
-  position: relative;
   max-width: 315px;
   max-width: 31.5rem;
-  background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 15, sass/components/sections/sidebar/_callout-box.scss */
-.callout-box--small__kicker {
+/* line 25, sass/components/sections/sidebar/_callout-box.scss */
+.callout-box__kicker {
   margin: 0;
   color: #ffffff;
   text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9);
 }
 
-/* line 21, sass/components/sections/sidebar/_callout-box.scss */
-.button.callout-box--small__button {
+/* line 31, sass/components/sections/sidebar/_callout-box.scss */
+.button.callout-box__button {
   background-color: #d31145;
   color: #ffffff;
   padding: 10px 20px;
@@ -3416,20 +3434,20 @@ a:hover, a:active {
   position: relative;
 }
 /* line 149, sass/base/_mixins.scss */
-.button.callout-box--small__button:hover, .button.callout-box--small__button:active, .button.callout-box--small__button:focus {
+.button.callout-box__button:hover, .button.callout-box__button:active, .button.callout-box__button:focus {
   background-color: #b30e3a;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 154, sass/base/_mixins.scss */
-.button.callout-box--small__button:focus {
+.button.callout-box__button:focus {
   text-decoration: underline;
 }
 /* line 158, sass/base/_mixins.scss */
-.button.callout-box--small__button:hover, .button.callout-box--small__button:visited, .button.callout-box--small__button:focus {
+.button.callout-box__button:hover, .button.callout-box__button:visited, .button.callout-box__button:focus {
   color: #ffffff;
 }
 /* line 207, sass/base/_mixins.scss */
-.button.callout-box--small__button:after {
+.button.callout-box__button:after {
   content: "";
   display: inline-block;
   position: relative;
@@ -3447,7 +3465,7 @@ a:hover, a:active {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
-  .button.callout-box--small__button:after {
+  .button.callout-box__button:after {
     background-size: 215px 2258.5px;
     background-position: 0 -139px;
     height: 22px;
@@ -3455,12 +3473,12 @@ a:hover, a:active {
   }
 }
 /* line 217, sass/base/_mixins.scss */
-.button.callout-box--small__button:hover:after, .button.callout-box--small__button:focus:after {
+.button.callout-box__button:hover:after, .button.callout-box__button:focus:after {
   left: 19px;
   left: 1.9rem;
 }
-/* line 28, sass/components/sections/sidebar/_callout-box.scss */
-.button.callout-box--small__button:after {
+/* line 38, sass/components/sections/sidebar/_callout-box.scss */
+.button.callout-box__button:after {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -3469,13 +3487,13 @@ a:hover, a:active {
   margin-top: -13px;
   margin-top: -1.3rem;
 }
-/* line 36, sass/components/sections/sidebar/_callout-box.scss */
-.button.callout-box--small__button:hover:after, .button.callout-box--small__button:focus:after {
+/* line 46, sass/components/sections/sidebar/_callout-box.scss */
+.button.callout-box__button:hover:after, .button.callout-box__button:focus:after {
   left: 101%;
 }
 
-/* line 41, sass/components/sections/sidebar/_callout-box.scss */
-.callout-box--small__header {
+/* line 51, sass/components/sections/sidebar/_callout-box.scss */
+.callout-box__header {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -3484,8 +3502,8 @@ a:hover, a:active {
   padding: 0rem 2.4rem 1.6rem;
 }
 
-/* line 49, sass/components/sections/sidebar/_callout-box.scss */
-.callout-box--small__headline {
+/* line 59, sass/components/sections/sidebar/_callout-box.scss */
+.callout-box__headline {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
   font-weight: 400;
@@ -3496,8 +3514,8 @@ a:hover, a:active {
 }
 
 @media (min-width: 1200px) {
-  /* line 56, sass/components/sections/sidebar/_callout-box.scss */
-  .callout-box--small__headline {
+  /* line 66, sass/components/sections/sidebar/_callout-box.scss */
+  .callout-box__headline {
     font-size: 40px;
     font-size: 4rem;
   }
@@ -4286,7 +4304,7 @@ footer .menu-item {
 }
 
 /* line 1, sass/components/widgets/_recent-press.scss */
-.widget_ameris_recent_posts_widget {
+.widget_ameris_press_feed_widget {
   padding: 24px;
   padding: 2.4rem;
   max-width: 315px;
@@ -4295,7 +4313,7 @@ footer .menu-item {
   margin-right: auto;
 }
 /* line 7, sass/components/widgets/_recent-press.scss */
-.widget_ameris_recent_posts_widget .widget-title {
+.widget_ameris_press_feed_widget .widget-title {
   font-style: normal;
   font-size: 18px;
   font-size: 1.8rem;
@@ -4306,7 +4324,7 @@ footer .menu-item {
   margin-bottom: 1.5rem;
 }
 /* line 10, sass/components/widgets/_recent-press.scss */
-.widget_ameris_recent_posts_widget .recent-post__title {
+.widget_ameris_press_feed_widget .recent-post__title {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 19px;
@@ -4316,7 +4334,7 @@ footer .menu-item {
   font-weight: bold;
 }
 /* line 17, sass/components/widgets/_recent-press.scss */
-.widget_ameris_recent_posts_widget .recent-post {
+.widget_ameris_press_feed_widget .recent-post {
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
@@ -4370,23 +4388,23 @@ footer .menu-item {
   left: 19px;
   left: 1.9rem;
 }
-/* line 28, sass/components/widgets/_recent-press.scss */
+/* line 444, sass/base/_mixins.scss */
 .more-recent-posts__link:after {
   top: 0;
 }
 
-/* line 33, sass/components/widgets/_recent-press.scss */
+/* line 26, sass/components/widgets/_recent-press.scss */
 .recent-post__meta {
   text-align: center;
 }
 @media (min-width: 740px) {
-  /* line 33, sass/components/widgets/_recent-press.scss */
+  /* line 26, sass/components/widgets/_recent-press.scss */
   .recent-post__meta {
     text-align: left;
   }
 }
 
-/* line 40, sass/components/widgets/_recent-press.scss */
+/* line 33, sass/components/widgets/_recent-press.scss */
 .recent-post__image img {
   display: block;
   margin-bottom: 18px;
@@ -5214,23 +5232,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     width: auto;
   }
 }
-/* line 2, sass/components/pages/home/_callout-box.scss */
-.callout-box {
-  position: relative;
-}
-
-/* line 5, sass/components/pages/home/_callout-box.scss */
-.callout-box__headline {
-  font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
-  font-style: italic;
-  font-weight: 400;
-  text-transform: none;
-  color: #ffffff;
-  margin-bottom: 0;
-  letter-spacing: normal;
-}
-
-/* line 12, sass/components/pages/home/_callout-box.scss */
+/* line 3, sass/components/pages/home/_callout-box.scss */
 .button.callout-box--large__button {
   background-color: #d31145;
   color: #ffffff;
@@ -5298,7 +5300,13 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   left: 1.9rem;
 }
 
-/* line 18, sass/components/pages/home/_callout-box.scss */
+/* line 9, sass/components/pages/home/_callout-box.scss */
+.callout-box--large__kicker {
+  text-shadow: none;
+  color: #092764;
+}
+
+/* line 14, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__header {
   min-height: 300px;
   min-height: 30rem;
@@ -5307,7 +5315,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   padding: 2rem;
   position: relative;
 }
-/* line 24, sass/components/pages/home/_callout-box.scss */
+/* line 20, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__header:after {
   content: "";
   display: block;
@@ -5319,7 +5327,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   border-bottom-color: white;
 }
 
-/* line 35, sass/components/pages/home/_callout-box.scss */
+/* line 31, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__headline {
   color: #15397f;
   position: absolute;
@@ -5328,16 +5336,17 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   bottom: 36px;
   bottom: 3.6rem;
   margin-bottom: 0;
+  text-shadow: none;
 }
 
-/* line 43, sass/components/pages/home/_callout-box.scss */
+/* line 40, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__body {
   background: #ffffff;
   padding: 20px;
   padding: 2rem;
 }
 
-/* line 48, sass/components/pages/home/_callout-box.scss */
+/* line 45, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__description {
   font-size: 19px;
   font-size: 1.9rem;
@@ -5346,19 +5355,19 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 
 @media (min-width: 1024px) {
-  /* line 55, sass/components/pages/home/_callout-box.scss */
+  /* line 52, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__headline {
     font-size: 43px;
     font-size: 4.3rem;
   }
 
-  /* line 59, sass/components/pages/home/_callout-box.scss */
+  /* line 56, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__header {
     min-height: 400px;
     min-height: 40rem;
   }
 
-  /* line 63, sass/components/pages/home/_callout-box.scss */
+  /* line 60, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__body, .callout-box--large__header {
     padding: 20px 40px;
     padding: 2rem 4rem;
@@ -6211,6 +6220,45 @@ h1.single-article__title, .single-article__title.landing-heading {
     clear: none;
   }
 }
+/* line 2, sass/components/pages/_about-us.scss */
+.about-news-item, .about-video, .about-video-content, .about-history, .about-careers, .about-investor, .about-leadership, .about-recent-press {
+  padding: 24px;
+  padding: 2.4rem;
+}
+
+/* line 6, sass/components/pages/_about-us.scss */
+.latest-updates {
+  color: #ffffff;
+  text-align: center;
+  background: #d31145;
+  padding: 60px 24px 0px;
+  padding: 6rem 2.4rem 0rem;
+  min-height: 300px;
+  min-height: 30rem;
+  position: relative;
+}
+/* line 13, sass/components/pages/_about-us.scss */
+.latest-updates h2, .latest-updates .news-item--newsroom .news-item__title, .news-item--newsroom .latest-updates .news-item__title {
+  text-align: center;
+  color: #ffffff;
+}
+/* line 17, sass/components/pages/_about-us.scss */
+.latest-updates:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
   display: none;

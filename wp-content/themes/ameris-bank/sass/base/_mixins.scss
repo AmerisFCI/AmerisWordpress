@@ -434,3 +434,14 @@ $sprite-high-res-suffix: '-2x' !default;
 @mixin content-below-heading {
   @include rem-fallback(font-size, 2.4);
 }
+
+@mixin more-link {
+  @include boldbluetext;
+  @include red-arrow-right-small;
+  text-decoration: none;
+  color: $link-color;
+  @include rem-fallback(font-size, 1.6);
+  &:after {
+    top: 0;
+  }
+}

@@ -1,18 +1,14 @@
 
-.callout-box {
-	position: relative;
-}
-.callout-box__headline {
-	@include voice;
-	color: $white;
-	margin-bottom: 0;
-	letter-spacing: normal;
-}
 
 .button.callout-box--large__button {
 	@include red-button-cta;
 	@include cta-arrow-right;
 	@include rem-fallback(margin, 2, 0);
+}
+
+.callout-box--large__kicker {
+	text-shadow: none;
+	color: $heading-color;
 }
 
 .callout-box--large__header {
@@ -38,6 +34,7 @@
 	@include rem-fallback(font-size, 3.2);
 	@include rem-fallback(bottom, 3.6);
 	margin-bottom: 0;
+	text-shadow: none;
 }
 
 .callout-box--large__body {
