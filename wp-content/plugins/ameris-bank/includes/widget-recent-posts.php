@@ -96,7 +96,7 @@ class Ameris_Recent_Posts_Widget extends WP_Widget {
 				$more_name = $cat->name;
 				$more_link = $more_link . 'category/' . $cat->slug;
 			} ?>
-			<a class="more-recent-posts__link" href="<?php echo $more_link; ?>">More <?php echo $more_name; ?></a>
+			<a class="more-recent-posts__link more-link" href="<?php echo $more_link; ?>">More <?php echo $more_name; ?></a>
 		</div>
 
 		<?php echo $args['after_widget'];
