@@ -9,13 +9,13 @@
 	letter-spacing: normal;
 }
 
-.button.home-callout-box__button {
+.button.callout-box--large__button {
 	@include red-button-cta;
 	@include cta-arrow-right;
 	@include rem-fallback(margin, 2, 0);
 }
 
-.home-callout-box__header {
+.callout-box--large__header {
 	@include rem-fallback(min-height, 30);
 	background-size: cover;
 	@include rem-fallback(padding, 2);
@@ -32,7 +32,7 @@
 	}
 }
 
-.home-callout-box__headline {
+.callout-box--large__headline {
 	color: $link-color;
 	position: absolute;
 	@include rem-fallback(font-size, 3.2);
@@ -40,27 +40,27 @@
 	margin-bottom: 0;
 }
 
-.home-callout-box__body {
+.callout-box--large__body {
 	background: $white;
 	@include rem-fallback(padding, 2);
 }
 
-.home-callout-box__description {
+.callout-box--large__description {
 	@include rem-fallback(font-size, 1.9);
 	@include rem-fallback(margin, 1.6, 0);
 }
 
 @include breakpoint($narrow-to-desktop) {
 
-	.home-callout-box__headline{
+	.callout-box--large__headline{
 		@include rem-fallback(font-size, 4.3);
 	}
 
-	.home-callout-box__header {
+	.callout-box--large__header {
 		@include rem-fallback(min-height, 40);
 	}
 
-	.home-callout-box__body, .home-callout-box__header {
+	.callout-box--large__body, .callout-box--large__header {
 		@include rem-fallback(padding, 2, 4);
 	}
 }
