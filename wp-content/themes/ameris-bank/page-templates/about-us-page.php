@@ -107,7 +107,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 		<div class="about-leadership callout-box" style="background-image:url( '<?php echo $image_url; ?>' );">
 			<h2 class="about-leadership__kicker callout-box__kicker kicker"><?php the_field( 'leadership_callout_title' ); ?></h2>
 			<div class="about-leadership__header callout-box__header">
-				<h3 class="about-leadership__headline callout-box__headline"><?php the_field( 'leadership_callout_headline' ); ?></h2>
+				<h3 class="about-leadership__headline callout-box__headline"><?php the_field( 'leadership_callout_headline' ); ?></h3>
 				<a class="about-leadership__button callout-box__button" href="<?php the_field( 'leadership_callout_link' ); ?>"><?php the_field( 'leadership_callout_link_text' ); ?></a>
 			</div>
 		</div>

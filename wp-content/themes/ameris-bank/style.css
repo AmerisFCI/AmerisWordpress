@@ -5980,8 +5980,12 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     padding-right: 4.8rem;
   }
 }
+/* line 3, sass/components/pages/_newsroom.scss */
+.blog .site-content {
+  padding-bottom: 0;
+}
 
-/* line 5, sass/components/pages/_newsroom.scss */
+/* line 8, sass/components/pages/_newsroom.scss */
 .latest-posts-heading {
   font-style: normal;
   font-size: 18px;
@@ -6004,7 +6008,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   padding-top: 1.8rem;
 }
 
-/* line 12, sass/components/pages/_newsroom.scss */
+/* line 15, sass/components/pages/_newsroom.scss */
 .news-item--newsroom {
   border-bottom: solid #d7e7f2;
   border-bottom-width: 2px;
@@ -6012,7 +6016,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   padding-bottom: 10px;
   padding-bottom: 1rem;
 }
-/* line 17, sass/components/pages/_newsroom.scss */
+/* line 20, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-item__title {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -6021,11 +6025,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   letter-spacing: -0.2px;
   letter-spacing: -0.02rem;
 }
-/* line 22, sass/components/pages/_newsroom.scss */
+/* line 25, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-meta {
   text-align: center;
 }
-/* line 24, sass/components/pages/_newsroom.scss */
+/* line 27, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-item__thumbnail img {
   display: block;
   margin-left: auto;
@@ -6034,11 +6038,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   margin-bottom: 1.6rem;
 }
 @media (min-width: 530px) {
-  /* line 32, sass/components/pages/_newsroom.scss */
+  /* line 35, sass/components/pages/_newsroom.scss */
   .news-item--newsroom .news-meta {
     text-align: left;
   }
-  /* line 33, sass/components/pages/_newsroom.scss */
+  /* line 36, sass/components/pages/_newsroom.scss */
   .news-item--newsroom .news-item__thumbnail {
     float: right;
     margin-left: 16px;
@@ -6046,7 +6050,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 
-/* line 42, sass/components/pages/_newsroom.scss */
+/* line 45, sass/components/pages/_newsroom.scss */
 .news-item__more {
   padding: 5px 0px;
   padding: 0.5rem 0rem;
@@ -6068,13 +6072,13 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   color: #d31145;
 }
 
-/* line 46, sass/components/pages/_newsroom.scss */
+/* line 49, sass/components/pages/_newsroom.scss */
 .after-blog {
   margin-top: 36px;
   margin-top: 3.6rem;
 }
 
-/* line 50, sass/components/pages/_newsroom.scss */
+/* line 53, sass/components/pages/_newsroom.scss */
 .blog-intro .intro {
   margin-top: 20px;
   margin-top: 2rem;
