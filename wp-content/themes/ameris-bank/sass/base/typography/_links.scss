@@ -2,3 +2,11 @@ a {
 
 }
 
+.more-link {
+	@include boldbluetext;
+	text-decoration: none;
+	@include rem-fallback(font-size, 1.6);
+	position: relative;
+	display: inline-block;
+	@include red-arrow-right-small;
+}

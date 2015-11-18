@@ -53,7 +53,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						<div class="about-video__content">
 							<h2 class="about-video__title"><?php the_field( 'video_callout_title' ); ?></h2>
 							<p class="about-video__blurb"><?php the_field( 'video_callout_blurb' ); ?></p>
-							<a class="about-video__link" href="<?php the_field( 'video_callout_link' ); ?>"><?php the_field( 'video_callout_link_text' ); ?></a>
+							<a class="about-video__link more-link" href="<?php the_field( 'video_callout_link' ); ?>"><?php the_field( 'video_callout_link_text' ); ?></a>
 						</div>
 					</div>
 					<div class="about-small-panels-container">
@@ -63,9 +63,9 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						?>
 						<div class="about-history" style="background-image:url( '<?php echo $image_url; ?>' );">
 							<div class="about-history__content">
-								<h2 class="about-history__title kicker"><?php the_field( 'history_callout_title' ); ?></h2>
+								<h2 class="about-history__kicker kicker"><?php the_field( 'history_callout_title' ); ?></h2>
 								<h3 class="about-history__headline"><?php the_field( 'history_callout_headline' ); ?></h3>
-								<a class="about-history__link" href="<?php the_field( 'history_callout_link' ); ?>"><?php the_field( 'history_callout_link_text' ); ?></a>
+								<a class="about-history__link more-link" href="<?php the_field( 'history_callout_link' ); ?>"><?php the_field( 'history_callout_link_text' ); ?></a>
 							</div>
 						</div>
 						<?php
@@ -76,7 +76,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 							<div class="about-careers__content">
 								<h2 class="about-careers__title kicker"><?php the_field( 'careers_callout_title' ); ?></h2>
 								<h3 class="about-careers__headline"><?php the_field( 'careers_callout_headline' ); ?></h3>
-								<a class="about-careers__link" href="<?php the_field( 'careers_callout_link' ); ?>"><?php the_field( 'careers_callout_link_text' ); ?></a>
+								<a class="about-careers__link more-link" href="<?php the_field( 'careers_callout_link' ); ?>"><?php the_field( 'careers_callout_link_text' ); ?></a>
 							</div>
 						</div>
 					</div>

@@ -59,11 +59,11 @@ class Ameris_Page_Callout_Widget extends WP_Widget {
 
 		echo $args['before_widget']; ?>
 
-		<div class="callout-box sidebar-callout-box" style="background-image:url( '<?php echo $instance['image']; ?>' );">
-			<h2 class="callout-box__kicker kicker sidebar-callout-box__kicker"><?php echo $instance['label']; ?></h2>
-			<div class="callout-box__header sidebar-callout-box__header">
-				<h3 class="callout-box__headline sidebar-callout-box__headline"><?php echo $instance['headline']; ?></h3>
-				<a class="button callout-box__button sidebar-callout-box__button" href="<?php echo get_permalink( $instance['page'] ); ?>"><?php echo $instance['link_text']; ?></a>
+		<div class="callout-box sidebar-callout-box callout-box--small" style="background-image:url( '<?php echo $instance['image']; ?>' );">
+			<h2 class="callout-box__kicker kicker sidebar-callout-box__kicker  callout-box--small__kicker"><?php echo $instance['label']; ?></h2>
+			<div class="callout-box__header sidebar-callout-box__header  callout-box--small__header">
+				<h3 class="callout-box__headline sidebar-callout-box__headline  callout-box--small__headline"><?php echo $instance['headline']; ?></h3>
+				<a class="button callout-box__button sidebar-callout-box__button  callout-box--small__button" href="<?php echo get_permalink( $instance['page'] ); ?>"><?php echo $instance['link_text']; ?></a>
 			</div>
 		</div>
 
