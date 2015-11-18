@@ -51,7 +51,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 					?>
 					<div class="about-video" style="background-image:url( '<?php echo $image_url; ?>' );">
 						<div class="about-video__content">
-							<h2 class="about-video__title"><?php the_field( 'video_callout_title' ); ?></h3>
+							<h2 class="about-video__title"><?php the_field( 'video_callout_title' ); ?></h2>
 							<p class="about-video__blurb"><?php the_field( 'video_callout_blurb' ); ?></p>
 							<a class="about-video__link" href="<?php the_field( 'video_callout_link' ); ?>"><?php the_field( 'video_callout_link_text' ); ?></a>
 						</div>
@@ -64,7 +64,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						<div class="about-history" style="background-image:url( '<?php echo $image_url; ?>' );">
 							<div class="about-history__content">
 								<h2 class="about-history__title kicker"><?php the_field( 'history_callout_title' ); ?></h2>
-								<h3 class="about-history__headline"><?php the_field( 'history_callout_headline' ); ?></h2>
+								<h3 class="about-history__headline"><?php the_field( 'history_callout_headline' ); ?></h3>
 								<a class="about-history__link" href="<?php the_field( 'history_callout_link' ); ?>"><?php the_field( 'history_callout_link_text' ); ?></a>
 							</div>
 						</div>
@@ -75,7 +75,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						<div class="about-careers" style="background-image:url( '<?php echo $image_url; ?>' );">
 							<div class="about-careers__content">
 								<h2 class="about-careers__title kicker"><?php the_field( 'careers_callout_title' ); ?></h2>
-								<h3 class="about-careers__headline"><?php the_field( 'careers_callout_headline' ); ?></h2>
+								<h3 class="about-careers__headline"><?php the_field( 'careers_callout_headline' ); ?></h3>
 								<a class="about-careers__link" href="<?php the_field( 'careers_callout_link' ); ?>"><?php the_field( 'careers_callout_link_text' ); ?></a>
 							</div>
 						</div>
@@ -93,22 +93,22 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 </div>
 
 <div class="inner-wrap content-inner-wrap">
-	<div class="content-below">
+	<div class="content-below about-content-below">
 		<div class="about-investor">
 			<h2 class="about-investor__title kicker"><?php the_field( 'investor_callout_title' ); ?></h2>
 			<h3 class="about-investor__headline"><?php the_field( 'investor_callout_headline' ); ?></h3>
 			<div class="about-investor__description"><?php the_field( 'investor_callout_description' ); ?></div>
-			<a class="about-investor__link" href="<?php the_field( 'investor_callout_link' ); ?>"><?php the_field( 'investor_callout_link_text' ); ?></a>
+			<a class="about-investor__link more-link" href="<?php the_field( 'investor_callout_link' ); ?>"><?php the_field( 'investor_callout_link_text' ); ?></a>
 		</div>
 		<?php
 			$image = wp_get_attachment_image_src( get_field( 'leadership_callout_image' ), 'about-leaders' );
 			$image_url = $image[0];
 		?>
-		<div class="about-leadership" style="background-image:url( '<?php echo $image_url; ?>' );">
-			<h2 class="about-leadership__title kicker"><?php the_field( 'leadership_callout_title' ); ?></h2>
-			<div class="about-leadership__content">
-				<h3 class="about-leadership__headline"><?php the_field( 'leadership_callout_headline' ); ?></h2>
-				<a class="about-leadership__link" href="<?php the_field( 'leadership_callout_link' ); ?>"><?php the_field( 'leadership_callout_link_text' ); ?></a>
+		<div class="about-leadership callout-box" style="background-image:url( '<?php echo $image_url; ?>' );">
+			<h2 class="about-leadership__kicker callout-box__kicker kicker"><?php the_field( 'leadership_callout_title' ); ?></h2>
+			<div class="about-leadership__header callout-box__header">
+				<h3 class="about-leadership__headline callout-box__headline"><?php the_field( 'leadership_callout_headline' ); ?></h2>
+				<a class="about-leadership__button callout-box__button" href="<?php the_field( 'leadership_callout_link' ); ?>"><?php the_field( 'leadership_callout_link_text' ); ?></a>
 			</div>
 		</div>
 		<div class="about-recent-press widget_ameris_press_feed_widget">
