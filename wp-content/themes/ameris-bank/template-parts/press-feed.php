@@ -1,5 +1,7 @@
 <div class="recent-posts">
-	<?php $rss = fetch_feed( 'http://www.snl.com/IRWebLinkX/rss/prfeed.aspx?iid=100594' );
+	<?php 
+	$url = 'http://www.snl.com/IRWebLinkX/rss/prfeed.aspx?iid=100594';
+	$rss = fetch_feed( $url );
 	foreach ( $rss->get_items( 0, 3 ) as $item ) { ?>
 		<div class="recent-post">
 			<h3 class="recent-post__title"><a href="<?php echo $item->get_link(); ?>"><?php echo $item->get_title(); ?></a></h3>
