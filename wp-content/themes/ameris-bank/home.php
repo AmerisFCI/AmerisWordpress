@@ -52,11 +52,13 @@ $blog_home_id = get_option( 'page_for_posts' ); ?>
 
 	<?php get_sidebar( 'left-no-widgets' ); ?>
 
-	<div class="content-below">
+
+
+</div><!-- .inner-wrap .content-inner-wrap -->
+
+	<div class="newsroom-content-below">
 		<div class="latest-updates">
 		</div>
 	</div>
-
-</div><!-- .inner-wrap .content-inner-wrap -->
 
 <?php get_footer(); ?>

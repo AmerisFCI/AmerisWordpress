@@ -1,5 +1,8 @@
 .blog {
 	@include wide-banner-page-layout;
+	.site-content {
+		padding-bottom: 0;
+	}
 }
 
 .latest-posts-heading {
