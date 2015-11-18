@@ -16,8 +16,7 @@ class Ameris_Press_Feed_Widget extends WP_Widget {
 	function __construct() {
 
 		$this->defaults = array(
-			'title'      => '',
-			'amount'     => 3
+			'title'      => ''
 		);
 
 		parent::__construct(
@@ -65,9 +64,6 @@ class Ameris_Press_Feed_Widget extends WP_Widget {
 		$instance = wp_parse_args( $instance, $this->defaults );
 		$instance = array_intersect_key( $instance, $this->defaults );
 
-		// title, amount, thumbnails, category
-		// text,  num,    checkbox,   dropdown
-
 		foreach( $instance as $key => $value ) {
 			?><p><?php
 
@@ -75,11 +71,6 @@ class Ameris_Press_Feed_Widget extends WP_Widget {
 				case 'title' : ?>
 					<label for="<?php echo $this->get_field_id( $key ); ?>">Title</label>
 					<input class="widefat" id="<?php echo $this->get_field_id( $key ); ?>" name="<?php echo $this->get_field_name( $key ); ?>" type="text" value="<?php echo esc_attr( $value ); ?>">
-					<?php break;
-
-				case 'amount' : ?>
-					<label for="<?php echo $this->get_field_id( $key ); ?>">Amount</label>
-					<input class="widefat" id="<?php echo $this->get_field_id( $key ); ?>" name="<?php echo $this->get_field_name( $key ); ?>" type="number" max="20" value="<?php echo esc_attr( $value ); ?>">
 					<?php break;
 			}
 
@@ -105,9 +96,6 @@ class Ameris_Press_Feed_Widget extends WP_Widget {
 			switch( $key ) {
 				case 'title' :
 					$instance[$key] = sanitize_text_field( $value );
-					break;
-				case 'amount' :
-					$instance[$key] = (int) $value;
 					break;
 			}
 		}
