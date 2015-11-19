@@ -102,7 +102,7 @@
 		appendArrows:'.about-newsroom-arrows',
 		dots: true,
 		fade: false,
-		infinite: false,
+		infinite: true,
 		mobileFirst: true,
 		pauseOnDotsHover: true,
 		swipeToSlide: true

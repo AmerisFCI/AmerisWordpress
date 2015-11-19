@@ -53,7 +53,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						$image_url = $image[0];
 					?>
 					<div class="about-video" style="background-image:url( '<?php echo $image_url; ?>' );">
-						<div class="about-video__content">
+						<div class="about-video__body">
 							<h2 class="about-video__title"><?php the_field( 'video_callout_title' ); ?></h2>
 							<p class="about-video__blurb"><?php the_field( 'video_callout_blurb' ); ?></p>
 							<a class="about-video__link more-link" href="<?php the_field( 'video_callout_link' ); ?>"><?php the_field( 'video_callout_link_text' ); ?></a>
@@ -77,7 +77,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						?>
 						<div class="about-careers about-small-panels__column" style="background-image:url( '<?php echo $image_url; ?>' );">
 							<div class="about-careers__content">
-								<h2 class="about-careers__title kicker"><?php the_field( 'careers_callout_title' ); ?></h2>
+								<h2 class="about-careers__kicker kicker"><?php the_field( 'careers_callout_title' ); ?></h2>
 								<h3 class="about-careers__headline"><?php the_field( 'careers_callout_headline' ); ?></h3>
 								<a class="about-careers__link more-link" href="<?php the_field( 'careers_callout_link' ); ?>"><?php the_field( 'careers_callout_link_text' ); ?></a>
 							</div>
@@ -99,7 +99,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 		<div class="about-panels">
 			<div class="about-panels__column">
 				<div class="about-investor">
-					<h2 class="about-investor__title kicker"><?php the_field( 'investor_callout_title' ); ?></h2>
+					<h2 class="about-investor__kicker kicker"><?php the_field( 'investor_callout_title' ); ?></h2>
 					<h3 class="about-investor__headline"><?php the_field( 'investor_callout_headline' ); ?></h3>
 					<div class="about-investor__description"><?php the_field( 'investor_callout_description' ); ?></div>
 					<a class="about-investor__link more-link" href="<?php the_field( 'investor_callout_link' ); ?>"><?php the_field( 'investor_callout_link_text' ); ?></a>
