@@ -16,7 +16,8 @@
 }
 
 .button.tool__link {
-	@include rem-fallback(padding-top, 1.4);
+	//@include boldbluetext;
+	@include rem-fallback(font-size, 1.5);
 }
 
 .home-tools {
@@ -56,7 +57,7 @@
 
 	.tool {
 		@include float-span(3);
-		@include rem-fallback(margin-bottom, 4);
+		@include rem-fallback(margin-bottom, 5.3);
 
 		&:nth-child(4n){
 			@include float-span(3, 'last');

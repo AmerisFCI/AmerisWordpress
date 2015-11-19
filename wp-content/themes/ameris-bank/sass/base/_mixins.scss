@@ -313,6 +313,7 @@ $sprite-high-res-suffix: '-2x' !default;
   font-style: italic;
   font-weight: 400;
   text-transform: none;
+  @include rem-fallback(letter-spacing, -0.02);
 }
 
 @mixin h2-look {
