@@ -49,16 +49,10 @@
 	width: 100%;
 }
 
-@include breakpoint($tablet-to-desktop) {
-	.latest-news__kicker-wrap {
-		@include grid-span(2, 1);
-		float: none;
-		margin-right: 0;
-	}
-}
 
 
-@include breakpoint($tablet-wide) {
+
+/*@include breakpoint($tablet-wide) {
 	.news-item--home {
 		@include float-span(2);
 	}
@@ -71,7 +65,7 @@
 		clear: both;
 	}
 
-}
+}*/
 
 @mixin horizontal-news {
 	.news-item__header, .news-item__body {
@@ -106,18 +100,62 @@
 
 }
 
+@include breakpoint($tablet-to-desktop) {
+	.latest-news__kicker-wrap {
+		@include grid-span(2, 1);
+		float: none;
+		margin-right: 0;
+	}
+}
+
+
+@include breakpoint($tablet) {
+	.latest-news__kicker-wrap {
+		width: 100%;
+	}
+	//@include horizontal-news;
+	.news-item--home {
+		@include rem-fallback(width, 44);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@include breakpoint($tablet-wide) {
+	//@include horizontal-news;
+	.latest-news {
+		text-align: center;
+	}
+	.news-item--home {
+		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+		@include rem-fallback(width, 32);
+		@include rem-fallback(margin-right, 2.4);
+	}
+}
+
+@media all and (min-width: 890px) /*and (max-width: 1199px)*/ {
+	.news-item--home {
+		@include float-span(2);
+	}
+
+	.news-item--home:last-of-type {
+		@include float-span(2, 'last')
+	}
+}
 
 @include breakpoint($narrow-to-desktop) {
-	@include horizontal-news;
-}
-@include breakpoint($tablet-skinny) {
-	@include horizontal-news;
+	//@include horizontal-news;
 }
 
 @include breakpoint($desktop) {
 	.latest-news__kicker-wrap {
 		@include grid-span(2,1);
 		float: none;
+	}
+	.latest-news {
+		@include rem-fallback(margin-top, 5);
 	}
 }
 
