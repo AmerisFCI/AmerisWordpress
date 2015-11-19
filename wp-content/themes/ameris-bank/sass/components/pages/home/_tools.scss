@@ -6,9 +6,17 @@
 	@include clearfix();
 }
 
+.tool__description {
+	@include rem-fallback(font-size, 1.6);
+}
+
 .tool__title {
 	@include boldbluetext;
 	text-align: center;
+}
+
+.button.tool__link {
+	@include rem-fallback(padding-top, 1.4);
 }
 
 .home-tools {
