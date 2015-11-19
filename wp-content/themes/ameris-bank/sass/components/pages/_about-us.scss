@@ -32,6 +32,12 @@
 	@include rem-fallback(min-height, 30);
 }
 
+.about-history__headline, .about-careers__headline {
+	@include voice;
+	color: $white;
+	@include rem-fallback(font-size, 4.2);
+}
+
 
 //layout for the top, this page is inheriting a 20 column grid
 @include breakpoint($tablet-wide-up) {
@@ -102,6 +108,25 @@
 .about-newsroom-wrapper {
 	position: relative;
 	@include rem-fallback(margin-bottom, 2.4);
+
+	.slick-dots {
+		width: auto;
+		right: initial;
+		left: 0;
+		@include rem-fallback(height, 2.4);
+		@include rem-fallback(left, 2.4);
+		@include rem-fallback(bottom, 2.4);
+		li {
+			box-shadow: none;
+			button {
+				border-color: $darkblue;
+			}
+			&.slick-active button {
+				background: $darkblue;
+			}
+		}
+	}
+
 }
 
 .about-newsroom-arrows {
@@ -124,21 +149,6 @@
 	}
 	.slick-next {
 	}
-	.slick-dots {
-		width: auto;
-		left: 0;
-		right: auto;
-		@include rem-fallback(height, 2.4);
-		@include rem-fallback(bottom, -5.4);
-		li {box-shadow: none;}
-	}
-}
-
-.about-newsroom {
-	.slick-dots {
-		@include rem-fallback(left, 2.4);
-		@include rem-fallback(bottom, 2.4);
-	}
 }
 
 .about-news-item {
@@ -149,11 +159,12 @@
 
 .about-news-item__title {
 	@include voice;
+	@include rem-fallback(font-size, 3.6);
 }
 
 .about-news-item__content {
 	background: rgba(255, 255, 255, .9);
-	@include rem-fallback(padding, 2.4);
+	@include rem-fallback(padding, 2.4, 2.4, 6);
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -188,7 +199,7 @@
 	}
 }
 
-.about-video__title, a.about-video__link {
+.about-video__title, a.about-video__link, a.about-history__link, a.about-careers__link {
 	color: $white;
 }
 
@@ -199,6 +210,9 @@
 		@include rem-fallback(margin-top, 2.4);
 	}
 }
+.about-investor__headline {
+	@include h2-look;
+}
 
 //Leader callout
 .about-leadership__image {
@@ -208,6 +222,17 @@
 
 .about-leadership__body {
 	background: $darkblue;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		border: solid transparent;
+		@include rem-fallback(border-width, 3);
+		position: absolute;
+		@include rem-fallback(top, -6);
+		@include rem-fallback(left, 6);
+		border-bottom-color: $darkblue;
+	}
 }
 
 .about-leadership__headline {
