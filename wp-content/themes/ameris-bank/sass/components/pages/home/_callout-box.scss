@@ -4,6 +4,10 @@
 	@include red-button-cta;
 	@include cta-arrow-right;
 	@include rem-fallback(margin, 2, 0);
+	width: auto;
+	&:after {
+		margin-left: 0;
+	}
 }
 
 .callout-box--large__kicker {

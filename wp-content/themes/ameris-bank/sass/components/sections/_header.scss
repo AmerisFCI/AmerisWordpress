@@ -31,7 +31,7 @@
 		outline-color: $white;
 	}
 	img {
-		@include rem-fallback(width, 20);
+		@include rem-fallback(width, 18);
 	}
 }
 
@@ -53,12 +53,15 @@
 
 @include breakpoint($mobile) {
 	.logo {
-		max-width: 60%;
+		@include rem-fallback(max-width, 14);
 		img {
 			width: 100%;
 			height: auto;
-			@include rem-fallback(margin-top, 2);
+			@include rem-fallback(margin, 1.2, 0);
 		}
+	}
+	.site-branding {
+		margin: 0;
 	}
 }
 

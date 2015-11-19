@@ -118,6 +118,10 @@
 	.sub-menu .column {
 		width: 100% !important;
 	}
+	.menu-toggle {
+		@include rem-fallback(top, 2.4);
+		@include rem-fallback(right, 3);
+	}
 }
 
 
