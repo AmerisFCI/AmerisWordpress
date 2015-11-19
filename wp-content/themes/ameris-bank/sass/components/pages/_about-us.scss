@@ -2,6 +2,9 @@
 	.wide-banner-blurb__wrap:after {
 		content: none;
 	}
+	.latest-updates {
+		@include rem-fallback(margin-bottom, 4.8);
+	}
 }
 
 //add padding to all of the about us panels
@@ -25,17 +28,28 @@
 //set areas with background images' kickers to be white
 .about-leadership__kicker, .about-history__kicker, .about-careers__kicker, .about-news-item__kicker {
 	color: $white;
+	text-shadow: 1px 1px 30px rgba(0,0,0,.9);
 }
 
 //min-heights
 .about-history, .about-careers {
-	@include rem-fallback(min-height, 30);
+	@include rem-fallback(min-height, 32.5);
+	position: relative;
+}
+
+.about-history__lower, .about-careers__lower {
+	position: absolute;
+	@include rem-fallback(bottom, 0);
+	@include rem-fallback(left, 0);
+	width: 100%;
+	@include rem-fallback(padding, 2.4);
 }
 
 .about-history__headline, .about-careers__headline {
 	@include voice;
 	color: $white;
 	@include rem-fallback(font-size, 4.2);
+	text-shadow: 1px 1px 30px rgba(0,0,0,.9);
 }
 
 
@@ -257,7 +271,7 @@ a.about-leadership__button {
 	color: $white;
 	text-align: center;
 	background: $red;
-	@include rem-fallback(padding, 6, 2.4, 0);
+	@include rem-fallback(padding, 6, 5%, 0);
 	@include rem-fallback(min-height, 30);
 	position: relative;
 	h2 {
@@ -274,4 +288,10 @@ a.about-leadership__button {
 		height: 9rem;
 		@include background-image(linear-gradient(to top, rgba(0,0,0,.1), rgba(0,0,0,0)));
 	}
+}
+
+.tintup {
+	@include rem-fallback(max-width, 140);
+	margin: auto;
+
 }

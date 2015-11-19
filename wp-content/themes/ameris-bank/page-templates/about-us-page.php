@@ -67,8 +67,10 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						<div class="about-history about-small-panels__column" style="background-image:url( '<?php echo $image_url; ?>' );">
 							<div class="about-history__content">
 								<h2 class="about-history__kicker kicker"><?php the_field( 'history_callout_title' ); ?></h2>
-								<h3 class="about-history__headline"><?php the_field( 'history_callout_headline' ); ?></h3>
-								<a class="about-history__link more-link" href="<?php the_field( 'history_callout_link' ); ?>"><?php the_field( 'history_callout_link_text' ); ?></a>
+								<div class="about-history__lower">
+									<h3 class="about-history__headline"><?php the_field( 'history_callout_headline' ); ?></h3>
+									<a class="about-history__link more-link" href="<?php the_field( 'history_callout_link' ); ?>"><?php the_field( 'history_callout_link_text' ); ?></a>
+								</div>
 							</div>
 						</div>
 						<?php
@@ -78,8 +80,10 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						<div class="about-careers about-small-panels__column" style="background-image:url( '<?php echo $image_url; ?>' );">
 							<div class="about-careers__content">
 								<h2 class="about-careers__kicker kicker"><?php the_field( 'careers_callout_title' ); ?></h2>
-								<h3 class="about-careers__headline"><?php the_field( 'careers_callout_headline' ); ?></h3>
-								<a class="about-careers__link more-link" href="<?php the_field( 'careers_callout_link' ); ?>"><?php the_field( 'careers_callout_link_text' ); ?></a>
+								<div class="about-careers__lower">
+									<h3 class="about-careers__headline"><?php the_field( 'careers_callout_headline' ); ?></h3>
+									<a class="about-careers__link more-link" href="<?php the_field( 'careers_callout_link' ); ?>"><?php the_field( 'careers_callout_link_text' ); ?></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -92,7 +96,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 
 <div class="latest-updates">
 	<h2>Latest Updates</h2>
-	<!-- ... -->
+	<script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="amerisbanknewsfeed" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="697150" style="height:800px;width:100%;"></div>
 </div>
 
 <div class="inner-wrap content-inner-wrap">

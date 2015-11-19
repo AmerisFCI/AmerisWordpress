@@ -58,6 +58,9 @@ $blog_home_id = get_option( 'page_for_posts' ); ?>
 
 	<div class="newsroom-content-below">
 		<div class="latest-updates">
+		<h2>Latest Updates</h2>
+			<script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="amerisbanknewsfeed" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="697150" style="height:800px;width:100%;"></div>
+</div>
 		</div>
 	</div>
 
