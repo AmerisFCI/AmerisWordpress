@@ -755,7 +755,7 @@ dd {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -766,7 +766,7 @@ dd {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 249, sass/base/_mixins.scss */
   .more-link:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -807,7 +807,7 @@ dd {
 /* line 72, sass/base/libraries/_sod.scss */
 .sod_select:before {
   content: "";
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -582px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -822,7 +822,7 @@ dd {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 72, sass/base/libraries/_sod.scss */
   .sod_select:before {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -213px;
     height: 27px;
     width: 19px;
@@ -1859,7 +1859,7 @@ a:hover, a:active {
   top: 2.2rem;
   right: 16px;
   right: 1.6rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -370px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1872,7 +1872,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 66, sass/components/navigation/_menu-main.scss */
   .nav-menu .menu-item-has-children > a:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -166px;
     height: 14px;
     width: 8px;
@@ -2057,7 +2057,7 @@ a:hover, a:active {
     top: 2px;
     top: 0.2rem;
     left: 0;
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
     background-position: 0 -168px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2073,7 +2073,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 214, sass/components/navigation/_menu-main.scss */
   .nav-menu li li a:after, .nav-menu .right-side a:after, .nav-menu .stacked-sub a:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -2136,7 +2136,7 @@ a:hover, a:active {
   .nav-menu li .menu-item-has-children > a:after {
     content: "";
     transform: rotate(0);
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
     background-position: 0 -168px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2148,7 +2148,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 272, sass/components/navigation/_menu-main.scss */
   .nav-menu li .menu-item-has-children > a:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -2396,7 +2396,7 @@ a:hover, a:active {
     right: 1.9rem;
     top: 32px;
     top: 3.2rem;
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
     background-position: 0 -248px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2408,7 +2408,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 228, sass/base/_mixins.scss */
   .toggle-sub__parent > a:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -40px;
     height: 20px;
     width: 11px;
@@ -2576,7 +2576,7 @@ a:hover, a:active {
     left: 1.5rem;
     top: 4px;
     top: 0.4rem;
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
     background-position: 0 -394px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2588,7 +2588,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
   .sba-nav .nav-cta a:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -139px;
     height: 22px;
     width: 13px;
@@ -2692,8 +2692,8 @@ a:hover, a:active {
 
   /* line 643, sass/components/navigation/_menu-main.scss */
   .business-nav__small-business > a:before {
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
-    background-position: 0 -4217px;
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
+    background-position: 0 -4525px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -2703,8 +2703,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 643, sass/components/navigation/_menu-main.scss */
   .business-nav__small-business > a:before {
-    background-size: 215px 2258.5px;
-    background-position: 0 -2050.5px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -2204.5px;
     height: 53px;
     width: 53px;
   }
@@ -2713,8 +2713,8 @@ a:hover, a:active {
 @media (min-width: 1200px) {
   /* line 646, sass/components/navigation/_menu-main.scss */
   .business-nav__corporate > a:before {
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
-    background-position: 0 -3859px;
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
+    background-position: 0 -4167px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -2724,8 +2724,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 646, sass/components/navigation/_menu-main.scss */
   .business-nav__corporate > a:before {
-    background-size: 215px 2258.5px;
-    background-position: 0 -1871.5px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -2025.5px;
     height: 53px;
     width: 53px;
   }
@@ -2734,8 +2734,8 @@ a:hover, a:active {
 @media (min-width: 1200px) {
   /* line 649, sass/components/navigation/_menu-main.scss */
   .business-nav__municipalities > a:before {
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
-    background-position: 0 -3680px;
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
+    background-position: 0 -3988px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -2745,8 +2745,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 649, sass/components/navigation/_menu-main.scss */
   .business-nav__municipalities > a:before {
-    background-size: 215px 2258.5px;
-    background-position: 0 -1782px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -1936px;
     height: 53px;
     width: 53px;
   }
@@ -2755,8 +2755,8 @@ a:hover, a:active {
 @media (min-width: 1200px) {
   /* line 652, sass/components/navigation/_menu-main.scss */
   .business-nav__associations > a:before {
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
-    background-position: 0 -4396px;
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
+    background-position: 0 -4704px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -2766,8 +2766,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 652, sass/components/navigation/_menu-main.scss */
   .business-nav__associations > a:before {
-    background-size: 215px 2258.5px;
-    background-position: 0 -2140px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -2294px;
     height: 53px;
     width: 53px;
   }
@@ -2776,8 +2776,8 @@ a:hover, a:active {
 @media (min-width: 1200px) {
   /* line 655, sass/components/navigation/_menu-main.scss */
   .business-nav__agricultural > a:before {
-    background-image: url('images/sprite-images-s5908aa9ee5.png');
-    background-position: 0 -4038px;
+    background-image: url('images/sprite-images-sf01bbe14f1.png');
+    background-position: 0 -4346px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -2787,8 +2787,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 655, sass/components/navigation/_menu-main.scss */
   .business-nav__agricultural > a:before {
-    background-size: 215px 2258.5px;
-    background-position: 0 -1961px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -2115px;
     height: 53px;
     width: 53px;
   }
@@ -2887,7 +2887,7 @@ a:hover, a:active {
   padding: 25px 24px;
   padding: 2.5rem 2.4rem;
 }
-/* line 4, sass/components/navigation/_sidebar-nav.scss */
+/* line 461, sass/base/_mixins.scss */
 .sidebar-menu a {
   font-style: normal;
   font-size: 18px;
@@ -2906,7 +2906,7 @@ a:hover, a:active {
   margin-bottom: 0.5rem;
   position: relative;
 }
-/* line 11, sass/components/navigation/_sidebar-nav.scss */
+/* line 468, sass/base/_mixins.scss */
 .sidebar-menu a:before {
   content: "";
   display: block;
@@ -2922,51 +2922,51 @@ a:hover, a:active {
   background-color: #d31145;
   transition: all .2s;
 }
-/* line 23, sass/components/navigation/_sidebar-nav.scss */
+/* line 480, sass/base/_mixins.scss */
 .sidebar-menu a:hover:before {
   height: 100%;
   opacity: 1;
   width: 5px;
   width: 0.5rem;
 }
-/* line 28, sass/components/navigation/_sidebar-nav.scss */
+/* line 485, sass/base/_mixins.scss */
 .sidebar-menu a:focus {
   text-decoration: underline;
 }
-/* line 32, sass/components/navigation/_sidebar-nav.scss */
+/* line 489, sass/base/_mixins.scss */
 .sidebar-menu .current_page_item > a:before {
   height: 100%;
   opacity: 1;
   width: 5px;
   width: 0.5rem;
 }
-/* line 37, sass/components/navigation/_sidebar-nav.scss */
+/* line 494, sass/base/_mixins.scss */
 .sidebar-menu li {
   list-style: none;
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
-/* line 41, sass/components/navigation/_sidebar-nav.scss */
+/* line 498, sass/base/_mixins.scss */
 .sidebar-menu .children {
   margin: 0;
 }
-/* line 43, sass/components/navigation/_sidebar-nav.scss */
+/* line 500, sass/base/_mixins.scss */
 .sidebar-menu .children li {
   margin-bottom: 5px;
   margin-bottom: 0.5rem;
 }
-/* line 46, sass/components/navigation/_sidebar-nav.scss */
+/* line 503, sass/base/_mixins.scss */
 .sidebar-menu .children a {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   margin: 0;
 }
-/* line 53, sass/components/navigation/_sidebar-nav.scss */
+/* line 510, sass/base/_mixins.scss */
 .sidebar-menu .view-all a {
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
 }
-/* line 56, sass/components/navigation/_sidebar-nav.scss */
+/* line 513, sass/base/_mixins.scss */
 .sidebar-menu .view-all a:hover {
   border-bottom-color: transparent;
 }
@@ -3035,26 +3035,25 @@ a:hover, a:active {
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
-  top: 0.3rem;
-  right: 7px;
-  right: 0.7rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -773px;
+  top: 0;
+  right: 5px;
+  right: 0.5rem;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -785px;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 26px;
-  width: 26px;
+  height: 32px;
+  width: 32px;
   pointer-events: none;
   z-index: 2;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 33, sass/components/navigation/_search-box.scss */
   .search-form:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -355.5px;
-    height: 26px;
-    width: 26px;
+    height: 32px;
+    width: 32px;
   }
 }
 
@@ -3075,8 +3074,8 @@ a:hover, a:active {
 }
 /* line 17, sass/components/navigation/_social-links.scss */
 .social-links .linkedin a {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -1210px;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -1228px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -3085,16 +3084,16 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 17, sass/components/navigation/_social-links.scss */
   .social-links .linkedin a {
-    background-size: 215px 2258.5px;
-    background-position: 0 -574px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -583px;
     height: 26px;
     width: 22px;
   }
 }
 /* line 21, sass/components/navigation/_social-links.scss */
 .social-links .facebook a {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -1014px;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -1032px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -3103,16 +3102,16 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 21, sass/components/navigation/_social-links.scss */
   .social-links .facebook a {
-    background-size: 215px 2258.5px;
-    background-position: 0 -476px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -485px;
     height: 26px;
     width: 22px;
   }
 }
 /* line 25, sass/components/navigation/_social-links.scss */
 .social-links .twitter a {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -1308px;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -1326px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -3121,16 +3120,16 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 25, sass/components/navigation/_social-links.scss */
   .social-links .twitter a {
-    background-size: 215px 2258.5px;
-    background-position: 0 -623px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -632px;
     height: 26px;
     width: 22px;
   }
 }
 /* line 29, sass/components/navigation/_social-links.scss */
 .social-links .youtube a {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -1406px;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -1424px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -3139,16 +3138,16 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 29, sass/components/navigation/_social-links.scss */
   .social-links .youtube a {
-    background-size: 215px 2258.5px;
-    background-position: 0 -672px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -681px;
     height: 26px;
     width: 22px;
   }
 }
 /* line 33, sass/components/navigation/_social-links.scss */
 .social-links .instagram a {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -1112px;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -1130px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 26px;
@@ -3157,8 +3156,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 33, sass/components/navigation/_social-links.scss */
   .social-links .instagram a {
-    background-size: 215px 2258.5px;
-    background-position: 0 -525px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -534px;
     height: 26px;
     width: 22px;
   }
@@ -3193,7 +3192,7 @@ a:hover, a:active {
 }
 /* line 19, sass/components/navigation/_pager.scss */
 .pagination .prev {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3206,7 +3205,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 19, sass/components/navigation/_pager.scss */
   .pagination .prev {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -3214,7 +3213,7 @@ a:hover, a:active {
 }
 /* line 24, sass/components/navigation/_pager.scss */
 .pagination .next {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3226,7 +3225,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 24, sass/components/navigation/_pager.scss */
   .pagination .next {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -3473,7 +3472,7 @@ a:hover, a:active {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -394px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3484,7 +3483,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
   .button.callout-box__button:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -139px;
     height: 22px;
     width: 13px;
@@ -3626,8 +3625,8 @@ a:hover, a:active {
 
 /* line 40, sass/components/sections/_footer.scss */
 #Member_FDIC {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -3411px;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -3719px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 43px;
@@ -3636,8 +3635,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 40, sass/components/sections/_footer.scss */
   #Member_FDIC {
-    background-size: 215px 2258.5px;
-    background-position: 0 -1658px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -1812px;
     height: 43px;
     width: 68px;
   }
@@ -3645,8 +3644,8 @@ a:hover, a:active {
 
 /* line 44, sass/components/sections/_footer.scss */
 #Equal_Housing_Lender {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -3250px;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -3558px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 56px;
@@ -3655,8 +3654,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 44, sass/components/sections/_footer.scss */
   #Equal_Housing_Lender {
-    background-size: 215px 2258.5px;
-    background-position: 0 -1564px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -1718px;
     height: 56px;
     width: 55px;
   }
@@ -3737,7 +3736,7 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   left: 0.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -677px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3747,7 +3746,7 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 84, sass/components/sections/_footer.scss */
   .newsletter-signup__submit__icon:before {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -309.5px;
     height: 24px;
     width: 23px;
@@ -4386,7 +4385,7 @@ footer .menu-item {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -4397,7 +4396,7 @@ footer .menu-item {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 249, sass/base/_mixins.scss */
   .more-recent-posts__link:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -4611,7 +4610,7 @@ footer .menu-item {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -394px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -4622,7 +4621,7 @@ footer .menu-item {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
   .button.slide__cta:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -139px;
     height: 22px;
     width: 13px;
@@ -4848,8 +4847,8 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 .account-access__submit-wrapper:before {
   content: '';
   display: inline-block;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
-  background-position: 0 -901px;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -919px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 41px;
@@ -4864,8 +4863,8 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 42, sass/components/pages/home/_accountaccess.scss */
   .account-access__submit-wrapper:before {
-    background-size: 215px 2258.5px;
-    background-position: 0 -404.5px;
+    background-size: 215px 2412.5px;
+    background-position: 0 -413.5px;
     height: 41px;
     width: 41px;
   }
@@ -5307,7 +5306,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -394px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -5318,7 +5317,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
   .button.callout-box--large__button:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -139px;
     height: 22px;
     width: 13px;
@@ -5641,7 +5640,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   background: transparent;
   text-indent: -9999px;
   padding: 0;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -50px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -5651,7 +5650,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 15, sass/components/pages/landing/_tools.scss */
   .resources-rotator .slick-arrow {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 0;
     height: 20px;
     width: 11px;
@@ -5890,7 +5889,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -5901,7 +5900,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 249, sass/base/_mixins.scss */
   .leadership-grid__name:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -6293,47 +6292,57 @@ h1.single-article__title, .single-article__title.landing-heading {
   content: none;
 }
 /* line 5, sass/components/pages/_about-us.scss */
+.page-template-about-us-page .wide-banner-blurb {
+  bottom: 180px;
+  bottom: 18rem;
+}
+/* line 8, sass/components/pages/_about-us.scss */
 .page-template-about-us-page .latest-updates {
   margin-bottom: 48px;
   margin-bottom: 4.8rem;
 }
 
-/* line 11, sass/components/pages/_about-us.scss */
+/* line 14, sass/components/pages/_about-us.scss */
+body.page-template-about-us-page .site-main {
+  padding: 0;
+}
+
+/* line 20, sass/components/pages/_about-us.scss */
 .about-our-story, .about-news-item, .about-video, .about-video-content, .about-history, .about-careers, .about-leadership__image, .about-leadership__body, .about-investor, .about-leadership, .about-recent-press {
   padding: 24px;
   padding: 2.4rem;
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
-/* line 14, sass/components/pages/_about-us.scss */
+/* line 23, sass/components/pages/_about-us.scss */
 .about-our-story .kicker, .about-news-item .kicker, .about-video .kicker, .about-video-content .kicker, .about-history .kicker, .about-careers .kicker, .about-leadership__image .kicker, .about-leadership__body .kicker, .about-investor .kicker, .about-leadership .kicker, .about-recent-press .kicker {
   margin-top: 0;
 }
 
-/* line 19, sass/components/pages/_about-us.scss */
+/* line 28, sass/components/pages/_about-us.scss */
 .about-leadership, .about-recent-press {
   padding: 0;
 }
 
-/* line 24, sass/components/pages/_about-us.scss */
+/* line 33, sass/components/pages/_about-us.scss */
 .about-leadership__image, .about-news-item, .about-history, .about-careers, .about-video {
   background-size: cover;
 }
 
-/* line 29, sass/components/pages/_about-us.scss */
+/* line 38, sass/components/pages/_about-us.scss */
 .about-leadership__kicker, .about-history__kicker, .about-careers__kicker, .about-news-item__kicker {
   color: #ffffff;
   text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9);
 }
 
-/* line 35, sass/components/pages/_about-us.scss */
+/* line 44, sass/components/pages/_about-us.scss */
 .about-history, .about-careers {
   min-height: 325px;
   min-height: 32.5rem;
   position: relative;
 }
 
-/* line 40, sass/components/pages/_about-us.scss */
+/* line 49, sass/components/pages/_about-us.scss */
 .about-history__lower, .about-careers__lower {
   position: absolute;
   bottom: 0px;
@@ -6345,7 +6354,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   padding: 2.4rem;
 }
 
-/* line 48, sass/components/pages/_about-us.scss */
+/* line 57, sass/components/pages/_about-us.scss */
 .about-history__headline, .about-careers__headline {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -6359,8 +6368,28 @@ h1.single-article__title, .single-article__title.landing-heading {
   text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9);
 }
 
+/* line 64, sass/components/pages/_about-us.scss */
+.menu-about-us-menu-container, .about-leadership {
+  max-width: 360px;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
+}
+
+/* line 71, sass/components/pages/_about-us.scss */
+.about-investor {
+  max-width: 600px;
+  max-width: 60rem;
+  margin: 48px 0px;
+  margin: 4.8rem 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 740px) {
-  /* line 58, sass/components/pages/_about-us.scss */
+  /* line 81, sass/components/pages/_about-us.scss */
   .about-panels__column {
     width: 48.27586%;
     clear: right;
@@ -6368,7 +6397,7 @@ h1.single-article__title, .single-article__title.landing-heading {
     margin-left: 0;
     margin-right: 3.44828%;
   }
-  /* line 60, sass/components/pages/_about-us.scss */
+  /* line 83, sass/components/pages/_about-us.scss */
   .about-panels__column:nth-child(2n) {
     width: 48.27586%;
     clear: right;
@@ -6376,61 +6405,150 @@ h1.single-article__title, .single-article__title.landing-heading {
     margin-right: 0;
   }
 
-  /* line 64, sass/components/pages/_about-us.scss */
+  /* line 87, sass/components/pages/_about-us.scss */
   .about-our-story {
     margin-top: -130px;
     margin-top: -13rem;
+    padding: 24px 36px;
+    padding: 2.4rem 3.6rem;
   }
 
-  /* line 67, sass/components/pages/_about-us.scss */
+  /* line 91, sass/components/pages/_about-us.scss */
+  .about-news-item, .about-news-item__title {
+    padding-left: 36px;
+    padding-left: 3.6rem;
+    padding-right: 36px;
+    padding-right: 3.6rem;
+  }
+
+  /* line 95, sass/components/pages/_about-us.scss */
   .about-video {
     margin-top: -190px;
     margin-top: -19rem;
   }
 
-  /* line 71, sass/components/pages/_about-us.scss */
+  /* line 99, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .wide-banner-image {
     min-height: 610px;
     min-height: 61rem;
-    padding-bottom: 130px;
-    padding-bottom: 13rem;
   }
-}
-@media (min-width: 530px) and (max-width: 739px) {
-  /* line 79, sass/components/pages/_about-us.scss */
-  .about-small-panels__column {
-    width: 48.27586%;
+
+  /* line 108, sass/components/pages/_about-us.scss */
+  .menu-about-us-menu-container {
+    width: 48.93617%;
     clear: right;
     float: left;
     margin-left: 0;
-    margin-right: 3.44828%;
+    margin-right: 2.12766%;
+    max-width: none;
   }
-  /* line 81, sass/components/pages/_about-us.scss */
+
+  /* line 112, sass/components/pages/_about-us.scss */
+  .about-leadership {
+    width: 48.93617%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+    max-width: none;
+  }
+
+  /* line 116, sass/components/pages/_about-us.scss */
+  .about-investor {
+    margin: 0;
+    clear: both;
+    max-width: none;
+  }
+}
+@media (min-width: 530px) and (max-width: 739px) {
+  /* line 129, sass/components/pages/_about-us.scss */
+  .about-small-panels__column {
+    width: 47.36842%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 5.26316%;
+  }
+  /* line 131, sass/components/pages/_about-us.scss */
   .about-small-panels__column:nth-child(2n) {
-    width: 48.27586%;
+    width: 47.36842%;
     clear: right;
     float: right;
     margin-right: 0;
   }
 }
 @media (min-width: 1024px) {
-  /* line 88, sass/components/pages/_about-us.scss */
+  /* line 139, sass/components/pages/_about-us.scss */
   .about-small-panels__column {
-    width: 48.27586%;
+    width: 47.36842%;
     clear: right;
     float: left;
     margin-left: 0;
-    margin-right: 3.44828%;
+    margin-right: 5.26316%;
   }
-  /* line 90, sass/components/pages/_about-us.scss */
+  /* line 141, sass/components/pages/_about-us.scss */
   .about-small-panels__column:nth-child(2n) {
-    width: 48.27586%;
+    width: 47.36842%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 145, sass/components/pages/_about-us.scss */
+  .menu-about-us-menu-container {
+    width: 36.84211%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 5.26316%;
+  }
+
+  /* line 148, sass/components/pages/_about-us.scss */
+  .about-leadership {
+    width: 36.84211%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 5.26316%;
+  }
+
+  /* line 151, sass/components/pages/_about-us.scss */
+  .about-investor {
+    margin: 0;
+    max-width: none;
+    width: 36.84211%;
     clear: right;
     float: right;
     margin-right: 0;
   }
 }
-/* line 97, sass/components/pages/_about-us.scss */
+@media (min-width: 1420px) {
+  /* line 163, sass/components/pages/_about-us.scss */
+  .menu-about-us-menu-container {
+    width: 26.31579%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 5.26316%;
+  }
+
+  /* line 166, sass/components/pages/_about-us.scss */
+  .about-leadership {
+    width: 26.31579%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 5.26316%;
+  }
+
+  /* line 169, sass/components/pages/_about-us.scss */
+  .about-investor {
+    width: 57.89474%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 175, sass/components/pages/_about-us.scss */
 .about-our-story {
   background: #d31145;
   color: #ffffff;
@@ -6438,7 +6556,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   font-size: 2.4rem;
   position: relative;
 }
-/* line 102, sass/components/pages/_about-us.scss */
+/* line 180, sass/components/pages/_about-us.scss */
 .about-our-story a {
   font-style: normal;
   font-size: 18px;
@@ -6466,7 +6584,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -6477,7 +6595,7 @@ h1.single-article__title, .single-article__title.landing-heading {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 249, sass/base/_mixins.scss */
   .about-our-story a:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -6492,9 +6610,9 @@ h1.single-article__title, .single-article__title.landing-heading {
 .about-our-story a:after {
   top: 0;
 }
-/* line 105, sass/components/pages/_about-us.scss */
+/* line 183, sass/components/pages/_about-us.scss */
 .about-our-story a:after {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -370px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -6502,15 +6620,15 @@ h1.single-article__title, .single-article__title.landing-heading {
   width: 8px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 105, sass/components/pages/_about-us.scss */
+  /* line 183, sass/components/pages/_about-us.scss */
   .about-our-story a:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -166px;
     height: 14px;
     width: 8px;
   }
 }
-/* line 109, sass/components/pages/_about-us.scss */
+/* line 187, sass/components/pages/_about-us.scss */
 .about-our-story:before {
   content: "";
   display: block;
@@ -6525,13 +6643,13 @@ h1.single-article__title, .single-article__title.landing-heading {
   border-bottom-color: #d31145;
 }
 
-/* line 122, sass/components/pages/_about-us.scss */
+/* line 200, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper {
   position: relative;
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
-/* line 126, sass/components/pages/_about-us.scss */
+/* line 204, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots {
   width: auto;
   right: initial;
@@ -6543,20 +6661,20 @@ h1.single-article__title, .single-article__title.landing-heading {
   bottom: 24px;
   bottom: 2.4rem;
 }
-/* line 133, sass/components/pages/_about-us.scss */
+/* line 211, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li {
   box-shadow: none;
 }
-/* line 135, sass/components/pages/_about-us.scss */
+/* line 213, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li button {
   border-color: #092764;
 }
-/* line 138, sass/components/pages/_about-us.scss */
+/* line 216, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li.slick-active button {
   background: #092764;
 }
 
-/* line 146, sass/components/pages/_about-us.scss */
+/* line 224, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows {
   position: absolute;
   right: 24px;
@@ -6564,7 +6682,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   bottom: 24px;
   bottom: 2.4rem;
 }
-/* line 150, sass/components/pages/_about-us.scss */
+/* line 228, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-arrow {
   font-size: 0;
   line-height: 0;
@@ -6574,7 +6692,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   text-indent: -9999px;
   padding: 0;
   float: left;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -248px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -6582,20 +6700,20 @@ h1.single-article__title, .single-article__title.landing-heading {
   width: 11px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 150, sass/components/pages/_about-us.scss */
+  /* line 228, sass/components/pages/_about-us.scss */
   .about-newsroom-arrows .slick-arrow {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -40px;
     height: 20px;
     width: 11px;
   }
 }
-/* line 161, sass/components/pages/_about-us.scss */
+/* line 239, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-prev {
   transform: rotate(180deg);
 }
 
-/* line 168, sass/components/pages/_about-us.scss */
+/* line 246, sass/components/pages/_about-us.scss */
 .about-news-item {
   min-height: 400px;
   min-height: 40rem;
@@ -6603,7 +6721,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   margin-bottom: 0;
 }
 
-/* line 174, sass/components/pages/_about-us.scss */
+/* line 252, sass/components/pages/_about-us.scss */
 .about-news-item__title {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -6615,7 +6733,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   font-size: 3.6rem;
 }
 
-/* line 179, sass/components/pages/_about-us.scss */
+/* line 257, sass/components/pages/_about-us.scss */
 .about-news-item__content {
   background: rgba(255, 255, 255, 0.9);
   padding: 24px 24px 60px;
@@ -6626,14 +6744,38 @@ h1.single-article__title, .single-article__title.landing-heading {
   width: 100%;
 }
 
-/* line 190, sass/components/pages/_about-us.scss */
+/* line 268, sass/components/pages/_about-us.scss */
 .about-video {
   min-height: 500px;
   min-height: 50rem;
   position: relative;
 }
+/* line 271, sass/components/pages/_about-us.scss */
+.about-video:after {
+  content: "";
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -3146px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -45px;
+  margin-left: -4.5rem;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 271, sass/components/pages/_about-us.scss */
+  .about-video:after {
+    background-size: 215px 2412.5px;
+    background-position: 0 -1478px;
+    height: 90px;
+    width: 90px;
+  }
+}
 
-/* line 195, sass/components/pages/_about-us.scss */
+/* line 281, sass/components/pages/_about-us.scss */
 .about-video__body {
   position: absolute;
   bottom: 0;
@@ -6646,7 +6788,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   padding: 2.4rem;
   color: #ffffff;
 }
-/* line 204, sass/components/pages/_about-us.scss */
+/* line 290, sass/components/pages/_about-us.scss */
 .about-video__body:before {
   content: "";
   display: block;
@@ -6661,22 +6803,22 @@ h1.single-article__title, .single-article__title.landing-heading {
   border-bottom-color: #092764;
 }
 
-/* line 216, sass/components/pages/_about-us.scss */
+/* line 302, sass/components/pages/_about-us.scss */
 .about-video__title, a.about-video__link, a.about-history__link, a.about-careers__link {
   color: #ffffff;
 }
 
-/* line 221, sass/components/pages/_about-us.scss */
+/* line 307, sass/components/pages/_about-us.scss */
 .about-investor {
   padding-top: 0;
 }
-/* line 223, sass/components/pages/_about-us.scss */
+/* line 309, sass/components/pages/_about-us.scss */
 .about-investor .kicker {
   margin-top: 24px;
   margin-top: 2.4rem;
 }
 
-/* line 227, sass/components/pages/_about-us.scss */
+/* line 313, sass/components/pages/_about-us.scss */
 .about-investor__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -6686,19 +6828,19 @@ h1.single-article__title, .single-article__title.landing-heading {
   font-size: 3.6rem;
 }
 
-/* line 232, sass/components/pages/_about-us.scss */
+/* line 318, sass/components/pages/_about-us.scss */
 .about-leadership__image {
   min-height: 300px;
   min-height: 30rem;
   margin-bottom: 0;
 }
 
-/* line 237, sass/components/pages/_about-us.scss */
+/* line 323, sass/components/pages/_about-us.scss */
 .about-leadership__body {
   background: #092764;
   position: relative;
 }
-/* line 240, sass/components/pages/_about-us.scss */
+/* line 326, sass/components/pages/_about-us.scss */
 .about-leadership__body:before {
   content: "";
   display: block;
@@ -6713,7 +6855,7 @@ h1.single-article__title, .single-article__title.landing-heading {
   border-bottom-color: #092764;
 }
 
-/* line 252, sass/components/pages/_about-us.scss */
+/* line 338, sass/components/pages/_about-us.scss */
 .about-leadership__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -6724,20 +6866,110 @@ h1.single-article__title, .single-article__title.landing-heading {
   color: #ffffff;
 }
 
-/* line 257, sass/components/pages/_about-us.scss */
+/* line 343, sass/components/pages/_about-us.scss */
 a.about-leadership__button {
   color: #ffffff;
 }
 
-/* line 263, sass/components/pages/_about-us.scss */
-.about-recent-press .widget-title {
-  margin-top: 24px;
-  margin-top: 2.4rem;
-  padding-top: 10px;
-  padding-top: 1rem;
+/*
+//recent press
+.about-recent-press {
+	.widget-title {
+		@include rem-fallback(margin-top, 2.4);
+		@include rem-fallback(padding-top, 1);
+	}
+}*/
+/* line 356, sass/components/pages/_about-us.scss */
+.page-template-about-us-page #menu-about-us-menu {
+  background-color: #d7e7f2;
+  padding: 25px 24px;
+  padding: 2.5rem 2.4rem;
+}
+/* line 461, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu a {
+  font-style: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  color: #092764;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
+  display: block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+/* line 468, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -24px;
+  left: -2.4rem;
+  bottom: 3px;
+  bottom: 0.3rem;
+  height: 100%;
+  opacity: 0;
+  width: 0px;
+  width: 0rem;
+  background-color: #d31145;
+  transition: all .2s;
+}
+/* line 480, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu a:hover:before {
+  height: 100%;
+  opacity: 1;
+  width: 5px;
+  width: 0.5rem;
+}
+/* line 485, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu a:focus {
+  text-decoration: underline;
+}
+/* line 489, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu .current_page_item > a:before {
+  height: 100%;
+  opacity: 1;
+  width: 5px;
+  width: 0.5rem;
+}
+/* line 494, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu li {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+/* line 498, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu .children {
+  margin: 0;
+}
+/* line 500, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu .children li {
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+}
+/* line 503, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu .children a {
+  text-transform: none;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  margin: 0;
+}
+/* line 510, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu .view-all a {
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  text-transform: uppercase;
+}
+/* line 513, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu .view-all a:hover {
+  border-bottom-color: transparent;
 }
 
-/* line 270, sass/components/pages/_about-us.scss */
+/* line 361, sass/components/pages/_about-us.scss */
 .latest-updates {
   color: #ffffff;
   text-align: center;
@@ -6748,12 +6980,12 @@ a.about-leadership__button {
   min-height: 30rem;
   position: relative;
 }
-/* line 277, sass/components/pages/_about-us.scss */
+/* line 368, sass/components/pages/_about-us.scss */
 .latest-updates h2, .latest-updates .news-item--newsroom .news-item__title, .news-item--newsroom .latest-updates .news-item__title {
   text-align: center;
   color: #ffffff;
 }
-/* line 281, sass/components/pages/_about-us.scss */
+/* line 372, sass/components/pages/_about-us.scss */
 .latest-updates:after {
   content: "";
   display: block;
@@ -6770,7 +7002,7 @@ a.about-leadership__button {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 
-/* line 293, sass/components/pages/_about-us.scss */
+/* line 384, sass/components/pages/_about-us.scss */
 .tintup {
   max-width: 1400px;
   max-width: 140rem;
@@ -7187,7 +7419,7 @@ a.about-leadership__button {
 /* line 11, sass/components/_breadcrumbs.scss */
 .breadcrumbs .trail-items li:after {
   content: "";
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -226px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7201,7 +7433,7 @@ a.about-leadership__button {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 11, sass/components/_breadcrumbs.scss */
   .breadcrumbs .trail-items li:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -96px;
     height: 12px;
     width: 6px;
@@ -7227,7 +7459,7 @@ a.about-leadership__button {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7241,7 +7473,7 @@ a.about-leadership__button {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 27, sass/components/_breadcrumbs.scss */
   .back-to-newsroom:before {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -65px;
     height: 14px;
     width: 8px;
@@ -7329,7 +7561,7 @@ table {
 }
 /* line 16, sass/components/_quick-links.scss */
 .quick-links .sod_select:before {
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -548px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7345,7 +7577,7 @@ table {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 16, sass/components/_quick-links.scss */
   .quick-links .sod_select:before {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -245px;
     height: 24px;
     width: 17px;
@@ -7458,7 +7690,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
   background-position: 0 -394px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7469,7 +7701,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
   .button-cta:after {
-    background-size: 215px 2258.5px;
+    background-size: 215px 2412.5px;
     background-position: 0 -139px;
     height: 22px;
     width: 13px;

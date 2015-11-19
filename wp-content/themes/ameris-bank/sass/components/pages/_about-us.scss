@@ -2,8 +2,17 @@
 	.wide-banner-blurb__wrap:after {
 		content: none;
 	}
+	.wide-banner-blurb {
+		@include rem-fallback(bottom, 18);
+	}
 	.latest-updates {
 		@include rem-fallback(margin-bottom, 4.8);
+	}
+}
+
+body.page-template-about-us-page {
+	.site-main {
+		padding: 0;
 	}
 }
 
@@ -52,6 +61,20 @@
 	text-shadow: 1px 1px 30px rgba(0,0,0,.9);
 }
 
+.menu-about-us-menu-container, .about-leadership {
+	@include rem-fallback(max-width, 36);
+	margin-left: auto;
+	margin-right: auto;
+	@include rem-fallback(margin-bottom, 4.8);
+}
+
+.about-investor {
+	@include rem-fallback(max-width, 60);
+	@include rem-fallback(margin, 4.8, 0);
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 //layout for the top, this page is inheriting a 20 column grid
 @include breakpoint($tablet-wide-up) {
@@ -63,6 +86,11 @@
 	}
 	.about-our-story {
 		@include rem-fallback(margin-top, -13);
+		@include rem-fallback(padding, 2.4, 3.6);
+	}
+	.about-news-item, .about-news-item__title {
+		@include rem-fallback(padding-left, 3.6);
+		@include rem-fallback(padding-right, 3.6);
 	}
 	.about-video {
 		@include rem-fallback(margin-top, -19);
@@ -70,26 +98,76 @@
 	.page-template-about-us-page {
 		.wide-banner-image {
 			@include rem-fallback(min-height, 61);
-			@include rem-fallback(padding-bottom, 13);
+			//@include rem-fallback(padding-bottom, 13);
 		}
+	}
+	.about-panels-lower {
+		@include add-grid(12);
+		@include add-gutter(1/3);
+	}
+	.menu-about-us-menu-container {
+		@include float-span(6);
+		max-width: none;
+	}
+	.about-leadership {
+		@include float-span(6, 'last');
+		max-width: none;
+	}
+	.about-investor {
+		margin: 0;
+		clear: both;
+		max-width: none;
+	}
+
+	.about-small-panels-container {
+		@include add-grid(10);
+		@include add-gutter(1);
 	}
 }
 
 @include breakpoint($tablet-skinny) {
 	.about-small-panels__column {
-		@include float-span(10);
+		@include float-span(5);
 		&:nth-child(2n) {
-			@include float-span(10, 'last');
+			@include float-span(5, 'last');
 		}
 	}
 }
 
 @include breakpoint($narrow-to-desktop) {
+
 	.about-small-panels__column {
-		@include float-span(10);
+		@include float-span(5);
 		&:nth-child(2n) {
-			@include float-span(10, 'last');
+			@include float-span(5, 'last');
 		}
+	}
+	.menu-about-us-menu-container {
+		@include float-span(4);
+	}
+	.about-leadership {
+		@include float-span(4);
+	}
+	.about-investor {
+		margin: 0;
+		max-width: none;
+		@include float-span(4, 'last');
+	}
+}
+
+@include breakpoint($desktop) {
+
+}
+
+@include breakpoint($wide) {
+	.menu-about-us-menu-container {
+		@include float-span(3);
+	}
+	.about-leadership {
+		@include float-span(3);
+	}
+	.about-investor {
+		@include float-span(6, 'last');
 	}
 }
 
@@ -190,6 +268,14 @@
 .about-video {
 	@include rem-fallback(min-height, 50);
 	position: relative;
+	&:after {
+		content: "";
+		@include use-sprite(icon-vid-play);
+		position: absolute;
+		left: 50%;
+		top: 30%;
+		@include rem-fallback(margin-left, -4.5);
+	}
 }
 
 .about-video__body {
@@ -258,12 +344,17 @@ a.about-leadership__button {
 	color: $white;
 }
 
+/*
 //recent press
 .about-recent-press {
 	.widget-title {
 		@include rem-fallback(margin-top, 2.4);
 		@include rem-fallback(padding-top, 1);
 	}
+}*/
+
+.page-template-about-us-page #menu-about-us-menu {
+	@include paleblue-nav;
 }
 
 //red area for the TINT integration
