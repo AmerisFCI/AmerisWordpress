@@ -14,6 +14,7 @@ require_once( $includes . 'taxonomies.php' );
 require_once( $includes . 'tinymce.php' );
 
 require_once( $includes . 'widget-account.php' );
+require_once( $includes . 'widget-account-open.php' );
 require_once( $includes . 'widget-callout.php' );
 require_once( $includes . 'widget-recent-posts.php' );
 require_once( $includes . 'widget-press-feed.php' );

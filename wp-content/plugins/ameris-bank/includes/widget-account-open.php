@@ -1,9 +1,8 @@
 <?php
 /**
- * Widget to display the account login form. This just pulls in the account-access.php template part
- * from the theme.
+ * Widget to display Open an Account.
  */
-class Ameris_Account_Widget extends WP_Widget {
+class Ameris_Account_Open_Widget extends WP_Widget {
 
 	/**
 	 * Default field values.
@@ -17,14 +16,16 @@ class Ameris_Account_Widget extends WP_Widget {
 	function __construct() {
 
 		$this->defaults = array(
-			'title'      => '',
-			'text_below' => ''
+			'title'     => '',
+			'blurb'     => '',
+			'link'      => '',
+			'link_text' => ''
 		);
 
 		parent::__construct(
-			'ameris_account_widget',
-			'Ameris Account Access',
-			array( 'description' => 'The account access form widget.' )
+			'ameris_account_open_widget',
+			'Ameris Open an Account',
+			array( 'description' => 'Provide a link to users for opening an account.' )
 		);
 
 	}
@@ -41,12 +42,15 @@ class Ameris_Account_Widget extends WP_Widget {
 		$instance = wp_parse_args( $instance, $this->defaults );
 		$instance = array_intersect_key( $instance, $this->defaults );
 
-		global $account_access_args;
-		$account_access_args = $instance;
+		echo $args['before_widget']; ?>
 
-		echo $args['before_widget'];
-		get_template_part( 'template-parts/account-access' );
-		echo $args['after_widget'];
+		<div class="account-open">
+			<h2 class="account-open__title"><?php echo $instance['title']; ?></h2>
+			<p class="account-open__blurb"><?php echo $instance['blurb']; ?></p>
+			<a class="account-open__button button" href="<?php echo $instance['link']; ?>"><?php echo $instance['link_text']; ?></a>
+		</div>
+		
+		<?php echo $args['after_widget'];
 	}
 
 	/**
@@ -61,11 +65,10 @@ class Ameris_Account_Widget extends WP_Widget {
 		$instance = array_intersect_key( $instance, $this->defaults );
 
 		foreach( $instance as $key => $value ) {
-			if ( $key === 'title' ) $label = 'Title';
-			if ( $key === 'text_below' ) $label = 'Text Below Form'; ?>
+			$label = ucwords( str_replace( '_', ' ', $key ) ); ?>
 			<p>
 				<label for="<?php echo $this->get_field_id( $key ); ?>"><?php echo $label; ?></label>
-				<input class="widefat" id="<?php echo $this->get_field_id( $key ); ?>" name="<?php echo $this->get_field_name( $key ); ?>" type="text" value="<?php echo esc_attr( stripslashes( $value ) ); ?>">
+				<input class="widefat" id="<?php echo $this->get_field_id( $key ); ?>" name="<?php echo $this->get_field_name( $key ); ?>" type="text" value="<?php echo esc_attr( $value ); ?>">
 			</p>
 
 		<?php }
@@ -86,8 +89,8 @@ class Ameris_Account_Widget extends WP_Widget {
 		$instance = array_intersect_key( $instance, $this->defaults );
 		
 		foreach( $instance as $key => $value ) {
-			if ( $key === 'text_below' )
-				$instance[$key] = wp_filter_post_kses( $value );
+			if ( $key === 'link' )
+				$instance[$key] = esc_url_raw( $value );
 			else
 				$instance[$key] = sanitize_text_field( $value );
 		}

@@ -33,7 +33,8 @@ get_header(); ?>
 						</div>
 
 					<?php }
-				} ?>
+				}
+				wp_reset_postdata(); ?>
 			</div><!-- .slides -->
 
 			<div class="inner-wrap homepage_inner-wrap">
