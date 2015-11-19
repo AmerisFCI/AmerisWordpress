@@ -1,7 +1,7 @@
 .site-footer {
 
 	@include background-image(linear-gradient(to top right, shade($darkblue, 25%), tint($lightblue, 5%)));
-	@include rem-fallback(padding, 3, 0, 25);
+	@include rem-fallback(padding, 3, 0, 12);
 	font-family: $font-sansserif;
 	color: $white;
 	@include rem-fallback(font-size, 1.6);
