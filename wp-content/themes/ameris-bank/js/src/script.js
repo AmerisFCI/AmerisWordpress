@@ -37,6 +37,7 @@
 		arrows: true,
 		dots: false,
 		fade: false,
+		infinite: false,
 		mobileFirst: true,
 		pauseOnDotsHover: true,
 		swipeToSlide: true,
@@ -98,8 +99,10 @@
 	$('.about-newsroom').slick({
 		autoplay: false,
 		arrows: true,
+		appendArrows:'.about-newsroom-arrows',
 		dots: true,
 		fade: false,
+		infinite: false,
 		mobileFirst: true,
 		pauseOnDotsHover: true,
 		swipeToSlide: true

@@ -1,8 +1,117 @@
-//add padding to all of the about us panels
-.about-news-item, .about-video, .about-video-content, .about-history, .about-careers, .about-investor, .about-leadership, .about-recent-press {
-	@include rem-fallback(padding, 2.4);
+.page-template-about-us-page {
+	.wide-banner-blurb__wrap:after {
+		content: none;
+	}
 }
 
+//add padding to all of the about us panels
+.about-our-story, .about-news-item, .about-video, .about-video-content, .about-history, .about-careers, .about-investor, .about-leadership, .about-recent-press {
+	@include rem-fallback(padding, 2.4);
+	@include rem-fallback(margin-bottom, 2.4);
+}
+
+//layout for the top, this page is inheriting a 20 column grid
+@include breakpoint($tablet-wide-up) {
+	.about-panels__column {
+		@include float-span(10);
+		&:nth-child(2n) {
+			@include float-span(10, 'last');
+		}
+	}
+	.about-our-story {
+		@include rem-fallback(margin-top, -13);
+	}
+	.about-video {
+		@include rem-fallback(margin-top, -19);
+	}
+	.page-template-about-us-page {
+		.wide-banner-image {
+			@include rem-fallback(min-height, 61);
+			@include rem-fallback(padding-bottom, 13);
+		}
+	}
+}
+
+@include breakpoint($tablet-skinny) {
+	.about-small-panels__column {
+		@include float-span(10);
+		&:nth-child(2n) {
+			@include float-span(10, 'last');
+		}
+	}
+}
+
+@include breakpoint($narrow-to-desktop) {
+	.about-small-panels__column {
+		@include float-span(10);
+		&:nth-child(2n) {
+			@include float-span(10, 'last');
+		}
+	}
+}
+
+//intro text for about us
+.about-our-story {
+	background: $red;
+	color: $white;
+	@include rem-fallback(font-size, 2.4);
+	position: relative;
+	a {
+		@include more-link;
+		color: $white;
+		&:after {
+			@include use-sprite(arrow-white-right-small);
+		}
+	}
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		@include rem-fallback(left, 6);
+		@include rem-fallback(top, -6);
+		border: solid transparent;
+		@include rem-fallback(border-width, 3);
+		border-bottom-color: $red;
+	}
+}
+
+//news slideshow
+.about-newsroom {
+	.slick-dots {
+		@include rem-fallback(left, 2.4);
+		@include rem-fallback(bottom, 2.4);
+	}
+}
+
+.about-news-item {
+	@include rem-fallback(min-height, 40);
+	position: relative;
+	background-size: cover;
+}
+
+.about-news-item__title {
+	@include voice;
+}
+
+.about-news-item__content {
+	background: rgba(255, 255, 255, .9);
+	@include rem-fallback(padding, 2.4);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.about-news-item__kicker {
+	color: $white;
+}
+
+//about-video
+.about-video {
+	@include rem-fallback(min-height, 50);
+}
+
+//red area for the TINT integration
 .latest-updates {
 	color: $white;
 	text-align: center;
