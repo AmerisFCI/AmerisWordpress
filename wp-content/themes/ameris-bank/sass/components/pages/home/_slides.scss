@@ -74,7 +74,7 @@
 	@include rem-fallback(font-size, 5);
 	@include voice;
 	color: $white;
-	@include rem-fallback(letter-spacing, -.5);
+	@include rem-fallback(letter-spacing, -.2);
 }
 
 .button.slide__cta {

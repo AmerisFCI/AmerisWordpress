@@ -48,20 +48,20 @@
 
 @include breakpoint($desktop) {
 	.latest-news {
-		@include grid-span(7, 1);
+		@include grid-span(8, 1);
 	}
 	.home-callout-box {
-		@include grid-span(7, 8);
+		@include grid-span(6, 9);
 		clear: both;
 	}
 }
 
 @include breakpoint($wide) {
 	.latest-news {
-		@include grid-span(8, 1);
+		@include grid-span(8.5, 1);
 	}
 	.home-callout-box {
-		@include grid-span(6, 9);
+		@include grid-span(5.5, 9.5);
 		clear: both;
 	}
 }

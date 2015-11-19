@@ -1,4 +1,8 @@
-
+.callout-box--large {
+	@include rem-fallback(max-width, 58);
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .button.callout-box--large__button {
 	@include red-button-cta;
@@ -58,7 +62,7 @@
 	}
 
 	.callout-box--large__header {
-		@include rem-fallback(min-height, 40);
+		@include rem-fallback(min-height, 33);
 	}
 
 	.callout-box--large__body, .callout-box--large__header {

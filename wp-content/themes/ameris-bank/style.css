@@ -4555,8 +4555,8 @@ footer .menu-item {
   font-weight: 400;
   text-transform: none;
   color: #ffffff;
-  letter-spacing: -5px;
-  letter-spacing: -0.5rem;
+  letter-spacing: -2px;
+  letter-spacing: -0.2rem;
 }
 
 /* line 80, sass/components/pages/home/_slides.scss */
@@ -5281,7 +5281,15 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     width: auto;
   }
 }
-/* line 3, sass/components/pages/home/_callout-box.scss */
+/* line 1, sass/components/pages/home/_callout-box.scss */
+.callout-box--large {
+  max-width: 580px;
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 7, sass/components/pages/home/_callout-box.scss */
 .button.callout-box--large__button {
   background-color: #d31145;
   color: #ffffff;
@@ -5349,18 +5357,18 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   left: 19px;
   left: 1.9rem;
 }
-/* line 8, sass/components/pages/home/_callout-box.scss */
+/* line 12, sass/components/pages/home/_callout-box.scss */
 .button.callout-box--large__button:after {
   margin-left: 0;
 }
 
-/* line 13, sass/components/pages/home/_callout-box.scss */
+/* line 17, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__kicker {
   text-shadow: none;
   color: #092764;
 }
 
-/* line 18, sass/components/pages/home/_callout-box.scss */
+/* line 22, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__header {
   min-height: 300px;
   min-height: 30rem;
@@ -5369,7 +5377,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   padding: 2rem;
   position: relative;
 }
-/* line 24, sass/components/pages/home/_callout-box.scss */
+/* line 28, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__header:after {
   content: "";
   display: block;
@@ -5381,7 +5389,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   border-bottom-color: white;
 }
 
-/* line 35, sass/components/pages/home/_callout-box.scss */
+/* line 39, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__headline {
   color: #15397f;
   position: absolute;
@@ -5393,14 +5401,14 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   text-shadow: none;
 }
 
-/* line 44, sass/components/pages/home/_callout-box.scss */
+/* line 48, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__body {
   background: #ffffff;
   padding: 20px;
   padding: 2rem;
 }
 
-/* line 49, sass/components/pages/home/_callout-box.scss */
+/* line 53, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__description {
   font-size: 19px;
   font-size: 1.9rem;
@@ -5409,19 +5417,19 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 }
 
 @media (min-width: 1024px) {
-  /* line 56, sass/components/pages/home/_callout-box.scss */
+  /* line 60, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__headline {
     font-size: 43px;
     font-size: 4.3rem;
   }
 
-  /* line 60, sass/components/pages/home/_callout-box.scss */
+  /* line 64, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__header {
-    min-height: 400px;
-    min-height: 40rem;
+    min-height: 330px;
+    min-height: 33rem;
   }
 
-  /* line 64, sass/components/pages/home/_callout-box.scss */
+  /* line 68, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__body, .callout-box--large__header {
     padding: 20px 40px;
     padding: 2rem 4rem;
@@ -5495,7 +5503,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (min-width: 1200px) {
   /* line 50, sass/components/pages/_home.scss */
   .latest-news {
-    width: 49.09091%;
+    width: 56.36364%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
@@ -5504,7 +5512,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
   /* line 53, sass/components/pages/_home.scss */
   .home-callout-box {
-    width: 49.09091%;
+    width: 41.81818%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -5515,7 +5523,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (min-width: 1420px) {
   /* line 60, sass/components/pages/_home.scss */
   .latest-news {
-    width: 56.36364%;
+    width: 60.0%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
@@ -5524,7 +5532,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 
   /* line 63, sass/components/pages/_home.scss */
   .home-callout-box {
-    width: 41.81818%;
+    width: 38.18182%;
     float: right;
     margin-left: 0;
     margin-right: 0;
