@@ -6482,6 +6482,399 @@ h1.single-article__title, .single-article__title.landing-heading {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 
+/* line 370, sass/base/_mixins.scss */
+.page-template-history-page .page-title {
+  padding: 0;
+  padding-top: 20px;
+  padding-top: 2rem;
+}
+/* line 375, sass/base/_mixins.scss */
+.page-template-history-page .sidebar-menu {
+  background: transparent;
+}
+/* line 379, sass/base/_mixins.scss */
+.page-template-history-page .inner-wrap .sidebar-left {
+  margin-left: 0;
+  margin-top: 0px;
+  margin-top: 0rem;
+}
+@media (min-width: 1024px) {
+  /* line 385, sass/base/_mixins.scss */
+  .page-template-history-page .sidebar-menu {
+    padding-top: 44px;
+    padding-top: 4.4rem;
+  }
+  /* line 388, sass/base/_mixins.scss */
+  .page-template-history-page .sidebar-left {
+    clear: none;
+  }
+  /* line 395, sass/base/_mixins.scss */
+  .page-template-history-page #main {
+    width: 64.10256%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 1420px) {
+  /* line 408, sass/base/_mixins.scss */
+  .page-template-history-page #main {
+    width: 72.22222%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    padding-right: 48px;
+    padding-right: 4.8rem;
+  }
+}
+/* line 6, sass/components/pages/_history.scss */
+.page-template-history-page .timeline-heading {
+  border-top: solid #d7e7f2;
+  margin-top: 40px;
+  margin-top: 4rem;
+  padding-top: 40px;
+  padding-top: 4rem;
+}
+/* line 12, sass/components/pages/_history.scss */
+.page-template-history-page .content-below {
+  max-width: 1100px;
+  max-width: 110rem;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+/* line 18, sass/components/pages/_history.scss */
+.timeline {
+  position: relative;
+}
+/* line 22, sass/components/pages/_history.scss */
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  margin: auto;
+  background: #d31145;
+}
+
+/* line 36, sass/components/pages/_history.scss */
+.timeline-item {
+  margin-top: 50px;
+  margin-top: 5rem;
+  margin-bottom: 50px;
+  margin-bottom: 5rem;
+  position: relative;
+}
+/* line 126, sass/base/_mixins.scss */
+.timeline-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 42, sass/components/pages/_history.scss */
+.timeline-item__dot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  margin: auto;
+  background-color: #d31145;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 53, sass/components/pages/_history.scss */
+.timeline-item__title {
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  text-transform: none;
+}
+/* line 58, sass/components/pages/_history.scss */
+.timeline-item__content {
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 30px;
+  padding: 3rem;
+}
+/* line 64, sass/components/pages/_history.scss */
+.timeline-item__date {
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 45px;
+  line-height: 4.5rem;
+}
+
+/* line 72, sass/components/pages/_history.scss */
+.timeline-item--large {
+  color: #ffffff;
+  width: 100%;
+}
+/* line 74, sass/components/pages/_history.scss */
+.timeline-item--large h3 {
+  color: #ffffff;
+  text-align: left;
+}
+/* line 77, sass/components/pages/_history.scss */
+.timeline-item--large .timeline-item__dot {
+  bottom: 63px;
+}
+/* line 79, sass/components/pages/_history.scss */
+.timeline-item--large .timeline-item__dot:after {
+  content: '';
+  height: 75px;
+  width: 2px;
+  background: #d31145;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 92, sass/components/pages/_history.scss */
+.timeline-item--large.timeline-item--left .timeline-item__content {
+  left: 10%;
+}
+/* line 94, sass/components/pages/_history.scss */
+.timeline-item--large.timeline-item--left .timeline-item__content:after {
+  left: 75.5%;
+}
+/* line 98, sass/components/pages/_history.scss */
+.timeline-item--large.timeline-item--right .timeline-item__content {
+  left: 40%;
+}
+/* line 100, sass/components/pages/_history.scss */
+.timeline-item--large.timeline-item--right .timeline-item__content:after {
+  left: 15.5%;
+}
+/* line 104, sass/components/pages/_history.scss */
+.timeline-item--large .timeline-item__content {
+  background-color: #d31145;
+  width: 50%;
+  position: absolute;
+  bottom: 120px;
+}
+/* line 126, sass/base/_mixins.scss */
+.timeline-item--large .timeline-item__content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 112, sass/components/pages/_history.scss */
+.timeline-item--large .timeline-item__content:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-top-color: #d31145;
+  border-width: 25px;
+  border-style: solid;
+  bottom: -50px;
+}
+/* line 124, sass/components/pages/_history.scss */
+.timeline-item--large .timeline-item__content .timeline-item__date {
+  font-size: 42px;
+  font-size: 4.2rem;
+  float: left;
+  width: 30%;
+}
+/* line 130, sass/components/pages/_history.scss */
+.timeline-item--large .timeline-item__content .timeline-item__inner-content {
+  float: left;
+  width: 70%;
+}
+
+/* line 140, sass/components/pages/_history.scss */
+.timeline-item--small h3 {
+  color: #092764;
+  text-align: left;
+}
+/* line 145, sass/components/pages/_history.scss */
+.timeline-item--small .timeline-item__dot {
+  margin-top: 45px;
+}
+/* line 149, sass/components/pages/_history.scss */
+.timeline-item--small .timeline-item__date {
+  position: absolute;
+  margin-top: 30px;
+  color: #092764;
+}
+/* line 155, sass/components/pages/_history.scss */
+.timeline-item--small .timeline-item__content {
+  width: 35%;
+  background: #d7e7f2;
+  position: relative;
+}
+/* line 159, sass/components/pages/_history.scss */
+.timeline-item--small .timeline-item__content:after {
+  content: '';
+  border-color: transparent;
+  border-style: solid;
+  border-width: 25px;
+  position: absolute;
+  top: 25px;
+}
+/* line 171, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--left .timeline-item__date {
+  left: 53%;
+}
+/* line 175, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--left .timeline-item__content {
+  float: left;
+  margin-left: 10%;
+}
+/* line 178, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--left .timeline-item__content:after {
+  right: -50px;
+  border-left-color: #d7e7f2;
+}
+/* line 188, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--right .timeline-item__date {
+  right: 53%;
+}
+/* line 192, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--right .timeline-item__content {
+  float: right;
+  margin-right: 10%;
+}
+/* line 195, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--right .timeline-item__content:after {
+  border-right-color: #d7e7f2;
+  left: -50px;
+}
+/* line 204, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--has-image .timeline-item__dot {
+  margin-top: 295px;
+}
+/* line 207, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--has-image .timeline-item__date {
+  margin-top: 280px;
+}
+/* line 211, sass/components/pages/_history.scss */
+.timeline-item--small.timeline-item--has-image .timeline-item__content:after {
+  top: 275px;
+}
+/* line 217, sass/components/pages/_history.scss */
+.timeline-item--small .timeline-item__image {
+  margin: -30px;
+  margin: -3rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
+}
+
+/* line 226, sass/components/pages/_history.scss */
+.timeline-item--last .timeline-item__date {
+  color: #ffffff;
+  background: #d31145;
+  font-size: 44px;
+  font-size: 4.4rem;
+  padding: 30px;
+  padding: 3rem;
+  margin: auto;
+  margin-top: 75px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+/* line 237, sass/components/pages/_history.scss */
+.timeline-item--last .timeline-item__date:before {
+  content: '';
+  position: absolute;
+  border-color: transparent;
+  border-bottom: #d31145;
+  border-width: 26px;
+  border-style: solid;
+  top: -50px;
+  left: 75px;
+}
+
+@media (max-width: 1023px) {
+  /* line 255, sass/components/pages/_history.scss */
+  .timeline .timeline-item--large .timeline-item__content {
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: relative;
+    bottom: 8px;
+    padding-bottom: 0;
+  }
+  /* line 262, sass/components/pages/_history.scss */
+  .timeline .timeline-item--large .timeline-item__content p {
+    margin-bottom: 0;
+  }
+  /* line 265, sass/components/pages/_history.scss */
+  .timeline .timeline-item--large .timeline-item__content:after {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 739px) {
+  /* line 283, sass/components/pages/_history.scss */
+  .timeline .timeline-item--large .timeline-item__content .timeline-item__date {
+    width: 45%;
+  }
+  /* line 287, sass/components/pages/_history.scss */
+  .timeline .timeline-item--large .timeline-item__content .timeline-item__inner-content {
+    width: 55%;
+  }
+  /* line 295, sass/components/pages/_history.scss */
+  .timeline .timeline-item .timeline-item__content {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  /* line 299, sass/components/pages/_history.scss */
+  .timeline .timeline-item .timeline-item__content:after {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  /* line 308, sass/components/pages/_history.scss */
+  .timeline .timeline-item--small .timeline-item__content {
+    margin: 0;
+    margin-top: 100px;
+  }
+  /* line 311, sass/components/pages/_history.scss */
+  .timeline .timeline-item--small .timeline-item__content:after {
+    border-color: transparent;
+    border-bottom-color: #d7e7f2;
+    top: -50px;
+    width: 0;
+    height: 0;
+  }
+  /* line 319, sass/components/pages/_history.scss */
+  .timeline .timeline-item--small .timeline-item__image {
+    text-align: center;
+    margin: 10px;
+    margin: 1rem;
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+  }
+  /* line 327, sass/components/pages/_history.scss */
+  .timeline .timeline-item--small.timeline-item--has-image .timeline-item__dot {
+    margin-top: 35px;
+  }
+  /* line 330, sass/components/pages/_history.scss */
+  .timeline .timeline-item--small.timeline-item--has-image .timeline-item__date {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 529px) {
+  /* line 341, sass/components/pages/_history.scss */
+  .timeline .timeline-item--small .timeline-item__image {
+    margin: -30px;
+    margin: -3rem;
+    margin-bottom: 30px;
+    margin-bottom: 3rem;
+  }
+}
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
   display: none;

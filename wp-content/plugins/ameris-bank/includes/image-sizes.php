@@ -23,6 +23,8 @@ function ameris_image_sizes() {
 	add_image_size( 'about-video',      713,  519,  true );
 	add_image_size( 'about-callout',    347,  329,  true );
 	add_image_size( 'about-leaders',    347,  308,  true );
+	add_image_size( 'timeline-big',     1100, 600,  true );
+	add_image_size( 'timeline-thumb',   530,  330,  true );
 
 }
 add_action( 'after_setup_theme', 'ameris_image_sizes' );
