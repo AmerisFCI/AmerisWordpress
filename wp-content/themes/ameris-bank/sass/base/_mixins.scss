@@ -315,6 +315,14 @@ $sprite-high-res-suffix: '-2x' !default;
   text-transform: none;
 }
 
+@mixin h2-look {
+  font-family: $font-heading;
+  text-transform: none;
+  color: $heading-color;
+  font-weight: normal;
+  @include rem-fallback(font-size, 3.6);
+}
+
 @mixin banner-image {
   overflow: hidden;
   position: relative;

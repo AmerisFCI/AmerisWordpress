@@ -27,10 +27,10 @@
 	}
 	.slick-prev {
 		transform: rotate(180deg);
-		@include rem-fallback(left, -1.1);
+		@include rem-fallback(left, -2.4);
 	}
 	.slick-next {
-		@include rem-fallback(right, -1.1);
+		@include rem-fallback(right, -2.4);
 	}
 	.slick-dots {
 		right: 0;
