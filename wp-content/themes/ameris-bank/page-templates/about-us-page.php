@@ -100,39 +100,36 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 </div>
 
 <div class="inner-wrap content-inner-wrap">
-		<div class="about-panels">
-			<div class="about-panels__column">
-				<div class="about-investor">
-					<h2 class="about-investor__kicker kicker"><?php the_field( 'investor_callout_title' ); ?></h2>
-					<h3 class="about-investor__headline"><?php the_field( 'investor_callout_headline' ); ?></h3>
-					<div class="about-investor__description"><?php the_field( 'investor_callout_description' ); ?></div>
-					<a class="about-investor__link more-link" href="<?php the_field( 'investor_callout_link' ); ?>"><?php the_field( 'investor_callout_link_text' ); ?></a>
-				</div>
-			</div>
+		<div class="about-panels-lower">
+			<?php wp_nav_menu( array( 'theme_location' => 'sidebar-61', 'walker' => new Ameris_Walker_Nav_Menu ) ); ?>
 
-			<div class="about-panels__column">
-				<div class="about-small-panels-container">
 
 				<?php
 					$image = wp_get_attachment_image_src( get_field( 'leadership_callout_image' ), 'about-leaders' );
 					$image_url = $image[0];
 					?>
-					<div class="about-leadership about-small-panels__column">
-						<div class="about-leadership__image" style="background-image:url( '<?php echo $image_url; ?>' );">
-							<h2 class="about-leadership__kicker kicker"><?php the_field( 'leadership_callout_title' ); ?></h2>
-						</div>
+			<div class="about-leadership">
+				<div class="about-leadership__image" style="background-image:url( '<?php echo $image_url; ?>' );">
+					<h2 class="about-leadership__kicker kicker"><?php the_field( 'leadership_callout_title' ); ?></h2>
+				</div>
 
-						<div class="about-leadership__body">
-							<h3 class="about-leadership__headline"><?php the_field( 'leadership_callout_headline' ); ?></h3>
-							<a class="about-leadership__button more-link" href="<?php the_field( 'leadership_callout_link' ); ?>"><?php the_field( 'leadership_callout_link_text' ); ?></a>
-						</div>
-					</div>
-					<div class="about-recent-press widget_ameris_press_feed_widget about-small-panels__column">
-						<h2 class="widget-title">Recent Press</h2>
-						<?php get_template_part( 'template-parts/press-feed' ); ?>
-					</div>
+				<div class="about-leadership__body">
+					<h3 class="about-leadership__headline"><?php the_field( 'leadership_callout_headline' ); ?></h3>
+					<a class="about-leadership__button more-link" href="<?php the_field( 'leadership_callout_link' ); ?>"><?php the_field( 'leadership_callout_link_text' ); ?></a>
 				</div>
 			</div>
+
+			<div class="about-investor">
+				<h2 class="about-investor__kicker kicker"><?php the_field( 'investor_callout_title' ); ?></h2>
+				<h3 class="about-investor__headline"><?php the_field( 'investor_callout_headline' ); ?></h3>
+				<div class="about-investor__description"><?php the_field( 'investor_callout_description' ); ?></div>
+				<a class="about-investor__link more-link" href="<?php the_field( 'investor_callout_link' ); ?>"><?php the_field( 'investor_callout_link_text' ); ?></a>
+			</div>
+
+			<!--<div class="about-recent-press widget_ameris_press_feed_widget">
+				<h2 class="widget-title">Recent Press</h2>
+				<?php get_template_part( 'template-parts/press-feed' ); ?>
+			</div>-->
 		</div>
 </div><!-- .inner-wrap -->
 
