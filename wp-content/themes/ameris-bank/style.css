@@ -6225,12 +6225,231 @@ h1.single-article__title, .single-article__title.landing-heading {
   }
 }
 /* line 2, sass/components/pages/_about-us.scss */
-.about-news-item, .about-video, .about-video-content, .about-history, .about-careers, .about-investor, .about-leadership, .about-recent-press {
-  padding: 24px;
-  padding: 2.4rem;
+.page-template-about-us-page .wide-banner-blurb__wrap:after {
+  content: none;
 }
 
-/* line 6, sass/components/pages/_about-us.scss */
+/* line 8, sass/components/pages/_about-us.scss */
+.about-our-story, .about-news-item, .about-video, .about-video-content, .about-history, .about-careers, .about-investor, .about-leadership, .about-recent-press {
+  padding: 24px;
+  padding: 2.4rem;
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+}
+
+@media (min-width: 740px) {
+  /* line 15, sass/components/pages/_about-us.scss */
+  .about-panels__column {
+    width: 48.27586%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.44828%;
+  }
+  /* line 17, sass/components/pages/_about-us.scss */
+  .about-panels__column:nth-child(2n) {
+    width: 48.27586%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 21, sass/components/pages/_about-us.scss */
+  .about-our-story {
+    margin-top: -130px;
+    margin-top: -13rem;
+  }
+
+  /* line 24, sass/components/pages/_about-us.scss */
+  .about-video {
+    margin-top: -190px;
+    margin-top: -19rem;
+  }
+
+  /* line 28, sass/components/pages/_about-us.scss */
+  .page-template-about-us-page .wide-banner-image {
+    min-height: 610px;
+    min-height: 61rem;
+    padding-bottom: 130px;
+    padding-bottom: 13rem;
+  }
+}
+@media (min-width: 530px) and (max-width: 739px) {
+  /* line 36, sass/components/pages/_about-us.scss */
+  .about-small-panels__column {
+    width: 48.27586%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.44828%;
+  }
+  /* line 38, sass/components/pages/_about-us.scss */
+  .about-small-panels__column:nth-child(2n) {
+    width: 48.27586%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 45, sass/components/pages/_about-us.scss */
+  .about-small-panels__column {
+    width: 48.27586%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.44828%;
+  }
+  /* line 47, sass/components/pages/_about-us.scss */
+  .about-small-panels__column:nth-child(2n) {
+    width: 48.27586%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 54, sass/components/pages/_about-us.scss */
+.about-our-story {
+  background: #d31145;
+  color: #ffffff;
+  font-size: 24px;
+  font-size: 2.4rem;
+  position: relative;
+}
+/* line 59, sass/components/pages/_about-us.scss */
+.about-our-story a {
+  font-style: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  color: #092764;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  padding-right: 32px;
+  padding-right: 3.2rem;
+  position: relative;
+  text-decoration: none;
+  color: #15397f;
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+/* line 249, sass/base/_mixins.scss */
+.about-our-story a:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: 15px;
+  left: 1.5rem;
+  top: 4px;
+  top: 0.4rem;
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -168px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 14px;
+  width: 8px;
+  transition: left .2s;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 249, sass/base/_mixins.scss */
+  .about-our-story a:after {
+    background-size: 215px 2258.5px;
+    background-position: 0 -65px;
+    height: 14px;
+    width: 8px;
+  }
+}
+/* line 259, sass/base/_mixins.scss */
+.about-our-story a:hover:after, .about-our-story a:focus:after {
+  left: 19px;
+  left: 1.9rem;
+}
+/* line 444, sass/base/_mixins.scss */
+.about-our-story a:after {
+  top: 0;
+}
+/* line 62, sass/components/pages/_about-us.scss */
+.about-our-story a:after {
+  background-image: url('images/sprite-images-s5908aa9ee5.png');
+  background-position: 0 -370px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 14px;
+  width: 8px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 62, sass/components/pages/_about-us.scss */
+  .about-our-story a:after {
+    background-size: 215px 2258.5px;
+    background-position: 0 -166px;
+    height: 14px;
+    width: 8px;
+  }
+}
+/* line 66, sass/components/pages/_about-us.scss */
+.about-our-story:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 60px;
+  left: 6rem;
+  top: -60px;
+  top: -6rem;
+  border: solid transparent;
+  border-width: 30px;
+  border-width: 3rem;
+  border-bottom-color: #d31145;
+}
+
+/* line 80, sass/components/pages/_about-us.scss */
+.about-newsroom .slick-dots {
+  left: 24px;
+  left: 2.4rem;
+  bottom: 24px;
+  bottom: 2.4rem;
+}
+
+/* line 86, sass/components/pages/_about-us.scss */
+.about-news-item {
+  min-height: 400px;
+  min-height: 40rem;
+  position: relative;
+  background-size: cover;
+}
+
+/* line 92, sass/components/pages/_about-us.scss */
+.about-news-item__title {
+  font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+}
+
+/* line 96, sass/components/pages/_about-us.scss */
+.about-news-item__content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 24px;
+  padding: 2.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 105, sass/components/pages/_about-us.scss */
+.about-news-item__kicker {
+  color: #ffffff;
+}
+
+/* line 110, sass/components/pages/_about-us.scss */
+.about-video {
+  min-height: 500px;
+  min-height: 50rem;
+}
+
+/* line 115, sass/components/pages/_about-us.scss */
 .latest-updates {
   color: #ffffff;
   text-align: center;
@@ -6241,12 +6460,12 @@ h1.single-article__title, .single-article__title.landing-heading {
   min-height: 30rem;
   position: relative;
 }
-/* line 13, sass/components/pages/_about-us.scss */
+/* line 122, sass/components/pages/_about-us.scss */
 .latest-updates h2, .latest-updates .news-item--newsroom .news-item__title, .news-item--newsroom .latest-updates .news-item__title {
   text-align: center;
   color: #ffffff;
 }
-/* line 17, sass/components/pages/_about-us.scss */
+/* line 126, sass/components/pages/_about-us.scss */
 .latest-updates:after {
   content: "";
   display: block;
