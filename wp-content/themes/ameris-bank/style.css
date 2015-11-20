@@ -4639,7 +4639,7 @@ footer .menu-item {
 }
 
 /* line 15, sass/components/widgets/_account-open.scss */
-.account-open__button {
+a.account-open__button {
   background-color: #092764;
   color: #ffffff;
   padding: 10px 20px;
@@ -4660,20 +4660,20 @@ footer .menu-item {
   padding-right: 4.2rem;
 }
 /* line 172, sass/base/_mixins.scss */
-.account-open__button:hover, .account-open__button:active, .account-open__button:focus {
+a.account-open__button:hover, a.account-open__button:active, a.account-open__button:focus {
   background-color: #15397f;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 177, sass/base/_mixins.scss */
-.account-open__button:focus {
+a.account-open__button:focus {
   text-decoration: underline;
 }
 /* line 181, sass/base/_mixins.scss */
-.account-open__button:hover, .account-open__button:visited, .account-open__button:focus {
+a.account-open__button:hover, a.account-open__button:visited, a.account-open__button:focus {
   color: #ffffff;
 }
 /* line 207, sass/base/_mixins.scss */
-.account-open__button:after {
+a.account-open__button:after {
   content: "";
   display: inline-block;
   position: relative;
@@ -4691,7 +4691,7 @@ footer .menu-item {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
-  .account-open__button:after {
+  a.account-open__button:after {
     background-size: 215px 2412.5px;
     background-position: 0 -139px;
     height: 22px;
@@ -4699,7 +4699,7 @@ footer .menu-item {
   }
 }
 /* line 217, sass/base/_mixins.scss */
-.account-open__button:hover:after, .account-open__button:focus:after {
+a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 19px;
   left: 1.9rem;
 }
