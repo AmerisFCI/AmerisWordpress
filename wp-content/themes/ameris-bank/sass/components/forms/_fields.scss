@@ -2,7 +2,7 @@ input, textarea {
 	width: 100%;
 }
 
-/*
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -26,44 +26,9 @@ textarea,
 		color: $link-hover;
 		border-color: $link-color;
 	}
-}*/
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea,
-.sod_select {
-	border: solid lighten($gray, 50%);
-	@include rem-fallback(border-width, .1);
-	height: auto;
-	@include border-radius(5px);
-	width: 300px;
-	max-width: 100%;
-	line-height: 1;
-	background: $white;
-	color: $link-color;
-	@include rem-fallback(padding, 1.2, 1);
-	@include rem-fallback(font-size, 1.6);
-	@include rem-fallback(margin-bottom, 1.25);
-
-	&:focus {
-		color: $link-hover;
-		border-color: $link-color;
-	}
-
-	box-shadow: 0 .5rem rgba(21,57,127,.05);
-	transition: background-color .2s, box-shadow .2s;
-
-	&:hover, &:active, &:focus {
-		box-shadow: 0 .7rem rgba(21,57,127,.05);
-	}
 }
 
-
-@include breakpoint($desktop) {
-	input {width: auto;}
+.ninja-forms-cont {
 	input[type="text"],
 	input[type="email"],
 	input[type="url"],
@@ -71,13 +36,78 @@ textarea,
 	input[type="search"],
 	textarea,
 	.sod_select {
-		@include rem-fallback(padding, 1.2);
-		@include rem-fallback(font-size, 1.8);
+		border: solid lighten($gray, 50%);
+		@include rem-fallback(border-width, .1);
+		height: auto;
+		@include border-radius(5px);
+		width: 100%;
+		max-width: 100%;
+		line-height: 1;
+		background: $white;
+		color: $link-color;
+		@include rem-fallback(padding, 1.4);
+		@include rem-fallback(font-size, 1.6);
+		@include rem-fallback(margin-bottom, 2.4);
+
+		&:before {
+			@include rem-fallback(top, 1);
+		}
+
+		&:focus {
+			color: $link-hover;
+			border-color: $link-color;
+		}
+
+		box-shadow: 0 .5rem rgba(21,57,127,.05);
+		transition: background-color .2s, box-shadow .2s;
+
+		&:hover, &:active, &:focus {
+			box-shadow: 0 .7rem rgba(21,57,127,.05);
+		}
 	}
 	label {
-		width: 20%;
+		@include rem-fallback(padding, 1.4, 0);
 	}
-	input, textarea {
-		width: 80%;
+	input[type="submit"] {
+		@include red-button-cta;
+		@include cta-arrow-right;
+	}
+	.sod_select .sod_list_wrapper {
+		width: 100%;
+		border: solid lighten($gray, 50%);
+		@include rem-fallback(border-width, .1);
+	}
+}
+
+
+
+@include breakpoint($tablet-to-desktop) {
+	.ninja-forms-cont {
+		input {width: auto;}
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		textarea,
+		.sod_select {
+			@include rem-fallback(padding, 1.4);
+			@include rem-fallback(font-size, 1.8);
+			width: 65%;
+			float: right;
+		}
+		label {
+			width: 25%;
+			float: left;
+			clear: both;
+			margin-right: 10%;
+			@include rem-fallback(padding, 1.4, 0);
+			@include rem-fallback(font-size, 1.8);
+		}
+		input[type="submit"] {
+			float: left;
+			clear: both;
+			margin-left: 35%;
+		}
 	}
 }
