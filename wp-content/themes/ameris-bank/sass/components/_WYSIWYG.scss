@@ -15,3 +15,14 @@ a.view-all, .view-all a {
 	font-weight: 300;
 	@include rem-fallback(font-size, 2.4);
 }
+
+.entry-content {
+	.button a {
+		@include blue-button;
+	}
+
+	.button-cta a {
+		@include red-button-cta;
+		@include cta-arrow-right;
+	}
+}
