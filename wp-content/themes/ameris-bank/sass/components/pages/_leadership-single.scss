@@ -1,0 +1,48 @@
+// Major layout elements
+
+.single-leadership {
+	@include wide-banner-page-layout;
+
+	#content {
+		background:#fff;
+	}
+}
+
+.single-leadership #primary,
+.single-lending_expert #primary {
+	@include clearfix;
+}
+
+// Leader elements
+
+.leadership__portrait-bumper {
+	text-align:center;
+	@include rem-fallback( margin-top, 4 );
+	
+	img {
+		width:100%;
+		height:auto;
+	}
+}
+
+.leadership__name {
+	@include rem-fallback( margin-bottom, .5 );
+}
+
+.leadership__meta {
+	text-align:center;
+	@include rem-fallback( font-size, 1.6 );
+}
+
+.leadership__bio {
+	@include content-below-border;
+	@include rem-fallback( margin-top, .5 );
+}
+
+@include breakpoint ($tablet-wide-up) {
+	
+	.leadership__meta {
+		text-align:left;
+	}
+
+}
