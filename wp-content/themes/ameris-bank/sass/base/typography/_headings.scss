@@ -20,6 +20,9 @@ h2 {
 	@include rem-fallback(font-size, 3.6);
 	@include rem-fallback(margin-bottom, 2);
 	color: $darkblue;
+	&:nth-child(n+2) {
+		@include rem-fallback(margin, 4, 0, 2);
+	}
 }
 
 h3 {

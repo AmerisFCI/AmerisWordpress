@@ -2,3 +2,42 @@ table {
 	@include rem-fallback(margin, 0, 0, 2);
 	width: 100%;
 }
+
+tr {
+	border-bottom: solid $paleblue;
+	@include rem-fallback(border-bottom-width, .2);
+}
+
+th {
+	font-family: $font-heading-bold;
+}
+
+tbody tr:nth-last-child(1) {
+	border-bottom: none;
+	a {
+		@include red-button;
+		text-decoration: none;
+		display: inline-block;
+	}
+}
+
+td, th {
+	vertical-align: middle;
+	@include rem-fallback(font-size, 1.5);
+	@include rem-fallback(padding, 1);
+	&:nth-child(2n+1) {
+		background: rgba(215, 231, 242, .5);
+	}
+
+	&:nth-child(2n) {
+		background: rgba(215, 231, 242, .25);
+	}
+
+	&:nth-child(1) {
+		background: transparent;
+	}
+
+	&:nth-child(n+2) {
+		text-align: center;
+	}
+}

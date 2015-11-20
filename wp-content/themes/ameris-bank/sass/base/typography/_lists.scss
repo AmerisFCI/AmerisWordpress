@@ -46,7 +46,7 @@ dd {
 	@include rem-fallback(margin, 0, 2, 2);
 }
 
-@include breakpoint($wide) {
+/*@include breakpoint($wide) {
 	.entry-content li {
 		width: 43%;
 		float: left;
@@ -59,4 +59,4 @@ dd {
 	.entry-content ul {
 		@include clearfix();
 	}
-}
+}*/

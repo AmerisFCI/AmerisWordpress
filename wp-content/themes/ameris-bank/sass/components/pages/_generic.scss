@@ -27,3 +27,6 @@
 	@include rem-fallback(margin, 0, 0, 2);
 }
 
+.page-template-default .site-main {
+	@include rem-fallback(max-width, 85);
+}

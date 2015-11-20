@@ -470,15 +470,16 @@ p {
 
 /* line 5, sass/base/typography/_copy.scss */
 strong, b {
-  font-weight: 700;
+  font-weight: 600;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
 
-/* line 9, sass/base/typography/_copy.scss */
+/* line 10, sass/base/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 13, sass/base/typography/_copy.scss */
+/* line 14, sass/base/typography/_copy.scss */
 blockquote {
   margin: 30px 0px;
   margin: 3rem 0rem;
@@ -487,13 +488,13 @@ blockquote {
   background: #d7e7f2;
 }
 
-/* line 19, sass/base/typography/_copy.scss */
+/* line 20, sass/base/typography/_copy.scss */
 address {
   margin: 0px 0px 15px;
   margin: 0rem 0rem 1.5rem;
 }
 
-/* line 23, sass/base/typography/_copy.scss */
+/* line 24, sass/base/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
@@ -505,29 +506,29 @@ pre {
   padding: 1.5rem;
 }
 
-/* line 32, sass/base/typography/_copy.scss */
+/* line 33, sass/base/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 }
 
-/* line 36, sass/base/typography/_copy.scss */
+/* line 37, sass/base/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted transparent;
   cursor: help;
 }
 
-/* line 41, sass/base/typography/_copy.scss */
+/* line 42, sass/base/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 46, sass/base/typography/_copy.scss */
+/* line 47, sass/base/typography/_copy.scss */
 big {
   font-size: 125%;
 }
 
-/* line 50, sass/base/typography/_copy.scss */
+/* line 51, sass/base/typography/_copy.scss */
 hr {
   border: 0 solid #d7e7f2;
   border-top-width: 3px;
@@ -536,18 +537,18 @@ hr {
   margin: 2rem 0rem;
 }
 
-/* line 56, sass/base/typography/_copy.scss */
+/* line 57, sass/base/typography/_copy.scss */
 sub, sup {
   font-size: 10px;
   font-size: 1rem;
 }
 
-/* line 60, sass/base/typography/_copy.scss */
+/* line 61, sass/base/typography/_copy.scss */
 sub {
   vertical-align: sub;
 }
 
-/* line 64, sass/base/typography/_copy.scss */
+/* line 65, sass/base/typography/_copy.scss */
 sup {
   vertical-align: super;
 }
@@ -579,8 +580,13 @@ h2, .news-item--newsroom .news-item__title {
   margin-bottom: 2rem;
   color: #092764;
 }
+/* line 23, sass/base/typography/_headings.scss */
+h2:nth-child(n+2), .news-item--newsroom .news-item__title:nth-child(n+2) {
+  margin: 40px 0px 20px;
+  margin: 4rem 0rem 2rem;
+}
 
-/* line 25, sass/base/typography/_headings.scss */
+/* line 28, sass/base/typography/_headings.scss */
 h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -593,7 +599,7 @@ h3 {
   margin-bottom: 2rem;
 }
 
-/* line 36, sass/base/typography/_headings.scss */
+/* line 39, sass/base/typography/_headings.scss */
 h4 {
   color: #092764;
   font-size: 24px;
@@ -602,7 +608,7 @@ h4 {
   margin: 2rem 0rem;
 }
 
-/* line 42, sass/base/typography/_headings.scss */
+/* line 45, sass/base/typography/_headings.scss */
 h5 {
   font-style: normal;
   font-size: 18px;
@@ -614,7 +620,7 @@ h5 {
   margin-bottom: 1.5rem;
 }
 
-/* line 46, sass/base/typography/_headings.scss */
+/* line 49, sass/base/typography/_headings.scss */
 .kicker {
   font-style: normal;
   font-size: 18px;
@@ -633,14 +639,14 @@ h5 {
   border-bottom-width: 0.3rem;
 }
 
-/* line 54, sass/base/typography/_headings.scss */
+/* line 57, sass/base/typography/_headings.scss */
 .landing-heading {
   margin-bottom: 40px;
   margin-bottom: 4rem;
 }
 
 @media (min-width: 740px) {
-  /* line 60, sass/base/typography/_headings.scss */
+  /* line 63, sass/base/typography/_headings.scss */
   h1, .landing-heading, h2, .news-item--newsroom .news-item__title, h3, h4, h5, h6 {
     text-align: left;
   }
@@ -711,26 +717,20 @@ dd {
   margin: 0rem 2rem 2rem;
 }
 
-@media (min-width: 1420px) {
-  /* line 50, sass/base/typography/_lists.scss */
-  .entry-content li {
-    width: 43%;
-    float: left;
-    position: relative;
-    margin-right: 7%;
-  }
-  /* line 55, sass/base/typography/_lists.scss */
-  .entry-content li:nth-child(2n+1) {
-    clear: left;
-  }
-
-  /* line 126, sass/base/_mixins.scss */
-  .entry-content ul:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
+/*@include breakpoint($wide) {
+	.entry-content li {
+		width: 43%;
+		float: left;
+		position: relative;
+		margin-right: 7%;
+		&:nth-child(2n+1) {
+			clear: left;
+		}
+	}
+	.entry-content ul {
+		@include clearfix();
+	}
+}*/
 /* line 5, sass/base/typography/_links.scss */
 .more-link {
   font-style: normal;
@@ -1305,12 +1305,17 @@ dd {
 
 /* line 14, sass/layouts/_basic-page.scss */
 .site-content {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ViZWRlZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ebedef), color-stop(100%, #ffffff));
-  background-image: -moz-linear-gradient(bottom, #ebedef, #ffffff);
-  background-image: -webkit-linear-gradient(bottom, #ebedef, #ffffff);
-  background-image: linear-gradient(to top center, #ebedef, #ffffff);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+69,ebedef+100 */
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 1%, white 69%, #ebedef 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 1%, white 69%, #ebedef 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 1%, #ffffff 69%, #ebedef 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebedef',GradientType=0 );
+  /* IE6-9 */
   padding-bottom: 50px;
   padding-bottom: 5rem;
 }
@@ -1321,28 +1326,28 @@ dd {
   clear: both;
 }
 
-/* line 21, sass/layouts/_basic-page.scss */
+/* line 27, sass/layouts/_basic-page.scss */
 body:not(.home) .site-main {
   box-sizing: border-box;
   padding: 24px;
   padding: 2.4rem;
 }
 
-/* line 27, sass/layouts/_basic-page.scss */
+/* line 33, sass/layouts/_basic-page.scss */
 .blog .site-main, .page-template-product-page .site-main {
   max-width: 850px;
   max-width: 85rem;
 }
 
 @media (min-width: 530px) {
-  /* line 34, sass/layouts/_basic-page.scss */
+  /* line 40, sass/layouts/_basic-page.scss */
   .inner-wrap {
     padding: 0px 20px;
     padding: 0rem 2rem;
   }
 }
 @media (min-width: 1420px) {
-  /* line 41, sass/layouts/_basic-page.scss */
+  /* line 47, sass/layouts/_basic-page.scss */
   .inner-wrap {
     padding: 0;
   }
@@ -1445,7 +1450,12 @@ input, textarea {
   width: 100%;
 }
 
-/* line 6, sass/components/forms/_fields.scss */
+/* line 5, sass/components/forms/_fields.scss */
+.ninja-forms-req-symbol {
+  color: #d31145;
+}
+
+/* line 10, sass/components/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -1470,7 +1480,7 @@ textarea,
   margin-bottom: 12.5px;
   margin-bottom: 1.25rem;
 }
-/* line 25, sass/components/forms/_fields.scss */
+/* line 29, sass/components/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -1482,7 +1492,7 @@ textarea:focus,
   border-color: #15397f;
 }
 
-/* line 32, sass/components/forms/_fields.scss */
+/* line 36, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"],
 .ninja-forms-cont input[type="email"],
 .ninja-forms-cont input[type="url"],
@@ -1511,7 +1521,7 @@ textarea:focus,
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.05);
   transition: background-color .2s, box-shadow .2s;
 }
-/* line 52, sass/components/forms/_fields.scss */
+/* line 56, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:before,
 .ninja-forms-cont input[type="email"]:before,
 .ninja-forms-cont input[type="url"]:before,
@@ -1522,7 +1532,7 @@ textarea:focus,
   top: 10px;
   top: 1rem;
 }
-/* line 56, sass/components/forms/_fields.scss */
+/* line 60, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:focus,
 .ninja-forms-cont input[type="email"]:focus,
 .ninja-forms-cont input[type="url"]:focus,
@@ -1533,7 +1543,7 @@ textarea:focus,
   color: #092764;
   border-color: #15397f;
 }
-/* line 64, sass/components/forms/_fields.scss */
+/* line 68, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:hover, .ninja-forms-cont input[type="text"]:active, .ninja-forms-cont input[type="text"]:focus,
 .ninja-forms-cont input[type="email"]:hover,
 .ninja-forms-cont input[type="email"]:active,
@@ -1555,12 +1565,12 @@ textarea:focus,
 .ninja-forms-cont .sod_select:focus {
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.05);
 }
-/* line 68, sass/components/forms/_fields.scss */
+/* line 72, sass/components/forms/_fields.scss */
 .ninja-forms-cont label {
   padding: 14px 0px;
   padding: 1.4rem 0rem;
 }
-/* line 71, sass/components/forms/_fields.scss */
+/* line 75, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="submit"] {
   background-color: #d31145;
   color: #ffffff;
@@ -1625,7 +1635,7 @@ textarea:focus,
   left: 19px;
   left: 1.9rem;
 }
-/* line 75, sass/components/forms/_fields.scss */
+/* line 79, sass/components/forms/_fields.scss */
 .ninja-forms-cont .sod_select .sod_list_wrapper {
   width: 100%;
   border: solid #bdbdbd;
@@ -1634,11 +1644,11 @@ textarea:focus,
 }
 
 @media (min-width: 530px) {
-  /* line 86, sass/components/forms/_fields.scss */
+  /* line 90, sass/components/forms/_fields.scss */
   .ninja-forms-cont input {
     width: auto;
   }
-  /* line 87, sass/components/forms/_fields.scss */
+  /* line 91, sass/components/forms/_fields.scss */
   .ninja-forms-cont input[type="text"],
   .ninja-forms-cont input[type="email"],
   .ninja-forms-cont input[type="url"],
@@ -1653,7 +1663,7 @@ textarea:focus,
     width: 65%;
     float: right;
   }
-  /* line 99, sass/components/forms/_fields.scss */
+  /* line 103, sass/components/forms/_fields.scss */
   .ninja-forms-cont label {
     width: 25%;
     float: left;
@@ -1664,7 +1674,7 @@ textarea:focus,
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 107, sass/components/forms/_fields.scss */
+  /* line 111, sass/components/forms/_fields.scss */
   .ninja-forms-cont input[type="submit"] {
     float: left;
     clear: both;
@@ -4633,6 +4643,12 @@ footer .menu-item {
   clear: both;
   margin: 0px 0px 20px;
   margin: 0rem 0rem 2rem;
+}
+
+/* line 30, sass/components/pages/_generic.scss */
+.page-template-default .site-main {
+  max-width: 850px;
+  max-width: 85rem;
 }
 
 /* line 1, sass/components/pages/home/_slides.scss */
@@ -7806,6 +7822,76 @@ table {
   margin: 0px 0px 20px;
   margin: 0rem 0rem 2rem;
   width: 100%;
+}
+
+/* line 6, sass/components/_tables.scss */
+tr {
+  border-bottom: solid #d7e7f2;
+  border-bottom-width: 2px;
+  border-bottom-width: 0.2rem;
+}
+
+/* line 11, sass/components/_tables.scss */
+th {
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+
+/* line 15, sass/components/_tables.scss */
+tbody tr:nth-last-child(1) {
+  border-bottom: none;
+}
+/* line 17, sass/components/_tables.scss */
+tbody tr:nth-last-child(1) a {
+  background-color: #d31145;
+  color: #ffffff;
+  padding: 10px 20px;
+  padding: 1rem 2rem;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
+  transition: background-color .2s, box-shadow .2s;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 149, sass/base/_mixins.scss */
+tbody tr:nth-last-child(1) a:hover, tbody tr:nth-last-child(1) a:active, tbody tr:nth-last-child(1) a:focus {
+  background-color: #b30e3a;
+  box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
+}
+/* line 154, sass/base/_mixins.scss */
+tbody tr:nth-last-child(1) a:focus {
+  text-decoration: underline;
+}
+/* line 158, sass/base/_mixins.scss */
+tbody tr:nth-last-child(1) a:hover, tbody tr:nth-last-child(1) a:visited, tbody tr:nth-last-child(1) a:focus {
+  color: #ffffff;
+}
+
+/* line 24, sass/components/_tables.scss */
+td, th {
+  vertical-align: middle;
+  font-size: 15px;
+  font-size: 1.5rem;
+  padding: 10px;
+  padding: 1rem;
+}
+/* line 28, sass/components/_tables.scss */
+td:nth-child(2n+1), th:nth-child(2n+1) {
+  background: rgba(215, 231, 242, 0.5);
+}
+/* line 32, sass/components/_tables.scss */
+td:nth-child(2n), th:nth-child(2n) {
+  background: rgba(215, 231, 242, 0.25);
+}
+/* line 36, sass/components/_tables.scss */
+td:nth-child(1), th:nth-child(1) {
+  background: transparent;
+}
+/* line 40, sass/components/_tables.scss */
+td:nth-child(n+2), th:nth-child(n+2) {
+  text-align: center;
 }
 
 /* line 1, sass/components/_quick-links.scss */
