@@ -1,6 +1,7 @@
 <?php
 /**
- * Widget to display Open an Account.
+ * Widget to display the red callout box (inititally used specifically
+ * for the Open an Account widget).
  */
 class Ameris_Account_Open_Widget extends WP_Widget {
 
@@ -24,8 +25,8 @@ class Ameris_Account_Open_Widget extends WP_Widget {
 
 		parent::__construct(
 			'ameris_account_open_widget',
-			'Ameris Open an Account',
-			array( 'description' => 'Provide a link to users for opening an account.' )
+			'Ameris Red Callout Box',
+			array( 'description' => 'Provide a brief description and link.' )
 		);
 
 	}
