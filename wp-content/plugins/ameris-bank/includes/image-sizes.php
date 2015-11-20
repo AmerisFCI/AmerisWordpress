@@ -14,6 +14,7 @@ function ameris_image_sizes() {
 	add_image_size( 'leader',           332,  420,  true );
 	add_image_size( 'landing-solution', 327,  197,  true );
 	add_image_size( 'callout-box',      302,  430,  true );
+	add_image_size( 'callout-video',    287,  212,  true );
 	add_image_size( 'home-callout',     531,  313,  true );
 	add_image_size( 'slide',            3300, 1700, true );
 	add_image_size( 'landing-banner',   2400, 1300, true );

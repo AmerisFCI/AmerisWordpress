@@ -49,10 +49,10 @@ class Ameris_Video_Callout_Widget extends WP_Widget {
 				$instance['title'] = get_the_title( (int) $instance['video'] );
 
 			// get featured image if there's no image
-			if ( !$instance['image'] ) {
-				$image_array = wp_get_attachment_image_src( get_post_thumbnail_id( (int) $instance['video'] ), 'callout-box' );
-				$instance['image'] = $image_array[0];
-			}
+			if ( !$instance['image'] )
+				$image = get_the_post_thumbnail( $instance['video'], 'callout-video' );
+			else
+				$image = '<img src="' . esc_url( $instance['image'] ) . '" alt="' . esc_attr( $instance['title'] ) . '" />';
 
 			// get video datetime
 			$date = get_the_date( 'm.d.Y | h:i a', (int) $instance['video'] );
@@ -62,9 +62,14 @@ class Ameris_Video_Callout_Widget extends WP_Widget {
 		echo $args['before_widget']; ?>
 
 		<div class="video-callout">
-			<div class="video-callout__image" style="background-image:url( '<?php echo $instance['image']; ?>' );"></div>
+			<a class="video-callout__image-wrap" href="<?php echo get_permalink( $instance['video'] ); ?>">
+				<?php echo $image; ?>
+			</a>
+			</div>
 			<div class="video-callout__body">
-				<h3 class="video-callout__headline"><?php echo $instance['title']; ?></h3>
+				<h3 class="video-callout__headline">
+					<a href="<?php echo get_permalink( $instance['video'] ); ?>"><?php echo $instance['title']; ?></a>
+				</h3>
 				<p class="video-callout__date"><?php echo $date; ?></p>
 			</div>
 		</div>
