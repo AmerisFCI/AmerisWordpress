@@ -30,13 +30,15 @@ a.view-all, .view-all a {
 	.button a, a.button {
 		@include blue-button;
 		text-decoration: none;
-		@include rem-fallback(margin-bottom, 3);
+		@include rem-fallback(margin-bottom, 1.4);
+		display: inline-block;
 	}
 
 	.button-cta a, a.button-cta {
 		@include red-button-cta;
 		@include cta-arrow-right;
 		text-decoration: none;
-		@include rem-fallback(margin-bottom, 3);
+		@include rem-fallback(margin-bottom, 1.4);
+		display: inline-block;
 	}
 }

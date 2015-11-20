@@ -9,8 +9,10 @@
 
 .account-open__blurb {
 	font-family: $font-heading;
+	@include rem-fallback(font-size, 1.6);
 }
 
 .account-open__button {
 	@include blue-button-cta;
+	@include cta-arrow-right;
 }
