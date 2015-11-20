@@ -1,8 +1,8 @@
-input {
+input, textarea {
 	width: 100%;
 }
 
-
+/*
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -26,10 +26,39 @@ textarea,
 		color: $link-hover;
 		border-color: $link-color;
 	}
-}
+}*/
 
-textarea {
-	width: 100%;
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+.sod_select {
+	border: solid lighten($gray, 50%);
+	@include rem-fallback(border-width, .1);
+	height: auto;
+	@include border-radius(5px);
+	width: 300px;
+	max-width: 100%;
+	line-height: 1;
+	background: $white;
+	color: $link-color;
+	@include rem-fallback(padding, 1.2, 1);
+	@include rem-fallback(font-size, 1.6);
+	@include rem-fallback(margin-bottom, 1.25);
+
+	&:focus {
+		color: $link-hover;
+		border-color: $link-color;
+	}
+
+	box-shadow: 0 .5rem rgba(21,57,127,.05);
+	transition: background-color .2s, box-shadow .2s;
+
+	&:hover, &:active, &:focus {
+		box-shadow: 0 .7rem rgba(21,57,127,.05);
+	}
 }
 
 
@@ -42,7 +71,13 @@ textarea {
 	input[type="search"],
 	textarea,
 	.sod_select {
-		@include rem-fallback(padding, 2.2);
-		@include rem-fallback(font-size, 2);
+		@include rem-fallback(padding, 1.2);
+		@include rem-fallback(font-size, 1.8);
+	}
+	label {
+		width: 20%;
+	}
+	input, textarea {
+		width: 80%;
 	}
 }

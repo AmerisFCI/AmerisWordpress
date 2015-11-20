@@ -11,7 +11,9 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	@include rem-fallback(margin, 0, 1.5);
+	@include rem-fallback(margin, 3, 0);
+	@include rem-fallback(padding, 4.8);
+	background: $paleblue;
 }
 
 address {
