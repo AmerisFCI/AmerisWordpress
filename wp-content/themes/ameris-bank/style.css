@@ -4743,7 +4743,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 }
 
 /* line 30, sass/components/pages/_generic.scss */
-.page-template-default .site-main {
+.page-template-default:not(.home) .site-main {
   max-width: 850px;
   max-width: 85rem;
 }
