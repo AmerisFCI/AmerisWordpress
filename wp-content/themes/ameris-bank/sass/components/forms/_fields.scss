@@ -6,6 +6,9 @@ input, textarea {
 	color: $red;
 }
 
+.hp-wrap {
+	@include element-invisible;
+}
 
 input[type="text"],
 input[type="email"],

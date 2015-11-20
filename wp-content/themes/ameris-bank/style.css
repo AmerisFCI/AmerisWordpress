@@ -1458,7 +1458,16 @@ input, textarea {
   color: #d31145;
 }
 
-/* line 10, sass/components/forms/_fields.scss */
+/* line 9, sass/components/forms/_fields.scss */
+.hp-wrap {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 13, sass/components/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -1483,7 +1492,7 @@ textarea,
   margin-bottom: 12.5px;
   margin-bottom: 1.25rem;
 }
-/* line 29, sass/components/forms/_fields.scss */
+/* line 32, sass/components/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -1495,7 +1504,7 @@ textarea:focus,
   border-color: #15397f;
 }
 
-/* line 36, sass/components/forms/_fields.scss */
+/* line 39, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"],
 .ninja-forms-cont input[type="email"],
 .ninja-forms-cont input[type="url"],
@@ -1524,7 +1533,7 @@ textarea:focus,
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.05);
   transition: background-color .2s, box-shadow .2s;
 }
-/* line 56, sass/components/forms/_fields.scss */
+/* line 59, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:before,
 .ninja-forms-cont input[type="email"]:before,
 .ninja-forms-cont input[type="url"]:before,
@@ -1535,7 +1544,7 @@ textarea:focus,
   top: 10px;
   top: 1rem;
 }
-/* line 60, sass/components/forms/_fields.scss */
+/* line 63, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:focus,
 .ninja-forms-cont input[type="email"]:focus,
 .ninja-forms-cont input[type="url"]:focus,
@@ -1546,7 +1555,7 @@ textarea:focus,
   color: #092764;
   border-color: #15397f;
 }
-/* line 68, sass/components/forms/_fields.scss */
+/* line 71, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:hover, .ninja-forms-cont input[type="text"]:active, .ninja-forms-cont input[type="text"]:focus,
 .ninja-forms-cont input[type="email"]:hover,
 .ninja-forms-cont input[type="email"]:active,
@@ -1568,12 +1577,12 @@ textarea:focus,
 .ninja-forms-cont .sod_select:focus {
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.05);
 }
-/* line 72, sass/components/forms/_fields.scss */
+/* line 75, sass/components/forms/_fields.scss */
 .ninja-forms-cont label {
   padding: 14px 0px;
   padding: 1.4rem 0rem;
 }
-/* line 75, sass/components/forms/_fields.scss */
+/* line 78, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="submit"] {
   background-color: #d31145;
   color: #ffffff;
@@ -1638,7 +1647,7 @@ textarea:focus,
   left: 19px;
   left: 1.9rem;
 }
-/* line 79, sass/components/forms/_fields.scss */
+/* line 82, sass/components/forms/_fields.scss */
 .ninja-forms-cont .sod_select .sod_list_wrapper {
   width: 100%;
   border: solid #bdbdbd;
@@ -1647,11 +1656,11 @@ textarea:focus,
 }
 
 @media (min-width: 530px) {
-  /* line 90, sass/components/forms/_fields.scss */
+  /* line 93, sass/components/forms/_fields.scss */
   .ninja-forms-cont input {
     width: auto;
   }
-  /* line 91, sass/components/forms/_fields.scss */
+  /* line 94, sass/components/forms/_fields.scss */
   .ninja-forms-cont input[type="text"],
   .ninja-forms-cont input[type="email"],
   .ninja-forms-cont input[type="url"],
@@ -1666,7 +1675,7 @@ textarea:focus,
     width: 65%;
     float: right;
   }
-  /* line 103, sass/components/forms/_fields.scss */
+  /* line 106, sass/components/forms/_fields.scss */
   .ninja-forms-cont label {
     width: 25%;
     float: left;
@@ -1677,7 +1686,7 @@ textarea:focus,
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 111, sass/components/forms/_fields.scss */
+  /* line 114, sass/components/forms/_fields.scss */
   .ninja-forms-cont input[type="submit"] {
     float: left;
     clear: both;
@@ -4647,6 +4656,8 @@ footer .menu-item {
   font-size: 2rem;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   clear: both;
+  padding-right: 42px;
+  padding-right: 4.2rem;
 }
 /* line 172, sass/base/_mixins.scss */
 .account-open__button:hover, .account-open__button:active, .account-open__button:focus {
@@ -4660,6 +4671,37 @@ footer .menu-item {
 /* line 181, sass/base/_mixins.scss */
 .account-open__button:hover, .account-open__button:visited, .account-open__button:focus {
   color: #ffffff;
+}
+/* line 207, sass/base/_mixins.scss */
+.account-open__button:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: 15px;
+  left: 1.5rem;
+  top: 4px;
+  top: 0.4rem;
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -394px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 22px;
+  width: 13px;
+  transition: left .2s;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 207, sass/base/_mixins.scss */
+  .account-open__button:after {
+    background-size: 215px 2412.5px;
+    background-position: 0 -139px;
+    height: 22px;
+    width: 13px;
+  }
+}
+/* line 217, sass/base/_mixins.scss */
+.account-open__button:hover:after, .account-open__button:focus:after {
+  left: 19px;
+  left: 1.9rem;
 }
 
 /* line 1, sass/components/pages/_generic.scss */
