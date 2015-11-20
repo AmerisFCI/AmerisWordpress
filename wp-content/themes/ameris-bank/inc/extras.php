@@ -154,3 +154,8 @@ function ameris_breadcrumb_trail_mods( $items, $args ) {
 	return $items;
 }
 add_filter( 'breadcrumb_trail_items', 'ameris_breadcrumb_trail_mods', 10, 2 );
+
+/**
+ * Remove Ninja Forms default styling.
+ */
+remove_action( 'ninja_forms_display_css', 'ninja_forms_display_css');
