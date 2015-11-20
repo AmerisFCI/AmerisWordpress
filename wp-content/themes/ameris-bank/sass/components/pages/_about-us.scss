@@ -13,6 +13,8 @@
 body.page-template-about-us-page {
 	.site-main {
 		padding: 0;
+		@include add-grid(12);
+		@include add-gutter(1/3);
 	}
 }
 
@@ -76,100 +78,7 @@ body.page-template-about-us-page {
 }
 
 
-//layout for the top, this page is inheriting a 20 column grid
-@include breakpoint($tablet-wide-up) {
-	.about-panels__column {
-		@include float-span(10);
-		&:nth-child(2n) {
-			@include float-span(10, 'last');
-		}
-	}
-	.about-our-story {
-		@include rem-fallback(margin-top, -13);
-		@include rem-fallback(padding, 2.4, 3.6);
-	}
-	.about-news-item, .about-news-item__title {
-		@include rem-fallback(padding-left, 3.6);
-		@include rem-fallback(padding-right, 3.6);
-	}
-	.about-video {
-		@include rem-fallback(margin-top, -19);
-	}
-	.page-template-about-us-page {
-		.wide-banner-image {
-			@include rem-fallback(min-height, 61);
-			//@include rem-fallback(padding-bottom, 13);
-		}
-	}
-	.about-panels-lower {
-		@include add-grid(12);
-		@include add-gutter(1/3);
-	}
-	.menu-about-us-menu-container {
-		@include float-span(6);
-		max-width: none;
-	}
-	.about-leadership {
-		@include float-span(6, 'last');
-		max-width: none;
-	}
-	.about-investor {
-		margin: 0;
-		clear: both;
-		max-width: none;
-	}
 
-	.about-small-panels-container {
-		@include add-grid(10);
-		@include add-gutter(1);
-	}
-}
-
-@include breakpoint($tablet-skinny) {
-	.about-small-panels__column {
-		@include float-span(5);
-		&:nth-child(2n) {
-			@include float-span(5, 'last');
-		}
-	}
-}
-
-@include breakpoint($narrow-to-desktop) {
-
-	.about-small-panels__column {
-		@include float-span(5);
-		&:nth-child(2n) {
-			@include float-span(5, 'last');
-		}
-	}
-	.menu-about-us-menu-container {
-		@include float-span(4);
-	}
-	.about-leadership {
-		@include float-span(4);
-	}
-	.about-investor {
-		margin: 0;
-		max-width: none;
-		@include float-span(4, 'last');
-	}
-}
-
-@include breakpoint($desktop) {
-
-}
-
-@include breakpoint($wide) {
-	.menu-about-us-menu-container {
-		@include float-span(3);
-	}
-	.about-leadership {
-		@include float-span(3);
-	}
-	.about-investor {
-		@include float-span(6, 'last');
-	}
-}
 
 //intro text for about us
 .about-our-story {
@@ -386,3 +295,98 @@ a.about-leadership__button {
 	margin: auto;
 
 }
+
+
+//layout for the top, this page is on a 12 column grid
+@include breakpoint($tablet-wide-up) {
+	.about-panels__column {
+		@include float-span(6);
+		&:nth-child(2n) {
+			@include float-span(6, 'last');
+		}
+	}
+	.about-our-story {
+		@include rem-fallback(margin-top, -13);
+		@include rem-fallback(padding, 2.4, 3.6);
+	}
+	.about-news-item, .about-news-item__title {
+		@include rem-fallback(padding-left, 3.6);
+		@include rem-fallback(padding-right, 3.6);
+	}
+	.about-video {
+		@include rem-fallback(margin-top, -19);
+	}
+	.page-template-about-us-page {
+		.wide-banner-image {
+			@include rem-fallback(min-height, 61);
+			//@include rem-fallback(padding-bottom, 13);
+		}
+		.menu-about-us-menu-container {
+			@include float-span(6);
+			max-width: none;
+		}
+	}
+
+	.about-news-item {
+		@include rem-fallback(min-height, 50);
+	}
+
+	.about-leadership {
+		@include float-span(6, 'last');
+		max-width: none;
+	}
+	.about-investor {
+		margin: 0;
+		clear: both;
+		max-width: none;
+	}
+}
+
+@include breakpoint($tablet-skinny) {
+	.about-small-panels__column {
+		@include float-span(6);
+		&:nth-child(2n) {
+			@include float-span(6, 'last');
+		}
+	}
+}
+
+@include breakpoint($narrow-to-desktop) {
+
+	.about-small-panels__column {
+		@include float-span(6);
+		&:nth-child(2n) {
+			@include float-span(6, 'last');
+		}
+	}
+	.page-template-about-us-page .menu-about-us-menu-container {
+		@include float-span(4);
+	}
+	.about-leadership {
+		@include float-span(4);
+	}
+	.about-investor {
+		margin: 0;
+		max-width: none;
+		@include float-span(4, 'last');
+	}
+}
+
+@include breakpoint($desktop) {
+
+}
+
+@include breakpoint($wide) {
+	.page-template-about-us-page .menu-about-us-menu-container {
+		@include float-span(3);
+	}
+	.about-leadership {
+		@include float-span(3);
+	}
+	.about-investor {
+		margin: 0;
+		max-width: none;
+		@include float-span(6, 'last');
+	}
+}
+
