@@ -1,0 +1,51 @@
+.video-callout {
+
+	&__image {
+		margin-bottom: 0;
+		position: relative;
+		&:after {
+			content: "";
+			@include use-sprite(icon-vid-play);
+			position: absolute;
+			left: 50%;
+			top: 30%;
+			@include rem-fallback(margin-left, -4.5);
+		}
+	}
+
+	&__body {
+		@include rem-fallback( padding, 2.4 );
+		margin-top:-8px; // because whatever
+		background: $darkblue;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			border: solid transparent;
+			@include rem-fallback(border-width, 3);
+			position: absolute;
+			@include rem-fallback(top, -6);
+			@include rem-fallback(left, 6);
+			border-bottom-color: $darkblue;
+		}
+	}
+
+	&__headline {
+		@include h2-look;
+		@include rem-fallback( font-size, 2.4 );
+		@include rem-fallback( line-height, 3 );
+		color: $white;
+		a {
+			color:$white;
+		}
+	}
+
+	&__date {
+		font-family:$font-sansserif;
+		text-transform:uppercase;
+		color:$lightgray;
+		@include rem-fallback( font-size, 1.4 );
+		font-weight:700;
+	}
+
+}

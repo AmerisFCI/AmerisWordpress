@@ -1,0 +1,29 @@
+.safety-grid {
+	@include clearfix;
+}
+
+.safety-grid__column {
+	text-align:center;
+	@include rem-fallback( margin-bottom, 2 );
+}
+
+.safety-item__label {
+	@include boldbluetext;
+	@include rem-fallback( margin-bottom, .5 );
+	a {
+		text-decoration:none;
+	}
+}
+
+@include breakpoint( $tablet-wide-up ) {
+	.safety-grid {
+		@include add-grid(5);
+		@include add-gutter(1/5);
+	}
+	.safety-grid__column {
+		@include float-span(1);
+		&:nth-child(5n) {
+			@include float-span(1, 'last');
+		}
+	}
+}

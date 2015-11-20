@@ -7872,6 +7872,55 @@ a.about-leadership__button {
     margin-bottom: 3rem;
   }
 }
+/* line 126, sass/base/_mixins.scss */
+.safety-grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 5, sass/components/pages/_banking-safety.scss */
+.safety-grid__column {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+/* line 10, sass/components/pages/_banking-safety.scss */
+.safety-item__label {
+  font-style: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  color: #092764;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+}
+/* line 13, sass/components/pages/_banking-safety.scss */
+.safety-item__label a {
+  text-decoration: none;
+}
+
+@media (min-width: 740px) {
+  /* line 23, sass/components/pages/_banking-safety.scss */
+  .safety-grid__column {
+    width: 17.24138%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.44828%;
+  }
+  /* line 25, sass/components/pages/_banking-safety.scss */
+  .safety-grid__column:nth-child(5n) {
+    width: 17.24138%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
   display: none;
