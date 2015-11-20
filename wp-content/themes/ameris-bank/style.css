@@ -5993,6 +5993,110 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 /* line 379, sass/base/_mixins.scss */
+.single-leadership .page-title {
+  padding: 0;
+  padding-top: 20px;
+  padding-top: 2rem;
+}
+/* line 384, sass/base/_mixins.scss */
+.single-leadership .sidebar-menu {
+  background: transparent;
+}
+/* line 388, sass/base/_mixins.scss */
+.single-leadership .inner-wrap .sidebar-left {
+  margin-left: 0;
+  margin-top: 0px;
+  margin-top: 0rem;
+}
+@media (min-width: 1024px) {
+  /* line 394, sass/base/_mixins.scss */
+  .single-leadership .sidebar-menu {
+    padding-top: 44px;
+    padding-top: 4.4rem;
+  }
+  /* line 397, sass/base/_mixins.scss */
+  .single-leadership .sidebar-left {
+    clear: none;
+  }
+  /* line 404, sass/base/_mixins.scss */
+  .single-leadership #main {
+    width: 64.10256%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 1420px) {
+  /* line 417, sass/base/_mixins.scss */
+  .single-leadership #main {
+    width: 72.22222%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    padding-right: 48px;
+    padding-right: 4.8rem;
+  }
+}
+/* line 6, sass/components/pages/_leadership-single.scss */
+.single-leadership #content {
+  background: #fff;
+}
+
+/* line 126, sass/base/_mixins.scss */
+.single-leadership #primary:after,
+.single-lending_expert #primary:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 18, sass/components/pages/_leadership-single.scss */
+.leadership__portrait-bumper {
+  text-align: center;
+  margin-top: 40px;
+  margin-top: 4rem;
+}
+/* line 22, sass/components/pages/_leadership-single.scss */
+.leadership__portrait-bumper img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 28, sass/components/pages/_leadership-single.scss */
+.leadership__name {
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+}
+
+/* line 32, sass/components/pages/_leadership-single.scss */
+.leadership__meta {
+  text-align: center;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* line 37, sass/components/pages/_leadership-single.scss */
+.leadership__bio {
+  margin-top: 50px;
+  margin-top: 5rem;
+  padding-top: 30px;
+  padding-top: 3rem;
+  border-top-width: 2px;
+  border-top-width: 0.2rem;
+  border-top: solid #d7e7f2;
+  margin-top: 5px;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 740px) {
+  /* line 44, sass/components/pages/_leadership-single.scss */
+  .leadership__meta {
+    text-align: left;
+  }
+}
+/* line 379, sass/base/_mixins.scss */
 .blog .page-title {
   padding: 0;
   padding-top: 20px;

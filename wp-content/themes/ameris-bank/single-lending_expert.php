@@ -11,6 +11,11 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 
 <div class="inner-wrap content-inner-wrap ">
 	<div id="primary" class="content-area">
+
+		<div class="sidebar-right">
+			<div class="lending-expert__portrait-bumper leadership__portrait-bumper"><?php the_post_thumbnail( 'leader' ); ?></div>
+		</div>
+
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>

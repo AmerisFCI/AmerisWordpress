@@ -29,9 +29,9 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 								<div id="post-<?php the_ID(); ?>-panel" class="leadership-grid__panel panel" <?php post_class(); ?>>
 									<a href="<?php the_permalink(); ?>">
 										<?php the_post_thumbnail( 'leader' ); ?>
-										<div>
+										<div class="leadership-grid__name-group">
 											<h4 class="leadership-grid__name"><?php the_title(); ?></h4>
-											<div class="leadership-grid__position"><?php the_field( 'position' ); ?></div>
+											<div class="leadership-grid__position"><?php the_field( 'position/title' ); ?></div>
 										</div>
 									</a>
 								</div><!-- #post-## -->
