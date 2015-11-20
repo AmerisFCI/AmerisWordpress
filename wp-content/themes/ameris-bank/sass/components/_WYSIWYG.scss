@@ -22,6 +22,9 @@ a.view-all, .view-all a {
 		background: none;
 		padding: 0;
 		box-shadow: none;
+		&:after {
+			content: none;
+		}
 	}
 
 	.button a, a.button {

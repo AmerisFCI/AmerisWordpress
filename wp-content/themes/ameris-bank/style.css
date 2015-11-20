@@ -8093,7 +8093,11 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   padding: 0;
   box-shadow: none;
 }
-/* line 27, sass/components/_wysiwyg.scss */
+/* line 25, sass/components/_wysiwyg.scss */
+.entry-content .button:after, .entry-content .button-cta:after {
+  content: none;
+}
+/* line 30, sass/components/_wysiwyg.scss */
 .entry-content .button a, .entry-content a.button {
   background-color: #092764;
   color: #ffffff;
@@ -8120,7 +8124,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 .entry-content .button a:hover, .entry-content .button a:visited, .entry-content .button a:focus, .entry-content a.button:hover, .entry-content a.button:visited, .entry-content a.button:focus {
   color: #ffffff;
 }
-/* line 32, sass/components/_wysiwyg.scss */
+/* line 35, sass/components/_wysiwyg.scss */
 .entry-content .button-cta a, .entry-content a.button-cta {
   background-color: #d31145;
   color: #ffffff;
