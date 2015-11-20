@@ -4704,6 +4704,85 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 1.9rem;
 }
 
+/* line 3, sass/components/widgets/_callout-video.scss */
+.video-callout__image {
+  margin-bottom: 0;
+  position: relative;
+}
+/* line 6, sass/components/widgets/_callout-video.scss */
+.video-callout__image:after {
+  content: "";
+  background-image: url('images/sprite-images-sf01bbe14f1.png');
+  background-position: 0 -3146px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  margin-left: -45px;
+  margin-left: -4.5rem;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 6, sass/components/widgets/_callout-video.scss */
+  .video-callout__image:after {
+    background-size: 215px 2412.5px;
+    background-position: 0 -1478px;
+    height: 90px;
+    width: 90px;
+  }
+}
+/* line 16, sass/components/widgets/_callout-video.scss */
+.video-callout__body {
+  padding: 24px;
+  padding: 2.4rem;
+  margin-top: -8px;
+  background: #092764;
+  position: relative;
+}
+/* line 21, sass/components/widgets/_callout-video.scss */
+.video-callout__body:before {
+  content: "";
+  display: block;
+  border: solid transparent;
+  border-width: 30px;
+  border-width: 3rem;
+  position: absolute;
+  top: -60px;
+  top: -6rem;
+  left: 60px;
+  left: 6rem;
+  border-bottom-color: #092764;
+}
+/* line 33, sass/components/widgets/_callout-video.scss */
+.video-callout__headline {
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  text-transform: none;
+  color: #092764;
+  font-weight: normal;
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 30px;
+  line-height: 3rem;
+  color: #ffffff;
+}
+/* line 38, sass/components/widgets/_callout-video.scss */
+.video-callout__headline a {
+  color: #ffffff;
+}
+/* line 43, sass/components/widgets/_callout-video.scss */
+.video-callout__date {
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  text-transform: uppercase;
+  color: #ebedef;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 /* line 1, sass/components/pages/_generic.scss */
 .sticky {
   display: block;
