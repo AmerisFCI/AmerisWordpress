@@ -1,0 +1,16 @@
+.account-open {
+	background: $red;
+	@include rem-fallback(padding, 2.4);
+}
+
+.account-open__title, .account-open__blurb {
+	color: $white;
+}
+
+.account-open__blurb {
+	font-family: $font-heading;
+}
+
+.account-open__button {
+	@include blue-button-cta;
+}
