@@ -8,6 +8,7 @@ function ameris_widgets_init() {
 	register_widget( 'ameris_account_widget' );
 	register_widget( 'ameris_account_open_widget' );
 	register_widget( 'ameris_page_callout_widget' );
+	register_widget( 'ameris_video_callout_widget' );
 	register_widget( 'ameris_recent_posts_widget' );
 	register_widget( 'ameris_press_feed_widget' );
 	
