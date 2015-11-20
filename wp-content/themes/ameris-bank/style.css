@@ -481,6 +481,9 @@ dfn, cite, em, i {
 
 /* line 14, sass/base/typography/_copy.scss */
 blockquote {
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 2.4rem;
   margin: 30px 0px;
   margin: 3rem 0rem;
   padding: 48px;
@@ -488,13 +491,13 @@ blockquote {
   background: #d7e7f2;
 }
 
-/* line 20, sass/base/typography/_copy.scss */
+/* line 22, sass/base/typography/_copy.scss */
 address {
   margin: 0px 0px 15px;
   margin: 0rem 0rem 1.5rem;
 }
 
-/* line 24, sass/base/typography/_copy.scss */
+/* line 26, sass/base/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
@@ -506,29 +509,29 @@ pre {
   padding: 1.5rem;
 }
 
-/* line 33, sass/base/typography/_copy.scss */
+/* line 35, sass/base/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 }
 
-/* line 37, sass/base/typography/_copy.scss */
+/* line 39, sass/base/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted transparent;
   cursor: help;
 }
 
-/* line 42, sass/base/typography/_copy.scss */
+/* line 44, sass/base/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 47, sass/base/typography/_copy.scss */
+/* line 49, sass/base/typography/_copy.scss */
 big {
   font-size: 125%;
 }
 
-/* line 51, sass/base/typography/_copy.scss */
+/* line 53, sass/base/typography/_copy.scss */
 hr {
   border: 0 solid #d7e7f2;
   border-top-width: 3px;
@@ -537,18 +540,18 @@ hr {
   margin: 2rem 0rem;
 }
 
-/* line 57, sass/base/typography/_copy.scss */
+/* line 59, sass/base/typography/_copy.scss */
 sub, sup {
   font-size: 10px;
   font-size: 1rem;
 }
 
-/* line 61, sass/base/typography/_copy.scss */
+/* line 63, sass/base/typography/_copy.scss */
 sub {
   vertical-align: sub;
 }
 
-/* line 65, sass/base/typography/_copy.scss */
+/* line 67, sass/base/typography/_copy.scss */
 sup {
   vertical-align: super;
 }
@@ -8084,8 +8087,14 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   font-size: 2.4rem;
 }
 
-/* line 20, sass/components/_wysiwyg.scss */
-.entry-content .button a {
+/* line 21, sass/components/_wysiwyg.scss */
+.entry-content .button, .entry-content .button-cta {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+/* line 27, sass/components/_wysiwyg.scss */
+.entry-content .button a, .entry-content a.button {
   background-color: #092764;
   color: #ffffff;
   padding: 10px 20px;
@@ -8096,22 +8105,23 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.2);
   transition: background-color .2s, box-shadow .2s;
+  text-decoration: none;
 }
 /* line 172, sass/base/_mixins.scss */
-.entry-content .button a:hover, .entry-content .button a:active, .entry-content .button a:focus {
+.entry-content .button a:hover, .entry-content .button a:active, .entry-content .button a:focus, .entry-content a.button:hover, .entry-content a.button:active, .entry-content a.button:focus {
   background-color: #15397f;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 177, sass/base/_mixins.scss */
-.entry-content .button a:focus {
+.entry-content .button a:focus, .entry-content a.button:focus {
   text-decoration: underline;
 }
 /* line 181, sass/base/_mixins.scss */
-.entry-content .button a:hover, .entry-content .button a:visited, .entry-content .button a:focus {
+.entry-content .button a:hover, .entry-content .button a:visited, .entry-content .button a:focus, .entry-content a.button:hover, .entry-content a.button:visited, .entry-content a.button:focus {
   color: #ffffff;
 }
-/* line 24, sass/components/_wysiwyg.scss */
-.entry-content .button-cta a {
+/* line 32, sass/components/_wysiwyg.scss */
+.entry-content .button-cta a, .entry-content a.button-cta {
   background-color: #d31145;
   color: #ffffff;
   padding: 10px 20px;
@@ -8130,22 +8140,23 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   clear: both;
   padding-right: 42px;
   padding-right: 4.2rem;
+  text-decoration: none;
 }
 /* line 149, sass/base/_mixins.scss */
-.entry-content .button-cta a:hover, .entry-content .button-cta a:active, .entry-content .button-cta a:focus {
+.entry-content .button-cta a:hover, .entry-content .button-cta a:active, .entry-content .button-cta a:focus, .entry-content a.button-cta:hover, .entry-content a.button-cta:active, .entry-content a.button-cta:focus {
   background-color: #b30e3a;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 154, sass/base/_mixins.scss */
-.entry-content .button-cta a:focus {
+.entry-content .button-cta a:focus, .entry-content a.button-cta:focus {
   text-decoration: underline;
 }
 /* line 158, sass/base/_mixins.scss */
-.entry-content .button-cta a:hover, .entry-content .button-cta a:visited, .entry-content .button-cta a:focus {
+.entry-content .button-cta a:hover, .entry-content .button-cta a:visited, .entry-content .button-cta a:focus, .entry-content a.button-cta:hover, .entry-content a.button-cta:visited, .entry-content a.button-cta:focus {
   color: #ffffff;
 }
 /* line 207, sass/base/_mixins.scss */
-.entry-content .button-cta a:after {
+.entry-content .button-cta a:after, .entry-content a.button-cta:after {
   content: "";
   display: inline-block;
   position: relative;
@@ -8163,7 +8174,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 207, sass/base/_mixins.scss */
-  .entry-content .button-cta a:after {
+  .entry-content .button-cta a:after, .entry-content a.button-cta:after {
     background-size: 215px 2412.5px;
     background-position: 0 -139px;
     height: 22px;
@@ -8171,7 +8182,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   }
 }
 /* line 217, sass/base/_mixins.scss */
-.entry-content .button-cta a:hover:after, .entry-content .button-cta a:focus:after {
+.entry-content .button-cta a:hover:after, .entry-content .button-cta a:focus:after, .entry-content a.button-cta:hover:after, .entry-content a.button-cta:focus:after {
   left: 19px;
   left: 1.9rem;
 }

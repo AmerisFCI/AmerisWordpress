@@ -17,12 +17,21 @@ a.view-all, .view-all a {
 }
 
 .entry-content {
-	.button a {
-		@include blue-button;
+
+	.button, .button-cta {
+		background: none;
+		padding: 0;
+		box-shadow: none;
 	}
 
-	.button-cta a {
+	.button a, a.button {
+		@include blue-button;
+		text-decoration: none;
+	}
+
+	.button-cta a, a.button-cta {
 		@include red-button-cta;
 		@include cta-arrow-right;
+		text-decoration: none;
 	}
 }
