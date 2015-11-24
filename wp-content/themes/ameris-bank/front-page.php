@@ -48,7 +48,7 @@ get_header(); ?>
 								<?php echo wp_get_attachment_image( get_field( 'icon_' . $i ), 'circle-icon' ); ?>
 								<h2 class="tool__title"><?php the_field( 'heading_' . $i ); ?></h2>
 								<p class="tool__description"><?php the_field( 'blurb_' . $i ); ?></p>
-								<a class="button tool__link" href="<?php echo get_permalink( get_field( 'button_link_' . $i ) ); ?>">
+								<a class="button tool__link" href="<?php the_field( 'button_link_' . $i ); ?>">
 									<?php the_field( 'button_text_' . $i ); ?>
 								</a>
 							</div>
@@ -67,7 +67,7 @@ get_header(); ?>
 						<div class="callout-box__description home-callout-box__description callout-box--large__description">
 							<?php the_field( 'callout_description' ); ?>
 						</div>
-						<a class="button callout-box__button home-callout-box__button callout-box--large__button" href="<?php esc_attr( the_field( 'callout_link' ) ); ?>">
+						<a class="button callout-box__button home-callout-box__button callout-box--large__button" href="<?php the_field( 'callout_link' ); ?>">
 							<?php the_field( 'callout_button' ); ?>
 						</a>
 					</div>
