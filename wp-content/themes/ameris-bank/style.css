@@ -5989,7 +5989,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   color: #092764;
 }
 
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 740px) {
   /* line 26, sass/components/pages/landing/_solutions.scss */
   .solution {
     width: 31.42857%;
@@ -6005,22 +6005,9 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     float: right;
     margin-right: 0;
   }
-}
-@media (min-width: 1024px) {
-  /* line 35, sass/components/pages/landing/_solutions.scss */
-  .solution {
-    width: 31.42857%;
-    clear: right;
-    float: left;
-    margin-left: 0;
-    margin-right: 2.85714%;
-  }
-  /* line 37, sass/components/pages/landing/_solutions.scss */
-  .solution:nth-child(3n) {
-    width: 31.42857%;
-    clear: right;
-    float: right;
-    margin-right: 0;
+  /* line 31, sass/components/pages/landing/_solutions.scss */
+  .solution:nth-child(3n+1) {
+    clear: both;
   }
 }
 /* line 1, sass/components/pages/landing/_tools.scss */

@@ -22,20 +22,14 @@
 	@include red-link;
 }
 
-@include breakpoint($tablet-wide) {
+@include breakpoint($tablet-wide-up) {
 	.solution {
 		@include float-span(3);
 		&:nth-child(3n) {
 			@include float-span(3, 'last');
 		}
-	}
-}
-
-@include breakpoint($narrow-to-desktop) {
-	.solution {
-		@include float-span(3);
-		&:nth-child(3n) {
-			@include float-span(3, 'last');
+		&:nth-child(3n+1) {
+			clear: both;
 		}
 	}
 }
