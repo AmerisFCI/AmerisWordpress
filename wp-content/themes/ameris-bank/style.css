@@ -2852,8 +2852,8 @@ a:hover, a:active {
 
   /* line 611, sass/components/navigation/_menu-main.scss */
   .sba-nav .nav-cta a {
-    padding: 17px 30px 20px;
-    padding: 1.7rem 3rem 2rem;
+    padding: 14px 30px 18px;
+    padding: 1.4rem 3rem 1.8rem;
     font-size: 18px;
     font-size: 1.8rem;
   }
@@ -3036,6 +3036,14 @@ a:hover, a:active {
   .main-navigation {
     margin-right: 10px;
     margin-right: 1rem;
+  }
+
+  /* line 695, sass/components/navigation/_menu-main.scss */
+  .sba-nav .nav-cta a {
+    padding: 17px 30px 20px;
+    padding: 1.7rem 3rem 2rem;
+    font-size: 21px;
+    font-size: 2.1rem;
   }
 }
 /* line 1, sass/components/navigation/_utility-nav.scss */
