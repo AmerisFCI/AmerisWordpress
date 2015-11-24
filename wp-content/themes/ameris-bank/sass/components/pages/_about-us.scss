@@ -36,6 +36,10 @@ body.page-template-about-us-page {
 	background-size: cover;
 }
 
+.about-leadership__image {
+	background-position: top center;
+}
+
 //set areas with background images' kickers to be white
 .about-leadership__kicker, .about-history__kicker, .about-careers__kicker, .about-news-item__kicker {
 	color: $white;
@@ -119,6 +123,9 @@ body.page-template-about-us-page {
 		@include rem-fallback(bottom, 2.4);
 		li {
 			box-shadow: none;
+			&:first-child {
+				margin-left: 0;
+			}
 			button {
 				border-color: $darkblue;
 			}
@@ -147,6 +154,7 @@ body.page-template-about-us-page {
 	}
 	.slick-prev {
 		transform: rotate(180deg);
+		@include rem-fallback(margin-right, 1.4);
 	}
 	.slick-next {
 	}
@@ -309,7 +317,10 @@ a.about-leadership__button {
 		@include rem-fallback(margin-top, -13);
 		@include rem-fallback(padding, 2.4, 3.6);
 	}
-	.about-news-item, .about-news-item__title {
+	.about-newsroom-wrapper .slick-dots {
+		@include rem-fallback(left, 3.6);
+	}
+	.about-news-item, .about-news-item__content {
 		@include rem-fallback(padding-left, 3.6);
 		@include rem-fallback(padding-right, 3.6);
 	}
