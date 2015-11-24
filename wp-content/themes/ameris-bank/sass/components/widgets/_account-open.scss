@@ -1,6 +1,9 @@
 .account-open {
 	background: $red;
 	@include rem-fallback(padding, 2.4);
+	@include rem-fallback(max-width, 31.5);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .account-open__title, .account-open__blurb {

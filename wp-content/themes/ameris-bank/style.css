@@ -4641,21 +4641,25 @@ footer .menu-item {
   background: #d31145;
   padding: 24px;
   padding: 2.4rem;
+  max-width: 315px;
+  max-width: 31.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 6, sass/components/widgets/_account-open.scss */
+/* line 9, sass/components/widgets/_account-open.scss */
 .account-open__title, .account-open__blurb {
   color: #ffffff;
 }
 
-/* line 10, sass/components/widgets/_account-open.scss */
+/* line 13, sass/components/widgets/_account-open.scss */
 .account-open__blurb {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 15, sass/components/widgets/_account-open.scss */
+/* line 18, sass/components/widgets/_account-open.scss */
 a.account-open__button {
   background-color: #092764;
   color: #ffffff;
