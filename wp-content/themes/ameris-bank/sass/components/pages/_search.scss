@@ -1,3 +1,18 @@
+.search-results__header {
+	@include rem-fallback(padding, 2.4);
+	h1 {
+		@include voice;
+		@include rem-fallback(margin-top, 3);
+		@include breakpoint($tablet-wide-up) {
+			@include rem-fallback(font-size, 6.8);
+		}
+	}
+}
+
+.search .site-header {
+	position: relative;
+}
+
 .search article {
 	border-bottom: solid $paleblue;
 	@include rem-fallback(border-bottom-width, .2);

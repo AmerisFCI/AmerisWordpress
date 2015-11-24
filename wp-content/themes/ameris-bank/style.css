@@ -1337,7 +1337,7 @@ body:not(.home) .site-main {
 }
 
 /* line 33, sass/layouts/_basic-page.scss */
-.blog .site-main, .page-template-product-page .site-main {
+.blog .site-main, .page-template-product-page .site-main, .search .site-main {
   max-width: 850px;
   max-width: 85rem;
 }
@@ -8087,6 +8087,35 @@ a.about-leadership__button {
 }
 
 /* line 1, sass/components/pages/_search.scss */
+.search-results__header {
+  padding: 24px;
+  padding: 2.4rem;
+}
+/* line 3, sass/components/pages/_search.scss */
+.search-results__header h1, .search-results__header .landing-heading {
+  font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -0.2px;
+  letter-spacing: -0.02rem;
+  margin-top: 30px;
+  margin-top: 3rem;
+}
+@media (min-width: 740px) {
+  /* line 3, sass/components/pages/_search.scss */
+  .search-results__header h1, .search-results__header .landing-heading {
+    font-size: 68px;
+    font-size: 6.8rem;
+  }
+}
+
+/* line 12, sass/components/pages/_search.scss */
+.search .site-header {
+  position: relative;
+}
+
+/* line 16, sass/components/pages/_search.scss */
 .search article {
   border-bottom: solid #d7e7f2;
   border-bottom-width: 2px;
@@ -8094,7 +8123,7 @@ a.about-leadership__button {
   padding-bottom: 10px;
   padding-bottom: 1rem;
 }
-/* line 6, sass/components/pages/_search.scss */
+/* line 21, sass/components/pages/_search.scss */
 .search article .search-item__title {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -8105,11 +8134,11 @@ a.about-leadership__button {
   letter-spacing: -0.2px;
   letter-spacing: -0.02rem;
 }
-/* line 11, sass/components/pages/_search.scss */
+/* line 26, sass/components/pages/_search.scss */
 .search article .search-item__meta {
   text-align: center;
 }
-/* line 13, sass/components/pages/_search.scss */
+/* line 28, sass/components/pages/_search.scss */
 .search article .search-item__thumbnail img {
   display: block;
   margin-left: auto;
@@ -8118,11 +8147,11 @@ a.about-leadership__button {
   margin-bottom: 1.6rem;
 }
 @media (min-width: 530px) {
-  /* line 21, sass/components/pages/_search.scss */
+  /* line 36, sass/components/pages/_search.scss */
   .search article .search-item__meta {
     text-align: left;
   }
-  /* line 22, sass/components/pages/_search.scss */
+  /* line 37, sass/components/pages/_search.scss */
   .search article .search-item__thumbnail {
     float: right;
     margin-left: 16px;
@@ -8130,7 +8159,7 @@ a.about-leadership__button {
   }
 }
 
-/* line 31, sass/components/pages/_search.scss */
+/* line 46, sass/components/pages/_search.scss */
 .search-item__more {
   padding: 5px 0px;
   padding: 0.5rem 0rem;

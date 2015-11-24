@@ -29,7 +29,7 @@ body:not(.home) .site-main {
 	@include rem-fallback(padding, 2.4);
 }
 
-.blog, .page-template-product-page {
+.blog, .page-template-product-page, .search {
 	.site-main {
 		@include rem-fallback(max-width, 85);
 	}
