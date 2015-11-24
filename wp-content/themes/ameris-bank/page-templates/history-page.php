@@ -17,7 +17,9 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content', 'page-with-title' ); ?>
 			<?php endwhile; // End of the loop. ?>
-			<h2 class="timeline-heading"><?php the_field( 'timeline_heading' ); ?></h2>
+			<?php if ( get_field( 'timeline_heading' ) ) { ?>
+				<h2 class="timeline-heading"><?php the_field( 'timeline_heading' ); ?></h2>
+			<?php } ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
@@ -80,17 +82,21 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 				</div>
 
 			<?php $first = false;
-			endwhile; endif; ?>
+			endwhile; endif;
 
-			<div class="timeline-item">
-				<div class="timeline-item__dot"></div>
-			</div>
+			if ( get_field( 'last_date' ) ) { ?>
+				<div class="timeline-item">
+					<div class="timeline-item__dot"></div>
+				</div>
+			<?php } ?>
 
 		</div><!-- .timeline -->
 
-		<div class="timeline-item timeline-item--wide timeline-item--last">
-			<div class="timeline-item__date"><?php the_field( 'last_date' ); ?></div>
-		</div>
+		<?php if ( get_field( 'last_date' ) ) { ?>
+			<div class="timeline-item timeline-item--wide timeline-item--last">
+				<div class="timeline-item__date"><?php the_field( 'last_date' ); ?></div>
+			</div>
+		<?php } ?>
 
 	</div><!-- .content-below -->
 

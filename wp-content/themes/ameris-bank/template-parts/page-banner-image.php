@@ -21,6 +21,7 @@ if ( is_singular( 'leadership' ) || is_singular( 'lending_expert' ) ) {
 if ( is_page_template( 'page-templates/leadership-page.php' ) ||
 	is_page_template( 'page-templates/about-us-page.php' ) ||
 	is_page_template( 'page-templates/history-page.php' )  ||
+	is_page_template( 'page-templates/wide-page.php' )  ||
 	is_home() || 
 	is_singular( 'leadership' ) ) {
 	$prefix      = 'wide-';

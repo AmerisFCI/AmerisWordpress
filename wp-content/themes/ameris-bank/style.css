@@ -8015,6 +8015,54 @@ a.about-leadership__button {
     margin-right: 0;
   }
 }
+/* line 381, sass/base/_mixins.scss */
+.page-template-wide-page .page-title {
+  padding: 0;
+  padding-top: 20px;
+  padding-top: 2rem;
+}
+/* line 386, sass/base/_mixins.scss */
+.page-template-wide-page .sidebar-menu {
+  background: transparent;
+}
+/* line 390, sass/base/_mixins.scss */
+.page-template-wide-page .inner-wrap .sidebar-left {
+  margin-left: 0;
+  margin-top: 0px;
+  margin-top: 0rem;
+}
+@media (min-width: 1024px) {
+  /* line 396, sass/base/_mixins.scss */
+  .page-template-wide-page .sidebar-menu {
+    padding-top: 44px;
+    padding-top: 4.4rem;
+  }
+  /* line 399, sass/base/_mixins.scss */
+  .page-template-wide-page .sidebar-left {
+    clear: none;
+  }
+  /* line 406, sass/base/_mixins.scss */
+  .page-template-wide-page #main {
+    width: 64.10256%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 1420px) {
+  /* line 419, sass/base/_mixins.scss */
+  .page-template-wide-page #main {
+    width: 72.22222%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    padding-right: 48px;
+    padding-right: 4.8rem;
+  }
+}
+
 /* line 1, sass/components/_breadcrumbs.scss */
 .breadcrumbs {
   display: none;
