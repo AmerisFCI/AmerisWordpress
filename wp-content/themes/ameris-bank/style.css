@@ -3801,17 +3801,20 @@ a:hover, a:active {
   text-decoration: underline;
   padding: 10px 0px 0px 10px;
   padding: 1rem 0rem 0rem 1rem;
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
+  display: inline-block;
 }
-/* line 14, sass/components/sections/_footer.scss */
+/* line 16, sass/components/sections/_footer.scss */
 .site-footer a:hover, .site-footer a:focus {
   text-decoration: none;
 }
-/* line 18, sass/components/sections/_footer.scss */
+/* line 20, sass/components/sections/_footer.scss */
 .site-footer a:visited {
   color: #f2f2f2;
 }
 
-/* line 26, sass/components/sections/_footer.scss */
+/* line 28, sass/components/sections/_footer.scss */
 .footer-top {
   margin-bottom: 20px;
   margin-bottom: 2rem;
@@ -3826,14 +3829,14 @@ a:hover, a:active {
   clear: both;
 }
 
-/* line 35, sass/components/sections/_footer.scss */
+/* line 37, sass/components/sections/_footer.scss */
 .footer__logo {
   display: inline-block;
   margin-right: 10px;
   margin-right: 1rem;
 }
 
-/* line 40, sass/components/sections/_footer.scss */
+/* line 42, sass/components/sections/_footer.scss */
 #Member_FDIC {
   background-image: url('images/sprite-images-s751c07762d.png');
   background-position: 0 -4481px;
@@ -3843,7 +3846,7 @@ a:hover, a:active {
   width: 68px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 40, sass/components/sections/_footer.scss */
+  /* line 42, sass/components/sections/_footer.scss */
   #Member_FDIC {
     background-size: 215px 2793.5px;
     background-position: 0 -2193px;
@@ -3852,7 +3855,7 @@ a:hover, a:active {
   }
 }
 
-/* line 44, sass/components/sections/_footer.scss */
+/* line 46, sass/components/sections/_footer.scss */
 #Equal_Housing_Lender {
   background-image: url('images/sprite-images-s751c07762d.png');
   background-position: 0 -4320px;
@@ -3862,7 +3865,7 @@ a:hover, a:active {
   width: 55px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 44, sass/components/sections/_footer.scss */
+  /* line 46, sass/components/sections/_footer.scss */
   #Equal_Housing_Lender {
     background-size: 215px 2793.5px;
     background-position: 0 -2099px;
@@ -3871,18 +3874,18 @@ a:hover, a:active {
   }
 }
 
-/* line 50, sass/components/sections/_footer.scss */
+/* line 52, sass/components/sections/_footer.scss */
 input.newsletter-signup__email {
   margin-bottom: 0;
   padding: 8px 10px 5px 10px;
   padding: 0.8rem 1rem 0.5rem 1rem;
 }
-/* line 53, sass/components/sections/_footer.scss */
+/* line 55, sass/components/sections/_footer.scss */
 input.newsletter-signup__email:focus {
   border-color: #ffffff;
 }
 
-/* line 58, sass/components/sections/_footer.scss */
+/* line 60, sass/components/sections/_footer.scss */
 input.newsletter-signup__submit {
   background-color: #d31145;
   color: #ffffff;
@@ -3914,11 +3917,11 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   color: #ffffff;
 }
 
-/* line 65, sass/components/sections/_footer.scss */
+/* line 67, sass/components/sections/_footer.scss */
 .newsletter-signup {
   position: relative;
 }
-/* line 68, sass/components/sections/_footer.scss */
+/* line 70, sass/components/sections/_footer.scss */
 .newsletter-signup input {
   display: block;
   box-sizing: border-box;
@@ -3931,12 +3934,12 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   width: 100%;
 }
 
-/* line 80, sass/components/sections/_footer.scss */
+/* line 82, sass/components/sections/_footer.scss */
 .newsletter-signup__submit__icon {
   position: relative;
   display: inline-block;
 }
-/* line 84, sass/components/sections/_footer.scss */
+/* line 86, sass/components/sections/_footer.scss */
 .newsletter-signup__submit__icon:before {
   content: "";
   display: inline-block;
@@ -3954,7 +3957,7 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   width: 23px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 84, sass/components/sections/_footer.scss */
+  /* line 86, sass/components/sections/_footer.scss */
   .newsletter-signup__submit__icon:before {
     background-size: 215px 2793.5px;
     background-position: 0 -690.5px;
@@ -3963,41 +3966,47 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   }
 }
 
-/* line 100, sass/components/sections/_footer.scss */
+/* line 102, sass/components/sections/_footer.scss */
+.copyright {
+  padding-top: 10px;
+  padding-top: 1rem;
+}
+
+/* line 106, sass/components/sections/_footer.scss */
 .copyright, .site-info {
   float: left;
 }
 
-/* line 104, sass/components/sections/_footer.scss */
+/* line 110, sass/components/sections/_footer.scss */
 .site-info {
   margin-bottom: 10px;
   margin-bottom: 1rem;
 }
 
-/* line 108, sass/components/sections/_footer.scss */
+/* line 114, sass/components/sections/_footer.scss */
 .social-links {
   float: right;
 }
 
-/* line 112, sass/components/sections/_footer.scss */
+/* line 118, sass/components/sections/_footer.scss */
 .newsletter-signup {
   clear: both;
 }
 
-/* line 116, sass/components/sections/_footer.scss */
+/* line 122, sass/components/sections/_footer.scss */
 footer .menu-item {
   display: inline-block;
 }
 
 @media (max-width: 529px) {
-  /* line 121, sass/components/sections/_footer.scss */
+  /* line 127, sass/components/sections/_footer.scss */
   .newsletter-signup__submit__icon, input.newsletter-signup__email {
     width: 100%;
     margin-bottom: 8px;
     margin-bottom: 0.8rem;
   }
 
-  /* line 125, sass/components/sections/_footer.scss */
+  /* line 131, sass/components/sections/_footer.scss */
   .social-links, .site-info {
     float: none;
     margin-top: 12px;
@@ -4008,11 +4017,11 @@ footer .menu-item {
     margin-right: auto;
     text-align: center;
   }
-  /* line 133, sass/components/sections/_footer.scss */
+  /* line 139, sass/components/sections/_footer.scss */
   .social-links li, .site-info li {
     margin: 0;
   }
-  /* line 136, sass/components/sections/_footer.scss */
+  /* line 142, sass/components/sections/_footer.scss */
   .social-links a, .site-info a {
     margin-left: 5px;
     margin-left: 0.5rem;
@@ -4021,18 +4030,18 @@ footer .menu-item {
   }
 }
 @media (min-width: 530px) {
-  /* line 148, sass/components/sections/_footer.scss */
+  /* line 154, sass/components/sections/_footer.scss */
   .newsletter-signup input {
     width: auto;
   }
 
-  /* line 153, sass/components/sections/_footer.scss */
+  /* line 159, sass/components/sections/_footer.scss */
   input.newsletter-signup__email {
     padding-right: 20px;
     padding-right: 2rem;
   }
 
-  /* line 157, sass/components/sections/_footer.scss */
+  /* line 163, sass/components/sections/_footer.scss */
   input.newsletter-signup__submit {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -4040,16 +4049,14 @@ footer .menu-item {
     margin-left: -0.5rem;
   }
 
-  /* line 169, sass/components/sections/_footer.scss */
+  /* line 175, sass/components/sections/_footer.scss */
   .footer-utility {
     float: left;
     clear: both;
-    margin-top: 10px;
-    margin-top: 1rem;
   }
 }
 @media (min-width: 740px) {
-  /* line 178, sass/components/sections/_footer.scss */
+  /* line 184, sass/components/sections/_footer.scss */
   .newsletter-signup {
     float: right;
     clear: right;
@@ -4058,25 +4065,25 @@ footer .menu-item {
   }
 }
 @media (min-width: 1024px) {
-  /* line 188, sass/components/sections/_footer.scss */
+  /* line 194, sass/components/sections/_footer.scss */
   .site-info {
     margin: 0;
   }
 
-  /* line 192, sass/components/sections/_footer.scss */
+  /* line 198, sass/components/sections/_footer.scss */
   .footer-copyright-links {
     float: left;
   }
 
-  /* line 196, sass/components/sections/_footer.scss */
+  /* line 202, sass/components/sections/_footer.scss */
   .newsletter-signup, .social-links {
     float: right;
     clear: none;
     margin-top: 0;
   }
 }
-@media (min-width: 1200px) {
-  /* line 206, sass/components/sections/_footer.scss */
+@media (min-width: 1420px) {
+  /* line 212, sass/components/sections/_footer.scss */
   .footer-utility {
     float: right;
     clear: none;

@@ -10,6 +10,8 @@
 		color: $white;
 		text-decoration: underline;
 		@include rem-fallback(padding, 1, 0, 0, 1);
+		@include rem-fallback(margin-bottom, 1.4);
+		display: inline-block;
 
 		&:hover, &:focus {
 			text-decoration: none;
@@ -97,6 +99,10 @@ input.newsletter-signup__submit {
 	}
 }
 
+.copyright {
+	@include rem-fallback(padding-top, 1);
+}
+
 .copyright, .site-info  {
 	float: left;
 }
@@ -169,7 +175,7 @@ footer .menu-item {
 	.footer-utility {
 		float: left;
 		clear: both;
-		@include rem-fallback(margin-top, 1);
+		//@include rem-fallback(margin-top, 1.4);
 	}
 
 }
@@ -201,7 +207,7 @@ footer .menu-item {
 
 }
 
-@include breakpoint($desktop) {
+@include breakpoint($wide) {
 
 	.footer-utility {
 		float: right;
