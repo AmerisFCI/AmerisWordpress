@@ -8,6 +8,7 @@
 	@include rem-fallback(max-width, 142);
 	margin: 0 auto;
 	position: relative;
+	@include rem-fallback(padding, 2);
 	text-shadow: 0 0 10rem rgba(0,0,0,1);
 	height: 100%;
 	text-align: center;

@@ -601,8 +601,13 @@ h3 {
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
+/* line 37, sass/base/typography/_headings.scss */
+h3 strong {
+  font-family: inherit;
+  font-weight: inherit;
+}
 
-/* line 39, sass/base/typography/_headings.scss */
+/* line 43, sass/base/typography/_headings.scss */
 h4 {
   color: #092764;
   font-size: 24px;
@@ -611,7 +616,7 @@ h4 {
   margin: 2rem 0rem;
 }
 
-/* line 45, sass/base/typography/_headings.scss */
+/* line 49, sass/base/typography/_headings.scss */
 h5 {
   font-style: normal;
   font-size: 18px;
@@ -623,7 +628,7 @@ h5 {
   margin-bottom: 1.5rem;
 }
 
-/* line 49, sass/base/typography/_headings.scss */
+/* line 53, sass/base/typography/_headings.scss */
 .kicker {
   font-style: normal;
   font-size: 18px;
@@ -642,14 +647,14 @@ h5 {
   border-bottom-width: 0.3rem;
 }
 
-/* line 57, sass/base/typography/_headings.scss */
+/* line 61, sass/base/typography/_headings.scss */
 .landing-heading {
   margin-bottom: 40px;
   margin-bottom: 4rem;
 }
 
 @media (min-width: 740px) {
-  /* line 63, sass/base/typography/_headings.scss */
+  /* line 67, sass/base/typography/_headings.scss */
   h1, .landing-heading, h2, .news-item--newsroom .news-item__title, .search article .search-item__title, h3, h4, h5, h6 {
     text-align: left;
   }
@@ -4413,11 +4418,13 @@ footer .menu-item {
   max-width: 142rem;
   margin: 0 auto;
   position: relative;
+  padding: 20px;
+  padding: 2rem;
   text-shadow: 0 0 10rem black;
   height: 100%;
   text-align: center;
 }
-/* line 14, sass/components/sections/_wide-banner.scss */
+/* line 15, sass/components/sections/_wide-banner.scss */
 .wide-banner-blurb__wrap:after {
   content: '';
   display: block;
@@ -4434,7 +4441,7 @@ footer .menu-item {
   margin-left: -3rem;
 }
 
-/* line 29, sass/components/sections/_wide-banner.scss */
+/* line 30, sass/components/sections/_wide-banner.scss */
 .wide-banner-image {
   overflow: hidden;
   position: relative;
@@ -4461,18 +4468,18 @@ footer .menu-item {
   height: 100%;
 }
 
-/* line 34, sass/components/sections/_wide-banner.scss */
+/* line 35, sass/components/sections/_wide-banner.scss */
 .attachment-wide-banner {
   margin: 0 auto;
   display: block;
 }
 
 @media (min-width: 740px) {
-  /* line 40, sass/components/sections/_wide-banner.scss */
+  /* line 41, sass/components/sections/_wide-banner.scss */
   .wide-banner-blurb__wrap {
     text-align: left;
   }
-  /* line 42, sass/components/sections/_wide-banner.scss */
+  /* line 43, sass/components/sections/_wide-banner.scss */
   .wide-banner-blurb__wrap:after {
     border-width: 50px;
     border-width: 5rem;
@@ -4481,7 +4488,7 @@ footer .menu-item {
     margin-left: 0;
   }
 
-  /* line 48, sass/components/sections/_wide-banner.scss */
+  /* line 49, sass/components/sections/_wide-banner.scss */
   .wide-banner-blurb {
     padding: 20px;
     padding: 2rem;
@@ -4518,7 +4525,7 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 57, sass/components/sections/_wide-banner.scss */
+  /* line 58, sass/components/sections/_wide-banner.scss */
   .wide-banner-blurb {
     font-size: 92px;
     font-size: 9.2rem;
