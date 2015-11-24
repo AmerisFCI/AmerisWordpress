@@ -40,7 +40,10 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 								<?php the_post_thumbnail( 'landing-solution' ); ?>
 								<h3 class="solution__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<p class="solution__description">
-									<?php the_field( 'short_description' ); ?>
+									<?php
+										$desc = get_field( 'short_description' );
+										echo wp_trim_words( $desc );
+									?>
 									<a class="solution__link" href="<?php the_permalink(); ?>">Learn More</a>
 								</p>
 							</div>
