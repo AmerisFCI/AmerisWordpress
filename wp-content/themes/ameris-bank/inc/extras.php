@@ -100,25 +100,57 @@ function ameris_homepage_news_excerpts( $excerpt ) {
 add_filter( 'get_the_excerpt', 'ameris_homepage_news_excerpts' );
 
 /**
- * Modify the post excerpt length.
- */
-function ameris_excerpt_length( $length ) {
-
-	if ( is_front_page() )
-		$length = 20;
-
-	return $length;
-
-}
-add_filter( 'excerpt_length', 'ameris_excerpt_length' );
-
-/**
- * Modify the post excerpt trailing characters.
+ * Remove the post excerpt trailing characters.
  */
 function ameris_excerpt_trail( $trail ) {
-	return '&hellip;';
+	return '';
 }
 add_filter( 'excerpt_more', 'ameris_excerpt_trail' );
+
+/**
+ * Helper function to limit excerpts by character count.
+ */
+function ameris_limit_by_char( $text, $count ) {
+
+	$text = strip_tags( $text );
+
+	// if text is short enough, great
+	if ( strlen( $text ) <= $count )
+		return $text;
+		
+	// shorten text
+	$short_text = substr( $text, 0, $count );
+
+	// then shorten it to the last full word
+	$new_text = substr( $short_text, 0, strrpos( $short_text, ' ' ) );
+
+	// remove trailing commas because they look bad
+	$new_text = rtrim( $new_text, ',' );
+
+	return $new_text;
+
+}
+
+/**
+ * Clean up excerpts.
+ */
+function ameris_trim_excerpt( $text, $num_words, $more, $original_text ) {
+	global $post;
+	$old_text = $text;
+
+	if ( is_front_page() )
+		$text = ameris_limit_by_char( $text, 140 );
+
+	else
+		$text = ameris_limit_by_char( $text, 150 );
+
+	if ( $text !== $old_text )
+		$text .= '&hellip;';
+
+	return $text;
+
+}
+add_filter( 'wp_trim_words', 'ameris_trim_excerpt', 10, 4 );
 
 /**
  * Don't strip HTML from nav menu descriptions, part 1.
