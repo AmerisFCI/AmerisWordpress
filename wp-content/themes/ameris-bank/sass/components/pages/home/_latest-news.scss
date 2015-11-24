@@ -160,6 +160,9 @@
 	.latest-news {
 		@include rem-fallback(margin-top, 5);
 	}
+	.news-item__body {
+		@include rem-fallback(min-height, 30);
+	}
 }
 
 @include breakpoint($wide) {
