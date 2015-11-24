@@ -273,6 +273,7 @@ $sprite-high-res-suffix: '-2x' !default;
   display: inline-block;
   clear: both;
   font-family: $font-heading-bold;
+  border-bottom: none transparent;
 
   &:hover, &:focus {
     text-decoration: none;

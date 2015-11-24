@@ -53,8 +53,7 @@ if ( ! function_exists( 'courage_posted_on' ) ) :
  */
 function courage_posted_on() {
 	?>
-	<span class="news-date"><?php the_time( 'm.d.Y' ); ?></span>
-	<span class="news-topic"><?php the_category( ', ' ); ?></span>
+	<span class="news-date"><?php the_time( 'm.d.Y' ); ?></span> | <span class="news-topic"><?php the_category( ', ' ); ?></span>
 	<?php
 }
 endif;
