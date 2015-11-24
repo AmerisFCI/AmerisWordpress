@@ -6770,8 +6770,8 @@ h1.single-article__title, .single-article__title.landing-heading {
 }
 /* line 5, sass/components/pages/_about-us.scss */
 .page-template-about-us-page .wide-banner-blurb {
-  bottom: 180px;
-  bottom: 18rem;
+  bottom: 60px;
+  bottom: 6rem;
 }
 /* line 8, sass/components/pages/_about-us.scss */
 .page-template-about-us-page .latest-updates {
@@ -7106,7 +7106,7 @@ body.page-template-about-us-page .site-main {
   width: 90px;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 20%;
   margin-left: -45px;
   margin-left: -4.5rem;
 }
@@ -7354,8 +7354,14 @@ a.about-leadership__button {
   margin: auto;
 }
 
+@media (min-width: 530px) {
+  /* line 308, sass/components/pages/_about-us.scss */
+  .about-video:after {
+    top: 30%;
+  }
+}
 @media (min-width: 740px) {
-  /* line 311, sass/components/pages/_about-us.scss */
+  /* line 316, sass/components/pages/_about-us.scss */
   .about-panels__column {
     width: 48.93617%;
     clear: right;
@@ -7363,7 +7369,7 @@ a.about-leadership__button {
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 313, sass/components/pages/_about-us.scss */
+  /* line 318, sass/components/pages/_about-us.scss */
   .about-panels__column:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -7371,7 +7377,7 @@ a.about-leadership__button {
     margin-right: 0;
   }
 
-  /* line 317, sass/components/pages/_about-us.scss */
+  /* line 322, sass/components/pages/_about-us.scss */
   .about-our-story {
     margin-top: -130px;
     margin-top: -13rem;
@@ -7379,13 +7385,13 @@ a.about-leadership__button {
     padding: 2.4rem 3.6rem;
   }
 
-  /* line 321, sass/components/pages/_about-us.scss */
+  /* line 326, sass/components/pages/_about-us.scss */
   .about-newsroom-wrapper .slick-dots {
     left: 36px;
     left: 3.6rem;
   }
 
-  /* line 324, sass/components/pages/_about-us.scss */
+  /* line 329, sass/components/pages/_about-us.scss */
   .about-news-item, .about-news-item__content {
     padding-left: 36px;
     padding-left: 3.6rem;
@@ -7393,18 +7399,18 @@ a.about-leadership__button {
     padding-right: 3.6rem;
   }
 
-  /* line 328, sass/components/pages/_about-us.scss */
+  /* line 333, sass/components/pages/_about-us.scss */
   .about-video {
     margin-top: -190px;
     margin-top: -19rem;
   }
 
-  /* line 332, sass/components/pages/_about-us.scss */
+  /* line 337, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .wide-banner-image {
     min-height: 610px;
     min-height: 61rem;
   }
-  /* line 336, sass/components/pages/_about-us.scss */
+  /* line 341, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .menu-about-us-menu-container {
     width: 48.93617%;
     clear: right;
@@ -7413,14 +7419,19 @@ a.about-leadership__button {
     margin-right: 2.12766%;
     max-width: none;
   }
+  /* line 345, sass/components/pages/_about-us.scss */
+  .page-template-about-us-page .wide-banner-blurb {
+    bottom: 210px;
+    bottom: 21rem;
+  }
 
-  /* line 342, sass/components/pages/_about-us.scss */
+  /* line 350, sass/components/pages/_about-us.scss */
   .about-news-item {
     min-height: 500px;
     min-height: 50rem;
   }
 
-  /* line 346, sass/components/pages/_about-us.scss */
+  /* line 354, sass/components/pages/_about-us.scss */
   .about-leadership {
     width: 48.93617%;
     clear: right;
@@ -7429,7 +7440,7 @@ a.about-leadership__button {
     max-width: none;
   }
 
-  /* line 350, sass/components/pages/_about-us.scss */
+  /* line 358, sass/components/pages/_about-us.scss */
   .about-investor {
     margin: 0;
     clear: both;
@@ -7437,7 +7448,7 @@ a.about-leadership__button {
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 358, sass/components/pages/_about-us.scss */
+  /* line 366, sass/components/pages/_about-us.scss */
   .about-small-panels__column {
     width: 48.93617%;
     clear: right;
@@ -7445,7 +7456,7 @@ a.about-leadership__button {
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 360, sass/components/pages/_about-us.scss */
+  /* line 368, sass/components/pages/_about-us.scss */
   .about-small-panels__column:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -7454,7 +7465,7 @@ a.about-leadership__button {
   }
 }
 @media (min-width: 1024px) {
-  /* line 368, sass/components/pages/_about-us.scss */
+  /* line 376, sass/components/pages/_about-us.scss */
   .about-small-panels__column {
     width: 48.93617%;
     clear: right;
@@ -7462,7 +7473,7 @@ a.about-leadership__button {
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 370, sass/components/pages/_about-us.scss */
+  /* line 378, sass/components/pages/_about-us.scss */
   .about-small-panels__column:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -7470,7 +7481,7 @@ a.about-leadership__button {
     margin-right: 0;
   }
 
-  /* line 374, sass/components/pages/_about-us.scss */
+  /* line 382, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .menu-about-us-menu-container {
     width: 31.91489%;
     clear: right;
@@ -7479,7 +7490,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 377, sass/components/pages/_about-us.scss */
+  /* line 385, sass/components/pages/_about-us.scss */
   .about-leadership {
     width: 31.91489%;
     clear: right;
@@ -7488,7 +7499,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 380, sass/components/pages/_about-us.scss */
+  /* line 388, sass/components/pages/_about-us.scss */
   .about-investor {
     margin: 0;
     max-width: none;
@@ -7499,7 +7510,7 @@ a.about-leadership__button {
   }
 }
 @media (min-width: 1420px) {
-  /* line 392, sass/components/pages/_about-us.scss */
+  /* line 400, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .menu-about-us-menu-container {
     width: 23.40426%;
     clear: right;
@@ -7508,7 +7519,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 395, sass/components/pages/_about-us.scss */
+  /* line 403, sass/components/pages/_about-us.scss */
   .about-leadership {
     width: 23.40426%;
     clear: right;
@@ -7517,7 +7528,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 398, sass/components/pages/_about-us.scss */
+  /* line 406, sass/components/pages/_about-us.scss */
   .about-investor {
     margin: 0;
     max-width: none;
@@ -8095,8 +8106,8 @@ a.about-leadership__button {
 
 /* line 1, sass/components/_tables.scss */
 table {
-  margin: 0px 0px 20px;
-  margin: 0rem 0rem 2rem;
+  margin: 30px 0px;
+  margin: 3rem 0rem;
   width: 100%;
 }
 

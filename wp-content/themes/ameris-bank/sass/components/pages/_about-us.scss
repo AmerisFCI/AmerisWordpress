@@ -3,7 +3,7 @@
 		content: none;
 	}
 	.wide-banner-blurb {
-		@include rem-fallback(bottom, 18);
+		@include rem-fallback(bottom, 6);
 	}
 	.latest-updates {
 		@include rem-fallback(margin-bottom, 4.8);
@@ -191,7 +191,7 @@ body.page-template-about-us-page {
 		@include use-sprite(icon-vid-play);
 		position: absolute;
 		left: 50%;
-		top: 30%;
+		top: 20%;
 		@include rem-fallback(margin-left, -4.5);
 	}
 }
@@ -302,7 +302,12 @@ a.about-leadership__button {
 .tintup {
 	@include rem-fallback(max-width, 140);
 	margin: auto;
+}
 
+@include breakpoint($tablet-to-desktop) {
+	.about-video:after {
+		top: 30%;
+	}
 }
 
 
@@ -336,6 +341,9 @@ a.about-leadership__button {
 		.menu-about-us-menu-container {
 			@include float-span(6);
 			max-width: none;
+		}
+		.wide-banner-blurb {
+			@include rem-fallback(bottom, 21);
 		}
 	}
 

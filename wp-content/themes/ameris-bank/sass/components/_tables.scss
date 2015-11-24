@@ -1,5 +1,5 @@
 table {
-	@include rem-fallback(margin, 0, 0, 2);
+	@include rem-fallback(margin, 3, 0);
 	width: 100%;
 }
 
