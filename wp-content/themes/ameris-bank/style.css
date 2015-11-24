@@ -4803,6 +4803,13 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 530px) {
+  /* line 44, sass/components/widgets/_callout-video.scss */
+  .video-callout__date {
+    text-align: left;
+  }
 }
 
 /* line 1, sass/components/pages/_generic.scss */

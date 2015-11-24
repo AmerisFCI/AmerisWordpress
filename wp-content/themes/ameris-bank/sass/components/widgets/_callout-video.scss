@@ -47,6 +47,10 @@
 		color:$lightgray;
 		@include rem-fallback( font-size, 1.4 );
 		font-weight:700;
+		text-align: center;
+		@include breakpoint($tablet-to-desktop) {
+			text-align: left;
+		}
 	}
 
 }
