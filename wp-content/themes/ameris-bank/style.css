@@ -482,22 +482,31 @@ dfn, cite, em, i {
 /* line 14, sass/base/typography/_copy.scss */
 blockquote {
   font-weight: 300;
-  font-size: 24px;
-  font-size: 2.4rem;
-  margin: 30px 0px;
-  margin: 3rem 0rem;
-  padding: 48px;
-  padding: 4.8rem;
+  margin: 30px -24px;
+  margin: 3rem -2.4rem;
+  padding: 24px;
+  padding: 2.4rem;
   background: #d7e7f2;
 }
+@media (min-width: 530px) {
+  /* line 14, sass/base/typography/_copy.scss */
+  blockquote {
+    font-size: 24px;
+    font-size: 2.4rem;
+    padding: 48px;
+    padding: 4.8rem;
+    margin: 30px 0px;
+    margin: 3rem 0rem;
+  }
+}
 
-/* line 22, sass/base/typography/_copy.scss */
+/* line 27, sass/base/typography/_copy.scss */
 address {
   margin: 0px 0px 15px;
   margin: 0rem 0rem 1.5rem;
 }
 
-/* line 26, sass/base/typography/_copy.scss */
+/* line 31, sass/base/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
@@ -509,29 +518,29 @@ pre {
   padding: 1.5rem;
 }
 
-/* line 35, sass/base/typography/_copy.scss */
+/* line 40, sass/base/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 }
 
-/* line 39, sass/base/typography/_copy.scss */
+/* line 44, sass/base/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted transparent;
   cursor: help;
 }
 
-/* line 44, sass/base/typography/_copy.scss */
+/* line 49, sass/base/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 49, sass/base/typography/_copy.scss */
+/* line 54, sass/base/typography/_copy.scss */
 big {
   font-size: 125%;
 }
 
-/* line 53, sass/base/typography/_copy.scss */
+/* line 58, sass/base/typography/_copy.scss */
 hr {
   border: 0 solid #d7e7f2;
   border-top-width: 3px;
@@ -540,18 +549,18 @@ hr {
   margin: 2rem 0rem;
 }
 
-/* line 59, sass/base/typography/_copy.scss */
+/* line 64, sass/base/typography/_copy.scss */
 sub, sup {
   font-size: 10px;
   font-size: 1rem;
 }
 
-/* line 63, sass/base/typography/_copy.scss */
+/* line 68, sass/base/typography/_copy.scss */
 sub {
   vertical-align: sub;
 }
 
-/* line 67, sass/base/typography/_copy.scss */
+/* line 72, sass/base/typography/_copy.scss */
 sup {
   vertical-align: super;
 }
