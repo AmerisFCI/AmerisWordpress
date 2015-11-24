@@ -67,7 +67,7 @@ get_header(); ?>
 						<div class="callout-box__description home-callout-box__description callout-box--large__description">
 							<?php the_field( 'callout_description' ); ?>
 						</div>
-						<a class="button callout-box__button home-callout-box__button callout-box--large__button" href="<?php echo get_permalink( get_field( 'callout_link' ) ); ?>">
+						<a class="button callout-box__button home-callout-box__button callout-box--large__button" href="<?php esc_attr( the_field( 'callout_link' ) ); ?>">
 							<?php the_field( 'callout_button' ); ?>
 						</a>
 					</div>
