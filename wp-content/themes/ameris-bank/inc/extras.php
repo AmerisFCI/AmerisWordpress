@@ -204,7 +204,7 @@ function ameris_search_result_count( $query ) {
 add_action( 'pre_get_posts', 'ameris_search_result_count' );
 
 /**
- * 
+ * Conditional menu item classes.
  */
 function ameris_conditional_menu_classes( $classes, $item ) {
 
@@ -220,3 +220,11 @@ function ameris_conditional_menu_classes( $classes, $item ) {
 
 }
 add_filter( 'nav_menu_css_class', 'ameris_conditional_menu_classes', 10, 2 );
+
+/**
+ * Add a wrapper around videos that have been oembedded.
+ */
+function my_embed_oembed_html( $html, $url, $attr, $post_id ) {
+	return '<div class="video-container">' . $html . '</div>';
+}
+add_filter( 'embed_oembed_html', 'my_embed_oembed_html', 99, 4 );
