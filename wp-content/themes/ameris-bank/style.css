@@ -4805,7 +4805,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   font-weight: 700;
   text-align: center;
 }
-@media (min-width: 530px) {
+@media (min-width: 740px) {
   /* line 44, sass/components/widgets/_callout-video.scss */
   .video-callout__date {
     text-align: left;
