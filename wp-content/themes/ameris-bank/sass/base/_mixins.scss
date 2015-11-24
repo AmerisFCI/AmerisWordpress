@@ -508,7 +508,7 @@ $sprite-high-res-suffix: '-2x' !default;
     a {
       text-transform: none;
       font-family: $font-heading;
-
+      @include rem-fallback(padding-bottom, .2);
       margin: 0;
     }
   }

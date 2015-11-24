@@ -13,7 +13,7 @@ a.view-all, .view-all a {
 
 .intro {
 	font-weight: 300;
-	@include rem-fallback(font-size, 2.4);
+	@include rem-fallback(font-size, 2.2);
 }
 
 .entry-content {

@@ -464,22 +464,21 @@ optgroup::-moz-focus-inner {
 
 /* line 1, sass/base/typography/_copy.scss */
 p {
-  margin-bottom: 13px;
-  margin-bottom: 1.3rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 /* line 5, sass/base/typography/_copy.scss */
 strong, b {
-  font-weight: 600;
-  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-weight: 500;
 }
 
-/* line 10, sass/base/typography/_copy.scss */
+/* line 9, sass/base/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 14, sass/base/typography/_copy.scss */
+/* line 13, sass/base/typography/_copy.scss */
 blockquote {
   font-weight: 300;
   margin: 30px -24px;
@@ -489,7 +488,7 @@ blockquote {
   background: #d7e7f2;
 }
 @media (min-width: 530px) {
-  /* line 14, sass/base/typography/_copy.scss */
+  /* line 13, sass/base/typography/_copy.scss */
   blockquote {
     font-size: 24px;
     font-size: 2.4rem;
@@ -500,13 +499,13 @@ blockquote {
   }
 }
 
-/* line 27, sass/base/typography/_copy.scss */
+/* line 26, sass/base/typography/_copy.scss */
 address {
   margin: 0px 0px 15px;
   margin: 0rem 0rem 1.5rem;
 }
 
-/* line 31, sass/base/typography/_copy.scss */
+/* line 30, sass/base/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
@@ -518,29 +517,29 @@ pre {
   padding: 1.5rem;
 }
 
-/* line 40, sass/base/typography/_copy.scss */
+/* line 39, sass/base/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 }
 
-/* line 44, sass/base/typography/_copy.scss */
+/* line 43, sass/base/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted transparent;
   cursor: help;
 }
 
-/* line 49, sass/base/typography/_copy.scss */
+/* line 48, sass/base/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 54, sass/base/typography/_copy.scss */
+/* line 53, sass/base/typography/_copy.scss */
 big {
   font-size: 125%;
 }
 
-/* line 58, sass/base/typography/_copy.scss */
+/* line 57, sass/base/typography/_copy.scss */
 hr {
   border: 0 solid #d7e7f2;
   border-top-width: 3px;
@@ -549,18 +548,18 @@ hr {
   margin: 2rem 0rem;
 }
 
-/* line 64, sass/base/typography/_copy.scss */
+/* line 63, sass/base/typography/_copy.scss */
 sub, sup {
   font-size: 10px;
   font-size: 1rem;
 }
 
-/* line 68, sass/base/typography/_copy.scss */
+/* line 67, sass/base/typography/_copy.scss */
 sub {
   vertical-align: sub;
 }
 
-/* line 72, sass/base/typography/_copy.scss */
+/* line 71, sass/base/typography/_copy.scss */
 sup {
   vertical-align: super;
 }
@@ -3190,6 +3189,8 @@ a:hover, a:active {
 .sidebar-menu .children a {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  padding-bottom: 2px;
+  padding-bottom: 0.2rem;
   margin: 0;
 }
 /* line 515, sass/base/_mixins.scss */
@@ -3200,6 +3201,15 @@ a:hover, a:active {
 /* line 518, sass/base/_mixins.scss */
 .sidebar-menu .view-all a:hover {
   border-bottom-color: transparent;
+}
+
+/* line 7, sass/components/navigation/_sidebar-nav.scss */
+.page-template-view-all-page .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item), .parent-pageid-1464 .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) {
+  margin-bottom: 0;
+}
+/* line 9, sass/components/navigation/_sidebar-nav.scss */
+.page-template-view-all-page .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) ul, .parent-pageid-1464 .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) ul {
+  display: none;
 }
 
 /* line 1, sass/components/navigation/_search-box.scss */
@@ -7395,6 +7405,8 @@ a.about-leadership__button {
 .page-template-about-us-page #menu-about-us-menu .children a {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  padding-bottom: 2px;
+  padding-bottom: 0.2rem;
   margin: 0;
 }
 /* line 515, sass/base/_mixins.scss */
@@ -8609,8 +8621,8 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 /* line 14, sass/components/_wysiwyg.scss */
 .intro {
   font-weight: 300;
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 /* line 21, sass/components/_wysiwyg.scss */
