@@ -3782,8 +3782,8 @@ a:hover, a:active {
   background-image: -moz-linear-gradient(bottom, #061d4b, #204285);
   background-image: -webkit-linear-gradient(bottom, #061d4b, #204285);
   background-image: linear-gradient(to top right, #061d4b, #204285);
-  padding: 30px 0px 120px;
-  padding: 3rem 0rem 12rem;
+  padding: 35px 0px 140px;
+  padding: 3.5rem 0rem 14rem;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #ffffff;
   font-size: 16px;
@@ -4058,17 +4058,11 @@ footer .menu-item {
   }
 
   /* line 192, sass/components/sections/_footer.scss */
-  .site-footer {
-    padding: 35px 0px 450px;
-    padding: 3.5rem 0rem 45rem;
-  }
-
-  /* line 196, sass/components/sections/_footer.scss */
   .footer-copyright-links {
     float: left;
   }
 
-  /* line 200, sass/components/sections/_footer.scss */
+  /* line 196, sass/components/sections/_footer.scss */
   .newsletter-signup, .social-links {
     float: right;
     clear: none;
@@ -4076,7 +4070,7 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 210, sass/components/sections/_footer.scss */
+  /* line 206, sass/components/sections/_footer.scss */
   .footer-utility {
     float: right;
     clear: none;
