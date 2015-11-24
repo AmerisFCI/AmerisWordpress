@@ -1,4 +1,4 @@
-.search article{
+.search article {
 	border-bottom: solid $paleblue;
 	@include rem-fallback(border-bottom-width, .2);
 	@include rem-fallback(padding-bottom, 1);

@@ -3373,10 +3373,10 @@ a:hover, a:active {
   font-size: 16px;
   font-size: 1.6rem;
   text-decoration: none;
-  padding: 0px 2px;
-  padding: 0rem 0.2rem;
-  margin-right: 2px;
-  margin-right: 0.2rem;
+  padding: 4px;
+  padding: 0.4rem;
+  margin: 0px 2px 0px 0px;
+  margin: 0rem 0.2rem 0rem 0rem;
 }
 /* line 12, sass/components/navigation/_pager.scss */
 .pagination .current {
@@ -3386,8 +3386,14 @@ a:hover, a:active {
 .pagination .next, .pagination .prev {
   text-indent: -9999px;
   display: inline-block;
+  box-sizing: initial;
+  padding: 0px 4px;
+  padding: 0rem 0.4rem;
+  position: relative;
+  top: 2px;
+  top: 0.2rem;
 }
-/* line 19, sass/components/navigation/_pager.scss */
+/* line 23, sass/components/navigation/_pager.scss */
 .pagination .prev {
   background-image: url('images/sprite-images-s751c07762d.png');
   background-position: 0 -484px;
@@ -3399,7 +3405,7 @@ a:hover, a:active {
   margin: 0rem 1rem 0rem 0rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 19, sass/components/navigation/_pager.scss */
+  /* line 23, sass/components/navigation/_pager.scss */
   .pagination .prev {
     background-size: 215px 2793.5px;
     background-position: 0 -223px;
@@ -3407,7 +3413,7 @@ a:hover, a:active {
     width: 8px;
   }
 }
-/* line 23, sass/components/navigation/_pager.scss */
+/* line 27, sass/components/navigation/_pager.scss */
 .pagination .next {
   background-image: url('images/sprite-images-s751c07762d.png');
   background-position: 0 -682px;
@@ -3419,7 +3425,7 @@ a:hover, a:active {
   margin: 0rem 0rem 0rem 1rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 23, sass/components/navigation/_pager.scss */
+  /* line 27, sass/components/navigation/_pager.scss */
   .pagination .next {
     background-size: 215px 2793.5px;
     background-position: 0 -322px;
