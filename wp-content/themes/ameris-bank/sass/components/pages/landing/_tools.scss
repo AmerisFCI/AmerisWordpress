@@ -23,14 +23,15 @@
 		background: transparent;
 		text-indent: -9999px;
 		padding: 0;
-		@include use-sprite(arrow-blue-right);
+
 	}
 	.slick-prev {
-		transform: rotate(180deg);
+		@include use-sprite(arrow-blue-left);
 		@include rem-fallback(left, -2.4);
 	}
 	.slick-next {
 		@include rem-fallback(right, -2.4);
+		@include use-sprite(arrow-blue-right);
 	}
 	.slick-dots {
 		right: 0;

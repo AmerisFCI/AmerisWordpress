@@ -17,8 +17,7 @@
 		display: inline-block;
 	}
 	.prev {
-		@include use-sprite(arrow-red-right-small);
-		transform: rotate(180deg);
+		@include use-sprite(arrow-red-left-small);
 		@include rem-fallback(margin, 0, 1, 0, 0);
 	}
 	.next {
