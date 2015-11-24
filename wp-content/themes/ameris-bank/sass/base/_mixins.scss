@@ -275,14 +275,16 @@ $sprite-high-res-suffix: '-2x' !default;
   font-family: $font-heading-bold;
   border-bottom: none transparent;
 
+  &:visited {
+    color: $red;
+  }
+
   &:hover, &:focus {
     text-decoration: none;
     color: $darkblue;
   }
 
-  &:visited {
-    color: $red;
-  }
+
 }
 
 @mixin boldbluetext {
