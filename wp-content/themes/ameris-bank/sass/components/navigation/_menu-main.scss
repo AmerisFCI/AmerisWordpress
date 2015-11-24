@@ -182,6 +182,10 @@
 	}
 }
 
+	.nav-wrapper {
+		@include rem-fallback(padding-right, 2.4);
+	}
+
 .nav-menu {
 
 	a {

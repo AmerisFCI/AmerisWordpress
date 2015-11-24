@@ -10,6 +10,7 @@
 			left: 50%;
 			top: 30%;
 			@include rem-fallback(margin-left, -4.5);
+			pointer-events: none;
 		}
 	}
 
