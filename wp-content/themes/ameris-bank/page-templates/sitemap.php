@@ -26,10 +26,18 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 
 			<?php endwhile; ?>
 
-			<?php wp_nav_menu( array(
+			<?php ob_start();
+
+			wp_nav_menu( array(
+				'container'      => false,
+				'menu_class'     => 'ameris-page-list',
 				'theme_location' => 'sitemap',
 				'fallback_cb'    => 'ameris_list_pages'
-			) ); ?>
+			) );
+
+			$menu = ob_get_clean();
+
+			echo str_replace( 'sub-menu', '', $menu ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
