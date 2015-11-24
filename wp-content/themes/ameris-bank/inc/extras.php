@@ -89,8 +89,10 @@ function ameris_homepage_news_excerpts( $excerpt ) {
 
 	// newsroom page
 	if ( is_home() ) {
-
 		$excerpt .= ' <a class="read-more news-item__more" href="' . get_permalink() . '">Read More</a>';
+
+	} else if ( is_search() ) { 
+		$excerpt .= ' <a class="read-more search-item__more" href="' . get_permalink() . '">Read More</a>';
 
 	}
 
