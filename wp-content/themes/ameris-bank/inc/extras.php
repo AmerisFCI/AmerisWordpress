@@ -202,3 +202,21 @@ function ameris_search_result_count( $query ) {
 		$query->set( 'posts_per_page', 10 );
 }
 add_action( 'pre_get_posts', 'ameris_search_result_count' );
+
+/**
+ * 
+ */
+function ameris_conditional_menu_classes( $classes, $item ) {
+
+	global $post;
+	
+	if ( is_singular( 'lending_expert' ) && $item->object_id === '29' )
+		$classes[] = 'current_page_item';
+
+	if ( is_singular( 'leadership' ) && $item->object_id === '530' )
+		$classes[] = 'current_page_item';
+
+	return $classes;
+
+}
+add_filter( 'nav_menu_css_class', 'ameris_conditional_menu_classes', 10, 2 );

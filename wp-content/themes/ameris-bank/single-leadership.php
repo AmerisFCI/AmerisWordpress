@@ -23,7 +23,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php get_sidebar( 'left' ); ?>
+	<?php get_sidebar( 'left-no-widgets' ); ?>
 
 </div>
 
