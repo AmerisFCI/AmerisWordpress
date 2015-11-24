@@ -222,7 +222,11 @@ add_action( 'save_post',     'courage_category_transient_flusher' );
  * List all pages without the default title included.
  */
 function ameris_list_pages() {
-	wp_list_pages( array( 'title_li' => false ) );
+	?>
+	<ul class="ameris-page-list">
+		<?php wp_list_pages( array( 'title_li' => false ) ); ?>
+	</ul>
+	<?php
 }
 
 /**
