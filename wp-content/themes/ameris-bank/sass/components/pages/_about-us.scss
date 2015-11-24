@@ -150,13 +150,14 @@ body.page-template-about-us-page {
 		text-indent: -9999px;
 		padding: 0;
 		float: left;
-		@include use-sprite(arrow-red-right);
+
 	}
 	.slick-prev {
-		transform: rotate(180deg);
+		@include use-sprite(arrow-red-left);
 		@include rem-fallback(margin-right, 1.4);
 	}
 	.slick-next {
+		@include use-sprite(arrow-red-right);
 	}
 }
 
