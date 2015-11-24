@@ -19,6 +19,10 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
+				<?php if ( get_field( 'lending_experts_heading' ) ) { ?>
+					<h2 class="lending-experts-heading"><?php the_field( 'lending_experts_heading' ); ?></h2>
+				<?php } ?>
+
 				<div class="leadership-grid leadership-grid--experts">
 					<div class="leadership-grid__management">
 						<?php $experts = get_field( 'lending_experts' );
