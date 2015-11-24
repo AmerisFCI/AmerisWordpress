@@ -191,3 +191,12 @@ add_filter( 'breadcrumb_trail_items', 'ameris_breadcrumb_trail_mods', 10, 2 );
  * Remove Ninja Forms default styling.
  */
 remove_action( 'ninja_forms_display_css', 'ninja_forms_display_css');
+
+/**
+ * Adjust search result amount.
+ */
+function ameris_search_result_count( $query ) {
+	if ( $query->is_search() )
+		$query->set( 'posts_per_page', 10 );
+}
+add_action( 'pre_get_posts', 'ameris_search_result_count' );
