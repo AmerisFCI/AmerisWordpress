@@ -7,6 +7,10 @@
 .menu-toggle {
 	@include rem-fallback(width, 3.5);
 	@include rem-fallback(height, 3.5);
+	&:hover, &:focus {
+		opacity: 1;
+		background: transparent;
+	}
 }
 
 $button-size : 3.5rem;

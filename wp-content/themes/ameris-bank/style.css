@@ -931,9 +931,10 @@ dd {
   overflow-y: auto;
   padding: 0;
   margin: 0;
+  max-height: 300px;
 }
 
-/* line 184, sass/base/libraries/_sod.scss */
+/* line 185, sass/base/libraries/_sod.scss */
 .sod_select .sod_option {
   display: block;
   overflow: hidden;
@@ -944,7 +945,7 @@ dd {
   list-style-type: none;
 }
 
-/* line 197, sass/base/libraries/_sod.scss */
+/* line 198, sass/base/libraries/_sod.scss */
 .sod_select .sod_option.optgroup,
 .sod_select .sod_option.optgroup.disabled {
   background: inherit;
@@ -953,60 +954,60 @@ dd {
   font-style: italic;
 }
 
-/* line 207, sass/base/libraries/_sod.scss */
+/* line 208, sass/base/libraries/_sod.scss */
 .sod_select .sod_option.groupchild {
   padding-left: 20px;
 }
 
 /* Used together with placeholderOption / data-placeholder-option */
-/* line 210, sass/base/libraries/_sod.scss */
+/* line 211, sass/base/libraries/_sod.scss */
 .sod_select .sod_option.is-placeholder {
   display: none;
 }
 
-/* line 215, sass/base/libraries/_sod.scss */
+/* line 216, sass/base/libraries/_sod.scss */
 .sod_select .sod_option.disabled {
   background: inherit;
   color: #cccccc;
 }
 
-/* line 222, sass/base/libraries/_sod.scss */
+/* line 223, sass/base/libraries/_sod.scss */
 .sod_select .sod_option.active {
   background: #f7f7f7;
   color: #333333;
 }
 
-/* line 229, sass/base/libraries/_sod.scss */
+/* line 230, sass/base/libraries/_sod.scss */
 .sod_select .sod_option.selected {
   color: #092764;
 }
 
-/* line 255, sass/base/libraries/_sod.scss */
+/* line 256, sass/base/libraries/_sod.scss */
 .sod_select.no_highlight .sod_option.selected {
   font-weight: 300;
 }
 
-/* line 256, sass/base/libraries/_sod.scss */
+/* line 257, sass/base/libraries/_sod.scss */
 .sod_select.no_highlight .sod_option.selected:before {
   display: none;
 }
 
-/* line 258, sass/base/libraries/_sod.scss */
+/* line 259, sass/base/libraries/_sod.scss */
 .sod_select .sod_option.link {
   /* If data-link is set on a specific option */
 }
 
-/* line 259, sass/base/libraries/_sod.scss */
+/* line 260, sass/base/libraries/_sod.scss */
 .sod_select .sod_option.linkexternal {
   /* If data-link-external is set on a specific option */
 }
 
-/* line 264, sass/base/libraries/_sod.scss */
+/* line 265, sass/base/libraries/_sod.scss */
 .sod_select select {
   display: none !important;
 }
 
-/* line 267, sass/base/libraries/_sod.scss */
+/* line 268, sass/base/libraries/_sod.scss */
 .sod_select.touch select {
   -webkit-appearance: menulist-button;
   position: absolute;
@@ -1887,8 +1888,13 @@ a:hover, a:active {
   height: 35px;
   height: 3.5rem;
 }
+/* line 10, sass/components/navigation/_menu-toggle.scss */
+.menu-toggle:hover, .menu-toggle:focus {
+  opacity: 1;
+  background: transparent;
+}
 
-/* line 23, sass/components/navigation/_menu-toggle.scss */
+/* line 27, sass/components/navigation/_menu-toggle.scss */
  
 .lines-button {
   background: transparent;
@@ -1899,14 +1905,14 @@ a:hover, a:active {
   user-select: none;
   border-radius: 0.5rem;
 }
-/* line 35, sass/components/navigation/_menu-toggle.scss */
+/* line 39, sass/components/navigation/_menu-toggle.scss */
  
 .lines-button:hover,  
 .lines-button:focus {
   opacity: 1;
   background: transparent;
 }
-/* line 40, sass/components/navigation/_menu-toggle.scss */
+/* line 44, sass/components/navigation/_menu-toggle.scss */
  
 .lines-button:active {
   transition: 0;
@@ -1914,7 +1920,7 @@ a:hover, a:active {
   background: transparent;
 }
 
-/* line 47, sass/components/navigation/_menu-toggle.scss */
+/* line 51, sass/components/navigation/_menu-toggle.scss */
 .lines {
   display: inline-block;
   width: 3.5rem;
@@ -1924,7 +1930,7 @@ a:hover, a:active {
   transition: 0.3s;
   position: relative;
 }
-/* line 53, sass/components/navigation/_menu-toggle.scss */
+/* line 57, sass/components/navigation/_menu-toggle.scss */
 .lines:before, .lines:after {
   display: inline-block;
   width: 3.5rem;
@@ -1937,30 +1943,30 @@ a:hover, a:active {
   content: '';
   transform-origin: 0.25rem center;
 }
-/* line 62, sass/components/navigation/_menu-toggle.scss */
+/* line 66, sass/components/navigation/_menu-toggle.scss */
 .lines:before {
   top: 0.875rem;
 }
-/* line 63, sass/components/navigation/_menu-toggle.scss */
+/* line 67, sass/components/navigation/_menu-toggle.scss */
 .lines:after {
   top: -0.875rem;
 }
 
-/* line 67, sass/components/navigation/_menu-toggle.scss */
+/* line 71, sass/components/navigation/_menu-toggle.scss */
 .toggled .lines-button .lines {
   background: transparent;
 }
-/* line 73, sass/components/navigation/_menu-toggle.scss */
+/* line 77, sass/components/navigation/_menu-toggle.scss */
 .toggled .lines-button .lines:before, .toggled .lines-button .lines:after {
   transform-origin: 50% 50%;
   top: 0;
   width: 3.5rem;
 }
-/* line 80, sass/components/navigation/_menu-toggle.scss */
+/* line 84, sass/components/navigation/_menu-toggle.scss */
 .toggled .lines-button .lines:before {
   transform: rotate3d(0, 0, 1, 45deg);
 }
-/* line 83, sass/components/navigation/_menu-toggle.scss */
+/* line 87, sass/components/navigation/_menu-toggle.scss */
 .toggled .lines-button .lines:after {
   transform: rotate3d(0, 0, 1, -45deg);
 }
