@@ -515,3 +515,10 @@ $sprite-high-res-suffix: '-2x' !default;
     }
   }
 }
+
+@mixin plain-teaser-title {
+  font-family: $font-heading;
+  @include rem-fallback(font-size, 1.9);
+  line-height: 1.2;
+  @include rem-fallback(letter-spacing, -.02);
+}

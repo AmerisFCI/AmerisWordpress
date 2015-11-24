@@ -43,8 +43,8 @@ body:not(.home) .site-main {
 }
 
 
-@include breakpoint($wide) {
+/*@include breakpoint($wide) {
 	.inner-wrap {
 		padding: 0;
 	}
-}
+}*/

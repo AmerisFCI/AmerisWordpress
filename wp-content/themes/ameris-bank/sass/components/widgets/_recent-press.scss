@@ -1,4 +1,4 @@
-.widget_ameris_press_feed_widget {
+.widget_ameris_press_feed_widget, .widget_ameris_recent_posts_widget {
 	@include rem-fallback(padding, 2.4);
 	@include rem-fallback(max-width, 31.5);
 	margin-left: auto;
@@ -9,10 +9,8 @@
 	}
 	.recent-post__title {
 		text-transform: none;
-		font-family: $font-heading;
-		@include rem-fallback(font-size, 1.9);
+		@include plain-teaser-title;
 		@include rem-fallback(margin-bottom, .3);
-		font-weight: bold;
 	}
 	.recent-post {
 		@include rem-fallback(margin-bottom, 2.4);
