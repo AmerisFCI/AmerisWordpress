@@ -273,11 +273,13 @@ $sprite-high-res-suffix: '-2x' !default;
   display: inline-block;
   clear: both;
   font-family: $font-heading-bold;
-  border-bottom: 1px solid transparent;
 
   &:hover, &:focus {
     text-decoration: none;
-    border-color: $red;
+    color: $darkblue;
+  }
+
+  &:visited {
     color: $red;
   }
 }

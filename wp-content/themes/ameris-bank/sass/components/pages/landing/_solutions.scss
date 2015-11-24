@@ -18,6 +18,10 @@
 	@include boldbluetext;
 }
 
+.solution__link {
+	@include red-link;
+}
+
 @include breakpoint($tablet-wide) {
 	.solution {
 		@include float-span(3);

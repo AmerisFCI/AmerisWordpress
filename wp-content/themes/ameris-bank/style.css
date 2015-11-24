@@ -783,7 +783,7 @@ dd {
   left: 19px;
   left: 1.9rem;
 }
-/* line 453, sass/base/_mixins.scss */
+/* line 455, sass/base/_mixins.scss */
 .more-link:after {
   top: 0;
 }
@@ -2192,12 +2192,14 @@ a:hover, a:active {
     display: inline-block;
     clear: both;
     font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-    border-bottom: 1px solid transparent;
   }
-  /* line 278, sass/base/_mixins.scss */
+  /* line 277, sass/base/_mixins.scss */
   .main-navigation .view-all a:hover, .main-navigation .view-all a:focus {
     text-decoration: none;
-    border-color: #d31145;
+    color: #092764;
+  }
+  /* line 282, sass/base/_mixins.scss */
+  .main-navigation .view-all a:visited {
     color: #d31145;
   }
 
@@ -2439,12 +2441,14 @@ a:hover, a:active {
     display: inline-block;
     clear: both;
     font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-    border-bottom: 1px solid transparent;
   }
-  /* line 278, sass/base/_mixins.scss */
+  /* line 277, sass/base/_mixins.scss */
   .nav-menu .toggle-sub .view-all a:hover, .nav-menu .toggle-sub .view-all a:focus {
     text-decoration: none;
-    border-color: #d31145;
+    color: #092764;
+  }
+  /* line 282, sass/base/_mixins.scss */
+  .nav-menu .toggle-sub .view-all a:visited {
     color: #d31145;
   }
 
@@ -2505,12 +2509,14 @@ a:hover, a:active {
     display: inline-block;
     clear: both;
     font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-    border-bottom: 1px solid transparent;
   }
-  /* line 278, sass/base/_mixins.scss */
+  /* line 277, sass/base/_mixins.scss */
   .tab-container > .item-description a:hover, .tab-container > .item-description a:focus {
     text-decoration: none;
-    border-color: #d31145;
+    color: #092764;
+  }
+  /* line 282, sass/base/_mixins.scss */
+  .tab-container > .item-description a:visited {
     color: #d31145;
   }
   /* line 398, sass/components/navigation/_menu-main.scss */
@@ -3075,7 +3081,7 @@ a:hover, a:active {
   padding: 25px 24px;
   padding: 2.5rem 2.4rem;
 }
-/* line 461, sass/base/_mixins.scss */
+/* line 463, sass/base/_mixins.scss */
 .sidebar-menu a {
   font-style: normal;
   font-size: 18px;
@@ -3094,7 +3100,7 @@ a:hover, a:active {
   margin-bottom: 0.5rem;
   position: relative;
 }
-/* line 468, sass/base/_mixins.scss */
+/* line 470, sass/base/_mixins.scss */
 .sidebar-menu a:before {
   content: "";
   display: block;
@@ -3110,51 +3116,51 @@ a:hover, a:active {
   background-color: #d31145;
   transition: all .2s;
 }
-/* line 480, sass/base/_mixins.scss */
+/* line 482, sass/base/_mixins.scss */
 .sidebar-menu a:hover:before {
   height: 100%;
   opacity: 1;
   width: 5px;
   width: 0.5rem;
 }
-/* line 485, sass/base/_mixins.scss */
+/* line 487, sass/base/_mixins.scss */
 .sidebar-menu a:focus {
   text-decoration: underline;
 }
-/* line 489, sass/base/_mixins.scss */
+/* line 491, sass/base/_mixins.scss */
 .sidebar-menu .current_page_item > a:before {
   height: 100%;
   opacity: 1;
   width: 5px;
   width: 0.5rem;
 }
-/* line 494, sass/base/_mixins.scss */
+/* line 496, sass/base/_mixins.scss */
 .sidebar-menu li {
   list-style: none;
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
-/* line 498, sass/base/_mixins.scss */
+/* line 500, sass/base/_mixins.scss */
 .sidebar-menu .children {
   margin: 0;
 }
-/* line 500, sass/base/_mixins.scss */
+/* line 502, sass/base/_mixins.scss */
 .sidebar-menu .children li {
   margin-bottom: 5px;
   margin-bottom: 0.5rem;
 }
-/* line 503, sass/base/_mixins.scss */
+/* line 505, sass/base/_mixins.scss */
 .sidebar-menu .children a {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   margin: 0;
 }
-/* line 510, sass/base/_mixins.scss */
+/* line 512, sass/base/_mixins.scss */
 .sidebar-menu .view-all a {
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
 }
-/* line 513, sass/base/_mixins.scss */
+/* line 515, sass/base/_mixins.scss */
 .sidebar-menu .view-all a:hover {
   border-bottom-color: transparent;
 }
@@ -4074,7 +4080,7 @@ footer .menu-item {
   overflow: hidden;
   position: relative;
 }
-/* line 331, sass/base/_mixins.scss */
+/* line 333, sass/base/_mixins.scss */
 .banner-image img {
   position: absolute;
   max-width: none;
@@ -4083,12 +4089,12 @@ footer .menu-item {
   width: 100%;
   height: auto;
 }
-/* line 339, sass/base/_mixins.scss */
+/* line 341, sass/base/_mixins.scss */
 .banner-image img.slidewidth {
   width: 100%;
   height: auto;
 }
-/* line 344, sass/base/_mixins.scss */
+/* line 346, sass/base/_mixins.scss */
 .banner-image img.slideheight {
   width: auto;
   height: 100%;
@@ -4111,12 +4117,12 @@ footer .menu-item {
   max-width: 850px;
   max-width: 85rem;
 }
-/* line 362, sass/base/_mixins.scss */
+/* line 364, sass/base/_mixins.scss */
 .banner-blurb span, .banner-blurb em {
   display: inline-block;
   position: relative;
 }
-/* line 365, sass/base/_mixins.scss */
+/* line 367, sass/base/_mixins.scss */
 .banner-blurb span:after, .banner-blurb em:after {
   content: "";
   display: block;
@@ -4360,12 +4366,12 @@ footer .menu-item {
   bottom: 40px;
   bottom: 4rem;
 }
-/* line 362, sass/base/_mixins.scss */
+/* line 364, sass/base/_mixins.scss */
 .wide-banner-blurb span, .wide-banner-blurb em {
   display: inline-block;
   position: relative;
 }
-/* line 365, sass/base/_mixins.scss */
+/* line 367, sass/base/_mixins.scss */
 .wide-banner-blurb span:after, .wide-banner-blurb em:after {
   content: "";
   display: block;
@@ -4411,7 +4417,7 @@ footer .menu-item {
   height: 500px;
   height: 50rem;
 }
-/* line 331, sass/base/_mixins.scss */
+/* line 333, sass/base/_mixins.scss */
 .wide-banner-image img {
   position: absolute;
   max-width: none;
@@ -4420,12 +4426,12 @@ footer .menu-item {
   width: 100%;
   height: auto;
 }
-/* line 339, sass/base/_mixins.scss */
+/* line 341, sass/base/_mixins.scss */
 .wide-banner-image img.slidewidth {
   width: 100%;
   height: auto;
 }
-/* line 344, sass/base/_mixins.scss */
+/* line 346, sass/base/_mixins.scss */
 .wide-banner-image img.slideheight {
   width: auto;
   height: 100%;
@@ -4470,12 +4476,12 @@ footer .menu-item {
     font-size: 72px;
     font-size: 7.2rem;
   }
-  /* line 362, sass/base/_mixins.scss */
+  /* line 364, sass/base/_mixins.scss */
   .wide-banner-blurb span, .wide-banner-blurb em {
     display: inline-block;
     position: relative;
   }
-  /* line 365, sass/base/_mixins.scss */
+  /* line 367, sass/base/_mixins.scss */
   .wide-banner-blurb span:after, .wide-banner-blurb em:after {
     content: "";
     display: block;
@@ -4598,7 +4604,7 @@ footer .menu-item {
   left: 19px;
   left: 1.9rem;
 }
-/* line 453, sass/base/_mixins.scss */
+/* line 455, sass/base/_mixins.scss */
 .more-recent-posts__link:after {
   top: 0;
 }
@@ -5930,8 +5936,32 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   margin-bottom: 1.5rem;
 }
 
+/* line 21, sass/components/pages/landing/_solutions.scss */
+.solution__link {
+  padding: 5px 0px;
+  padding: 0.5rem 0rem;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #d31145;
+  transition: all .2s;
+  display: inline-block;
+  clear: both;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+/* line 277, sass/base/_mixins.scss */
+.solution__link:hover, .solution__link:focus {
+  text-decoration: none;
+  color: #092764;
+}
+/* line 282, sass/base/_mixins.scss */
+.solution__link:visited {
+  color: #d31145;
+}
+
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 22, sass/components/pages/landing/_solutions.scss */
+  /* line 26, sass/components/pages/landing/_solutions.scss */
   .solution {
     width: 31.42857%;
     clear: right;
@@ -5939,7 +5969,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.85714%;
   }
-  /* line 24, sass/components/pages/landing/_solutions.scss */
+  /* line 28, sass/components/pages/landing/_solutions.scss */
   .solution:nth-child(3n) {
     width: 31.42857%;
     clear: right;
@@ -5948,7 +5978,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 @media (min-width: 1024px) {
-  /* line 31, sass/components/pages/landing/_solutions.scss */
+  /* line 35, sass/components/pages/landing/_solutions.scss */
   .solution {
     width: 31.42857%;
     clear: right;
@@ -5956,7 +5986,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     margin-left: 0;
     margin-right: 2.85714%;
   }
-  /* line 33, sass/components/pages/landing/_solutions.scss */
+  /* line 37, sass/components/pages/landing/_solutions.scss */
   .solution:nth-child(3n) {
     width: 31.42857%;
     clear: right;
@@ -6119,33 +6149,33 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     width: 68%;
   }
 }
-/* line 379, sass/base/_mixins.scss */
+/* line 381, sass/base/_mixins.scss */
 .page-template-leadership-page .page-title {
   padding: 0;
   padding-top: 20px;
   padding-top: 2rem;
 }
-/* line 384, sass/base/_mixins.scss */
+/* line 386, sass/base/_mixins.scss */
 .page-template-leadership-page .sidebar-menu {
   background: transparent;
 }
-/* line 388, sass/base/_mixins.scss */
+/* line 390, sass/base/_mixins.scss */
 .page-template-leadership-page .inner-wrap .sidebar-left {
   margin-left: 0;
   margin-top: 0px;
   margin-top: 0rem;
 }
 @media (min-width: 1024px) {
-  /* line 394, sass/base/_mixins.scss */
+  /* line 396, sass/base/_mixins.scss */
   .page-template-leadership-page .sidebar-menu {
     padding-top: 44px;
     padding-top: 4.4rem;
   }
-  /* line 397, sass/base/_mixins.scss */
+  /* line 399, sass/base/_mixins.scss */
   .page-template-leadership-page .sidebar-left {
     clear: none;
   }
-  /* line 404, sass/base/_mixins.scss */
+  /* line 406, sass/base/_mixins.scss */
   .page-template-leadership-page #main {
     width: 64.10256%;
     float: left;
@@ -6155,7 +6185,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 @media (min-width: 1420px) {
-  /* line 417, sass/base/_mixins.scss */
+  /* line 419, sass/base/_mixins.scss */
   .page-template-leadership-page #main {
     width: 72.22222%;
     float: left;
@@ -6368,33 +6398,33 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     clear: both;
   }
 }
-/* line 379, sass/base/_mixins.scss */
+/* line 381, sass/base/_mixins.scss */
 .single-leadership .page-title {
   padding: 0;
   padding-top: 20px;
   padding-top: 2rem;
 }
-/* line 384, sass/base/_mixins.scss */
+/* line 386, sass/base/_mixins.scss */
 .single-leadership .sidebar-menu {
   background: transparent;
 }
-/* line 388, sass/base/_mixins.scss */
+/* line 390, sass/base/_mixins.scss */
 .single-leadership .inner-wrap .sidebar-left {
   margin-left: 0;
   margin-top: 0px;
   margin-top: 0rem;
 }
 @media (min-width: 1024px) {
-  /* line 394, sass/base/_mixins.scss */
+  /* line 396, sass/base/_mixins.scss */
   .single-leadership .sidebar-menu {
     padding-top: 44px;
     padding-top: 4.4rem;
   }
-  /* line 397, sass/base/_mixins.scss */
+  /* line 399, sass/base/_mixins.scss */
   .single-leadership .sidebar-left {
     clear: none;
   }
-  /* line 404, sass/base/_mixins.scss */
+  /* line 406, sass/base/_mixins.scss */
   .single-leadership #main {
     width: 64.10256%;
     float: left;
@@ -6404,7 +6434,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 @media (min-width: 1420px) {
-  /* line 417, sass/base/_mixins.scss */
+  /* line 419, sass/base/_mixins.scss */
   .single-leadership #main {
     width: 72.22222%;
     float: left;
@@ -6472,33 +6502,33 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
     text-align: left;
   }
 }
-/* line 379, sass/base/_mixins.scss */
+/* line 381, sass/base/_mixins.scss */
 .blog .page-title {
   padding: 0;
   padding-top: 20px;
   padding-top: 2rem;
 }
-/* line 384, sass/base/_mixins.scss */
+/* line 386, sass/base/_mixins.scss */
 .blog .sidebar-menu {
   background: transparent;
 }
-/* line 388, sass/base/_mixins.scss */
+/* line 390, sass/base/_mixins.scss */
 .blog .inner-wrap .sidebar-left {
   margin-left: 0;
   margin-top: 0px;
   margin-top: 0rem;
 }
 @media (min-width: 1024px) {
-  /* line 394, sass/base/_mixins.scss */
+  /* line 396, sass/base/_mixins.scss */
   .blog .sidebar-menu {
     padding-top: 44px;
     padding-top: 4.4rem;
   }
-  /* line 397, sass/base/_mixins.scss */
+  /* line 399, sass/base/_mixins.scss */
   .blog .sidebar-left {
     clear: none;
   }
-  /* line 404, sass/base/_mixins.scss */
+  /* line 406, sass/base/_mixins.scss */
   .blog #main {
     width: 64.10256%;
     float: left;
@@ -6508,7 +6538,7 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   }
 }
 @media (min-width: 1420px) {
-  /* line 417, sass/base/_mixins.scss */
+  /* line 419, sass/base/_mixins.scss */
   .blog #main {
     width: 72.22222%;
     float: left;
@@ -6604,12 +6634,14 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   display: inline-block;
   clear: both;
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-  border-bottom: 1px solid transparent;
 }
-/* line 278, sass/base/_mixins.scss */
+/* line 277, sass/base/_mixins.scss */
 .news-item__more:hover, .news-item__more:focus {
   text-decoration: none;
-  border-color: #d31145;
+  color: #092764;
+}
+/* line 282, sass/base/_mixins.scss */
+.news-item__more:visited {
   color: #d31145;
 }
 
@@ -6931,7 +6963,7 @@ body.page-template-about-us-page .site-main {
   left: 19px;
   left: 1.9rem;
 }
-/* line 453, sass/base/_mixins.scss */
+/* line 455, sass/base/_mixins.scss */
 .about-our-story a:after {
   top: 0;
 }
@@ -7233,7 +7265,7 @@ a.about-leadership__button {
   padding: 25px 24px;
   padding: 2.5rem 2.4rem;
 }
-/* line 461, sass/base/_mixins.scss */
+/* line 463, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu a {
   font-style: normal;
   font-size: 18px;
@@ -7252,7 +7284,7 @@ a.about-leadership__button {
   margin-bottom: 0.5rem;
   position: relative;
 }
-/* line 468, sass/base/_mixins.scss */
+/* line 470, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu a:before {
   content: "";
   display: block;
@@ -7268,51 +7300,51 @@ a.about-leadership__button {
   background-color: #d31145;
   transition: all .2s;
 }
-/* line 480, sass/base/_mixins.scss */
+/* line 482, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu a:hover:before {
   height: 100%;
   opacity: 1;
   width: 5px;
   width: 0.5rem;
 }
-/* line 485, sass/base/_mixins.scss */
+/* line 487, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu a:focus {
   text-decoration: underline;
 }
-/* line 489, sass/base/_mixins.scss */
+/* line 491, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .current_page_item > a:before {
   height: 100%;
   opacity: 1;
   width: 5px;
   width: 0.5rem;
 }
-/* line 494, sass/base/_mixins.scss */
+/* line 496, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu li {
   list-style: none;
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
-/* line 498, sass/base/_mixins.scss */
+/* line 500, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .children {
   margin: 0;
 }
-/* line 500, sass/base/_mixins.scss */
+/* line 502, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .children li {
   margin-bottom: 5px;
   margin-bottom: 0.5rem;
 }
-/* line 503, sass/base/_mixins.scss */
+/* line 505, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .children a {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   margin: 0;
 }
-/* line 510, sass/base/_mixins.scss */
+/* line 512, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .view-all a {
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
 }
-/* line 513, sass/base/_mixins.scss */
+/* line 515, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .view-all a:hover {
   border-bottom-color: transparent;
 }
@@ -7541,33 +7573,33 @@ a.about-leadership__button {
     margin-right: 0;
   }
 }
-/* line 379, sass/base/_mixins.scss */
+/* line 381, sass/base/_mixins.scss */
 .page-template-history-page .page-title {
   padding: 0;
   padding-top: 20px;
   padding-top: 2rem;
 }
-/* line 384, sass/base/_mixins.scss */
+/* line 386, sass/base/_mixins.scss */
 .page-template-history-page .sidebar-menu {
   background: transparent;
 }
-/* line 388, sass/base/_mixins.scss */
+/* line 390, sass/base/_mixins.scss */
 .page-template-history-page .inner-wrap .sidebar-left {
   margin-left: 0;
   margin-top: 0px;
   margin-top: 0rem;
 }
 @media (min-width: 1024px) {
-  /* line 394, sass/base/_mixins.scss */
+  /* line 396, sass/base/_mixins.scss */
   .page-template-history-page .sidebar-menu {
     padding-top: 44px;
     padding-top: 4.4rem;
   }
-  /* line 397, sass/base/_mixins.scss */
+  /* line 399, sass/base/_mixins.scss */
   .page-template-history-page .sidebar-left {
     clear: none;
   }
-  /* line 404, sass/base/_mixins.scss */
+  /* line 406, sass/base/_mixins.scss */
   .page-template-history-page #main {
     width: 64.10256%;
     float: left;
@@ -7577,7 +7609,7 @@ a.about-leadership__button {
   }
 }
 @media (min-width: 1420px) {
-  /* line 417, sass/base/_mixins.scss */
+  /* line 419, sass/base/_mixins.scss */
   .page-template-history-page #main {
     width: 72.22222%;
     float: left;
@@ -8265,12 +8297,14 @@ a.view-all, .view-all a {
   display: inline-block;
   clear: both;
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-  border-bottom: 1px solid transparent;
 }
-/* line 278, sass/base/_mixins.scss */
+/* line 277, sass/base/_mixins.scss */
 a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   text-decoration: none;
-  border-color: #d31145;
+  color: #092764;
+}
+/* line 282, sass/base/_mixins.scss */
+a.view-all:visited, .view-all a:visited {
   color: #d31145;
 }
 
