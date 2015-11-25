@@ -12,3 +12,22 @@
 	}
 }
 
+.page-template-leadership-page, .page-template-history-page {
+	.sidebar-menu {
+		display: none;
+		&.mobile-only {
+			display: block;
+		}
+	}
+}
+
+@include breakpoint($narrow-to-desktop) {
+	.page-template-leadership-page, .page-template-history-page {
+		.sidebar-menu {
+			display: block;
+			&.mobile-only {
+				display: none;
+			}
+		}
+	}
+}

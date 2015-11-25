@@ -3295,6 +3295,25 @@ a:hover, a:active {
   display: none;
 }
 
+/* line 16, sass/components/navigation/_sidebar-nav.scss */
+.page-template-leadership-page .sidebar-menu, .page-template-history-page .sidebar-menu {
+  display: none;
+}
+/* line 18, sass/components/navigation/_sidebar-nav.scss */
+.page-template-leadership-page .sidebar-menu.mobile-only, .page-template-history-page .sidebar-menu.mobile-only {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  /* line 26, sass/components/navigation/_sidebar-nav.scss */
+  .page-template-leadership-page .sidebar-menu, .page-template-history-page .sidebar-menu {
+    display: block;
+  }
+  /* line 28, sass/components/navigation/_sidebar-nav.scss */
+  .page-template-leadership-page .sidebar-menu.mobile-only, .page-template-history-page .sidebar-menu.mobile-only {
+    display: none;
+  }
+}
 /* line 1, sass/components/navigation/_search-box.scss */
 .search-form {
   margin-bottom: 16px;
