@@ -9020,7 +9020,6 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   clear: both;
   padding-right: 42px;
   padding-right: 4.2rem;
-  text-align: center;
 }
 /* line 150, sass/base/_mixins.scss */
 .button-cta:hover, .button-cta:active, .button-cta:focus {
@@ -9062,25 +9061,21 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   left: 19px;
   left: 1.9rem;
 }
-/* line 13, sass/components/_wysiwyg.scss */
-.button-cta a:hover, .button-cta a:focus {
-  text-decoration: none;
-}
 
-/* line 18, sass/components/_wysiwyg.scss */
+/* line 15, sass/components/_wysiwyg.scss */
 .intro {
   font-weight: 300;
   font-size: 22px;
   font-size: 2.2rem;
 }
 
-/* line 25, sass/components/_wysiwyg.scss */
+/* line 22, sass/components/_wysiwyg.scss */
 .entry-content .button, .entry-content .button-cta {
   background: none;
   padding: 0;
   box-shadow: none;
 }
-/* line 29, sass/components/_wysiwyg.scss */
+/* line 27, sass/components/_wysiwyg.scss */
 .entry-content .button:after, .entry-content .button-cta:after {
   content: none;
 }
@@ -9136,6 +9131,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
   display: inline-block;
+  text-align: center;
 }
 /* line 150, sass/base/_mixins.scss */
 .entry-content .button-cta a:hover, .entry-content .button-cta a:active, .entry-content .button-cta a:focus, .entry-content a.button-cta:hover, .entry-content a.button-cta:active, .entry-content a.button-cta:focus {
@@ -9176,6 +9172,16 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 .entry-content .button-cta a:hover:after, .entry-content .button-cta a:focus:after, .entry-content a.button-cta:hover:after, .entry-content a.button-cta:focus:after {
   left: 19px;
   left: 1.9rem;
+}
+@media (min-width: 530px) {
+  /* line 41, sass/components/_wysiwyg.scss */
+  .entry-content .button-cta a, .entry-content a.button-cta {
+    text-align: left;
+  }
+}
+/* line 53, sass/components/_wysiwyg.scss */
+.entry-content .button-cta a:hover, .entry-content .button-cta a:focus, .entry-content a.button-cta:hover, .entry-content a.button-cta:focus {
+  text-decoration: none;
 }
 
 /**

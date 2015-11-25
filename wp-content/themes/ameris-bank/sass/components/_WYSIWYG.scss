@@ -9,10 +9,7 @@ a.view-all, .view-all a {
 .button-cta {
 	@include red-button-cta;
 	@include cta-arrow-right;
-	text-align: center;
-	a:hover, a:focus {
-		text-decoration: none;
-	}
+
 }
 
 .intro {
@@ -26,9 +23,12 @@ a.view-all, .view-all a {
 		background: none;
 		padding: 0;
 		box-shadow: none;
+
 		&:after {
 			content: none;
 		}
+
+
 	}
 
 	.button a, a.button {
@@ -44,5 +44,14 @@ a.view-all, .view-all a {
 		text-decoration: none;
 		@include rem-fallback(margin-bottom, 1.4);
 		display: inline-block;
+		text-align: center;
+
+		@include breakpoint($tablet-to-desktop) {
+			text-align: left;
+		}
+
+		&:hover, &:focus {
+			text-decoration: none;
+		}
 	}
 }
