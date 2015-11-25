@@ -24,6 +24,11 @@ a.view-all, .view-all a {
 		padding: 0;
 		box-shadow: none;
 
+		text-align: center;
+		@include breakpoint($tablet-to-desktop) {
+			text-align: left;
+		}
+
 		&:after {
 			content: none;
 		}
@@ -44,11 +49,9 @@ a.view-all, .view-all a {
 		text-decoration: none;
 		@include rem-fallback(margin-bottom, 1.4);
 		display: inline-block;
-		text-align: center;
 
-		@include breakpoint($tablet-to-desktop) {
-			text-align: left;
-		}
+
+
 
 		&:hover, &:focus {
 			text-decoration: none;
