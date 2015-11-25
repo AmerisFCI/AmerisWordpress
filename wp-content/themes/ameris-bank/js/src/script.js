@@ -229,6 +229,50 @@
 	});
 
 
+	/**
+	 * External link prompt.
+	 */
+	$('a.test').each(function() {
+
+		// if link exists, uses http, and is not one of the named sites
+		if( this.href != '' &&
+			this.href.indexOf('http') != -1 &&
+			this.href.indexOf('ir.amerisbank.com') == -1 /* &&
+			this.href.indexOf('ibanking-services.com') == -1 &&
+			this.href.indexOf('amerisbankmortgage.com') == -1 */ ) {
+			
+			var a = new RegExp('/' + window.location.host + '/');
+			
+			// if external link
+			if( !a.test( this.href ) ) {
+				$( this ).click( function( event ) {
+					event.preventDefault();
+					event.stopPropagation();
+					if ( window.confirm( "You are now leaving Ameris Bank's website. Ameris Bank has no control over the content or quality of the site you are visiting, and the site may not have the same privacy and/or security practices as Ameris Bank. We encourage you to read the privacy/security policy for the site you are visiting." ) ) {
+						window.open( this.href, '_blank' );
+					}
+				} );
+			}
+
+		// open in a new tab if ir or ibanking-services
+		} else if ( this.href != '' &&
+					this.href.indexOf('http') != -1 /* &&
+					this.href.indexOf('amerisbankmortgage.com') != -1 */ ) {
+
+			var a = new RegExp('/' + window.location.host + '/');
+			if( !a.test( this.href ) ) {
+				$( this ).click( function( event ) {
+					event.preventDefault();
+					event.stopPropagation();
+					window.open( this.href, '_blank' );
+				} ); 
+			}
+		
+		}
+
+	} );
+
+
 	// Put code here
 
 
@@ -278,32 +322,3 @@ function amerisOrganizeMobileMenu() {
 }
 jQuery( document ).ready( amerisOrganizeMobileMenu );
 jQuery( window ).resize( amerisOrganizeMobileMenu );
-
-
-/**
- * Move the search bar to the mobile menu at mobile sizes. (Function below.)
- */
-function amerisPositionSearchBar() {
-
-	var isMobile = jQuery( '#site-navigation .menu-toggle' ).is( ':visible' );
-
-	if ( isMobile ) {
-		jQuery( '.nav-wrapper > .search-form' )
-			.detach()
-			.appendTo( '#primary-menu' )
-			.wrap( '<li class="menu-item search-in-primary-menu"></li>' );
-
-	} else {
-		jQuery( '#primary-menu .search-form' )
-			.unwrap()
-			.detach()
-			.insertAfter( '#masthead .utility-navigation' );
-
-	}
-
-}
-// jQuery( document ).ready( amerisPositionSearchBar );
-// jQuery( window ).resize( amerisPositionSearchBar );
-
-
-
