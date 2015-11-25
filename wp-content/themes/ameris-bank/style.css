@@ -590,41 +590,47 @@ h2, .news-item--newsroom .news-item__title, .search article .search-item__title 
   margin-bottom: 20px;
   margin-bottom: 2rem;
   color: #092764;
+  line-height: 1.2;
+  letter-spacing: -0.1px;
+  letter-spacing: -0.01rem;
 }
-/* line 23, sass/base/typography/_headings.scss */
+/* line 25, sass/base/typography/_headings.scss */
 h2:nth-child(n+2), .news-item--newsroom .news-item__title:nth-child(n+2), .search article .search-item__title:nth-child(n+2) {
   margin: 40px 0px 20px;
   margin: 4rem 0rem 2rem;
 }
 
-/* line 28, sass/base/typography/_headings.scss */
+/* line 30, sass/base/typography/_headings.scss */
 h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   letter-spacing: 0.05rem;
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #d31145;
-  font-size: 22px;
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  margin-bottom: 2rem;
+  line-height: 1.2;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
-/* line 37, sass/base/typography/_headings.scss */
+/* line 40, sass/base/typography/_headings.scss */
 h3 strong {
   font-family: inherit;
   font-weight: inherit;
 }
 
-/* line 43, sass/base/typography/_headings.scss */
+/* line 46, sass/base/typography/_headings.scss */
 h4 {
   color: #092764;
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 21px;
+  font-size: 2.1rem;
   margin: 20px 0px;
   margin: 2rem 0rem;
+  letter-spacing: -0.2px;
+  letter-spacing: -0.02rem;
 }
 
-/* line 49, sass/base/typography/_headings.scss */
+/* line 53, sass/base/typography/_headings.scss */
 h5 {
   font-style: normal;
   font-size: 18px;
@@ -636,7 +642,7 @@ h5 {
   margin-bottom: 1.5rem;
 }
 
-/* line 53, sass/base/typography/_headings.scss */
+/* line 57, sass/base/typography/_headings.scss */
 .kicker {
   font-style: normal;
   font-size: 18px;
@@ -655,14 +661,14 @@ h5 {
   border-bottom-width: 0.3rem;
 }
 
-/* line 61, sass/base/typography/_headings.scss */
+/* line 65, sass/base/typography/_headings.scss */
 .landing-heading {
   margin-bottom: 40px;
   margin-bottom: 4rem;
 }
 
 @media (min-width: 740px) {
-  /* line 67, sass/base/typography/_headings.scss */
+  /* line 71, sass/base/typography/_headings.scss */
   h1, .landing-heading, h2, .news-item--newsroom .news-item__title, .search article .search-item__title, h3, h4, h5, h6 {
     text-align: left;
   }
@@ -720,14 +726,16 @@ li > ol {
   margin-bottom: 0;
   margin-left: 20px;
   margin-left: 2rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
-/* line 41, sass/base/typography/_lists.scss */
+/* line 42, sass/base/typography/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 45, sass/base/typography/_lists.scss */
+/* line 46, sass/base/typography/_lists.scss */
 dd {
   margin: 0px 20px 20px;
   margin: 0rem 2rem 2rem;
@@ -3697,8 +3705,8 @@ a:hover, a:active {
 
   /* line 121, sass/components/sections/_header.scss */
   .search-form {
-    width: 230px;
-    width: 23rem;
+    width: 250px;
+    width: 25rem;
     top: 6px;
     top: 0.6rem;
   }
