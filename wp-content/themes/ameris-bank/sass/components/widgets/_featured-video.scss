@@ -105,16 +105,22 @@
 
 		}
 
+		.kicker,
+		h2.featured-video__title {
+			@include rem-fallback( margin-bottom, 1.2 );
+		}
+
 	}
 }
 
 @include breakpoint( $wide ) {
 	.featured-video {
 		h2.featured-video__title {
-			@include rem-fallback( font-size, 3.6 );
+			@include rem-fallback( font-size, 3 );
 		}
-		&__text {
-			// @include rem-fallback( padding, 2.4 );
+		.kicker,
+		h2.featured-video__title {
+			@include rem-fallback( margin-bottom, 1.8 );
 		}
 	}
 }
