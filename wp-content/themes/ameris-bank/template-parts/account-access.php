@@ -20,7 +20,7 @@ if ( !empty( $account_access_args ) ) {
 	<h2><?php echo $title; ?></h2>
 	<form class="account-access__form">
 		<select>
-			<option>Select an account type...</option>
+			<option>Account type...</option>
 			<option value="Personal Online Banking">Personal Online Banking</option>
 			<option value="Business Online Banking">Business Online Banking</option>
 			<option value="Ameris Bank Credit Card Access">Ameris Bank Credit Card</option>
