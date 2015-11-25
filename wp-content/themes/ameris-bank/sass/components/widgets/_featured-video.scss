@@ -114,7 +114,7 @@
 			@include rem-fallback( font-size, 3.6 );
 		}
 		&__text {
-			@include rem-fallback( padding, 2.4 );
+			// @include rem-fallback( padding, 2.4 );
 		}
 	}
 }

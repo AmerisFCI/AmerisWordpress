@@ -36,6 +36,7 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	@include rem-fallback(margin-left, 2);
+	@include rem-fallback(margin-bottom, 3);
 }
 
 dt {

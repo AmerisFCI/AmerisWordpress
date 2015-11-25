@@ -119,7 +119,7 @@
 		@include rem-fallback(width, 20);
 	}
 	.search-form {
-		@include rem-fallback(width, 23);
+		@include rem-fallback(width, 25);
 		@include rem-fallback(top, .6);
 	}
 }
