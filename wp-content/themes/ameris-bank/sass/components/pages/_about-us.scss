@@ -90,6 +90,9 @@ body.page-template-about-us-page {
 	color: $white;
 	@include rem-fallback(font-size, 2.4);
 	position: relative;
+	p {
+		margin-bottom: 0;
+	}
 	a {
 		@include more-link;
 		color: $white;

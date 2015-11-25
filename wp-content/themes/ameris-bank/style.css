@@ -7064,6 +7064,10 @@ body.page-template-about-us-page .site-main {
   position: relative;
 }
 /* line 93, sass/components/pages/_about-us.scss */
+.about-our-story p {
+  margin-bottom: 0;
+}
+/* line 96, sass/components/pages/_about-us.scss */
 .about-our-story a {
   font-style: normal;
   font-size: 18px;
@@ -7117,7 +7121,7 @@ body.page-template-about-us-page .site-main {
 .about-our-story a:after {
   top: 0;
 }
-/* line 96, sass/components/pages/_about-us.scss */
+/* line 99, sass/components/pages/_about-us.scss */
 .about-our-story a:after {
   background-image: url('images/sprite-images-sc17eea70d9.png');
   background-position: 0 -1078px;
@@ -7127,7 +7131,7 @@ body.page-template-about-us-page .site-main {
   width: 9px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 96, sass/components/pages/_about-us.scss */
+  /* line 99, sass/components/pages/_about-us.scss */
   .about-our-story a:after {
     background-size: 215px 2793.5px;
     background-position: 0 -520px;
@@ -7135,7 +7139,7 @@ body.page-template-about-us-page .site-main {
     width: 9px;
   }
 }
-/* line 100, sass/components/pages/_about-us.scss */
+/* line 103, sass/components/pages/_about-us.scss */
 .about-our-story:before {
   content: "";
   display: block;
@@ -7150,13 +7154,13 @@ body.page-template-about-us-page .site-main {
   border-bottom-color: #d31145;
 }
 
-/* line 113, sass/components/pages/_about-us.scss */
+/* line 116, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper {
   position: relative;
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
-/* line 117, sass/components/pages/_about-us.scss */
+/* line 120, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots {
   width: auto;
   right: initial;
@@ -7168,24 +7172,24 @@ body.page-template-about-us-page .site-main {
   bottom: 24px;
   bottom: 2.4rem;
 }
-/* line 124, sass/components/pages/_about-us.scss */
+/* line 127, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li {
   box-shadow: none;
 }
-/* line 126, sass/components/pages/_about-us.scss */
+/* line 129, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li:first-child {
   margin-left: 0;
 }
-/* line 129, sass/components/pages/_about-us.scss */
+/* line 132, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li button {
   border-color: #092764;
 }
-/* line 132, sass/components/pages/_about-us.scss */
+/* line 135, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li.slick-active button {
   background: #092764;
 }
 
-/* line 140, sass/components/pages/_about-us.scss */
+/* line 143, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows {
   position: absolute;
   right: 24px;
@@ -7193,7 +7197,7 @@ body.page-template-about-us-page .site-main {
   bottom: 24px;
   bottom: 2.4rem;
 }
-/* line 144, sass/components/pages/_about-us.scss */
+/* line 147, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-arrow {
   font-size: 0;
   line-height: 0;
@@ -7204,7 +7208,7 @@ body.page-template-about-us-page .site-main {
   padding: 0;
   float: left;
 }
-/* line 155, sass/components/pages/_about-us.scss */
+/* line 158, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-prev {
   background-image: url('images/sprite-images-sc17eea70d9.png');
   background-position: 0 -564px;
@@ -7216,7 +7220,7 @@ body.page-template-about-us-page .site-main {
   margin-right: 1.4rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 155, sass/components/pages/_about-us.scss */
+  /* line 158, sass/components/pages/_about-us.scss */
   .about-newsroom-arrows .slick-prev {
     background-size: 215px 2793.5px;
     background-position: 0 -198px;
@@ -7224,7 +7228,7 @@ body.page-template-about-us-page .site-main {
     width: 12px;
   }
 }
-/* line 159, sass/components/pages/_about-us.scss */
+/* line 162, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-next {
   background-image: url('images/sprite-images-sc17eea70d9.png');
   background-position: 0 -762px;
@@ -7234,7 +7238,7 @@ body.page-template-about-us-page .site-main {
   width: 12px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 159, sass/components/pages/_about-us.scss */
+  /* line 162, sass/components/pages/_about-us.scss */
   .about-newsroom-arrows .slick-next {
     background-size: 215px 2793.5px;
     background-position: 0 -297px;
@@ -7243,7 +7247,7 @@ body.page-template-about-us-page .site-main {
   }
 }
 
-/* line 164, sass/components/pages/_about-us.scss */
+/* line 167, sass/components/pages/_about-us.scss */
 .about-news-item {
   min-height: 400px;
   min-height: 40rem;
@@ -7251,7 +7255,7 @@ body.page-template-about-us-page .site-main {
   margin-bottom: 0;
 }
 
-/* line 170, sass/components/pages/_about-us.scss */
+/* line 173, sass/components/pages/_about-us.scss */
 .about-news-item__title {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -7263,7 +7267,7 @@ body.page-template-about-us-page .site-main {
   font-size: 3.6rem;
 }
 
-/* line 175, sass/components/pages/_about-us.scss */
+/* line 178, sass/components/pages/_about-us.scss */
 .about-news-item__content {
   background: rgba(255, 255, 255, 0.9);
   padding: 24px 24px 60px;
@@ -7274,13 +7278,13 @@ body.page-template-about-us-page .site-main {
   width: 100%;
 }
 
-/* line 186, sass/components/pages/_about-us.scss */
+/* line 189, sass/components/pages/_about-us.scss */
 .about-video {
   min-height: 500px;
   min-height: 50rem;
   position: relative;
 }
-/* line 189, sass/components/pages/_about-us.scss */
+/* line 192, sass/components/pages/_about-us.scss */
 .about-video:after {
   content: "";
   background-image: url('images/sprite-images-sc17eea70d9.png');
@@ -7296,7 +7300,7 @@ body.page-template-about-us-page .site-main {
   margin-left: -4.5rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 189, sass/components/pages/_about-us.scss */
+  /* line 192, sass/components/pages/_about-us.scss */
   .about-video:after {
     background-size: 215px 2793.5px;
     background-position: 0 -1859px;
@@ -7305,7 +7309,7 @@ body.page-template-about-us-page .site-main {
   }
 }
 
-/* line 199, sass/components/pages/_about-us.scss */
+/* line 202, sass/components/pages/_about-us.scss */
 .about-video__body {
   position: absolute;
   bottom: 0;
@@ -7318,7 +7322,7 @@ body.page-template-about-us-page .site-main {
   padding: 2.4rem;
   color: #ffffff;
 }
-/* line 208, sass/components/pages/_about-us.scss */
+/* line 211, sass/components/pages/_about-us.scss */
 .about-video__body:before {
   content: "";
   display: block;
@@ -7333,22 +7337,22 @@ body.page-template-about-us-page .site-main {
   border-bottom-color: #092764;
 }
 
-/* line 220, sass/components/pages/_about-us.scss */
+/* line 223, sass/components/pages/_about-us.scss */
 .about-video__title, a.about-video__link, a.about-history__link, a.about-careers__link {
   color: #ffffff;
 }
 
-/* line 225, sass/components/pages/_about-us.scss */
+/* line 228, sass/components/pages/_about-us.scss */
 .about-investor {
   padding-top: 0;
 }
-/* line 227, sass/components/pages/_about-us.scss */
+/* line 230, sass/components/pages/_about-us.scss */
 .about-investor .kicker {
   margin-top: 24px;
   margin-top: 2.4rem;
 }
 
-/* line 231, sass/components/pages/_about-us.scss */
+/* line 234, sass/components/pages/_about-us.scss */
 .about-investor__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -7358,19 +7362,19 @@ body.page-template-about-us-page .site-main {
   font-size: 3.6rem;
 }
 
-/* line 236, sass/components/pages/_about-us.scss */
+/* line 239, sass/components/pages/_about-us.scss */
 .about-leadership__image {
   min-height: 300px;
   min-height: 30rem;
   margin-bottom: 0;
 }
 
-/* line 241, sass/components/pages/_about-us.scss */
+/* line 244, sass/components/pages/_about-us.scss */
 .about-leadership__body {
   background: #092764;
   position: relative;
 }
-/* line 244, sass/components/pages/_about-us.scss */
+/* line 247, sass/components/pages/_about-us.scss */
 .about-leadership__body:before {
   content: "";
   display: block;
@@ -7385,7 +7389,7 @@ body.page-template-about-us-page .site-main {
   border-bottom-color: #092764;
 }
 
-/* line 256, sass/components/pages/_about-us.scss */
+/* line 259, sass/components/pages/_about-us.scss */
 .about-leadership__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -7396,7 +7400,7 @@ body.page-template-about-us-page .site-main {
   color: #ffffff;
 }
 
-/* line 261, sass/components/pages/_about-us.scss */
+/* line 264, sass/components/pages/_about-us.scss */
 a.about-leadership__button {
   color: #ffffff;
 }
@@ -7409,7 +7413,7 @@ a.about-leadership__button {
 		@include rem-fallback(padding-top, 1);
 	}
 }*/
-/* line 274, sass/components/pages/_about-us.scss */
+/* line 277, sass/components/pages/_about-us.scss */
 .page-template-about-us-page #menu-about-us-menu {
   background-color: #d7e7f2;
   padding: 25px 24px;
@@ -7501,7 +7505,7 @@ a.about-leadership__button {
   border-bottom-color: transparent;
 }
 
-/* line 279, sass/components/pages/_about-us.scss */
+/* line 282, sass/components/pages/_about-us.scss */
 .latest-updates {
   color: #ffffff;
   text-align: center;
@@ -7512,12 +7516,12 @@ a.about-leadership__button {
   min-height: 30rem;
   position: relative;
 }
-/* line 286, sass/components/pages/_about-us.scss */
+/* line 289, sass/components/pages/_about-us.scss */
 .latest-updates h2, .latest-updates .news-item--newsroom .news-item__title, .news-item--newsroom .latest-updates .news-item__title, .latest-updates .search article .search-item__title, .search article .latest-updates .search-item__title {
   text-align: center;
   color: #ffffff;
 }
-/* line 290, sass/components/pages/_about-us.scss */
+/* line 293, sass/components/pages/_about-us.scss */
 .latest-updates:after {
   content: "";
   display: block;
@@ -7534,7 +7538,7 @@ a.about-leadership__button {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 
-/* line 302, sass/components/pages/_about-us.scss */
+/* line 305, sass/components/pages/_about-us.scss */
 .tintup {
   max-width: 1400px;
   max-width: 140rem;
@@ -7542,13 +7546,13 @@ a.about-leadership__button {
 }
 
 @media (min-width: 530px) {
-  /* line 308, sass/components/pages/_about-us.scss */
+  /* line 311, sass/components/pages/_about-us.scss */
   .about-video:after {
     top: 30%;
   }
 }
 @media (min-width: 740px) {
-  /* line 316, sass/components/pages/_about-us.scss */
+  /* line 319, sass/components/pages/_about-us.scss */
   .about-panels__column {
     width: 48.93617%;
     clear: right;
@@ -7556,7 +7560,7 @@ a.about-leadership__button {
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 318, sass/components/pages/_about-us.scss */
+  /* line 321, sass/components/pages/_about-us.scss */
   .about-panels__column:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -7564,7 +7568,7 @@ a.about-leadership__button {
     margin-right: 0;
   }
 
-  /* line 322, sass/components/pages/_about-us.scss */
+  /* line 325, sass/components/pages/_about-us.scss */
   .about-our-story {
     margin-top: -130px;
     margin-top: -13rem;
@@ -7572,13 +7576,13 @@ a.about-leadership__button {
     padding: 2.4rem 3.6rem;
   }
 
-  /* line 326, sass/components/pages/_about-us.scss */
+  /* line 329, sass/components/pages/_about-us.scss */
   .about-newsroom-wrapper .slick-dots {
     left: 36px;
     left: 3.6rem;
   }
 
-  /* line 329, sass/components/pages/_about-us.scss */
+  /* line 332, sass/components/pages/_about-us.scss */
   .about-news-item, .about-news-item__content {
     padding-left: 36px;
     padding-left: 3.6rem;
@@ -7586,18 +7590,18 @@ a.about-leadership__button {
     padding-right: 3.6rem;
   }
 
-  /* line 333, sass/components/pages/_about-us.scss */
+  /* line 336, sass/components/pages/_about-us.scss */
   .about-video {
     margin-top: -190px;
     margin-top: -19rem;
   }
 
-  /* line 337, sass/components/pages/_about-us.scss */
+  /* line 340, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .wide-banner-image {
     min-height: 610px;
     min-height: 61rem;
   }
-  /* line 341, sass/components/pages/_about-us.scss */
+  /* line 344, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .menu-about-us-menu-container {
     width: 48.93617%;
     clear: right;
@@ -7606,19 +7610,19 @@ a.about-leadership__button {
     margin-right: 2.12766%;
     max-width: none;
   }
-  /* line 345, sass/components/pages/_about-us.scss */
+  /* line 348, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .wide-banner-blurb {
     bottom: 210px;
     bottom: 21rem;
   }
 
-  /* line 350, sass/components/pages/_about-us.scss */
+  /* line 353, sass/components/pages/_about-us.scss */
   .about-news-item {
     min-height: 500px;
     min-height: 50rem;
   }
 
-  /* line 354, sass/components/pages/_about-us.scss */
+  /* line 357, sass/components/pages/_about-us.scss */
   .about-leadership {
     width: 48.93617%;
     clear: right;
@@ -7627,7 +7631,7 @@ a.about-leadership__button {
     max-width: none;
   }
 
-  /* line 358, sass/components/pages/_about-us.scss */
+  /* line 361, sass/components/pages/_about-us.scss */
   .about-investor {
     margin: 0;
     clear: both;
@@ -7635,7 +7639,7 @@ a.about-leadership__button {
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 366, sass/components/pages/_about-us.scss */
+  /* line 369, sass/components/pages/_about-us.scss */
   .about-small-panels__column {
     width: 48.93617%;
     clear: right;
@@ -7643,7 +7647,7 @@ a.about-leadership__button {
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 368, sass/components/pages/_about-us.scss */
+  /* line 371, sass/components/pages/_about-us.scss */
   .about-small-panels__column:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -7652,7 +7656,7 @@ a.about-leadership__button {
   }
 }
 @media (min-width: 1024px) {
-  /* line 376, sass/components/pages/_about-us.scss */
+  /* line 379, sass/components/pages/_about-us.scss */
   .about-small-panels__column {
     width: 48.93617%;
     clear: right;
@@ -7660,7 +7664,7 @@ a.about-leadership__button {
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 378, sass/components/pages/_about-us.scss */
+  /* line 381, sass/components/pages/_about-us.scss */
   .about-small-panels__column:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -7668,7 +7672,7 @@ a.about-leadership__button {
     margin-right: 0;
   }
 
-  /* line 382, sass/components/pages/_about-us.scss */
+  /* line 385, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .menu-about-us-menu-container {
     width: 31.91489%;
     clear: right;
@@ -7677,7 +7681,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 385, sass/components/pages/_about-us.scss */
+  /* line 388, sass/components/pages/_about-us.scss */
   .about-leadership {
     width: 31.91489%;
     clear: right;
@@ -7686,7 +7690,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 388, sass/components/pages/_about-us.scss */
+  /* line 391, sass/components/pages/_about-us.scss */
   .about-investor {
     margin: 0;
     max-width: none;
@@ -7697,7 +7701,7 @@ a.about-leadership__button {
   }
 }
 @media (min-width: 1420px) {
-  /* line 400, sass/components/pages/_about-us.scss */
+  /* line 403, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .menu-about-us-menu-container {
     width: 23.40426%;
     clear: right;
@@ -7706,7 +7710,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 403, sass/components/pages/_about-us.scss */
+  /* line 406, sass/components/pages/_about-us.scss */
   .about-leadership {
     width: 23.40426%;
     clear: right;
@@ -7715,7 +7719,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 406, sass/components/pages/_about-us.scss */
+  /* line 409, sass/components/pages/_about-us.scss */
   .about-investor {
     margin: 0;
     max-width: none;
