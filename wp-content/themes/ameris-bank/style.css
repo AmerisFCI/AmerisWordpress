@@ -3157,41 +3157,52 @@ a:hover, a:active {
 /* line 8, sass/components/navigation/_utility-nav.scss */
 .utility-navigation a {
   color: #ffffff;
-  display: inline-block;
-  border-top: solid transparent;
-  border-top-width: 4px;
-  border-top-width: 0.4rem;
-  transition: border .5s;
+  display: block;
   padding: 24px 5px 5px;
   padding: 2.4rem 0.5rem 0.5rem;
   margin-left: 15px;
   margin-left: 1.5rem;
 }
-/* line 16, sass/components/navigation/_utility-nav.scss */
-.utility-navigation a:hover, .utility-navigation a:focus {
-  border-top-color: #d31145;
-}
-/* line 21, sass/components/navigation/_utility-nav.scss */
+/* line 15, sass/components/navigation/_utility-nav.scss */
 .utility-navigation .menu-item {
-  display: inline-block;
+  display: block;
 }
 
-@media (max-width: 529px) {
-  /* line 29, sass/components/navigation/_utility-nav.scss */
-  .utility-navigation {
-    display: none;
-  }
+/* line 24, sass/components/navigation/_utility-nav.scss */
+.main-navigation .utility-navigation > .menu {
+  padding-top: 24px;
+  padding-top: 2.4rem;
+  padding-bottom: 14px;
+  padding-bottom: 1.4rem;
 }
-@media (min-width: 530px) and (max-width: 1023px) {
-  /* line 35, sass/components/navigation/_utility-nav.scss */
-  .utility-navigation {
-    display: none;
-  }
+/* line 29, sass/components/navigation/_utility-nav.scss */
+.main-navigation .utility-navigation a {
+  margin-left: 0;
+  text-transform: none;
+  font-weight: normal;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
-@media (min-width: 1200px) {
-  /* line 42, sass/components/navigation/_utility-nav.scss */
+
+@media (min-width: 1024px) {
+  /* line 40, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     text-align: right;
+  }
+  /* line 43, sass/components/navigation/_utility-nav.scss */
+  .utility-navigation a {
+    display: inline-block;
+    border-top: solid transparent;
+    border-top-width: 4px;
+    border-top-width: 0.4rem;
+    transition: border .5s;
+  }
+  /* line 48, sass/components/navigation/_utility-nav.scss */
+  .utility-navigation a:hover, .utility-navigation a:focus {
+    border-top-color: #d31145;
+  }
+  /* line 53, sass/components/navigation/_utility-nav.scss */
+  .utility-navigation .menu-item {
+    display: inline-block;
   }
 }
 /* line 1, sass/components/navigation/_sidebar-nav.scss */
@@ -3402,6 +3413,14 @@ a:hover, a:active {
     height: 32px;
     width: 32px;
   }
+}
+
+/* line 47, sass/components/navigation/_search-box.scss */
+.main-navigation .search-form {
+  margin: 30px;
+  margin: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 3, sass/components/navigation/_social-links.scss */

@@ -42,3 +42,10 @@
 	}
 
 }
+
+// when inside main nav (mobile)
+.main-navigation .search-form {
+	@include rem-fallback( margin, 3 );
+	margin-left:auto;
+	margin-right:auto;
+}

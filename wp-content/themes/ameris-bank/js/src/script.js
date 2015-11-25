@@ -235,6 +235,50 @@
 })(jQuery);
 
 
+/**
+ * Move the secondary links and search bar into the mobile menu.
+ */
+/*
+div.nav-wrapper
+	nav.utility-navigation
+	form.search-form
+	nav.main-navigation
+ */
+function amerisOrganizeMobileMenu() {
+	var isMobile = jQuery( '#site-navigation .menu-toggle' ).is( ':visible' );
+	if ( isMobile ) {
+
+		// move utility nav into nav menu
+		jQuery( '#masthead .nav-wrapper > .utility-navigation' )
+			.detach()
+			.appendTo( '#primary-menu' )
+			.wrap( '<li class="menu-item utility-in-primary-menu"></li>' );
+
+		// move search form into nav menu
+		jQuery( '#masthead .nav-wrapper > .search-form' )
+			.detach()
+			.appendTo( '#primary-menu' )
+			.wrap( '<li class="menu-item search-in-primary-menu"></li>' );
+
+	} else {
+
+		// move utility nav back out of nav menu
+		jQuery( '#primary-menu .utility-navigation' )
+			.unwrap()
+			.detach()
+			.prependTo( '#masthead .nav-wrapper' );
+
+		// move search form back to after utility nav
+		jQuery( '#primary-menu .search-form' )
+			.unwrap()
+			.detach()
+			.insertAfter( '#masthead .utility-navigation' );
+
+	}
+}
+jQuery( document ).ready( amerisOrganizeMobileMenu );
+jQuery( window ).resize( amerisOrganizeMobileMenu );
+
 
 /**
  * Move the search bar to the mobile menu at mobile sizes. (Function below.)
@@ -258,8 +302,8 @@ function amerisPositionSearchBar() {
 	}
 
 }
-jQuery( document ).ready( amerisPositionSearchBar );
-jQuery( window ).resize( amerisPositionSearchBar );
+// jQuery( document ).ready( amerisPositionSearchBar );
+// jQuery( window ).resize( amerisPositionSearchBar );
 
 
 

@@ -7,41 +7,52 @@
 	}
 	a {
 		color: $white;
-		display: inline-block;
-		border-top: solid transparent;
-		@include rem-fallback(border-top-width, .4);
-		transition: border .5s;
+		display: block;
 		@include rem-fallback(padding, 2.4, .5, .5);
 		@include rem-fallback(margin-left, 1.5);
-		&:hover, &:focus {
-			border-top-color: $red;
-		}
 	}
 
 	.menu-item {
-		display: inline-block;
+		display: block;
 	}
 
 }
 
+// when inside main menu (mobile)
+.main-navigation .utility-navigation {
 
-@include breakpoint($mobile) {
-	.utility-navigation {
-		display: none;
+	> .menu {
+		@include rem-fallback( padding-top, 2.4 );
+		@include rem-fallback( padding-bottom, 1.4 );
 	}
+
+	a {
+		margin-left:0;
+		text-transform:none;
+		font-weight:normal;
+		font-family:$font-sansserif;
+	}
+
 }
 
-@include breakpoint($tablet) {
-	.utility-navigation {
-		display: none;
-	}
-}
-
-@include breakpoint($desktop) {
-
+// 1024+
+@include breakpoint($narrow-to-desktop) {
 	.utility-navigation {
 		text-align: right;
+		
+		a {
+			display:inline-block;
+			border-top: solid transparent;
+			@include rem-fallback(border-top-width, .4);
+			transition: border .5s;
+			&:hover, &:focus {
+				border-top-color: $red;
+			}
+		}
+
+		.menu-item {
+			display: inline-block;
+		}
 
 	}
-
 }
