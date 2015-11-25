@@ -1,6 +1,6 @@
 .slides {
 	height: 85vh;
-	background-color: $darkblue;
+	background-color: $brown;
 	color: $white;
 	position: relative;
 	z-index: 0;
@@ -17,7 +17,7 @@
 .slide__text-wrap {
 	position: relative;
 	z-index: 1;
-	text-shadow: 0 0 90px #000;
+	text-shadow: 5px 5px 80px #000;
 	padding-top: 8rem;
 	margin-top: 20vh;
 }
@@ -49,6 +49,7 @@
 		top: 0;
 		width: 100%;
 		height: auto;
+		opacity: .8;
 
 		&.slidewidth {
 			width: 100%;

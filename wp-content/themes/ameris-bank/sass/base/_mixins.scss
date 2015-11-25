@@ -332,6 +332,7 @@ $sprite-high-res-suffix: '-2x' !default;
 @mixin banner-image {
   overflow: hidden;
   position: relative;
+  background: $brown;
 
   img {
     position: absolute;
@@ -340,6 +341,7 @@ $sprite-high-res-suffix: '-2x' !default;
     left: 0;
     width: 100%;
     height: auto;
+    opacity: .8;
 
     &.slidewidth {
       width: 100%;
@@ -363,6 +365,7 @@ $sprite-high-res-suffix: '-2x' !default;
   font-style: italic;
   font-family: $font-branding;
   font-weight: 300;
+  text-shadow: 5px 5px 80px #000;
 
   span, em {
     display: inline-block;
