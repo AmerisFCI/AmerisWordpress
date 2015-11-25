@@ -6,12 +6,13 @@
 	a {
 		color: $white;
 		display: inline-block;
-		border-bottom: 1px solid transparent;
+		border-top: solid transparent;
+		@include rem-fallback(border-top-width, .4);
 		transition: border .5s;
-		@include rem-fallback(padding, 2, .5, .5);
+		@include rem-fallback(padding, 1.4, .5, .5);
 		@include rem-fallback(margin-left, 1.5);
 		&:hover, &:focus {
-			border-bottom-color: $white;
+			border-top-color: $red;
 		}
 	}
 

@@ -3130,36 +3130,38 @@ a:hover, a:active {
 .utility-navigation a {
   color: #ffffff;
   display: inline-block;
-  border-bottom: 1px solid transparent;
+  border-top: solid transparent;
+  border-top-width: 4px;
+  border-top-width: 0.4rem;
   transition: border .5s;
-  padding: 20px 5px 5px;
-  padding: 2rem 0.5rem 0.5rem;
+  padding: 14px 5px 5px;
+  padding: 1.4rem 0.5rem 0.5rem;
   margin-left: 15px;
   margin-left: 1.5rem;
 }
-/* line 13, sass/components/navigation/_utility-nav.scss */
+/* line 14, sass/components/navigation/_utility-nav.scss */
 .utility-navigation a:hover, .utility-navigation a:focus {
-  border-bottom-color: #ffffff;
+  border-top-color: #d31145;
 }
-/* line 18, sass/components/navigation/_utility-nav.scss */
+/* line 19, sass/components/navigation/_utility-nav.scss */
 .utility-navigation .menu-item {
   display: inline-block;
 }
 
 @media (max-width: 529px) {
-  /* line 26, sass/components/navigation/_utility-nav.scss */
+  /* line 27, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     display: none;
   }
 }
 @media (min-width: 530px) and (max-width: 1023px) {
-  /* line 32, sass/components/navigation/_utility-nav.scss */
+  /* line 33, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  /* line 39, sass/components/navigation/_utility-nav.scss */
+  /* line 40, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     text-align: right;
   }
