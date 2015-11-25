@@ -80,7 +80,7 @@ class Ameris_Page_Callout_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		$instance = wp_parse_args( $instance, $this->defaults );
-		$instance = array_intersect_key( $instance, $this->defaults );
+		$instance = array_intersect_key( $instance, array_merge( array( 'title' => '' ), $this->defaults ) );
 
 		foreach( $instance as $key => $value ) {
 			$label = ucwords( str_replace( '_', ' ', $key ) );
@@ -113,6 +113,15 @@ class Ameris_Page_Callout_Widget extends WP_Widget {
 				<?php } ?>
 			</p><?php
 		}
+
+		// hidden title
+		?><input
+			type="hidden"
+			id="<?php echo $this->get_field_id( 'title' ); ?>"
+			name="<?php echo $this->get_field_name( 'title' ); ?>"
+			value="<?php echo esc_attr( $instance['title'] ); ?>"
+		/><?php
+
 	}
 
 	/**
@@ -142,6 +151,12 @@ class Ameris_Page_Callout_Widget extends WP_Widget {
 					break;
 			}
 		}
+
+		// force the title
+		$title = $instance['label'];
+		if ( !$title )
+			$title = get_the_title( $instance['page'] );
+		$instance['title'] = $title;
 
 		return $instance;
 	}
