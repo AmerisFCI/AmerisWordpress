@@ -501,7 +501,9 @@ $sprite-high-res-suffix: '-2x' !default;
   }
   li {
     list-style: none;
-    @include rem-fallback(margin-bottom, 2);
+    ul {
+      @include rem-fallback(margin-bottom, 2);
+    }
   }
   .children {
     margin: 0;

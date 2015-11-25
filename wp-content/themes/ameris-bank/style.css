@@ -3256,19 +3256,22 @@ a:hover, a:active {
 /* line 502, sass/base/_mixins.scss */
 .sidebar-menu li {
   list-style: none;
+}
+/* line 504, sass/base/_mixins.scss */
+.sidebar-menu li ul {
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
-/* line 506, sass/base/_mixins.scss */
+/* line 508, sass/base/_mixins.scss */
 .sidebar-menu .children {
   margin: 0;
 }
-/* line 508, sass/base/_mixins.scss */
+/* line 510, sass/base/_mixins.scss */
 .sidebar-menu .children li {
   margin-bottom: 5px;
   margin-bottom: 0.5rem;
 }
-/* line 511, sass/base/_mixins.scss */
+/* line 513, sass/base/_mixins.scss */
 .sidebar-menu .children a {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -3276,12 +3279,12 @@ a:hover, a:active {
   padding-bottom: 0.2rem;
   margin: 0;
 }
-/* line 518, sass/base/_mixins.scss */
+/* line 520, sass/base/_mixins.scss */
 .sidebar-menu .view-all a {
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
 }
-/* line 521, sass/base/_mixins.scss */
+/* line 523, sass/base/_mixins.scss */
 .sidebar-menu .view-all a:hover {
   border-bottom-color: transparent;
 }
@@ -7702,19 +7705,22 @@ a.about-leadership__button {
 /* line 502, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu li {
   list-style: none;
+}
+/* line 504, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu li ul {
   margin-bottom: 20px;
   margin-bottom: 2rem;
 }
-/* line 506, sass/base/_mixins.scss */
+/* line 508, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .children {
   margin: 0;
 }
-/* line 508, sass/base/_mixins.scss */
+/* line 510, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .children li {
   margin-bottom: 5px;
   margin-bottom: 0.5rem;
 }
-/* line 511, sass/base/_mixins.scss */
+/* line 513, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .children a {
   text-transform: none;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -7722,12 +7728,12 @@ a.about-leadership__button {
   padding-bottom: 0.2rem;
   margin: 0;
 }
-/* line 518, sass/base/_mixins.scss */
+/* line 520, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .view-all a {
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
 }
-/* line 521, sass/base/_mixins.scss */
+/* line 523, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .view-all a:hover {
   border-bottom-color: transparent;
 }
@@ -8713,6 +8719,8 @@ tbody tr:nth-last-child(1) a {
   transition: background-color .2s, box-shadow .2s;
   text-decoration: none;
   display: inline-block;
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
 }
 /* line 149, sass/base/_mixins.scss */
 tbody tr:nth-last-child(1) a:hover, tbody tr:nth-last-child(1) a:active, tbody tr:nth-last-child(1) a:focus {
@@ -8728,7 +8736,7 @@ tbody tr:nth-last-child(1) a:hover, tbody tr:nth-last-child(1) a:visited, tbody 
   color: #ffffff;
 }
 
-/* line 24, sass/components/_tables.scss */
+/* line 25, sass/components/_tables.scss */
 td, th {
   vertical-align: middle;
   font-size: 15px;
@@ -8736,19 +8744,19 @@ td, th {
   padding: 10px;
   padding: 1rem;
 }
-/* line 28, sass/components/_tables.scss */
+/* line 29, sass/components/_tables.scss */
 td:nth-child(2n+1), th:nth-child(2n+1) {
   background: rgba(215, 231, 242, 0.5);
 }
-/* line 32, sass/components/_tables.scss */
+/* line 33, sass/components/_tables.scss */
 td:nth-child(2n), th:nth-child(2n) {
   background: rgba(215, 231, 242, 0.25);
 }
-/* line 36, sass/components/_tables.scss */
+/* line 37, sass/components/_tables.scss */
 td:nth-child(1), th:nth-child(1) {
   background: transparent;
 }
-/* line 40, sass/components/_tables.scss */
+/* line 41, sass/components/_tables.scss */
 td:nth-child(n+2), th:nth-child(n+2) {
   text-align: center;
 }

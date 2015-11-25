@@ -18,6 +18,7 @@ tbody tr:nth-last-child(1) {
 		@include red-button;
 		text-decoration: none;
 		display: inline-block;
+		@include rem-fallback(margin-bottom, 1.4);
 	}
 }
 
