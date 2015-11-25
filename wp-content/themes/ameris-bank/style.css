@@ -9020,6 +9020,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   clear: both;
   padding-right: 42px;
   padding-right: 4.2rem;
+  text-align: center;
 }
 /* line 150, sass/base/_mixins.scss */
 .button-cta:hover, .button-cta:active, .button-cta:focus {
@@ -9062,24 +9063,24 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   left: 1.9rem;
 }
 
-/* line 14, sass/components/_wysiwyg.scss */
+/* line 15, sass/components/_wysiwyg.scss */
 .intro {
   font-weight: 300;
   font-size: 22px;
   font-size: 2.2rem;
 }
 
-/* line 21, sass/components/_wysiwyg.scss */
+/* line 22, sass/components/_wysiwyg.scss */
 .entry-content .button, .entry-content .button-cta {
   background: none;
   padding: 0;
   box-shadow: none;
 }
-/* line 25, sass/components/_wysiwyg.scss */
+/* line 26, sass/components/_wysiwyg.scss */
 .entry-content .button:after, .entry-content .button-cta:after {
   content: none;
 }
-/* line 30, sass/components/_wysiwyg.scss */
+/* line 31, sass/components/_wysiwyg.scss */
 .entry-content .button a, .entry-content a.button {
   background-color: #092764;
   color: #ffffff;
@@ -9105,7 +9106,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 .entry-content .button a:hover, .entry-content .button a:visited, .entry-content .button a:focus, .entry-content a.button:hover, .entry-content a.button:visited, .entry-content a.button:focus {
   color: #ffffff;
 }
-/* line 37, sass/components/_wysiwyg.scss */
+/* line 38, sass/components/_wysiwyg.scss */
 .entry-content .button-cta a, .entry-content a.button-cta {
   background-color: #d31145;
   color: #ffffff;

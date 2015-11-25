@@ -9,6 +9,7 @@ a.view-all, .view-all a {
 .button-cta {
 	@include red-button-cta;
 	@include cta-arrow-right;
+	text-align: center;
 }
 
 .intro {
