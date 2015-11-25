@@ -46,23 +46,7 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 
 				<?php get_template_part( 'template-parts/resources-guides' ); ?>
 				
-				<?php if ( get_field( 'featured_video' ) ) {
-					foreach( get_field( 'featured_video' ) as $post ) {
-						setup_postdata( $post ); ?>
-						<div class="featured-video">
-							<div class="featured-video__image">
-								<?php the_post_thumbnail( 'featured_video' ); ?>
-							</div>
-							<div class="featured-video__text">
-								<div class="featured-video__heading">Video Learning Series</div>
-								<div class="featured-video__title"><?php the_title(); ?></div>
-								<div class="featured-video__date">Posted <?php the_time( 'm.d.Y | h:i a' ); ?></div>
-								<div class="featured-video__excerpt"><?php the_excerpt(); ?></div>
-							</div>
-						</div>
-					<?php }
-					wp_reset_postdata();
-				} ?>
+				<?php get_template_part( 'template-parts/featured-video' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
