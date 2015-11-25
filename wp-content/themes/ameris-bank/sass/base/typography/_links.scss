@@ -1,5 +1,8 @@
-a {
-
+p a, ul a, li a {
+	text-decoration: none;
+	&:hover, &:active, &:focus {
+		text-decoration: underline;
+	}
 }
 
 .more-link {

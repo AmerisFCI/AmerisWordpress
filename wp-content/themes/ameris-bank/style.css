@@ -755,7 +755,16 @@ dd {
 		@include clearfix();
 	}
 }*/
-/* line 5, sass/base/typography/_links.scss */
+/* line 1, sass/base/typography/_links.scss */
+p a, ul a, li a {
+  text-decoration: none;
+}
+/* line 3, sass/base/typography/_links.scss */
+p a:hover, p a:active, p a:focus, ul a:hover, ul a:active, ul a:focus, li a:hover, li a:active, li a:focus {
+  text-decoration: underline;
+}
+
+/* line 8, sass/base/typography/_links.scss */
 .more-link {
   font-style: normal;
   font-size: 18px;
@@ -8059,10 +8068,18 @@ a.about-leadership__button {
     padding-bottom: 0;
   }
   /* line 262, sass/components/pages/_history.scss */
+  .timeline .timeline-item--large .timeline-item__content .timeline-item__date {
+    width: 100%;
+  }
+  /* line 266, sass/components/pages/_history.scss */
+  .timeline .timeline-item--large .timeline-item__content .timeline-item__inner-content {
+    width: 100%;
+  }
+  /* line 269, sass/components/pages/_history.scss */
   .timeline .timeline-item--large .timeline-item__content p {
     margin-bottom: 0;
   }
-  /* line 265, sass/components/pages/_history.scss */
+  /* line 272, sass/components/pages/_history.scss */
   .timeline .timeline-item--large .timeline-item__content:after {
     left: 0;
     right: 0;
@@ -8071,32 +8088,32 @@ a.about-leadership__button {
   }
 }
 @media (max-width: 739px) {
-  /* line 283, sass/components/pages/_history.scss */
+  /* line 290, sass/components/pages/_history.scss */
   .timeline .timeline-item--large .timeline-item__content .timeline-item__date {
     width: 45%;
   }
-  /* line 287, sass/components/pages/_history.scss */
+  /* line 294, sass/components/pages/_history.scss */
   .timeline .timeline-item--large .timeline-item__content .timeline-item__inner-content {
     width: 55%;
   }
-  /* line 295, sass/components/pages/_history.scss */
+  /* line 302, sass/components/pages/_history.scss */
   .timeline .timeline-item .timeline-item__content {
     width: 100%;
     left: 0;
     right: 0;
   }
-  /* line 299, sass/components/pages/_history.scss */
+  /* line 306, sass/components/pages/_history.scss */
   .timeline .timeline-item .timeline-item__content:after {
     left: 0;
     right: 0;
     margin: auto;
   }
-  /* line 308, sass/components/pages/_history.scss */
+  /* line 315, sass/components/pages/_history.scss */
   .timeline .timeline-item--small .timeline-item__content {
     margin: 0;
     margin-top: 100px;
   }
-  /* line 311, sass/components/pages/_history.scss */
+  /* line 318, sass/components/pages/_history.scss */
   .timeline .timeline-item--small .timeline-item__content:after {
     border-color: transparent;
     border-bottom-color: #d7e7f2;
@@ -8104,7 +8121,7 @@ a.about-leadership__button {
     width: 0;
     height: 0;
   }
-  /* line 319, sass/components/pages/_history.scss */
+  /* line 326, sass/components/pages/_history.scss */
   .timeline .timeline-item--small .timeline-item__image {
     text-align: center;
     margin: 10px;
@@ -8112,17 +8129,17 @@ a.about-leadership__button {
     margin-bottom: 20px;
     margin-bottom: 2rem;
   }
-  /* line 327, sass/components/pages/_history.scss */
+  /* line 334, sass/components/pages/_history.scss */
   .timeline .timeline-item--small.timeline-item--has-image .timeline-item__dot {
     margin-top: 35px;
   }
-  /* line 330, sass/components/pages/_history.scss */
+  /* line 337, sass/components/pages/_history.scss */
   .timeline .timeline-item--small.timeline-item--has-image .timeline-item__date {
     margin-top: 20px;
   }
 }
 @media (max-width: 529px) {
-  /* line 341, sass/components/pages/_history.scss */
+  /* line 348, sass/components/pages/_history.scss */
   .timeline .timeline-item--small .timeline-item__image {
     margin: -30px;
     margin: -3rem;
