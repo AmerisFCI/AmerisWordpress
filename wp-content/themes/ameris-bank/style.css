@@ -3133,7 +3133,11 @@ a:hover, a:active {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
 }
-/* line 6, sass/components/navigation/_utility-nav.scss */
+/* line 5, sass/components/navigation/_utility-nav.scss */
+.utility-navigation .current-menu-item a {
+  border-top-color: #d31145;
+}
+/* line 8, sass/components/navigation/_utility-nav.scss */
 .utility-navigation a {
   color: #ffffff;
   display: inline-block;
@@ -3146,29 +3150,29 @@ a:hover, a:active {
   margin-left: 15px;
   margin-left: 1.5rem;
 }
-/* line 14, sass/components/navigation/_utility-nav.scss */
-.utility-navigation a:hover, .utility-navigation a:focus, .utility-navigation a.current-menu-item {
+/* line 16, sass/components/navigation/_utility-nav.scss */
+.utility-navigation a:hover, .utility-navigation a:focus {
   border-top-color: #d31145;
 }
-/* line 19, sass/components/navigation/_utility-nav.scss */
+/* line 21, sass/components/navigation/_utility-nav.scss */
 .utility-navigation .menu-item {
   display: inline-block;
 }
 
 @media (max-width: 529px) {
-  /* line 27, sass/components/navigation/_utility-nav.scss */
+  /* line 29, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     display: none;
   }
 }
 @media (min-width: 530px) and (max-width: 1023px) {
-  /* line 33, sass/components/navigation/_utility-nav.scss */
+  /* line 35, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  /* line 40, sass/components/navigation/_utility-nav.scss */
+  /* line 42, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     text-align: right;
   }

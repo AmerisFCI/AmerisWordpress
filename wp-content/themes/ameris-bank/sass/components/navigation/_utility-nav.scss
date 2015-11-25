@@ -2,7 +2,9 @@
 	font-family: $font-sansserif;
 	@include rem-fallback(font-size, 1.6);
 	@include rem-fallback(margin-bottom, 1.4);
-
+	.current-menu-item a {
+		border-top-color: $red;
+	}
 	a {
 		color: $white;
 		display: inline-block;
@@ -11,7 +13,7 @@
 		transition: border .5s;
 		@include rem-fallback(padding, 2.4, .5, .5);
 		@include rem-fallback(margin-left, 1.5);
-		&:hover, &:focus, &.current-menu-item {
+		&:hover, &:focus {
 			border-top-color: $red;
 		}
 	}
