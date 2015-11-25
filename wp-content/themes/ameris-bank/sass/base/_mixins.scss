@@ -363,7 +363,7 @@ $sprite-high-res-suffix: '-2x' !default;
   span, em {
     display: inline-block;
     position: relative;
-    z-index: 10;
+    z-index: 5;
     &:after {
       content: "";
       display: block;
