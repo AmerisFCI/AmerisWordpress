@@ -51,7 +51,7 @@
 
 input.newsletter-signup__email {
 	margin-bottom: 0;
-	@include rem-fallback(padding, .8, 1, .5, 1);
+	@include rem-fallback(padding, 1, 1, .9, 1);
 	&:focus {
 		border-color: $white;
 	}
@@ -60,7 +60,7 @@ input.newsletter-signup__email {
 input.newsletter-signup__submit {
 	@include red-button;
 	border: 1px solid $red;
-	@include rem-fallback(padding, .8, 2, .9, 1);
+	@include rem-fallback(padding, .4, 2, .9, 1);
 	@include rem-fallback(padding-left, 4.2);
 }
 
@@ -72,7 +72,7 @@ input.newsletter-signup__submit {
 		box-sizing: border-box;
 		@include rem-fallback(font-size, 1.8);
 		float: left;
-		line-height: 1;
+		line-height: 1.6;
 		@include rem-fallback(height, 3.8);
 		width: 100%;
 	}
@@ -158,6 +158,7 @@ footer .menu-item {
 
 	input.newsletter-signup__email {
 		@include rem-fallback(padding-right, 2);
+		@include rem-fallback(width, 25);
 	}
 
 	input.newsletter-signup__submit {

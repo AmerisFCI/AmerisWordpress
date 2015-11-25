@@ -1,7 +1,7 @@
 .social-links {
 
 	li {
-		@include rem-fallback(margin-left, 1);
+		@include rem-fallback(margin, .5, 0, 0, 1);
 	}
 
 	a {
