@@ -2411,7 +2411,7 @@ a:hover, a:active {
     left: 0;
     width: 100%;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
   }
@@ -2628,7 +2628,7 @@ a:hover, a:active {
     border-bottom: 2px solid transparent;
     text-transform: none;
     transition: all .2s;
-    opacity: .7;
+    opacity: .6;
   }
   /* line 228, sass/base/_mixins.scss */
   .toggle-sub__parent > a:after {
