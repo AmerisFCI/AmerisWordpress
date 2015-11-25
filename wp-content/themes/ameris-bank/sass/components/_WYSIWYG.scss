@@ -10,6 +10,9 @@ a.view-all, .view-all a {
 	@include red-button-cta;
 	@include cta-arrow-right;
 	text-align: center;
+	a:hover, a:focus {
+		text-decoration: none;
+	}
 }
 
 .intro {
