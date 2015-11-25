@@ -109,7 +109,7 @@
 	.search-form {
 		clear: right;
 		@include rem-fallback(width, 23);
-		@include rem-fallback(top, .7);
+		@include rem-fallback(top, .2);
 	}
 
 }
@@ -117,5 +117,9 @@
 @include breakpoint($desktop) {
 	.site-branding {
 		@include rem-fallback(width, 20);
+	}
+	.search-form {
+		@include rem-fallback(width, 23);
+		@include rem-fallback(top, .6);
 	}
 }

@@ -8,7 +8,7 @@
 		&[type="text"] {
 			width: 100%;
 			margin-bottom: 0;
-			@include rem-fallback(padding, .8, 4.8, .3, 1);
+			@include rem-fallback(padding, 1.2, 4.8, .8, 1);
 			&:focus {
 				border-color: $text-color;
 			}
@@ -34,7 +34,7 @@
 		content: "";
 		display: block;
 		position: absolute;
-		top: 0;
+		@include rem-fallback(top, .4);
 		@include rem-fallback(right, .5);
 		@include use-sprite(icon-search-magnify);
 		pointer-events: none;

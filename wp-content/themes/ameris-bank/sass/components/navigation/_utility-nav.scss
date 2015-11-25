@@ -1,7 +1,7 @@
 .utility-navigation {
 	font-family: $font-sansserif;
 	@include rem-fallback(font-size, 1.6);
-	@include rem-fallback(margin-bottom, 2);
+	@include rem-fallback(margin-bottom, 1.4);
 
 	a {
 		color: $white;
@@ -9,7 +9,7 @@
 		border-top: solid transparent;
 		@include rem-fallback(border-top-width, .4);
 		transition: border .5s;
-		@include rem-fallback(padding, 1.4, .5, .5);
+		@include rem-fallback(padding, 2.4, .5, .5);
 		@include rem-fallback(margin-left, 1.5);
 		&:hover, &:focus {
 			border-top-color: $red;

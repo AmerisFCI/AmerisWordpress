@@ -485,6 +485,7 @@
 			> a {
 				border-color: $red;
 				opacity: 1;
+				background: $white;
 			}
 			.tab-container {
 				@include element-invisible-off;
@@ -572,7 +573,7 @@
 		@include red-button-cta;
 		@include cta-arrow-right;
 		display: inline-block;
-		@include rem-fallback(padding, .8, 2, 1.5, 1.5);
+		@include rem-fallback(padding, .8, 6, 1.5, 1.5);
 		@include rem-fallback(font-size, 1.6);
 		@include rem-fallback(margin-top, 1.4);
 		margin-right: auto;
@@ -608,7 +609,7 @@
 	}
 	.nav-menu {
 		a {
-			@include rem-fallback(padding, 1.5, 1.5, 2);
+			@include rem-fallback(padding, 1.8, 1.5, 3);
 			@include rem-fallback(font-size, 1.8);
 		}
 		li a {
@@ -628,7 +629,7 @@
 		}
 	}
 	.sba-nav .nav-cta a {
-		@include rem-fallback(padding, 1.4, 3, 1.8);
+		@include rem-fallback(padding, 1.4, 6, 1.8, 3);
 		@include rem-fallback(font-size, 1.8);
 	}
 	.toggle-sub__parent {
@@ -708,7 +709,7 @@
 @include breakpoint($wide) {
 	.nav-menu {
 		a {
-			@include rem-fallback(padding, 1.5, 2, 2);
+			@include rem-fallback(padding, 1.8, 2, 3);
 			@include rem-fallback(font-size, 1.8);
 		}
 		li a {
@@ -733,7 +734,7 @@
 		@include rem-fallback(margin-right, 1);
 	}
 	.sba-nav .nav-cta a {
-		@include rem-fallback(padding, 1.7, 3, 2);
+		@include rem-fallback(padding, 1.7, 6, 2, 3);
 		@include rem-fallback(font-size, 2.1);
 	}
 }
