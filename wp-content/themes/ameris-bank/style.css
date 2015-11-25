@@ -3586,13 +3586,22 @@ a:hover, a:active {
   padding: 0.4rem;
   margin: 0px 2px 0px 0px;
   margin: 0rem 0.2rem 0rem 0rem;
+  border-bottom: solid transparent;
+  transition: border-color .2s;
+  border-bottom-width: 3px;
+  border-bottom-width: 0.3rem;
 }
-/* line 12, sass/components/navigation/_pager.scss */
+/* line 14, sass/components/navigation/_pager.scss */
+.pagination a.page-numbers:hover, .pagination a.page-numbers:focus {
+  border-bottom-color: #d31145;
+}
+/* line 17, sass/components/navigation/_pager.scss */
 .pagination .current {
   color: #3d3d3d;
+  border-bottom-color: #d31145;
 }
-/* line 15, sass/components/navigation/_pager.scss */
-.pagination .next, .pagination .prev {
+/* line 21, sass/components/navigation/_pager.scss */
+.pagination a.next, .pagination a.prev {
   text-indent: -9999px;
   display: inline-block;
   box-sizing: initial;
@@ -3601,9 +3610,15 @@ a:hover, a:active {
   position: relative;
   top: 2px;
   top: 0.2rem;
+  transition: left .2s;
+  left: 0;
 }
-/* line 23, sass/components/navigation/_pager.scss */
-.pagination .prev {
+/* line 30, sass/components/navigation/_pager.scss */
+.pagination a.next:hover, .pagination a.next:focus, .pagination a.prev:hover, .pagination a.prev:focus {
+  border-bottom-color: transparent;
+}
+/* line 34, sass/components/navigation/_pager.scss */
+.pagination a.prev {
   background-image: url('images/sprite-images-sc17eea70d9.png');
   background-position: 0 -484px;
   background-repeat: no-repeat;
@@ -3614,16 +3629,21 @@ a:hover, a:active {
   margin: 0rem 1rem 0rem 0rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 23, sass/components/navigation/_pager.scss */
-  .pagination .prev {
+  /* line 34, sass/components/navigation/_pager.scss */
+  .pagination a.prev {
     background-size: 215px 2793.5px;
     background-position: 0 -223px;
     height: 14px;
     width: 9px;
   }
 }
-/* line 27, sass/components/navigation/_pager.scss */
-.pagination .next {
+/* line 37, sass/components/navigation/_pager.scss */
+.pagination a.prev:hover, .pagination a.prev:focus {
+  left: -3px;
+  left: -0.3rem;
+}
+/* line 41, sass/components/navigation/_pager.scss */
+.pagination a.next {
   background-image: url('images/sprite-images-sc17eea70d9.png');
   background-position: 0 -682px;
   background-repeat: no-repeat;
@@ -3634,13 +3654,18 @@ a:hover, a:active {
   margin: 0rem 0rem 0rem 1rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 27, sass/components/navigation/_pager.scss */
-  .pagination .next {
+  /* line 41, sass/components/navigation/_pager.scss */
+  .pagination a.next {
     background-size: 215px 2793.5px;
     background-position: 0 -322px;
     height: 14px;
     width: 9px;
   }
+}
+/* line 45, sass/components/navigation/_pager.scss */
+.pagination a.next:hover:hover, .pagination a.next:hover:focus, .pagination a.next:focus:hover, .pagination a.next:focus:focus {
+  left: 3px;
+  left: 0.3rem;
 }
 
 /* line 1, sass/components/sections/_header.scss */
@@ -6387,7 +6412,12 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   clear: both;
 }
 
-/* line 9, sass/components/pages/landing/_solutions.scss */
+/* line 7, sass/components/pages/landing/_solutions.scss */
+.solution__description {
+  text-align: center;
+}
+
+/* line 13, sass/components/pages/landing/_solutions.scss */
 .solution .attachment-landing-solution {
   display: block;
   margin: 0 auto;
@@ -6395,7 +6425,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   margin-bottom: 1rem;
 }
 
-/* line 17, sass/components/pages/landing/_solutions.scss */
+/* line 21, sass/components/pages/landing/_solutions.scss */
 .solution__title {
   font-style: normal;
   font-size: 18px;
@@ -6407,7 +6437,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   margin-bottom: 1.5rem;
 }
 
-/* line 21, sass/components/pages/landing/_solutions.scss */
+/* line 25, sass/components/pages/landing/_solutions.scss */
 .solution__link {
   padding: 5px 0px;
   padding: 0.5rem 0rem;
@@ -6433,7 +6463,12 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 }
 
 @media (min-width: 740px) {
-  /* line 26, sass/components/pages/landing/_solutions.scss */
+  /* line 30, sass/components/pages/landing/_solutions.scss */
+  .solution__description {
+    text-align: left;
+  }
+
+  /* line 33, sass/components/pages/landing/_solutions.scss */
   .solution {
     width: 31.42857%;
     clear: right;
@@ -6441,14 +6476,14 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
     margin-left: 0;
     margin-right: 2.85714%;
   }
-  /* line 28, sass/components/pages/landing/_solutions.scss */
+  /* line 35, sass/components/pages/landing/_solutions.scss */
   .solution:nth-child(3n) {
     width: 31.42857%;
     clear: right;
     float: right;
     margin-right: 0;
   }
-  /* line 31, sass/components/pages/landing/_solutions.scss */
+  /* line 38, sass/components/pages/landing/_solutions.scss */
   .solution:nth-child(3n+1) {
     clear: both;
   }

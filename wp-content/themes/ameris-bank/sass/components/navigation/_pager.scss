@@ -6,26 +6,45 @@
 			text-decoration: none;
 			@include rem-fallback(padding, .4);
 			@include rem-fallback(margin, 0, .2, 0, 0);
+			border-bottom: solid transparent;
+			transition: border-color .2s;
+			@include rem-fallback(border-bottom-width, .3);
 		}
 	}
-	.page-numbers {}
+	a.page-numbers:hover, a.page-numbers:focus {
+		border-bottom-color: $red;
+	}
 	.current {
 		color: $text-color;
+		border-bottom-color: $red;
 	}
-	.next, .prev {
+	a.next, a.prev {
 		text-indent: -9999px;
 		display: inline-block;
 		box-sizing: initial;
 		@include rem-fallback(padding, 0, .4);
 		position: relative;
 		@include rem-fallback(top, .2);
+		transition: left .2s;
+		left: 0;
+		&:hover, &:focus {
+			border-bottom-color: transparent;
+		}
 	}
-	.prev {
+	a.prev {
 		@include use-sprite(arrow-red-left-small);
 		@include rem-fallback(margin, 0, 1, 0, 0);
+		&:hover, &:focus {
+			@include rem-fallback(left, -.3);
+		}
 	}
-	.next {
+	a.next {
 		@include use-sprite(arrow-red-right-small);
 		@include rem-fallback(margin, 0, 0, 0, 1);
+		&:hover, &:focus {
+			&:hover, &:focus {
+				@include rem-fallback(left, .3);
+			}
+		}
 	}
 }

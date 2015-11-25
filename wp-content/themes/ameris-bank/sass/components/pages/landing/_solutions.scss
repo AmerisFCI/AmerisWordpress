@@ -4,6 +4,10 @@
 	@include clearfix();
 }
 
+.solution__description {
+	text-align: center;
+}
+
 .solution {
 
 	.attachment-landing-solution {
@@ -23,6 +27,9 @@
 }
 
 @include breakpoint($tablet-wide-up) {
+	.solution__description {
+		text-align: left;
+	}
 	.solution {
 		@include float-span(3);
 		&:nth-child(3n) {
