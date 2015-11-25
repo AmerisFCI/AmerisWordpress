@@ -6,6 +6,10 @@ input, textarea {
 	color: $red;
 }
 
+.ninja-forms-required-items {
+	@include rem-fallback(margin-bottom, 1.4);
+}
+
 .hp-wrap {
 	@include element-invisible;
 }
@@ -104,10 +108,10 @@ textarea,
 			float: right;
 		}
 		label {
-			width: 25%;
+			width: 27%;
 			float: left;
 			clear: both;
-			margin-right: 10%;
+			margin-right: 8%;
 			@include rem-fallback(padding, 1.4, 0);
 			@include rem-fallback(font-size, 1.8);
 		}

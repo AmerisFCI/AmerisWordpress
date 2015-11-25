@@ -1,6 +1,10 @@
 @import "landing/solutions";
 @import "landing/tools";
 
+h2.landing-heading {
+	@include rem-fallback(margin-top, 1.4);
+}
+
 
 @include breakpoint($narrow-to-desktop) {
 	.quick-links {
