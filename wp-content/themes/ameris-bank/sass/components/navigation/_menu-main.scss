@@ -109,7 +109,7 @@
 	@include rem-fallback(top, 3.6);
 	@include rem-fallback(right, 5);
 	background: transparent;
-	&:hover, &:active {
+	&:hover, &:active, &:focus {
 		background: transparent;
 	}
 }
@@ -227,10 +227,14 @@
 				transition: all .3s;
 				margin-right:-2rem;
 			}
-			&:hover {
+			&:hover, &:focus, &:active {
 				background-color: transparent;
+				text-decoration: none;
 			}
-			&:hover:after {
+			&:focus {
+				text-decoration: underline;
+			}
+			&:hover:after, &:focus:after {
 				@include rem-fallback(left, .5);
 			}
 		}
@@ -240,6 +244,9 @@
 			@include rem-fallback(font-size, 1.4);
 			border-bottom-width: 0;
 			margin-bottom: 0;
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
 			&:after {
 				content: none;
 			}
@@ -346,6 +353,12 @@
 				//@include rem-fallback(border-bottom-width, .2);
 				font-family: $font-heading-bold;
 				text-transform: uppercase;
+				&:hover, &:active {
+					text-decoration: none;
+				}
+				&:focus {
+					text-decoration: underline;
+				}
 			}
 		}
 
@@ -356,8 +369,11 @@
 			a {
 				//border-bottom-width: 0;
 				margin-bottom: 0;
-				font-family: $font-heading;
 				text-transform: none;
+				font-family: $font-heading;
+				&:hover, &:active {
+					text-decoration: underline;
+				}
 			}
 		}
 		
@@ -450,7 +466,7 @@
 			transition: all .2s;
 			opacity: .7;
 			
-			&:hover {
+			&:hover, &:focus, &:active {
 				background: $white;
 			}
 		}
@@ -509,7 +525,7 @@
 		background: rgba(255, 255, 255, .8);
 	}
 
-	&:hover {
+	&:hover, &:focus, &:active {
 		> .sub-menu {
 			//@include element-invisible-off;
 			display: table;
@@ -555,9 +571,12 @@
 	.nav-cta a {
 		@include red-button-cta;
 		@include cta-arrow-right;
+		display: inline-block;
 		@include rem-fallback(padding, .8, 2, 1.5, 1.5);
 		@include rem-fallback(font-size, 1.6);
 		@include rem-fallback(margin-top, 1.4);
+		margin-right: auto;
+		margin-left: auto;
 		border-bottom: none;
 		text-transform: none;
 	}
@@ -604,7 +623,7 @@
 			}
 		}
 		.toggle-sub > .sub-menu:before {
-			width: 53%;
+			width: 50%;
 			left: 30%;
 		}
 	}
@@ -616,9 +635,30 @@
 		> a {
 			width: 30%;
 		}
-		&.hover .tab-container, &.visible-tab .tab-container, &.focus .tab-container {
-			width: 70% !important;
+		&.hover, &.visible-tab, &.focus {
+			background: $white;
+			.tab-container {
+				width: 70% !important;
+			}
 		}
+	}
+	.tab-container {
+		> .item-description {
+			width: 71%;
+			@include rem-fallback(padding, 3.6, 3.6, 0);
+		}
+		> .sub-menu {
+			width: 71%;
+			@include rem-fallback(padding, 0, 2.6, 3.6);
+		}
+		.right-container {
+			width: 28%;
+			@include rem-fallback(padding, 3.6, 2.4);
+		}
+	}
+
+	.open-sub > .sub-menu > li {
+		@include rem-fallback(padding, 2, 3.6);
 	}
 
 	//.business-nav.toggle-sub .toggle-sub__parent > a {
