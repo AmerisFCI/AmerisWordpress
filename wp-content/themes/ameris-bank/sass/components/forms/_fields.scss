@@ -92,7 +92,7 @@ textarea,
 
 
 
-@include breakpoint($tablet-to-narrow) {
+@include breakpoint($tablet-to-desktop) {
 	.ninja-forms-cont {
 		input {width: auto;}
 		input[type="text"],

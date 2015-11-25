@@ -1693,7 +1693,7 @@ textarea:focus,
   border-width: 0.1rem;
 }
 
-@media (min-width: 530px) and (max-width: 1199px) {
+@media (min-width: 530px) {
   /* line 97, sass/components/forms/_fields.scss */
   .ninja-forms-cont input {
     width: auto;
