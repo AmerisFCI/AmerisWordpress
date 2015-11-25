@@ -1,0 +1,120 @@
+.featured-video {
+	@include clearfix;
+	color:$text-on-dark;
+	background: $darkblue;
+	@include rem-fallback( font-size, 1.6 );
+
+	&__image {
+		line-height:0;
+		position:relative;
+
+		img {
+			width:100%;
+		}
+
+		&:after {
+			content:"";
+			@include use-sprite(icon-vid-play);
+			position:absolute;
+			left:50%;
+			top:40%;
+			pointer-events:none;
+			@include rem-fallback( margin-left, -3.6 );
+			
+		}
+	}
+
+	&__text {
+		position:relative;
+		@include rem-fallback( padding, 2.4 );
+	}
+
+	.kicker,
+	h2.featured-video__title {
+		color:$white;
+		margin:0;
+		padding:0;
+		text-align:left;
+		a {
+			color:$white;
+			text-decoration:none;
+		}
+	}
+
+	.kicker {
+		@include rem-fallback( margin-bottom, 2 );
+		@include rem-fallback( padding-bottom, .5 );
+		@include rem-fallback( font-size, 1.6 );
+	}
+
+	h2.featured-video__title {
+		@include rem-fallback( font-size, 2.4 );
+		@include rem-fallback( margin-bottom, 2 );
+	}
+
+	&__date {
+		@include rem-fallback( margin-bottom, 1.2 );
+	}
+
+	&__excerpt {
+		.read-more {
+			@include red-link;
+			color:$white;
+			&:visited { color:$white; }
+			&:hover, &:focus { color:$red; }
+		}
+	}
+
+}
+
+@include breakpoint( $mobile ) {
+	.featured-video {
+		&__image {
+			&:after {
+				top:30%;
+			}
+		}
+	}
+}
+
+@include breakpoint( $desktop ) {
+	.featured-video {
+		
+		&__image {
+			width:60%;
+			float:left;
+		}
+
+		&__text {
+			width:40%;
+			float:right;
+			padding-bottom:0;
+			
+			&:before {
+				content:'';
+				width:0;
+				height:0;
+				position:absolute;
+				border-style:solid;
+				border-color:transparent;				
+				border-right-color:$darkblue;
+				border-width:30px;
+				top:25%;
+				left:-60px;
+			}
+
+		}
+
+	}
+}
+
+@include breakpoint( $wide ) {
+	.featured-video {
+		h2.featured-video__title {
+			@include rem-fallback( font-size, 3.6 );
+		}
+		&__text {
+			@include rem-fallback( padding, 2.4 );
+		}
+	}
+}
