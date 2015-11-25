@@ -92,7 +92,7 @@ textarea,
 
 
 
-@include breakpoint($tablet-to-desktop) {
+@include breakpoint($tablet-to-narrow) {
 	.ninja-forms-cont {
 		input {width: auto;}
 		input[type="text"],
@@ -104,16 +104,39 @@ textarea,
 		.sod_select {
 			@include rem-fallback(padding, 1.4);
 			@include rem-fallback(font-size, 1.8);
-			width: 65%;
+			width: 100%;
 			float: right;
 		}
 		label {
-			width: 27%;
+			width: 100%;
 			float: left;
 			clear: both;
 			margin-right: 8%;
 			@include rem-fallback(padding, 1.4, 0);
 			@include rem-fallback(font-size, 1.8);
+		}
+		input[type="submit"] {
+			float: left;
+			clear: both;
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	.ninja-forms-cont {
+		input {width: auto;}
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		textarea,
+		.sod_select {
+			width: 65%;
+		}
+		label {
+			width: 27%;
+			margin-right: 8%;
 		}
 		input[type="submit"] {
 			float: left;
