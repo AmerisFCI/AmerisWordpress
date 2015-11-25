@@ -53,6 +53,7 @@
 	.home-callout-box {
 		@include grid-span(5, 10);
 		clear: both;
+		padding-top: 0;
 	}
 }
 

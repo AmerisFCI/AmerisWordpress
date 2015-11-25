@@ -8,6 +8,10 @@
 	}
 }
 
+.home-callout-box {
+	@include rem-fallback(padding-top, 5);
+}
+
 .callout-box--large__kicker {
 	text-shadow: none;
 	color: $heading-color;
