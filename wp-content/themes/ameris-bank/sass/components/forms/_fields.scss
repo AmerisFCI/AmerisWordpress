@@ -2,6 +2,9 @@ input, textarea {
 	width: 100%;
 }
 
+.sod_select .sod_label {
+	overflow-y: visible;
+}
 .ninja-forms-req-symbol {
 	color: $red;
 }

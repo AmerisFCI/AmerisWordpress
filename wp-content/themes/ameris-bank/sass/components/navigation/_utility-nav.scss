@@ -2,8 +2,10 @@
 	font-family: $font-sansserif;
 	@include rem-fallback(font-size, 1.6);
 	@include rem-fallback(margin-bottom, 1.4);
-	.current-menu-item a {
-		border-top-color: $red;
+	.current-menu-item, .current_page_parent, .current-page-ancestor {
+		a {
+			border-top-color: $red;
+		}
 	}
 	a {
 		color: $white;

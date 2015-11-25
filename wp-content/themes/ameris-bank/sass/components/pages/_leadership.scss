@@ -26,6 +26,7 @@
 	float: none;
 	position: relative;
 	@include rem-fallback(margin-bottom, 2.4);
+	max-width: 100%;
 	a {
 		text-decoration: none;
 		display: block;
@@ -67,6 +68,7 @@
 	display: inline-block;
 	@include rem-fallback(font-size, 2);
 	@include rem-fallback(margin-bottom, .5);
+	margin-top: 0;
 
 	@include red-arrow-right-small;
 	&:after {

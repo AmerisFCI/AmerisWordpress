@@ -1484,17 +1484,22 @@ input, textarea {
 }
 
 /* line 5, sass/components/forms/_fields.scss */
+.sod_select .sod_label {
+  overflow-y: visible;
+}
+
+/* line 8, sass/components/forms/_fields.scss */
 .ninja-forms-req-symbol {
   color: #d31145;
 }
 
-/* line 9, sass/components/forms/_fields.scss */
+/* line 12, sass/components/forms/_fields.scss */
 .ninja-forms-required-items {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
 }
 
-/* line 13, sass/components/forms/_fields.scss */
+/* line 16, sass/components/forms/_fields.scss */
 .hp-wrap {
   position: absolute !important;
   height: 1px;
@@ -1503,7 +1508,7 @@ input, textarea {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 17, sass/components/forms/_fields.scss */
+/* line 20, sass/components/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -1528,7 +1533,7 @@ textarea,
   margin-bottom: 12.5px;
   margin-bottom: 1.25rem;
 }
-/* line 36, sass/components/forms/_fields.scss */
+/* line 39, sass/components/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -1540,7 +1545,7 @@ textarea:focus,
   border-color: #15397f;
 }
 
-/* line 43, sass/components/forms/_fields.scss */
+/* line 46, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"],
 .ninja-forms-cont input[type="email"],
 .ninja-forms-cont input[type="url"],
@@ -1569,7 +1574,7 @@ textarea:focus,
   box-shadow: 0 0.5rem rgba(21, 57, 127, 0.05);
   transition: background-color .2s, box-shadow .2s;
 }
-/* line 63, sass/components/forms/_fields.scss */
+/* line 66, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:before,
 .ninja-forms-cont input[type="email"]:before,
 .ninja-forms-cont input[type="url"]:before,
@@ -1580,7 +1585,7 @@ textarea:focus,
   top: 10px;
   top: 1rem;
 }
-/* line 67, sass/components/forms/_fields.scss */
+/* line 70, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:focus,
 .ninja-forms-cont input[type="email"]:focus,
 .ninja-forms-cont input[type="url"]:focus,
@@ -1591,7 +1596,7 @@ textarea:focus,
   color: #092764;
   border-color: #15397f;
 }
-/* line 75, sass/components/forms/_fields.scss */
+/* line 78, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="text"]:hover, .ninja-forms-cont input[type="text"]:active, .ninja-forms-cont input[type="text"]:focus,
 .ninja-forms-cont input[type="email"]:hover,
 .ninja-forms-cont input[type="email"]:active,
@@ -1613,12 +1618,12 @@ textarea:focus,
 .ninja-forms-cont .sod_select:focus {
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.05);
 }
-/* line 79, sass/components/forms/_fields.scss */
+/* line 82, sass/components/forms/_fields.scss */
 .ninja-forms-cont label {
   padding: 14px 0px;
   padding: 1.4rem 0rem;
 }
-/* line 82, sass/components/forms/_fields.scss */
+/* line 85, sass/components/forms/_fields.scss */
 .ninja-forms-cont input[type="submit"] {
   background-color: #d31145;
   color: #ffffff;
@@ -1685,7 +1690,7 @@ textarea:focus,
   left: 19px;
   left: 1.9rem;
 }
-/* line 86, sass/components/forms/_fields.scss */
+/* line 89, sass/components/forms/_fields.scss */
 .ninja-forms-cont .sod_select .sod_list_wrapper {
   width: 100%;
   border: solid #bdbdbd;
@@ -1694,11 +1699,11 @@ textarea:focus,
 }
 
 @media (min-width: 530px) {
-  /* line 97, sass/components/forms/_fields.scss */
+  /* line 100, sass/components/forms/_fields.scss */
   .ninja-forms-cont input {
     width: auto;
   }
-  /* line 98, sass/components/forms/_fields.scss */
+  /* line 101, sass/components/forms/_fields.scss */
   .ninja-forms-cont input[type="text"],
   .ninja-forms-cont input[type="email"],
   .ninja-forms-cont input[type="url"],
@@ -1713,7 +1718,7 @@ textarea:focus,
     width: 100%;
     float: right;
   }
-  /* line 110, sass/components/forms/_fields.scss */
+  /* line 113, sass/components/forms/_fields.scss */
   .ninja-forms-cont label {
     width: 100%;
     float: left;
@@ -1724,18 +1729,18 @@ textarea:focus,
     font-size: 18px;
     font-size: 1.8rem;
   }
-  /* line 118, sass/components/forms/_fields.scss */
+  /* line 121, sass/components/forms/_fields.scss */
   .ninja-forms-cont input[type="submit"] {
     float: left;
     clear: both;
   }
 }
 @media (min-width: 1200px) {
-  /* line 127, sass/components/forms/_fields.scss */
+  /* line 130, sass/components/forms/_fields.scss */
   .ninja-forms-cont input {
     width: auto;
   }
-  /* line 128, sass/components/forms/_fields.scss */
+  /* line 131, sass/components/forms/_fields.scss */
   .ninja-forms-cont input[type="text"],
   .ninja-forms-cont input[type="email"],
   .ninja-forms-cont input[type="url"],
@@ -1745,12 +1750,12 @@ textarea:focus,
   .ninja-forms-cont .sod_select {
     width: 65%;
   }
-  /* line 137, sass/components/forms/_fields.scss */
+  /* line 140, sass/components/forms/_fields.scss */
   .ninja-forms-cont label {
     width: 27%;
     margin-right: 8%;
   }
-  /* line 141, sass/components/forms/_fields.scss */
+  /* line 144, sass/components/forms/_fields.scss */
   .ninja-forms-cont input[type="submit"] {
     float: left;
     clear: both;
@@ -3186,11 +3191,11 @@ a:hover, a:active {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
 }
-/* line 5, sass/components/navigation/_utility-nav.scss */
-.utility-navigation .current-menu-item a {
+/* line 6, sass/components/navigation/_utility-nav.scss */
+.utility-navigation .current-menu-item a, .utility-navigation .current_page_parent a, .utility-navigation .current-page-ancestor a {
   border-top-color: #d31145;
 }
-/* line 8, sass/components/navigation/_utility-nav.scss */
+/* line 10, sass/components/navigation/_utility-nav.scss */
 .utility-navigation a {
   color: #ffffff;
   display: block;
@@ -3199,19 +3204,19 @@ a:hover, a:active {
   margin-left: 15px;
   margin-left: 1.5rem;
 }
-/* line 15, sass/components/navigation/_utility-nav.scss */
+/* line 17, sass/components/navigation/_utility-nav.scss */
 .utility-navigation .menu-item {
   display: block;
 }
 
-/* line 24, sass/components/navigation/_utility-nav.scss */
+/* line 26, sass/components/navigation/_utility-nav.scss */
 .main-navigation .utility-navigation > .menu {
   padding-top: 24px;
   padding-top: 2.4rem;
   padding-bottom: 14px;
   padding-bottom: 1.4rem;
 }
-/* line 29, sass/components/navigation/_utility-nav.scss */
+/* line 31, sass/components/navigation/_utility-nav.scss */
 .main-navigation .utility-navigation a {
   margin-left: 0;
   text-transform: none;
@@ -3220,11 +3225,11 @@ a:hover, a:active {
 }
 
 @media (min-width: 1024px) {
-  /* line 40, sass/components/navigation/_utility-nav.scss */
+  /* line 42, sass/components/navigation/_utility-nav.scss */
   .utility-navigation {
     text-align: right;
   }
-  /* line 43, sass/components/navigation/_utility-nav.scss */
+  /* line 45, sass/components/navigation/_utility-nav.scss */
   .utility-navigation a {
     display: inline-block;
     border-top: solid transparent;
@@ -3232,11 +3237,11 @@ a:hover, a:active {
     border-top-width: 0.4rem;
     transition: border .5s;
   }
-  /* line 48, sass/components/navigation/_utility-nav.scss */
+  /* line 50, sass/components/navigation/_utility-nav.scss */
   .utility-navigation a:hover, .utility-navigation a:focus {
     border-top-color: #d31145;
   }
-  /* line 53, sass/components/navigation/_utility-nav.scss */
+  /* line 55, sass/components/navigation/_utility-nav.scss */
   .utility-navigation .menu-item {
     display: inline-block;
   }
@@ -4447,24 +4452,25 @@ footer .menu-item {
 @media (max-width: 529px) {
   /* line 94, sass/components/sections/_banner.scss */
   .banner-image {
-    min-height: 560px;
-    min-height: 56rem;
+    height: 300px !important;
+    height: 30rem !important;
+    min-height: initial;
     width: 100% !important;
   }
-  /* line 97, sass/components/sections/_banner.scss */
+  /* line 99, sass/components/sections/_banner.scss */
   .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 }
 @media screen and (min-width: 580px) {
-  /* line 105, sass/components/sections/_banner.scss */
+  /* line 107, sass/components/sections/_banner.scss */
   .page-title {
     padding: 150px 24px 30px;
     padding: 15rem 2.4rem 3rem;
   }
 
-  /* line 109, sass/components/sections/_banner.scss */
+  /* line 111, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-left: 50px;
     padding-left: 5rem;
@@ -4472,16 +4478,30 @@ footer .menu-item {
     padding-right: 5rem;
   }
 }
-@media (min-width: 530px) and (max-width: 1023px) {
-  /* line 119, sass/components/sections/_banner.scss */
+@media (min-width: 530px) and (max-width: 739px) {
+  /* line 121, sass/components/sections/_banner.scss */
   .banner-image {
     width: 100% !important;
-    min-height: 560px;
-    min-height: 56rem;
+    height: 450px !important;
+    height: 40rem !important;
+    min-height: initial;
+  }
+  /* line 126, sass/components/sections/_banner.scss */
+  .banner-image img {
+    height: 100% !important;
+    width: auto !important;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 128, sass/components/sections/_banner.scss */
+  /* line 134, sass/components/sections/_banner.scss */
+  .banner-image {
+    width: 100% !important;
+    height: 450px !important;
+    height: 40rem !important;
+    min-height: initial;
+  }
+
+  /* line 145, sass/components/sections/_banner.scss */
   .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
     content: "";
     display: block;
@@ -4500,20 +4520,20 @@ footer .menu-item {
   }
 }
 @media (min-width: 1024px) {
-  /* line 144, sass/components/sections/_banner.scss */
+  /* line 161, sass/components/sections/_banner.scss */
   .page-title {
     padding: 200px 24px 20px;
     padding: 20rem 2.4rem 2rem;
     clear: none;
   }
 
-  /* line 155, sass/components/sections/_banner.scss */
+  /* line 172, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding: 200px 24px 80px;
     padding: 20rem 2.4rem 8rem;
     clear: none;
   }
-  /* line 159, sass/components/sections/_banner.scss */
+  /* line 176, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -50px;
     margin-top: -5rem;
@@ -4521,58 +4541,58 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 168, sass/components/sections/_banner.scss */
+  /* line 185, sass/components/sections/_banner.scss */
   .banner-blurb {
     font-size: 86px;
     font-size: 8.6rem;
   }
 
-  /* line 172, sass/components/sections/_banner.scss */
+  /* line 189, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 150px;
     padding-bottom: 15rem;
   }
-  /* line 176, sass/components/sections/_banner.scss */
+  /* line 193, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -100px;
     margin-top: -10rem;
   }
 }
 @media (min-width: 1420px) {
-  /* line 183, sass/components/sections/_banner.scss */
+  /* line 200, sass/components/sections/_banner.scss */
   .banner-image {
     width: 70%;
     float: right;
   }
-  /* line 186, sass/components/sections/_banner.scss */
+  /* line 203, sass/components/sections/_banner.scss */
   .banner-image img {
     position: static;
     max-width: none;
     width: 100%;
     height: auto;
   }
-  /* line 191, sass/components/sections/_banner.scss */
+  /* line 208, sass/components/sections/_banner.scss */
   .banner-image img.slidewidth {
     width: 100%;
     height: auto;
   }
-  /* line 196, sass/components/sections/_banner.scss */
+  /* line 213, sass/components/sections/_banner.scss */
   .banner-image img.slideheight {
     width: 100%;
     height: auto;
   }
 
-  /* line 203, sass/components/sections/_banner.scss */
+  /* line 220, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 250px;
     padding-bottom: 25rem;
   }
-  /* line 205, sass/components/sections/_banner.scss */
+  /* line 222, sass/components/sections/_banner.scss */
   .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
     right: -140px;
     right: -14rem;
   }
-  /* line 209, sass/components/sections/_banner.scss */
+  /* line 226, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -200px;
     margin-top: -20rem;
@@ -6678,33 +6698,34 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   position: relative;
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
+  max-width: 100%;
 }
-/* line 29, sass/components/pages/_leadership.scss */
+/* line 30, sass/components/pages/_leadership.scss */
 .leadership-grid__panel a {
   text-decoration: none;
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 35, sass/components/pages/_leadership.scss */
+/* line 36, sass/components/pages/_leadership.scss */
 .leadership-grid__panel a:hover .leadership-grid__name-group, .leadership-grid__panel a:focus .leadership-grid__name-group {
   min-height: 134px;
   min-height: 13.4rem;
 }
-/* line 38, sass/components/pages/_leadership.scss */
+/* line 39, sass/components/pages/_leadership.scss */
 .leadership-grid__panel a:hover .leadership-grid__name:after, .leadership-grid__panel a:focus .leadership-grid__name:after {
   opacity: 1;
   left: 19px;
   left: 1.9rem;
 }
-/* line 44, sass/components/pages/_leadership.scss */
+/* line 45, sass/components/pages/_leadership.scss */
 .leadership-grid__panel img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 51, sass/components/pages/_leadership.scss */
+/* line 52, sass/components/pages/_leadership.scss */
 .leadership-grid__name-group {
   position: absolute;
   bottom: 0;
@@ -6718,7 +6739,7 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   transition-timing-function: ease-in-out;
 }
 
-/* line 62, sass/components/pages/_leadership.scss */
+/* line 63, sass/components/pages/_leadership.scss */
 .leadership-grid__name {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: bold;
@@ -6729,6 +6750,7 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   font-size: 2rem;
   margin-bottom: 5px;
   margin-bottom: 0.5rem;
+  margin-top: 0;
   padding-right: 32px;
   padding-right: 3.2rem;
   position: relative;
@@ -6764,14 +6786,14 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   left: 19px;
   left: 1.9rem;
 }
-/* line 72, sass/components/pages/_leadership.scss */
+/* line 74, sass/components/pages/_leadership.scss */
 .leadership-grid__name:after {
   top: 0;
   transition: all .3s;
   opacity: 0;
 }
 
-/* line 80, sass/components/pages/_leadership.scss */
+/* line 82, sass/components/pages/_leadership.scss */
 .leadership-grid__position, .leadership-grid__company {
   font-size: 16px;
   font-size: 1.6rem;
@@ -6787,25 +6809,25 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
 }
 
 @media (min-width: 530px) {
-  /* line 91, sass/components/pages/_leadership.scss */
+  /* line 93, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 97, sass/components/pages/_leadership.scss */
+  /* line 99, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     text-align: left;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 104, sass/components/pages/_leadership.scss */
+  /* line 106, sass/components/pages/_leadership.scss */
   .leadership-grid__heading {
     text-align: center;
   }
 
-  /* line 107, sass/components/pages/_leadership.scss */
+  /* line 109, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     display: inline-block;
     width: 48.57143%;
@@ -6817,17 +6839,17 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
     max-width: 33rem;
     float: none;
   }
-  /* line 112, sass/components/pages/_leadership.scss */
+  /* line 114, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 115, sass/components/pages/_leadership.scss */
+  /* line 117, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n+1) {
     clear: both;
   }
 }
 @media (min-width: 1024px) {
-  /* line 123, sass/components/pages/_leadership.scss */
+  /* line 125, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     display: block;
     width: 31.42857%;
@@ -6836,11 +6858,11 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
     margin-left: 0;
     margin-right: 2.85714%;
   }
-  /* line 126, sass/components/pages/_leadership.scss */
+  /* line 128, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 129, sass/components/pages/_leadership.scss */
+  /* line 131, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n+1) {
     clear: both;
   }

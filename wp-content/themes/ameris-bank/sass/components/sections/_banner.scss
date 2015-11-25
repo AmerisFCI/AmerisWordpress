@@ -92,7 +92,9 @@
 
 @include breakpoint($mobile) {
 	.banner-image {
-		@include rem-fallback(min-height, 56);
+		height: 300px !important;
+		height: 30rem !important;
+		min-height: initial;
 		width: 100% !important;
 		img {
 			height: 100% !important;
@@ -115,15 +117,30 @@
 	}
 }
 
-@include breakpoint($tablet) {
+@include breakpoint($tablet-skinny) {
 	.banner-image {
 		width: 100% !important;
-		@include rem-fallback(min-height, 56);
-
+		height: 450px !important;
+		height: 40rem !important;
+		min-height: initial;
+		img {
+			height: 100% !important;
+			width: auto !important;
+		}
 	}
 }
 
 @include breakpoint($tablet-wide) {
+	.banner-image {
+		width: 100% !important;
+		height: 450px !important;
+		height: 40rem !important;
+		min-height: initial;
+		img {
+			//height: auto !important;
+			//width: 100% !important;
+		}
+	}
 
 	.has-banner-image .page-title h1:after {
 				content: "";
