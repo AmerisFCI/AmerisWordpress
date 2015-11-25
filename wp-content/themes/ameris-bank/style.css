@@ -4978,7 +4978,6 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 /* line 1, sass/components/pages/home/_slides.scss */
 .slides {
   height: 85vh;
-  background-color: #4C441A;
   color: #ffffff;
   position: relative;
   z-index: 0;
@@ -4988,14 +4987,14 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   min-height: 63rem;
 }
 
-/* line 11, sass/components/pages/home/_slides.scss */
+/* line 10, sass/components/pages/home/_slides.scss */
 .slide__inner-wrap {
   position: relative;
   z-index: 4;
   height: 100%;
 }
 
-/* line 17, sass/components/pages/home/_slides.scss */
+/* line 16, sass/components/pages/home/_slides.scss */
 .slide__text-wrap {
   position: relative;
   z-index: 1;
@@ -5004,10 +5003,10 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   margin-top: 20vh;
 }
 
-/* line 25, sass/components/pages/home/_slides.scss */
+/* line 24, sass/components/pages/home/_slides.scss */
 .slide {
   overflow: hidden;
-  background-color: #092764;
+  background-color: #4C441A;
   position: absolute;
   top: 0;
   left: 0;
@@ -5015,7 +5014,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   height: 100%;
   z-index: 1;
 }
-/* line 35, sass/components/pages/home/_slides.scss */
+/* line 34, sass/components/pages/home/_slides.scss */
 .slide:before {
   content: "";
   display: block;
@@ -5032,7 +5031,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
-/* line 46, sass/components/pages/home/_slides.scss */
+/* line 45, sass/components/pages/home/_slides.scss */
 .slide img {
   position: absolute;
   max-width: none;
@@ -5041,24 +5040,24 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   height: auto;
   opacity: .8;
 }
-/* line 54, sass/components/pages/home/_slides.scss */
+/* line 53, sass/components/pages/home/_slides.scss */
 .slide img.slidewidth {
   width: 100%;
   height: auto;
 }
-/* line 59, sass/components/pages/home/_slides.scss */
+/* line 58, sass/components/pages/home/_slides.scss */
 .slide img.slideheight {
   width: auto;
   height: 100%;
 }
 
-/* line 68, sass/components/pages/home/_slides.scss */
+/* line 67, sass/components/pages/home/_slides.scss */
 .slide__title.kicker {
   color: #ffffff;
   margin-top: 0;
 }
 
-/* line 73, sass/components/pages/home/_slides.scss */
+/* line 72, sass/components/pages/home/_slides.scss */
 .slide__blurb {
   position: relative;
   font-size: 50px;
@@ -5074,7 +5073,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   letter-spacing: -0.2rem;
 }
 
-/* line 81, sass/components/pages/home/_slides.scss */
+/* line 80, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
   background-color: #d31145;
   color: #ffffff;
@@ -5140,18 +5139,18 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 19px;
   left: 1.9rem;
 }
-/* line 86, sass/components/pages/home/_slides.scss */
+/* line 85, sass/components/pages/home/_slides.scss */
 .button.slide__cta:hover, .button.slide__cta:focus {
   box-shadow: none;
 }
 
-/* line 92, sass/components/pages/home/_slides.scss */
+/* line 91, sass/components/pages/home/_slides.scss */
 .slick-list, .slick-track {
   height: 100%;
   width: 100%;
 }
 
-/* line 97, sass/components/pages/home/_slides.scss */
+/* line 96, sass/components/pages/home/_slides.scss */
 .slick-dots {
   list-style: none;
   margin: 0 auto;
@@ -5163,7 +5162,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   z-index: 2;
   text-align: center;
 }
-/* line 107, sass/components/pages/home/_slides.scss */
+/* line 106, sass/components/pages/home/_slides.scss */
 .slick-dots li {
   display: inline-block;
   list-style: none;
@@ -5174,11 +5173,11 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   box-shadow: 0 0 120px #000;
   line-height: 0;
 }
-/* line 118, sass/components/pages/home/_slides.scss */
+/* line 117, sass/components/pages/home/_slides.scss */
 .slick-dots li:before {
   content: none;
 }
-/* line 122, sass/components/pages/home/_slides.scss */
+/* line 121, sass/components/pages/home/_slides.scss */
 .slick-dots li button {
   text-indent: -9999px;
   width: 16px;
@@ -5195,47 +5194,47 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   padding: 0;
   box-shadow: none;
 }
-/* line 136, sass/components/pages/home/_slides.scss */
+/* line 135, sass/components/pages/home/_slides.scss */
 .slick-dots li.slick-active button {
   background-color: #ffffff;
 }
 
 @media (max-width: 529px) {
-  /* line 144, sass/components/pages/home/_slides.scss */
+  /* line 143, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 15px;
     bottom: 1.5rem;
   }
 
-  /* line 147, sass/components/pages/home/_slides.scss */
+  /* line 146, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 150, sass/components/pages/home/_slides.scss */
+  /* line 149, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 156, sass/components/pages/home/_slides.scss */
+  /* line 155, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 159, sass/components/pages/home/_slides.scss */
+  /* line 158, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 740px) {
-  /* line 168, sass/components/pages/home/_slides.scss */
+  /* line 167, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 65px;
     font-size: 6.5rem;
   }
 
-  /* line 172, sass/components/pages/home/_slides.scss */
+  /* line 171, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 400px;
     width: 40rem;
@@ -5246,27 +5245,27 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     bottom: inherit;
   }
 
-  /* line 182, sass/components/pages/home/_slides.scss */
+  /* line 181, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 40px;
     bottom: 4rem;
     right: 5%;
     width: auto;
   }
-  /* line 186, sass/components/pages/home/_slides.scss */
+  /* line 185, sass/components/pages/home/_slides.scss */
   .slick-dots li {
     margin: 0px 0px 0px 16px;
     margin: 0rem 0rem 0rem 1.6rem;
   }
 }
 @media (min-width: 1024px) {
-  /* line 195, sass/components/pages/home/_slides.scss */
+  /* line 194, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 199, sass/components/pages/home/_slides.scss */
+  /* line 198, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 490px;
     width: 49rem;

@@ -1,6 +1,5 @@
 .slides {
 	height: 85vh;
-	background-color: $brown;
 	color: $white;
 	position: relative;
 	z-index: 0;
@@ -24,7 +23,7 @@
 
 .slide {
 	overflow: hidden;
-	background-color: $darkblue;
+	background-color: $brown;
 	position: absolute;
 	top: 0;
 	left: 0;
