@@ -470,7 +470,7 @@ p {
 
 /* line 5, sass/base/typography/_copy.scss */
 strong, b {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* line 9, sass/base/typography/_copy.scss */
@@ -4208,7 +4208,7 @@ footer .menu-item {
   left: 0;
   width: 100%;
   height: auto;
-  opacity: .8;
+  opacity: .85;
 }
 /* line 346, sass/base/_mixins.scss */
 .banner-image img.slidewidth {
@@ -4551,7 +4551,7 @@ footer .menu-item {
   left: 0;
   width: 100%;
   height: auto;
-  opacity: .8;
+  opacity: .85;
 }
 /* line 346, sass/base/_mixins.scss */
 .wide-banner-image img.slidewidth {
