@@ -248,6 +248,8 @@
 
 }
 
+
+
 @include breakpoint( $mobile-to-tablet ) {
 	.timeline {
 
@@ -260,11 +262,11 @@
 				bottom:8px;
 				padding-bottom:0;
 				.timeline-item__date {
-					width:100%;
+					width:45%;
 				}
 
 				.timeline-item__inner-content {
-					width:100%;
+					width:55%;
 				}
 				p {
 					margin-bottom:0;
@@ -283,20 +285,6 @@
 
 @include breakpoint( $mobile-to-skinny ) {
 	.timeline {
-
-		.timeline-item--large {
-			.timeline-item__content {
-
-				.timeline-item__date {
-					width:45%;
-				}
-
-				.timeline-item__inner-content {
-					width:55%;
-				}
-
-			}
-		}
 
 		.timeline-item {
 			.timeline-item__content {
@@ -348,6 +336,16 @@
 			.timeline-item__image {
 				@include rem-fallback( margin, -3 );
 				@include rem-fallback( margin-bottom, 3 );
+			}
+		}
+	}
+	.timeline-item--large {
+		.timeline-item__content {
+			.timeline-item__date {
+				width:100%;
+			}
+			.timeline-item__inner-content {
+				width:100%;
 			}
 		}
 	}
