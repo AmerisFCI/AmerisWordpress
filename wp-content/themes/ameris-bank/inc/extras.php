@@ -19,6 +19,14 @@ function courage_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	// get top-level ancestor of current page
+	if ( is_page() ) {
+		global $post;
+		$ancestors = get_post_ancestors( $post );
+		$highest = $ancestors ? array_pop( $ancestors ) : $post->ID;
+		$classes[] = 'ancestor-pageid-' . $highest;
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'courage_body_classes' );
