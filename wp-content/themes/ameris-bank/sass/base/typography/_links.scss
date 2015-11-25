@@ -1,7 +1,9 @@
-p a, ul a, li a {
-	text-decoration: none;
-	&:hover, &:active, &:focus {
-		text-decoration: underline;
+.entry-content {
+	p a, ul a, li a {
+		text-decoration: none;
+		&:hover, &:active, &:focus {
+			text-decoration: underline;
+		}
 	}
 }
 

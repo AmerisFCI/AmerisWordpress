@@ -755,16 +755,16 @@ dd {
 		@include clearfix();
 	}
 }*/
-/* line 1, sass/base/typography/_links.scss */
-p a, ul a, li a {
+/* line 2, sass/base/typography/_links.scss */
+.entry-content p a, .entry-content ul a, .entry-content li a {
   text-decoration: none;
 }
-/* line 3, sass/base/typography/_links.scss */
-p a:hover, p a:active, p a:focus, ul a:hover, ul a:active, ul a:focus, li a:hover, li a:active, li a:focus {
+/* line 4, sass/base/typography/_links.scss */
+.entry-content p a:hover, .entry-content p a:active, .entry-content p a:focus, .entry-content ul a:hover, .entry-content ul a:active, .entry-content ul a:focus, .entry-content li a:hover, .entry-content li a:active, .entry-content li a:focus {
   text-decoration: underline;
 }
 
-/* line 8, sass/base/typography/_links.scss */
+/* line 10, sass/base/typography/_links.scss */
 .more-link {
   font-style: normal;
   font-size: 18px;
