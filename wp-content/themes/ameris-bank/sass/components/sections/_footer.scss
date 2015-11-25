@@ -9,7 +9,7 @@
 	a {
 		color: $white;
 		text-decoration: underline;
-		@include rem-fallback(padding, 1, 0, 0, 1);
+		@include rem-fallback(padding, 1, 1, 0, 0);
 		@include rem-fallback(margin-bottom, 1.4);
 		display: inline-block;
 
@@ -20,9 +20,7 @@
 		&:visited {
 			color: shade($white, 5%);
 		}
-
 	}
-
 }
 
 .footer-top {
@@ -100,7 +98,7 @@ input.newsletter-signup__submit {
 }
 
 .copyright {
-	@include rem-fallback(padding-top, 1);
+	@include rem-fallback(padding, 1, 1, 0, 0);
 }
 
 .copyright, .site-info  {
@@ -216,6 +214,9 @@ footer .menu-item {
 		float: right;
 		clear: none;
 		margin: 0;
+		a {
+			@include rem-fallback(padding, 1, 0, 0, 1);
+		}
 	}
 
 }

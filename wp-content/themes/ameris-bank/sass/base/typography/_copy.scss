@@ -62,6 +62,7 @@ hr {
 
 sub, sup {
 	@include rem-fallback(font-size, 1);
+	@include rem-fallback(margin, 0, .6, 0, 0);
 }
 
 sub {
