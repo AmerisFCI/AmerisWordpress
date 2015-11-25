@@ -373,7 +373,7 @@ $sprite-high-res-suffix: '-2x' !default;
       width: 100%;
       height: 3px;
       background-color: $red;
-      z-index: 8;
+      z-index: -1;
     }
   }
 }
