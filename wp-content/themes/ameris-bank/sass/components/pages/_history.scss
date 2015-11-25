@@ -259,6 +259,13 @@
 				position:relative;
 				bottom:8px;
 				padding-bottom:0;
+				.timeline-item__date {
+					width:100%;
+				}
+
+				.timeline-item__inner-content {
+					width:100%;
+				}
 				p {
 					margin-bottom:0;
 				}
