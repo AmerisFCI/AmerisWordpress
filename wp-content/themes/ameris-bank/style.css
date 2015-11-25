@@ -3344,11 +3344,11 @@ a:hover, a:active {
 }
 
 /* line 7, sass/components/navigation/_sidebar-nav.scss */
-.page-template-view-all-page .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item), .parent-pageid-1464 .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) {
+.page-template-view-all-page .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item), .parent-pageid-1464 .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item), .ancestor-pageid-1464 .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) {
   margin-bottom: 0;
 }
 /* line 9, sass/components/navigation/_sidebar-nav.scss */
-.page-template-view-all-page .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) ul, .parent-pageid-1464 .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) ul {
+.page-template-view-all-page .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) ul, .parent-pageid-1464 .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) ul, .ancestor-pageid-1464 .sidebar-menu .menu > li:not(.current-page-ancestor):not(.current_page_item) ul {
   display: none;
 }
 
