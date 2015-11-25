@@ -70,7 +70,11 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 				} ?>
 			</div>
 		</div>
-	</div>
+	</div><!-- .content-below -->
+
+	<nav class="sidebar-menu mobile-only">
+		<?php echo get_ameris_sidebar_menu(); ?>
+	</nav>
 
 </div>
 
