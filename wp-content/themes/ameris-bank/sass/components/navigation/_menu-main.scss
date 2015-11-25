@@ -737,5 +737,9 @@
 		@include rem-fallback(padding, 1.7, 6, 2, 3);
 		@include rem-fallback(font-size, 2.1);
 	}
+	.nav-menu > li.sba-nav.hover > ul, .nav-menu > li.residential-nav.hover > ul {
+		width: 80%;
+		left: 10%;
+	}
 }
 

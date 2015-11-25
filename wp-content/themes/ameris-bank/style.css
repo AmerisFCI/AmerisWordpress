@@ -3118,6 +3118,12 @@ a:hover, a:active {
     font-size: 21px;
     font-size: 2.1rem;
   }
+
+  /* line 740, sass/components/navigation/_menu-main.scss */
+  .nav-menu > li.sba-nav.hover > ul, .nav-menu > li.residential-nav.hover > ul {
+    width: 80%;
+    left: 10%;
+  }
 }
 /* line 1, sass/components/navigation/_utility-nav.scss */
 .utility-navigation {
