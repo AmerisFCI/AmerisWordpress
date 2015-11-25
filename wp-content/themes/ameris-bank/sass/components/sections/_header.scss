@@ -10,7 +10,7 @@
 		height: 100%;
 		width: 100%;
 		@include background-image(linear-gradient(to top right, $darkblue, $lightblue));
-		opacity: .9;
+		opacity: .95;
 	}
 	> * {
 		position: relative;

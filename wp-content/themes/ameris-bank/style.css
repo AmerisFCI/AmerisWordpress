@@ -3554,7 +3554,7 @@ a:hover, a:active {
   background-image: -moz-linear-gradient(bottom, #092764, #15397f);
   background-image: -webkit-linear-gradient(bottom, #092764, #15397f);
   background-image: linear-gradient(to top right, #092764, #15397f);
-  opacity: .9;
+  opacity: .95;
 }
 /* line 15, sass/components/sections/_header.scss */
 .site-header > * {
