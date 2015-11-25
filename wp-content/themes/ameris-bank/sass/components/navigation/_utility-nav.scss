@@ -11,7 +11,7 @@
 		transition: border .5s;
 		@include rem-fallback(padding, 2.4, .5, .5);
 		@include rem-fallback(margin-left, 1.5);
-		&:hover, &:focus {
+		&:hover, &:focus, &.current-menu-item {
 			border-top-color: $red;
 		}
 	}

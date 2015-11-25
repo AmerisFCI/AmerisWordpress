@@ -3147,7 +3147,7 @@ a:hover, a:active {
   margin-left: 1.5rem;
 }
 /* line 14, sass/components/navigation/_utility-nav.scss */
-.utility-navigation a:hover, .utility-navigation a:focus {
+.utility-navigation a:hover, .utility-navigation a:focus, .utility-navigation a.current-menu-item {
   border-top-color: #d31145;
 }
 /* line 19, sass/components/navigation/_utility-nav.scss */
