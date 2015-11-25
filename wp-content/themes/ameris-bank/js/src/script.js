@@ -232,7 +232,7 @@
 	/**
 	 * External link prompt.
 	 */
-	$('a.test').each(function() {
+	$('a').each(function() {
 
 		// if link exists, uses http, and is not one of the named sites
 		if( this.href != '' &&
