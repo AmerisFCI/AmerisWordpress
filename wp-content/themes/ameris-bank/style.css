@@ -4556,8 +4556,8 @@ footer .menu-item {
 
   /* line 173, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
-    padding: 200px 24px 80px;
-    padding: 20rem 2.4rem 8rem;
+    padding: 240px 24px 80px;
+    padding: 24rem 2.4rem 8rem;
     clear: none;
   }
   /* line 177, sass/components/sections/_banner.scss */
