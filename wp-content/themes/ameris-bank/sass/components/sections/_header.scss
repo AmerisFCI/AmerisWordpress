@@ -21,6 +21,7 @@
 .site-branding {
 	@include rem-fallback(margin, 1, 0);
 	float: left;
+	@include rem-fallback(padding-left, 2);
 }
 
 .logo {
@@ -84,7 +85,6 @@
 		@include rem-fallback(height, 9.3);
 	}
 	.logo {
-		@include rem-fallback(padding, 1, 0, 0, 2);
 		position: absolute;
 		height: 100%;
 		width: 100%;
