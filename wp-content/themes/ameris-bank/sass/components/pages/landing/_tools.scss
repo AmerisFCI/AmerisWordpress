@@ -48,6 +48,13 @@
 	}
 }
 
+.related-resource__icon {
+	@include rem-fallback(padding-bottom, 1.2);
+	img {
+		@include center-block;
+	}
+}
+
 .related-resource__link {
 	text-decoration: none;
 }
