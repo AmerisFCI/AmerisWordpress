@@ -7,6 +7,10 @@
 	@include rem-fallback(min-height, 63);
 }
 
+.slick-slide:focus {
+	outline: transparent;
+}
+
 .slide__inner-wrap {
 	position: relative;
 	z-index: 4;
@@ -124,6 +128,7 @@
 			@include rem-fallback(height, 1.6);
 			background: transparent;
 			border-radius: 50%;
+			@include rem-fallback(border-radius, 1);
 			border-color: $white;
 			@include rem-fallback(border-width, .2);
 			border-style: solid;
