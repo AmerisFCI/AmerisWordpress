@@ -214,10 +214,6 @@
 		height: 520px !important;
 		height: 52rem !important;
 		min-height: initial;
-		img {
-			height: 100% !important;
-			width: auto !important;
-		}
 	}
 }
 
@@ -226,7 +222,7 @@
 		width: 70%;
 		float: right;
 		img {
-			position: static;
+			//position: static;
 			max-width: none;
 			width: 100%;
 			height: auto;
@@ -251,6 +247,12 @@
 		~ .inner-wrap .sidebar-left {
 			@include rem-fallback(margin-top, -20);
 		}
+	}
+
+	.has-banner-image .banner-image {
+		height: 570px !important;
+		height: 57rem !important;
+		min-height: initial;
 	}
 
 }
