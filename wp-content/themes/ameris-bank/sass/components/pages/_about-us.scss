@@ -199,6 +199,7 @@ body.page-template-about-us-page {
 	}
 	&__wrap-link {
 		display: block;
+		text-decoration: none;
 		&:hover {
 			.about-video__body {
 				background: $lightblue;
@@ -229,7 +230,7 @@ body.page-template-about-us-page {
 	}
 }
 
-.about-video__title, a.about-video__link, a.about-history__link, a.about-careers__link {
+.about-video__title, .about-video__link, .about-video__blurb, a.about-history__link, a.about-careers__link {
 	color: $white;
 }
 

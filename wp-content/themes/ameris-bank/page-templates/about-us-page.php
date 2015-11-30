@@ -57,7 +57,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 							<div class="about-video__body">
 								<h2 class="about-video__title"><?php the_field( 'video_callout_title' ); ?></h2>
 								<p class="about-video__blurb"><?php the_field( 'video_callout_blurb' ); ?></p>
-								<a class="about-video__link more-link" href="<?php the_field( 'video_callout_link' ); ?>"><?php the_field( 'video_callout_link_text' ); ?></a>
+								<p class="about-video__link more-link"><?php the_field( 'video_callout_link_text' ); ?></p>
 							</div>
 						</a>
 					</div>
