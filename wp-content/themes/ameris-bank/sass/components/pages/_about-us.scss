@@ -200,9 +200,17 @@ body.page-template-about-us-page {
 	&__wrap-link {
 		display: block;
 		text-decoration: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 		&:hover {
 			.about-video__body {
 				background: $lightblue;
+				&:before {
+					border-bottom-color: $lightblue;
+				}
 			}
 		}
 	}
@@ -227,6 +235,7 @@ body.page-template-about-us-page {
 		@include rem-fallback(top, -6);
 		@include rem-fallback(left, 6);
 		border-bottom-color: $darkblue;
+		transition: all .2s;
 	}
 }
 
