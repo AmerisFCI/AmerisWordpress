@@ -9080,7 +9080,6 @@ td:nth-child(n+2), th:nth-child(n+2) {
   div.table-wrapper td, div.table-wrapper th {
     position: relative;
     overflow: hidden;
-    min-width: 175px;
   }
 
   /* line 72, sass/components/_tables.scss */
