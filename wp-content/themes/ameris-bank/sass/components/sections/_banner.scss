@@ -191,6 +191,13 @@
 			width: auto !important;
 		}
 	}
+	.page-template-landing-page {
+		.has-banner-image .banner-image {
+			height: 520px !important;
+			height: 52rem !important;
+			min-height: initial;
+		}
+	}
 }
 
 
@@ -214,6 +221,13 @@
 		height: 520px !important;
 		height: 52rem !important;
 		min-height: initial;
+	}
+	.page-template-landing-page {
+		.has-banner-image .banner-image {
+			height: 560px !important;
+			height: 56rem !important;
+			min-height: initial;
+		}
 	}
 }
 
@@ -248,8 +262,8 @@
 
 	.page-template-landing-page {
 		.has-banner-image .banner-image {
-			height: 600px !important;
-			height: 60rem !important;
+			height: 650px !important;
+			height: 65rem !important;
 			min-height: initial;
 		}
 	}
