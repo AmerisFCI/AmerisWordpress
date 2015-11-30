@@ -62,17 +62,17 @@ class Ameris_Video_Callout_Widget extends WP_Widget {
 		echo $args['before_widget']; ?>
 
 		<div class="video-callout">
+			<a href="<?php echo get_permalink( $instance['video'] ); ?>">
 			<div class="video-callout__image">
-				<a href="<?php echo get_permalink( $instance['video'] ); ?>">
 					<?php echo $image; ?>
-				</a>
 			</div>
 			<div class="video-callout__body">
 				<h3 class="video-callout__headline">
-					<a href="<?php echo get_permalink( $instance['video'] ); ?>"><?php echo $instance['title']; ?></a>
+					<?php echo $instance['title']; ?>
 				</h3>
 				<p class="video-callout__date"><?php echo $date; ?></p>
 			</div>
+			</a>
 		</div>
 
 		<?php echo $args['after_widget'];
