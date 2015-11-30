@@ -6075,9 +6075,11 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 .tool__description {
   font-size: 16px;
   font-size: 1.6rem;
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
-/* line 13, sass/components/pages/home/_tools.scss */
+/* line 14, sass/components/pages/home/_tools.scss */
 .tool__title {
   font-style: normal;
   font-size: 18px;
@@ -6090,18 +6092,18 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
   text-align: center;
 }
 
-/* line 18, sass/components/pages/home/_tools.scss */
+/* line 19, sass/components/pages/home/_tools.scss */
 h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search article .tool__title.search-item__title {
   margin-top: 0;
 }
 
-/* line 22, sass/components/pages/home/_tools.scss */
+/* line 23, sass/components/pages/home/_tools.scss */
 .button.tool__link {
   font-size: 15px;
   font-size: 1.5rem;
 }
 
-/* line 27, sass/components/pages/home/_tools.scss */
+/* line 28, sass/components/pages/home/_tools.scss */
 .home-tools {
   margin-top: 30px;
   margin-top: 3rem;
@@ -6115,7 +6117,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 }
 
 @media screen and (min-width: 530px) and (max-width: 739px) {
-  /* line 44, sass/components/pages/home/_tools.scss */
+  /* line 45, sass/components/pages/home/_tools.scss */
   .tool {
     width: 48.93617%;
     clear: right;
@@ -6124,7 +6126,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
     margin-right: 2.12766%;
     max-width: none;
   }
-  /* line 48, sass/components/pages/home/_tools.scss */
+  /* line 49, sass/components/pages/home/_tools.scss */
   .tool:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -6133,13 +6135,13 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   }
 }
 @media screen and (min-width: 740px) {
-  /* line 58, sass/components/pages/home/_tools.scss */
+  /* line 59, sass/components/pages/home/_tools.scss */
   .home-tools {
     margin-bottom: 20px;
     margin-bottom: 2rem;
   }
 
-  /* line 62, sass/components/pages/home/_tools.scss */
+  /* line 63, sass/components/pages/home/_tools.scss */
   .tool {
     width: 23.40426%;
     clear: right;
@@ -6149,7 +6151,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
     margin-bottom: 53px;
     margin-bottom: 5.3rem;
   }
-  /* line 66, sass/components/pages/home/_tools.scss */
+  /* line 67, sass/components/pages/home/_tools.scss */
   .tool:nth-child(4n) {
     width: 23.40426%;
     clear: right;
@@ -6157,7 +6159,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
     margin-right: 0;
   }
 
-  /* line 71, sass/components/pages/home/_tools.scss */
+  /* line 72, sass/components/pages/home/_tools.scss */
   .button.tool__link {
     position: absolute;
     bottom: 0;
@@ -6168,7 +6170,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   }
 }
 @media (min-width: 1420px) {
-  /* line 89, sass/components/pages/home/_tools.scss */
+  /* line 90, sass/components/pages/home/_tools.scss */
   .button.tool__link {
     position: static;
     display: inline-block;

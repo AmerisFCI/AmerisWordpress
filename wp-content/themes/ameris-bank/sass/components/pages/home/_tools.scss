@@ -8,6 +8,7 @@
 
 .tool__description {
 	@include rem-fallback(font-size, 1.6);
+	@include rem-fallback(margin-bottom, 1.2);
 }
 
 .tool__title {
