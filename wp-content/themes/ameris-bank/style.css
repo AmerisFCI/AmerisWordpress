@@ -4651,18 +4651,18 @@ footer .menu-item {
     margin-top: -20rem;
   }
 }
-@media all and (min-width: 1600px) {
+@media all and (min-width: 1680px) {
   /* line 260, sass/components/sections/_banner.scss */
   .banner {
-    max-width: 1600px;
-    max-width: 160rem;
+    max-width: 1680px;
+    max-width: 168rem;
     margin: 0 auto;
   }
 
   /* line 265, sass/components/sections/_banner.scss */
   .banner-image {
-    width: 1174px !important;
-    width: 117.4rem !important;
+    width: 1214px !important;
+    width: 121.4rem !important;
   }
 }
 /* line 1, sass/components/sections/_wide-banner.scss */
