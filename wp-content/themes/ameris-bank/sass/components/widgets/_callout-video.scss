@@ -14,7 +14,8 @@
 			transition: top .2s;
 		}
 		img {
-			transition: opacity .2;
+			opacity: .9;
+			transition: opacity .2s;
 		}
 	}
 
@@ -60,15 +61,13 @@
 		display: block;
 		background: $darkblue;
 		transition: all .2s;
+		text-decoration: none;
 
 		&:hover, &:focus {
 			background: $lightblue;
 			.video-callout__image {
 				img {
-					opacity: .5;
-				}
-				&:after {
-					top: 29%;
+					opacity: .7;
 				}
 			}
 		}

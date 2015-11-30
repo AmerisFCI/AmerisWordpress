@@ -5043,9 +5043,10 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 }
 /* line 16, sass/components/widgets/_callout-video.scss */
 .video-callout__image img {
-  transition: opacity .2;
+  opacity: .9;
+  transition: opacity .2s;
 }
-/* line 21, sass/components/widgets/_callout-video.scss */
+/* line 22, sass/components/widgets/_callout-video.scss */
 .video-callout__body {
   padding: 24px;
   padding: 2.4rem;
@@ -5053,7 +5054,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   background: #092764;
   position: relative;
 }
-/* line 26, sass/components/widgets/_callout-video.scss */
+/* line 27, sass/components/widgets/_callout-video.scss */
 .video-callout__body:before {
   content: "";
   display: block;
@@ -5067,7 +5068,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 6rem;
   border-bottom-color: #092764;
 }
-/* line 38, sass/components/widgets/_callout-video.scss */
+/* line 39, sass/components/widgets/_callout-video.scss */
 .video-callout__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -5082,7 +5083,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   color: #ffffff;
   text-decoration: none;
 }
-/* line 46, sass/components/widgets/_callout-video.scss */
+/* line 47, sass/components/widgets/_callout-video.scss */
 .video-callout__date {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
@@ -5094,30 +5095,27 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   margin-bottom: 0;
 }
 @media (min-width: 740px) {
-  /* line 46, sass/components/widgets/_callout-video.scss */
+  /* line 47, sass/components/widgets/_callout-video.scss */
   .video-callout__date {
     text-align: left;
   }
 }
-/* line 59, sass/components/widgets/_callout-video.scss */
+/* line 60, sass/components/widgets/_callout-video.scss */
 .video-callout a {
   display: block;
   background: #092764;
   transition: all .2s;
+  text-decoration: none;
 }
-/* line 64, sass/components/widgets/_callout-video.scss */
+/* line 66, sass/components/widgets/_callout-video.scss */
 .video-callout a:hover, .video-callout a:focus {
   background: #15397f;
 }
-/* line 67, sass/components/widgets/_callout-video.scss */
+/* line 69, sass/components/widgets/_callout-video.scss */
 .video-callout a:hover .video-callout__image img, .video-callout a:focus .video-callout__image img {
-  opacity: .5;
+  opacity: .7;
 }
-/* line 70, sass/components/widgets/_callout-video.scss */
-.video-callout a:hover .video-callout__image:after, .video-callout a:focus .video-callout__image:after {
-  top: 29%;
-}
-/* line 77, sass/components/widgets/_callout-video.scss */
+/* line 76, sass/components/widgets/_callout-video.scss */
 .video-callout a:focus .video-callout__headline {
   text-decoration: underline;
 }
