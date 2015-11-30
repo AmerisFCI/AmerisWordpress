@@ -3780,30 +3780,26 @@ a:hover, a:active {
     height: 100%;
     width: 100%;
   }
-
-  /* line 92, sass/components/sections/_header.scss */
+  /* line 91, sass/components/sections/_header.scss */
   .logo img {
     width: 95%;
     position: absolute;
     bottom: 0;
-    left: 24px;
-    left: 2.4rem;
-    max-width: 220px;
-    max-width: 22rem;
+    left: 0;
   }
 
-  /* line 100, sass/components/sections/_header.scss */
+  /* line 98, sass/components/sections/_header.scss */
   .utility-navigation {
     float: right;
   }
 
-  /* line 104, sass/components/sections/_header.scss */
+  /* line 102, sass/components/sections/_header.scss */
   .main-navigation {
     float: right;
     clear: none;
   }
 
-  /* line 109, sass/components/sections/_header.scss */
+  /* line 107, sass/components/sections/_header.scss */
   .search-form {
     clear: right;
     width: 230px;
@@ -3813,13 +3809,13 @@ a:hover, a:active {
   }
 }
 @media (min-width: 1200px) {
-  /* line 118, sass/components/sections/_header.scss */
+  /* line 116, sass/components/sections/_header.scss */
   .site-branding {
     width: 200px;
     width: 20rem;
   }
 
-  /* line 121, sass/components/sections/_header.scss */
+  /* line 119, sass/components/sections/_header.scss */
   .search-form {
     width: 250px;
     width: 25rem;

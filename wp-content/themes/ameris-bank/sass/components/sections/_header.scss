@@ -88,15 +88,13 @@
 		position: absolute;
 		height: 100%;
 		width: 100%;
+		img {
+			width: 95%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
 	}
-	.logo img {
-		width: 95%;
-		position: absolute;
-		bottom: 0;
-		@include rem-fallback(left, 2.4);
-		@include rem-fallback(max-width, 22);
-	}
-
 	.utility-navigation {
 		float: right;
 	}
