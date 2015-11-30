@@ -165,6 +165,7 @@
 	//.banner ~ .content-inner-wrap {
 	//	@include rem-fallback(padding-top, 20);
 	//}
+
 	.has-banner-image {
 		//~ .content-inner-wrap {
 		//	padding-top: 0;
@@ -176,6 +177,18 @@
 		~ .inner-wrap .sidebar-left {
 			@include rem-fallback(margin-top, -5);
 			clear: none;
+		}
+	}
+}
+
+@include breakpoint($narrow) {
+	.has-banner-image .banner-image {
+		height: 470px !important;
+		height: 47rem !important;
+		min-height: initial;
+		img {
+			height: 100% !important;
+			width: auto !important;
 		}
 	}
 }
