@@ -209,6 +209,18 @@
 	}
 }
 
+@media all and (min-width: 1200px) and (max-width: 1419px) {
+	.has-banner-image .banner-image {
+		height: 520px !important;
+		height: 52rem !important;
+		min-height: initial;
+		img {
+			height: 100% !important;
+			width: auto !important;
+		}
+	}
+}
+
 @include breakpoint($wide) {
 	.banner-image {
 		width: 70%;
@@ -241,4 +253,17 @@
 		}
 	}
 
+}
+
+
+@media all and (min-width: 1600px) {
+	.banner {
+		max-width: 1600px;
+		max-width: 160rem;
+		margin: 0 auto;
+	}
+	.banner-image {
+		width: 1174px !important;
+		width: 117.4rem !important;
+	}
 }
