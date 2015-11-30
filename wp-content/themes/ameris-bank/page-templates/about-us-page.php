@@ -53,11 +53,13 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 						$image_url = $image[0];
 					?>
 					<div class="about-video" style="background-image:url( '<?php echo $image_url; ?>' );">
-						<div class="about-video__body">
-							<h2 class="about-video__title"><?php the_field( 'video_callout_title' ); ?></h2>
-							<p class="about-video__blurb"><?php the_field( 'video_callout_blurb' ); ?></p>
-							<a class="about-video__link more-link" href="<?php the_field( 'video_callout_link' ); ?>"><?php the_field( 'video_callout_link_text' ); ?></a>
-						</div>
+						<a class="about-video__wrap-link" href="<?php the_field( 'video_callout_link' ); ?>">
+							<div class="about-video__body">
+								<h2 class="about-video__title"><?php the_field( 'video_callout_title' ); ?></h2>
+								<p class="about-video__blurb"><?php the_field( 'video_callout_blurb' ); ?></p>
+								<a class="about-video__link more-link" href="<?php the_field( 'video_callout_link' ); ?>"><?php the_field( 'video_callout_link_text' ); ?></a>
+							</div>
+						</a>
 					</div>
 					<div class="about-small-panels-container">
 						<?php

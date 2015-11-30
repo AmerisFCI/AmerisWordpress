@@ -197,6 +197,14 @@ body.page-template-about-us-page {
 		top: 20%;
 		@include rem-fallback(margin-left, -4.5);
 	}
+	&__wrap-link {
+		display: block;
+		&:hover {
+			.about-video__body {
+				background: $lightblue;
+			}
+		}
+	}
 }
 
 .about-video__body {
@@ -208,6 +216,7 @@ body.page-template-about-us-page {
 	background: $darkblue;
 	@include rem-fallback(padding, 2.4);
 	color: $white;
+	transition: all .2s;
 	&:before {
 		content: "";
 		display: block;
