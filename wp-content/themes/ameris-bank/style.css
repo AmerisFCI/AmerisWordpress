@@ -4641,16 +4641,23 @@ footer .menu-item {
     height: 57rem !important;
     min-height: initial;
   }
+
+  /* line 250, sass/components/sections/_banner.scss */
+  .page-template-landing-page .has-banner-image .banner-image {
+    height: 600px !important;
+    height: 60rem !important;
+    min-height: initial;
+  }
 }
 @media all and (min-width: 1680px) {
-  /* line 253, sass/components/sections/_banner.scss */
+  /* line 261, sass/components/sections/_banner.scss */
   .banner {
     max-width: 1680px;
     max-width: 168rem;
     margin: 0 auto;
   }
 
-  /* line 258, sass/components/sections/_banner.scss */
+  /* line 266, sass/components/sections/_banner.scss */
   .banner-image {
     width: 1214px !important;
     width: 121.4rem !important;
