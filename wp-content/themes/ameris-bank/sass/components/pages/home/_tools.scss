@@ -22,8 +22,10 @@ h2.tool__title {
 }
 
 .button.tool__link {
-	//@include boldbluetext;
-	@include rem-fallback(font-size, 1.5);
+	@include boldbluetext;
+	@include rem-fallback(font-size, 1.2);
+	@include rem-fallback(padding, .8, 2, 1);
+	color: $white;
 }
 
 .home-tools {
