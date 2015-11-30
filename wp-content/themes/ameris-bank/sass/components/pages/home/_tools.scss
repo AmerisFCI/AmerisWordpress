@@ -9,6 +9,7 @@
 .tool__description {
 	@include rem-fallback(font-size, 1.6);
 	@include rem-fallback(margin-bottom, 1.2);
+	line-height: 1.15;
 }
 
 .tool__title {
@@ -17,7 +18,7 @@
 }
 
 h2.tool__title {
-	margin-top: 0;
+	@include rem-fallback(margin, 1.6, 0, 1);
 }
 
 .button.tool__link {
