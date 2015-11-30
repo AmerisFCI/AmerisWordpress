@@ -5620,7 +5620,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     padding-top: 8rem;
     margin-top: 20vh;
     position: absolute;
-    right: 5%;
+    right: 10%;
     bottom: inherit;
   }
 
