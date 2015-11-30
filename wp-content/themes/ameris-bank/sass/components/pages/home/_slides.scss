@@ -104,7 +104,7 @@
 	position: absolute;
 	width: 100%;
 	@include rem-fallback(bottom, 7);
-	z-index: 2;
+	z-index: 15;
 	text-align: center;
 
 	li {

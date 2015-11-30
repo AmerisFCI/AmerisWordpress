@@ -13,6 +13,20 @@
 		@include rem-fallback(height, 4.8);
 	}
 
+	a {
+		text-decoration: none;
+		border-bottom: solid $white;
+		@include rem-fallback(border-bottom-width, .1);
+		transition: border-bottom .2s;
+		&:hover {
+			border-bottom-color: transparent;
+		}
+		&:focus {
+			border-bottom-color: transparent;
+			outline: dashed 1px white;
+		}
+	}
+
 	a, h2 {
 		color: $white;
 	}

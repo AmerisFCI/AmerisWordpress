@@ -28,6 +28,10 @@
 		};
 	</script>
 
+	<!--[if lt IE 9]>
+	<script src="wp-content/themes/ameris-bank/js/libraries/html5shiv.min.js"></script>
+	<![endif]-->
+
 <?php wp_head(); ?>
 </head>
 
