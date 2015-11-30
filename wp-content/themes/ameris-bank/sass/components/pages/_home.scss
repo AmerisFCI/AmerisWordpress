@@ -27,9 +27,11 @@
 	.home .account-access {
 		@include grid-span(4, 1);
 		@include rem-fallback(margin-top, -6);
+		width: 25%;
 	}
 	.home-tools {
 		@include grid-span(10, 5);
+		width: 73%;
 	}
 
 	/*.latest-news {

@@ -6161,8 +6161,8 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
     float: left;
     margin-left: 0;
     margin-right: 2.12766%;
-    margin-bottom: 53px;
-    margin-bottom: 5.3rem;
+    margin-bottom: 33px;
+    margin-bottom: 3.3rem;
   }
   /* line 70, sass/components/pages/home/_tools.scss */
   .tool:nth-child(4n) {
@@ -6409,15 +6409,17 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
     clear: none;
     margin-top: -60px;
     margin-top: -6rem;
+    width: 25%;
   }
 
-  /* line 31, sass/components/pages/_home.scss */
+  /* line 32, sass/components/pages/_home.scss */
   .home-tools {
     width: 70.90909%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
+    width: 73%;
   }
 
   /*.latest-news {
@@ -6433,7 +6435,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   }*/
 }
 @media (min-width: 1200px) {
-  /* line 50, sass/components/pages/_home.scss */
+  /* line 52, sass/components/pages/_home.scss */
   .latest-news {
     width: 63.63636%;
     float: left;
@@ -6442,7 +6444,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
     clear: none;
   }
 
-  /* line 53, sass/components/pages/_home.scss */
+  /* line 55, sass/components/pages/_home.scss */
   .home-callout-box {
     width: 34.54545%;
     float: right;
@@ -6454,7 +6456,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   }
 }
 @media (min-width: 1420px) {
-  /* line 61, sass/components/pages/_home.scss */
+  /* line 63, sass/components/pages/_home.scss */
   .latest-news {
     width: 60.0%;
     float: left;
@@ -6463,7 +6465,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
     clear: none;
   }
 
-  /* line 64, sass/components/pages/_home.scss */
+  /* line 66, sass/components/pages/_home.scss */
   .home-callout-box {
     width: 38.18182%;
     float: right;

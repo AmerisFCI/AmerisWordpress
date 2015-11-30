@@ -65,7 +65,7 @@ h2.tool__title {
 
 	.tool {
 		@include float-span(3);
-		@include rem-fallback(margin-bottom, 5.3);
+		@include rem-fallback(margin-bottom, 3.3);
 
 		&:nth-child(4n){
 			@include float-span(3, 'last');
