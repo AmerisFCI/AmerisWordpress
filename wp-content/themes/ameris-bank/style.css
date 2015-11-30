@@ -7399,8 +7399,8 @@ body.page-template-about-us-page .site-main {
   letter-spacing: -0.2px;
   letter-spacing: -0.02rem;
   color: #ffffff;
-  font-size: 42px;
-  font-size: 4.2rem;
+  font-size: 39px;
+  font-size: 3.9rem;
   text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9);
 }
 
@@ -7683,8 +7683,7 @@ body.page-template-about-us-page .site-main {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 450px;
-  width: 45rem;
+  width: 100%;
   max-width: 100%;
   background: #092764;
   padding: 24px;
@@ -8024,8 +8023,14 @@ a.about-leadership__button {
     margin-right: 0;
   }
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* line 378, sass/components/pages/_about-us.scss */
+  .about-video:after {
+    top: 20%;
+  }
+}
 @media (min-width: 1024px) {
-  /* line 379, sass/components/pages/_about-us.scss */
+  /* line 385, sass/components/pages/_about-us.scss */
   .about-small-panels__column {
     width: 48.93617%;
     clear: right;
@@ -8033,7 +8038,7 @@ a.about-leadership__button {
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 381, sass/components/pages/_about-us.scss */
+  /* line 387, sass/components/pages/_about-us.scss */
   .about-small-panels__column:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -8041,7 +8046,7 @@ a.about-leadership__button {
     margin-right: 0;
   }
 
-  /* line 385, sass/components/pages/_about-us.scss */
+  /* line 391, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .menu-about-us-menu-container {
     width: 31.91489%;
     clear: right;
@@ -8050,7 +8055,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 388, sass/components/pages/_about-us.scss */
+  /* line 394, sass/components/pages/_about-us.scss */
   .about-leadership {
     width: 31.91489%;
     clear: right;
@@ -8059,7 +8064,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 391, sass/components/pages/_about-us.scss */
+  /* line 397, sass/components/pages/_about-us.scss */
   .about-investor {
     margin: 0;
     max-width: none;
@@ -8068,9 +8073,22 @@ a.about-leadership__button {
     float: right;
     margin-right: 0;
   }
+
+  /* line 403, sass/components/pages/_about-us.scss */
+  .about-video__body {
+    width: 450px;
+    width: 45rem;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 409, sass/components/pages/_about-us.scss */
+  .about-history__headline, .about-careers__headline {
+    font-size: 42px;
+    font-size: 4.2rem;
+  }
 }
 @media (min-width: 1420px) {
-  /* line 403, sass/components/pages/_about-us.scss */
+  /* line 415, sass/components/pages/_about-us.scss */
   .page-template-about-us-page .menu-about-us-menu-container {
     width: 23.40426%;
     clear: right;
@@ -8079,7 +8097,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 406, sass/components/pages/_about-us.scss */
+  /* line 418, sass/components/pages/_about-us.scss */
   .about-leadership {
     width: 23.40426%;
     clear: right;
@@ -8088,7 +8106,7 @@ a.about-leadership__button {
     margin-right: 2.12766%;
   }
 
-  /* line 409, sass/components/pages/_about-us.scss */
+  /* line 421, sass/components/pages/_about-us.scss */
   .about-investor {
     margin: 0;
     max-width: none;

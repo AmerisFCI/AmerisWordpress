@@ -63,7 +63,7 @@ body.page-template-about-us-page {
 .about-history__headline, .about-careers__headline {
 	@include voice;
 	color: $white;
-	@include rem-fallback(font-size, 4.2);
+	@include rem-fallback(font-size, 3.9);
 	text-shadow: 1px 1px 30px rgba(0,0,0,.9);
 }
 
@@ -203,7 +203,7 @@ body.page-template-about-us-page {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	@include rem-fallback(width, 45);
+	width: 100%;
 	max-width: 100%;
 	background: $darkblue;
 	@include rem-fallback(padding, 2.4);
@@ -374,6 +374,12 @@ a.about-leadership__button {
 	}
 }
 
+@include breakpoint($tablet-wide) {
+	.about-video:after {
+		top: 20%;
+	}
+}
+
 @include breakpoint($narrow-to-desktop) {
 
 	.about-small-panels__column {
@@ -393,10 +399,16 @@ a.about-leadership__button {
 		max-width: none;
 		@include float-span(4, 'last');
 	}
+
+	.about-video__body {
+		@include rem-fallback(width, 45);
+	}
 }
 
 @include breakpoint($desktop) {
-
+	.about-history__headline, .about-careers__headline {
+		@include rem-fallback(font-size, 4.2);
+	}
 }
 
 @include breakpoint($wide) {
