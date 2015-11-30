@@ -1478,7 +1478,7 @@ input, textarea {
 }
 
 /* line 5, sass/components/forms/_fields.scss */
-.sod_select {
+.sod_select, .sod_select:focus {
   z-index: 100;
 }
 

@@ -2,7 +2,7 @@ input, textarea {
 	width: 100%;
 }
 
-.sod_select {
+.sod_select, .sod_select:focus {
 	z-index: 100;
 }
 
