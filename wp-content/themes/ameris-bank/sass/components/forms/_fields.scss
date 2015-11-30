@@ -2,9 +2,18 @@ input, textarea {
 	width: 100%;
 }
 
+.sod_select {
+	z-index: 100;
+}
+
 .sod_select .sod_label {
 	overflow-y: visible;
 }
+
+.sod_select .sod_list_wrapper {
+	background: $paleblue;
+}
+
 .ninja-forms-req-symbol {
 	color: $red;
 }
