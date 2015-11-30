@@ -5030,6 +5030,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   margin-left: -45px;
   margin-left: -4.5rem;
   pointer-events: none;
+  transition: top .2s;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 6, sass/components/widgets/_callout-video.scss */
@@ -5040,11 +5041,11 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     width: 90px;
   }
 }
-/* line 15, sass/components/widgets/_callout-video.scss */
+/* line 16, sass/components/widgets/_callout-video.scss */
 .video-callout__image img {
   opacity: .5;
 }
-/* line 20, sass/components/widgets/_callout-video.scss */
+/* line 21, sass/components/widgets/_callout-video.scss */
 .video-callout__body {
   padding: 24px;
   padding: 2.4rem;
@@ -5052,7 +5053,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   background: #092764;
   position: relative;
 }
-/* line 25, sass/components/widgets/_callout-video.scss */
+/* line 26, sass/components/widgets/_callout-video.scss */
 .video-callout__body:before {
   content: "";
   display: block;
@@ -5066,7 +5067,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 6rem;
   border-bottom-color: #092764;
 }
-/* line 37, sass/components/widgets/_callout-video.scss */
+/* line 38, sass/components/widgets/_callout-video.scss */
 .video-callout__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -5079,8 +5080,9 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   line-height: 30px;
   line-height: 3rem;
   color: #ffffff;
+  text-decoration: none;
 }
-/* line 44, sass/components/widgets/_callout-video.scss */
+/* line 46, sass/components/widgets/_callout-video.scss */
 .video-callout__date {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
@@ -5089,23 +5091,29 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 0;
 }
 @media (min-width: 740px) {
-  /* line 44, sass/components/widgets/_callout-video.scss */
+  /* line 46, sass/components/widgets/_callout-video.scss */
   .video-callout__date {
     text-align: left;
   }
 }
-/* line 56, sass/components/widgets/_callout-video.scss */
+/* line 59, sass/components/widgets/_callout-video.scss */
 .video-callout a {
   display: block;
   background: #092764;
+  transition: all .2s;
 }
-/* line 60, sass/components/widgets/_callout-video.scss */
+/* line 64, sass/components/widgets/_callout-video.scss */
 .video-callout a:hover, .video-callout a:focus {
   background: #15397f;
 }
-/* line 65, sass/components/widgets/_callout-video.scss */
+/* line 66, sass/components/widgets/_callout-video.scss */
+.video-callout a:hover .video-callout__image:after, .video-callout a:focus .video-callout__image:after {
+  top: 25%;
+}
+/* line 72, sass/components/widgets/_callout-video.scss */
 .video-callout a:focus .video-callout__headline {
   text-decoration: underline;
 }
