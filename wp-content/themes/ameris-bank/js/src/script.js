@@ -273,6 +273,12 @@
 	} );
 
 
+	/**
+	 * Set tables inside content as responsive.
+	 */
+	$( '.entry-content table' ).addClass( 'responsive' );
+
+
 	// Put code here
 
 

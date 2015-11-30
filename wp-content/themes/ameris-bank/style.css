@@ -9059,6 +9059,79 @@ td:nth-child(n+2), th:nth-child(n+2) {
   text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 49, sass/components/_tables.scss */
+  div.table-wrapper {
+    margin: 30px 0px;
+    margin: 3rem 0rem;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  /* line 57, sass/components/_tables.scss */
+  div.table-wrapper div.scrollable {
+    margin-left: 35%;
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+  /* line 63, sass/components/_tables.scss */
+  div.table-wrapper td, div.table-wrapper th {
+    position: relative;
+    overflow: hidden;
+    min-width: 175px;
+  }
+
+  /* line 72, sass/components/_tables.scss */
+  table.responsive,
+  .pinned table {
+    margin: 0;
+  }
+
+  /* line 77, sass/components/_tables.scss */
+  div.table-wrapper .pinned {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 35%;
+    overflow: hidden;
+    overflow-x: scroll;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+  /* line 88, sass/components/_tables.scss */
+  div.table-wrapper .pinned table {
+    border-right: none;
+    border-left: none;
+    width: 100%;
+  }
+  /* line 93, sass/components/_tables.scss */
+  div.table-wrapper .pinned table tr {
+    border-bottom: none;
+    border-bottom-width: 0;
+  }
+  /* line 98, sass/components/_tables.scss */
+  div.table-wrapper .pinned table th, div.table-wrapper .pinned table td {
+    min-width: 0;
+    border-bottom: solid #d7e7f2;
+    border-bottom-width: 2px;
+    border-bottom-width: 0.2rem;
+  }
+  /* line 105, sass/components/_tables.scss */
+  div.table-wrapper .pinned table td:last-child {
+    border-bottom: 0;
+  }
+
+  /* line 112, sass/components/_tables.scss */
+  table.responsive th:first-child,
+  table.responsive td:first-child,
+  table.responsive td:first-child,
+  table.responsive.pinned td {
+    display: none;
+  }
+}
 /* line 1, sass/components/_quick-links.scss */
 .quick-links {
   margin-bottom: 40px;

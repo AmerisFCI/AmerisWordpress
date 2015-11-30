@@ -30,8 +30,8 @@ if ( is_page_template( 'page-templates/leadership-page.php' ) ||
 
 // one extra tweak - if there's no banner_blurb, the landing-banner size
 // should drop to product-banner
-if ( $banner_size === 'landing-banner' && !get_field( 'banner_blurb', $post_id ) )
-	$banner_size = 'product-banner';
+// if ( $banner_size === 'landing-banner' && !get_field( 'banner_blurb', $post_id ) )
+// 	$banner_size = 'product-banner';
 
 if ( has_post_thumbnail( $post_id ) ) { ?>
 	<div class="<?php echo $prefix; ?>banner-image">

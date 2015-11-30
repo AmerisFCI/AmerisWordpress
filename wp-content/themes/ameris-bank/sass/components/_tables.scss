@@ -42,3 +42,78 @@ td, th {
 		text-align: center;
 	}
 }
+
+// Zurb responsive tables
+@media only screen and (max-width: 767px) {
+	
+	div.table-wrapper {
+		@include rem-fallback(margin, 3, 0);
+		position:relative;
+		overflow:hidden;
+		border-right:1px solid #ccc;
+		border-top:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+
+		div.scrollable {
+			margin-left:35%;
+			overflow:scroll;
+			overflow-y:hidden;
+		}
+
+		td, th {
+			position:relative;
+			//white-space:nowrap;
+			overflow:hidden;
+			min-width:175px;
+		}
+
+	}
+
+	table.responsive,
+	.pinned table {
+		margin:0;
+	}
+	
+	div.table-wrapper .pinned {
+		position:absolute;
+		left:0;
+		top:0;
+		background:#fff;
+		width:35%; 
+		overflow:hidden; 
+		overflow-x:scroll; 
+		border-right:1px solid #ccc;
+		border-left:1px solid #ccc;
+
+		table {
+			border-right:none;
+			border-left:none;
+			width:100%;
+
+			tr {
+				border-bottom:none;
+				border-bottom-width:0;
+			}
+
+			th, td {
+				//white-space:nowrap;
+				min-width:0;
+				border-bottom: solid $paleblue;
+				@include rem-fallback(border-bottom-width, .2);		
+			}
+
+			td:last-child {
+				border-bottom:0;
+			}
+
+		}
+	}
+	
+	table.responsive th:first-child,
+	table.responsive td:first-child,
+	table.responsive td:first-child,
+	table.responsive.pinned td {
+		display:none;
+	}
+	
+}
