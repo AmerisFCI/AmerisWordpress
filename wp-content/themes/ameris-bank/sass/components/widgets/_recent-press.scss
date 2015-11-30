@@ -11,6 +11,10 @@
 		text-transform: none;
 		@include plain-teaser-title;
 		@include rem-fallback(margin-bottom, .3);
+		a {display: block;}
+		a:hover, a:focus {
+			text-decoration: underline;
+		}
 	}
 	.recent-post {
 		@include rem-fallback(margin-bottom, 2.4);

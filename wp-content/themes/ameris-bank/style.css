@@ -4839,13 +4839,21 @@ footer .menu-item {
   margin-bottom: 3px;
   margin-bottom: 0.3rem;
 }
+/* line 14, sass/components/widgets/_recent-press.scss */
+.widget_ameris_press_feed_widget .recent-post__title a, .widget_ameris_recent_posts_widget .recent-post__title a {
+  display: block;
+}
 /* line 15, sass/components/widgets/_recent-press.scss */
+.widget_ameris_press_feed_widget .recent-post__title a:hover, .widget_ameris_press_feed_widget .recent-post__title a:focus, .widget_ameris_recent_posts_widget .recent-post__title a:hover, .widget_ameris_recent_posts_widget .recent-post__title a:focus {
+  text-decoration: underline;
+}
+/* line 19, sass/components/widgets/_recent-press.scss */
 .widget_ameris_press_feed_widget .recent-post, .widget_ameris_recent_posts_widget .recent-post {
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
 }
 
-/* line 20, sass/components/widgets/_recent-press.scss */
+/* line 24, sass/components/widgets/_recent-press.scss */
 .more-recent-posts__link {
   font-style: normal;
   font-size: 18px;
@@ -4899,18 +4907,18 @@ footer .menu-item {
   top: 0;
 }
 
-/* line 24, sass/components/widgets/_recent-press.scss */
+/* line 28, sass/components/widgets/_recent-press.scss */
 .recent-post__meta {
   text-align: center;
 }
 @media (min-width: 740px) {
-  /* line 24, sass/components/widgets/_recent-press.scss */
+  /* line 28, sass/components/widgets/_recent-press.scss */
   .recent-post__meta {
     text-align: left;
   }
 }
 
-/* line 31, sass/components/widgets/_recent-press.scss */
+/* line 35, sass/components/widgets/_recent-press.scss */
 .recent-post__image img {
   display: block;
   margin-bottom: 18px;
@@ -5054,7 +5062,11 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 6rem;
   border-bottom-color: #092764;
 }
-/* line 34, sass/components/widgets/_callout-video.scss */
+/* line 35, sass/components/widgets/_callout-video.scss */
+.video-callout a:hover .video-callout__headline {
+  text-decoration: underline;
+}
+/* line 40, sass/components/widgets/_callout-video.scss */
 .video-callout__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -5068,11 +5080,11 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   line-height: 3rem;
   color: #ffffff;
 }
-/* line 39, sass/components/widgets/_callout-video.scss */
+/* line 45, sass/components/widgets/_callout-video.scss */
 .video-callout__headline a {
   color: #ffffff;
 }
-/* line 44, sass/components/widgets/_callout-video.scss */
+/* line 50, sass/components/widgets/_callout-video.scss */
 .video-callout__date {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
@@ -5083,7 +5095,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   text-align: center;
 }
 @media (min-width: 740px) {
-  /* line 44, sass/components/widgets/_callout-video.scss */
+  /* line 50, sass/components/widgets/_callout-video.scss */
   .video-callout__date {
     text-align: left;
   }

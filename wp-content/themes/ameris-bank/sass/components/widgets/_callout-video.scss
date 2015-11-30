@@ -31,6 +31,12 @@
 		}
 	}
 
+	a:hover {
+		.video-callout__headline {
+			text-decoration: underline;
+		}
+	}
+	
 	&__headline {
 		@include h2-look;
 		@include rem-fallback( font-size, 2.4 );
