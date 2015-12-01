@@ -117,6 +117,10 @@
 		//float: left;
 		box-shadow: 0 0 120px #000;
 		line-height: 0;
+		border-radius: 50%;
+		overflow: hidden;
+		@include rem-fallback(width, 1.6);
+		@include rem-fallback(height, 1.6);
 
 		&:before {
 			content: none;
@@ -128,6 +132,7 @@
 			@include rem-fallback(height, 1.6);
 			background: transparent;
 			border-radius: 50%;
+			overflow: hidden;
 			@include rem-fallback(border-radius, 1);
 			border-color: $white;
 			@include rem-fallback(border-width, .2);
