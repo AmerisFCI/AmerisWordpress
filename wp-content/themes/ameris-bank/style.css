@@ -9211,14 +9211,27 @@ td:nth-child(n+2), th:nth-child(n+2) {
     position: relative;
     overflow: hidden;
   }
+  /* line 70, sass/components/_tables.scss */
+  div.table-wrapper:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 90%);
+    width: 20px;
+    width: 2rem;
+    height: 100%;
+  }
 
-  /* line 72, sass/components/_tables.scss */
+  /* line 85, sass/components/_tables.scss */
   table.responsive,
   .pinned table {
     margin: 0;
   }
 
-  /* line 77, sass/components/_tables.scss */
+  /* line 90, sass/components/_tables.scss */
   div.table-wrapper .pinned {
     position: absolute;
     left: 0;
@@ -9230,30 +9243,30 @@ td:nth-child(n+2), th:nth-child(n+2) {
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
   }
-  /* line 88, sass/components/_tables.scss */
+  /* line 101, sass/components/_tables.scss */
   div.table-wrapper .pinned table {
     border-right: none;
     border-left: none;
     width: 100%;
   }
-  /* line 93, sass/components/_tables.scss */
+  /* line 106, sass/components/_tables.scss */
   div.table-wrapper .pinned table tr {
     border-bottom: none;
     border-bottom-width: 0;
   }
-  /* line 98, sass/components/_tables.scss */
+  /* line 111, sass/components/_tables.scss */
   div.table-wrapper .pinned table th, div.table-wrapper .pinned table td {
     min-width: 0;
     border-bottom: solid #d7e7f2;
     border-bottom-width: 2px;
     border-bottom-width: 0.2rem;
   }
-  /* line 105, sass/components/_tables.scss */
+  /* line 118, sass/components/_tables.scss */
   div.table-wrapper .pinned table td:last-child {
     border-bottom: 0;
   }
 
-  /* line 112, sass/components/_tables.scss */
+  /* line 125, sass/components/_tables.scss */
   table.responsive th:first-child,
   table.responsive td:first-child,
   table.responsive td:first-child,
