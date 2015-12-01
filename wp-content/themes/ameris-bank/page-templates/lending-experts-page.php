@@ -49,6 +49,12 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+
+		<?php // display right sidebar if no child pages
+		global $post;
+		if ( $post->post_name !== 'lending-experts' )
+			get_sidebar( 'right' ); ?>
+
 	</div><!-- #primary -->
 
 	<?php get_sidebar( 'left' ); ?>
