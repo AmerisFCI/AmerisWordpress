@@ -67,6 +67,19 @@ td, th {
 			// min-width:175px;
 		}
 
+		&:after { // a little indication that scrolling is possible
+			content:"";
+			position:absolute;
+			z-index:1;
+			top:0;
+			right:0;
+			pointer-events:none;
+			background-image:linear-gradient(to right, 
+			                 rgba(255,255,255, 0), 
+			                 rgba(255,255,255, 1) 90%);
+			@include rem-fallback( width, 2 );
+			height:100%;
+		}
 	}
 
 	table.responsive,
