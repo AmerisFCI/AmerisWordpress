@@ -9591,33 +9591,45 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 64, sass/components/_wysiwyg.scss */
+  /* line 126, sass/base/_mixins.scss */
+  .column-list:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 65, sass/components/_wysiwyg.scss */
   .column-list > li {
     width: 45%;
     float: left;
     margin-right: 10%;
   }
-  /* line 68, sass/components/_wysiwyg.scss */
+  /* line 69, sass/components/_wysiwyg.scss */
   .column-list > li:nth-of-type(2n) {
     margin-right: 0;
   }
-  /* line 71, sass/components/_wysiwyg.scss */
+  /* line 72, sass/components/_wysiwyg.scss */
   .column-list > li:nth-of-type(2n+1) {
     clear: both;
   }
 }
 @media (min-width: 1200px) {
-  /* line 80, sass/components/_wysiwyg.scss */
+  /* line 126, sass/base/_mixins.scss */
+  .column-list:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 82, sass/components/_wysiwyg.scss */
   .column-list > li {
     width: 45%;
     float: left;
     margin-right: 10%;
   }
-  /* line 84, sass/components/_wysiwyg.scss */
+  /* line 86, sass/components/_wysiwyg.scss */
   .column-list > li:nth-of-type(2n) {
     margin-right: 0;
   }
-  /* line 87, sass/components/_wysiwyg.scss */
+  /* line 89, sass/components/_wysiwyg.scss */
   .column-list > li:nth-of-type(2n+1) {
     clear: both;
   }

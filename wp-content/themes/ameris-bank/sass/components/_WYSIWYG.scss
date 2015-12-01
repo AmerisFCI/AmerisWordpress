@@ -61,6 +61,7 @@ a.view-all, .view-all a {
 
 @include breakpoint($tablet-wide) {
 	.column-list {
+		@include clearfix();
 		> li {
 			width: 45%;
 			float: left;
@@ -77,6 +78,7 @@ a.view-all, .view-all a {
 
 @include breakpoint($desktop) {
 	.column-list {
+		@include clearfix();
 		> li {
 			width: 45%;
 			float: left;
