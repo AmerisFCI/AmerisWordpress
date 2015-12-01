@@ -5119,6 +5119,13 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 @media (min-width: 740px) {
   /* line 24, sass/components/widgets/_account-open.scss */
   .sidebar-right .widget_ameris_account_open_widget {
+    margin-top: -50px;
+    margin-top: -5rem;
+  }
+}
+@media (min-width: 1420px) {
+  /* line 30, sass/components/widgets/_account-open.scss */
+  .sidebar-right .widget_ameris_account_open_widget {
     margin-top: -70px;
     margin-top: -7rem;
   }
