@@ -1195,9 +1195,14 @@ dd {
     margin-right: 0;
     clear: none;
   }
+  /* line 36, sass/layouts/_content-sidebar.scss */
+  .sidebar-right .widget_ameris_account_open_widget {
+    margin-top: -70px;
+    margin-top: -7rem;
+  }
 }
 @media (min-width: 1420px) {
-  /* line 46, sass/layouts/_content-sidebar.scss */
+  /* line 49, sass/layouts/_content-sidebar.scss */
   .has-sidebar-right .site-main {
     width: 72.22222%;
     float: left;
@@ -1206,13 +1211,13 @@ dd {
     clear: none;
   }
 
-  /* line 49, sass/layouts/_content-sidebar.scss */
+  /* line 52, sass/layouts/_content-sidebar.scss */
   .has-sidebar-right #main {
     padding-right: 48px;
     padding-right: 4.8rem;
   }
 
-  /* line 52, sass/layouts/_content-sidebar.scss */
+  /* line 55, sass/layouts/_content-sidebar.scss */
   .sidebar-right {
     width: 27.77778%;
     float: right;
@@ -1365,8 +1370,8 @@ dd {
 /* line 27, sass/layouts/_basic-page.scss */
 body:not(.home) .site-main {
   box-sizing: border-box;
-  padding: 24px;
-  padding: 2.4rem;
+  padding: 0px 24px 24px;
+  padding: 0rem 2.4rem 2.4rem;
 }
 
 /* line 33, sass/layouts/_basic-page.scss */
@@ -1478,7 +1483,7 @@ input, textarea {
 }
 
 /* line 5, sass/components/forms/_fields.scss */
-.sod_select, .sod_select:focus {
+.sod_select:focus {
   z-index: 100;
 }
 
@@ -1493,12 +1498,12 @@ input, textarea {
 }
 
 /* line 17, sass/components/forms/_fields.scss */
-.ninja-forms-req-symbol {
+.ninja-forms-req-symbol, .form-req-symbol {
   color: #d31145;
 }
 
 /* line 21, sass/components/forms/_fields.scss */
-.ninja-forms-required-items {
+.ninja-forms-required-items, .form-required-items {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
 }
@@ -1556,7 +1561,13 @@ textarea:focus,
 .ninja-forms-cont input[type="password"],
 .ninja-forms-cont input[type="search"],
 .ninja-forms-cont textarea,
-.ninja-forms-cont .sod_select {
+.ninja-forms-cont .sod_select, .form-cont input[type="text"],
+.form-cont input[type="email"],
+.form-cont input[type="url"],
+.form-cont input[type="password"],
+.form-cont input[type="search"],
+.form-cont textarea,
+.form-cont .sod_select {
   border: solid #bdbdbd;
   border-width: 1px;
   border-width: 0.1rem;
@@ -1585,7 +1596,13 @@ textarea:focus,
 .ninja-forms-cont input[type="password"]:before,
 .ninja-forms-cont input[type="search"]:before,
 .ninja-forms-cont textarea:before,
-.ninja-forms-cont .sod_select:before {
+.ninja-forms-cont .sod_select:before, .form-cont input[type="text"]:before,
+.form-cont input[type="email"]:before,
+.form-cont input[type="url"]:before,
+.form-cont input[type="password"]:before,
+.form-cont input[type="search"]:before,
+.form-cont textarea:before,
+.form-cont .sod_select:before {
   top: 10px;
   top: 1rem;
 }
@@ -1596,7 +1613,13 @@ textarea:focus,
 .ninja-forms-cont input[type="password"]:focus,
 .ninja-forms-cont input[type="search"]:focus,
 .ninja-forms-cont textarea:focus,
-.ninja-forms-cont .sod_select:focus {
+.ninja-forms-cont .sod_select:focus, .form-cont input[type="text"]:focus,
+.form-cont input[type="email"]:focus,
+.form-cont input[type="url"]:focus,
+.form-cont input[type="password"]:focus,
+.form-cont input[type="search"]:focus,
+.form-cont textarea:focus,
+.form-cont .sod_select:focus {
   color: #092764;
   border-color: #15397f;
 }
@@ -1619,16 +1642,34 @@ textarea:focus,
 .ninja-forms-cont textarea:focus,
 .ninja-forms-cont .sod_select:hover,
 .ninja-forms-cont .sod_select:active,
-.ninja-forms-cont .sod_select:focus {
+.ninja-forms-cont .sod_select:focus, .form-cont input[type="text"]:hover, .form-cont input[type="text"]:active, .form-cont input[type="text"]:focus,
+.form-cont input[type="email"]:hover,
+.form-cont input[type="email"]:active,
+.form-cont input[type="email"]:focus,
+.form-cont input[type="url"]:hover,
+.form-cont input[type="url"]:active,
+.form-cont input[type="url"]:focus,
+.form-cont input[type="password"]:hover,
+.form-cont input[type="password"]:active,
+.form-cont input[type="password"]:focus,
+.form-cont input[type="search"]:hover,
+.form-cont input[type="search"]:active,
+.form-cont input[type="search"]:focus,
+.form-cont textarea:hover,
+.form-cont textarea:active,
+.form-cont textarea:focus,
+.form-cont .sod_select:hover,
+.form-cont .sod_select:active,
+.form-cont .sod_select:focus {
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.05);
 }
 /* line 91, sass/components/forms/_fields.scss */
-.ninja-forms-cont label {
+.ninja-forms-cont label, .form-cont label {
   padding: 14px 0px;
   padding: 1.4rem 0rem;
 }
 /* line 94, sass/components/forms/_fields.scss */
-.ninja-forms-cont input[type="submit"] {
+.ninja-forms-cont input[type="submit"], .form-cont input[type="submit"] {
   background-color: #d31145;
   color: #ffffff;
   padding: 10px 20px;
@@ -1651,16 +1692,16 @@ textarea:focus,
   padding-right: 4.2rem;
 }
 /* line 150, sass/base/_mixins.scss */
-.ninja-forms-cont input[type="submit"]:hover, .ninja-forms-cont input[type="submit"]:active, .ninja-forms-cont input[type="submit"]:focus {
+.ninja-forms-cont input[type="submit"]:hover, .ninja-forms-cont input[type="submit"]:active, .ninja-forms-cont input[type="submit"]:focus, .form-cont input[type="submit"]:hover, .form-cont input[type="submit"]:active, .form-cont input[type="submit"]:focus {
   background-color: #b30e3a;
   box-shadow: 0 0.7rem rgba(21, 57, 127, 0.2);
 }
 /* line 155, sass/base/_mixins.scss */
-.ninja-forms-cont input[type="submit"]:hover, .ninja-forms-cont input[type="submit"]:visited, .ninja-forms-cont input[type="submit"]:focus {
+.ninja-forms-cont input[type="submit"]:hover, .ninja-forms-cont input[type="submit"]:visited, .ninja-forms-cont input[type="submit"]:focus, .form-cont input[type="submit"]:hover, .form-cont input[type="submit"]:visited, .form-cont input[type="submit"]:focus {
   color: #ffffff;
 }
 /* line 200, sass/base/_mixins.scss */
-.ninja-forms-cont input[type="submit"]:after {
+.ninja-forms-cont input[type="submit"]:after, .form-cont input[type="submit"]:after {
   content: "";
   display: inline-block;
   position: relative;
@@ -1678,7 +1719,7 @@ textarea:focus,
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
-  .ninja-forms-cont input[type="submit"]:after {
+  .ninja-forms-cont input[type="submit"]:after, .form-cont input[type="submit"]:after {
     background-size: 215px 2793.5px;
     background-position: 0 -495px;
     height: 20px;
@@ -1686,12 +1727,12 @@ textarea:focus,
   }
 }
 /* line 210, sass/base/_mixins.scss */
-.ninja-forms-cont input[type="submit"]:hover:after, .ninja-forms-cont input[type="submit"]:focus:after {
+.ninja-forms-cont input[type="submit"]:hover:after, .ninja-forms-cont input[type="submit"]:focus:after, .form-cont input[type="submit"]:hover:after, .form-cont input[type="submit"]:focus:after {
   left: 19px;
   left: 1.9rem;
 }
 /* line 98, sass/components/forms/_fields.scss */
-.ninja-forms-cont .sod_select .sod_list_wrapper {
+.ninja-forms-cont .sod_select .sod_list_wrapper, .form-cont .sod_select .sod_list_wrapper {
   width: 100%;
   border: solid #bdbdbd;
   border-width: 1px;
@@ -1700,7 +1741,7 @@ textarea:focus,
 
 @media (min-width: 530px) {
   /* line 109, sass/components/forms/_fields.scss */
-  .ninja-forms-cont input {
+  .ninja-forms-cont input, .form-cont input {
     width: auto;
   }
   /* line 110, sass/components/forms/_fields.scss */
@@ -1710,7 +1751,13 @@ textarea:focus,
   .ninja-forms-cont input[type="password"],
   .ninja-forms-cont input[type="search"],
   .ninja-forms-cont textarea,
-  .ninja-forms-cont .sod_select {
+  .ninja-forms-cont .sod_select, .form-cont input[type="text"],
+  .form-cont input[type="email"],
+  .form-cont input[type="url"],
+  .form-cont input[type="password"],
+  .form-cont input[type="search"],
+  .form-cont textarea,
+  .form-cont .sod_select {
     padding: 14px;
     padding: 1.4rem;
     font-size: 18px;
@@ -1719,7 +1766,7 @@ textarea:focus,
     float: right;
   }
   /* line 122, sass/components/forms/_fields.scss */
-  .ninja-forms-cont label {
+  .ninja-forms-cont label, .form-cont label {
     width: 100%;
     float: left;
     clear: both;
@@ -1730,14 +1777,14 @@ textarea:focus,
     font-size: 1.8rem;
   }
   /* line 130, sass/components/forms/_fields.scss */
-  .ninja-forms-cont input[type="submit"] {
+  .ninja-forms-cont input[type="submit"], .form-cont input[type="submit"] {
     float: left;
     clear: both;
   }
 }
 @media (min-width: 1200px) {
   /* line 139, sass/components/forms/_fields.scss */
-  .ninja-forms-cont input {
+  .ninja-forms-cont input, .form-cont input {
     width: auto;
   }
   /* line 140, sass/components/forms/_fields.scss */
@@ -1747,16 +1794,22 @@ textarea:focus,
   .ninja-forms-cont input[type="password"],
   .ninja-forms-cont input[type="search"],
   .ninja-forms-cont textarea,
-  .ninja-forms-cont .sod_select {
+  .ninja-forms-cont .sod_select, .form-cont input[type="text"],
+  .form-cont input[type="email"],
+  .form-cont input[type="url"],
+  .form-cont input[type="password"],
+  .form-cont input[type="search"],
+  .form-cont textarea,
+  .form-cont .sod_select {
     width: 65%;
   }
   /* line 149, sass/components/forms/_fields.scss */
-  .ninja-forms-cont label {
+  .ninja-forms-cont label, .form-cont label {
     width: 27%;
     margin-right: 8%;
   }
   /* line 153, sass/components/forms/_fields.scss */
-  .ninja-forms-cont input[type="submit"] {
+  .ninja-forms-cont input[type="submit"], .form-cont input[type="submit"] {
     float: left;
     clear: both;
     margin-left: 35%;

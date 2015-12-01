@@ -33,6 +33,9 @@
 	}
 	.sidebar-right {
 		@include grid-span(7, 14);
+		.widget_ameris_account_open_widget {
+			@include rem-fallback(margin-top, -7);
+		}
 	}
 }
 

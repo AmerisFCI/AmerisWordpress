@@ -2,7 +2,7 @@ input, textarea {
 	width: 100%;
 }
 
-.sod_select, .sod_select:focus {
+.sod_select:focus {
 	z-index: 100;
 }
 
@@ -14,11 +14,11 @@ input, textarea {
 	background: $paleblue;
 }
 
-.ninja-forms-req-symbol {
+.ninja-forms-req-symbol, .form-req-symbol {
 	color: $red;
 }
 
-.ninja-forms-required-items {
+.ninja-forms-required-items, .form-required-items {
 	@include rem-fallback(margin-bottom, 1.4);
 }
 
@@ -51,7 +51,7 @@ textarea,
 	}
 }
 
-.ninja-forms-cont {
+.ninja-forms-cont, .form-cont {
 	input[type="text"],
 	input[type="email"],
 	input[type="url"],
@@ -105,7 +105,7 @@ textarea,
 
 
 @include breakpoint($tablet-to-desktop) {
-	.ninja-forms-cont {
+	.ninja-forms-cont, .form-cont {
 		input {width: auto;}
 		input[type="text"],
 		input[type="email"],
@@ -135,7 +135,7 @@ textarea,
 }
 
 @include breakpoint($desktop) {
-	.ninja-forms-cont {
+	.ninja-forms-cont, .form-cont {
 		input {width: auto;}
 		input[type="text"],
 		input[type="email"],
