@@ -36,6 +36,12 @@ function ameris_add_tinymce_classes( $settings ) {
             'block'    => 'div',
             'classes'  => 'button-cta',
             'wrapper'  => true
+        ),
+        array(
+            'title'    => 'Columned List',
+            'block'    => 'ul',
+            'selector' => 'ul',
+            'classes'  => 'column-list'
         )
     );
 
