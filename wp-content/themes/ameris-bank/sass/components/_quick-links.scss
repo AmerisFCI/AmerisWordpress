@@ -31,3 +31,12 @@
 	}
 }
 
+// in widget form
+.widget_ameris_looking_widget .quick-links {
+	float:none;
+	width:100%;
+	.sod_select {
+		@include rem-fallback(margin-top, 1.25);
+		margin-bottom:0;
+	}
+}

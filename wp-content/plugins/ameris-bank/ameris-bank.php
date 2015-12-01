@@ -19,3 +19,4 @@ require_once( $includes . 'widget-callout.php' );
 require_once( $includes . 'widget-callout-video.php' );
 require_once( $includes . 'widget-recent-posts.php' );
 require_once( $includes . 'widget-press-feed.php' );
+require_once( $includes . 'widget-looking.php' );

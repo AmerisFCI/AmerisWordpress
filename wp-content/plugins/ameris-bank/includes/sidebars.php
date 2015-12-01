@@ -11,6 +11,7 @@ function ameris_widgets_init() {
 	register_widget( 'ameris_video_callout_widget' );
 	register_widget( 'ameris_recent_posts_widget' );
 	register_widget( 'ameris_press_feed_widget' );
+	register_widget( 'ameris_looking_widget' );
 	
 	register_sidebar( array(
 		'name'          => 'Left Sidebar',
