@@ -4288,7 +4288,7 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
 
 /* line 112, sass/components/sections/_footer.scss */
 .social-links {
-  float: right;
+  float: left;
 }
 
 /* line 116, sass/components/sections/_footer.scss */
@@ -4361,44 +4361,54 @@ footer .menu-item {
 @media (min-width: 740px) {
   /* line 182, sass/components/sections/_footer.scss */
   .newsletter-signup {
-    float: right;
     clear: right;
     margin-top: 10px;
     margin-top: 1rem;
   }
 
-  /* line 187, sass/components/sections/_footer.scss */
+  /* line 186, sass/components/sections/_footer.scss */
   input.newsletter-signup__email {
     width: 250px;
     width: 25rem;
   }
+
+  /* line 189, sass/components/sections/_footer.scss */
+  .newsletter-signup, .social-links {
+    float: right;
+    clear: right;
+  }
 }
 @media (min-width: 1024px) {
-  /* line 195, sass/components/sections/_footer.scss */
+  /* line 198, sass/components/sections/_footer.scss */
   .site-info {
     margin: 0;
   }
 
-  /* line 199, sass/components/sections/_footer.scss */
+  /* line 202, sass/components/sections/_footer.scss */
   .footer-copyright-links {
     float: left;
   }
 
-  /* line 203, sass/components/sections/_footer.scss */
+  /* line 206, sass/components/sections/_footer.scss */
   .newsletter-signup, .social-links {
-    float: right;
+    float: left;
     clear: none;
     margin-top: 0;
   }
+
+  /* line 212, sass/components/sections/_footer.scss */
+  .footer-top__side {
+    float: right;
+  }
 }
 @media (min-width: 1420px) {
-  /* line 213, sass/components/sections/_footer.scss */
+  /* line 220, sass/components/sections/_footer.scss */
   .footer-utility {
     float: right;
     clear: none;
     margin: 0;
   }
-  /* line 217, sass/components/sections/_footer.scss */
+  /* line 224, sass/components/sections/_footer.scss */
   .footer-utility a {
     padding: 10px 0px 0px 10px;
     padding: 1rem 0rem 0rem 1rem;

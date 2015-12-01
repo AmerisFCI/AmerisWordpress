@@ -110,7 +110,7 @@ input.newsletter-signup__submit {
 }
 
 .social-links {
-	float: right;
+	float: left;
 }
 
 .newsletter-signup {
@@ -180,12 +180,15 @@ footer .menu-item {
 
 @include breakpoint($tablet-wide-up) {
 	.newsletter-signup {
-		float: right;
 		clear: right;
 		@include rem-fallback(margin-top, 1);
 	}
 	input.newsletter-signup__email {
 		@include rem-fallback(width, 25);
+	}
+	.newsletter-signup, .social-links {
+		float:right;
+		clear:right;
 	}
 }
 
@@ -201,9 +204,13 @@ footer .menu-item {
 	}
 
 	.newsletter-signup, .social-links {
-		float: right;
+		float: left;
 		clear: none;
 		margin-top: 0;
+	}
+
+	.footer-top__side {
+		float:right;
 	}
 
 }
