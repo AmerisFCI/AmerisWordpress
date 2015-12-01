@@ -277,10 +277,6 @@
 	 * Set tables inside content as responsive.
 	 */
 	$( '.entry-content table' ).addClass( 'responsive' );
-
-	/**
-	 * Trigger responsive table updating.
-	 */
 	
 
 
