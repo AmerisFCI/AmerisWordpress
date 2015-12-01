@@ -231,11 +231,15 @@
 			min-height: initial;
 		}
 	}
-	.page-template-landing-page {
+	.page-template-landing-page, .page-template-view-all-page {
 		.has-banner-image .banner-image {
 			height: 560px !important;
 			height: 56rem !important;
 			min-height: initial;
+			img {
+				height: 100%;
+				width: auto;
+			}
 		}
 	}
 }
