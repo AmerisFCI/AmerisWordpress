@@ -171,11 +171,11 @@
 		//	padding-top: 0;
 		//}
 		.page-title {
-			@include rem-fallback(padding, 24, 2.4, 8);
+			@include rem-fallback(padding, 24, 2.4, 1.4);
 			clear: none;
 		}
 		~ .inner-wrap .sidebar-left {
-			@include rem-fallback(margin-top, -5);
+			//@include rem-fallback(margin-top, -5);
 			clear: none;
 		}
 	}
@@ -205,9 +205,16 @@
 	.banner-blurb {
 		@include rem-fallback(font-size, 8.6);
 	}
+	.has-banner-image ~ .content-inner-wrap {
+		@include rem-fallback(margin-top, -15);
+	}
 	.has-banner-image {
 		.page-title {
 			@include rem-fallback(padding-bottom, 15);
+			h1 {
+				@include rem-fallback(min-height, 13);
+				@include rem-fallback(margin-bottom, 2.4);
+			}
 
 		}
 		~ .inner-wrap .sidebar-left {
@@ -217,10 +224,12 @@
 }
 
 @media all and (min-width: 1200px) and (max-width: 1419px) {
-	.has-banner-image .banner-image {
-		height: 520px !important;
-		height: 52rem !important;
-		min-height: initial;
+	.has-banner-image {
+		.banner-image {
+			height: 520px !important;
+			height: 52rem !important;
+			min-height: initial;
+		}
 	}
 	.page-template-landing-page {
 		.has-banner-image .banner-image {
@@ -242,15 +251,22 @@
 			height: auto;
 		}
 	}
+	.has-banner-image ~ .content-inner-wrap {
+		@include rem-fallback(margin-top, -25);
+	}
 	.has-banner-image {
 		.page-title {
 			@include rem-fallback(padding-bottom, 25);
+			h1 {
+				@include rem-fallback(min-height, 13);
+				@include rem-fallback(margin-bottom, 2.4);
+			}
 			h1:after {
 				@include rem-fallback(right, -14);
 			}
 		}
 		~ .inner-wrap .sidebar-left {
-			@include rem-fallback(margin-top, -20);
+			@include rem-fallback(margin-top, -15);
 		}
 	}
 
