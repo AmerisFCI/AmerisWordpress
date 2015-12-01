@@ -91,7 +91,7 @@
 
 
 @include breakpoint($mobile) {
-	.banner-image {
+	.has-banner-image .banner-image {
 		height: 300px !important;
 		height: 30rem !important;
 		min-height: initial;
@@ -118,7 +118,7 @@
 }
 
 @include breakpoint($tablet-skinny) {
-	.banner-image {
+	.has-banner-image .banner-image {
 		width: 100% !important;
 		height: 450px !important;
 		height: 40rem !important;
@@ -131,7 +131,7 @@
 }
 
 @include breakpoint($tablet-wide) {
-	.banner-image {
+	.has-banner-image .banner-image {
 		width: 100% !important;
 		height: 450px !important;
 		height: 40rem !important;

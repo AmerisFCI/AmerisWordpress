@@ -4548,14 +4548,14 @@ footer .menu-item {
 
 @media (max-width: 529px) {
   /* line 94, sass/components/sections/_banner.scss */
-  .banner-image {
+  .has-banner-image .banner-image {
     height: 300px !important;
     height: 30rem !important;
     min-height: initial;
     width: 100% !important;
   }
   /* line 99, sass/components/sections/_banner.scss */
-  .banner-image img {
+  .has-banner-image .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
@@ -4577,21 +4577,21 @@ footer .menu-item {
 }
 @media (min-width: 530px) and (max-width: 739px) {
   /* line 121, sass/components/sections/_banner.scss */
-  .banner-image {
+  .has-banner-image .banner-image {
     width: 100% !important;
     height: 450px !important;
     height: 40rem !important;
     min-height: initial;
   }
   /* line 126, sass/components/sections/_banner.scss */
-  .banner-image img {
+  .has-banner-image .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   /* line 134, sass/components/sections/_banner.scss */
-  .banner-image {
+  .has-banner-image .banner-image {
     width: 100% !important;
     height: 450px !important;
     height: 40rem !important;
