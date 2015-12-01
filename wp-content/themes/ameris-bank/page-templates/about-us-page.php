@@ -98,7 +98,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 
 <div class="latest-updates">
 	<h2>Latest Updates</h2>
-	<script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="amerisbanknewsfeed" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="697150" style="height:800px;width:100%;"></div>
+	<script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script><div class="tintup" data-id="amerisbanknewsfeed" data-columns="" data-mobilescroll="true"    data-infinitescroll="true" data-personalization-id="697150" style="height:640px;width:100%;"></div>
 </div>
 
 <div class="inner-wrap content-inner-wrap">
