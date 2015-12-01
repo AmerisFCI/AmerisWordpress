@@ -4682,8 +4682,8 @@ footer .menu-item {
   }
   /* line 220, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
-    margin-top: -100px;
-    margin-top: -10rem;
+    margin-top: -74px;
+    margin-top: -7.4rem;
   }
 }
 @media all and (min-width: 1200px) and (max-width: 1419px) {
