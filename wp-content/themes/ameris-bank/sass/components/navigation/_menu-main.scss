@@ -406,6 +406,7 @@
 	@include element-invisible;
 	@include clearfix();
 
+
 	> .item-description {
 		@include element-invisible-off;
 		@include rem-fallback(padding, 3, 3, 0);
@@ -640,10 +641,13 @@
 			background: $white;
 			.tab-container {
 				width: 70% !important;
+				opacity: 1;
 			}
 		}
 	}
 	.tab-container {
+		opacity: 0;
+		transition: opacity .3s;
 		> .item-description {
 			width: 71%;
 			@include rem-fallback(padding, 3.6, 3.6, 0);
