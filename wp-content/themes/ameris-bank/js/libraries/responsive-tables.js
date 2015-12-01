@@ -22,8 +22,6 @@ jQuery(document).ready(function($) {
   $(window).load(updateTables);
   $(window).on("redraw",function(){switched=false;updateTables();}); // An event to listen for
   $(window).on("resize", updateTables);
-  
-  // Ameris: force row resize
   $(window).on("resize", function() {
     $( 'table.responsive' ).each( function() {
       var original = $( this );
@@ -71,7 +69,12 @@ jQuery(document).ready(function($) {
     });
 
     tr_copy.each(function (index) {
-      $(this).height(heights[index]);
+      if ( $( this ).height() < heights[index] ) {
+        $(this).height(heights[index]);
+      } else {
+        // if pinned side is taller than normal row
+        $( tr[index] ).height($(this).height() - 2);
+      }
     });
   }
 

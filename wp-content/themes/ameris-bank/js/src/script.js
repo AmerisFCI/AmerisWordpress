@@ -278,6 +278,11 @@
 	 */
 	$( '.entry-content table' ).addClass( 'responsive' );
 
+	/**
+	 * Trigger responsive table updating.
+	 */
+	
+
 
 	// Put code here
 
