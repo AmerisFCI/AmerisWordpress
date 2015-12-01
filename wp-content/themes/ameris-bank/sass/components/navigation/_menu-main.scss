@@ -345,6 +345,10 @@
 			background: white;
 		}
 
+		.business-nav__small-business > .tab-container > .sub-menu > li {
+			width: 30%;
+		}
+
 		li li {
 			display: table-cell;
 			@include rem-fallback(padding, 0, 1);
