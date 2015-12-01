@@ -1195,14 +1195,9 @@ dd {
     margin-right: 0;
     clear: none;
   }
-  /* line 36, sass/layouts/_content-sidebar.scss */
-  .sidebar-right .widget_ameris_account_open_widget {
-    margin-top: -70px;
-    margin-top: -7rem;
-  }
 }
 @media (min-width: 1420px) {
-  /* line 49, sass/layouts/_content-sidebar.scss */
+  /* line 46, sass/layouts/_content-sidebar.scss */
   .has-sidebar-right .site-main {
     width: 72.22222%;
     float: left;
@@ -1211,24 +1206,19 @@ dd {
     clear: none;
   }
 
-  /* line 52, sass/layouts/_content-sidebar.scss */
+  /* line 49, sass/layouts/_content-sidebar.scss */
   .has-sidebar-right #main {
     padding-right: 48px;
     padding-right: 4.8rem;
   }
 
-  /* line 55, sass/layouts/_content-sidebar.scss */
+  /* line 52, sass/layouts/_content-sidebar.scss */
   .sidebar-right {
     width: 27.77778%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none;
-  }
-  /* line 58, sass/layouts/_content-sidebar.scss */
-  .sidebar-right .widget_ameris_account_open_widget {
-    margin-top: -70px;
-    margin-top: -7rem;
   }
 }
 /*@include breakpoint($tablet-wide) {
@@ -5126,6 +5116,13 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 1.9rem;
 }
 
+@media (min-width: 740px) {
+  /* line 24, sass/components/widgets/_account-open.scss */
+  .sidebar-right .widget_ameris_account_open_widget {
+    margin-top: -70px;
+    margin-top: -7rem;
+  }
+}
 /* line 3, sass/components/widgets/_callout-video.scss */
 .video-callout__image {
   margin-bottom: 0;

@@ -19,3 +19,9 @@ a.account-open__button {
 	@include blue-button-cta;
 	@include cta-arrow-right;
 }
+
+@include breakpoint($tablet-wide-up) {
+	.sidebar-right .widget_ameris_account_open_widget {
+		@include rem-fallback(margin-top, -7);
+	}
+}
