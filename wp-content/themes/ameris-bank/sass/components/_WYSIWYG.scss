@@ -58,3 +58,35 @@ a.view-all, .view-all a {
 		}
 	}
 }
+
+@include breakpoint($tablet-wide) {
+	.column-list {
+		> li {
+			width: 45%;
+			float: left;
+			margin-right: 10%;
+			&:nth-of-type(2n) {
+				margin-right: 0;
+			}
+			&:nth-of-type(2n+1) {
+				clear: both;
+			}
+		}
+	}
+}
+
+@include breakpoint($desktop) {
+	.column-list {
+		> li {
+			width: 45%;
+			float: left;
+			margin-right: 10%;
+			&:nth-of-type(2n) {
+				margin-right: 0;
+			}
+			&:nth-of-type(2n+1) {
+				clear: both;
+			}
+		}
+	}
+}
