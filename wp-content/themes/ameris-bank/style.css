@@ -1225,6 +1225,11 @@ dd {
     margin-right: 0;
     clear: none;
   }
+  /* line 58, sass/layouts/_content-sidebar.scss */
+  .sidebar-right .widget_ameris_account_open_widget {
+    margin-top: -70px;
+    margin-top: -7rem;
+  }
 }
 /*@include breakpoint($tablet-wide) {
 

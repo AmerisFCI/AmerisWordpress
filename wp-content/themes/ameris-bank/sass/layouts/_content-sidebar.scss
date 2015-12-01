@@ -55,6 +55,9 @@
 	.sidebar-right {
 		@include grid-span(5, 14);
 		//@include rem-fallback(padding-left, 3.6);
+		.widget_ameris_account_open_widget {
+			@include rem-fallback(margin-top, -7);
+		}
 	}
 
 }
