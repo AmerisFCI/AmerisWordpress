@@ -29,6 +29,8 @@
 		swipeToSlide: true
 	});
 
+	$('.slide img').css('z-index', 1);
+
 
 	// Add slideshow functionality
 	// to the related resources
