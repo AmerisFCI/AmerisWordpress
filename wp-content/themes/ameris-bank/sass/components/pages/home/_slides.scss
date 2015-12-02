@@ -168,7 +168,7 @@
 
 @include breakpoint($mobile) {
 	.slides {
-		@include rem-fallback(min-height, 50);
+		@include rem-fallback(min-height, 30);
 	}
 	.slide__title.kicker {
 		@include rem-fallback(font-size, 1.5);

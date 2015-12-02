@@ -1704,8 +1704,8 @@ textarea:focus,
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
   transition: background-color .2s, box-shadow .2s;
-  padding: 17px 30px 20px;
-  padding: 1.7rem 3rem 2rem;
+  padding: 17px 30px 18px;
+  padding: 1.7rem 3rem 1.8rem;
   font-size: 20px;
   font-size: 2rem;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -2936,8 +2936,8 @@ a:hover, a:active {
     margin-bottom: 14px;
     margin-bottom: 1.4rem;
     transition: background-color .2s, box-shadow .2s;
-    padding: 17px 30px 20px;
-    padding: 1.7rem 3rem 2rem;
+    padding: 17px 30px 18px;
+    padding: 1.7rem 3rem 1.8rem;
     font-size: 20px;
     font-size: 2rem;
     font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -3983,8 +3983,8 @@ a:hover, a:active {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
   transition: background-color .2s, box-shadow .2s;
-  padding: 17px 30px 20px;
-  padding: 1.7rem 3rem 2rem;
+  padding: 17px 30px 18px;
+  padding: 1.7rem 3rem 1.8rem;
   font-size: 20px;
   font-size: 2rem;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -5684,8 +5684,8 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
   transition: background-color .2s, box-shadow .2s;
-  padding: 17px 30px 20px;
-  padding: 1.7rem 3rem 2rem;
+  padding: 17px 30px 18px;
+  padding: 1.7rem 3rem 1.8rem;
   font-size: 20px;
   font-size: 2rem;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -5816,8 +5816,8 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 @media (max-width: 529px) {
   /* line 170, sass/components/pages/home/_slides.scss */
   .slides {
-    min-height: 500px;
-    min-height: 50rem;
+    min-height: 300px;
+    min-height: 30rem;
   }
 
   /* line 173, sass/components/pages/home/_slides.scss */
@@ -6478,8 +6478,8 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
   transition: background-color .2s, box-shadow .2s;
-  padding: 17px 30px 20px;
-  padding: 1.7rem 3rem 2rem;
+  padding: 17px 30px 18px;
+  padding: 1.7rem 3rem 1.8rem;
   font-size: 20px;
   font-size: 2rem;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -9526,8 +9526,8 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
   transition: background-color .2s, box-shadow .2s;
-  padding: 17px 30px 20px;
-  padding: 1.7rem 3rem 2rem;
+  padding: 17px 30px 18px;
+  padding: 1.7rem 3rem 1.8rem;
   font-size: 20px;
   font-size: 2rem;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -9640,8 +9640,8 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   margin-bottom: 14px;
   margin-bottom: 1.4rem;
   transition: background-color .2s, box-shadow .2s;
-  padding: 17px 30px 20px;
-  padding: 1.7rem 3rem 2rem;
+  padding: 17px 30px 18px;
+  padding: 1.7rem 3rem 1.8rem;
   font-size: 20px;
   font-size: 2rem;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
