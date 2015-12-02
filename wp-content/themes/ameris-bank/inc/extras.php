@@ -243,22 +243,24 @@ add_filter( 'embed_oembed_html', 'ameris_embed_oembed_html', 99, 4 );
 function ameris_max_image_width( $width, $size_array ) {
 	return $size_array[0];
 }
-add_filter( 'max_srcset_image_width', 'ameris_max_image_width', 10, 2 );
+// add_filter( 'max_srcset_image_width', 'ameris_max_image_width', 10, 2 );
 
 /**
- * Modify the srcsets used for responsive images. Not used at the moment.
+ * Modify the srcsets used for responsive images.
  */
 function ameris_srcsets( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
-	// size array = array( w, h )
-	// sources = array(
-	// 		300 => array(
-	// 			url => http://amerisbank:9001/wp-content/uploads/2015/10/college-2-300x156.jpg
-	// 			descriptor => w
-	// 			value => 300
-	// 		),
-	// 		1024 => etc.
-	// )
-	// 
+	
+	// if image is big enough for a landing-banner, add that as a srcset too
+	// that means for really big images, smaller screens will grab the 2400px width version
+	// instead of the 3300 version
+	if ( isset( $image_meta['sizes']['landing-banner']['file'] ) && !isset( $sources[2400] ) ) {
+		$sources[2400] = array(
+			'url' => dirname( $image_src ) . '/' . $image_meta['sizes']['landing-banner']['file'],
+			'descriptor' => 'w',
+			'value' => '2400'
+		);
+	}
+
 	return $sources;
 }
-// add_filter( 'wp_calculate_image_srcset', 'ameris_srcsets', 10, 5 );
+add_filter( 'wp_calculate_image_srcset', 'ameris_srcsets', 10, 5 );
