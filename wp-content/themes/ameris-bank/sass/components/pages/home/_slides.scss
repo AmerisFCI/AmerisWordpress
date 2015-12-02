@@ -162,7 +162,7 @@
 			box-shadow: none;
 		}
 
-		&.slick-active {
+		&.slick-active, &:focus {
 			background-color: $white;
 
 		}
