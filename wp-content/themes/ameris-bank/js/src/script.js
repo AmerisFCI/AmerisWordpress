@@ -30,6 +30,8 @@
 	});
 
 	$('.slide img').css('z-index', 1);
+	$('.slide img').css('width', '100%');
+	$('.slide img').css('height', '100%');
 
 
 	// Add slideshow functionality
