@@ -5598,6 +5598,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 
 /* line 28, sass/components/pages/home/_slides.scss */
 .slide {
+  overflow: hidden;
   background-color: #4C441A;
   position: absolute;
   top: 0;
@@ -5605,16 +5606,23 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   width: 100%;
   height: 100%;
   z-index: 1;
-  /* &:before {
-  	content: "";
-  	display: block;
-  	width: 100%;
-  	height: 100%;
-  	position: absolute;
-  	z-index: 2;
-  	@include filter-gradient(#000000, #000000, horizontal); // IE6-9
-  	@include background-image(linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,.2) 100%));
-  } */
+}
+/* line 38, sass/components/pages/home/_slides.scss */
+.slide:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF000000', endColorstr='#FF000000');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 /* line 49, sass/components/pages/home/_slides.scss */
 .slide img {
@@ -5637,18 +5645,12 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 }
 
 /* line 71, sass/components/pages/home/_slides.scss */
-.slide img {
-  background-color: red !important;
-  opacity: 1 !important;
-}
-
-/* line 76, sass/components/pages/home/_slides.scss */
 .slide__title.kicker {
   color: #ffffff;
   margin-top: 0;
 }
 
-/* line 81, sass/components/pages/home/_slides.scss */
+/* line 76, sass/components/pages/home/_slides.scss */
 .slide__blurb {
   position: relative;
   font-size: 50px;
@@ -5664,7 +5666,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   letter-spacing: -0.2rem;
 }
 
-/* line 89, sass/components/pages/home/_slides.scss */
+/* line 84, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
   background-color: #d31145;
   color: #ffffff;
@@ -5728,18 +5730,18 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 19px;
   left: 1.9rem;
 }
-/* line 94, sass/components/pages/home/_slides.scss */
+/* line 89, sass/components/pages/home/_slides.scss */
 .button.slide__cta:hover, .button.slide__cta:focus {
   box-shadow: none;
 }
 
-/* line 100, sass/components/pages/home/_slides.scss */
+/* line 95, sass/components/pages/home/_slides.scss */
 .slick-list, .slick-track {
   height: 100%;
   width: 100%;
 }
 
-/* line 105, sass/components/pages/home/_slides.scss */
+/* line 100, sass/components/pages/home/_slides.scss */
 .slick-dots {
   list-style: none;
   margin: 0 auto;
@@ -5751,7 +5753,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   z-index: 15;
   text-align: center;
 }
-/* line 115, sass/components/pages/home/_slides.scss */
+/* line 110, sass/components/pages/home/_slides.scss */
 .slick-dots li {
   display: inline-block;
   list-style: none;
@@ -5768,11 +5770,11 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   height: 16px;
   height: 1.6rem;
 }
-/* line 130, sass/components/pages/home/_slides.scss */
+/* line 125, sass/components/pages/home/_slides.scss */
 .slick-dots li:before {
   content: none;
 }
-/* line 134, sass/components/pages/home/_slides.scss */
+/* line 129, sass/components/pages/home/_slides.scss */
 .slick-dots li button {
   text-indent: -9999px;
   width: 16px;
@@ -5792,47 +5794,47 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   padding: 0;
   box-shadow: none;
 }
-/* line 150, sass/components/pages/home/_slides.scss */
+/* line 145, sass/components/pages/home/_slides.scss */
 .slick-dots li.slick-active button {
   background-color: #ffffff;
 }
 
 @media (max-width: 529px) {
-  /* line 158, sass/components/pages/home/_slides.scss */
+  /* line 153, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 15px;
     bottom: 1.5rem;
   }
 
-  /* line 161, sass/components/pages/home/_slides.scss */
+  /* line 156, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 164, sass/components/pages/home/_slides.scss */
+  /* line 159, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 170, sass/components/pages/home/_slides.scss */
+  /* line 165, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 173, sass/components/pages/home/_slides.scss */
+  /* line 168, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 740px) {
-  /* line 182, sass/components/pages/home/_slides.scss */
+  /* line 177, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 65px;
     font-size: 6.5rem;
   }
 
-  /* line 186, sass/components/pages/home/_slides.scss */
+  /* line 181, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 400px;
     width: 40rem;
@@ -5843,27 +5845,27 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     bottom: inherit;
   }
 
-  /* line 196, sass/components/pages/home/_slides.scss */
+  /* line 191, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 40px;
     bottom: 4rem;
     right: 5%;
     width: auto;
   }
-  /* line 200, sass/components/pages/home/_slides.scss */
+  /* line 195, sass/components/pages/home/_slides.scss */
   .slick-dots li {
     margin: 0px 0px 0px 16px;
     margin: 0rem 0rem 0rem 1.6rem;
   }
 }
 @media (min-width: 1024px) {
-  /* line 209, sass/components/pages/home/_slides.scss */
+  /* line 204, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 213, sass/components/pages/home/_slides.scss */
+  /* line 208, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 490px;
     width: 49rem;

@@ -19,7 +19,7 @@
 	// Add slideshow functionality
 	// to the homepage slides
 	$('.slides').slick({
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 5000,
 		arrows: false,
 		dots: true,
@@ -28,7 +28,7 @@
 		pauseOnDotsHover: true,
 		swipeToSlide: true
 	});
-	
+
 
 	// Add slideshow functionality
 	// to the related resources
