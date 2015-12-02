@@ -167,6 +167,15 @@
 }
 
 @include breakpoint($mobile) {
+	.slides {
+		@include rem-fallback(min-height, 50);
+	}
+	.slide__title.kicker {
+		@include rem-fallback(font-size, 1.5);
+	}
+	.slide__text-wrap {
+		@include rem-fallback(padding-top, 2);
+	}
 	.slick-dots {
 		@include rem-fallback(bottom, 1.5);
 		li {
