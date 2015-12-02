@@ -35,7 +35,7 @@
 	height: 100%;
 	z-index: 1;
 
-	&:before {
+	/* &:before {
 		content: "";
 		display: block;
 		width: 100%;
@@ -44,7 +44,7 @@
 		z-index: 2;
 		@include filter-gradient(#000000, #000000, horizontal); // IE6-9
 		@include background-image(linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,.2) 100%));
-	}
+	} */
 	
 	img {
 		position: absolute;
@@ -66,6 +66,10 @@
 
 	}
 
+}
+
+.slide img {
+	background-color:red !important;
 }
 
 .slide__title.kicker {
