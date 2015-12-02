@@ -16,7 +16,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="news-item__thumbnail">
-		<?php the_post_thumbnail( 'newsroom-thumb' ); ?>
+		<?php the_post_thumbnail( 'newsroom-list' ); ?>
 	</div>
 
 	<?php if ( 'post' == get_post_type() ) : ?>
