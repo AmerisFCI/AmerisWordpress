@@ -3353,8 +3353,8 @@ a:hover, a:active {
 /* line 1, sass/components/navigation/_sidebar-nav.scss */
 .sidebar-menu {
   background-color: #d7e7f2;
-  padding: 25px 24px;
-  padding: 2.5rem 2.4rem;
+  padding: 25px 24px 18px;
+  padding: 2.5rem 2.4rem 1.8rem;
 }
 /* line 463, sass/base/_mixins.scss */
 .sidebar-menu a {
@@ -3433,11 +3433,15 @@ a:hover, a:active {
   margin: 0;
 }
 /* line 512, sass/base/_mixins.scss */
+.sidebar-menu .menu-item-has-children:last-child .children {
+  margin-bottom: 0;
+}
+/* line 515, sass/base/_mixins.scss */
 .sidebar-menu .view-all a {
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
 }
-/* line 515, sass/base/_mixins.scss */
+/* line 518, sass/base/_mixins.scss */
 .sidebar-menu .view-all a:hover {
   border-bottom-color: transparent;
 }
@@ -8140,8 +8144,8 @@ a.about-leadership__button {
 /* line 296, sass/components/pages/_about-us.scss */
 .page-template-about-us-page #menu-about-us-menu {
   background-color: #d7e7f2;
-  padding: 25px 24px;
-  padding: 2.5rem 2.4rem;
+  padding: 25px 24px 18px;
+  padding: 2.5rem 2.4rem 1.8rem;
 }
 /* line 463, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu a {
@@ -8220,11 +8224,15 @@ a.about-leadership__button {
   margin: 0;
 }
 /* line 512, sass/base/_mixins.scss */
+.page-template-about-us-page #menu-about-us-menu .menu-item-has-children:last-child .children {
+  margin-bottom: 0;
+}
+/* line 515, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .view-all a {
   font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
 }
-/* line 515, sass/base/_mixins.scss */
+/* line 518, sass/base/_mixins.scss */
 .page-template-about-us-page #menu-about-us-menu .view-all a:hover {
   border-bottom-color: transparent;
 }

@@ -459,7 +459,7 @@ $sprite-high-res-suffix: '-2x' !default;
 
 @mixin paleblue-nav {
   background-color: $paleblue;
-  @include rem-fallback(padding, 2.5, 2.4);
+  @include rem-fallback(padding, 2.5, 2.4, 1.8);
   a {
     @include boldbluetext;
     @include rem-fallback(padding-bottom, .5);
@@ -508,6 +508,9 @@ $sprite-high-res-suffix: '-2x' !default;
       @include rem-fallback(padding-bottom, .2);
       margin: 0;
     }
+  }
+  .menu-item-has-children:last-child .children {
+    margin-bottom: 0;
   }
   .view-all a {
     font-family: $font-heading-bold;
