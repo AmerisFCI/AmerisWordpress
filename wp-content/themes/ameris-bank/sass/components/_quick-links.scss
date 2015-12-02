@@ -1,11 +1,16 @@
 .quick-links {
 	@include rem-fallback(margin-bottom, 2);
 	@include clearfix();
+
 	.sod_select {
 		width: 100%;
 		border: 2px solid $paleblue;
 		@include rem-fallback(padding, 1.7, 2, 1.5, 1.7);
 		@include rem-fallback(font-size, 1.9);
+		&:focus, &.focus {
+			border-color: $link-color;
+			
+		}
 	}
 	.sod_list_wrapper {
 		width: 100%;

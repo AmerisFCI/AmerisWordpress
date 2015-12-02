@@ -4,6 +4,7 @@ input, textarea {
 
 .sod_select:focus {
 	z-index: 100;
+
 }
 
 .sod_select .sod_label {
@@ -76,7 +77,7 @@ textarea,
 			@include rem-fallback(top, 1);
 		}
 
-		&:focus {
+		&:focus, &.focus {
 			color: $link-hover;
 			border-color: $link-color;
 		}
@@ -84,7 +85,7 @@ textarea,
 		box-shadow: 0 .5rem rgba(21,57,127,.05);
 		transition: background-color .2s, box-shadow .2s;
 
-		&:hover, &:active, &:focus {
+		&:hover, &:active, &:focus, &.focus {
 			box-shadow: 0 .7rem rgba(21,57,127,.05);
 		}
 	}
