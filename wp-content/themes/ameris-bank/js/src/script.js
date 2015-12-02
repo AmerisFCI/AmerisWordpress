@@ -32,6 +32,11 @@
 	$('.slide img').css('z-index', 1);
 	$('.slide img').css('width', '100%');
 	$('.slide img').css('height', '100%');
+	$('.slide img').css('opacity', 1);
+
+	$('.slides').on('afterChange', function(event, slick, currentSlide){
+		window.viewportUnitsBuggyfill.refresh();
+	});
 
 
 	// Add slideshow functionality
