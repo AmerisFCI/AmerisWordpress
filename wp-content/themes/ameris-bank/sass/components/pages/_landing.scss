@@ -1,10 +1,6 @@
 @import "landing/solutions";
 @import "landing/tools";
 
-.quick-links {
-	@include rem-fallback(margin-bottom, 2);
-}
-
 h2.landing-heading {
 	@include rem-fallback(margin-top, 1.4);
 }

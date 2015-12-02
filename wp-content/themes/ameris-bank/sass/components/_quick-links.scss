@@ -1,5 +1,5 @@
 .quick-links {
-	@include rem-fallback(margin-bottom, 4);
+	@include rem-fallback(margin-bottom, 2);
 	@include clearfix();
 	.sod_select {
 		width: 100%;
