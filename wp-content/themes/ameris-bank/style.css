@@ -2639,7 +2639,6 @@ a:hover, a:active {
     font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
     font-size: 16px;
     font-size: 1.6rem;
-    font-weight: bold;
   }
   /* line 400, sass/components/navigation/_menu-main.scss */
   .business-nav.toggle-sub .toggle-sub__parent > a:hover {
@@ -3235,8 +3234,8 @@ a:hover, a:active {
 
   /* line 738, sass/components/navigation/_menu-main.scss */
   .business-nav.toggle-sub .toggle-sub__parent > a {
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 20px;
+    font-size: 2rem;
   }
 
   /* line 741, sass/components/navigation/_menu-main.scss */

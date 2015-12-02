@@ -396,7 +396,7 @@
 			text-transform: none;
 			font-family: $font-heading;
 			@include rem-fallback(font-size, 1.6);
-			font-weight: bold;
+			//font-weight: bold;
 			&:hover {
 				background: $white;
 			}
@@ -736,7 +736,7 @@
 		}
 	}
 	.business-nav.toggle-sub .toggle-sub__parent > a {
-		@include rem-fallback(font-size, 1.8);
+		@include rem-fallback(font-size, 2);
 	}
 	.main-navigation {
 		@include rem-fallback(margin-right, 1);
