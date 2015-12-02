@@ -5645,12 +5645,20 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 }
 
 /* line 71, sass/components/pages/home/_slides.scss */
+.slide img {
+  width: 500px !important;
+  height: 500px !important;
+  background-color: red !important;
+  z-index: 99999 !important;
+}
+
+/* line 78, sass/components/pages/home/_slides.scss */
 .slide__title.kicker {
   color: #ffffff;
   margin-top: 0;
 }
 
-/* line 76, sass/components/pages/home/_slides.scss */
+/* line 83, sass/components/pages/home/_slides.scss */
 .slide__blurb {
   position: relative;
   font-size: 50px;
@@ -5666,7 +5674,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   letter-spacing: -0.2rem;
 }
 
-/* line 84, sass/components/pages/home/_slides.scss */
+/* line 91, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
   background-color: #d31145;
   color: #ffffff;
@@ -5730,18 +5738,18 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 19px;
   left: 1.9rem;
 }
-/* line 89, sass/components/pages/home/_slides.scss */
+/* line 96, sass/components/pages/home/_slides.scss */
 .button.slide__cta:hover, .button.slide__cta:focus {
   box-shadow: none;
 }
 
-/* line 95, sass/components/pages/home/_slides.scss */
+/* line 102, sass/components/pages/home/_slides.scss */
 .slick-list, .slick-track {
   height: 100%;
   width: 100%;
 }
 
-/* line 100, sass/components/pages/home/_slides.scss */
+/* line 107, sass/components/pages/home/_slides.scss */
 .slick-dots {
   list-style: none;
   margin: 0 auto;
@@ -5753,7 +5761,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   z-index: 15;
   text-align: center;
 }
-/* line 110, sass/components/pages/home/_slides.scss */
+/* line 117, sass/components/pages/home/_slides.scss */
 .slick-dots li {
   display: inline-block;
   list-style: none;
@@ -5770,11 +5778,11 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   height: 16px;
   height: 1.6rem;
 }
-/* line 125, sass/components/pages/home/_slides.scss */
+/* line 132, sass/components/pages/home/_slides.scss */
 .slick-dots li:before {
   content: none;
 }
-/* line 129, sass/components/pages/home/_slides.scss */
+/* line 136, sass/components/pages/home/_slides.scss */
 .slick-dots li button {
   text-indent: -9999px;
   width: 16px;
@@ -5794,47 +5802,47 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   padding: 0;
   box-shadow: none;
 }
-/* line 145, sass/components/pages/home/_slides.scss */
+/* line 152, sass/components/pages/home/_slides.scss */
 .slick-dots li.slick-active button {
   background-color: #ffffff;
 }
 
 @media (max-width: 529px) {
-  /* line 153, sass/components/pages/home/_slides.scss */
+  /* line 160, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 15px;
     bottom: 1.5rem;
   }
 
-  /* line 156, sass/components/pages/home/_slides.scss */
+  /* line 163, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 159, sass/components/pages/home/_slides.scss */
+  /* line 166, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 165, sass/components/pages/home/_slides.scss */
+  /* line 172, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 168, sass/components/pages/home/_slides.scss */
+  /* line 175, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 740px) {
-  /* line 177, sass/components/pages/home/_slides.scss */
+  /* line 184, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 65px;
     font-size: 6.5rem;
   }
 
-  /* line 181, sass/components/pages/home/_slides.scss */
+  /* line 188, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 400px;
     width: 40rem;
@@ -5845,27 +5853,27 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     bottom: inherit;
   }
 
-  /* line 191, sass/components/pages/home/_slides.scss */
+  /* line 198, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 40px;
     bottom: 4rem;
     right: 5%;
     width: auto;
   }
-  /* line 195, sass/components/pages/home/_slides.scss */
+  /* line 202, sass/components/pages/home/_slides.scss */
   .slick-dots li {
     margin: 0px 0px 0px 16px;
     margin: 0rem 0rem 0rem 1.6rem;
   }
 }
 @media (min-width: 1024px) {
-  /* line 204, sass/components/pages/home/_slides.scss */
+  /* line 211, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 208, sass/components/pages/home/_slides.scss */
+  /* line 215, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 490px;
     width: 49rem;
