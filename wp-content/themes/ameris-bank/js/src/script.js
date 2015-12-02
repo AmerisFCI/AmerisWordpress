@@ -19,7 +19,7 @@
 	// Add slideshow functionality
 	// to the homepage slides
 	$('.slides').slick({
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 5000,
 		arrows: false,
 		dots: true,
@@ -29,7 +29,7 @@
 		swipeToSlide: true
 	});
 
-	$('.slide img').css('z-index', 1);
+	$('.slide img').css('z-index', 999);
 	$('.slide img').css('width', '100%');
 	$('.slide img').css('height', '100%');
 	$('.slide img').css('opacity', 1);
