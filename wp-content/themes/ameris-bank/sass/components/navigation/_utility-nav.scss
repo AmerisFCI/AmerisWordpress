@@ -20,6 +20,12 @@
 
 }
 
+.blog {
+	.utility-navigation .current-page-ancestor a {
+		border-top-color: transparent;
+	}
+}
+
 // when inside main menu (mobile)
 .main-navigation .utility-navigation {
 
