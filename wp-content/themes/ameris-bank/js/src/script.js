@@ -287,6 +287,12 @@
 
 
 /**
+ * Initialize ios7 viewport unit fix.
+ */
+window.viewportUnitsBuggyfill.init();
+
+
+/**
  * Move the secondary links and search bar into the mobile menu.
  */
 /*
