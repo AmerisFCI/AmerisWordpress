@@ -33,6 +33,8 @@
 	$('.slide img').css('width', '100%');
 	$('.slide img').css('height', '100%');
 	$('.slide img').css('opacity', 1);
+	$('.slide img').css('left', 0);
+	$('.slide img').css('max-width', '5000px');
 
 	$('.slides').on('afterChange', function(event, slick, currentSlide){
 		window.viewportUnitsBuggyfill.refresh();
