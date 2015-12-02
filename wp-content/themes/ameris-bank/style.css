@@ -63,7 +63,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* line 10, sass/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1,
-.landing-heading, h2, .news-item--newsroom .news-item__title, .search article .search-item__title, h3, h4, h5, h6, p, blockquote, pre,
+.landing-heading,
+.page-title-lookalike, h2, .news-item--newsroom .news-item__title, .search article .search-item__title, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -567,19 +568,19 @@ sup {
 }
 
 /* line 1, sass/base/typography/_headings.scss */
-h1, .landing-heading, h2, .news-item--newsroom .news-item__title, .search article .search-item__title, h3, h4, h5, h6 {
+h1, .landing-heading, .page-title-lookalike, h2, .news-item--newsroom .news-item__title, .search article .search-item__title, h3, h4, h5, h6 {
   clear: both;
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   line-height: 1;
   text-align: center;
 }
 /* line 8, sass/base/typography/_headings.scss */
-h1 a, .landing-heading a, h2 a, .news-item--newsroom .news-item__title a, .search article .search-item__title a, h3 a, h4 a, h5 a, h6 a {
+h1 a, .landing-heading a, .page-title-lookalike a, h2 a, .news-item--newsroom .news-item__title a, .search article .search-item__title a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 
 /* line 14, sass/base/typography/_headings.scss */
-h1, .landing-heading {
+h1, .landing-heading, .page-title-lookalike {
   font-size: 36px;
   font-size: 3.6rem;
   color: #092764;
@@ -671,7 +672,7 @@ h5 {
 
 @media (min-width: 740px) {
   /* line 71, sass/base/typography/_headings.scss */
-  h1, .landing-heading, h2, .news-item--newsroom .news-item__title, .search article .search-item__title, h3, h4, h5, h6 {
+  h1, .landing-heading, .page-title-lookalike, h2, .news-item--newsroom .news-item__title, .search article .search-item__title, h3, h4, h5, h6 {
     text-align: left;
   }
 }
@@ -4441,7 +4442,7 @@ footer .menu-item {
   height: 100%;
 }
 
-/* line 15, sass/components/sections/_banner.scss */
+/* line 17, sass/components/sections/_banner.scss */
 .banner-blurb {
   padding: 20px;
   padding: 2rem;
@@ -4458,6 +4459,8 @@ footer .menu-item {
   float: right;
   max-width: 850px;
   max-width: 85rem;
+  padding-bottom: 50px;
+  padding-bottom: 5rem;
 }
 /* line 362, sass/base/_mixins.scss */
 .banner-blurb span, .banner-blurb em {
@@ -4478,7 +4481,7 @@ footer .menu-item {
   z-index: -1;
 }
 
-/* line 21, sass/components/sections/_banner.scss */
+/* line 24, sass/components/sections/_banner.scss */
 .page-title {
   padding: 180px 24px 30px;
   padding: 18rem 2.4rem 3rem;
@@ -4486,7 +4489,7 @@ footer .menu-item {
   width: 100%;
 }
 
-/* line 27, sass/components/sections/_banner.scss */
+/* line 30, sass/components/sections/_banner.scss */
 .banner-blurb__wrap, .has-banner-image .page-title {
   position: absolute;
   left: 0;
@@ -4496,17 +4499,17 @@ footer .menu-item {
   display: none;
 }
 
-/* line 36, sass/components/sections/_banner.scss */
+/* line 39, sass/components/sections/_banner.scss */
 .has-banner-image .page-title {
   display: block;
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
 }
-/* line 39, sass/components/sections/_banner.scss */
-.has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
+/* line 42, sass/components/sections/_banner.scss */
+.has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike {
   color: #ffffff;
 }
-/* line 41, sass/components/sections/_banner.scss */
-.has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
+/* line 44, sass/components/sections/_banner.scss */
+.has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after {
   content: "";
   display: block;
   position: absolute;
@@ -4524,23 +4527,23 @@ footer .menu-item {
 }
 
 @media (min-width: 1024px) {
-  /* line 61, sass/components/sections/_banner.scss */
+  /* line 64, sass/components/sections/_banner.scss */
   .banner-blurb__wrap {
     display: block;
   }
 
-  /* line 64, sass/components/sections/_banner.scss */
+  /* line 67, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     position: relative;
     text-shadow: none;
   }
-  /* line 67, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
+  /* line 70, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike {
     color: #092764;
     position: relative;
   }
-  /* line 70, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
+  /* line 73, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after {
     border-bottom-color: transparent;
     border-left-color: #ffffff;
     top: 0;
@@ -4553,34 +4556,34 @@ footer .menu-item {
     margin-left: 0rem;
   }
 }
-/* line 87, sass/components/sections/_banner.scss */
+/* line 90, sass/components/sections/_banner.scss */
 .has-banner-image .page-title {
   padding: 40px 50px 30px;
   padding: 4rem 5rem 3rem;
 }
 
 @media (max-width: 529px) {
-  /* line 94, sass/components/sections/_banner.scss */
+  /* line 97, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     height: 300px !important;
     height: 30rem !important;
     min-height: initial;
     width: 100% !important;
   }
-  /* line 99, sass/components/sections/_banner.scss */
+  /* line 102, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 }
 @media screen and (min-width: 580px) {
-  /* line 107, sass/components/sections/_banner.scss */
+  /* line 110, sass/components/sections/_banner.scss */
   .page-title {
     padding: 150px 24px 30px;
     padding: 15rem 2.4rem 3rem;
   }
 
-  /* line 111, sass/components/sections/_banner.scss */
+  /* line 114, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-left: 50px;
     padding-left: 5rem;
@@ -4589,21 +4592,21 @@ footer .menu-item {
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 121, sass/components/sections/_banner.scss */
+  /* line 124, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     width: 100% !important;
     height: 450px !important;
     height: 40rem !important;
     min-height: initial;
   }
-  /* line 126, sass/components/sections/_banner.scss */
+  /* line 129, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 134, sass/components/sections/_banner.scss */
+  /* line 137, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     width: 100% !important;
     height: 450px !important;
@@ -4611,8 +4614,8 @@ footer .menu-item {
     min-height: initial;
   }
 
-  /* line 145, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
+  /* line 148, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after {
     content: "";
     display: block;
     position: absolute;
@@ -4630,38 +4633,38 @@ footer .menu-item {
   }
 }
 @media (min-width: 1024px) {
-  /* line 161, sass/components/sections/_banner.scss */
+  /* line 164, sass/components/sections/_banner.scss */
   .page-title {
     padding: 200px 24px 20px;
     padding: 20rem 2.4rem 2rem;
     clear: none;
   }
 
-  /* line 173, sass/components/sections/_banner.scss */
+  /* line 176, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding: 240px 24px 14px;
     padding: 24rem 2.4rem 1.4rem;
     clear: none;
   }
-  /* line 177, sass/components/sections/_banner.scss */
+  /* line 180, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     clear: none;
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
-  /* line 185, sass/components/sections/_banner.scss */
+  /* line 188, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     height: 470px !important;
     height: 47rem !important;
     min-height: initial;
   }
-  /* line 189, sass/components/sections/_banner.scss */
+  /* line 192, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 
-  /* line 195, sass/components/sections/_banner.scss */
+  /* line 198, sass/components/sections/_banner.scss */
   .page-template-landing-page .has-banner-image .banner-image, .page-template-view-all-page .has-banner-image .banner-image {
     height: 520px !important;
     height: 52rem !important;
@@ -4669,111 +4672,111 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 205, sass/components/sections/_banner.scss */
+  /* line 208, sass/components/sections/_banner.scss */
   .banner-blurb {
     font-size: 86px;
     font-size: 8.6rem;
   }
 
-  /* line 208, sass/components/sections/_banner.scss */
+  /* line 211, sass/components/sections/_banner.scss */
   .has-banner-image ~ .content-inner-wrap {
     margin-top: -150px;
     margin-top: -15rem;
   }
 
-  /* line 212, sass/components/sections/_banner.scss */
+  /* line 215, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 150px;
     padding-bottom: 15rem;
   }
-  /* line 214, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
+  /* line 217, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike {
     min-height: 130px;
     min-height: 13rem;
     margin-bottom: 24px;
     margin-bottom: 2.4rem;
   }
-  /* line 220, sass/components/sections/_banner.scss */
+  /* line 223, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -74px;
     margin-top: -7.4rem;
   }
 }
 @media all and (min-width: 1200px) and (max-width: 1419px) {
-  /* line 228, sass/components/sections/_banner.scss */
+  /* line 231, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     height: 520px !important;
     height: 52rem !important;
     min-height: initial;
   }
-  /* line 232, sass/components/sections/_banner.scss */
+  /* line 235, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image img {
     height: 100%;
     width: auto;
   }
 
-  /* line 239, sass/components/sections/_banner.scss */
+  /* line 242, sass/components/sections/_banner.scss */
   .page-template-landing-page .has-banner-image .banner-image, .page-template-view-all-page .has-banner-image .banner-image {
     height: 560px !important;
     height: 56rem !important;
     min-height: initial;
   }
-  /* line 243, sass/components/sections/_banner.scss */
+  /* line 246, sass/components/sections/_banner.scss */
   .page-template-landing-page .has-banner-image .banner-image img, .page-template-view-all-page .has-banner-image .banner-image img {
     height: 100%;
     width: auto;
   }
 }
 @media (min-width: 1420px) {
-  /* line 252, sass/components/sections/_banner.scss */
+  /* line 255, sass/components/sections/_banner.scss */
   .banner-image {
     width: 70%;
     float: right;
   }
-  /* line 255, sass/components/sections/_banner.scss */
+  /* line 258, sass/components/sections/_banner.scss */
   .banner-image img {
     max-width: none;
     width: 100%;
     height: auto;
   }
 
-  /* line 262, sass/components/sections/_banner.scss */
+  /* line 265, sass/components/sections/_banner.scss */
   .has-banner-image ~ .content-inner-wrap {
     margin-top: -250px;
     margin-top: -25rem;
   }
 
-  /* line 266, sass/components/sections/_banner.scss */
+  /* line 269, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 250px;
     padding-bottom: 25rem;
   }
-  /* line 268, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading {
+  /* line 271, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike {
     min-height: 130px;
     min-height: 13rem;
     margin-bottom: 24px;
     margin-bottom: 2.4rem;
   }
-  /* line 272, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after {
+  /* line 275, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after {
     right: -140px;
     right: -14rem;
   }
-  /* line 276, sass/components/sections/_banner.scss */
+  /* line 279, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -150px;
     margin-top: -15rem;
   }
 
-  /* line 281, sass/components/sections/_banner.scss */
+  /* line 284, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     height: 570px !important;
     height: 57rem !important;
     min-height: initial;
   }
 
-  /* line 288, sass/components/sections/_banner.scss */
+  /* line 291, sass/components/sections/_banner.scss */
   .page-template-landing-page .has-banner-image .banner-image {
     height: 650px !important;
     height: 65rem !important;
@@ -4781,14 +4784,14 @@ footer .menu-item {
   }
 }
 @media all and (min-width: 1680px) {
-  /* line 299, sass/components/sections/_banner.scss */
+  /* line 302, sass/components/sections/_banner.scss */
   .banner {
     max-width: 1680px;
     max-width: 168rem;
     margin: 0 auto;
   }
 
-  /* line 304, sass/components/sections/_banner.scss */
+  /* line 307, sass/components/sections/_banner.scss */
   .banner-image {
     width: 1214px !important;
     width: 121.4rem !important;
@@ -6897,42 +6900,48 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 }
 
 /* line 4, sass/components/pages/_landing.scss */
+.quick-links {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+/* line 8, sass/components/pages/_landing.scss */
 h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .search article .landing-heading.search-item__title {
   margin-top: 14px;
   margin-top: 1.4rem;
 }
 
 @media (min-width: 1024px) {
-  /* line 10, sass/components/pages/_landing.scss */
+  /* line 14, sass/components/pages/_landing.scss */
   .quick-links {
     float: right;
     width: 42%;
   }
 
-  /* line 14, sass/components/pages/_landing.scss */
+  /* line 18, sass/components/pages/_landing.scss */
   .landing-heading {
     float: left;
     width: 56%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 21, sass/components/pages/_landing.scss */
+  /* line 25, sass/components/pages/_landing.scss */
   .quick-links {
     width: 38%;
   }
 
-  /* line 24, sass/components/pages/_landing.scss */
+  /* line 28, sass/components/pages/_landing.scss */
   .landing-heading {
     width: 60%;
   }
 }
 @media (min-width: 1420px) {
-  /* line 30, sass/components/pages/_landing.scss */
+  /* line 34, sass/components/pages/_landing.scss */
   .quick-links {
     width: 30%;
   }
 
-  /* line 33, sass/components/pages/_landing.scss */
+  /* line 37, sass/components/pages/_landing.scss */
   .landing-heading {
     width: 68%;
   }
@@ -7474,7 +7483,7 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
 }
 
 /* line 14, sass/components/pages/_article.scss */
-h1.single-article__title, .single-article__title.landing-heading {
+h1.single-article__title, .single-article__title.landing-heading, .single-article__title.page-title-lookalike {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
   font-weight: 400;
@@ -7525,7 +7534,7 @@ h1.single-article__title, .single-article__title.landing-heading {
 }
 
 /* line 47, sass/components/pages/_article.scss */
-.single-article__content, h1.single-article__title, .single-article__title.landing-heading {
+.single-article__content, h1.single-article__title, .single-article__title.landing-heading, .single-article__title.page-title-lookalike {
   max-width: 700px;
   max-width: 70rem;
 }
@@ -8920,7 +8929,7 @@ a.about-leadership__button {
   padding: 2.4rem;
 }
 /* line 3, sass/components/pages/_search.scss */
-.search-results__header h1, .search-results__header .landing-heading {
+.search-results__header h1, .search-results__header .landing-heading, .search-results__header .page-title-lookalike {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
   font-weight: 400;
@@ -8932,7 +8941,7 @@ a.about-leadership__button {
 }
 @media (min-width: 740px) {
   /* line 3, sass/components/pages/_search.scss */
-  .search-results__header h1, .search-results__header .landing-heading {
+  .search-results__header h1, .search-results__header .landing-heading, .search-results__header .page-title-lookalike {
     font-size: 68px;
     font-size: 6.8rem;
   }

@@ -27,17 +27,17 @@
             // if a blog post or blog home - get the title for the blog home (newsroom)
             if ( is_singular( 'post' ) || is_home() ) {
                 $blog_home = get_option( 'page_for_posts', 0 ); ?>
-                <h2><a href="<?php echo get_permalink( $blog_home ); ?>">
+                <div class="page-title-lookalike"><a href="<?php echo get_permalink( $blog_home ); ?>">
                         <?php echo get_the_title( get_option( 'page_for_posts', 0 ) ); ?>
-                    </a></h2>
+                    </a></div>
 
             <?php // if a leader - get the title for the leadership main page
             } elseif( is_singular( 'leadership' ) ) { ?>
-                <h2>Leadership</h2>
+                <div class="page-title-lookalike">Leadership</div>
 
             <?php // if a lending expert - get the title for the lending expert main page
             } elseif( is_singular( 'lending_expert' ) ) { ?>
-                <h2>Lending Experts</h2>
+                <div class="page-title-lookalike">Lending Experts</div>
 
             <?php } elseif ( is_archive() ) { ?>
                 <h1><?php the_archive_title(); ?></h1>
