@@ -4505,11 +4505,11 @@ footer .menu-item {
   text-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
 }
 /* line 42, sass/components/sections/_banner.scss */
-.has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike {
+.has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike, .has-banner-image .page-title .page-title-lookalike {
   color: #ffffff;
 }
 /* line 44, sass/components/sections/_banner.scss */
-.has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after {
+.has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after, .has-banner-image .page-title .page-title-lookalike:after {
   content: "";
   display: block;
   position: absolute;
@@ -4538,12 +4538,12 @@ footer .menu-item {
     text-shadow: none;
   }
   /* line 70, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike {
+  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike, .has-banner-image .page-title .page-title-lookalike {
     color: #092764;
     position: relative;
   }
   /* line 73, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after {
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after, .has-banner-image .page-title .page-title-lookalike:after {
     border-bottom-color: transparent;
     border-left-color: #ffffff;
     top: 0;
@@ -4614,8 +4614,8 @@ footer .menu-item {
     min-height: initial;
   }
 
-  /* line 148, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after {
+  /* line 149, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after, .has-banner-image .page-title .page-title-lookalike:after {
     content: "";
     display: block;
     position: absolute;
@@ -4633,38 +4633,38 @@ footer .menu-item {
   }
 }
 @media (min-width: 1024px) {
-  /* line 164, sass/components/sections/_banner.scss */
+  /* line 166, sass/components/sections/_banner.scss */
   .page-title {
     padding: 200px 24px 20px;
     padding: 20rem 2.4rem 2rem;
     clear: none;
   }
 
-  /* line 176, sass/components/sections/_banner.scss */
+  /* line 178, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding: 240px 24px 14px;
     padding: 24rem 2.4rem 1.4rem;
     clear: none;
   }
-  /* line 180, sass/components/sections/_banner.scss */
+  /* line 182, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     clear: none;
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
-  /* line 188, sass/components/sections/_banner.scss */
+  /* line 190, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     height: 470px !important;
     height: 47rem !important;
     min-height: initial;
   }
-  /* line 192, sass/components/sections/_banner.scss */
+  /* line 194, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image img {
     height: 100% !important;
     width: auto !important;
   }
 
-  /* line 198, sass/components/sections/_banner.scss */
+  /* line 200, sass/components/sections/_banner.scss */
   .page-template-landing-page .has-banner-image .banner-image, .page-template-view-all-page .has-banner-image .banner-image {
     height: 520px !important;
     height: 52rem !important;
@@ -4672,111 +4672,111 @@ footer .menu-item {
   }
 }
 @media (min-width: 1200px) {
-  /* line 208, sass/components/sections/_banner.scss */
+  /* line 210, sass/components/sections/_banner.scss */
   .banner-blurb {
     font-size: 86px;
     font-size: 8.6rem;
   }
 
-  /* line 211, sass/components/sections/_banner.scss */
+  /* line 213, sass/components/sections/_banner.scss */
   .has-banner-image ~ .content-inner-wrap {
     margin-top: -150px;
     margin-top: -15rem;
   }
 
-  /* line 215, sass/components/sections/_banner.scss */
+  /* line 217, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 150px;
     padding-bottom: 15rem;
   }
-  /* line 217, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike {
+  /* line 219, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike, .has-banner-image .page-title .page-title-lookalike {
     min-height: 130px;
     min-height: 13rem;
     margin-bottom: 24px;
     margin-bottom: 2.4rem;
   }
-  /* line 223, sass/components/sections/_banner.scss */
+  /* line 225, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -74px;
     margin-top: -7.4rem;
   }
 }
 @media all and (min-width: 1200px) and (max-width: 1419px) {
-  /* line 231, sass/components/sections/_banner.scss */
+  /* line 233, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     height: 520px !important;
     height: 52rem !important;
     min-height: initial;
   }
-  /* line 235, sass/components/sections/_banner.scss */
+  /* line 237, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image img {
     height: 100%;
     width: auto;
   }
 
-  /* line 242, sass/components/sections/_banner.scss */
+  /* line 244, sass/components/sections/_banner.scss */
   .page-template-landing-page .has-banner-image .banner-image, .page-template-view-all-page .has-banner-image .banner-image {
     height: 560px !important;
     height: 56rem !important;
     min-height: initial;
   }
-  /* line 246, sass/components/sections/_banner.scss */
+  /* line 248, sass/components/sections/_banner.scss */
   .page-template-landing-page .has-banner-image .banner-image img, .page-template-view-all-page .has-banner-image .banner-image img {
     height: 100%;
     width: auto;
   }
 }
 @media (min-width: 1420px) {
-  /* line 255, sass/components/sections/_banner.scss */
+  /* line 257, sass/components/sections/_banner.scss */
   .banner-image {
     width: 70%;
     float: right;
   }
-  /* line 258, sass/components/sections/_banner.scss */
+  /* line 260, sass/components/sections/_banner.scss */
   .banner-image img {
     max-width: none;
     width: 100%;
     height: auto;
   }
 
-  /* line 265, sass/components/sections/_banner.scss */
+  /* line 267, sass/components/sections/_banner.scss */
   .has-banner-image ~ .content-inner-wrap {
     margin-top: -250px;
     margin-top: -25rem;
   }
 
-  /* line 269, sass/components/sections/_banner.scss */
+  /* line 271, sass/components/sections/_banner.scss */
   .has-banner-image .page-title {
     padding-bottom: 250px;
     padding-bottom: 25rem;
   }
-  /* line 271, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike {
+  /* line 273, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1, .has-banner-image .page-title .landing-heading, .has-banner-image .page-title .page-title-lookalike, .has-banner-image .page-title .page-title-lookalike {
     min-height: 130px;
     min-height: 13rem;
     margin-bottom: 24px;
     margin-bottom: 2.4rem;
   }
-  /* line 275, sass/components/sections/_banner.scss */
-  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after {
+  /* line 277, sass/components/sections/_banner.scss */
+  .has-banner-image .page-title h1:after, .has-banner-image .page-title .landing-heading:after, .has-banner-image .page-title .page-title-lookalike:after, .has-banner-image .page-title .page-title-lookalike:after {
     right: -140px;
     right: -14rem;
   }
-  /* line 279, sass/components/sections/_banner.scss */
+  /* line 281, sass/components/sections/_banner.scss */
   .has-banner-image ~ .inner-wrap .sidebar-left {
     margin-top: -150px;
     margin-top: -15rem;
   }
 
-  /* line 284, sass/components/sections/_banner.scss */
+  /* line 286, sass/components/sections/_banner.scss */
   .has-banner-image .banner-image {
     height: 570px !important;
     height: 57rem !important;
     min-height: initial;
   }
 
-  /* line 291, sass/components/sections/_banner.scss */
+  /* line 293, sass/components/sections/_banner.scss */
   .page-template-landing-page .has-banner-image .banner-image {
     height: 650px !important;
     height: 65rem !important;
@@ -4784,14 +4784,14 @@ footer .menu-item {
   }
 }
 @media all and (min-width: 1680px) {
-  /* line 302, sass/components/sections/_banner.scss */
+  /* line 304, sass/components/sections/_banner.scss */
   .banner {
     max-width: 1680px;
     max-width: 168rem;
     margin: 0 auto;
   }
 
-  /* line 307, sass/components/sections/_banner.scss */
+  /* line 309, sass/components/sections/_banner.scss */
   .banner-image {
     width: 1214px !important;
     width: 121.4rem !important;

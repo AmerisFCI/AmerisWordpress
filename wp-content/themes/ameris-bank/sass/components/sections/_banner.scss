@@ -39,7 +39,7 @@
 .has-banner-image .page-title {
 	display: block;
 	text-shadow: 0 0 40px rgba(0,0,0,.8);
-	h1 {
+	h1, .page-title-lookalike {
 		color: $white;
 		&:after {
 			content: "";
@@ -67,7 +67,7 @@
 	.has-banner-image .page-title {
 		position: relative;
 		text-shadow: none;
-		h1 {
+		h1, .page-title-lookalike {
 			color: $heading-color;
 			position: relative;
 			&:after {
@@ -145,18 +145,20 @@
 		}
 	}
 
-	.has-banner-image .page-title h1:after {
-				content: "";
-				display: block;
-				position: absolute;
-				width: 0;
-				height: 0;
-				left: inherit;
-				@include rem-fallback(margin-left, 0);
-				border: solid transparent;
-				@include rem-fallback(border-width, 6);
-				border-bottom-color: $white;
-				@include rem-fallback(margin-top, -5);
+	.has-banner-image .page-title {
+		h1:after, .page-title-lookalike:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: inherit;
+			@include rem-fallback(margin-left, 0);
+			border: solid transparent;
+			@include rem-fallback(border-width, 6);
+			border-bottom-color: $white;
+			@include rem-fallback(margin-top, -5);
+		}
 	}
 }
 
@@ -214,7 +216,7 @@
 	.has-banner-image {
 		.page-title {
 			@include rem-fallback(padding-bottom, 15);
-			h1 {
+			h1, .page-title-lookalike {
 				@include rem-fallback(min-height, 13);
 				@include rem-fallback(margin-bottom, 2.4);
 			}
@@ -268,11 +270,11 @@
 	.has-banner-image {
 		.page-title {
 			@include rem-fallback(padding-bottom, 25);
-			h1 {
+			h1, .page-title-lookalike {
 				@include rem-fallback(min-height, 13);
 				@include rem-fallback(margin-bottom, 2.4);
 			}
-			h1:after {
+			h1:after, .page-title-lookalike:after {
 				@include rem-fallback(right, -14);
 			}
 		}
