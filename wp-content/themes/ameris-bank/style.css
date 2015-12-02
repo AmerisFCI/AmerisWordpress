@@ -5788,27 +5788,11 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   transition: all .2s;
   cursor: pointer;
 }
-@media (max-width: 529px) {
-  /* line 115, sass/components/pages/home/_slides.scss */
-  .slick-dots li {
-    width: 32px;
-    width: 3.2rem;
-    height: 32px;
-    height: 3.2rem;
-  }
-  /* line 140, sass/components/pages/home/_slides.scss */
-  .slick-dots li button {
-    width: 32px;
-    width: 3.2rem;
-    height: 32px;
-    height: 3.2rem;
-  }
-}
-/* line 146, sass/components/pages/home/_slides.scss */
+/* line 139, sass/components/pages/home/_slides.scss */
 .slick-dots li:before {
   content: none;
 }
-/* line 150, sass/components/pages/home/_slides.scss */
+/* line 143, sass/components/pages/home/_slides.scss */
 .slick-dots li button {
   text-indent: -9999px;
   width: 16px;
@@ -5822,51 +5806,65 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   padding: 0;
   box-shadow: none;
 }
-/* line 163, sass/components/pages/home/_slides.scss */
+/* line 156, sass/components/pages/home/_slides.scss */
 .slick-dots li button:focus {
   background-color: #ffffff;
 }
-/* line 169, sass/components/pages/home/_slides.scss */
+/* line 162, sass/components/pages/home/_slides.scss */
 .slick-dots li.slick-active, .slick-dots li:focus {
   background-color: #ffffff;
 }
 
 @media (max-width: 529px) {
-  /* line 177, sass/components/pages/home/_slides.scss */
+  /* line 170, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 15px;
     bottom: 1.5rem;
   }
+  /* line 172, sass/components/pages/home/_slides.scss */
+  .slick-dots li {
+    width: 32px;
+    width: 3.2rem;
+    height: 32px;
+    height: 3.2rem;
+  }
+  /* line 175, sass/components/pages/home/_slides.scss */
+  .slick-dots li button {
+    width: 32px;
+    width: 3.2rem;
+    height: 32px;
+    height: 3.2rem;
+  }
 
-  /* line 180, sass/components/pages/home/_slides.scss */
+  /* line 181, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 183, sass/components/pages/home/_slides.scss */
+  /* line 184, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 189, sass/components/pages/home/_slides.scss */
+  /* line 190, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 192, sass/components/pages/home/_slides.scss */
+  /* line 193, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 740px) {
-  /* line 201, sass/components/pages/home/_slides.scss */
+  /* line 202, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 65px;
     font-size: 6.5rem;
   }
 
-  /* line 205, sass/components/pages/home/_slides.scss */
+  /* line 206, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 400px;
     width: 40rem;
@@ -5877,27 +5875,27 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     bottom: inherit;
   }
 
-  /* line 215, sass/components/pages/home/_slides.scss */
+  /* line 216, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 40px;
     bottom: 4rem;
     right: 5%;
     width: auto;
   }
-  /* line 219, sass/components/pages/home/_slides.scss */
+  /* line 220, sass/components/pages/home/_slides.scss */
   .slick-dots li {
     margin: 0px 0px 0px 16px;
     margin: 0rem 0rem 0rem 1.6rem;
   }
 }
 @media (min-width: 1024px) {
-  /* line 228, sass/components/pages/home/_slides.scss */
+  /* line 229, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 232, sass/components/pages/home/_slides.scss */
+  /* line 233, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     width: 490px;
     width: 49rem;
