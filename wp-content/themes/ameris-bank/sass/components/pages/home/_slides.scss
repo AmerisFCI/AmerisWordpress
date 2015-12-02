@@ -132,6 +132,16 @@
 		@include rem-fallback(border-width, .2);
 		border-style: solid;
 		transition: all .2s;
+		cursor: pointer;
+
+		@include breakpoint($mobile) {
+			@include rem-fallback(width, 3.2);
+			@include rem-fallback(height, 3.2);
+			button {
+				@include rem-fallback(width, 3.2);
+				@include rem-fallback(height, 3.2);
+			}
+		}
 
 		&:before {
 			content: none;
