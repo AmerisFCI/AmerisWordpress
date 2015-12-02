@@ -236,3 +236,29 @@ function ameris_embed_oembed_html( $html, $url, $attr, $post_id ) {
 	return '<div class="video-container">' . $html . '</div>';
 }
 add_filter( 'embed_oembed_html', 'ameris_embed_oembed_html', 99, 4 );
+
+/**
+ * Set the max image width for srcsets to the real width of the image.
+ */
+function ameris_max_image_width( $width, $size_array ) {
+	return $size_array[0];
+}
+add_filter( 'max_srcset_image_width', 'ameris_max_image_width', 10, 2 );
+
+/**
+ * Modify the srcsets used for responsive images. Not used at the moment.
+ */
+function ameris_srcsets( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
+	// size array = array( w, h )
+	// sources = array(
+	// 		300 => array(
+	// 			url => http://amerisbank:9001/wp-content/uploads/2015/10/college-2-300x156.jpg
+	// 			descriptor => w
+	// 			value => 300
+	// 		),
+	// 		1024 => etc.
+	// )
+	// 
+	return $sources;
+}
+// add_filter( 'wp_calculate_image_srcset', 'ameris_srcsets', 10, 5 );
