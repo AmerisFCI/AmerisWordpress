@@ -33,10 +33,6 @@
 	}
 	@include breakpoint($tablet-to-desktop) {
 		.news-meta {text-align: left;}
-		.news-item__thumbnail{
-			float: right;
-			@include rem-fallback(margin-left, 1.6);
-		}
 
 	}
 

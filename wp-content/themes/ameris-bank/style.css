@@ -7460,15 +7460,9 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   .news-item--newsroom .news-meta {
     text-align: left;
   }
-  /* line 36, sass/components/pages/_newsroom.scss */
-  .news-item--newsroom .news-item__thumbnail {
-    float: right;
-    margin-left: 16px;
-    margin-left: 1.6rem;
-  }
 }
 
-/* line 45, sass/components/pages/_newsroom.scss */
+/* line 41, sass/components/pages/_newsroom.scss */
 .news-item__more {
   padding: 5px 0px;
   padding: 0.5rem 0rem;
@@ -7493,13 +7487,13 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   color: #092764;
 }
 
-/* line 49, sass/components/pages/_newsroom.scss */
+/* line 45, sass/components/pages/_newsroom.scss */
 .after-blog {
   margin-top: 36px;
   margin-top: 3.6rem;
 }
 
-/* line 53, sass/components/pages/_newsroom.scss */
+/* line 49, sass/components/pages/_newsroom.scss */
 .blog-intro .intro {
   margin-top: 20px;
   margin-top: 2rem;
