@@ -243,7 +243,7 @@ add_filter( 'embed_oembed_html', 'ameris_embed_oembed_html', 99, 4 );
 function ameris_max_image_width( $width, $size_array ) {
 	return $size_array[0];
 }
-add_filter( 'max_srcset_image_width', 'ameris_max_image_width', 10, 2 );
+// add_filter( 'max_srcset_image_width', 'ameris_max_image_width', 10, 2 );
 
 /**
  * Modify the srcsets used for responsive images.
