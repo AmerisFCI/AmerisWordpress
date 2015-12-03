@@ -121,3 +121,16 @@
 		@include rem-fallback(top, .6);
 	}
 }
+
+// don't allow utility nav and search to flash on screen
+// before being inserted into toggle menu
+@include breakpoint($mobile-to-tablet) {
+	.site-header .utility-navigation,
+	.site-header .search-form {
+		display:none;
+	}
+	.site-header .utility-in-primary-menu .utility-navigation,
+	.site-header .search-in-primary-menu .search-form {
+		display:block;
+	}
+}

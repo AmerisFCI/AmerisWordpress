@@ -22,7 +22,7 @@
 	}
 }
 
-.nav-menu {
+.primary-menu {
 	a {
 		color: $white;
 		text-transform: uppercase;
@@ -186,7 +186,7 @@
 		@include rem-fallback(padding-right, 2.4);
 	}
 
-.nav-menu {
+.primary-menu {
 
 	a {
 		@include rem-fallback(padding, 1.5, 1, 2);
@@ -612,7 +612,7 @@
 	.main-navigation {
 		@include rem-fallback(margin-right, 3);
 	}
-	.nav-menu {
+	.primary-menu {
 		a {
 			@include rem-fallback(padding, 1.8, 1.5, 3);
 			@include rem-fallback(font-size, 1.8);
@@ -715,7 +715,7 @@
 
 // START  WIDE ONLY SIZES
 @include breakpoint($wide) {
-	.nav-menu {
+	.primary-menu {
 		a {
 			@include rem-fallback(padding, 1.8, 2, 3);
 			@include rem-fallback(font-size, 1.8);
@@ -745,7 +745,7 @@
 		@include rem-fallback(padding, 1.7, 6, 2, 3);
 		@include rem-fallback(font-size, 2.1);
 	}
-	.nav-menu > li.sba-nav.hover > ul, .nav-menu > li.residential-nav.hover > ul {
+	.primary-menu > li.sba-nav.hover > ul, .primary-menu > li.residential-nav.hover > ul {
 		width: 80%;
 		left: 10%;
 	}

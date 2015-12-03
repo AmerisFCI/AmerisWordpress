@@ -77,6 +77,7 @@
 					<?php wp_nav_menu( array(
 						'theme_location' => 'header-main',
 						'menu_id'        => 'primary-menu',
+						'menu_class'     => 'menu primary-menu',
 						'fallback_cb'    => false,
 						'walker'         => new Ameris_Description_Walker // enable item descriptions
 					) ); ?>
