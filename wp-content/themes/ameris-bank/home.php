@@ -28,7 +28,12 @@ $blog_home_id = get_option( 'page_for_posts' ); ?>
 			</div>
 
 			<div class="blog-wrap">
-				<h2 class="latest-posts-heading">Latest Posts</h2>
+				<h2 class="latest-posts-heading">Latest Posts<?php
+					if ( is_paged() ) {
+						global $wp_query;
+						echo ' - Page ' . $wp_query->query_vars['paged'];
+					}
+				?></h2>
 
 				<?php if ( have_posts() ) : ?>
 					<?php while ( have_posts() ) : the_post(); ?>
