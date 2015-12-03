@@ -29,6 +29,7 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 		<div class="timeline">
 
 			<?php $first = true;
+			$previous_dates = array();
 			if ( have_rows( 'timeline_items' ) ) : while( have_rows( 'timeline_items' ) ) : the_row();
 
 				$large = get_sub_field( 'large' );
@@ -43,9 +44,14 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 					$classes[] = 'timeline-item--first';
 				if ( $image_id )
 					$classes[] = 'timeline-item--has-image';
-				$classes = implode( ' ', $classes ); ?>
+				$classes = implode( ' ', $classes );
 
-				<div class="<?php echo $classes; ?>">
+				$date = get_sub_field( 'date' );
+				if ( in_array( $date, $previous_dates ) )
+					$date .= '-2';
+				?>
+
+				<div id="date-<?php echo esc_attr( $date ); ?>" class="<?php echo $classes; ?>">
 					
 					<?php if ( get_sub_field( 'large' ) ) { ?>
 					
@@ -81,11 +87,17 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 
 				</div>
 
-			<?php $first = false;
+				<?php
+				$previous_dates[] = get_sub_field( 'date' );
+				$first = false;
+
 			endwhile; endif;
 
-			if ( get_field( 'last_date' ) ) { ?>
-				<div class="timeline-item">
+			if ( get_field( 'last_date' ) ) {
+				$date = get_field( 'last_date' );
+				if ( in_array( $date, $previous_dates ) )
+					$date .= '-2'; ?>
+				<div id="date-<?php echo esc_attr( $date ); ?>" class="timeline-item">
 					<div class="timeline-item__dot"></div>
 				</div>
 			<?php } ?>

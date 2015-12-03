@@ -48,3 +48,9 @@
 		}
 	}
 }
+
+.posts-loading {
+	@include red-link;
+	@include rem-fallback(font-size, 1.8);
+	@include rem-fallback(margin-top, 1.4);
+}

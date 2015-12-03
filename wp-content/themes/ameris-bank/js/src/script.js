@@ -277,7 +277,41 @@
 	 * Set tables inside content as responsive.
 	 */
 	$( '.entry-content table' ).addClass( 'responsive' );
-	
+
+
+	/**
+	 * Simple ajax posts pagination.
+	 */
+	$('.blog-wrap').on('click', '.nav-links a', function(e){
+		e.preventDefault();
+		var link = $(this).attr('href');
+		var blogWrap = $('.blog-wrap');
+		
+		// remove existing posts
+		blogWrap.fadeOut(400);
+
+		// at the same time, scroll to top
+		$('body').animate({
+			scrollTop:$('.blog-wrap').offset().top - 50
+		}, 400, "swing", function() {
+
+			// add loading notice
+			blogWrap.closest( '.blog-wrap' ).after( '<div class="posts-loading">Loading posts&hellip;</div>' );
+			
+			// load new posts with ajax magic
+			blogWrap.load(link + ' .blog-wrap', function() {
+
+				// remove duplicate .blog-wrap and loading notice, and display new posts
+				var contents = $(this).children().html();
+				$( '.posts-loading' ).remove();
+				$( this ).html( contents ).fadeIn( 400 );
+				
+			} );
+		} );
+
+
+		
+	});
 
 
 	// Put code here

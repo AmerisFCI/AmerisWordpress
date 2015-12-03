@@ -3772,6 +3772,35 @@ a:hover, a:active {
   left: 0.3rem;
 }
 
+/* line 52, sass/components/navigation/_pager.scss */
+.posts-loading {
+  padding: 5px 0px;
+  padding: 0.5rem 0rem;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #d31145;
+  transition: all .2s;
+  display: inline-block;
+  clear: both;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  border-bottom: none transparent;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-top: 14px;
+  margin-top: 1.4rem;
+}
+/* line 271, sass/base/_mixins.scss */
+.posts-loading:visited {
+  color: #d31145;
+}
+/* line 275, sass/base/_mixins.scss */
+.posts-loading:hover, .posts-loading:focus {
+  text-decoration: none;
+  color: #092764;
+}
+
 /* line 1, sass/components/sections/_header.scss */
 .site-header {
   position: absolute;
