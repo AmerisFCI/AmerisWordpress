@@ -148,7 +148,6 @@ footer .menu-item {
 @include breakpoint($tablet-to-desktop) {
 
 	.newsletter-signup {
-
 		input {
 			width: auto;
 		}
@@ -182,6 +181,7 @@ footer .menu-item {
 	.newsletter-signup {
 		clear: right;
 		@include rem-fallback(margin-top, 1);
+		@include rem-fallback(margin-right, 1);
 	}
 	input.newsletter-signup__email {
 		@include rem-fallback(width, 25);
@@ -206,6 +206,8 @@ footer .menu-item {
 	.newsletter-signup, .social-links {
 		float: left;
 		clear: none;
+	}
+	.social-links {
 		margin-top: 0;
 	}
 

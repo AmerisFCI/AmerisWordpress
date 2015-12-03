@@ -15,23 +15,24 @@
 	}
 
 	.linkedin a {
-		@include use-sprite(icon-social-linkedin);
+		@include use-sprite(linkedin);
 	}
 
 	.facebook a {
-		@include use-sprite(icon-social-facebook);
+		@include use-sprite(facebook);
 	}
 
 	.twitter a {
-		@include use-sprite(icon-social-twitter);
+		@include use-sprite(twitter);
 	}
 
 	.youtube a {
-		@include use-sprite(icon-social-youtube);
+		@include use-sprite(youtube);
 	}
 
 	.instagram a {
-		@include use-sprite(icon-social-instagram);
+		@include use-sprite(instagram);
 	}
+
 
 }

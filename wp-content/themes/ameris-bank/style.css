@@ -796,7 +796,7 @@ dd {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -682px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -807,7 +807,7 @@ dd {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 242, sass/base/_mixins.scss */
   .more-link:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -322px;
     height: 14px;
     width: 9px;
@@ -848,8 +848,8 @@ dd {
 /* line 72, sass/base/libraries/_sod.scss */
 .sod_select:before {
   content: "";
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -1344px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -1490px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 27px;
@@ -863,8 +863,8 @@ dd {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 72, sass/base/libraries/_sod.scss */
   .sod_select:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -594px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -667px;
     height: 27px;
     width: 19px;
   }
@@ -1731,7 +1731,7 @@ textarea:focus,
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1158px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1742,7 +1742,7 @@ textarea:focus,
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
   .ninja-forms-cont input[type="submit"]:after, .form-cont input[type="submit"]:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -495px;
     height: 20px;
     width: 12px;
@@ -2216,7 +2216,7 @@ a:hover, a:active {
   top: 2.2rem;
   right: 16px;
   right: 1.6rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1078px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -2229,7 +2229,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 66, sass/components/navigation/_menu-main.scss */
   .primary-menu .menu-item-has-children > a:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -520px;
     height: 14px;
     width: 9px;
@@ -2423,7 +2423,7 @@ a:hover, a:active {
     top: 2px;
     top: 0.2rem;
     left: 0;
-    background-image: url('images/sprite-images-sc17eea70d9.png');
+    background-image: url('images/sprite-images-s5be58bc57c.png');
     background-position: 0 -682px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2439,7 +2439,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 218, sass/components/navigation/_menu-main.scss */
   .primary-menu li li a:after, .primary-menu .right-side a:after, .primary-menu .stacked-sub a:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -322px;
     height: 14px;
     width: 9px;
@@ -2511,7 +2511,7 @@ a:hover, a:active {
   .primary-menu li .menu-item-has-children > a:after {
     content: "";
     transform: rotate(0);
-    background-image: url('images/sprite-images-sc17eea70d9.png');
+    background-image: url('images/sprite-images-s5be58bc57c.png');
     background-position: 0 -682px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2523,7 +2523,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 283, sass/components/navigation/_menu-main.scss */
   .primary-menu li .menu-item-has-children > a:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -322px;
     height: 14px;
     width: 9px;
@@ -2792,7 +2792,7 @@ a:hover, a:active {
     right: 1.9rem;
     top: 32px;
     top: 3.2rem;
-    background-image: url('images/sprite-images-sc17eea70d9.png');
+    background-image: url('images/sprite-images-s5be58bc57c.png');
     background-position: 0 -762px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2804,7 +2804,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 221, sass/base/_mixins.scss */
   .toggle-sub__parent > a:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -297px;
     height: 20px;
     width: 12px;
@@ -2974,7 +2974,7 @@ a:hover, a:active {
     left: 1.5rem;
     top: 4px;
     top: 0.4rem;
-    background-image: url('images/sprite-images-sc17eea70d9.png');
+    background-image: url('images/sprite-images-s5be58bc57c.png');
     background-position: 0 -1158px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -2986,7 +2986,7 @@ a:hover, a:active {
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), (min-width: 1024px) and (min-device-pixel-ratio: 2), (min-width: 1024px) and (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
   .sba-nav .nav-cta a:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -495px;
     height: 20px;
     width: 12px;
@@ -3125,8 +3125,8 @@ a:hover, a:active {
 
   /* line 696, sass/components/navigation/_menu-main.scss */
   .business-nav__small-business > a:before {
-    background-image: url('images/sprite-images-sc17eea70d9.png');
-    background-position: 0 -5287px;
+    background-image: url('images/sprite-images-s5be58bc57c.png');
+    background-position: 0 -5725px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -3136,8 +3136,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 696, sass/components/navigation/_menu-main.scss */
   .business-nav__small-business > a:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -2585.5px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2804.5px;
     height: 53px;
     width: 53px;
   }
@@ -3146,8 +3146,8 @@ a:hover, a:active {
 @media (min-width: 1200px) {
   /* line 699, sass/components/navigation/_menu-main.scss */
   .business-nav__corporate > a:before {
-    background-image: url('images/sprite-images-sc17eea70d9.png');
-    background-position: 0 -4929px;
+    background-image: url('images/sprite-images-s5be58bc57c.png');
+    background-position: 0 -5367px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -3157,8 +3157,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 699, sass/components/navigation/_menu-main.scss */
   .business-nav__corporate > a:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -2406.5px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2625.5px;
     height: 53px;
     width: 53px;
   }
@@ -3167,8 +3167,8 @@ a:hover, a:active {
 @media (min-width: 1200px) {
   /* line 702, sass/components/navigation/_menu-main.scss */
   .business-nav__municipalities > a:before {
-    background-image: url('images/sprite-images-sc17eea70d9.png');
-    background-position: 0 -4750px;
+    background-image: url('images/sprite-images-s5be58bc57c.png');
+    background-position: 0 -5188px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -3178,8 +3178,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 702, sass/components/navigation/_menu-main.scss */
   .business-nav__municipalities > a:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -2317px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2536px;
     height: 53px;
     width: 53px;
   }
@@ -3188,8 +3188,8 @@ a:hover, a:active {
 @media (min-width: 1200px) {
   /* line 705, sass/components/navigation/_menu-main.scss */
   .business-nav__associations > a:before {
-    background-image: url('images/sprite-images-sc17eea70d9.png');
-    background-position: 0 -5466px;
+    background-image: url('images/sprite-images-s5be58bc57c.png');
+    background-position: 0 -5904px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -3199,8 +3199,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 705, sass/components/navigation/_menu-main.scss */
   .business-nav__associations > a:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -2675px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2894px;
     height: 53px;
     width: 53px;
   }
@@ -3209,8 +3209,8 @@ a:hover, a:active {
 @media (min-width: 1200px) {
   /* line 708, sass/components/navigation/_menu-main.scss */
   .business-nav__agricultural > a:before {
-    background-image: url('images/sprite-images-sc17eea70d9.png');
-    background-position: 0 -5108px;
+    background-image: url('images/sprite-images-s5be58bc57c.png');
+    background-position: 0 -5546px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 53px;
@@ -3220,8 +3220,8 @@ a:hover, a:active {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 3 / 2), (min-width: 1200px) and (min--moz-device-pixel-ratio: 2), (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 144dppx) {
   /* line 708, sass/components/navigation/_menu-main.scss */
   .business-nav__agricultural > a:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -2496px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2715px;
     height: 53px;
     width: 53px;
   }
@@ -3540,8 +3540,8 @@ a:hover, a:active {
   top: 0.4rem;
   right: 5px;
   right: 0.5rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -1547px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -1693px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 32px;
@@ -3552,8 +3552,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 33, sass/components/navigation/_search-box.scss */
   .search-form:after {
-    background-size: 215px 2793.5px;
-    background-position: 0 -736.5px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -809.5px;
     height: 32px;
     width: 32px;
   }
@@ -3584,92 +3584,92 @@ a:hover, a:active {
 }
 /* line 17, sass/components/navigation/_social-links.scss */
 .social-links .linkedin a {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -1990px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -4394px;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 26px;
-  width: 22px;
+  height: 42px;
+  width: 42px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 17, sass/components/navigation/_social-links.scss */
   .social-links .linkedin a {
-    background-size: 215px 2793.5px;
-    background-position: 0 -964px;
-    height: 26px;
-    width: 22px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2150px;
+    height: 42px;
+    width: 42px;
   }
 }
 /* line 21, sass/components/navigation/_social-links.scss */
 .social-links .facebook a {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -1794px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -1282px;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 26px;
-  width: 22px;
+  height: 42px;
+  width: 42px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 21, sass/components/navigation/_social-links.scss */
   .social-links .facebook a {
-    background-size: 215px 2793.5px;
-    background-position: 0 -866px;
-    height: 26px;
-    width: 22px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -594px;
+    height: 42px;
+    width: 42px;
   }
 }
 /* line 25, sass/components/navigation/_social-links.scss */
 .social-links .twitter a {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -2088px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -6129px;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 26px;
-  width: 22px;
+  height: 42px;
+  width: 42px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 25, sass/components/navigation/_social-links.scss */
   .social-links .twitter a {
-    background-size: 215px 2793.5px;
-    background-position: 0 -1013px;
-    height: 26px;
-    width: 22px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -3017.5px;
+    height: 42px;
+    width: 42px;
   }
 }
 /* line 29, sass/components/navigation/_social-links.scss */
 .social-links .youtube a {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -2186px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -6275px;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 26px;
-  width: 22px;
+  height: 42px;
+  width: 42px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 29, sass/components/navigation/_social-links.scss */
   .social-links .youtube a {
-    background-size: 215px 2793.5px;
-    background-position: 0 -1062px;
-    height: 26px;
-    width: 22px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -3090.5px;
+    height: 42px;
+    width: 42px;
   }
 }
 /* line 33, sass/components/navigation/_social-links.scss */
 .social-links .instagram a {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -1892px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -4248px;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 26px;
-  width: 22px;
+  height: 42px;
+  width: 42px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 33, sass/components/navigation/_social-links.scss */
   .social-links .instagram a {
-    background-size: 215px 2793.5px;
-    background-position: 0 -915px;
-    height: 26px;
-    width: 22px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2077px;
+    height: 42px;
+    width: 42px;
   }
 }
 
@@ -3723,7 +3723,7 @@ a:hover, a:active {
 }
 /* line 34, sass/components/navigation/_pager.scss */
 .pagination a.prev {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -484px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3735,7 +3735,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 34, sass/components/navigation/_pager.scss */
   .pagination a.prev {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -223px;
     height: 14px;
     width: 9px;
@@ -3748,7 +3748,7 @@ a:hover, a:active {
 }
 /* line 41, sass/components/navigation/_pager.scss */
 .pagination a.next {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -682px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -3760,7 +3760,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 41, sass/components/navigation/_pager.scss */
   .pagination a.next {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -322px;
     height: 14px;
     width: 9px;
@@ -4029,7 +4029,7 @@ a:hover, a:active {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1158px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -4040,7 +4040,7 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
   .button.callout-box__button:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -495px;
     height: 20px;
     width: 12px;
@@ -4185,8 +4185,8 @@ a:hover, a:active {
 
 /* line 40, sass/components/sections/_footer.scss */
 #Member_FDIC {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -4481px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -4919px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 43px;
@@ -4195,8 +4195,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 40, sass/components/sections/_footer.scss */
   #Member_FDIC {
-    background-size: 215px 2793.5px;
-    background-position: 0 -2193px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2412px;
     height: 43px;
     width: 68px;
   }
@@ -4204,8 +4204,8 @@ a:hover, a:active {
 
 /* line 44, sass/components/sections/_footer.scss */
 #Equal_Housing_Lender {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -4320px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -4758px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 56px;
@@ -4214,8 +4214,8 @@ a:hover, a:active {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 44, sass/components/sections/_footer.scss */
   #Equal_Housing_Lender {
-    background-size: 215px 2793.5px;
-    background-position: 0 -2099px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -2318px;
     height: 56px;
     width: 55px;
   }
@@ -4294,8 +4294,8 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
   left: 0.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -1439px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -1585px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 24px;
@@ -4304,8 +4304,8 @@ input.newsletter-signup__submit:hover, input.newsletter-signup__submit:visited, 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 84, sass/components/sections/_footer.scss */
   .newsletter-signup__submit__icon:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -690.5px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -763.5px;
     height: 24px;
     width: 23px;
   }
@@ -4375,18 +4375,18 @@ footer .menu-item {
   }
 }
 @media (min-width: 530px) {
-  /* line 152, sass/components/sections/_footer.scss */
+  /* line 151, sass/components/sections/_footer.scss */
   .newsletter-signup input {
     width: auto;
   }
 
-  /* line 157, sass/components/sections/_footer.scss */
+  /* line 156, sass/components/sections/_footer.scss */
   input.newsletter-signup__email {
     padding-right: 20px;
     padding-right: 2rem;
   }
 
-  /* line 161, sass/components/sections/_footer.scss */
+  /* line 160, sass/components/sections/_footer.scss */
   input.newsletter-signup__submit {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -4394,18 +4394,20 @@ footer .menu-item {
     margin-left: -0.5rem;
   }
 
-  /* line 173, sass/components/sections/_footer.scss */
+  /* line 172, sass/components/sections/_footer.scss */
   .footer-utility {
     float: left;
     clear: both;
   }
 }
 @media (min-width: 740px) {
-  /* line 182, sass/components/sections/_footer.scss */
+  /* line 181, sass/components/sections/_footer.scss */
   .newsletter-signup {
     clear: right;
     margin-top: 10px;
     margin-top: 1rem;
+    margin-right: 10px;
+    margin-right: 1rem;
   }
 
   /* line 186, sass/components/sections/_footer.scss */
@@ -4435,22 +4437,26 @@ footer .menu-item {
   .newsletter-signup, .social-links {
     float: left;
     clear: none;
+  }
+
+  /* line 210, sass/components/sections/_footer.scss */
+  .social-links {
     margin-top: 0;
   }
 
-  /* line 212, sass/components/sections/_footer.scss */
+  /* line 214, sass/components/sections/_footer.scss */
   .footer-top__side {
     float: right;
   }
 }
 @media (min-width: 1420px) {
-  /* line 220, sass/components/sections/_footer.scss */
+  /* line 222, sass/components/sections/_footer.scss */
   .footer-utility {
     float: right;
     clear: none;
     margin: 0;
   }
-  /* line 224, sass/components/sections/_footer.scss */
+  /* line 226, sass/components/sections/_footer.scss */
   .footer-utility a {
     padding: 10px 0px 0px 10px;
     padding: 1rem 0rem 0rem 1rem;
@@ -5100,7 +5106,7 @@ footer .menu-item {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -682px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -5111,7 +5117,7 @@ footer .menu-item {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 242, sass/base/_mixins.scss */
   .more-recent-posts__link:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -322px;
     height: 14px;
     width: 9px;
@@ -5207,7 +5213,7 @@ a.account-open__button:after {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1158px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -5218,7 +5224,7 @@ a.account-open__button:after {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
   a.account-open__button:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -495px;
     height: 20px;
     width: 12px;
@@ -5245,8 +5251,8 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 /* line 6, sass/components/widgets/_callout-video.scss */
 .video-callout__image:after {
   content: "";
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -3908px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -4054px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 90px;
@@ -5262,8 +5268,8 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 6, sass/components/widgets/_callout-video.scss */
   .video-callout__image:after {
-    background-size: 215px 2793.5px;
-    background-position: 0 -1859px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -1932px;
     height: 90px;
     width: 90px;
   }
@@ -5372,8 +5378,8 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 /* line 15, sass/components/widgets/_featured-video.scss */
 .featured-video__image:after {
   content: "";
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -3908px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -4054px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 90px;
@@ -5388,8 +5394,8 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 15, sass/components/widgets/_featured-video.scss */
   .featured-video__image:after {
-    background-size: 215px 2793.5px;
-    background-position: 0 -1859px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -1932px;
     height: 90px;
     width: 90px;
   }
@@ -5725,7 +5731,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1158px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -5736,7 +5742,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
   .button.slide__cta:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -495px;
     height: 20px;
     width: 12px;
@@ -6029,8 +6035,8 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 .account-access__submit-wrapper:before {
   content: '';
   display: inline-block;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -1681px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -1827px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 41px;
@@ -6045,8 +6051,8 @@ input.account-access__submit:hover, input.account-access__submit:visited, input.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 56, sass/components/pages/home/_accountaccess.scss */
   .account-access__submit-wrapper:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -794.5px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -867.5px;
     height: 41px;
     width: 41px;
   }
@@ -6521,7 +6527,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1158px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -6532,7 +6538,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
   .button.callout-box--large__button:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -495px;
     height: 20px;
     width: 12px;
@@ -6894,7 +6900,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 }
 /* line 28, sass/components/pages/landing/_tools.scss */
 .resources-rotator .slick-prev {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -168px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -6906,7 +6912,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 28, sass/components/pages/landing/_tools.scss */
   .resources-rotator .slick-prev {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 0;
     height: 20px;
     width: 12px;
@@ -6916,7 +6922,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 .resources-rotator .slick-next {
   right: -24px;
   right: -2.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -366px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -6926,7 +6932,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 32, sass/components/pages/landing/_tools.scss */
   .resources-rotator .slick-next {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -99px;
     height: 20px;
     width: 12px;
@@ -7176,7 +7182,7 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -682px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7187,7 +7193,7 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 242, sass/base/_mixins.scss */
   .leadership-grid__name:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -322px;
     height: 14px;
     width: 9px;
@@ -7831,7 +7837,7 @@ body.page-template-about-us-page .site-main {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -682px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7842,7 +7848,7 @@ body.page-template-about-us-page .site-main {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 242, sass/base/_mixins.scss */
   .about-our-story a:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -322px;
     height: 14px;
     width: 9px;
@@ -7859,7 +7865,7 @@ body.page-template-about-us-page .site-main {
 }
 /* line 99, sass/components/pages/_about-us.scss */
 .about-our-story a:after {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1078px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7869,7 +7875,7 @@ body.page-template-about-us-page .site-main {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 99, sass/components/pages/_about-us.scss */
   .about-our-story a:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -520px;
     height: 14px;
     width: 9px;
@@ -7946,7 +7952,7 @@ body.page-template-about-us-page .site-main {
 }
 /* line 158, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-prev {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -564px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7958,7 +7964,7 @@ body.page-template-about-us-page .site-main {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 158, sass/components/pages/_about-us.scss */
   .about-newsroom-arrows .slick-prev {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -198px;
     height: 20px;
     width: 12px;
@@ -7966,7 +7972,7 @@ body.page-template-about-us-page .site-main {
 }
 /* line 162, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-next {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -762px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -7976,7 +7982,7 @@ body.page-template-about-us-page .site-main {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 162, sass/components/pages/_about-us.scss */
   .about-newsroom-arrows .slick-next {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -297px;
     height: 20px;
     width: 12px;
@@ -8023,8 +8029,8 @@ body.page-template-about-us-page .site-main {
 /* line 192, sass/components/pages/_about-us.scss */
 .about-video:after {
   content: "";
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -3908px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -4054px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 90px;
@@ -8038,8 +8044,8 @@ body.page-template-about-us-page .site-main {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 192, sass/components/pages/_about-us.scss */
   .about-video:after {
-    background-size: 215px 2793.5px;
-    background-position: 0 -1859px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -1932px;
     height: 90px;
     width: 90px;
   }
@@ -9124,7 +9130,7 @@ a.about-leadership__button {
 /* line 14, sass/components/_breadcrumbs.scss */
 .breadcrumbs .trail-items li:after {
   content: "";
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -740px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -9138,7 +9144,7 @@ a.about-leadership__button {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 14, sass/components/_breadcrumbs.scss */
   .breadcrumbs .trail-items li:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -353px;
     height: 12px;
     width: 8px;
@@ -9164,7 +9170,7 @@ a.about-leadership__button {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -484px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -9177,7 +9183,7 @@ a.about-leadership__button {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 30, sass/components/_breadcrumbs.scss */
   .back-to-newsroom:before {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -223px;
     height: 14px;
     width: 9px;
@@ -9428,8 +9434,8 @@ td:nth-child(n+2), th:nth-child(n+2) {
 }
 /* line 21, sass/components/_quick-links.scss */
 .quick-links .sod_select:before {
-  background-image: url('images/sprite-images-sc17eea70d9.png');
-  background-position: 0 -1310px;
+  background-image: url('images/sprite-images-s5be58bc57c.png');
+  background-position: 0 -1456px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 24px;
@@ -9444,8 +9450,8 @@ td:nth-child(n+2), th:nth-child(n+2) {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 21, sass/components/_quick-links.scss */
   .quick-links .sod_select:before {
-    background-size: 215px 2793.5px;
-    background-position: 0 -626px;
+    background-size: 215px 3158.5px;
+    background-position: 0 -699px;
     height: 24px;
     width: 17px;
   }
@@ -9566,7 +9572,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1158px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -9577,7 +9583,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
   .button-cta:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -495px;
     height: 20px;
     width: 12px;
@@ -9684,7 +9690,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
   left: 1.5rem;
   top: 4px;
   top: 0.4rem;
-  background-image: url('images/sprite-images-sc17eea70d9.png');
+  background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1158px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -9695,7 +9701,7 @@ a.view-all:hover, a.view-all:focus, .view-all a:hover, .view-all a:focus {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
   /* line 200, sass/base/_mixins.scss */
   .entry-content .button-cta a:after, .entry-content a.button-cta:after {
-    background-size: 215px 2793.5px;
+    background-size: 215px 3158.5px;
     background-position: 0 -495px;
     height: 20px;
     width: 12px;
