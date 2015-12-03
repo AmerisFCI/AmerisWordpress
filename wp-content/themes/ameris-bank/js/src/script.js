@@ -37,7 +37,7 @@
 		arrows: true,
 		dots: false,
 		fade: false,
-		infinite: false,
+		infinite: true,
 		mobileFirst: true,
 		pauseOnDotsHover: true,
 		swipeToSlide: true,
