@@ -1,8 +1,12 @@
 .entry-content {
 	p a, ul a, li a {
+		color: $red;
 		text-decoration: none;
 		&:hover, &:active, &:focus {
 			text-decoration: underline;
+		}
+		&:visited {
+			color: darken($red, 10%);
 		}
 	}
 }

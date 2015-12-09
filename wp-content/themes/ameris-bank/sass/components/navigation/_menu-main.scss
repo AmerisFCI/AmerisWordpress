@@ -546,6 +546,21 @@
 	}
 }
 
+	.open-sub, .toggle-sub {
+		.nav-cta a {
+			@include red-button-cta;
+			@include cta-arrow-right;
+			display: inline-block;
+			@include rem-fallback(padding, .8, 6, 1.5, 1.5);
+			@include rem-fallback(font-size, 1.6);
+			@include rem-fallback(margin-top, 1.4);
+			margin-right: auto;
+			margin-left: auto;
+			border-bottom: none;
+			text-transform: none;
+		}
+	}
+
 //Personal Sub Nav
 .personal-nav {
 
@@ -572,19 +587,6 @@
 			width: 45%;
 			margin-right: 5%;
 		}
-	}
-
-	.nav-cta a {
-		@include red-button-cta;
-		@include cta-arrow-right;
-		display: inline-block;
-		@include rem-fallback(padding, .8, 6, 1.5, 1.5);
-		@include rem-fallback(font-size, 1.6);
-		@include rem-fallback(margin-top, 1.4);
-		margin-right: auto;
-		margin-left: auto;
-		border-bottom: none;
-		text-transform: none;
 	}
 }
 
@@ -633,9 +635,11 @@
 			left: 30%;
 		}
 	}
-	.sba-nav .nav-cta a {
-		@include rem-fallback(padding, 1.4, 6, 1.8, 3);
-		@include rem-fallback(font-size, 1.8);
+	.open-sub, .toggle-sub {
+		.nav-cta a {
+			@include rem-fallback(padding, 1.4, 6, 1.8, 3);
+			@include rem-fallback(font-size, 1.8);
+		}
 	}
 	.toggle-sub__parent {
 		> a {
@@ -741,9 +745,11 @@
 	.main-navigation {
 		@include rem-fallback(margin-right, 1);
 	}
-	.sba-nav .nav-cta a {
-		@include rem-fallback(padding, 1.7, 6, 2, 3);
-		@include rem-fallback(font-size, 2.1);
+	.open-sub, .toggle-sub {
+		.nav-cta a {
+			@include rem-fallback(padding, 1.7, 6, 2, 3);
+			@include rem-fallback(font-size, 2.1);
+		}
 	}
 	.primary-menu > li.sba-nav.hover > ul, .primary-menu > li.residential-nav.hover > ul {
 		width: 80%;

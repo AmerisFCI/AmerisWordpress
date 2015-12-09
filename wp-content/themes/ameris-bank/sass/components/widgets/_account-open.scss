@@ -21,7 +21,7 @@ a.account-open__button {
 }
 
 @include breakpoint($tablet-wide-up) {
-	.sidebar-right .widget_ameris_account_open_widget {
+	.sidebar-right .widget_ameris_account_open_widget:first-child {
 		@include rem-fallback(margin-top, -5);
 	}
 }

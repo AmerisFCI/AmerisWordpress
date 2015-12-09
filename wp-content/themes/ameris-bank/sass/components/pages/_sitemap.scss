@@ -1,0 +1,47 @@
+.ameris-page-list a {
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+.ameris-page-list > li {
+	clear: both;
+	@include rem-fallback(margin, 2, 0, 1);
+	&:before {
+		content: none;
+	}
+	> a {
+		@include h2-look;
+		text-decoration: none;
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+	> ul > li {
+		clear: both;
+		@include rem-fallback(margin, 1, 0);
+		> a {
+			@extend h3;
+			text-decoration: none;
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
+		&:before {
+			content: none;
+		}
+	}
+}
+
+@include breakpoint($tablet-wide-up) {
+	.ameris-page-list > li {
+		> ul > li {
+			@include float-span(6);
+			clear: both;
+			&:nth-of-type(2n) {
+				clear: none;
+				margin-right: 0;
+			}
+		}
+	}
+}

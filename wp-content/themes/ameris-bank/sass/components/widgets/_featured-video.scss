@@ -1,5 +1,6 @@
 .featured-video {
 	@include clearfix;
+	clear: both;
 	color:$text-on-dark;
 	background: $darkblue;
 	@include rem-fallback( font-size, 1.6 );
