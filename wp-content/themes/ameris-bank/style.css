@@ -5622,6 +5622,20 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   max-width: 85rem;
 }
 
+/* line 34, sass/components/pages/_generic.scss */
+.disclosure {
+  background-color: #d7e7f2;
+  padding: 20px;
+  padding: 2rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+/* line 39, sass/components/pages/_generic.scss */
+.disclosure p {
+  margin-bottom: 0;
+}
+
 /* line 1, sass/components/pages/home/_slides.scss */
 .slides {
   height: 85vh;
