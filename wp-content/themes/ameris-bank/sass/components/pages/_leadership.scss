@@ -24,14 +24,13 @@
 	display: inline-block;
 	@include rem-fallback(width, 33);
 	float: none;
-	position: relative;
 	@include rem-fallback(margin-bottom, 2.4);
 	max-width: 100%;
 	a {
 		text-decoration: none;
 		display: block;
-		width: 100%;
-		height: 100%;
+		width:100%;
+		position:relative;
 		&:hover, &:focus {
 			.leadership-grid__name-group {
 				@include rem-fallback(min-height, 13.4);
@@ -40,6 +39,9 @@
 				opacity: 1;
 				@include rem-fallback(left, 1.9);
 			}
+		}
+		.leadership-grid__panel-container {
+			position: relative;
 		}
 	}
 	img {
@@ -79,7 +81,8 @@
 
 }
 
-.leadership-grid__position, .leadership-grid__company {
+.leadership-grid__position, .leadership-grid__company,
+.og-position, .og-company {
 	@include rem-fallback(font-size, 1.6);
 	line-height: 1.2;
 	color: $text-color;
@@ -88,6 +91,147 @@
 .leadership-grid__management, .leadership-grid__board {
 	@include clearfix;
 }
+
+
+// Thumbnail grid with expandable content
+
+.og-grid {
+	margin:0;
+}
+
+.og-grid li {
+	position:static;
+}
+
+.og-grid li:before {
+	display:none;
+}
+
+.og-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #ddd;
+	border-width: 15px;
+	left: 50%;
+	margin: -20px 0 0 -15px;
+}
+
+.og-expander {
+	position: absolute;
+	background: #ddd;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+}
+
+.og-expander-inner {
+	padding: 50px 30px;
+	height: 100%;
+}
+
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #888;
+	transform: rotate(45deg);
+}
+
+.og-close::after {
+	transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+	background: #333;
+}
+
+.og-fullimg {
+	width:25%;
+}
+
+.og-details {
+	width:75%;
+}
+
+.og-fullimg,
+.og-details {
+	float: left;
+	height: 100%;
+	overflow: scroll;
+	position: relative;
+}
+
+.og-details {
+	padding: 0 40px 0 20px;
+}
+
+.og-fullimg {
+	text-align: center;
+}
+
+.og-fullimg img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 332px;
+}
+
+.og-title {
+	font-family: $font-heading;
+	font-weight: bold;
+	color: $heading-color;
+	text-transform: none;
+	display: inline-block;
+	@include rem-fallback(font-size, 2);
+	@include rem-fallback(margin-bottom, .5);
+	margin-top: 0;
+}
+
+.og-bio {
+	@include rem-fallback( margin-top, 3 );
+}
+
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+
 
 @include breakpoint ($tablet-to-desktop) {
 	.leadership-grid__panel {
