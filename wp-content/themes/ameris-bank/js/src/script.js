@@ -21,7 +21,8 @@
 	$('.slides').slick({
 		autoplay: true,
 		autoplaySpeed: 5000,
-		arrows: false,
+		//appendArrows:'.slide-arrows',
+		arrows: true,
 		dots: true,
 		fade: true,
 		mobileFirst: true,
