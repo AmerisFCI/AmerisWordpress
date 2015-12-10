@@ -30,3 +30,13 @@
 .page-template-default:not(.home) .site-main {
 	@include rem-fallback(max-width, 85);
 }
+
+.disclosure {
+	background-color:#d7e7f2;
+	@include rem-fallback( padding, 2 );
+	@include rem-fallback( margin-bottom, 3 );
+	text-align:center;
+	p {
+		margin-bottom:0;
+	}
+}

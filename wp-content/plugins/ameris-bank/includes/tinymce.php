@@ -42,6 +42,12 @@ function ameris_add_tinymce_classes( $settings ) {
             'block'    => 'ul',
             'selector' => 'ul',
             'classes'  => 'column-list'
+        ),
+        array(
+            'title'    => 'Disclosure',
+            'block'    => 'div',
+            'classes'  => 'disclosure',
+            'wrapper'  => true
         )
     );
 

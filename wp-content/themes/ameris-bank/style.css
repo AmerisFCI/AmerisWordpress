@@ -5622,6 +5622,20 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   max-width: 85rem;
 }
 
+/* line 34, sass/components/pages/_generic.scss */
+.disclosure {
+  background-color: #d7e7f2;
+  padding: 20px;
+  padding: 2rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+/* line 39, sass/components/pages/_generic.scss */
+.disclosure p {
+  margin-bottom: 0;
+}
+
 /* line 1, sass/components/pages/home/_slides.scss */
 .slides {
   height: 85vh;
@@ -7149,37 +7163,40 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   width: 330px;
   width: 33rem;
   float: none;
-  position: relative;
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
   max-width: 100%;
 }
-/* line 30, sass/components/pages/_leadership.scss */
+/* line 29, sass/components/pages/_leadership.scss */
 .leadership-grid__panel a {
   text-decoration: none;
   display: block;
   width: 100%;
-  height: 100%;
+  position: relative;
 }
-/* line 36, sass/components/pages/_leadership.scss */
+/* line 35, sass/components/pages/_leadership.scss */
 .leadership-grid__panel a:hover .leadership-grid__name-group, .leadership-grid__panel a:focus .leadership-grid__name-group {
   min-height: 134px;
   min-height: 13.4rem;
 }
-/* line 39, sass/components/pages/_leadership.scss */
+/* line 38, sass/components/pages/_leadership.scss */
 .leadership-grid__panel a:hover .leadership-grid__name:after, .leadership-grid__panel a:focus .leadership-grid__name:after {
   opacity: 1;
   left: 19px;
   left: 1.9rem;
 }
-/* line 45, sass/components/pages/_leadership.scss */
+/* line 43, sass/components/pages/_leadership.scss */
+.leadership-grid__panel a .leadership-grid__panel-container {
+  position: relative;
+}
+/* line 47, sass/components/pages/_leadership.scss */
 .leadership-grid__panel img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 52, sass/components/pages/_leadership.scss */
+/* line 54, sass/components/pages/_leadership.scss */
 .leadership-grid__name-group {
   position: absolute;
   bottom: 0;
@@ -7193,7 +7210,7 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   transition-timing-function: ease-in-out;
 }
 
-/* line 63, sass/components/pages/_leadership.scss */
+/* line 65, sass/components/pages/_leadership.scss */
 .leadership-grid__name {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: bold;
@@ -7240,15 +7257,16 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   left: 19px;
   left: 1.9rem;
 }
-/* line 74, sass/components/pages/_leadership.scss */
+/* line 76, sass/components/pages/_leadership.scss */
 .leadership-grid__name:after {
   top: 0;
   transition: all .3s;
   opacity: 0;
 }
 
-/* line 82, sass/components/pages/_leadership.scss */
-.leadership-grid__position, .leadership-grid__company {
+/* line 84, sass/components/pages/_leadership.scss */
+.leadership-grid__position, .leadership-grid__company,
+.og-meta {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.2;
@@ -7262,28 +7280,211 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   clear: both;
 }
 
+/* line 103, sass/components/pages/_leadership.scss */
+.og-grid {
+  margin: 0;
+  position: relative;
+}
+/* line 126, sass/base/_mixins.scss */
+.og-grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 109, sass/components/pages/_leadership.scss */
+.og-grid li {
+  position: static;
+}
+
+/* line 113, sass/components/pages/_leadership.scss */
+.og-grid li:before {
+  display: none;
+}
+
+/* line 117, sass/components/pages/_leadership.scss */
+.og-grid li.og-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #ddd;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+/* line 131, sass/components/pages/_leadership.scss */
+.og-expander {
+  position: absolute;
+  background: #ddd;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 143, sass/components/pages/_leadership.scss */
+.og-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+/* line 148, sass/components/pages/_leadership.scss */
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 157, sass/components/pages/_leadership.scss */
+.og-close::before,
+.og-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  transform: rotate(45deg);
+}
+
+/* line 168, sass/components/pages/_leadership.scss */
+.og-close::after {
+  transform: rotate(-45deg);
+}
+
+/* line 172, sass/components/pages/_leadership.scss */
+.og-close:hover::before,
+.og-close:hover::after {
+  background: #333;
+}
+
+/* line 177, sass/components/pages/_leadership.scss */
+.og-fullimg {
+  width: 25%;
+}
+
+/* line 181, sass/components/pages/_leadership.scss */
+.og-details {
+  width: 75%;
+}
+
+/* line 185, sass/components/pages/_leadership.scss */
+.og-fullimg,
+.og-details {
+  float: left;
+  height: 100%;
+  overflow: scroll;
+  position: relative;
+}
+
+/* line 193, sass/components/pages/_leadership.scss */
+.og-details {
+  padding: 0 40px 0 20px;
+}
+
+/* line 197, sass/components/pages/_leadership.scss */
+.og-fullimg {
+  text-align: center;
+}
+
+/* line 201, sass/components/pages/_leadership.scss */
+.og-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 332px;
+}
+
+/* line 207, sass/components/pages/_leadership.scss */
+.og-title {
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-weight: bold;
+  color: #092764;
+  text-transform: none;
+  text-align: left;
+  display: inline-block;
+  font-size: 20px;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+/* line 219, sass/components/pages/_leadership.scss */
+.og-bio {
+  margin-top: 30px;
+  margin-top: 3rem;
+}
+
+/* line 223, sass/components/pages/_leadership.scss */
+.og-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
 @media (min-width: 530px) {
-  /* line 93, sass/components/pages/_leadership.scss */
+  /* line 245, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 99, sass/components/pages/_leadership.scss */
+  /* line 251, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     text-align: left;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 106, sass/components/pages/_leadership.scss */
+  /* line 258, sass/components/pages/_leadership.scss */
   .leadership-grid__heading {
     text-align: center;
   }
 
-  /* line 109, sass/components/pages/_leadership.scss */
+  /* line 261, sass/components/pages/_leadership.scss */
+  .og-grid {
+    left: 50%;
+  }
+
+  /* line 264, sass/components/pages/_leadership.scss */
+  .og-grid li.og-expanded > a::after {
+    content: none;
+  }
+
+  /* line 267, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
-    display: inline-block;
+    display: block;
     width: 48.57143%;
     clear: right;
     float: left;
@@ -7291,25 +7492,61 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
     margin-right: 2.85714%;
     max-width: 330px;
     max-width: 33rem;
-    float: none;
   }
-  /* line 114, sass/components/pages/_leadership.scss */
+  /* line 273, sass/components/pages/_leadership.scss */
+  .leadership-grid__panel .leadership-grid__panel-container {
+    left: -100%;
+  }
+  /* line 276, sass/components/pages/_leadership.scss */
+  .leadership-grid__panel .og-expander {
+    left: -50%;
+  }
+  /* line 280, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 117, sass/components/pages/_leadership.scss */
+  /* line 283, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(2n+1) {
     clear: both;
   }
 
-  /* line 122, sass/components/pages/_leadership.scss */
+  /* line 288, sass/components/pages/_leadership.scss */
   .leadership-grid--experts {
     margin-left: -20px;
     margin-right: -20px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 130, sass/components/pages/_leadership.scss */
+  /* line 296, sass/components/pages/_leadership.scss */
+  .og-grid {
+    margin: 0;
+    width: auto;
+  }
+
+  /* line 302, sass/components/pages/_leadership.scss */
+  .og-grid {
+    left: auto;
+  }
+
+  /* line 305, sass/components/pages/_leadership.scss */
+  .og-grid li.og-expanded > a::after {
+    content: " ";
+  }
+
+  /* line 308, sass/components/pages/_leadership.scss */
+  .leadership-grid__panel {
+    float: none;
+  }
+  /* line 310, sass/components/pages/_leadership.scss */
+  .leadership-grid__panel .leadership-grid__panel-container {
+    left: auto;
+  }
+  /* line 313, sass/components/pages/_leadership.scss */
+  .leadership-grid__panel .og-expander {
+    left: 0;
+  }
+
+  /* line 318, sass/components/pages/_leadership.scss */
   .leadership-grid__panel {
     display: block;
     width: 31.42857%;
@@ -7318,11 +7555,11 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
     margin-left: 0;
     margin-right: 2.85714%;
   }
-  /* line 133, sass/components/pages/_leadership.scss */
+  /* line 321, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 136, sass/components/pages/_leadership.scss */
+  /* line 324, sass/components/pages/_leadership.scss */
   .leadership-grid__panel:nth-child(3n+1) {
     clear: both;
   }

@@ -24,26 +24,32 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 				<?php } ?>
 
 				<div class="leadership-grid leadership-grid--experts">
-					<div class="leadership-grid__management">
+					<ul class="og-grid leadership-grid__management">
 						<?php $experts = get_field( 'lending_experts' );
 						if ( $experts ) {
 							foreach( $experts as $post ) {
 								setup_postdata( $post );
 								?>
-								<div id="post-<?php the_ID(); ?>-panel" class="leadership-grid__panel panel" <?php post_class(); ?>>
-									<a href="<?php the_permalink(); ?>">
+								<li id="post-<?php the_ID(); ?>-panel" class="leadership-grid__panel panel" <?php post_class(); ?>>
+									<a href="<?php the_permalink(); ?>"
+										data-largesrc="<?php $largesrc = wp_get_attachment_image_src( get_post_thumbnail_id(), 'leader' ); echo esc_attr( $largesrc[0] ); ?>"
+										data-title="<?php echo esc_attr( get_the_title() ); ?>"
+										data-position="<?php echo esc_attr( get_field( 'position/title' ) ); ?>"
+										data-phone="<?php echo esc_attr( get_field( 'phone' ) ); ?>"
+										data-email="<?php echo esc_attr( get_field( 'email' ) ); ?>"
+										data-description="<?php echo esc_attr( get_field( 'bio' ) ); ?>">
 										<?php the_post_thumbnail( 'leader' ); ?>
 										<div class="leadership-grid__name-group">
 											<h4 class="leadership-grid__name"><?php the_title(); ?></h4>
 											<div class="leadership-grid__position"><?php the_field( 'position/title' ); ?></div>
 										</div>
 									</a>
-								</div><!-- #post-## -->
+								</li><!-- #post-## -->
 								<?php
 							}
 							wp_reset_postdata();
 						} ?>
-					</div>
+					</ul>
 				</div>
 
 			<?php endwhile; // End of the loop. ?>
