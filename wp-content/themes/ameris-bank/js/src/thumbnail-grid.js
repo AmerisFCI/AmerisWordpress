@@ -344,10 +344,12 @@ var Grid = (function( $ ) {
 			// create Preview structure:
 			this.$title = $( '<h3 class="og-title"></h3>' );
 			this.$description = $( '<div class="og-bio"></div>' );
-			this.$position = $( '<div class="og-position"></div>' );
-			this.$company = $( '<div class="og-company"></div>' );
+			this.$position = $( '<div class="og-meta og-position"></div>' );
+			this.$company = $( '<div class="og-meta og-company"></div>' );
+			this.$phone = $( '<div class="og-meta og-phone"></div>' );
+			this.$email = $( '<div class="og-meta og-email"></div>' );
 			// this.$href = $( '<a href="#">View page</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$position, this.$company, this.$description );
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$position, this.$company, this.$phone, this.$email, this.$description );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -387,12 +389,16 @@ var Grid = (function( $ ) {
 					description : $itemEl.data( 'description' ),
 					position : $itemEl.data( 'position' ),
 					company : $itemEl.data( 'company' ),
+					phone: $itemEl.data( 'phone' ),
+					email: $itemEl.data( 'email' )
 				};
 
 			this.$title.html( '<a href="' + eldata.href + '">' + eldata.title + '</a>' );
 			this.$description.html( eldata.description );
 			this.$position.html( eldata.position );
 			this.$company.html( eldata.company );
+			this.$phone.html( eldata.phone );
+			this.$email.html( eldata.email );
 			// this.$href.attr( 'href', eldata.href );
 
 			var self = this;

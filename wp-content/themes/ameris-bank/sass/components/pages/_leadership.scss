@@ -82,10 +82,14 @@
 }
 
 .leadership-grid__position, .leadership-grid__company,
-.og-position, .og-company {
+.og-meta {
 	@include rem-fallback(font-size, 1.6);
 	line-height: 1.2;
 	color: $text-color;
+}
+
+.og-email {
+	// word-wrap:break-word;
 }
 
 .leadership-grid__management, .leadership-grid__board {
@@ -94,6 +98,7 @@
 
 
 // Thumbnail grid with expandable content
+// Also used for Lending Experts
 
 .og-grid {
 	margin:0;
@@ -204,6 +209,7 @@
 	font-weight: bold;
 	color: $heading-color;
 	text-transform: none;
+	text-align:left;
 	display: inline-block;
 	@include rem-fallback(font-size, 2);
 	@include rem-fallback(margin-bottom, .5);
