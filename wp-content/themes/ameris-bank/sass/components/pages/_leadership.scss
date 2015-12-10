@@ -96,6 +96,12 @@
 	@include clearfix;
 }
 
+.lending-experts-heading {
+	border-top:solid #d7e7f2;
+	@include rem-fallback(margin-top, 4 );
+	@include rem-fallback(padding-top, 4);
+}
+
 
 // Thumbnail grid with expandable content
 // Also used for Lending Experts
