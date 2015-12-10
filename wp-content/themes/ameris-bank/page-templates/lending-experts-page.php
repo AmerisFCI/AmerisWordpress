@@ -38,10 +38,12 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 										data-phone="<?php echo esc_attr( get_field( 'phone' ) ); ?>"
 										data-email="<?php echo esc_attr( get_field( 'email' ) ); ?>"
 										data-description="<?php echo esc_attr( get_field( 'bio' ) ); ?>">
-										<?php the_post_thumbnail( 'leader' ); ?>
-										<div class="leadership-grid__name-group">
-											<h4 class="leadership-grid__name"><?php the_title(); ?></h4>
-											<div class="leadership-grid__position"><?php the_field( 'position/title' ); ?></div>
+										<div class="leadership-grid__panel-container">
+											<?php the_post_thumbnail( 'leader' ); ?>
+											<div class="leadership-grid__name-group">
+												<h4 class="leadership-grid__name"><?php the_title(); ?></h4>
+												<div class="leadership-grid__position"><?php the_field( 'position/title' ); ?></div>
+											</div>
 										</div>
 									</a>
 								</li><!-- #post-## -->
