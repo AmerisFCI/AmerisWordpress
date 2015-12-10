@@ -8299,30 +8299,6 @@ body.page-template-about-us-page .site-main {
   min-height: 50rem;
   position: relative;
 }
-/* line 192, sass/components/pages/_about-us.scss */
-.about-video:after {
-  content: "";
-  background-image: url('images/sprite-images-s5be58bc57c.png');
-  background-position: 0 -4054px;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  height: 90px;
-  width: 90px;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  margin-left: -45px;
-  margin-left: -4.5rem;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 192, sass/components/pages/_about-us.scss */
-  .about-video:after {
-    background-size: 215px 3158.5px;
-    background-position: 0 -1932px;
-    height: 90px;
-    width: 90px;
-  }
-}
 /* line 200, sass/components/pages/_about-us.scss */
 .about-video__wrap-link {
   display: block;
@@ -8583,12 +8559,6 @@ a.about-leadership__button {
   margin: auto;
 }
 
-@media (min-width: 530px) {
-  /* line 330, sass/components/pages/_about-us.scss */
-  .about-video:after {
-    top: 30%;
-  }
-}
 @media (min-width: 740px) {
   /* line 338, sass/components/pages/_about-us.scss */
   .about-panels__column {
@@ -8691,12 +8661,6 @@ a.about-leadership__button {
     clear: right;
     float: right;
     margin-right: 0;
-  }
-}
-@media (min-width: 740px) and (max-width: 1023px) {
-  /* line 397, sass/components/pages/_about-us.scss */
-  .about-video:after {
-    top: 20%;
   }
 }
 @media (min-width: 1024px) {

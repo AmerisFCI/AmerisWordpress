@@ -189,14 +189,14 @@ body.page-template-about-us-page {
 .about-video {
 	@include rem-fallback(min-height, 50);
 	position: relative;
-	&:after {
-		content: "";
-		@include use-sprite(icon-vid-play);
-		position: absolute;
-		left: 50%;
-		top: 20%;
-		@include rem-fallback(margin-left, -4.5);
-	}
+	//&:after {
+		//content: "";
+		//@include use-sprite(icon-vid-play);
+		//position: absolute;
+		//left: 50%;
+		//top: 20%;
+		//@include rem-fallback(margin-left, -4.5);
+	//}
 	&__wrap-link {
 		display: block;
 		text-decoration: none;
@@ -326,11 +326,11 @@ a.about-leadership__button {
 	margin: auto;
 }
 
-@include breakpoint($tablet-to-desktop) {
-	.about-video:after {
-		top: 30%;
-	}
-}
+//@include breakpoint($tablet-to-desktop) {
+	//.about-video:after {
+	//	top: 30%;
+	//}
+//}
 
 
 //layout for the top, this page is on a 12 column grid
@@ -393,11 +393,11 @@ a.about-leadership__button {
 	}
 }
 
-@include breakpoint($tablet-wide) {
-	.about-video:after {
-		top: 20%;
-	}
-}
+//@include breakpoint($tablet-wide) {
+//	.about-video:after {
+//		top: 20%;
+//	}
+//}
 
 @include breakpoint($narrow-to-desktop) {
 
