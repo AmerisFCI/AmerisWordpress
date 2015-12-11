@@ -106,6 +106,10 @@
 // Thumbnail grid with expandable content
 // Also used for Lending Experts
 
+.og-grid-container {
+	overflow:hidden;
+}
+
 .og-grid {
 	margin:0;
 	position:relative;
