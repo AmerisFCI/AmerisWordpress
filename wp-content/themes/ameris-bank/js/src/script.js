@@ -238,8 +238,8 @@
 		// if link exists, uses http, and is not one of the named sites
 		if( this.href != '' &&
 			this.href.indexOf('http') != -1 &&
-			this.href.indexOf('ir.amerisbank.com') == -1 /* &&
-			this.href.indexOf('ibanking-services.com') == -1 &&
+			this.href.indexOf('ir.amerisbank.com') == -1 &&
+			this.href.indexOf('ibanking-services.com') == -1 /* &&
 			this.href.indexOf('amerisbankmortgage.com') == -1 */ ) {
 			
 			var a = new RegExp('/' + window.location.host + '/');
