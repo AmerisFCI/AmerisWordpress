@@ -310,10 +310,61 @@
 			} );
 		} );
 
-
-		
 	});
 
+
+	/**
+	 * Account Access form handling.
+	 */
+	$( '#lgnform select[name="switch_login_type"]' ).change( function() {
+		var dropdown = $( this );
+		var val      = dropdown.val();
+		var form     = dropdown.closest( '#lgnform' );
+		var submit   = form.find( '.account-access__submit-wrapper' );
+		
+		// on every switch, remove all input[type="text,password,hidden"]
+		form.find( 'input[type="text"], input[type="password"], input[type="hidden"]' ).remove();
+
+		switch( val ) {
+			case 'Personal Online Banking':
+				submit.before(
+					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
+					'<input id="_textBoxCompanyId" type="hidden" value="466_061201754" name="_textBoxCompanyId">'
+				);
+				form.attr( 'action', 'https://cibng.ibanking-services.com/EamWeb/Remote/RemoteLoginAPI.aspx?FIORG=466&amp;orgId=466_061201754&amp;FIFID=061201754&amp;brand=466_061201754&amp;appId=ceb' );
+				break;
+			case 'Business Online Banking':
+				submit.before(
+					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
+					'<input id="_textBoxCompanyId" type="text" value="" name="_textBoxCompanyId" placeholder="Company ID">'
+				);
+				form.attr( 'action', 'https://ameris.ebanking-services.com/EamWeb/Remote/RemoteLoginApi.aspx?appID=beb&amp;brand=ameris' );
+				break;
+			case 'Ameris Bank Credit Card Access':
+				form.attr( 'action', 'https://www.myaccountaccess.com/onlineCard/login.do?theme=elan1&amp;loc=12252' );
+				break;
+			case 'Merchant Service Access':
+				form.attr( 'action', 'https://www.myclientline.net' );
+				break;
+			case 'Investor Access':
+				form.attr( 'action', 'https://wallstreet.rjf.com' );
+				break;
+			case 'Columbia Partner':
+				submit.before(
+					'<input id="loginUserName" type="text" value="" name="loginUserName" placeholder="Email address">',
+					'<input id="loginPassword" type="password" value="" name="loginPassword" placeholder="Password">'
+				);
+				form.attr( 'action', 'https://5620781132.secure-onlineorigination.com/TPOLogin.aspx' );
+				break;
+			case 'Georgia Partner':
+				submit.before(
+					'<input id="loginUserName" type="text" value="" name="loginUserName" placeholder="Email address">',
+					'<input id="loginPassword" type="password" value="" name="loginPassword" placeholder="Password">'
+				);
+				form.attr( 'action', 'https://2317009814.secure-onlineorigination.com/TPOLogin.aspx' );
+				break;
+		}
+	} );
 
 	// Put code here
 
