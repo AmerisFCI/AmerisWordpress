@@ -331,17 +331,17 @@
 					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
 					'<input id="_textBoxCompanyId" type="hidden" value="466_061201754" name="_textBoxCompanyId">'
 				);
-				form.attr( 'action', 'https://cibng.ibanking-services.com/EamWeb/Remote/RemoteLoginAPI.aspx?FIORG=466&amp;orgId=466_061201754&amp;FIFID=061201754&amp;brand=466_061201754&amp;appId=ceb' );
+				form.attr( 'action', 'https://cibng.ibanking-services.com/EamWeb/Remote/RemoteLoginAPI.aspx?FIORG=466&orgId=466_061201754&FIFID=061201754&brand=466_061201754&appId=ceb' );
 				break;
 			case 'Business Online Banking':
 				submit.before(
 					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
 					'<input id="_textBoxCompanyId" type="text" value="" name="_textBoxCompanyId" placeholder="Company ID">'
 				);
-				form.attr( 'action', 'https://ameris.ebanking-services.com/EamWeb/Remote/RemoteLoginApi.aspx?appID=beb&amp;brand=ameris' );
+				form.attr( 'action', 'https://ameris.ebanking-services.com/EamWeb/Remote/RemoteLoginApi.aspx?appID=beb&brand=ameris' );
 				break;
 			case 'Ameris Bank Credit Card Access':
-				form.attr( 'action', 'https://www.myaccountaccess.com/onlineCard/login.do?theme=elan1&amp;loc=12252' );
+				form.attr( 'action', 'https://www.myaccountaccess.com/onlineCard/login.do?theme=elan1&loc=12252' );
 				break;
 			case 'Merchant Service Access':
 				form.attr( 'action', 'https://www.myclientline.net' );
@@ -365,6 +365,18 @@
 				break;
 		}
 	} );
+
+
+	/**
+	 * Account Access cookie handling. When the form is submitted, save a cookie for over a year
+	 * so that the user is returned to this form if they come back before then.
+	 */
+	$( '#lgnform' ).submit( function() {
+		var choice = $( this ).find( 'select[name="switch_login_type"]' ).val();
+		amerisSetCookie( 'accounttype', choice, 400 );
+		// then continue on with the form submission...
+	} );
+
 
 	// Put code here
 
@@ -421,3 +433,30 @@ function amerisOrganizeMobileMenu() {
 }
 jQuery( document ).ready( amerisOrganizeMobileMenu );
 jQuery( window ).resize( amerisOrganizeMobileMenu );
+
+
+/**
+ * Account Access cookie implementation -- check for a cookie on page load
+ * and change the dropdown to match.
+ */
+var accountType = amerisGetCookie( 'accounttype' );
+if ( accountType )
+	jQuery( '#lgnform select[name="switch_login_type"]' ).val( accountType ).change();
+
+function amerisSetCookie( cname, cvalue, exdays ) {
+	var d = new Date();
+	d.setTime( d.getTime() + ( exdays * 24 * 60 * 60 * 1000 ) );
+	var expires = "expires=" + d.toUTCString();
+	document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
+}
+
+function amerisGetCookie( cname ) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1);
+		if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
