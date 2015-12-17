@@ -13,7 +13,7 @@ if ( is_singular( 'leadership' ) || is_singular( 'lending_expert' ) ) {
 	$post_type = get_post_type_object( get_post_type() );
 	$parent    = get_page_by_path( $post_type->rewrite['slug'] );
 	$post_id   = $parent->ID;
-} elseif ( is_home() ) {
+} elseif ( is_home() || is_category() ) {
 	$post_id = get_option( 'page_for_posts' );
 }
 
@@ -23,6 +23,7 @@ if ( is_page_template( 'page-templates/leadership-page.php' ) ||
 	is_page_template( 'page-templates/history-page.php' )  ||
 	is_page_template( 'page-templates/wide-page.php' )  ||
 	is_home() || 
+	is_category() || 
 	is_singular( 'leadership' ) ) {
 	$prefix      = 'wide-';
 	$banner_size = 'wide-banner';

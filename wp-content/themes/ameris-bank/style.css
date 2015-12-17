@@ -7777,33 +7777,39 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   }
 }
 /* line 389, sass/base/_mixins.scss */
-.blog .page-title {
+.blog .page-title,
+body.category .page-title {
   padding: 0;
   padding-top: 20px;
   padding-top: 2rem;
 }
 /* line 394, sass/base/_mixins.scss */
-.blog .sidebar-menu {
+.blog .sidebar-menu,
+body.category .sidebar-menu {
   background: transparent;
 }
 /* line 398, sass/base/_mixins.scss */
-.blog .inner-wrap .sidebar-left {
+.blog .inner-wrap .sidebar-left,
+body.category .inner-wrap .sidebar-left {
   margin-left: 0;
   margin-top: 0px;
   margin-top: 0rem;
 }
 @media (min-width: 1024px) {
   /* line 404, sass/base/_mixins.scss */
-  .blog .sidebar-menu {
+  .blog .sidebar-menu,
+  body.category .sidebar-menu {
     padding-top: 44px;
     padding-top: 4.4rem;
   }
   /* line 407, sass/base/_mixins.scss */
-  .blog .sidebar-left {
+  .blog .sidebar-left,
+  body.category .sidebar-left {
     clear: none;
   }
   /* line 414, sass/base/_mixins.scss */
-  .blog #main {
+  .blog #main,
+  body.category #main {
     width: 64.10256%;
     float: left;
     margin-right: -100%;
@@ -7813,7 +7819,8 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
 }
 @media (min-width: 1420px) {
   /* line 427, sass/base/_mixins.scss */
-  .blog #main {
+  .blog #main,
+  body.category #main {
     width: 72.22222%;
     float: left;
     margin-right: -100%;
@@ -7823,12 +7830,13 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
     padding-right: 4.8rem;
   }
 }
-/* line 3, sass/components/pages/_newsroom.scss */
-.blog .site-content {
+/* line 4, sass/components/pages/_newsroom.scss */
+.blog .site-content,
+body.category .site-content {
   padding-bottom: 0;
 }
 
-/* line 8, sass/components/pages/_newsroom.scss */
+/* line 9, sass/components/pages/_newsroom.scss */
 .latest-posts-heading {
   font-style: normal;
   font-size: 18px;
@@ -7851,7 +7859,7 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   padding-top: 1.8rem;
 }
 
-/* line 15, sass/components/pages/_newsroom.scss */
+/* line 16, sass/components/pages/_newsroom.scss */
 .news-item--newsroom {
   border-bottom: solid #d7e7f2;
   border-bottom-width: 2px;
@@ -7859,7 +7867,7 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   padding-bottom: 10px;
   padding-bottom: 1rem;
 }
-/* line 20, sass/components/pages/_newsroom.scss */
+/* line 21, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-item__title {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -7870,11 +7878,11 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   letter-spacing: -0.2px;
   letter-spacing: -0.02rem;
 }
-/* line 25, sass/components/pages/_newsroom.scss */
+/* line 26, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-meta {
   text-align: center;
 }
-/* line 27, sass/components/pages/_newsroom.scss */
+/* line 28, sass/components/pages/_newsroom.scss */
 .news-item--newsroom .news-item__thumbnail img {
   display: block;
   margin-left: auto;
@@ -7883,17 +7891,17 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   margin-bottom: 1.6rem;
 }
 @media (min-width: 530px) {
-  /* line 35, sass/components/pages/_newsroom.scss */
+  /* line 36, sass/components/pages/_newsroom.scss */
   .news-item--newsroom .news-meta {
     text-align: left;
   }
-  /* line 36, sass/components/pages/_newsroom.scss */
+  /* line 37, sass/components/pages/_newsroom.scss */
   .news-item--newsroom .news-item__thumbnail img {
     margin-left: 0;
   }
 }
 
-/* line 44, sass/components/pages/_newsroom.scss */
+/* line 45, sass/components/pages/_newsroom.scss */
 .news-item__more {
   padding: 5px 0px;
   padding: 0.5rem 0rem;
@@ -7918,13 +7926,13 @@ h2.landing-heading, .news-item--newsroom .landing-heading.news-item__title, .sea
   color: #092764;
 }
 
-/* line 48, sass/components/pages/_newsroom.scss */
+/* line 49, sass/components/pages/_newsroom.scss */
 .after-blog {
   margin-top: 36px;
   margin-top: 3.6rem;
 }
 
-/* line 52, sass/components/pages/_newsroom.scss */
+/* line 53, sass/components/pages/_newsroom.scss */
 .blog-intro .intro {
   margin-top: 20px;
   margin-top: 2rem;

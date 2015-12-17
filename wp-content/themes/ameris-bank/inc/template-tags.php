@@ -244,7 +244,7 @@ function get_ameris_sidebar_menu() {
 	global $post;
 
 	// blog/single pages: About Us menu
-	if ( is_home() || is_single() || is_search() ) {
+	if ( is_home() || is_single() || is_search() || is_category() ) {
 
 		$top_level_id = 61;
 		if ( is_singular( 'lending_expert' ) )
@@ -260,52 +260,66 @@ function get_ameris_sidebar_menu() {
 		) );
 	} else {
 
-		// get top-level parent
-		$ancestors = $all_ancestors = get_post_ancestors( $post );
-		if ( $ancestors ) {
-			$top_level = array_pop( $ancestors );
+		$override = get_field( 'sidebar_menu_override', $post->ID );
+		if ( $override && is_nav_menu( $override ) ) {
+
+			// display a specific menu for this location
+			$output = wp_nav_menu( array(
+				'menu'               => (int) $override,
+				'echo'               => 0,
+				'walker'             => new Ameris_Walker_Nav_Menu
+			) );
+
 		} else {
-			$top_level = $post;
-		}
 
-		// grab object if you don't already have it
-		$top_level = get_post( $top_level );
-		
-		// for business pages, get menu based on one level down
-		if ( $top_level->ID === 20 && $all_ancestors ) {
-
-			$second_level = array_pop( $ancestors );
-			$second_level = get_post( $second_level );
-			
-			$theme_location = 'sidebar-business-' . $second_level->ID;
-			$menu_parent = $second_level;
-
-			// for pages outside the normal hierarchy, just give them the top-level Business menu
-			$locations = get_registered_nav_menus();
-			if ( !array_key_exists( $theme_location, $locations ) ) {
-				$theme_location = 'sidebar-' . $top_level->ID;
-				$menu_parent = $top_level;
+			// get top-level parent
+			$ancestors = $all_ancestors = get_post_ancestors( $post );
+			if ( $ancestors ) {
+				$top_level = array_pop( $ancestors );
+			} else {
+				$top_level = $post;
 			}
 
-			// display a custom menu for this location, or alternately, display all sub-pages
-			$output = wp_nav_menu( array(
-				'theme_location'     => $theme_location,
-				'fallback_cb'        => 'ameris_sidebar_menu_fallback',
-				'ameris_menu_parent' => $menu_parent, // gets passed to fallback function
-				'echo'               => 0,
-				'walker'             => new Ameris_Walker_Nav_Menu
-			) );
+			// grab object if you don't already have it
+			$top_level = get_post( $top_level );
+			
+			// for business pages, get menu based on one level down
+			if ( $top_level->ID === 20 && $all_ancestors ) {
 
-		// for all other pages, get menu based on top level
-		} else {
+				$second_level = array_pop( $ancestors );
+				$second_level = get_post( $second_level );
+				
+				$theme_location = 'sidebar-business-' . $second_level->ID;
+				$menu_parent = $second_level;
 
-			$output = wp_nav_menu( array(
-				'theme_location'     => 'sidebar-' . $top_level->ID,
-				'fallback_cb'        => 'ameris_sidebar_menu_fallback',
-				'ameris_menu_parent' => $top_level, // gets passed to fallback function
-				'echo'               => 0,
-				'walker'             => new Ameris_Walker_Nav_Menu
-			) );
+				// for pages outside the normal hierarchy, just give them the top-level Business menu
+				$locations = get_registered_nav_menus();
+				if ( !array_key_exists( $theme_location, $locations ) ) {
+					$theme_location = 'sidebar-' . $top_level->ID;
+					$menu_parent = $top_level;
+				}
+
+				// display a custom menu for this location, or alternately, display all sub-pages
+				$output = wp_nav_menu( array(
+					'theme_location'     => $theme_location,
+					'fallback_cb'        => 'ameris_sidebar_menu_fallback',
+					'ameris_menu_parent' => $menu_parent, // gets passed to fallback function
+					'echo'               => 0,
+					'walker'             => new Ameris_Walker_Nav_Menu
+				) );
+
+			// for all other pages, get menu based on top level
+			} else {
+
+				$output = wp_nav_menu( array(
+					'theme_location'     => 'sidebar-' . $top_level->ID,
+					'fallback_cb'        => 'ameris_sidebar_menu_fallback',
+					'ameris_menu_parent' => $top_level, // gets passed to fallback function
+					'echo'               => 0,
+					'walker'             => new Ameris_Walker_Nav_Menu
+				) );
+
+			}
 
 		}
 

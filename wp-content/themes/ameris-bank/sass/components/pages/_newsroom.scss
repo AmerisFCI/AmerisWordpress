@@ -1,4 +1,5 @@
-.blog {
+.blog,
+body.category {
 	@include wide-banner-page-layout;
 	.site-content {
 		padding-bottom: 0;
