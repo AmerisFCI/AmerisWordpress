@@ -24,7 +24,7 @@ get_header(); ?>
 						<div class="slide">
 							<?php
 							$imgID = get_post_thumbnail_id($post->ID); //get the id of the featured image
-							$featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
+							$featuredImage = wp_get_attachment_image_src($imgID, 'slide' );//get the url of the featured image (returns an array)
 							$imgURL = $featuredImage[0]; //get the url of the image out of the array
 							?>
 							<div class="slide-background-image" style="background-image:url(<?php echo $imgURL ?>);"></div>
