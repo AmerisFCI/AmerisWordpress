@@ -22,7 +22,12 @@ get_header(); ?>
 						$slide_query->the_post(); ?>
 						
 						<div class="slide">
-							<?php the_post_thumbnail( 'slide' ); ?>
+							<?php
+							$imgID = get_post_thumbnail_id($post->ID); //get the id of the featured image
+							$featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
+							$imgURL = $featuredImage[0]; //get the url of the image out of the array
+							?>
+							<div class="slide-background-image" style="background-image:url(<?php echo $imgURL ?>);"></div>
 							<div class="inner-wrap slide__inner-wrap">
 								<div class="slide__text-wrap">
 									<h2 class="slide__title kicker"><?php the_title(); ?></h2>

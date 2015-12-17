@@ -35,9 +35,15 @@ if ( is_page_template( 'page-templates/product-page.php' ) ) {
 		$banner_size = 'product-banner';
 }
 
-if ( has_post_thumbnail( $post_id ) ) { ?>
+if ( has_post_thumbnail( $post_id ) ) {
+	$imgID = get_post_thumbnail_id($post->ID); //get the id of the featured image
+	$featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
+	$imgURL = $featuredImage[0]; //get the url of the image out of the array
+?>
 	<div class="<?php echo $prefix; ?>banner-image">
-		<?php echo get_the_post_thumbnail( $post_id, $banner_size );
+		<div class="banner-background-image" style="background-image:url(<?php echo $imgURL ?>);"></div>
+		<?php
+		//echo get_the_post_thumbnail( $post_id, $banner_size );
 		if ( get_field( 'banner_blurb', $post_id ) ) { ?>
 			<div class="<?php echo $prefix; ?>banner-blurb__wrap">
 				<div class="<?php echo $prefix; ?>banner-blurb"><?php the_field( 'banner_blurb', $post_id ); ?></div>

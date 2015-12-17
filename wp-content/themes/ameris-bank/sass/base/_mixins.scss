@@ -327,6 +327,14 @@ $sprite-high-res-suffix: '-2x' !default;
   position: relative;
   background: $brown;
 
+  .banner-background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: .85;
+    background-position: center center;
+  }
   img {
     position: absolute;
     max-width: none;
