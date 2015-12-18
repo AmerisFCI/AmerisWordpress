@@ -41,6 +41,7 @@
 		infinite: true,
 		mobileFirst: true,
 		pauseOnDotsHover: true,
+		accessibility: false,
 		swipeToSlide: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
