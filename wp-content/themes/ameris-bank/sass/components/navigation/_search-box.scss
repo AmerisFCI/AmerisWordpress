@@ -1,3 +1,27 @@
+::-webkit-input-placeholder {
+	color: $text-color !important;
+}
+:focus::-webkit-input-placeholder{color:transparent !important;}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: $text-color !important;
+}
+:-moz-placeholder{color:transparent !important;}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: $text-color !important;
+}
+::-moz-placeholder{color:transparent !important;}
+
+:-ms-input-placeholder {
+	color: $text-color !important;
+}
+:-ms-input-placeholder{color:transparent !important;}
+
+input[placeholder], [placeholder], *[placeholder] {
+	color: $text-color;
+}
+
 .search-form {
 	@include rem-fallback(margin-bottom, 1.6);
 	position: relative;
