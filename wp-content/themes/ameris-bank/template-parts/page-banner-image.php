@@ -42,7 +42,7 @@ if ( has_post_thumbnail( $post_id ) ) {
 	$imgURL = $featuredImage[0]; //get the url of the image out of the array
 ?>
 	<div class="<?php echo $prefix; ?>banner-image">
-		<div class="banner-background-image" style="background-image:url(<?php echo $imgURL ?>);"></div>
+		<div class="banner-background-image" style="background-image:url(<?php echo $imgURL ?>?chromecachebuster=banner);"></div>
 		<?php
 		//echo get_the_post_thumbnail( $post_id, $banner_size );
 		if ( get_field( 'banner_blurb', $post_id ) ) { ?>
