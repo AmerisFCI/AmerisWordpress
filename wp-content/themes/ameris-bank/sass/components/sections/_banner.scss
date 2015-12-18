@@ -158,6 +158,12 @@
 	}
 }
 
+@include breakpoint($mobile-to-tablet) {
+	.has-banner-image ~ .inner-wrap .sidebar-left {
+		margin-top: 0 !important;
+	}
+}
+
 @include breakpoint($narrow-to-desktop) {
 	.page-title {
 		@include rem-fallback(padding, 20, 2.4, 2);
@@ -169,7 +175,7 @@
 
 	.has-banner-image {
 		//~ .content-inner-wrap {
-		//	padding-top: 0;
+		//	padding-top: 0; 
 		//}
 		.page-title {
 			@include rem-fallback(padding, 24, 2.4, 1.4);
@@ -207,19 +213,19 @@
 		@include rem-fallback(font-size, 8.6);
 	}
 	.has-banner-image ~ .content-inner-wrap {
-		@include rem-fallback(margin-top, -15);
+		//@include rem-fallback(margin-top, -15);
 	}
 	.has-banner-image {
 		.page-title {
-			@include rem-fallback(padding-bottom, 15);
+			//@include rem-fallback(padding-bottom, 15);
 			h1, .page-title-lookalike {
-				@include rem-fallback(min-height, 13);
+				//@include rem-fallback(min-height, 13);
 				@include rem-fallback(margin-bottom, 2.4);
 			}
 
 		}
 		~ .inner-wrap .sidebar-left {
-			@include rem-fallback(margin-top, -7.4);
+			//@include rem-fallback(margin-top, -7.4);
 		}
 	}
 }
@@ -257,13 +263,13 @@
 		}
 	}
 	.has-banner-image ~ .content-inner-wrap {
-		@include rem-fallback(margin-top, -25);
+		//@include rem-fallback(margin-top, -25);
 	}
 	.has-banner-image {
 		.page-title {
-			@include rem-fallback(padding-bottom, 25);
+			//@include rem-fallback(padding-bottom, 25);
 			h1, .page-title-lookalike {
-				@include rem-fallback(min-height, 13);
+				//@include rem-fallback(min-height, 13);
 				@include rem-fallback(margin-bottom, 2.4);
 			}
 			h1:after, .page-title-lookalike:after {
@@ -271,7 +277,7 @@
 			}
 		}
 		~ .inner-wrap .sidebar-left {
-			@include rem-fallback(margin-top, -15);
+			//@include rem-fallback(margin-top, -15);
 		}
 	}
 

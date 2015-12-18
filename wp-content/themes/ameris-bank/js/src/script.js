@@ -135,7 +135,7 @@
 
 	// Set wide banner images to
 	// fill the parent container no matter what!
-	$(window).load(function() {
+	/*$(window).load(function() {
 
 		var theWindow        = $(window),
 			$wideimg        = $('.wide-banner-image img'),
@@ -154,7 +154,7 @@
 			}
 		}
 		theWindow.resize(resizeWideBanner).trigger("resize");
-	});
+	});*/
 
 
 	// Get the banner image at the top of landing and product pages
@@ -166,7 +166,11 @@
 			bannerimg       	= $('.banner-image img'),
 			bannerblurbwrap		= $('.banner-blurb__wrap'),
 			bannerParent		= $('.banner-image'),
-			bannerAspectRatio   = bannerimg.width() / bannerimg.height();
+			bannerAspectRatio   = bannerimg.width() / bannerimg.height(),
+
+			navBar				= $('site-header'),
+			pageTitle			= $('.page-title'),
+			leftSidebar			= $('.has-banner-image ~ .inner-wrap .sidebar-left');
 
 		function resizeBanner() {
 
@@ -183,24 +187,9 @@
 			// content width plus the margin width
 			bannerParent.width(n);
 
-			// set the banner div height to be
-			// the image height (and not cut off
-			// the bottom of the image)
-			bannerParent.height(bannerimg.height());
+			var margin = ( pageTitle.innerHeight() + navBar.height() ) - bannerParent.height();
 
-			// set the aspect ratio of the image
-			// to be correct all the time
-			if ( (bannerParent.width() / bannerParent.height()) < bannerAspectRatio ) {
-				bannerimg
-					.removeClass()
-					.addClass('slideheight');
-			} else {
-				bannerimg
-					.removeClass()
-					.addClass('slidewidth');
-			}
-
-
+			leftSidebar.css('margin-top', margin);
 
 		}
 		// trigger the above calculations on window resize
