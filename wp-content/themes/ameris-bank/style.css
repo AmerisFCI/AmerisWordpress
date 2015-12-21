@@ -5718,7 +5718,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: 30% center;
   opacity: .85;
 }
 /* line 47, sass/components/pages/home/_slides.scss */
@@ -5778,9 +5778,14 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   color: #ffffff;
   letter-spacing: -2px;
   letter-spacing: -0.2rem;
+  line-height: 1;
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+  margin-left: -5px;
+  margin-left: -0.5rem;
 }
 
-/* line 93, sass/components/pages/home/_slides.scss */
+/* line 96, sass/components/pages/home/_slides.scss */
 .button.slide__cta {
   background-color: #d31145;
   color: #ffffff;
@@ -5844,24 +5849,24 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 19px;
   left: 1.9rem;
 }
-/* line 98, sass/components/pages/home/_slides.scss */
+/* line 101, sass/components/pages/home/_slides.scss */
 .button.slide__cta:hover, .button.slide__cta:focus {
   box-shadow: none;
 }
 
-/* line 104, sass/components/pages/home/_slides.scss */
+/* line 107, sass/components/pages/home/_slides.scss */
 .slick-list, .slick-track {
   height: 100%;
   width: 100%;
 }
 
-/* line 109, sass/components/pages/home/_slides.scss */
+/* line 112, sass/components/pages/home/_slides.scss */
 .slick-list {
   position: relative;
   z-index: 2;
 }
 
-/* line 115, sass/components/pages/home/_slides.scss */
+/* line 118, sass/components/pages/home/_slides.scss */
 .slides .slick-arrow {
   font-size: 0;
   line-height: 0;
@@ -5876,7 +5881,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   bottom: 20px;
   bottom: 2rem;
 }
-/* line 128, sass/components/pages/home/_slides.scss */
+/* line 131, sass/components/pages/home/_slides.scss */
 .slides .slick-prev {
   background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -960px;
@@ -5888,7 +5893,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   left: 1.5rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 128, sass/components/pages/home/_slides.scss */
+  /* line 131, sass/components/pages/home/_slides.scss */
   .slides .slick-prev {
     background-size: 215px 3158.5px;
     background-position: 0 -396px;
@@ -5896,7 +5901,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     width: 12px;
   }
 }
-/* line 132, sass/components/pages/home/_slides.scss */
+/* line 135, sass/components/pages/home/_slides.scss */
 .slides .slick-next {
   background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -1158px;
@@ -5908,7 +5913,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   right: 1.5rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 132, sass/components/pages/home/_slides.scss */
+  /* line 135, sass/components/pages/home/_slides.scss */
   .slides .slick-next {
     background-size: 215px 3158.5px;
     background-position: 0 -495px;
@@ -5917,7 +5922,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   }
 }
 
-/* line 138, sass/components/pages/home/_slides.scss */
+/* line 141, sass/components/pages/home/_slides.scss */
 .slick-dots {
   list-style: none;
   margin: 0 auto;
@@ -5929,7 +5934,7 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   z-index: 15;
   text-align: center;
 }
-/* line 148, sass/components/pages/home/_slides.scss */
+/* line 151, sass/components/pages/home/_slides.scss */
 .slick-dots li {
   display: inline-block;
   position: relative;
@@ -5954,11 +5959,11 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   transition: all .2s;
   cursor: pointer;
 }
-/* line 172, sass/components/pages/home/_slides.scss */
+/* line 175, sass/components/pages/home/_slides.scss */
 .slick-dots li:before {
   content: none;
 }
-/* line 176, sass/components/pages/home/_slides.scss */
+/* line 179, sass/components/pages/home/_slides.scss */
 .slick-dots li button {
   text-indent: -9999px;
   width: 100%;
@@ -5970,23 +5975,23 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
   padding: 0;
   box-shadow: none;
 }
-/* line 189, sass/components/pages/home/_slides.scss */
+/* line 192, sass/components/pages/home/_slides.scss */
 .slick-dots li button:focus {
   background-color: #ffffff;
 }
-/* line 195, sass/components/pages/home/_slides.scss */
+/* line 198, sass/components/pages/home/_slides.scss */
 .slick-dots li.slick-active, .slick-dots li:focus {
   background-color: #ffffff;
 }
 
 @media (max-width: 529px) {
-  /* line 203, sass/components/pages/home/_slides.scss */
+  /* line 206, sass/components/pages/home/_slides.scss */
   .slides {
     min-height: 300px;
     min-height: 30rem;
   }
 
-  /* line 206, sass/components/pages/home/_slides.scss */
+  /* line 209, sass/components/pages/home/_slides.scss */
   .slide__title.kicker {
     font-size: 15px;
     font-size: 1.5rem;
@@ -5994,19 +5999,19 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     margin-bottom: 1rem;
   }
 
-  /* line 210, sass/components/pages/home/_slides.scss */
+  /* line 213, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     padding-top: 20px;
     padding-top: 2rem;
   }
 
-  /* line 213, sass/components/pages/home/_slides.scss */
+  /* line 216, sass/components/pages/home/_slides.scss */
   .slick-dots {
     display: none !important;
     bottom: 15px;
     bottom: 1.5rem;
   }
-  /* line 216, sass/components/pages/home/_slides.scss */
+  /* line 219, sass/components/pages/home/_slides.scss */
   .slick-dots li {
     width: 32px;
     width: 3.2rem;
@@ -6014,55 +6019,55 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     height: 3.2rem;
   }
 
-  /* line 221, sass/components/pages/home/_slides.scss */
+  /* line 224, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 42px;
     font-size: 4.2rem;
     line-height: 1;
   }
 
-  /* line 225, sass/components/pages/home/_slides.scss */
+  /* line 228, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 228, sass/components/pages/home/_slides.scss */
+  /* line 231, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 }
 @media (min-width: 530px) and (max-width: 739px) {
-  /* line 234, sass/components/pages/home/_slides.scss */
+  /* line 237, sass/components/pages/home/_slides.scss */
   .button.slide__cta {
     display: inline-block;
   }
 
-  /* line 237, sass/components/pages/home/_slides.scss */
+  /* line 240, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
     text-align: center;
   }
 
-  /* line 240, sass/components/pages/home/_slides.scss */
+  /* line 243, sass/components/pages/home/_slides.scss */
   .slick-dots {
     display: none !important;
   }
 }
 @media (min-width: 740px) {
-  /* line 249, sass/components/pages/home/_slides.scss */
+  /* line 252, sass/components/pages/home/_slides.scss */
   .slides .slick-arrow {
     display: none !important;
   }
 
-  /* line 253, sass/components/pages/home/_slides.scss */
+  /* line 256, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 65px;
     font-size: 6.5rem;
   }
 
-  /* line 257, sass/components/pages/home/_slides.scss */
+  /* line 260, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
-    width: 400px;
-    width: 40rem;
+    width: 430px;
+    width: 43rem;
     padding-top: 8rem;
     margin-top: 20vh;
     position: absolute;
@@ -6070,30 +6075,30 @@ a.account-open__button:hover:after, a.account-open__button:focus:after {
     bottom: inherit;
   }
 
-  /* line 267, sass/components/pages/home/_slides.scss */
+  /* line 270, sass/components/pages/home/_slides.scss */
   .slick-dots {
     bottom: 40px;
     bottom: 4rem;
     right: 5%;
     width: auto;
   }
-  /* line 271, sass/components/pages/home/_slides.scss */
+  /* line 274, sass/components/pages/home/_slides.scss */
   .slick-dots li {
     margin: 0px 0px 0px 16px;
     margin: 0rem 0rem 0rem 1.6rem;
   }
 }
 @media (min-width: 1024px) {
-  /* line 280, sass/components/pages/home/_slides.scss */
+  /* line 283, sass/components/pages/home/_slides.scss */
   .slide__blurb {
     font-size: 80px;
     font-size: 8rem;
   }
 
-  /* line 284, sass/components/pages/home/_slides.scss */
+  /* line 287, sass/components/pages/home/_slides.scss */
   .slide__text-wrap {
-    width: 490px;
-    width: 49rem;
+    width: 550px;
+    width: 55rem;
     bottom: auto;
   }
 }
