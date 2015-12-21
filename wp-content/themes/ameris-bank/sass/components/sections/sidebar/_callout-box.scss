@@ -2,7 +2,8 @@
 .callout-box {
 	position: relative;
 	@include rem-fallback(min-height, 43);
-	background: $brown;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .callout-background-image {
@@ -13,6 +14,7 @@
 	top: 0;
 	opacity: .85;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .callout-box__headline {
@@ -26,7 +28,8 @@
 	@include rem-fallback(padding, 2.4);
 	float: none;
 	width: auto;
-	background: $paleblue;
+	//background: $paleblue;
+	background: $brown;
 	@include rem-fallback(max-width, 31.5);
 	//float: right;
 	margin-left: auto;
