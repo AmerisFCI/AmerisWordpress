@@ -62,6 +62,7 @@ h5 {
 	@include rem-fallback(margin, 2, 0);
 	border-bottom: solid $red;
 	@include rem-fallback(border-bottom-width, .3);
+	letter-spacing: normal;
 }
 
 .landing-heading {

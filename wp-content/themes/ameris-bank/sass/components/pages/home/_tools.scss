@@ -19,6 +19,7 @@
 
 h2.tool__title {
 	@include rem-fallback(margin, 1.6, 0, 1);
+	letter-spacing: normal;
 }
 
 .button.tool__link {
