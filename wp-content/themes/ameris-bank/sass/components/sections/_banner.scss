@@ -44,11 +44,11 @@
 			width: 0;
 			height: 0;
 			left: 50%;
-			@include rem-fallback(margin-left, -6);
+			@include rem-fallback(margin-left, -3);
 			border: solid transparent;
-			@include rem-fallback(border-width, 6);
+			@include rem-fallback(border-width, 3);
 			border-bottom-color: $white;
-			@include rem-fallback(margin-top, -5);
+			@include rem-fallback(margin-top, 0);
 		}
 	}
 
@@ -72,6 +72,7 @@
 				top: 0;
 				@include rem-fallback(right, -16);
 				@include rem-fallback(margin-top, -3);
+				@include rem-fallback(border-width, 6);
 				left: inherit;
 				@include rem-fallback(margin-left, 0);
 			}

@@ -2,6 +2,7 @@
 	p a, ul a, li a {
 		color: $red;
 		text-decoration: none;
+		word-wrap: break-word;
 		&:hover, &:active, &:focus {
 			text-decoration: underline;
 		}

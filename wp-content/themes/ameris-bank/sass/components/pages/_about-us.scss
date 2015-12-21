@@ -123,7 +123,7 @@ body.page-template-about-us-page {
 		left: 0;
 		@include rem-fallback(height, 2.4);
 		@include rem-fallback(left, 2.4);
-		@include rem-fallback(bottom, 2.4);
+		@include rem-fallback(bottom, 1);
 		li {
 			box-shadow: none;
 			&:first-child {
@@ -168,20 +168,20 @@ body.page-template-about-us-page {
 	@include rem-fallback(min-height, 40);
 	position: relative;
 	margin-bottom: 0;
-}
-
-.about-news-item__title {
-	@include voice;
-	@include rem-fallback(font-size, 3.6);
-}
-
-.about-news-item__content {
-	background: rgba(255, 255, 255, .9);
-	@include rem-fallback(padding, 2.4, 2.4, 6);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
+	&__title {
+		@include voice;
+		@include rem-fallback(font-size, 3);
+		line-height: 1.1;
+		margin-bottom: 0;
+	}
+	&__content {
+		background: rgba(255, 255, 255, .9);
+		@include rem-fallback(padding, 2, 2.4, 3.6);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
 }
 
 
@@ -346,7 +346,8 @@ a.about-leadership__button {
 		@include rem-fallback(padding, 2.4, 3.6);
 	}
 	.about-newsroom-wrapper .slick-dots {
-		@include rem-fallback(left, 3.6);
+		left: auto;
+		@include rem-fallback(right, 3.6);
 	}
 	.about-news-item, .about-news-item__content {
 		@include rem-fallback(padding-left, 3.6);
@@ -370,7 +371,7 @@ a.about-leadership__button {
 	}
 
 	.about-news-item {
-		@include rem-fallback(min-height, 50);
+		@include rem-fallback(min-height, 58);
 	}
 
 	.about-leadership {
