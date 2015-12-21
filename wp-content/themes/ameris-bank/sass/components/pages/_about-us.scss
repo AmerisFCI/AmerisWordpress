@@ -126,6 +126,7 @@ body.page-template-about-us-page {
 		@include rem-fallback(bottom, 1);
 		li {
 			box-shadow: none;
+			border-color: $darkblue;
 			&:first-child {
 				margin-left: 0;
 			}
@@ -346,8 +347,7 @@ a.about-leadership__button {
 		@include rem-fallback(padding, 2.4, 3.6);
 	}
 	.about-newsroom-wrapper .slick-dots {
-		left: auto;
-		@include rem-fallback(right, 3.6);
+		@include rem-fallback(left, 3.6);
 	}
 	.about-news-item, .about-news-item__content {
 		@include rem-fallback(padding-left, 3.6);

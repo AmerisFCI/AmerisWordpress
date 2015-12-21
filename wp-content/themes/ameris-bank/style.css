@@ -8327,21 +8327,22 @@ body.page-template-about-us-page .site-main {
 /* line 127, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li {
   box-shadow: none;
+  border-color: #092764;
 }
-/* line 129, sass/components/pages/_about-us.scss */
+/* line 130, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li:first-child {
   margin-left: 0;
 }
-/* line 132, sass/components/pages/_about-us.scss */
+/* line 133, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li button {
   border-color: #092764;
 }
-/* line 135, sass/components/pages/_about-us.scss */
+/* line 136, sass/components/pages/_about-us.scss */
 .about-newsroom-wrapper .slick-dots li.slick-active button {
   background: #092764;
 }
 
-/* line 143, sass/components/pages/_about-us.scss */
+/* line 144, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows {
   position: absolute;
   right: 24px;
@@ -8349,7 +8350,7 @@ body.page-template-about-us-page .site-main {
   bottom: 24px;
   bottom: 2.4rem;
 }
-/* line 147, sass/components/pages/_about-us.scss */
+/* line 148, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-arrow {
   font-size: 0;
   line-height: 0;
@@ -8360,7 +8361,7 @@ body.page-template-about-us-page .site-main {
   padding: 0;
   float: left;
 }
-/* line 158, sass/components/pages/_about-us.scss */
+/* line 159, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-prev {
   background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -564px;
@@ -8372,7 +8373,7 @@ body.page-template-about-us-page .site-main {
   margin-right: 1.4rem;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 158, sass/components/pages/_about-us.scss */
+  /* line 159, sass/components/pages/_about-us.scss */
   .about-newsroom-arrows .slick-prev {
     background-size: 215px 3158.5px;
     background-position: 0 -198px;
@@ -8380,7 +8381,7 @@ body.page-template-about-us-page .site-main {
     width: 12px;
   }
 }
-/* line 162, sass/components/pages/_about-us.scss */
+/* line 163, sass/components/pages/_about-us.scss */
 .about-newsroom-arrows .slick-next {
   background-image: url('images/sprite-images-s5be58bc57c.png');
   background-position: 0 -762px;
@@ -8390,7 +8391,7 @@ body.page-template-about-us-page .site-main {
   width: 12px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 162, sass/components/pages/_about-us.scss */
+  /* line 163, sass/components/pages/_about-us.scss */
   .about-newsroom-arrows .slick-next {
     background-size: 215px 3158.5px;
     background-position: 0 -297px;
@@ -8399,14 +8400,14 @@ body.page-template-about-us-page .site-main {
   }
 }
 
-/* line 167, sass/components/pages/_about-us.scss */
+/* line 168, sass/components/pages/_about-us.scss */
 .about-news-item {
   min-height: 400px;
   min-height: 40rem;
   position: relative;
   margin-bottom: 0;
 }
-/* line 171, sass/components/pages/_about-us.scss */
+/* line 172, sass/components/pages/_about-us.scss */
 .about-news-item__title {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -8419,7 +8420,7 @@ body.page-template-about-us-page .site-main {
   line-height: 1.1;
   margin-bottom: 0;
 }
-/* line 177, sass/components/pages/_about-us.scss */
+/* line 178, sass/components/pages/_about-us.scss */
 .about-news-item__content {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px 24px 50px;
@@ -8430,13 +8431,13 @@ body.page-template-about-us-page .site-main {
   width: 100%;
 }
 
-/* line 189, sass/components/pages/_about-us.scss */
+/* line 190, sass/components/pages/_about-us.scss */
 .about-video {
   min-height: 500px;
   min-height: 50rem;
   position: relative;
 }
-/* line 200, sass/components/pages/_about-us.scss */
+/* line 201, sass/components/pages/_about-us.scss */
 .about-video__wrap-link {
   display: block;
   text-decoration: none;
@@ -8446,16 +8447,16 @@ body.page-template-about-us-page .site-main {
   width: 100%;
   height: 100%;
 }
-/* line 209, sass/components/pages/_about-us.scss */
+/* line 210, sass/components/pages/_about-us.scss */
 .about-video__wrap-link:hover .about-video__body {
   background: #15397f;
 }
-/* line 211, sass/components/pages/_about-us.scss */
+/* line 212, sass/components/pages/_about-us.scss */
 .about-video__wrap-link:hover .about-video__body:before {
   border-bottom-color: #15397f;
 }
 
-/* line 219, sass/components/pages/_about-us.scss */
+/* line 220, sass/components/pages/_about-us.scss */
 .about-video__body {
   position: absolute;
   bottom: 0;
@@ -8468,7 +8469,7 @@ body.page-template-about-us-page .site-main {
   color: #ffffff;
   transition: all .2s;
 }
-/* line 229, sass/components/pages/_about-us.scss */
+/* line 230, sass/components/pages/_about-us.scss */
 .about-video__body:before {
   content: "";
   display: block;
@@ -8484,22 +8485,22 @@ body.page-template-about-us-page .site-main {
   transition: all .2s;
 }
 
-/* line 242, sass/components/pages/_about-us.scss */
+/* line 243, sass/components/pages/_about-us.scss */
 .about-video__title, .about-video__link, .about-video__blurb, a.about-history__link, a.about-careers__link {
   color: #ffffff;
 }
 
-/* line 247, sass/components/pages/_about-us.scss */
+/* line 248, sass/components/pages/_about-us.scss */
 .about-investor {
   padding-top: 0;
 }
-/* line 249, sass/components/pages/_about-us.scss */
+/* line 250, sass/components/pages/_about-us.scss */
 .about-investor .kicker {
   margin-top: 24px;
   margin-top: 2.4rem;
 }
 
-/* line 253, sass/components/pages/_about-us.scss */
+/* line 254, sass/components/pages/_about-us.scss */
 .about-investor__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -8509,19 +8510,19 @@ body.page-template-about-us-page .site-main {
   font-size: 3.6rem;
 }
 
-/* line 258, sass/components/pages/_about-us.scss */
+/* line 259, sass/components/pages/_about-us.scss */
 .about-leadership__image {
   min-height: 300px;
   min-height: 30rem;
   margin-bottom: 0;
 }
 
-/* line 263, sass/components/pages/_about-us.scss */
+/* line 264, sass/components/pages/_about-us.scss */
 .about-leadership__body {
   background: #092764;
   position: relative;
 }
-/* line 266, sass/components/pages/_about-us.scss */
+/* line 267, sass/components/pages/_about-us.scss */
 .about-leadership__body:before {
   content: "";
   display: block;
@@ -8536,7 +8537,7 @@ body.page-template-about-us-page .site-main {
   border-bottom-color: #092764;
 }
 
-/* line 278, sass/components/pages/_about-us.scss */
+/* line 279, sass/components/pages/_about-us.scss */
 .about-leadership__headline {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   text-transform: none;
@@ -8547,7 +8548,7 @@ body.page-template-about-us-page .site-main {
   color: #ffffff;
 }
 
-/* line 283, sass/components/pages/_about-us.scss */
+/* line 284, sass/components/pages/_about-us.scss */
 a.about-leadership__button {
   color: #ffffff;
 }
@@ -8560,7 +8561,7 @@ a.about-leadership__button {
 		@include rem-fallback(padding-top, 1);
 	}
 }*/
-/* line 296, sass/components/pages/_about-us.scss */
+/* line 297, sass/components/pages/_about-us.scss */
 .page-template-about-us-page #menu-about-us-menu {
   background-color: #d7e7f2;
   padding: 25px 24px 18px;
@@ -8656,7 +8657,7 @@ a.about-leadership__button {
   border-bottom-color: transparent;
 }
 
-/* line 301, sass/components/pages/_about-us.scss */
+/* line 302, sass/components/pages/_about-us.scss */
 .latest-updates {
   color: #ffffff;
   text-align: center;
@@ -8667,12 +8668,12 @@ a.about-leadership__button {
   min-height: 30rem;
   position: relative;
 }
-/* line 308, sass/components/pages/_about-us.scss */
+/* line 309, sass/components/pages/_about-us.scss */
 .latest-updates h2, .latest-updates .news-item--newsroom .news-item__title, .news-item--newsroom .latest-updates .news-item__title, .latest-updates .search article .search-item__title, .search article .latest-updates .search-item__title {
   text-align: center;
   color: #ffffff;
 }
-/* line 312, sass/components/pages/_about-us.scss */
+/* line 313, sass/components/pages/_about-us.scss */
 .latest-updates:after {
   content: "";
   display: block;
@@ -8689,7 +8690,7 @@ a.about-leadership__button {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 
-/* line 324, sass/components/pages/_about-us.scss */
+/* line 325, sass/components/pages/_about-us.scss */
 .tintup {
   max-width: 1400px;
   max-width: 140rem;
@@ -8697,7 +8698,7 @@ a.about-leadership__button {
 }
 
 @media (min-width: 740px) {
-  /* line 338, sass/components/pages/_about-us.scss */
+  /* line 339, sass/components/pages/_about-us.scss */
   .about-panels__column {
     width: 48.93617%;
     clear: right;
@@ -8705,7 +8706,7 @@ a.about-leadership__button {
     margin-left: 0;
     margin-right: 2.12766%;
   }
-  /* line 340, sass/components/pages/_about-us.scss */
+  /* line 341, sass/components/pages/_about-us.scss */
   .about-panels__column:nth-child(2n) {
     width: 48.93617%;
     clear: right;
@@ -8713,7 +8714,7 @@ a.about-leadership__button {
     margin-right: 0;
   }
 
-  /* line 344, sass/components/pages/_about-us.scss */
+  /* line 345, sass/components/pages/_about-us.scss */
   .about-our-story {
     margin-top: -130px;
     margin-top: -13rem;
@@ -8721,11 +8722,10 @@ a.about-leadership__button {
     padding: 2.4rem 3.6rem;
   }
 
-  /* line 348, sass/components/pages/_about-us.scss */
+  /* line 349, sass/components/pages/_about-us.scss */
   .about-newsroom-wrapper .slick-dots {
-    left: auto;
-    right: 36px;
-    right: 3.6rem;
+    left: 36px;
+    left: 3.6rem;
   }
 
   /* line 352, sass/components/pages/_about-us.scss */
