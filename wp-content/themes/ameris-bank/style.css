@@ -8422,8 +8422,8 @@ body.page-template-about-us-page .site-main {
 /* line 177, sass/components/pages/_about-us.scss */
 .about-news-item__content {
   background: rgba(255, 255, 255, 0.9);
-  padding: 20px 24px 36px;
-  padding: 2rem 2.4rem 3.6rem;
+  padding: 20px 24px 50px;
+  padding: 2rem 2.4rem 5rem;
   position: absolute;
   bottom: 0;
   left: 0;
