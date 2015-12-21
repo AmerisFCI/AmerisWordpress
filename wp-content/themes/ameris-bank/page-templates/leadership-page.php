@@ -37,12 +37,14 @@ get_template_part( 'template-parts/page', 'wide-banner' ); ?>
 									data-largesrc="<?php $largesrc = wp_get_attachment_image_src( get_post_thumbnail_id(), 'leader' ); echo esc_attr( $largesrc[0] ); ?>"
 									data-title="<?php echo esc_attr( get_the_title() ); ?>"
 									data-position="<?php echo esc_attr( get_field( 'position' ) ); ?>"
+									data-company="<?php echo esc_attr( get_field( 'company' ) ); ?>"
 									data-description="<?php echo esc_attr( get_field( 'bio' ) ); ?>">
 									<div class="leadership-grid__panel-container">
 										<?php the_post_thumbnail( 'leader' ); ?>
 										<div class="leadership-grid__name-group">
 											<h3 class="leadership-grid__name"><?php the_title(); ?></h3>
 											<div class="leadership-grid__position"><?php the_field( 'position' ); ?></div>
+											<div class="leadership-grid__company"><?php the_field( 'company' ); ?></div>
 										</div>
 									</div>
 								</a>
