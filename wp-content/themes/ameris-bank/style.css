@@ -4029,10 +4029,21 @@ input[placeholder], [placeholder], *[placeholder] {
   position: relative;
   min-height: 430px;
   min-height: 43rem;
+  background: #6F5915;
+}
+
+/* line 8, sass/components/sections/sidebar/_callout-box.scss */
+.callout-background-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: .85;
   background-size: cover;
 }
 
-/* line 7, sass/components/sections/sidebar/_callout-box.scss */
+/* line 18, sass/components/sections/sidebar/_callout-box.scss */
 .callout-box__headline {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -4045,7 +4056,7 @@ input[placeholder], [placeholder], *[placeholder] {
   letter-spacing: normal;
 }
 
-/* line 14, sass/components/sections/sidebar/_callout-box.scss */
+/* line 25, sass/components/sections/sidebar/_callout-box.scss */
 .callout-box--small {
   padding: 24px;
   padding: 2.4rem;
@@ -4060,14 +4071,16 @@ input[placeholder], [placeholder], *[placeholder] {
   background-repeat: no-repeat;
 }
 
-/* line 27, sass/components/sections/sidebar/_callout-box.scss */
+/* line 38, sass/components/sections/sidebar/_callout-box.scss */
 .callout-box__kicker {
   margin: 0;
   color: #ffffff;
   text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9);
+  position: relative;
+  z-index: 2;
 }
 
-/* line 33, sass/components/sections/sidebar/_callout-box.scss */
+/* line 46, sass/components/sections/sidebar/_callout-box.scss */
 .button.callout-box__button {
   background-color: #d31145;
   color: #ffffff;
@@ -4136,7 +4149,7 @@ input[placeholder], [placeholder], *[placeholder] {
   left: 19px;
   left: 1.9rem;
 }
-/* line 40, sass/components/sections/sidebar/_callout-box.scss */
+/* line 53, sass/components/sections/sidebar/_callout-box.scss */
 .button.callout-box__button:after {
   position: absolute;
   top: 50%;
@@ -4146,12 +4159,12 @@ input[placeholder], [placeholder], *[placeholder] {
   margin-top: -13px;
   margin-top: -1.3rem;
 }
-/* line 48, sass/components/sections/sidebar/_callout-box.scss */
+/* line 61, sass/components/sections/sidebar/_callout-box.scss */
 .button.callout-box__button:hover:after, .button.callout-box__button:focus:after {
   left: 101%;
 }
 
-/* line 53, sass/components/sections/sidebar/_callout-box.scss */
+/* line 66, sass/components/sections/sidebar/_callout-box.scss */
 .callout-box__header {
   position: absolute;
   width: 100%;
@@ -4161,7 +4174,7 @@ input[placeholder], [placeholder], *[placeholder] {
   padding: 0rem 2.4rem 1.6rem;
 }
 
-/* line 61, sass/components/sections/sidebar/_callout-box.scss */
+/* line 74, sass/components/sections/sidebar/_callout-box.scss */
 .callout-box__headline {
   font-family: "adobe-text-pro", Georgia, "Times New Roman", "DejaVu Serif", serif;
   font-style: italic;
@@ -4175,7 +4188,7 @@ input[placeholder], [placeholder], *[placeholder] {
 }
 
 @media (min-width: 1200px) {
-  /* line 68, sass/components/sections/sidebar/_callout-box.scss */
+  /* line 81, sass/components/sections/sidebar/_callout-box.scss */
   .callout-box__headline {
     font-size: 40px;
     font-size: 4rem;

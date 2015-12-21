@@ -59,7 +59,8 @@ class Ameris_Page_Callout_Widget extends WP_Widget {
 
 		echo $args['before_widget']; ?>
 
-		<div class="callout-box sidebar-callout-box callout-box--small" style="background-image:url( '<?php echo $instance['image']; ?>' );">
+		<div class="callout-box sidebar-callout-box callout-box--small">
+			<div class="callout-background-image" style="background-image:url( '<?php echo $instance['image']; ?>' );"></div>
 			<h2 class="callout-box__kicker kicker sidebar-callout-box__kicker  callout-box--small__kicker"><?php echo $instance['label']; ?></h2>
 			<div class="callout-box__header sidebar-callout-box__header  callout-box--small__header">
 				<h3 class="callout-box__headline sidebar-callout-box__headline  callout-box--small__headline"><?php echo $instance['headline']; ?></h3>
