@@ -38,6 +38,7 @@
 	color: $white;
 	margin-bottom: 0;
 	letter-spacing: normal;
+	line-height: 1;
 }
 
 .callout-box--small {
@@ -98,6 +99,6 @@
 
 @include breakpoint($desktop) {
 	.callout-box__headline {
-		@include rem-fallback(font-size, 4);
+		@include rem-fallback(font-size, 3.6);
 	}
 }
