@@ -19,8 +19,8 @@ if ( !empty( $account_access_args ) ) {
 <div class="account-access">
 	<h2><?php echo $title; ?></h2>
 	<form class="account-access__form" method="post" name="lgnform" id="lgnform" action="https://cibng.ibanking-services.com/EamWeb/Remote/RemoteLoginAPI.aspx?FIORG=466&amp;orgId=466_061201754&amp;FIFID=061201754&amp;brand=466_061201754&amp;appId=ceb">
-		
-		<select name="switch_login_type">
+		<label for="switch-login" class="element-invisible">Choose account type</label>
+		<select id="switch-login" name="switch_login_type">
 			<option value="Personal Online Banking">Personal Online Banking</option>
 			<option value="Business Online Banking">Business Online Banking</option>
 			<option value="Ameris Bank Credit Card Access">Ameris Bank Credit Card</option>
@@ -30,6 +30,7 @@ if ( !empty( $account_access_args ) ) {
 			<option value="Georgia Partner">Correspondent/Wholesale (Georgia Team Partner)</option>
 		</select>
 
+		<label for="_textBoxUserId" class="element-invisible">User ID</label>
 		<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">
 		<input id="_textBoxCompanyId" type="hidden" value="466_061201754" name="_textBoxCompanyId">
 
