@@ -2112,9 +2112,11 @@ textarea:focus,
 #Calc_Bar_Wrapper {
   position: relative;
   padding-right: 10%;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
-/* line 199, sass/components/forms/_calcs.scss */
+/* line 201, sass/components/forms/_calcs.scss */
 #Calc_AB_Bar {
   position: absolute;
   top: 0px;
@@ -2125,13 +2127,13 @@ textarea:focus,
   margin-left: -1.5rem;
 }
 
-/* line 209, sass/components/forms/_calcs.scss */
+/* line 211, sass/components/forms/_calcs.scss */
 #Calc_AB_Bar_Icon img {
   margin-right: 5px;
   margin-right: 0.5rem;
 }
 
-/* line 213, sass/components/forms/_calcs.scss */
+/* line 215, sass/components/forms/_calcs.scss */
 #Calc_OB_Bar {
   position: absolute;
   top: 0px;
@@ -2142,23 +2144,23 @@ textarea:focus,
   margin-left: -1.5rem;
 }
 
-/* line 223, sass/components/forms/_calcs.scss */
+/* line 225, sass/components/forms/_calcs.scss */
 #Calc_OB_Bar_Icon img {
   margin-right: 5px;
   margin-right: 0.5rem;
 }
 
-/* line 227, sass/components/forms/_calcs.scss */
+/* line 229, sass/components/forms/_calcs.scss */
 #Calc_AB_Bar_Top, #Calc_OB_Bar_Top {
   height: 285px;
 }
 
-/* line 232, sass/components/forms/_calcs.scss */
+/* line 234, sass/components/forms/_calcs.scss */
 #Calc_AB_Bar_Btm, #Calc_OB_Bar_Btm {
   height: 1px;
 }
 
-/* line 237, sass/components/forms/_calcs.scss */
+/* line 239, sass/components/forms/_calcs.scss */
 [id*="divCost"] {
   height: 30px;
   font-size: 12px;
@@ -2170,17 +2172,17 @@ textarea:focus,
   padding: 0 10px 0 0;
 }
 
-/* line 248, sass/components/forms/_calcs.scss */
+/* line 250, sass/components/forms/_calcs.scss */
 #Calc_AB_Bar_Btm {
   background-color: #CE1442;
 }
 
-/* line 249, sass/components/forms/_calcs.scss */
+/* line 251, sass/components/forms/_calcs.scss */
 #Calc_OB_Bar_Btm {
   background-color: #262261;
 }
 
-/* line 251, sass/components/forms/_calcs.scss */
+/* line 253, sass/components/forms/_calcs.scss */
 #Calc_AB_Bar_Icon, #Calc_OB_Bar_Icon {
   font-size: 13px;
   width: 100px;
