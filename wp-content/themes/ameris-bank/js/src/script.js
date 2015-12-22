@@ -313,11 +313,12 @@
 		var submit   = form.find( '.account-access__submit-wrapper' );
 		
 		// on every switch, remove all input[type="text,password,hidden"]
-		form.find( 'input[type="text"], input[type="password"], input[type="hidden"]' ).remove();
+		form.find( 'input[type="text"], input[type="password"], input[type="hidden"], label.removable' ).remove();
 
 		switch( val ) {
 			case 'Personal Online Banking':
 				submit.before(
+					'<label for="_textBoxUserId" class="element-invisible removable">User ID</label>',
 					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
 					'<input id="_textBoxCompanyId" type="hidden" value="466_061201754" name="_textBoxCompanyId">'
 				);
@@ -325,7 +326,9 @@
 				break;
 			case 'Business Online Banking':
 				submit.before(
+					'<label for="_textBoxUserId" class="element-invisible removable">User ID</label>',
 					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
+					'<label for="_textBoxCompanyId" class="element-invisible removable">Company ID</label>',
 					'<input id="_textBoxCompanyId" type="text" value="" name="_textBoxCompanyId" placeholder="Company ID">'
 				);
 				form.attr( 'action', 'https://ameris.ebanking-services.com/EamWeb/Remote/RemoteLoginApi.aspx?appID=beb&brand=ameris' );
@@ -341,20 +344,24 @@
 				break;
 			case 'Columbia Partner':
 				submit.before(
+					'<label for="loginUserName" class="element-invisible removable">Email address</label>',
 					'<input id="loginUserName" type="text" value="" name="loginUserName" placeholder="Email address">',
+					'<label for="loginPassword" class="element-invisible removable">Password</label>',
 					'<input id="loginPassword" type="password" value="" name="loginPassword" placeholder="Password">'
 				);
 				form.attr( 'action', 'https://5620781132.secure-onlineorigination.com/TPOLogin.aspx' );
 				break;
 			case 'Georgia Partner':
 				submit.before(
+					'<label for="loginUserName" class="element-invisible removable">Email address</label>',
 					'<input id="loginUserName" type="text" value="" name="loginUserName" placeholder="Email address">',
+					'<label for="loginPassword" class="element-invisible removable">Password</label>',
 					'<input id="loginPassword" type="password" value="" name="loginPassword" placeholder="Password">'
 				);
 				form.attr( 'action', 'https://2317009814.secure-onlineorigination.com/TPOLogin.aspx' );
 				break;
 		}
-	} );
+	} ).change();
 
 
 	/**
@@ -430,8 +437,10 @@ jQuery( window ).resize( amerisOrganizeMobileMenu );
  * and change the dropdown to match.
  */
 var accountType = amerisGetCookie( 'accounttype' );
-if ( accountType )
-	jQuery( '#lgnform select[name="switch_login_type"]' ).val( accountType ).change();
+if ( accountType ) {
+	if ( jQuery( '#lgnform option[value="' + accountType + '"]' ).length > 0 )
+		jQuery( '#lgnform select[name="switch_login_type"]' ).val( accountType ).change();
+}
 
 function amerisSetCookie( cname, cvalue, exdays ) {
 	var d = new Date();
