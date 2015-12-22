@@ -2112,8 +2112,8 @@ textarea:focus,
 #Calc_Bar_Wrapper {
   position: relative;
   padding-right: 10%;
-  margin-bottom: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 /* line 201, sass/components/forms/_calcs.scss */

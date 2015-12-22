@@ -195,7 +195,7 @@
 
 #Calc_Bar_Wrapper { position: relative;
 padding-right: 10%;
-@include rem-fallback(margin-bottom, 2);
+@include rem-fallback(margin-bottom, 5);
 }
 
 #Calc_AB_Bar
