@@ -1845,6 +1845,348 @@ textarea:focus,
     margin-left: 35%;
   }
 }
+/*************************/
+/*** CALCULATOR STYLES ***/
+/*************************/
+/* line 5, sass/components/forms/_calcs.scss */
+.calculator {
+  background: #d7e7f2;
+  padding: 20px 20px 20px 5px;
+  padding: 2rem 2rem 2rem 0.5rem;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  min-widht: 670px;
+  min-widht: 67rem;
+}
+/* line 126, sass/base/_mixins.scss */
+.calculator:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 13, sass/components/forms/_calcs.scss */
+.calculator h2, .calculator .news-item--newsroom .news-item__title, .news-item--newsroom .calculator .news-item__title, .calculator .search article .search-item__title, .search article .calculator .search-item__title {
+  font-size: 30px;
+  font-size: 3rem;
+  text-align: center !important;
+}
+/* line 17, sass/components/forms/_calcs.scss */
+.calculator h3, .calculator .ameris-page-list > li > ul > li > a {
+  margin: 15px 0px 5px;
+  margin: 1.5rem 0rem 0.5rem;
+}
+/* line 20, sass/components/forms/_calcs.scss */
+.calculator p {
+  margin-bottom: 0;
+}
+/* line 23, sass/components/forms/_calcs.scss */
+.calculator .amount {
+  color: #092764;
+  font-family: "AvenirNextLTPro-Bold", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+
+/* line 28, sass/components/forms/_calcs.scss */
+#calc_wrapper {
+  float: left;
+  width: 33%;
+  box-sizing: border-box;
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 15px;
+  color: #092764;
+  margin: 0 2% 0 0;
+}
+/* line 40, sass/components/forms/_calcs.scss */
+#calc_wrapper .clear {
+  clear: both;
+}
+/* line 41, sass/components/forms/_calcs.scss */
+#calc_wrapper h1, #calc_wrapper .landing-heading, #calc_wrapper .page-title-lookalike {
+  font-size: 18px;
+}
+/* line 42, sass/components/forms/_calcs.scss */
+#calc_wrapper h2, #calc_wrapper .news-item--newsroom .news-item__title, .news-item--newsroom #calc_wrapper .news-item__title, #calc_wrapper .search article .search-item__title, .search article #calc_wrapper .search-item__title {
+  font-size: 14px;
+}
+/* line 43, sass/components/forms/_calcs.scss */
+#calc_wrapper h3, #calc_wrapper .ameris-page-list > li > ul > li > a {
+  font-size: 12px;
+}
+/* line 44, sass/components/forms/_calcs.scss */
+#calc_wrapper h4 {
+  font-size: 12px;
+}
+/* line 45, sass/components/forms/_calcs.scss */
+#calc_wrapper h5 {
+  font-size: 12px;
+}
+/* line 46, sass/components/forms/_calcs.scss */
+#calc_wrapper .txt_grey {
+  color: #6D6F71;
+}
+/* line 47, sass/components/forms/_calcs.scss */
+#calc_wrapper .txt_red {
+  color: #CC1543;
+}
+/* line 48, sass/components/forms/_calcs.scss */
+#calc_wrapper .f8 {
+  font-size: 9px;
+}
+/* line 49, sass/components/forms/_calcs.scss */
+#calc_wrapper .f9 {
+  font-size: 11px;
+}
+/* line 50, sass/components/forms/_calcs.scss */
+#calc_wrapper .f11 {
+  font-size: 13px;
+}
+/* line 51, sass/components/forms/_calcs.scss */
+#calc_wrapper .pt5 {
+  padding-top: 5px;
+}
+/* line 54, sass/components/forms/_calcs.scss */
+#calc_wrapper td:nth-child(n+2), #calc_wrapper th:nth-child(n+2) {
+  text-align: inherit;
+  background: transparent;
+}
+/* line 58, sass/components/forms/_calcs.scss */
+#calc_wrapper tr {
+  border: 0 none transparent;
+}
+/* line 61, sass/components/forms/_calcs.scss */
+#calc_wrapper td {
+  padding: 0px 5px;
+  padding: 0rem 0.5rem;
+}
+/* line 64, sass/components/forms/_calcs.scss */
+#calc_wrapper .field {
+  padding: 5px 20px;
+  padding: 0.5rem 2rem;
+  position: relative;
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+}
+/* line 69, sass/components/forms/_calcs.scss */
+#calc_wrapper .field label {
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+}
+/* line 75, sass/components/forms/_calcs.scss */
+#calc_wrapper .field input {
+  padding: 6px 6px 5px;
+  padding: 0.6rem 0.6rem 0.5rem;
+  margin-bottom: 0;
+  box-shadow: 0 0.3rem rgba(21, 57, 127, 0.2);
+  border-color: rgba(21, 57, 127, 0.2);
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+/* line 81, sass/components/forms/_calcs.scss */
+#calc_wrapper .field input:focus, #calc_wrapper .field input:active {
+  box-shadow: 0 0.5rem rgba(21, 57, 127, 0.3);
+  border-color: rgba(21, 57, 127, 0.3);
+}
+/* line 87, sass/components/forms/_calcs.scss */
+#calc_wrapper .percent {
+  position: absolute;
+  line-height: 45px;
+  right: 3px;
+  bottom: 0;
+  font-size: 1.8rem;
+}
+/* line 94, sass/components/forms/_calcs.scss */
+#calc_wrapper .dollar {
+  position: absolute;
+  line-height: 45px;
+  left: 6px;
+  bottom: 0;
+  font-size: 1.8rem;
+}
+/* line 101, sass/components/forms/_calcs.scss */
+#calc_wrapper h3, #calc_wrapper .ameris-page-list > li > ul > li > a {
+  font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 20px;
+  font-size: 2rem;
+  color: #092764;
+  text-transform: none;
+}
+/* line 107, sass/components/forms/_calcs.scss */
+#calc_wrapper h3, #calc_wrapper .ameris-page-list > li > ul > li > a, #calc_wrapper .calculate, #calc_wrapper .footnote {
+  padding: 0 20px;
+  display: block;
+}
+/* line 111, sass/components/forms/_calcs.scss */
+#calc_wrapper .footnote h3, #calc_wrapper .footnote .ameris-page-list > li > ul > li > a {
+  padding: 0;
+}
+/* line 114, sass/components/forms/_calcs.scss */
+#calc_wrapper p {
+  margin: 0;
+}
+
+/* line 119, sass/components/forms/_calcs.scss */
+.AB-warehouse-col, .other-warehouse-col {
+  width: 50%;
+  float: left;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 5px;
+  padding: 1rem 0.5rem;
+}
+
+/* line 126, sass/components/forms/_calcs.scss */
+.tCalc {
+  width: auto !important;
+  height: 23px;
+  line-height: 23px;
+  font-size: 12px;
+  text-indent: 7px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-image: url(../../uploads/2015/12/calc_textbox.gif);
+  background-repeat: no-repeat;
+}
+
+/* line 140, sass/components/forms/_calcs.scss */
+#bar_wrapper {
+  background-color: #FFFFFF;
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 0.5rem 0.8rem -0.3rem rgba(21, 57, 127, 0.3);
+}
+/* line 148, sass/components/forms/_calcs.scss */
+#bar_wrapper td:nth-child(n+2), #bar_wrapper th:nth-child(n+2) {
+  background: transparent;
+}
+/* line 151, sass/components/forms/_calcs.scss */
+#bar_wrapper tr {
+  border: 0 none transparent;
+}
+/* line 154, sass/components/forms/_calcs.scss */
+#bar_wrapper td {
+  padding: 0;
+}
+
+/* line 159, sass/components/forms/_calcs.scss */
+#calc_bar_bg {
+  background-image: url(../../uploads/2015/12/calc_bar_bg.gif);
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-left: 20px;
+  background-position: 2% top;
+}
+
+/* line 170, sass/components/forms/_calcs.scss */
+.comparison-chart tr {
+  border: 0 none transparent;
+}
+/* line 173, sass/components/forms/_calcs.scss */
+.comparison-chart td {
+  padding: 0;
+}
+
+/* .calc_bar_bg_btm
+{
+	background-image: url(../../uploads/2015/12/calc_bar_bg_btm.gif);
+	background-repeat: no-repeat;
+}
+
+.gray_bar
+{
+	border-bottom: solid 1px #9b9c9c;
+}
+
+.gray_bar_totals
+{
+	width: 50%;
+	border-bottom: solid 1px #9b9c9c;
+}*/
+/* line 196, sass/components/forms/_calcs.scss */
+#Calc_Bar_Wrapper {
+  position: relative;
+  padding-right: 10%;
+}
+
+/* line 199, sass/components/forms/_calcs.scss */
+#Calc_AB_Bar {
+  position: absolute;
+  top: 0px;
+  left: 26%;
+  width: 55px;
+  height: 350px;
+  margin-left: -15px;
+  margin-left: -1.5rem;
+}
+
+/* line 209, sass/components/forms/_calcs.scss */
+#Calc_AB_Bar_Icon img {
+  margin-right: 5px;
+  margin-right: 0.5rem;
+}
+
+/* line 213, sass/components/forms/_calcs.scss */
+#Calc_OB_Bar {
+  position: absolute;
+  top: 0px;
+  left: 68%;
+  width: 55px;
+  height: 350px;
+  margin-left: -15px;
+  margin-left: -1.5rem;
+}
+
+/* line 223, sass/components/forms/_calcs.scss */
+#Calc_OB_Bar_Icon img {
+  margin-right: 5px;
+  margin-right: 0.5rem;
+}
+
+/* line 227, sass/components/forms/_calcs.scss */
+#Calc_AB_Bar_Top, #Calc_OB_Bar_Top {
+  height: 285px;
+}
+
+/* line 232, sass/components/forms/_calcs.scss */
+#Calc_AB_Bar_Btm, #Calc_OB_Bar_Btm {
+  height: 1px;
+}
+
+/* line 237, sass/components/forms/_calcs.scss */
+[id*="divCost"] {
+  height: 30px;
+  font-size: 12px;
+  position: relative;
+  top: 9px;
+  background: white;
+  float: left;
+  clear: left;
+  padding: 0 10px 0 0;
+}
+
+/* line 248, sass/components/forms/_calcs.scss */
+#Calc_AB_Bar_Btm {
+  background-color: #CE1442;
+}
+
+/* line 249, sass/components/forms/_calcs.scss */
+#Calc_OB_Bar_Btm {
+  background-color: #262261;
+}
+
+/* line 251, sass/components/forms/_calcs.scss */
+#Calc_AB_Bar_Icon, #Calc_OB_Bar_Icon {
+  font-size: 13px;
+  width: 100px;
+  padding-top: 15px;
+}
+
 /* line 1, sass/components/media/_captions.scss */
 .wp-caption {
   margin-bottom: 20px;
