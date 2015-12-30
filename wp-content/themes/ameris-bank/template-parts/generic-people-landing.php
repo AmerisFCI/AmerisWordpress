@@ -22,6 +22,7 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 										<a href="<?php the_permalink(); ?>"
 											data-largesrc="<?php $largesrc = wp_get_attachment_image_src( get_post_thumbnail_id(), 'leader' ); echo esc_attr( $largesrc[0] ); ?>"
 											data-title="<?php echo esc_attr( get_the_title() ); ?>"
+											data-area="<?php echo esc_attr( get_field( 'area' ) ); ?>"
 											data-position="<?php echo esc_attr( get_field( 'position/title' ) ); ?>"
 											data-phone="<?php echo esc_attr( get_field( 'phone' ) ); ?>"
 											data-email="<?php echo esc_attr( get_field( 'email' ) ); ?>"
