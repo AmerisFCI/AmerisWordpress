@@ -39,6 +39,14 @@
             } elseif( is_singular( 'lending_expert' ) ) { ?>
                 <div class="page-title-lookalike">Lending Experts</div>
 
+            <?php // if an advisor - get the title for the lending expert main page
+            } elseif( is_singular( 'advisor' ) ) { ?>
+                <div class="page-title-lookalike">Speak with an Advisor</div>
+
+            <?php // if a lending expert - get the title for the lending expert main page
+            } elseif( is_singular( 'warehouse_lender' ) ) { ?>
+                <div class="page-title-lookalike">Become a Partner</div>
+
             <?php } elseif ( is_archive() ) { ?>
                 <h1><?php the_archive_title(); ?></h1>
 

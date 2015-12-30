@@ -65,5 +65,43 @@ function ameris_custom_post_types() {
 		'menu_icon'    => 'dashicons-groups'
 	) );
 
+	register_post_type( 'advisor', array(
+		'labels' => array(
+			'name'               => 'Advisors',
+			'singular_name'      => 'Advisor',
+			'all_items'          => 'Advisors',
+			'add_new_item'       => 'Add New Advisor',
+			'edit_item'          => 'Edit Advisor',
+			'new_item'           => 'New Advisor',
+			'view_item'          => 'View Advisor',
+			'search_items'       => 'Search Advisors',
+			'not_found'          => 'No Advisors Found',
+			'not_found_in_trash' => 'No Advisors Found in Trash'
+		),
+		'public'       => true,
+		'rewrite'      => array( 'slug' => 'personal-banking/advisory-services/speak-with-an-advisor', 'with_front' => false ),
+		'supports'     => array( 'title', 'thumbnail' ),
+		'menu_icon'    => 'dashicons-groups'
+	) );
+
+	register_post_type( 'warehouse_lender', array(
+		'labels' => array(
+			'name'               => 'Warehouse Lenders',
+			'singular_name'      => 'Warehouse Lender',
+			'all_items'          => 'Warehouse Lenders',
+			'add_new_item'       => 'Add New Warehouse Lender',
+			'edit_item'          => 'Edit Warehouse Lender',
+			'new_item'           => 'New Warehouse Lender',
+			'view_item'          => 'View Warehouse Lender',
+			'search_items'       => 'Search Warehouse Lenders',
+			'not_found'          => 'No Warehouse Lenders Found',
+			'not_found_in_trash' => 'No Warehouse Lenders Found in Trash'
+		),
+		'public'       => true,
+		'rewrite'      => array( 'slug' => 'residential-financing/warehouse-participation-funding/partnering-with-us', 'with_front' => false ),
+		'supports'     => array( 'title', 'thumbnail' ),
+		'menu_icon'    => 'dashicons-groups'
+	) );
+
 }
 add_action( 'init', 'ameris_custom_post_types' );

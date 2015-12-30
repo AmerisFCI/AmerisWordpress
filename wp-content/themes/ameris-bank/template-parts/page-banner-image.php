@@ -9,7 +9,10 @@ $prefix      = '';
 $banner_size = 'landing-banner';
 
 // maybe get something other than the current post
-if ( is_singular( 'leadership' ) || is_singular( 'lending_expert' ) ) {
+if ( is_singular( 'leadership' )
+  || is_singular( 'lending_expert' )
+  || is_singular( 'advisor' )
+  || is_singular( 'warehouse_lender' ) ) {
 	$post_type = get_post_type_object( get_post_type() );
 	$parent    = get_page_by_path( $post_type->rewrite['slug'] );
 	$post_id   = $parent->ID;
