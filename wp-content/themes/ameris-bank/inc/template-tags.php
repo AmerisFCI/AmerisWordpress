@@ -249,6 +249,10 @@ function get_ameris_sidebar_menu() {
 		$top_level_id = 61;
 		if ( is_singular( 'lending_expert' ) )
 			$top_level_id = 27;
+		if ( is_singular( 'advisor' ) )
+			$top_level_id = 11;
+		if ( is_singular( 'warehouse_lender' ) )
+			$top_level_id = 33;
 		
 		$top_level = get_post( $top_level_id );
 		$output = wp_nav_menu( array(
@@ -380,12 +384,19 @@ class Ameris_Walker_Nav_Menu extends Walker_Nav_Menu {
  */
 function ameris_has_banner_image() {
 
-	if ( is_singular( 'lending_expert' ) || is_singular( 'leadership' ) ) {
+	if ( is_singular( 'lending_expert' )
+	  || is_singular( 'leadership' )
+	  || is_singular( 'advisor' )
+	  || is_singular( 'warehouse_lender' ) ) {
 
 		if ( is_singular( 'leadership' ) )
 			$post_type = get_post_type_object( 'leadership' );
 		elseif ( is_singular( 'lending_expert' ) )
 			$post_type = get_post_type_object( 'lending_expert' );
+		elseif ( is_singular( 'advisor' ) )
+			$post_type = get_post_type_object( 'advisor' );
+		elseif ( is_singular( 'warehouse_lender' ) )
+			$post_type = get_post_type_object( 'warehouse_lender' );
 
 		$parent = get_page_by_path( $post_type->rewrite['slug'] );
 

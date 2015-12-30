@@ -16,10 +16,14 @@
 				the_title();
 		?></h1>
 
-		<?php $meta = ( get_field( 'position/title' ) || get_field( 'phone' ) || get_field( 'email' ) ) ? true : false;
+		<?php $meta = ( get_field( 'area' ) || get_field( 'position/title' ) || get_field( 'phone' ) || get_field( 'email' ) || get_field( 'address' ) ) ? true : false;
 		if ( $meta ) { ?>
 			<div class="leadership__meta">
 		<?php } ?>
+
+			<?php if ( get_field( 'area' ) ) { ?>
+				<div class="leadership__area"><?php the_field( 'area' ); ?></div>
+			<?php } ?>
 			
 			<?php if ( get_field( 'position/title' ) ) { ?>
 				<div class="leadership__position"><?php the_field( 'position/title' ); ?></div>
@@ -31,6 +35,10 @@
 
 			<?php if ( get_field( 'email' ) ) { ?>
 				<div class="leadership__email"><a href="mailto:<?php the_field( 'email' ); ?>"><?php the_field( 'email' ); ?></a></div>
+			<?php } ?>
+
+			<?php if ( get_field( 'address' ) ) { ?>
+				<div class="leadership__address"><?php the_field( 'address' ); ?></div>
 			<?php } ?>
 
 		<?php if ( $meta ) { ?>

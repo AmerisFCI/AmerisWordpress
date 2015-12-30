@@ -344,12 +344,14 @@ var Grid = (function( $ ) {
 			// create Preview structure:
 			this.$title = $( '<h3 class="og-title"></h3>' );
 			this.$description = $( '<div class="og-bio"></div>' );
+			this.$area = $( '<div class="og-meta og-area"></div>' );
 			this.$position = $( '<div class="og-meta og-position"></div>' );
 			this.$company = $( '<div class="og-meta og-company"></div>' );
 			this.$phone = $( '<div class="og-meta og-phone"></div>' );
 			this.$email = $( '<div class="og-meta og-email"></div>' );
+			this.$address = $( '<div class="og-meta og-address"></div>' );
 			// this.$href = $( '<a href="#">View page</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$position, this.$company, this.$phone, this.$email, this.$description );
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$area, this.$position, this.$company, this.$phone, this.$email, this.$address, this.$description );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -387,18 +389,22 @@ var Grid = (function( $ ) {
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' ),
+					area: $itemEl.data( 'area' ),
 					position : $itemEl.data( 'position' ),
 					company : $itemEl.data( 'company' ),
 					phone: $itemEl.data( 'phone' ),
-					email: $itemEl.data( 'email' )
+					email: $itemEl.data( 'email' ),
+					address: $itemEl.data( 'address' )
 				};
 
 			this.$title.html( '<a href="' + eldata.href + '">' + eldata.title + '</a>' );
 			this.$description.html( eldata.description );
+			this.$area.html( eldata.area );
 			this.$position.html( eldata.position );
 			this.$company.html( eldata.company );
 			this.$phone.html( eldata.phone );
 			this.$email.html( eldata.email );
+			this.$address.html( eldata.address );
 			// this.$href.attr( 'href', eldata.href );
 
 			var self = this;

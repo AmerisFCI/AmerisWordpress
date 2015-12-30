@@ -25,6 +25,7 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 											data-position="<?php echo esc_attr( get_field( 'position/title' ) ); ?>"
 											data-phone="<?php echo esc_attr( get_field( 'phone' ) ); ?>"
 											data-email="<?php echo esc_attr( get_field( 'email' ) ); ?>"
+											data-address="<?php echo esc_attr( get_field( 'address' ) ); ?>"
 											data-description="<?php echo esc_attr( get_field( 'bio' ) ); ?>">
 											<div class="leadership-grid__panel-container">
 												<?php the_post_thumbnail( 'leader' ); ?>
