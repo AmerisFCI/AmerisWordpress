@@ -4204,7 +4204,7 @@ input[placeholder], [placeholder], *[placeholder] {
 /* line 1, sass/components/sections/_header.scss */
 .site-header {
   position: absolute;
-  z-index: 10;
+  z-index: 1001;
   width: 100%;
 }
 /* line 6, sass/components/sections/_header.scss */
@@ -4225,7 +4225,7 @@ input[placeholder], [placeholder], *[placeholder] {
 /* line 15, sass/components/sections/_header.scss */
 .site-header > * {
   position: relative;
-  z-index: 1;
+  z-index: 1001;
 }
 
 /* line 21, sass/components/sections/_header.scss */
