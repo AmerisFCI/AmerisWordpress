@@ -27,7 +27,8 @@
 		fade: true,
 		mobileFirst: true,
 		pauseOnDotsHover: true,
-		swipeToSlide: true
+		swipeToSlide: true,
+		zIndex:5
 	});
 
 
