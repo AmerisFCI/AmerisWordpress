@@ -7115,9 +7115,10 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 .callout-box--large__kicker {
   text-shadow: none;
   color: #ffffff;
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9);
 }
 
-/* line 20, sass/components/pages/home/_callout-box.scss */
+/* line 21, sass/components/pages/home/_callout-box.scss */
 .callout-box__background {
   position: absolute;
   width: 100%;
@@ -7128,7 +7129,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   background-position: center center;
   background-size: cover;
 }
-/* line 30, sass/components/pages/home/_callout-box.scss */
+/* line 31, sass/components/pages/home/_callout-box.scss */
 .callout-box__background:before {
   content: "";
   display: block;
@@ -7148,7 +7149,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   /* IE6-9 */
 }
 
-/* line 46, sass/components/pages/home/_callout-box.scss */
+/* line 47, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__header {
   min-height: 300px;
   min-height: 30rem;
@@ -7157,7 +7158,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   position: relative;
   background: #6F5915;
 }
-/* line 52, sass/components/pages/home/_callout-box.scss */
+/* line 53, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__header:after {
   content: "";
   display: block;
@@ -7169,7 +7170,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   border-bottom-color: white;
 }
 
-/* line 64, sass/components/pages/home/_callout-box.scss */
+/* line 65, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__headline {
   color: #ffffff;
   position: absolute;
@@ -7179,17 +7180,17 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   bottom: 50px;
   bottom: 5rem;
   margin-bottom: 0;
-  text-shadow: none;
+  text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9);
 }
 
-/* line 74, sass/components/pages/home/_callout-box.scss */
+/* line 75, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__body {
   background: #ffffff;
   padding: 20px;
   padding: 2rem;
 }
 
-/* line 79, sass/components/pages/home/_callout-box.scss */
+/* line 80, sass/components/pages/home/_callout-box.scss */
 .callout-box--large__description {
   font-size: 18px;
   font-size: 1.8rem;
@@ -7199,7 +7200,7 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
 }
 
 @media (min-width: 530px) and (max-width: 1023px) {
-  /* line 87, sass/components/pages/home/_callout-box.scss */
+  /* line 88, sass/components/pages/home/_callout-box.scss */
   .callout-box--large {
     max-width: 440px;
     max-width: 44rem;
@@ -7208,14 +7209,14 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
-  /* line 95, sass/components/pages/home/_callout-box.scss */
+  /* line 96, sass/components/pages/home/_callout-box.scss */
   .callout-box--large {
     max-width: 580px;
     max-width: 58rem;
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
-  /* line 101, sass/components/pages/home/_callout-box.scss */
+  /* line 102, sass/components/pages/home/_callout-box.scss */
   .callout-box--large {
     max-width: 580px;
     max-width: 58rem;
@@ -7224,33 +7225,33 @@ h2.tool__title, .news-item--newsroom .tool__title.news-item__title, .search arti
   }
 }
 @media (min-width: 1024px) {
-  /* line 110, sass/components/pages/home/_callout-box.scss */
+  /* line 111, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__headline {
     font-size: 43px;
     font-size: 4.3rem;
   }
 
-  /* line 114, sass/components/pages/home/_callout-box.scss */
+  /* line 115, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__header {
     min-height: 330px;
     min-height: 33rem;
   }
 
-  /* line 118, sass/components/pages/home/_callout-box.scss */
+  /* line 119, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__body, .callout-box--large__header {
     padding: 20px 40px;
     padding: 2rem 4rem;
   }
 }
 @media (min-width: 1200px) {
-  /* line 124, sass/components/pages/home/_callout-box.scss */
+  /* line 125, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__header {
     min-height: 280px;
     min-height: 28rem;
   }
 }
 @media (min-width: 1420px) {
-  /* line 130, sass/components/pages/home/_callout-box.scss */
+  /* line 131, sass/components/pages/home/_callout-box.scss */
   .callout-box--large__header {
     min-height: 330px;
     min-height: 33rem;
