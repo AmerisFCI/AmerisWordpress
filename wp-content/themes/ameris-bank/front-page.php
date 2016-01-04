@@ -64,9 +64,10 @@ get_header(); ?>
 
 
 				<div class="callout-box callout-box--large home-callout-box">
-					<div class="callout-box__header callout-box--large__header home-callout-box__header" style="background-image:url( '<?php $image = wp_get_attachment_image_src( get_field( 'callout_image' ), 'home-callout' ); echo $image[0]; ?>' );">
+					<div class="callout-box__header callout-box--large__header home-callout-box__header">
 						<h2 class="kicker callout-box__kicker callout-box--large__kicker home-callout-box__kicker"><?php the_field( 'callout_title' ); ?></h2>
 							<h3 class="callout-box__headline callout-box--large__headline home-callout-box__headline"><?php the_field( 'callout_headline' ); ?></h3>
+						<div class="callout-box__background" style="background-image:url( '<?php $image = wp_get_attachment_image_src( get_field( 'callout_image' ), 'home-callout' ); echo $image[0]; ?>' );"></div>
 					</div>
 					<div class="callout-box__body home-callout-box__body callout-box--large__body">
 						<div class="callout-box__description home-callout-box__description callout-box--large__description">

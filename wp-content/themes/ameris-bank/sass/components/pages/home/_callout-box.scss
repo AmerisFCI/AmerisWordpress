@@ -14,15 +14,40 @@
 
 .callout-box--large__kicker {
 	text-shadow: none;
-	color: $heading-color;
+	color: $white;
+}
+
+.callout-box__background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: .75;
+	top:0;
+	left: 0;
+	background-position: center center;
+	background-size: cover;
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.34+0,0+23,0+57,0.48+100 */
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0.34) 0%, rgba(0,0,0,0) 23%, rgba(0,0,0,0) 57%, rgba(0,0,0,0.48) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0.34) 0%,rgba(0,0,0,0) 23%,rgba(0,0,0,0) 57%,rgba(0,0,0,0.48) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0.34) 0%,rgba(0,0,0,0) 23%,rgba(0,0,0,0) 57%,rgba(0,0,0,0.48) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57000000', endColorstr='#7a000000',GradientType=0 ); /* IE6-9 */
+	}
 }
 
 .callout-box--large__header {
 	@include rem-fallback(min-height, 30);
-	background-size: cover;
 	@include rem-fallback(padding, 2);
 	position: relative;
-	background-position: center center;
+	background: $brown;
 
 	&:after {
 		content: "";
@@ -33,11 +58,13 @@
 		border: solid 30px transparent;
 		border-bottom-color: white;
 	}
+
 }
 
 .callout-box--large__headline {
-	color: $link-color;
+	color: $white;
 	position: absolute;
+	z-index: 2;
 	@include rem-fallback(font-size, 3.2);
 	@include rem-fallback(bottom, 5);
 	margin-bottom: 0;
