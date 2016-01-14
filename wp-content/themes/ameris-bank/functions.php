@@ -96,3 +96,9 @@ require get_template_directory() . '/inc/extras.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page();
+
+}
