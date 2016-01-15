@@ -29,7 +29,7 @@
 							<input type="hidden" name="SubAction" value="sub_add_update" checked="checked" />
 							<input type="hidden" name="MID" value="7217005" />
 							<label class="element-invisible" id="email">Enter Your Email Address to Sign up for the Newsletter</label>
-							<input class="newsletter-signup__email" aria-labelledby="email" type="text" name="s" placeholder="Enter your email address&hellip;" value="" name="Email Address"/>
+							<input class="newsletter-signup__email" aria-labelledby="email" type="text" placeholder="Enter your email address&hellip;" value="" name="Email Address"/>
 							<label class="element-invisible" id="email-submit">Submit to Sign up for the Newsletter</label>
 							<span class="newsletter-signup__submit__icon"><input class="newsletter-signup__submit" type="submit" aria-labelledby="email-submit" value="Newsletter Signup" /></span>
 						</form>
