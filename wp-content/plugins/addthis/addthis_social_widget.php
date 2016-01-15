@@ -3,7 +3,7 @@
  * Plugin Name: Share Buttons by AddThis
  * Plugin URI: http://www.addthis.com
  * Description: Use the AddThis suite of website tools which includes sharing, following, recommended content, and conversion tools to help you make your website smarter. With AddThis, you can see how your users are engaging with your content, provide a personalized experience for each user and encourage them to share, subscribe or follow.
- * Version: 5.2.1
+ * Version: 5.2.3
  * Author: The AddThis Team
  * Author URI: http://www.addthis.com/
  * License: GPL2
@@ -174,9 +174,23 @@ if ($addthis_options['addthis_plugin_controls'] == "AddThis") {
     // addthis_addjs.php is a standard class shared by the various AddThis plugins to make it easy for us to include our bootstrapping JavaScript only once. Priority should be lowest for Share plugin.
     add_action('init', 'addthis_early', 0);
     function addthis_early(){
+        global $addThisSharingButtonsPluginObject;
         global $AddThis_addjs_sharing_button_plugin;
         global $addThisConfigs;
         global $cmsConnector;
+
+        if (!isset($addThisSharingButtonsPluginObject)) {
+          $addThisSharingButtonsPluginObject = new AddThisWordPressSharingButtonsPlugin();
+        }
+
+        if (!isset($cmsConnector)) {
+          $cmsConnector = new AddThisWordPressConnector($addThisSharingButtonsPluginObject);
+        }
+
+        if (!isset($addThisConfigs)) {
+          $addThisConfigs = new AddThisConfigs($cmsConnector);
+        }
+
         if (!isset($AddThis_addjs_sharing_button_plugin)){
             require('addthis_addjs_new.php');
             $AddThis_addjs_sharing_button_plugin = new AddThis_addjs_sharing_button_plugin($addThisConfigs, $cmsConnector);
@@ -1288,7 +1302,7 @@ if ($addthis_options['addthis_plugin_controls'] == "AddThis") {
             && (!$excerpt || _addthis_excerpt_buttons_enabled_above())
             && strpos($content, $htmlComments['above']['search']) === false
         ) {
-            $above .= $htmlComments['above']['comment'];
+            $above = $htmlComments['above']['comment'];
             $above .= addthis_display_widget_above($styles, $options);
         } elseif ($displayAbove) {
             $above = '';
@@ -1303,7 +1317,7 @@ if ($addthis_options['addthis_plugin_controls'] == "AddThis") {
             && (!$excerpt || _addthis_excerpt_buttons_enabled_below())
             && strpos($content, $htmlComments['below']['search']) === false
         ) {
-            $below .= $htmlComments['below']['comment'];
+            $below = $htmlComments['below']['comment'];
             $below .= addthis_display_widget_below($styles, $options);
         } elseif (   $excerpt
                   && $displayBelow

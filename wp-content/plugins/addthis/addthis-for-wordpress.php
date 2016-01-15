@@ -440,9 +440,22 @@ add_action('init', 'Addthis_Wordpress_early', 0);
  */
 function Addthis_Wordpress_early()
 {
+    global $addThisSharingButtonsPluginObject;
     global $AddThis_addjs_sharing_button_plugin;
     global $addThisConfigs;
     global $cmsConnector;
+
+    if (!isset($addThisSharingButtonsPluginObject)) {
+      $addThisSharingButtonsPluginObject = new AddThisWordPressSharingButtonsPlugin();
+    }
+
+    if (!isset($cmsConnector)) {
+      $cmsConnector = new AddThisWordPressConnector($addThisSharingButtonsPluginObject);
+    }
+
+    if (!isset($addThisConfigs)) {
+      $addThisConfigs = new AddThisConfigs($cmsConnector);
+    }
 
     if (!isset($AddThis_addjs_sharing_button_plugin)) {
         include 'addthis_addjs_new.php';

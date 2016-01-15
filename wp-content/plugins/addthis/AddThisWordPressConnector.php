@@ -53,8 +53,9 @@ if (!class_exists('AddThisWordPressConnector')) {
             'addthis_plugin_controls',
             'addthis_profile',
             'api_key',
+            'addthis_rate_us',
+            'addthis_rate_us_timestamp',
             'credential_validation_status',
-            'debug_enable',
             'debug_profile_level',
             'debug_profile_type',
             'script_location',
@@ -90,15 +91,18 @@ if (!class_exists('AddThisWordPressConnector')) {
             'addthis_config_recommended_json',
             'addthis_config_trending_json',
             'addthis_config_welcome_json',
-            'addthis_plugin_controls',
             // new code base only fields
+            'ajax_support',
+            'darkseid_environment',
+            'debug_enable',
+            'debug_profile_level',
+            'debug_profile_type',
             'filter_get_the_excerpt',
             'filter_the_excerpt',
             'filter_wp_trim_excerpt',
-            'startUpgradeAt',
-            'debug_enable',
-            'darkseid_environment',
+            'profile_edition',
             'settings_ui_base_url',
+            'startUpgradeAt',
         );
 
         static $deprecatedSharedVariables = array(

@@ -3,8 +3,8 @@ Contributors: TigrouMeow
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H2S7S3G4XMJ6J
 Tags: retina, images, image, responsive, admin, attachment, media, files, iphone, ipad, high-dpi
 Requires at least: 3.5
-Tested up to: 4.4
-Stable tag: 4.4.1
+Tested up to: 4.4.1
+Stable tag: 4.4.3
 
 Make your website look beautiful and crisp on modern displays by creating and displaying retina images. WP 4.4+ is also supported and enhanced.
 
@@ -29,6 +29,9 @@ PS: The plugin cannot add retina support to your CSS, and therefore your CSS bac
 3. Check if it works! - if it doesn't, read the FAQ, the tutorial, and check the forums.
 
 == Changelog ==
+
+= 4.4.3 =
+* Update: During bulk, doesn't stop in case of errors anymore but display an errors counter.
 
 = 4.4.1 =
 * Update: Ignore Responsive Images support if the media ID is not existent (in case of broken HTML).

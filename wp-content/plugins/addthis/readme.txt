@@ -3,7 +3,7 @@ Contributors: abramsm, srijith.v, vipinss, dnrahamim, jgrodel, bradaddthiscom, m
 Tags: bookmarking, email sharing, facebook, linkedin, pinterest, share, sharing buttons, social marketing, social tools, twitter, whatsapp
 Requires at least: 3.0
 Tested up to: 4.3
-Stable tag: 5.2.1
+Stable tag: 5.2.3
 
 Share buttons from AddThis help you get more traffic from sharing through social networks.
 
@@ -76,8 +76,15 @@ In the screen options you can enable the AddThis meta box. Check the box and sav
 
 == Changelog ==
 
-= 5.2.1 =
+= 5.2.3 =
+* Adding missing licenses and attributions
+
+= 5.2.2 =
 * Fix for duplicate sharing tools showing up due to weird caching plugin behavior
+* Fix for notices in addthis_social_widget.php on lines 1291 & 1306
+* Fix for changes in wp-cli 0.21.1
+
+= 5.2.1 =
 * Renaming the plugin from AddThis Sharing Buttons to Share Buttons by AddThis
 * Adding AddThis EULA
 
@@ -398,6 +405,12 @@ Fixed nondeterministic bug with the_title(), causing the title to occasionally a
 
 
 == Upgrade Notice ==
+
+= 5.2.3 =
+Adding missing licenses and attributions
+
+= 5.2.2 =
+Dupliate button issues? This may help. Yeah, we know we said this last time. But for real now. Also, fixes for compatibility with wp-cli 0.21.1.
 
 = 5.2.1 =
 Dupliate button issues? This may help. Also, we renamed the plugin from AddThis Sharing Buttons to Share Buttons by AddThis.

@@ -126,13 +126,13 @@ class Addthis_ToolBox
                 }
 
                 if (isset($aboveDivClass)
-                    && strpos($inputHtml, $htmlComments['above']['search']) === false
+                    && strpos($content, $htmlComments['above']['search']) === false
                 ) {
                     $content  = $htmlComments['above']['comment'] . self::_buildDiv($aboveDivClass) . $content;
                 }
 
                 if (isset($belowDivClass)
-                    && strpos($inputHtml, $htmlComments['below']['search']) === false
+                    && strpos($content, $htmlComments['below']['search']) === false
                 ) {
                     $content .= $htmlComments['below']['comment'];
                     $content .= self::_buildDiv($belowDivClass);
