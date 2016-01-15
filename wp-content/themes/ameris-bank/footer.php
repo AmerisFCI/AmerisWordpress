@@ -24,8 +24,8 @@
 
 					<?php if ( get_field( 'signup_form_footer', true ) ){ ?>
 						<form action="http://cl.exct.net/subscribe.aspx?lid=22305" name="subscribeForm" method="post" class="newsletter-signup">
-							<!-- <input type="hidden" name="err" value="YOUR ERROR PAGE HERE" />
-							<input type="hidden" name="thx" value="24314" />-->
+							<!-- <input type="hidden" name="err" value="YOUR ERROR PAGE HERE" />-->
+							<input type="hidden" name="thx" value="http://pages.s7.exacttarget.com/page.aspx?QS=5c591a8916642e733b4b7bc6e8c5f6d029ee596a4317b48768c74d46464fdc54" />
 							<input class="element-invisible" type="radio" name="SubAction" value="sub_add_update" checked="checked" />
 							<input class="element-invisible" type="radio" name="Email Type" value="HTML" checked="checked" />
 							<input type="hidden" name="MID" value="7217005" />
