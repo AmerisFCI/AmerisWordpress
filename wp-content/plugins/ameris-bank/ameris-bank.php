@@ -21,3 +21,7 @@ require_once( $includes . 'widget-callout-video.php' );
 require_once( $includes . 'widget-recent-posts.php' );
 require_once( $includes . 'widget-press-feed.php' );
 require_once( $includes . 'widget-looking.php' );
+
+// remove junk from WP Retina 2x dashboard
+if ( !defined( 'WP_HIDE_DONATION_BUTTONS' ) )
+	define( 'WP_HIDE_DONATION_BUTTONS', true );

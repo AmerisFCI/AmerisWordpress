@@ -40,7 +40,7 @@
 		function jordy_meow_footer() {
 			?>
 			<div style=" color: #32595E; border: 1px solid #DFDFDF; position: absolute;margin-right: 20px;right: 0px;left: 0px;font-family: Tahoma;z-index: 10;background: white;margin-top: 15px;font-size: 7px;padding: 0px 10px;">
-			<p style="font-size: 11px; font-family: Tahoma;"><b>This plugin is actively developed and maintained by <a href='http://www.meow.fr'>Jordy Meow</a></b>.<br />More of my tools are available here: <a href="http://apps.meow.fr">Meow Apps</a>. I am also a photographer in Japan: <a href='http://www.totorotimes.com'>Totoro Times</a>.
+			<p style="font-size: 11px; font-family: Tahoma;"><b>This plugin is actively developed and maintained by <a href='http://www.meow.fr'>Jordy Meow</a></b>.<br />More of my tools are available on <a target='_blank' href="http://apps.meow.fr">Meow Apps</a> and my website is <a target='_blank' href='http://jordymeow.com'>Jordy Meow's Offbeat Guide to Japan</a>.
 			</div>
 			<?php
 		}
