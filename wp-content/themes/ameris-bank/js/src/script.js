@@ -347,7 +347,7 @@
 			case 'Columbia Partner':
 				submit.before(
 					'<label for="loginUserName" class="element-invisible removable">Email address</label>',
-					'<input id="loginUserName" type="text" value="Email address" name="loginUserName" onfocus="if (this.value == \'Email Address\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Email Address\';}">',
+					'<input id="loginUserName" type="text" value="Email Address" name="loginUserName" onfocus="if (this.value == \'Email Address\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Email Address\';}">',
 					'<label for="loginPassword" class="element-invisible removable">Password</label>',
 					'<input id="loginPassword" type="password" value="Password" name="loginPassword" onfocus="if (this.value == \'Password\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Password\';}">'
 				);
