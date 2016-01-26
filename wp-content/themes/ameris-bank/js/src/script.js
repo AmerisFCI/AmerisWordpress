@@ -324,6 +324,7 @@
 					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
 					'<input id="_textBoxCompanyId" type="hidden" value="466_061201754" name="_textBoxCompanyId">'
 				);
+				FORMALIZE.init.placeholder();
 				form.attr( 'action', 'https://cibng.ibanking-services.com/EamWeb/Remote/RemoteLoginAPI.aspx?FIORG=466&orgId=466_061201754&FIFID=061201754&brand=466_061201754&appId=ceb' );
 				break;
 			case 'Business Online Banking':
@@ -333,6 +334,7 @@
 					'<label for="_textBoxUserId" class="element-invisible removable">User ID</label>',
 					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">'
 				);
+				FORMALIZE.init.placeholder();
 				form.attr( 'action', 'https://ameris.ebanking-services.com/EamWeb/Remote/RemoteLoginApi.aspx?appID=beb&brand=ameris' );
 				break;
 			case 'Ameris Bank Credit Card Access':
@@ -351,6 +353,7 @@
 					'<label for="loginPassword" class="element-invisible removable">Password</label>',
 					'<input id="loginPassword" type="password" value="" name="loginPassword" placeholder="Password">'
 				);
+				FORMALIZE.init.placeholder();
 				form.attr( 'action', 'https://5620781132.secure-onlineorigination.com/TPOLogin.aspx' );
 				break;
 			case 'Georgia Partner':
@@ -360,6 +363,7 @@
 					'<label for="loginPassword" class="element-invisible removable">Password</label>',
 					'<input id="loginPassword" type="password" value="" name="loginPassword" placeholder="Password">'
 				);
+				FORMALIZE.init.placeholder();
 				form.attr( 'action', 'https://2317009814.secure-onlineorigination.com/TPOLogin.aspx' );
 				break;
 		}
