@@ -364,9 +364,6 @@
 				form.attr( 'action', 'https://2317009814.secure-onlineorigination.com/TPOLogin.aspx' );
 				break;
 		}
-		// FORMALIZE.init.placeholder();
-		// form.find('input[type="text"], input[type="password"]').val( '' );
-		// form.find('input[type="text"], input[type="password"]').placeholder();
 	} ).change();
 
 
