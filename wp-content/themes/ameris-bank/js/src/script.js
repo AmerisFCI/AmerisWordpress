@@ -321,7 +321,7 @@
 			case 'Personal Online Banking':
 				submit.before(
 					'<label for="_textBoxUserId" class="element-invisible removable">User ID</label>',
-					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
+					'<input id="_textBoxUserId" type="text" value="User ID" name="_textBoxUserId" onfocus="if (this.value == \'User ID\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'User ID\';}">',
 					'<input id="_textBoxCompanyId" type="hidden" value="466_061201754" name="_textBoxCompanyId">'
 				);
 				form.attr( 'action', 'https://cibng.ibanking-services.com/EamWeb/Remote/RemoteLoginAPI.aspx?FIORG=466&orgId=466_061201754&FIFID=061201754&brand=466_061201754&appId=ceb' );
@@ -329,9 +329,9 @@
 			case 'Business Online Banking':
 				submit.before(
 					'<label for="_textBoxCompanyId" class="element-invisible removable">Company ID</label>',
-					'<input id="_textBoxCompanyId" type="text" value="" name="_textBoxCompanyId" placeholder="Company ID">',
+					'<input id="_textBoxCompanyId" type="text" value="Company ID" name="_textBoxCompanyId" onfocus="if (this.value == \'Company ID\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Company ID\';}">',
 					'<label for="_textBoxUserId" class="element-invisible removable">User ID</label>',
-					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">'
+					'<input id="_textBoxUserId" type="text" value="User ID" name="_textBoxUserId" onfocus="if (this.value == \'User ID\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'User ID\';}">'
 				);
 				form.attr( 'action', 'https://ameris.ebanking-services.com/EamWeb/Remote/RemoteLoginApi.aspx?appID=beb&brand=ameris' );
 				break;
@@ -347,18 +347,18 @@
 			case 'Columbia Partner':
 				submit.before(
 					'<label for="loginUserName" class="element-invisible removable">Email address</label>',
-					'<input id="loginUserName" type="text" value="" name="loginUserName" placeholder="Email address">',
+					'<input id="loginUserName" type="text" value="Email address" name="loginUserName" onfocus="if (this.value == \'Email Address\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Email Address\';}">',
 					'<label for="loginPassword" class="element-invisible removable">Password</label>',
-					'<input id="loginPassword" type="password" value="" name="loginPassword" placeholder="Password">'
+					'<input id="loginPassword" type="password" value="Password" name="loginPassword" onfocus="if (this.value == \'Password\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Password\';}">'
 				);
 				form.attr( 'action', 'https://5620781132.secure-onlineorigination.com/TPOLogin.aspx' );
 				break;
 			case 'Georgia Partner':
 				submit.before(
 					'<label for="loginUserName" class="element-invisible removable">Email address</label>',
-					'<input id="loginUserName" type="text" value="" name="loginUserName" placeholder="Email address">',
+					'<input id="loginUserName" type="text" value="Email Address" name="loginUserName" onfocus="if (this.value == \'Email Address\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Email Address\';}">',
 					'<label for="loginPassword" class="element-invisible removable">Password</label>',
-					'<input id="loginPassword" type="password" value="" name="loginPassword" placeholder="Password">'
+					'<input id="loginPassword" type="password" value="Password" name="loginPassword" onfocus="if (this.value == \'Password\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Password\';}">'
 				);
 
 				form.attr( 'action', 'https://2317009814.secure-onlineorigination.com/TPOLogin.aspx' );
@@ -366,7 +366,7 @@
 		}
 		// FORMALIZE.init.placeholder();
 		// form.find('input[type="text"], input[type="password"]').val( '' );
-		form.find('input[type="text"], input[type="password"]').placeholder();
+		// form.find('input[type="text"], input[type="password"]').placeholder();
 	} ).change();
 
 
