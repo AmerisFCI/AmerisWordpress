@@ -233,9 +233,9 @@
 			this.href.indexOf('snl.com') == -1 &&
 			this.href.indexOf('ultiproworkplace.com') == -1 /* &&
 			this.href.indexOf('amerisbankmortgage.com') == -1 */ ) {
-			
+
 			var a = new RegExp('/' + window.location.host + '/');
-			
+
 			// if external link
 			if( !a.test( this.href ) ) {
 				$( this ).click( function( event ) {
@@ -258,9 +258,9 @@
 					event.preventDefault();
 					event.stopPropagation();
 					window.open( this.href, '_blank' );
-				} ); 
+				} );
 			}
-		
+
 		}
 
 	} );
@@ -279,7 +279,7 @@
 		e.preventDefault();
 		var link = $(this).attr('href');
 		var blogWrap = $('.blog-wrap');
-		
+
 		// remove existing posts
 		blogWrap.fadeOut(400);
 
@@ -290,7 +290,7 @@
 
 			// add loading notice
 			blogWrap.closest( '.blog-wrap' ).after( '<div class="posts-loading">Loading posts&hellip;</div>' );
-			
+
 			// load new posts with ajax magic
 			blogWrap.load(link + ' .blog-wrap', function() {
 
@@ -298,7 +298,7 @@
 				var contents = $(this).children().html();
 				$( '.posts-loading' ).remove();
 				$( this ).html( contents ).fadeIn( 400 );
-				
+
 			} );
 		} );
 
@@ -313,7 +313,7 @@
 		var val      = dropdown.val();
 		var form     = dropdown.closest( '#lgnform' );
 		var submit   = form.find( '.account-access__submit-wrapper' );
-		
+
 		// on every switch, remove all input[type="text,password,hidden"]
 		form.find( 'input[type="text"], input[type="password"], input[type="hidden"], label.removable' ).remove();
 
@@ -328,10 +328,10 @@
 				break;
 			case 'Business Online Banking':
 				submit.before(
-					'<label for="_textBoxUserId" class="element-invisible removable">User ID</label>',
-					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">',
 					'<label for="_textBoxCompanyId" class="element-invisible removable">Company ID</label>',
-					'<input id="_textBoxCompanyId" type="text" value="" name="_textBoxCompanyId" placeholder="Company ID">'
+					'<input id="_textBoxCompanyId" type="text" value="" name="_textBoxCompanyId" placeholder="Company ID">',
+					'<label for="_textBoxUserId" class="element-invisible removable">User ID</label>',
+					'<input id="_textBoxUserId" type="text" value="" name="_textBoxUserId" placeholder="User ID">'
 				);
 				form.attr( 'action', 'https://ameris.ebanking-services.com/EamWeb/Remote/RemoteLoginApi.aspx?appID=beb&brand=ameris' );
 				break;
