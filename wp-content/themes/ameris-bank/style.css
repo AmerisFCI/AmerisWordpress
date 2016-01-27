@@ -1493,11 +1493,9 @@ input, textarea {
   z-index: 100;
 }
 
-/* line 10, sass/components/forms/_fields.scss */
-.sod_select .sod_label {
-  overflow-y: visible;
-}
-
+/* .sod_select .sod_label {
+	overflow-y: visible;
+} */
 /* line 14, sass/components/forms/_fields.scss */
 .sod_select .sod_list_wrapper {
   background: #d7e7f2;
