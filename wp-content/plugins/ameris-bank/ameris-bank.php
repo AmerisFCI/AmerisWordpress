@@ -25,3 +25,11 @@ require_once( $includes . 'widget-looking.php' );
 // remove junk from WP Retina 2x dashboard
 if ( !defined( 'WP_HIDE_DONATION_BUTTONS' ) )
 	define( 'WP_HIDE_DONATION_BUTTONS', true );
+
+// Override Easy Smooth Scroll Links use of the Cloudflare CDN
+function ameris_essl_override() {
+	wp_deregister_script( 'jquery-easing' );
+	wp_register_script( 'jquery-easing', plugin_dir_url( __FILE__ ) . 'js/jquery.easing.min.js' );
+	wp_enqueue_script( 'jquery-easing' );
+}
+add_action( 'wp_enqueue_scripts', 'ameris_essl_override', 1000 ); // must be over 999
