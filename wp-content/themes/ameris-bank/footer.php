@@ -12,7 +12,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		
+
 		<div class="inner-wrap footer_inner-wrap">
 			<div class="footer-top">
 				<div class="site-info">
@@ -22,7 +22,7 @@
 
 				<div class="footer-top__side">
 
-					<?php if ( get_field( 'signup_form_footer', true ) ){ ?>
+					<?php if ( get_field( 'signup_form_footer', 'option' ) ){ ?>
 						<form action="http://cl.exct.net/subscribe.aspx?lid=22305" name="subscribeForm" method="post" class="newsletter-signup">
 							<!-- <input type="hidden" name="err" value="YOUR ERROR PAGE HERE" />-->
 							<input type="hidden" name="thx" value="http://pages.s7.exacttarget.com/page.aspx?QS=5c591a8916642e733b4b7bc6e8c5f6d029ee596a4317b48768c74d46464fdc54" />
