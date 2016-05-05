@@ -1,7 +1,7 @@
 <?php
 /**
  * +--------------------------------------------------------------------------+
- * | Copyright (c) 2008-2015 AddThis, LLC                                     |
+ * | Copyright (c) 2008-2016 AddThis, LLC                                     |
  * +--------------------------------------------------------------------------+
  * | This program is free software; you can redistribute it and/or modify     |
  * | it under the terms of the GNU General Public License as published by     |
@@ -109,7 +109,7 @@ Class AddThis_addjs_sharing_button_plugin{
     }
 
     function output_script_filter($content){
-        if ($this->_js_added != true && ! is_admin() && ! is_feed() )
+        if (!$this->_js_added && !is_admin() && !is_feed() && in_the_loop())
         {
             $this->wrapJs();
             $this->addWidgetToJs();
