@@ -82,16 +82,16 @@ endif;
  * Modify post excerpt behavior.
  */
 function ameris_homepage_news_excerpts( $excerpt ) {
-	
+
 	// force homepage posts with excerpts to do the same trimming that automated excerpts do
 	if ( has_excerpt() && is_front_page() ) {
 		$text = strip_shortcodes( $excerpt );
 		$text = apply_filters( 'the_content', $excerpt );
 		$text = str_replace(']]>', ']]&gt;', $excerpt);
-		
+
 		$length = apply_filters( 'excerpt_length', 20 );
 		$more = apply_filters( 'excerpt_more', '&hellip;' );
-		
+
 		$excerpt = wp_trim_words( $text, $length, $more );
 	}
 
@@ -99,7 +99,7 @@ function ameris_homepage_news_excerpts( $excerpt ) {
 	if ( is_home() ) {
 		$excerpt .= ' <a class="read-more news-item__more" href="' . get_permalink() . '">Read More</a>';
 
-	} else if ( is_search() ) { 
+	} else if ( is_search() ) {
 		$excerpt .= ' <a class="read-more search-item__more" href="' . get_permalink() . '">Read More</a>';
 
 	}
@@ -127,7 +127,7 @@ function ameris_limit_by_char( $text, $count ) {
 	// if text is short enough, great
 	if ( strlen( $text ) <= $count )
 		return $text;
-		
+
 	// shorten text
 	$short_text = substr( $text, 0, $count );
 
@@ -217,7 +217,7 @@ add_action( 'pre_get_posts', 'ameris_search_result_count' );
 function ameris_conditional_menu_classes( $classes, $item ) {
 
 	global $post;
-	
+
 	if ( is_singular( 'lending_expert' ) && $item->object_id === '29' )
 		$classes[] = 'current_page_item';
 
@@ -249,7 +249,7 @@ function ameris_max_image_width( $width, $size_array ) {
  * Modify the srcsets used for responsive images.
  */
 function ameris_srcsets( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
-	
+
 	// if image is big enough for a landing-banner, add that as a srcset too
 	// that means for really big images, smaller screens will grab the 2400px width version
 	// instead of the 3300 version
@@ -264,3 +264,18 @@ function ameris_srcsets( $sources, $size_array, $image_src, $image_meta, $attach
 	return $sources;
 }
 add_filter( 'wp_calculate_image_srcset', 'ameris_srcsets', 10, 5 );
+
+/**
+ * Allow style element in the wysiwyg editor.
+ */
+function ameris_allow_style_in_wysiwyg( $options ) {
+
+	if ( ! isset( $options['valid_children'] ) ) {
+		$options['valid_children'] = '+body[style]';
+	} else {
+		$options['valid_children'] .= ',+body[style]';
+	}
+
+	return $options;
+}
+add_filter( 'tiny_mce_before_init', 'ameris_allow_style_in_wysiwyg' );
