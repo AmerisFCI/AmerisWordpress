@@ -279,3 +279,14 @@ function ameris_allow_style_in_wysiwyg( $options ) {
 	return $options;
 }
 add_filter( 'tiny_mce_before_init', 'ameris_allow_style_in_wysiwyg' );
+
+/**
+ * Remove Banner Image Filter feature.
+ */
+function ameris_remove_banner_image_filter() {
+	global $post;
+	if( get_field( 'remove_banner_image_filter' ) ) {
+		?><style type="text/css">.banner-image .banner-background-image { opacity:1; }</style><?php
+	}
+}
+add_action( 'wp_head', 'ameris_remove_banner_image_filter' );
