@@ -154,7 +154,7 @@
 .main-navigation {
 	clear: both;
 	&.toggled {
-		
+
 	}
 }
 
@@ -380,7 +380,7 @@
 				}
 			}
 		}
-		
+
 		.view-all a {
 			@include red-link;
 		}
@@ -453,12 +453,12 @@
 	}
 }
 
-	
+
 	//Sub Menu with additional menu toggles (business subs)
 	.toggle-sub__parent { // class placed inside of the dropdown
-		
+
 		width: 100%;
-		
+
 		> a {
 			@include rem-fallback(padding, 3);
 			@include red-arrow-right;
@@ -470,7 +470,7 @@
 			text-transform: none;
 			transition: all .2s;
 			opacity: .6;
-			
+
 			&:hover, &:focus, &:active {
 				background: $white;
 			}
@@ -484,7 +484,7 @@
 			opacity: 1;
 			pointer-events: all;
 		}
-		
+
 		&.hover, &.visible-tab {
 			background: transparent;
 			> a {
@@ -566,7 +566,7 @@
 
 	> .sub-menu > li {
 		display: block;
-		width: 19%;
+		width: 24%;
 		float: left;
 	}
 

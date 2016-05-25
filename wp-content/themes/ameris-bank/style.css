@@ -3329,7 +3329,7 @@ a:hover, a:active {
   /* line 567, sass/components/navigation/_menu-main.scss */
   .personal-nav > .sub-menu > li {
     display: block;
-    width: 19%;
+    width: 24%;
     float: left;
   }
 
