@@ -37,6 +37,12 @@
 		font-weight: 500;
 	}
 
+	p.check-reorder {
+		display:none; // shown w/js
+		font-style:normal;
+		@include rem-fallback( margin-bottom, 2 );
+	}
+
 	.sod_select:before {
 		@include rem-fallback(top, 1);
 	}

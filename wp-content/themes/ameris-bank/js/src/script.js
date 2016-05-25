@@ -317,6 +317,7 @@
 
 		// on every switch, remove all input[type="text,password,hidden"]
 		form.find( 'input[type="text"], input[type="password"], input[type="hidden"], label.removable' ).remove();
+		form.nextAll( '.check-reorder' ).hide();
 
 		switch( val ) {
 			case 'Personal Online Banking':
@@ -326,6 +327,7 @@
 					'<input id="_textBoxCompanyId" type="hidden" value="466_061201754" name="_textBoxCompanyId">'
 				);
 				form.attr( 'action', 'https://cibng.ibanking-services.com/EamWeb/Remote/RemoteLoginAPI.aspx?FIORG=466&orgId=466_061201754&FIFID=061201754&brand=466_061201754&appId=ceb' );
+				form.nextAll( '.personal-check-reorder' ).show();
 				break;
 			case 'Business Online Banking':
 				submit.before(
@@ -335,6 +337,7 @@
 					'<input id="_textBoxUserId" type="text" value="User ID" name="_textBoxUserId" onfocus="if (this.value == \'User ID\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'User ID\';}">'
 				);
 				form.attr( 'action', 'https://ameris.ebanking-services.com/EamWeb/Remote/RemoteLoginApi.aspx?appID=beb&brand=ameris' );
+				form.nextAll( '.business-check-reorder' ).show();
 				break;
 			case 'Ameris Bank Credit Card Access':
 				form.attr( 'action', 'https://www.myaccountaccess.com/onlineCard/login.do?theme=elan1&loc=12252' );
