@@ -39,8 +39,7 @@
 
 	p.check-reorder {
 		display:none; // shown w/js
-		font-style:normal;
-		@include rem-fallback( margin-bottom, 2 );
+		@include rem-fallback( margin-top, 2 );
 	}
 
 	.sod_select:before {

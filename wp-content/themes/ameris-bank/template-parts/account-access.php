@@ -45,8 +45,9 @@ if ( !empty( $account_access_args ) ) {
 
 	</form>
 
-	<p class="personal-check-reorder check-reorder"><a href="https://orderpoint.deluxe.com/personal-checks/login.htm?execution=e1s1" target="_blank">Personal Check Reorder</a></p>
-	<p class="business-check-reorder check-reorder"><a href="http://www.deluxe.com/hmcheck/index.jsp?locid=DOP:top_dept2shopdlx" target="_blank">Business Check Reorder</a></p>
-
 	<p><?php echo $text_below; ?></p>
+
+	<p class="personal-check-reorder check-reorder">Out of checks? <a href="https://orderpoint.deluxe.com/personal-checks/login.htm?execution=e1s1" target="_blank">Reorder now.</a></p>
+	<p class="business-check-reorder check-reorder">Out of checks? <a href="http://www.deluxe.com/hmcheck/index.jsp?locid=DOP:top_dept2shopdlx" target="_blank">Reorder now.</a></p>
+
 </div>
