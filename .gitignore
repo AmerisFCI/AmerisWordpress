@@ -53,6 +53,7 @@ wp-content/*
 !wp-content/themes
 
 # ignore specific plugins and themes
+wp-content/plugins/wordfence/tmp/configCache.php
 wp-content/plugins/hello.php
 wp-content/themes/twenty*
 
