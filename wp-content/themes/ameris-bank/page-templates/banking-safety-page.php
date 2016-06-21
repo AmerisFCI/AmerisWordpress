@@ -16,20 +16,28 @@ get_template_part( 'template-parts/page', 'banner' ); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="safety-grid">
-					<?php if ( have_rows( 'banking_safety_links' ) ) : while( have_rows( 'banking_safety_links' ) ) : the_row(); ?>
+				<div class="entry-content">
 
-						<div class="safety-grid__column safety-item">
-							<div class="safety-item__icon">
-								<a href="<?php the_sub_field( 'link' ); ?>"><?php echo wp_get_attachment_image( (int) get_sub_field( 'icon' ), 'circle-icon' ); ?></a>
-							</div>
-							<div class="safety-item__label">
-								<a href="<?php the_sub_field( 'link' ); ?>"><?php the_sub_field( 'label' ); ?></a>
-							</div>
-							<div class="safety-item__blurb"><?php the_sub_field( 'blurb' ); ?></div>
-						</div>
+					<?php if ( get_field( 'heading' ) ) { ?>
+						<h2 class="safety-heading"><?php the_field( 'heading' ); ?></h2>
+					<?php } ?>
 
-					<?php endwhile; endif; ?>
+					<div class="safety-grid">
+						<?php if ( have_rows( 'banking_safety_links' ) ) : while( have_rows( 'banking_safety_links' ) ) : the_row(); ?>
+
+							<div class="safety-grid__column safety-item">
+								<div class="safety-item__icon">
+									<a href="<?php the_sub_field( 'link' ); ?>"><?php echo wp_get_attachment_image( (int) get_sub_field( 'icon' ), 'circle-icon' ); ?></a>
+								</div>
+								<div class="safety-item__label">
+									<a href="<?php the_sub_field( 'link' ); ?>"><?php the_sub_field( 'label' ); ?></a>
+								</div>
+								<div class="safety-item__blurb"><?php the_sub_field( 'blurb' ); ?></div>
+							</div>
+
+						<?php endwhile; endif; ?>
+					</div>
+
 				</div>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
