@@ -757,3 +757,13 @@
 	}
 }
 
+@include breakpoint( $mobile-to-tablet ) {
+	.hide-mobile {
+		display:none;
+	}
+}
+@include breakpoint( $narrow-to-desktop ) {
+	.hide-desktop {
+		display:none;
+	}
+}

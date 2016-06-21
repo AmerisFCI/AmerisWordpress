@@ -3633,6 +3633,18 @@ a:hover, a:active {
     left: 10%;
   }
 }
+@media (max-width: 1023px) {
+  /* line 761, sass/components/navigation/_menu-main.scss */
+  .hide-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 766, sass/components/navigation/_menu-main.scss */
+  .hide-desktop {
+    display: none;
+  }
+}
 /* line 1, sass/components/navigation/_utility-nav.scss */
 .utility-navigation {
   font-family: "AvenirNextLTPro-Regular", Helvetica, Arial, "Nimbus Sans L", sans-serif;
